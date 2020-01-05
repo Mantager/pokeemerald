@@ -284,7 +284,11 @@ LittlerootTown_ProfessorBirchsLab_EventScript_Aide:: @ 81F9F84
 	compare VAR_BIRCH_LAB_STATE, 3
 	goto_if_ge LittlerootTown_ProfessorBirchsLab_EventScript_AideReceivedStarter
 	goto_if_set FLAG_BIRCH_AIDE_MET, LittlerootTown_ProfessorBirchsLab_EventScript_AideAlreadyMet
-	msgbox LittlerootTown_ProfessorBirchsLab_Text_BirchAwayOnFieldwork, MSGBOX_DEFAULT
+	playfanfare MUS_FANFA4
+	message LittlerootTown_ProfessorBirchsLab_Text_Debug_GivePokenav
+	waitfanfare
+	setflag FLAG_SYS_POKENAV_GET
+	setflag FLAG_RECEIVED_POKENAV
 	setflag FLAG_BIRCH_AIDE_MET
 	release
 	end
@@ -706,6 +710,9 @@ LittlerootTown_ProfessorBirchsLab_EventScript_ScottAboardSSTidalCall:: @ 81FA4D6
 	clearflag FLAG_SCOTT_CALL_BATTLE_FRONTIER
 	releaseall
 	end
+
+LittlerootTown_ProfessorBirchsLab_Text_Debug_GivePokenav:
+	.string "{PLAYER} received a POKéNAV.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BirchAwayOnFieldwork: @ 81FA4E2
 	.string "Hunh? PROF. BIRCH?\p"

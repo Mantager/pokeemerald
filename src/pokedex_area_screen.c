@@ -98,9 +98,9 @@ static const u16 sSpeciesHiddenFromAreaScreen[] = { SPECIES_WYNAUT };
 
 static const u16 sMovingRegionMapSections[3] =
 {
-    MAPSEC_MARINE_CAVE,
-    MAPSEC_UNDERWATER_MARINE_CAVE,
-    MAPSEC_TERRA_CAVE
+    //MAPSEC_MARINE_CAVE,
+    //MAPSEC_UNDERWATER_MARINE_CAVE,
+    //MAPSEC_TERRA_CAVE
 };
 
 static const u16 sFeebasData[][3] =
@@ -111,12 +111,12 @@ static const u16 sFeebasData[][3] =
 
 static const u16 sLandmarkData[][2] =
 {
-    {MAPSEC_SKY_PILLAR,       FLAG_LANDMARK_SKY_PILLAR},
-    {MAPSEC_SEAFLOOR_CAVERN,  FLAG_LANDMARK_SEAFLOOR_CAVERN},
-    {MAPSEC_ALTERING_CAVE_2,  FLAG_LANDMARK_ALTERING_CAVE},
-    {MAPSEC_MIRAGE_TOWER,     FLAG_LANDMARK_MIRAGE_TOWER},
-    {MAPSEC_DESERT_UNDERPASS, FLAG_LANDMARK_DESERT_UNDERPASS},
-    {MAPSEC_ARTISAN_CAVE,     FLAG_LANDMARK_ARTISAN_CAVE},
+    //{MAPSEC_SKY_PILLAR,       FLAG_LANDMARK_SKY_PILLAR},
+    //{MAPSEC_SEAFLOOR_CAVERN,  FLAG_LANDMARK_SEAFLOOR_CAVERN},
+    //{MAPSEC_ALTERING_CAVE_2,  FLAG_LANDMARK_ALTERING_CAVE},
+    //{MAPSEC_MIRAGE_TOWER,     FLAG_LANDMARK_MIRAGE_TOWER},
+    //{MAPSEC_DESERT_UNDERPASS, FLAG_LANDMARK_DESERT_UNDERPASS},
+    //{MAPSEC_ARTISAN_CAVE,     FLAG_LANDMARK_ARTISAN_CAVE},
     {MAPSEC_NONE}
 };
 
@@ -456,12 +456,12 @@ static u16 GetRegionMapSectionId(u8 mapGroup, u8 mapNum)
 
 static bool8 MapHasMon(const struct WildPokemonHeader *info, u16 species)
 {
-    if (GetRegionMapSectionId(info->mapGroup, info->mapNum) == MAPSEC_ALTERING_CAVE_2)
-    {
-        sPokedexAreaScreen->unk6E2++;
-        if (sPokedexAreaScreen->unk6E2 != sPokedexAreaScreen->unk6E4 + 1)
-            return FALSE;
-    }
+    //if (GetRegionMapSectionId(info->mapGroup, info->mapNum) == MAPSEC_ALTERING_CAVE_2)
+    //{
+    //    sPokedexAreaScreen->unk6E2++;
+    //    if (sPokedexAreaScreen->unk6E2 != sPokedexAreaScreen->unk6E4 + 1)
+    //        return FALSE;
+    //}
 
     if (MonListHasMon(info->landMonsInfo, species, 12))
         return TRUE;

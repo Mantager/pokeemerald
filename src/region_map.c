@@ -117,57 +117,15 @@ static const u8 sRegionMap_MapSectionLayout[] = INCBIN_U8("graphics/pokenav/regi
 
 static const u16 sRegionMap_SpecialPlaceLocations[][2] =
 {
-    {MAPSEC_UNDERWATER_TERRA_CAVE,     MAPSEC_ROUTE_105},
-    {MAPSEC_UNDERWATER_124,            MAPSEC_ROUTE_124},
-    {MAPSEC_UNDERWATER_UNK1,           MAPSEC_ROUTE_129},
-    {MAPSEC_UNDERWATER_125,            MAPSEC_ROUTE_126},
-    {MAPSEC_UNDERWATER_126,            MAPSEC_ROUTE_127},
-    {MAPSEC_UNDERWATER_127,            MAPSEC_ROUTE_128},
-    {MAPSEC_UNDERWATER_129,            MAPSEC_ROUTE_129},
-    {MAPSEC_UNDERWATER_SOOTOPOLIS,     MAPSEC_SOOTOPOLIS_CITY},
-    {MAPSEC_UNDERWATER_128,            MAPSEC_ROUTE_128},
-    {MAPSEC_AQUA_HIDEOUT,              MAPSEC_LILYCOVE_CITY},
-    {MAPSEC_AQUA_HIDEOUT_OLD,          MAPSEC_LILYCOVE_CITY},
-    {MAPSEC_MAGMA_HIDEOUT,             MAPSEC_ROUTE_112},
-    {MAPSEC_UNDERWATER_SEALED_CHAMBER, MAPSEC_ROUTE_134},
-    {MAPSEC_PETALBURG_WOODS,           MAPSEC_ROUTE_104},
-    {MAPSEC_JAGGED_PASS,               MAPSEC_ROUTE_112},
-    {MAPSEC_MT_PYRE,                   MAPSEC_ROUTE_122},
-    {MAPSEC_SKY_PILLAR,                MAPSEC_ROUTE_131},
-    {MAPSEC_MIRAGE_TOWER,              MAPSEC_ROUTE_111},
-    {MAPSEC_TRAINER_HILL,              MAPSEC_ROUTE_111},
-    {MAPSEC_DESERT_UNDERPASS,          MAPSEC_ROUTE_114},
-    {MAPSEC_ALTERING_CAVE_2,           MAPSEC_ROUTE_103},
-    {MAPSEC_ARTISAN_CAVE,              MAPSEC_ROUTE_103},
-    {MAPSEC_ABANDONED_SHIP,            MAPSEC_ROUTE_108},
     {MAPSEC_NONE,                      MAPSEC_NONE}
 };
 
 static const u16 sRegionMap_MarineCaveMapSecIds[] =
 {
-    MAPSEC_MARINE_CAVE,
-    MAPSEC_UNDERWATER_MARINE_CAVE,
-    MAPSEC_UNDERWATER_MARINE_CAVE
 };
 
 static const u16 sTerraCaveMapSectionIds[] =
 {
-    MAPSEC_ROUTE_114,
-    MAPSEC_ROUTE_114,
-    MAPSEC_ROUTE_115,
-    MAPSEC_ROUTE_115,
-    MAPSEC_ROUTE_116,
-    MAPSEC_ROUTE_116,
-    MAPSEC_ROUTE_118,
-    MAPSEC_ROUTE_118,
-    MAPSEC_ROUTE_105,
-    MAPSEC_ROUTE_105,
-    MAPSEC_ROUTE_125,
-    MAPSEC_ROUTE_125,
-    MAPSEC_ROUTE_127,
-    MAPSEC_ROUTE_127,
-    MAPSEC_ROUTE_129,
-    MAPSEC_ROUTE_129
 };
 
 static const struct UCoords16 sTerraCaveLocationCoords[] =
@@ -184,7 +142,6 @@ static const struct UCoords16 sTerraCaveLocationCoords[] =
 
 static const u8 sRegionMap_MapSecAquaHideoutOld[] =
 {
-    MAPSEC_AQUA_HIDEOUT_OLD
 };
 
 static const struct OamData sRegionMapCursorOam =
@@ -253,9 +210,6 @@ static const union AnimCmd *const sRegionMapPlayerIconAnimTable[] =
 
 static const u8 sRegionMapEventSectionIds[] =
 {
-    MAPSEC_BIRTH_ISLAND_2,
-    MAPSEC_FARAWAY_ISLAND,
-    MAPSEC_NAVEL_ROCK2
 };
 
 static const u16 sRegionMapFramePal[] = INCBIN_U16("graphics/pokenav/map_frame.gbapal");
@@ -332,7 +286,7 @@ static const struct FlagControlledFlyDest gUnknown_085A1EDC[] =
 {
     {
         .name = gUnknown_085A1ED4,
-        .mapSecId = MAPSEC_EVER_GRANDE_CITY,
+        .mapSecId = MAPSEC_POKEMON_LEAGUE,
         .flag = FLAG_LANDMARK_POKEMON_LEAGUE
     }
 };
@@ -405,10 +359,10 @@ static const struct SpritePalette gUnknown_085A1F10 =
 
 static const u16 sUnknown_085A1F18[][2] =
 {
-    {
+    /*{
         FLAG_LANDMARK_BATTLE_FRONTIER,
         MAPSEC_BATTLE_FRONTIER
-    },
+    },*/
     {
         -1,
         MAPSEC_NONE
@@ -990,10 +944,10 @@ static void RegionMap_InitializeStateBasedOnPlayerLocation(void)
             mapHeight = gMapHeader.mapLayout->height;
             x = gSaveBlock1Ptr->pos.x;
             y = gSaveBlock1Ptr->pos.y;
-            if (gRegionMap->mapSecId == MAPSEC_UNDERWATER_128 || gRegionMap->mapSecId == MAPSEC_UNDERWATER_MARINE_CAVE)
+            /*if (gRegionMap->mapSecId == MAPSEC_UNDERWATER_128 || gRegionMap->mapSecId == MAPSEC_UNDERWATER_MARINE_CAVE)
             {
                 gRegionMap->playerIsInCave = TRUE;
-            }
+            }*/
             break;
         case MAP_TYPE_UNDERGROUND:
         case MAP_TYPE_UNUSED_2:
@@ -1078,9 +1032,9 @@ static void RegionMap_InitializeStateBasedOnPlayerLocation(void)
         y = gRegionMapEntries[gRegionMap->mapSecId].height - 1;
     }
 
-    switch (gRegionMap->mapSecId)
+    /*switch (gRegionMap->mapSecId)
     {
-        case MAPSEC_ROUTE_114:
+        /*case MAPSEC_ROUTE_114:
             if (y != 0)
             {
                 x = 0;
@@ -1125,7 +1079,7 @@ static void RegionMap_InitializeStateBasedOnPlayerLocation(void)
         case MAPSEC_UNDERWATER_MARINE_CAVE:
             RegionMap_GetMarineCaveCoords(&gRegionMap->cursorPosX, &gRegionMap->cursorPosY);
             return;
-    }
+    }*/
     gRegionMap->cursorPosX = gRegionMapEntries[gRegionMap->mapSecId].x + x + MAPCURSOR_X_MIN;
     gRegionMap->cursorPosY = gRegionMapEntries[gRegionMap->mapSecId].y + y + MAPCURSOR_Y_MIN;
 }
@@ -1145,7 +1099,7 @@ static void RegionMap_InitializeStateBasedOnSSTidalLocation(void)
     x = 0;
     switch (GetSSTidalLocation(&mapGroup, &mapNum, &xOnMap, &yOnMap))
     {
-        case SS_TIDAL_LOCATION_SLATEPORT:
+        /*case SS_TIDAL_LOCATION_SLATEPORT:
             gRegionMap->mapSecId = MAPSEC_SLATEPORT_CITY;
             break;
         case SS_TIDAL_LOCATION_LILYCOVE:
@@ -1156,7 +1110,7 @@ static void RegionMap_InitializeStateBasedOnSSTidalLocation(void)
             break;
         case SS_TIDAL_LOCATION_ROUTE131:
             gRegionMap->mapSecId = MAPSEC_ROUTE_131;
-            break;
+            break;*/
         default:
         case SS_TIDAL_LOCATION_CURRENTS:
             mapHeader = Overworld_GetMapHeaderByGroupAndId(mapGroup, mapNum);
@@ -1188,7 +1142,9 @@ static u8 get_flagnr_blue_points(u16 mapSecId)
     {
         case MAPSEC_NONE:
             return MAPSECTYPE_NONE;
-        case MAPSEC_LITTLEROOT_TOWN:
+        case MAPSEC_HOENN:
+            return FlagGet(FLAG_VISITED_LITTLEROOT_TOWN) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
+        /*case MAPSEC_LITTLEROOT_TOWN:
             return FlagGet(FLAG_VISITED_LITTLEROOT_TOWN) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
         case MAPSEC_OLDALE_TOWN:
             return FlagGet(FLAG_VISITED_OLDALE_TOWN) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
@@ -1223,7 +1179,7 @@ static u8 get_flagnr_blue_points(u16 mapSecId)
         case MAPSEC_BATTLE_FRONTIER:
             return FlagGet(FLAG_LANDMARK_BATTLE_FRONTIER) ? MAPSECTYPE_BATTLE_FRONTIER : MAPSECTYPE_NONE;
         case MAPSEC_SOUTHERN_ISLAND:
-            return FlagGet(FLAG_LANDMARK_SOUTHERN_ISLAND) ? MAPSECTYPE_PLAIN : MAPSECTYPE_NONE;
+            return FlagGet(FLAG_LANDMARK_SOUTHERN_ISLAND) ? MAPSECTYPE_PLAIN : MAPSECTYPE_NONE;*/
         default:
             return MAPSECTYPE_PLAIN;
     }
@@ -1238,7 +1194,7 @@ static u16 CorrectSpecialMapSecId_Internal(u16 mapSecId)
 {
     u32 i;
 
-    for (i = 0; i < 3; i++)
+    /*for (i = 0; i < 3; i++)
     {
         if (sRegionMap_MarineCaveMapSecIds[i] == mapSecId)
         {
@@ -1251,7 +1207,7 @@ static u16 CorrectSpecialMapSecId_Internal(u16 mapSecId)
         {
             return sRegionMap_SpecialPlaceLocations[i][1];
         }
-    }
+    }*/
     return mapSecId;
 }
 
@@ -1621,14 +1577,14 @@ u8 *GetMapNameGeneric(u8 *dest, u16 mapSecId)
 
 u8 *sub_8124610(u8 *dest, u16 mapSecId)
 {
-    if (mapSecId == MAPSEC_AQUA_HIDEOUT_OLD)
+    /*if (mapSecId == MAPSEC_AQUA_HIDEOUT_OLD)
     {
         return StringCopy(dest, gText_Hideout);
-    }
-    else
-    {
+    }*/
+    //else
+    //{
         return GetMapNameGeneric(dest, mapSecId);
-    }
+    //}
 }
 
 void sub_8124630(u16 mapSecId, u16 *x, u16 *y, u16 *width, u16 *height)
@@ -2002,7 +1958,7 @@ static void sub_8124E0C(void)
                 {
                     switch (sFlyMap->regionMap.mapSecId)
                     {
-                        case MAPSEC_SOUTHERN_ISLAND:
+                        /*case MAPSEC_SOUTHERN_ISLAND:
                             SetWarpDestinationToHealLocation(HEAL_LOCATION_SOUTHERN_ISLAND_EXTERIOR);
                             break;
                         case MAPSEC_BATTLE_FRONTIER:
@@ -2013,7 +1969,7 @@ static void sub_8124E0C(void)
                             break;
                         case MAPSEC_EVER_GRANDE_CITY:
                             SetWarpDestinationToHealLocation(FlagGet(FLAG_LANDMARK_POKEMON_LEAGUE) && sFlyMap->regionMap.posWithinMapSec == 0 ? HEAL_LOCATION_EVER_GRANDE_CITY_2 : HEAL_LOCATION_EVER_GRANDE_CITY_1);
-                            break;
+                            break;*/
                         default:
                             if (sMapHealLocations[sFlyMap->regionMap.mapSecId][2] != 0)
                             {

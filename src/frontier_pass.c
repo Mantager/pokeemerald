@@ -572,16 +572,16 @@ static u32 AllocateFrontierPassData(void (*callback)(void))
 
     sPassData->callback = callback;
     i = GetCurrentRegionMapSectionId();
-    if (i != MAPSEC_BATTLE_FRONTIER && i != MAPSEC_ARTISAN_CAVE)
-    {
-        sPassData->cursorX = 176;
-        sPassData->cursorY = 104;
-    }
-    else
-    {
+    //if (i != MAPSEC_BATTLE_FRONTIER && i != MAPSEC_ARTISAN_CAVE)
+    //{
+    //    sPassData->cursorX = 176;
+    //    sPassData->cursorY = 104;
+    //}
+    //else
+    //{
         sPassData->cursorX = 176;
         sPassData->cursorY = 48;
-    }
+    //}
 
     sPassData->battlePoints = gSaveBlock2Ptr->frontier.battlePoints;
     sPassData->hasBattleRecord = CanCopyRecordedBattleSaveData();
@@ -1590,7 +1590,7 @@ static void InitFrontierMapSprites(void)
 
     // Create player indicator head sprite only if it's in vicinity of battle frontier.
     id = GetCurrentRegionMapSectionId();
-    if (id == MAPSEC_BATTLE_FRONTIER || id == MAPSEC_ARTISAN_CAVE)
+    /* if (id == MAPSEC_BATTLE_FRONTIER || id == MAPSEC_ARTISAN_CAVE)
     {
         s8 mapNum = gSaveBlock1Ptr->location.mapNum;
 
@@ -1646,7 +1646,7 @@ static void InitFrontierMapSprites(void)
         sMapData->playerHeadSprite->oam.priority = 0;
         if (gSaveBlock2Ptr->playerGender != MALE)
             StartSpriteAnim(sMapData->playerHeadSprite, 1);
-    }
+    } */
 }
 
 static void PrintOnFrontierMap(void)

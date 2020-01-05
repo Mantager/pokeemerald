@@ -291,7 +291,7 @@ static bool8 sub_81CC6D0(void)
 {
     if (sub_81CC5E4())
         return FALSE;
-
+        //Is map already zoomed in? Ensure it stays this way on reload!
     return gSaveBlock2Ptr->regionMapZoom == 1;
 }
 
