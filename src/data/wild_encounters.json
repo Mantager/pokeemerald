@@ -4733,8 +4733,8 @@
                         "encounter_rate": 20,
                         "mons": [
                             {
-                                "max_level": 3,
-                                "min_level": 3,
+                                "max_level": 2,
+                                "min_level": 2,
                                 "species": "SPECIES_POOCHYENA"
                             },
                             {

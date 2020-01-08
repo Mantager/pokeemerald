@@ -1118,3 +1118,79 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/text/birch_speech.inc"
 
 	.include "data/maps/CaesarTown/scripts.inc"
+
+	.include "data/maps/LancelCity/scripts.inc"
+
+	.include "data/maps/ArcTown/scripts.inc"
+
+	.include "data/maps/BonneyCity/scripts.inc"
+
+	.include "data/maps/MedesTown/scripts.inc"
+
+	.include "data/maps/HepburnCity/scripts.inc"
+
+	.include "data/maps/GoffTown/scripts.inc"
+
+	.include "data/maps/NielCity/scripts.inc"
+
+	.include "data/maps/HemingCity/scripts.inc"
+
+	.include "data/maps/RemantCity/scripts.inc"
+
+	.include "data/maps/TolketTown/scripts.inc"
+
+	.include "data/maps/FroodTown/scripts.inc"
+
+	.include "data/maps/DarwinCity/scripts.inc"
+
+	.include "data/maps/WonderCity/scripts.inc"
+
+	.include "data/maps/PokemonLeague/scripts.inc"
+
+	.include "data/maps/Route1/scripts.inc"
+
+	.include "data/maps/Route2/scripts.inc"
+
+	.include "data/maps/Route3/scripts.inc"
+
+	.include "data/maps/Route4/scripts.inc"
+
+	.include "data/maps/Route5/scripts.inc"
+
+	.include "data/maps/Route6/scripts.inc"
+
+	.include "data/maps/Route7/scripts.inc"
+
+	.include "data/maps/Route8/scripts.inc"
+
+	.include "data/maps/Route9/scripts.inc"
+
+	.include "data/maps/Route10/scripts.inc"
+
+	.include "data/maps/Route11/scripts.inc"
+
+	.include "data/maps/Route12/scripts.inc"
+
+	.include "data/maps/Route13/scripts.inc"
+
+	.include "data/maps/Route14/scripts.inc"
+
+	.include "data/maps/Route15/scripts.inc"
+
+	.include "data/maps/Route16/scripts.inc"
+
+	.include "data/maps/Route17/scripts.inc"
+
+	.include "data/maps/Route18/scripts.inc"
+
+	.include "data/maps/Route19/scripts.inc"
+
+	.include "data/maps/Route20/scripts.inc"
+
+	.include "data/maps/Route21/scripts.inc"
+
+	.include "data/maps/Route22/scripts.inc"
+
+	.include "data/maps/Route23/scripts.inc"
+
+	.include "data/maps/Route24/scripts.inc"

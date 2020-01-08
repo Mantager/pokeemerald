@@ -5,7 +5,13 @@
     "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
     "bg_events": [
     ],
-    "connections": null,
+    "connections": [
+        {
+            "direction": "up",
+            "map": "MAP_ROUTE1",
+            "offset": 0
+        }
+    ],
     "coord_events": [
     ],
     "id": "MAP_CAESAR_TOWN",
