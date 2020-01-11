@@ -1983,13 +1983,8 @@ static void CreatePokedexList(u8 dexMode, u8 sortMode)
                 }
             }
             break;
-<<<<<<< HEAD
         case SORT_ALPHABETICAL:
             for (i = 0; i < POKEMON_SLOTS_NUMBER - 1; i++)
-=======
-        case 1:
-            for (i = 0; i < ARRAY_COUNT(gPokedexOrder_Alphabetical); i++)
->>>>>>> f9cfc29f8f5881b76f07d769869eb03c3ceca3a3
             {
                 temp_dexNum = gPokedexOrder_Alphabetical[i];
 
@@ -2002,13 +1997,8 @@ static void CreatePokedexList(u8 dexMode, u8 sortMode)
                 }
             }
             break;
-<<<<<<< HEAD
         case SORT_HEAVIEST:
             for (i = NATIONAL_DEX_COUNT - 1; i >= 0; i--)
-=======
-        case 2:
-            for (i = ARRAY_COUNT(gPokedexOrder_Weight) - 1; i >= 0; i--)
->>>>>>> f9cfc29f8f5881b76f07d769869eb03c3ceca3a3
             {
                 temp_dexNum = gPokedexOrder_Weight[i];
 
@@ -2021,13 +2011,8 @@ static void CreatePokedexList(u8 dexMode, u8 sortMode)
                 }
             }
             break;
-<<<<<<< HEAD
         case SORT_LIGHTEST:
             for (i = 0; i < NATIONAL_DEX_COUNT; i++)
-=======
-        case 3:
-            for (i = 0; i < ARRAY_COUNT(gPokedexOrder_Weight); i++)
->>>>>>> f9cfc29f8f5881b76f07d769869eb03c3ceca3a3
             {
                 temp_dexNum = gPokedexOrder_Weight[i];
 
@@ -2040,13 +2025,8 @@ static void CreatePokedexList(u8 dexMode, u8 sortMode)
                 }
             }
             break;
-<<<<<<< HEAD
         case SORT_TALLEST:
             for (i = NATIONAL_DEX_COUNT - 1; i >= 0; i--)
-=======
-        case 4:
-            for (i = ARRAY_COUNT(gPokedexOrder_Height) - 1; i >= 0; i--)
->>>>>>> f9cfc29f8f5881b76f07d769869eb03c3ceca3a3
             {
                 temp_dexNum = gPokedexOrder_Height[i];
 
@@ -2059,13 +2039,8 @@ static void CreatePokedexList(u8 dexMode, u8 sortMode)
                 }
             }
             break;
-<<<<<<< HEAD
         case SORT_SMALLEST:
             for (i = 0; i < NATIONAL_DEX_COUNT; i++)
-=======
-        case 5:
-            for (i = 0; i < ARRAY_COUNT(gPokedexOrder_Height); i++)
->>>>>>> f9cfc29f8f5881b76f07d769869eb03c3ceca3a3
             {
                 temp_dexNum = gPokedexOrder_Height[i];
 
