@@ -611,6 +611,7 @@ gSongTable:: @ 86B49F0
 	song ph_nurse_blend, 2, 2
 	song ph_nurse_held, 2, 2
 	song ph_nurse_solo, 2, 2
+	song mus_ga_monster, 0, 0       @ Monster House (GAIDEN1)
 
 	.align 2
 dummy_song_header: @ 86B5D00

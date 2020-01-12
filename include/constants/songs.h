@@ -536,6 +536,8 @@
 #define PH_NURSE_HELD 608
 #define PH_NURSE_SOLO 609
 
+#define MUS_GA_MONSTER 610       // Monster House
+
 #define MUS_ROUTE_118 0x7FFF  // map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 
 #define MUS_NONE 0xFFFF

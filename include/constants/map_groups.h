@@ -422,10 +422,10 @@
 #define MAP_SECRET_BASE_YELLOW_CAVE4        (21 | (25 << 8))
 #define MAP_SECRET_BASE_TREE4               (22 | (25 << 8))
 #define MAP_SECRET_BASE_SHRUB4              (23 | (25 << 8))
-#define MAP_BATTLE_COLOSSEUM_2P             (24 | (25 << 8))
+#define MAP_BATTLE_COLOSSEUM2P              (24 | (25 << 8))
 #define MAP_TRADE_CENTER                    (25 | (25 << 8))
 #define MAP_RECORD_CORNER                   (26 | (25 << 8))
-#define MAP_BATTLE_COLOSSEUM_4P             (27 | (25 << 8))
+#define MAP_BATTLE_COLOSSEUM4P              (27 | (25 << 8))
 #define MAP_CONTEST_HALL                    (28 | (25 << 8))
 #define MAP_UNKNOWN_LINK_CONTEST_ROOM_25_29 (29 | (25 << 8))
 #define MAP_UNKNOWN_LINK_CONTEST_ROOM_25_30 (30 | (25 << 8))
@@ -587,6 +587,10 @@
 // Map Group 33
 #define MAP_ROUTE124_DIVING_TREASURE_HUNTERS_HOUSE (0 | (33 << 8))
 
-#define MAP_GROUPS_COUNT 34
+// Map Group 34
+#define MAP_JAM_KEY_MAP (0 | (34 << 8))
+#define MAP_FARMER_HUT  (1 | (34 << 8))
+
+#define MAP_GROUPS_COUNT 35
 
 #endif // GUARD_CONSTANTS_MAP_GROUPS_H
