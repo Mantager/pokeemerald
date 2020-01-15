@@ -1646,7 +1646,7 @@ const u16 gTitleScreenEmeraldVersionPal[] = INCBIN_U16("graphics/title_screen/em
 
 const u32 gUnknown_08DDE458[] = INCBIN_U32("graphics/title_screen/title_screen1.bin.lz");
 
-const u32 gTitleScreenPokemonLogoGfx[] = INCBIN_U32("graphics/title_screen/pokemon_logo.8bpp.lz");
+const u32 gTitleScreenPokemonLogoGfx[] = INCBIN_U32("graphics/title_screen/gaidenone_logo.8bpp.lz");
 
 const u32 gTitleScreenEmeraldVersionGfx[] = INCBIN_U32("graphics/title_screen/emerald_version.8bpp.lz");
 

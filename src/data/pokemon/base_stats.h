@@ -17973,7 +17973,7 @@ const struct BaseStats gBaseStats[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroup1 = EGG_GROUP_FIELD,
         .eggGroup2 = EGG_GROUP_FAIRY,
-        .abilities = {ABILITY_CHEEK_POUCH, ABILITY_PICKUP},
+        .abilities = {ABILITY_CHEEK_POUCH, ABILITY_CHEEK_POUCH},
         .abilityHidden = ABILITY_PLUS,
         .bodyColor = BODY_COLOR_YELLOW,
     },

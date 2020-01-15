@@ -1978,67 +1978,67 @@
                 {
                     "base_label": "gJamKeyMap0",
                     "land_mons": {
-                        "encounter_rate": 0,
+                        "encounter_rate": 20,
                         "mons": [
                             {
-                                "max_level": 5,
-                                "min_level": 5,
+                                "max_level": 3,
+                                "min_level": 3,
                                 "species": "SPECIES_ZIGZAGOON"
                             },
                             {
-                                "max_level": 5,
-                                "min_level": 5,
-                                "species": "SPECIES_ZIGZAGOON"
+                                "max_level": 3,
+                                "min_level": 3,
+                                "species": "SPECIES_ODDISH"
                             },
                             {
-                                "max_level": 5,
-                                "min_level": 5,
+                                "max_level": 4,
+                                "min_level": 4,
                                 "species": "SPECIES_CHERUBI"
                             },
                             {
-                                "max_level": 5,
-                                "min_level": 5,
+                                "max_level": 4,
+                                "min_level": 4,
                                 "species": "SPECIES_ZIGZAGOON"
                             },
                             {
-                                "max_level": 5,
-                                "min_level": 5,
+                                "max_level": 4,
+                                "min_level": 4,
                                 "species": "SPECIES_CHERUBI"
                             },
                             {
-                                "max_level": 5,
-                                "min_level": 5,
-                                "species": "SPECIES_CHERUBI"
+                                "max_level": 3,
+                                "min_level": 3,
+                                "species": "SPECIES_ODDISH"
                             },
                             {
-                                "max_level": 5,
-                                "min_level": 5,
+                                "max_level": 4,
+                                "min_level": 4,
                                 "species": "SPECIES_ZIGZAGOON"
                             },
                             {
-                                "max_level": 5,
-                                "min_level": 5,
-                                "species": "SPECIES_ZIGZAGOON"
+                                "max_level": 4,
+                                "min_level": 4,
+                                "species": "SPECIES_PANCHAM"
                             },
                             {
-                                "max_level": 5,
-                                "min_level": 5,
+                                "max_level": 3,
+                                "min_level": 3,
                                 "species": "SPECIES_FOONGUS"
                             },
                             {
-                                "max_level": 5,
-                                "min_level": 5,
+                                "max_level": 4,
+                                "min_level": 4,
                                 "species": "SPECIES_FOONGUS"
                             },
                             {
-                                "max_level": 5,
-                                "min_level": 5,
+                                "max_level": 4,
+                                "min_level": 4,
                                 "species": "SPECIES_ZIGZAGOON"
                             },
                             {
-                                "max_level": 5,
-                                "min_level": 5,
-                                "species": "SPECIES_ZIGZAGOON"
+                                "max_level": 4,
+                                "min_level": 4,
+                                "species": "SPECIES_FARFETCHD"
                             }
                         ]
                     },

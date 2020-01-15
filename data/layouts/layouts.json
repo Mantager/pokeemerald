@@ -4417,7 +4417,7 @@
             "id": "LAYOUT_JAM_KEY_MAP",
             "name": "JamKeyMap_Layout",
             "primary_tileset": "gTileset_General",
-            "secondary_tileset": "gTileset_Lavaridge",
+            "secondary_tileset": "gTileset_Fortree",
             "width": 40
         },
         {
@@ -4429,6 +4429,16 @@
             "primary_tileset": "gTileset_Building",
             "secondary_tileset": "gTileset_GenericBuilding",
             "width": 10
+        },
+        {
+            "blockdata_filepath": "data/layouts/FarmerField/map.bin",
+            "border_filepath": "data/layouts/FarmerField/border.bin",
+            "height": 38,
+            "id": "LAYOUT_FARMER_FIELD",
+            "name": "FarmerField_Layout",
+            "primary_tileset": "gTileset_General",
+            "secondary_tileset": "gTileset_Fortree",
+            "width": 30
         }
     ],
     "layouts_table_label": "gMapLayouts"

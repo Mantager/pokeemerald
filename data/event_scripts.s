@@ -1120,3 +1120,5 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/JamKeyMap/scripts.inc"
 
 	.include "data/maps/FarmerHut/scripts.inc"
+
+	.include "data/maps/FarmerField/scripts.inc"

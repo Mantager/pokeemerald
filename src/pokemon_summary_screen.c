@@ -1168,16 +1168,16 @@ void ShowPokemonSummaryScreen(u8 mode, void *mons, u8 monIndex, u8 maxMonIndex, 
     case PSS_MODE_NORMAL:
     case PSS_MODE_BOX:
         sMonSummaryScreen->minPageIndex = 0;
-        sMonSummaryScreen->maxPageIndex = 3;
+        sMonSummaryScreen->maxPageIndex = 2;
         break;
     case PSS_MODE_UNK1:
         sMonSummaryScreen->minPageIndex = 0;
-        sMonSummaryScreen->maxPageIndex = 3;
+        sMonSummaryScreen->maxPageIndex = 2;
         sMonSummaryScreen->unk40C8 = TRUE;
         break;
     case PSS_MODE_SELECT_MOVE:
         sMonSummaryScreen->minPageIndex = 2;
-        sMonSummaryScreen->maxPageIndex = 3;
+        sMonSummaryScreen->maxPageIndex = 2;
         sMonSummaryScreen->lockMonFlag = TRUE;
         break;
     }
@@ -2821,7 +2821,7 @@ static void PrintNotEggInfo(void)
     struct Pokemon *mon = &sMonSummaryScreen->currentMon;
     struct PokeSummary *summary = &sMonSummaryScreen->summary;
     u16 dexNum = SpeciesToPokedexNum(summary->species);
-    if (dexNum != 0xFFFF)
+    /*if (dexNum != 0xFFFF)
     {
         StringCopy(gStringVar1, &gText_NumberClear01[0]);
         ConvertIntToDecimalStringN(gStringVar2, dexNum, STR_CONV_MODE_LEADING_ZEROS, 3);
@@ -2839,13 +2839,13 @@ static void PrintNotEggInfo(void)
         PutWindowTilemap(PSS_LABEL_WINDOW_PORTRAIT_DEX_NUMBER);
     }
     else
-    {
+    {*/
         ClearWindowTilemap(PSS_LABEL_WINDOW_PORTRAIT_DEX_NUMBER);
         if (!IsMonShiny(mon))
             SetDexNumberColor(FALSE);
         else
             SetDexNumberColor(TRUE);
-    }
+    //}
     StringCopy(gStringVar1, &gText_LevelSymbol[0]);
     ConvertIntToDecimalStringN(gStringVar2, summary->level, STR_CONV_MODE_LEFT_ALIGN, 3);
     StringAppend(gStringVar1, gStringVar2);
@@ -3099,14 +3099,14 @@ static void PrintInfoPageText(void)
     if (sMonSummaryScreen->summary.isEgg)
     {
         PrintEggOTName();
-        PrintEggOTID();
+        //PrintEggOTID();
         PrintEggState();
         PrintEggMemo();
     }
     else
     {
         PrintMonOTName();
-        PrintMonOTID();
+        //PrintMonOTID();
         PrintMonAbilityName();
         PrintMonAbilityDescription();
         BufferMonTrainerMemo();
@@ -3123,7 +3123,7 @@ static void Task_PrintInfoPage(u8 taskId)
             PrintMonOTName();
             break;
         case 2:
-            PrintMonOTID();
+            //PrintMonOTID();
             break;
         case 3:
             PrintMonAbilityName();
@@ -3154,9 +3154,9 @@ static void PrintMonOTName(void)
         SummaryScreen_PrintTextOnWindow(windowId, gText_OTSlash, 0, 1, 0, 1);
         x = GetStringWidth(1, gText_OTSlash, 0);
         if (sMonSummaryScreen->summary.OTGender == 0)
-            SummaryScreen_PrintTextOnWindow(windowId, sMonSummaryScreen->summary.OTName, x, 1, 0, 5);
+            SummaryScreen_PrintTextOnWindow(windowId, sMonSummaryScreen->summary.OTName, x, 1, 0, 1);
         else
-            SummaryScreen_PrintTextOnWindow(windowId, sMonSummaryScreen->summary.OTName, x, 1, 0, 6);
+            SummaryScreen_PrintTextOnWindow(windowId, sMonSummaryScreen->summary.OTName, x, 1, 0, 1);
     }
 }
 

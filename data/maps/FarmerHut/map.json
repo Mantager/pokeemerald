@@ -11,9 +11,22 @@
     "id": "MAP_FARMER_HUT",
     "layout": "LAYOUT_FARMER_HUT",
     "map_type": "MAP_TYPE_INDOOR",
-    "music": "MUS_AYASII",
+    "music": "MUS_RUNECITY",
     "name": "FarmerHut",
     "object_events": [
+        {
+            "elevation": 3,
+            "flag": "FLAG_SYS_POKEMON_GET",
+            "graphics_id": "EVENT_OBJ_GFX_ITEM_BALL",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_NONE",
+            "script": "FarmerHut_EventScript_DedenneTest",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 3,
+            "y": 4
+        }
     ],
     "region_map_section": "MAPSEC_ROUTE_101",
     "requires_flash": false,

@@ -7,31 +7,24 @@
     ],
     "connections": [
         {
-            "direction": "right",
-            "map": "MAP_FARMER_FIELD",
-            "offset": -4
+            "direction": "left",
+            "map": "MAP_JAM_KEY_MAP",
+            "offset": 4
         }
     ],
     "coord_events": [
     ],
-    "id": "MAP_JAM_KEY_MAP",
-    "layout": "LAYOUT_JAM_KEY_MAP",
+    "id": "MAP_FARMER_FIELD",
+    "layout": "LAYOUT_FARMER_FIELD",
     "map_type": "MAP_TYPE_ROUTE",
-    "music": "MUS_NEXTROAD",
-    "name": "JamKeyMap",
+    "music": "MUS_DAN02",
+    "name": "FarmerField",
     "object_events": [
     ],
     "region_map_section": "MAPSEC_ROUTE_101",
     "requires_flash": false,
     "show_map_name": true,
     "warp_events": [
-        {
-            "dest_map": "MAP_FARMER_HUT",
-            "dest_warp_id": 0,
-            "elevation": 0,
-            "x": 26,
-            "y": 21
-        }
     ],
     "weather": "WEATHER_SUNNY"
 }
