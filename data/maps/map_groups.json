@@ -530,6 +530,9 @@
         "WangyongMarsh",
         "KimyangRoad"
     ],
+    "gMapGroup35": [
+        "ColorRuinsRed_1F"
+    ],
     "gMapGroup4": [
         "LavaridgeTown_HerbShop",
         "LavaridgeTown_Gym_1F",
@@ -629,7 +632,8 @@
         "gMapGroup31",
         "gMapGroup32",
         "gMapGroup33",
-        "gMapGroup34"
+        "gMapGroup34",
+        "gMapGroup35"
     ],
     "layouts_table_label": "gMapLayouts"
 }

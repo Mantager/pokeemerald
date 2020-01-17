@@ -1729,3 +1729,26 @@ gTilesetPalettes_UnionRoom:: @ 8395678
 	.align 2
 gTilesetTiles_UnionRoom:: @ 8395878
 	.incbin "data/tilesets/secondary/union_room/tiles.4bpp.lz"
+	
+	.align 2
+gTilesetTiles_ColorRuinsGeneric::
+	.incbin "data/tilesets/secondary/color_ruins_generic/tiles.4bpp.lz"
+
+	.align 2
+gTilesetPalettes_ColorRuinsGeneric::
+	.incbin "data/tilesets/secondary/color_ruins_generic/palettes/00.gbapal"
+	.incbin "data/tilesets/secondary/color_ruins_generic/palettes/01.gbapal"
+	.incbin "data/tilesets/secondary/color_ruins_generic/palettes/02.gbapal"
+	.incbin "data/tilesets/secondary/color_ruins_generic/palettes/03.gbapal"
+	.incbin "data/tilesets/secondary/color_ruins_generic/palettes/04.gbapal"
+	.incbin "data/tilesets/secondary/color_ruins_generic/palettes/05.gbapal"
+	.incbin "data/tilesets/secondary/color_ruins_generic/palettes/06.gbapal"
+	.incbin "data/tilesets/secondary/color_ruins_generic/palettes/07.gbapal"
+	.incbin "data/tilesets/secondary/color_ruins_generic/palettes/08.gbapal"
+	.incbin "data/tilesets/secondary/color_ruins_generic/palettes/09.gbapal"
+	.incbin "data/tilesets/secondary/color_ruins_generic/palettes/10.gbapal"
+	.incbin "data/tilesets/secondary/color_ruins_generic/palettes/11.gbapal"
+	.incbin "data/tilesets/secondary/color_ruins_generic/palettes/12.gbapal"
+	.incbin "data/tilesets/secondary/color_ruins_generic/palettes/13.gbapal"
+	.incbin "data/tilesets/secondary/color_ruins_generic/palettes/14.gbapal"
+	.incbin "data/tilesets/secondary/color_ruins_generic/palettes/15.gbapal"

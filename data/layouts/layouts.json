@@ -4479,6 +4479,16 @@
             "primary_tileset": "gTileset_General",
             "secondary_tileset": "gTileset_Mossdeep",
             "width": 48
+        },
+        {
+            "blockdata_filepath": "data/layouts/ColorRuinsRed_1F/map.bin",
+            "border_filepath": "data/layouts/ColorRuinsRed_1F/border.bin",
+            "height": 8,
+            "id": "LAYOUT_COLOR_RUINS_RED_1F",
+            "name": "ColorRuinsRed_1F_Layout",
+            "primary_tileset": "gTileset_General",
+            "secondary_tileset": "gTileset_ColorRuinsGeneric",
+            "width": 8
         }
     ],
     "layouts_table_label": "gMapLayouts"

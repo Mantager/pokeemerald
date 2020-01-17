@@ -596,6 +596,9 @@
 #define MAP_WANGYONG_MARSH (5 | (34 << 8))
 #define MAP_KIMYANG_ROAD   (6 | (34 << 8))
 
-#define MAP_GROUPS_COUNT 35
+// Map Group 35
+#define MAP_COLOR_RUINS_RED_1F (0 | (35 << 8))
+
+#define MAP_GROUPS_COUNT 36
 
 #endif // GUARD_CONSTANTS_MAP_GROUPS_H

@@ -1130,3 +1130,5 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/WangyongMarsh/scripts.inc"
 
 	.include "data/maps/KimyangRoad/scripts.inc"
+
+	.include "data/maps/ColorRuinsRed_1F/scripts.inc"

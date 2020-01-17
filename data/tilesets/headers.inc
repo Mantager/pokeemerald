@@ -830,3 +830,14 @@ gTileset_UnionRoom:: @ 83DFDFC
 	.4byte gMetatiles_UnionRoom
 	.4byte gMetatileAttributes_UnionRoom
 	.4byte NULL @ animation callback
+
+.align 2
+gTileset_ColorRuinsGeneric:: @ 83DFDE4
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary tileset
+	.2byte 0 @ padding
+	.4byte gTilesetTiles_ColorRuinsGeneric
+	.4byte gTilesetPalettes_ColorRuinsGeneric
+	.4byte gMetatiles_ColorRuinsGeneric
+	.4byte gMetatileAttributes_ColorRuinsGeneric
+	.4byte NULL @ animation callback
