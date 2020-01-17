@@ -524,7 +524,11 @@
     "gMapGroup34": [
         "JamKeyMap",
         "FarmerHut",
-        "FarmerField"
+        "FarmerField",
+        "ShendownPath",
+        "ChoVillage",
+        "WangyongMarsh",
+        "KimyangRoad"
     ],
     "gMapGroup4": [
         "LavaridgeTown_HerbShop",

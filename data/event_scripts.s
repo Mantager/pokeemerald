@@ -1122,3 +1122,11 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/FarmerHut/scripts.inc"
 
 	.include "data/maps/FarmerField/scripts.inc"
+
+	.include "data/maps/ShendownPath/scripts.inc"
+
+	.include "data/maps/ChoVillage/scripts.inc"
+
+	.include "data/maps/WangyongMarsh/scripts.inc"
+
+	.include "data/maps/KimyangRoad/scripts.inc"

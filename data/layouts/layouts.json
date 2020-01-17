@@ -4439,6 +4439,46 @@
             "primary_tileset": "gTileset_General",
             "secondary_tileset": "gTileset_Fortree",
             "width": 30
+        },
+        {
+            "blockdata_filepath": "data/layouts/ShendownPath/map.bin",
+            "border_filepath": "data/layouts/ShendownPath/border.bin",
+            "height": 32,
+            "id": "LAYOUT_SHENDOWN_PATH",
+            "name": "ShendownPath_Layout",
+            "primary_tileset": "gTileset_General",
+            "secondary_tileset": "gTileset_Fortree",
+            "width": 72
+        },
+        {
+            "blockdata_filepath": "data/layouts/ChoVillage/map.bin",
+            "border_filepath": "data/layouts/ChoVillage/border.bin",
+            "height": 34,
+            "id": "LAYOUT_CHO_VILLAGE",
+            "name": "ChoVillage_Layout",
+            "primary_tileset": "gTileset_General",
+            "secondary_tileset": "gTileset_Mossdeep",
+            "width": 40
+        },
+        {
+            "blockdata_filepath": "data/layouts/WangyongMarsh/map.bin",
+            "border_filepath": "data/layouts/WangyongMarsh/border.bin",
+            "height": 52,
+            "id": "LAYOUT_WANGYONG_MARSH",
+            "name": "WangyongMarsh_Layout",
+            "primary_tileset": "gTileset_General",
+            "secondary_tileset": "gTileset_Mossdeep",
+            "width": 36
+        },
+        {
+            "blockdata_filepath": "data/layouts/KimyangRoad/map.bin",
+            "border_filepath": "data/layouts/KimyangRoad/border.bin",
+            "height": 27,
+            "id": "LAYOUT_KIMYANG_ROAD",
+            "name": "KimyangRoad_Layout",
+            "primary_tileset": "gTileset_General",
+            "secondary_tileset": "gTileset_Mossdeep",
+            "width": 48
         }
     ],
     "layouts_table_label": "gMapLayouts"

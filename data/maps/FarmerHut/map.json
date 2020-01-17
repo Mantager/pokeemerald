@@ -28,7 +28,7 @@
             "y": 4
         }
     ],
-    "region_map_section": "MAPSEC_ROUTE_101",
+    "region_map_section": "MAPSEC_PULP_BYROAD",
     "requires_flash": false,
     "show_map_name": false,
     "warp_events": [

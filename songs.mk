@@ -1265,3 +1265,6 @@ $(MID_SUBDIR)/se_z_search.s: %.s: %.mid
 
 $(MID_SUBDIR)/mus_ga_monster.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G117 -V090
+
+$(MID_SUBDIR)/mus_ga_cho.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G188 -V128

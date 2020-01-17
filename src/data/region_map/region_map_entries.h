@@ -198,6 +198,13 @@ static const u8 sMapName_MarineCave[] = _("MARINE CAVE");
 static const u8 sMapName_TerraCave[] = _("TERRA CAVE");
 static const u8 sMapName_DesertUnderpass[] = _("DESERT UNDERPASS");
 static const u8 sMapName_TrainerHill[] = _("TRAINER HILL");
+static const u8 sMapName_PulpByroad[] = _("Pulp Byroad");
+static const u8 sMapName_PulpField[] = _("Pulp Field");
+static const u8 sMapName_ShendownPath[] = _("Shendown Path");
+static const u8 sMapName_ChoVillage[] = _("Cho Village");
+static const u8 sMapName_WangyongMarsh[] = _("Wangyong Marsh");
+static const u8 sMapName_KimyangRoad[] = _("Kimyang Road");
+static const u8 sMapName_ColorRuins[] = _("Color Ruins");
 
 const struct RegionMapLocation gRegionMapEntries[] = {
     [MAPSEC_LITTLEROOT_TOWN]           = { 4, 11, 1, 1, sMapName_LittlerootTown},
@@ -412,7 +419,17 @@ const struct RegionMapLocation gRegionMapEntries[] = {
     [MAPSEC_DESERT_UNDERPASS]          = { 2,  0, 1, 1, sMapName_DesertUnderpass},
     [MAPSEC_ALTERING_CAVE_2]           = { 6,  8, 1, 1, sMapName_AlteringCave},
     [MAPSEC_NAVEL_ROCK2]               = { 0,  0, 1, 1, sMapName_NavelRock},
-    [MAPSEC_TRAINER_HILL]              = { 8,  4, 1, 1, sMapName_TrainerHill}
+    [MAPSEC_TRAINER_HILL]              = { 8,  4, 1, 1, sMapName_TrainerHill},
+    [MAPSEC_PULP_BYROAD]               = { 0,  0, 1, 1, sMapName_PulpByroad},
+    [MAPSEC_PULP_FIELD]                = { 0,  0, 1, 1, sMapName_PulpField},
+    [MAPSEC_SHENDOWN_PATH]             = { 0,  0, 1, 1, sMapName_ShendownPath},
+    [MAPSEC_CHO_VILLAGE]               = { 0,  0, 1, 1, sMapName_ChoVillage},
+    [MAPSEC_WANGYONG_MARSH]            = { 0,  0, 1, 1, sMapName_WangyongMarsh},
+    [MAPSEC_KIMYANG_ROAD]              = { 0,  0, 1, 1, sMapName_KimyangRoad},
+    [MAPSEC_COLOR_RUINS_RED]           = { 0,  0, 1, 1, sMapName_ColorRuins},
+    [MAPSEC_COLOR_RUINS_GREEN]         = { 0,  0, 1, 1, sMapName_ColorRuins},
+    [MAPSEC_COLOR_RUINS_BLUE]          = { 0,  0, 1, 1, sMapName_ColorRuins},
+    [MAPSEC_COLOR_RUINS_YELLOW]        = { 0,  0, 1, 1, sMapName_ColorRuins}
 };
 
 #endif //GUARD_DATA_REGION_MAP_REGION_MAP_ENTRIES_H

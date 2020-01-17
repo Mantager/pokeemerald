@@ -1978,67 +1978,67 @@
                 {
                     "base_label": "gJamKeyMap0",
                     "land_mons": {
-                        "encounter_rate": 20,
+                        "encounter_rate": 10,
                         "mons": [
                             {
-                                "max_level": 3,
-                                "min_level": 3,
+                                "max_level": 7,
+                                "min_level": 7,
                                 "species": "SPECIES_ZIGZAGOON"
                             },
                             {
-                                "max_level": 3,
-                                "min_level": 3,
+                                "max_level": 8,
+                                "min_level": 8,
                                 "species": "SPECIES_ODDISH"
                             },
                             {
-                                "max_level": 4,
-                                "min_level": 4,
+                                "max_level": 7,
+                                "min_level": 7,
                                 "species": "SPECIES_CHERUBI"
                             },
                             {
-                                "max_level": 4,
-                                "min_level": 4,
+                                "max_level": 7,
+                                "min_level": 7,
                                 "species": "SPECIES_ZIGZAGOON"
                             },
                             {
-                                "max_level": 4,
-                                "min_level": 4,
+                                "max_level": 7,
+                                "min_level": 7,
                                 "species": "SPECIES_CHERUBI"
                             },
                             {
-                                "max_level": 3,
-                                "min_level": 3,
+                                "max_level": 8,
+                                "min_level": 8,
                                 "species": "SPECIES_ODDISH"
                             },
                             {
-                                "max_level": 4,
-                                "min_level": 4,
+                                "max_level": 7,
+                                "min_level": 7,
                                 "species": "SPECIES_ZIGZAGOON"
                             },
                             {
-                                "max_level": 4,
-                                "min_level": 4,
+                                "max_level": 7,
+                                "min_level": 7,
                                 "species": "SPECIES_PANCHAM"
                             },
                             {
-                                "max_level": 3,
-                                "min_level": 3,
+                                "max_level": 8,
+                                "min_level": 8,
                                 "species": "SPECIES_FOONGUS"
                             },
                             {
-                                "max_level": 4,
-                                "min_level": 4,
+                                "max_level": 8,
+                                "min_level": 8,
                                 "species": "SPECIES_FOONGUS"
                             },
                             {
-                                "max_level": 4,
-                                "min_level": 4,
+                                "max_level": 8,
+                                "min_level": 8,
                                 "species": "SPECIES_ZIGZAGOON"
                             },
                             {
-                                "max_level": 4,
-                                "min_level": 4,
-                                "species": "SPECIES_FARFETCHD"
+                                "max_level": 8,
+                                "min_level": 8,
+                                "species": "SPECIES_PANCHAM"
                             }
                         ]
                     },
@@ -10226,6 +10226,75 @@
                         ]
                     },
                     "map": "MAP_SEAFLOOR_CAVERN_ROOM8"
+                },
+                {
+                    "base_label": "gShendownPath0",
+                    "land_mons": {
+                        "encounter_rate": 12,
+                        "mons": [
+                            {
+                                "max_level": 7,
+                                "min_level": 7,
+                                "species": "SPECIES_ODDISH"
+                            },
+                            {
+                                "max_level": 7,
+                                "min_level": 7,
+                                "species": "SPECIES_ZIGZAGOON"
+                            },
+                            {
+                                "max_level": 8,
+                                "min_level": 8,
+                                "species": "SPECIES_SURSKIT"
+                            },
+                            {
+                                "max_level": 7,
+                                "min_level": 7,
+                                "species": "SPECIES_PANCHAM"
+                            },
+                            {
+                                "max_level": 7,
+                                "min_level": 7,
+                                "species": "SPECIES_ODDISH"
+                            },
+                            {
+                                "max_level": 8,
+                                "min_level": 8,
+                                "species": "SPECIES_TYMPOLE"
+                            },
+                            {
+                                "max_level": 8,
+                                "min_level": 8,
+                                "species": "SPECIES_FOONGUS"
+                            },
+                            {
+                                "max_level": 7,
+                                "min_level": 7,
+                                "species": "SPECIES_PANCHAM"
+                            },
+                            {
+                                "max_level": 8,
+                                "min_level": 8,
+                                "species": "SPECIES_SURSKIT"
+                            },
+                            {
+                                "max_level": 8,
+                                "min_level": 8,
+                                "species": "SPECIES_FARFETCHD"
+                            },
+                            {
+                                "max_level": 9,
+                                "min_level": 9,
+                                "species": "SPECIES_SURSKIT"
+                            },
+                            {
+                                "max_level": 9,
+                                "min_level": 9,
+                                "species": "SPECIES_FARFETCHD"
+                            }
+                        ]
+                    },
+                    "map": "MAP_SHENDOWN_PATH"
                 },
                 {
                     "base_label": "gShoalCave_LowTideEntranceRoom",

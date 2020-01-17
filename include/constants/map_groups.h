@@ -588,9 +588,13 @@
 #define MAP_ROUTE124_DIVING_TREASURE_HUNTERS_HOUSE (0 | (33 << 8))
 
 // Map Group 34
-#define MAP_JAM_KEY_MAP  (0 | (34 << 8))
-#define MAP_FARMER_HUT   (1 | (34 << 8))
-#define MAP_FARMER_FIELD (2 | (34 << 8))
+#define MAP_JAM_KEY_MAP    (0 | (34 << 8))
+#define MAP_FARMER_HUT     (1 | (34 << 8))
+#define MAP_FARMER_FIELD   (2 | (34 << 8))
+#define MAP_SHENDOWN_PATH  (3 | (34 << 8))
+#define MAP_CHO_VILLAGE    (4 | (34 << 8))
+#define MAP_WANGYONG_MARSH (5 | (34 << 8))
+#define MAP_KIMYANG_ROAD   (6 | (34 << 8))
 
 #define MAP_GROUPS_COUNT 35
 

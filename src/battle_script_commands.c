@@ -11426,6 +11426,8 @@ static void Cmd_handleballthrow(void)
             }
         }
 
+        odds = 255; // guaranteed catches as balls are limited
+
         if (odds > 254) // mon caught
         {
             BtlController_EmitBallThrowAnim(0, BALL_3_SHAKES_SUCCESS);

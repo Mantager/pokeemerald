@@ -612,6 +612,7 @@ gSongTable:: @ 86B49F0
 	song ph_nurse_held, 2, 2
 	song ph_nurse_solo, 2, 2
 	song mus_ga_monster, 0, 0       @ Monster House (GAIDEN1)
+	song mus_ga_cho, 0, 0           @ Cho Village (GAO_SHAN_LIU_SHUI)
 
 	.align 2
 dummy_song_header: @ 86B5D00

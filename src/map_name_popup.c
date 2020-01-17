@@ -25,6 +25,10 @@ enum MapPopUp_Themes
     MAPPOPUP_THEME_BRICK,
     MAPPOPUP_THEME_UNDERWATER,
     MAPPOPUP_THEME_STONE2,
+    MAPPOPUP_THEME_STONE_RED,
+    MAPPOPUP_THEME_STONE_GREEN,
+    MAPPOPUP_THEME_STONE_BLUE,
+    MAPPOPUP_THEME_STONE_YELLOW,
 };
 
 // static functions
@@ -44,6 +48,10 @@ static const u8 gMapPopUp_Table[][960] =
     INCBIN_U8("graphics/interface/map_popup/brick.4bpp"),
     INCBIN_U8("graphics/interface/map_popup/underwater.4bpp"),
     INCBIN_U8("graphics/interface/map_popup/stone2.4bpp"),
+    INCBIN_U8("graphics/interface/map_popup/stone_red.4bpp"),
+    INCBIN_U8("graphics/interface/map_popup/stone_green.4bpp"),
+    INCBIN_U8("graphics/interface/map_popup/stone_blue.4bpp"),
+    INCBIN_U8("graphics/interface/map_popup/stone_yellow.4bpp"),
 };
 
 static const u8 gMapPopUp_Outline_Table[][960] =
@@ -54,6 +62,10 @@ static const u8 gMapPopUp_Outline_Table[][960] =
     INCBIN_U8("graphics/interface/map_popup/brick_outline.4bpp"),
     INCBIN_U8("graphics/interface/map_popup/underwater_outline.4bpp"),
     INCBIN_U8("graphics/interface/map_popup/stone2_outline.4bpp"),
+    INCBIN_U8("graphics/interface/map_popup/stone_red_outline.4bpp"),
+    INCBIN_U8("graphics/interface/map_popup/stone_green_outline.4bpp"),
+    INCBIN_U8("graphics/interface/map_popup/stone_blue_outline.4bpp"),
+    INCBIN_U8("graphics/interface/map_popup/stone_yellow_outline.4bpp"),
 };
 
 static const u16 gMapPopUp_Palette_Table[][16] =
@@ -64,6 +76,10 @@ static const u16 gMapPopUp_Palette_Table[][16] =
     INCBIN_U16("graphics/interface/map_popup/brick_outline.gbapal"),
     INCBIN_U16("graphics/interface/map_popup/underwater_outline.gbapal"),
     INCBIN_U16("graphics/interface/map_popup/stone2_outline.gbapal"),
+    INCBIN_U16("graphics/interface/map_popup/stone_red_outline.gbapal"),
+    INCBIN_U16("graphics/interface/map_popup/stone_green_outline.gbapal"),
+    INCBIN_U16("graphics/interface/map_popup/stone_blue_outline.gbapal"),
+    INCBIN_U16("graphics/interface/map_popup/stone_yellow_outline.gbapal"),
 };
 
 static const u16 gUnknown_0857F444[16] = INCBIN_U16("graphics/interface/map_popup/857F444.gbapal");
@@ -173,7 +189,17 @@ static const u8 gRegionMapSectionId_To_PopUpThemeIdMapping[] =
     [MAPSEC_DESERT_UNDERPASS - KANTO_MAPSEC_COUNT] = MAPPOPUP_THEME_STONE,
     [MAPSEC_ALTERING_CAVE_2 - KANTO_MAPSEC_COUNT] = MAPPOPUP_THEME_STONE,
     [MAPSEC_NAVEL_ROCK2 - KANTO_MAPSEC_COUNT] = MAPPOPUP_THEME_STONE,
-    [MAPSEC_TRAINER_HILL - KANTO_MAPSEC_COUNT] = MAPPOPUP_THEME_MARBLE
+    [MAPSEC_TRAINER_HILL - KANTO_MAPSEC_COUNT] = MAPPOPUP_THEME_MARBLE,
+    [MAPSEC_PULP_BYROAD - KANTO_MAPSEC_COUNT] = MAPPOPUP_THEME_WOOD,
+    [MAPSEC_PULP_FIELD - KANTO_MAPSEC_COUNT] = MAPPOPUP_THEME_WOOD,
+    [MAPSEC_SHENDOWN_PATH - KANTO_MAPSEC_COUNT] = MAPPOPUP_THEME_UNDERWATER,
+    [MAPSEC_CHO_VILLAGE - KANTO_MAPSEC_COUNT] = MAPPOPUP_THEME_WOOD,
+    [MAPSEC_WANGYONG_MARSH - KANTO_MAPSEC_COUNT] = MAPPOPUP_THEME_UNDERWATER,
+    [MAPSEC_KIMYANG_ROAD - KANTO_MAPSEC_COUNT] = MAPPOPUP_THEME_UNDERWATER,
+    [MAPSEC_COLOR_RUINS_RED - KANTO_MAPSEC_COUNT] = MAPPOPUP_THEME_STONE_RED,
+    [MAPSEC_COLOR_RUINS_GREEN - KANTO_MAPSEC_COUNT] = MAPPOPUP_THEME_STONE_GREEN,
+    [MAPSEC_COLOR_RUINS_BLUE - KANTO_MAPSEC_COUNT] = MAPPOPUP_THEME_STONE_BLUE,
+    [MAPSEC_COLOR_RUINS_YELLOW - KANTO_MAPSEC_COUNT] = MAPPOPUP_THEME_STONE_YELLOW,
 };
 
 static const u8 gText_PyramidFloor1[] = _("PYRAMID FLOOR 1");

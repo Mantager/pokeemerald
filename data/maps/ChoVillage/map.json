@@ -1,0 +1,35 @@
+{
+    "allow_bike": true,
+    "allow_escape_rope": false,
+    "allow_running": true,
+    "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+    "bg_events": [
+    ],
+    "connections": [
+        {
+            "direction": "right",
+            "map": "MAP_SHENDOWN_PATH",
+            "offset": -6
+        },
+        {
+            "direction": "up",
+            "map": "MAP_WANGYONG_MARSH",
+            "offset": 0
+        }
+    ],
+    "coord_events": [
+    ],
+    "id": "MAP_CHO_VILLAGE",
+    "layout": "LAYOUT_CHO_VILLAGE",
+    "map_type": "MAP_TYPE_TOWN",
+    "music": "MUS_GA_CHO",
+    "name": "ChoVillage",
+    "object_events": [
+    ],
+    "region_map_section": "MAPSEC_CHO_VILLAGE",
+    "requires_flash": false,
+    "show_map_name": true,
+    "warp_events": [
+    ],
+    "weather": "WEATHER_SUNNY"
+}

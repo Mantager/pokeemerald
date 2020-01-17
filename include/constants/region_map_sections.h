@@ -214,8 +214,18 @@
 #define MAPSEC_ALTERING_CAVE_2              0xD2
 #define MAPSEC_NAVEL_ROCK2                  0xD3
 #define MAPSEC_TRAINER_HILL                 0xD4
-#define MAPSEC_NONE                         0xD5
+#define MAPSEC_PULP_BYROAD                  0xD5
+#define MAPSEC_PULP_FIELD                   0xD6
+#define MAPSEC_SHENDOWN_PATH                0xD7
+#define MAPSEC_CHO_VILLAGE                  0xD8
+#define MAPSEC_WANGYONG_MARSH               0xD9
+#define MAPSEC_KIMYANG_ROAD                 0xDA
+#define MAPSEC_COLOR_RUINS_RED              0xDB
+#define MAPSEC_COLOR_RUINS_GREEN            0xDC
+#define MAPSEC_COLOR_RUINS_BLUE             0xDD
+#define MAPSEC_COLOR_RUINS_YELLOW           0xDE
 
+#define MAPSEC_NONE                         0xFC
 #define METLOC_SPECIAL_EGG                  0xFD
 #define METLOC_IN_GAME_TRADE                0xFE
 #define METLOC_FATEFUL_ENCOUNTER            0xFF

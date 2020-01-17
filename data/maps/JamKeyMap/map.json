@@ -10,6 +10,11 @@
             "direction": "right",
             "map": "MAP_FARMER_FIELD",
             "offset": -4
+        },
+        {
+            "direction": "left",
+            "map": "MAP_SHENDOWN_PATH",
+            "offset": 0
         }
     ],
     "coord_events": [
@@ -20,8 +25,21 @@
     "music": "MUS_NEXTROAD",
     "name": "JamKeyMap",
     "object_events": [
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "EVENT_OBJ_GFX_TRUCK",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "script": "NULL",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 13,
+            "y": 21
+        }
     ],
-    "region_map_section": "MAPSEC_ROUTE_101",
+    "region_map_section": "MAPSEC_PULP_BYROAD",
     "requires_flash": false,
     "show_map_name": true,
     "warp_events": [
