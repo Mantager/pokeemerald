@@ -422,10 +422,10 @@
 #define MAP_SECRET_BASE_YELLOW_CAVE4        (21 | (25 << 8))
 #define MAP_SECRET_BASE_TREE4               (22 | (25 << 8))
 #define MAP_SECRET_BASE_SHRUB4              (23 | (25 << 8))
-#define MAP_BATTLE_COLOSSEUM_2P             (24 | (25 << 8))
+#define MAP_BATTLE_COLOSSEUM2P              (24 | (25 << 8))
 #define MAP_TRADE_CENTER                    (25 | (25 << 8))
 #define MAP_RECORD_CORNER                   (26 | (25 << 8))
-#define MAP_BATTLE_COLOSSEUM_4P             (27 | (25 << 8))
+#define MAP_BATTLE_COLOSSEUM4P              (27 | (25 << 8))
 #define MAP_CONTEST_HALL                    (28 | (25 << 8))
 #define MAP_UNKNOWN_LINK_CONTEST_ROOM_25_29 (29 | (25 << 8))
 #define MAP_UNKNOWN_LINK_CONTEST_ROOM_25_30 (30 | (25 << 8))
@@ -589,16 +589,40 @@
 
 // Map Group 34
 #define MAP_JAM_KEY_MAP    (0 | (34 << 8))
-#define MAP_FARMER_HUT     (1 | (34 << 8))
-#define MAP_FARMER_FIELD   (2 | (34 << 8))
-#define MAP_SHENDOWN_PATH  (3 | (34 << 8))
-#define MAP_CHO_VILLAGE    (4 | (34 << 8))
-#define MAP_WANGYONG_MARSH (5 | (34 << 8))
-#define MAP_KIMYANG_ROAD   (6 | (34 << 8))
+#define MAP_FARMER_FIELD   (1 | (34 << 8))
+#define MAP_SHENDOWN_PATH  (2 | (34 << 8))
+#define MAP_CHO_VILLAGE    (3 | (34 << 8))
+#define MAP_WANGYONG_MARSH (4 | (34 << 8))
+#define MAP_KIMYANG_ROAD   (5 | (34 << 8))
+#define MAP_ORACLE_HILL    (6 | (34 << 8))
 
 // Map Group 35
-#define MAP_COLOR_RUINS_RED_1F (0 | (35 << 8))
+#define MAP_COLOR_RUINS_RED_1F     (0 | (35 << 8))
+#define MAP_TIYU_FOREST            (1 | (35 << 8))
+#define MAP_COLOR_RUINS_YELLOW_1F  (2 | (35 << 8))
+#define MAP_COLOR_RUINS_GREEN_1F   (3 | (35 << 8))
+#define MAP_COLOR_RUINS_BLUE_1F    (4 | (35 << 8))
+#define MAP_COLOR_RUINS_RED_B1F    (5 | (35 << 8))
+#define MAP_COLOR_RUINS_YELLOW_B1F (6 | (35 << 8))
+#define MAP_COLOR_RUINS_GREEN_B1F  (7 | (35 << 8))
+#define MAP_COLOR_RUINS_BLUE_B1F   (8 | (35 << 8))
+#define MAP_DARK_CITY_ENTRANCE     (9 | (35 << 8))
+#define MAP_DARK_CITY_MAIN         (10 | (35 << 8))
+#define MAP_DARK_RUINS             (11 | (35 << 8))
+#define MAP_LINKING_TUNNEL         (12 | (35 << 8))
 
-#define MAP_GROUPS_COUNT 36
+// Map Group 36
+#define MAP_FARMER_HUT (0 | (36 << 8))
+
+// Map Group 37
+#define MAP_CHO_VILLAGE_HOUSE1 (0 | (37 << 8))
+#define MAP_CHO_VILLAGE_HOUSE2 (1 | (37 << 8))
+#define MAP_CHO_VILLAGE_HOUSE3 (2 | (37 << 8))
+#define MAP_CHO_VILLAGE_HOUSE4 (3 | (37 << 8))
+#define MAP_CHO_VILLAGE_HOUSE5 (4 | (37 << 8))
+
+// Map Group 38
+
+#define MAP_GROUPS_COUNT 39
 
 #endif // GUARD_CONSTANTS_MAP_GROUPS_H

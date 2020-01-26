@@ -523,15 +523,39 @@
     ],
     "gMapGroup34": [
         "JamKeyMap",
-        "FarmerHut",
         "FarmerField",
         "ShendownPath",
         "ChoVillage",
         "WangyongMarsh",
-        "KimyangRoad"
+        "KimyangRoad",
+        "OracleHill"
     ],
     "gMapGroup35": [
-        "ColorRuinsRed_1F"
+        "ColorRuinsRed_1F",
+        "TiyuForest",
+        "ColorRuinsYellow_1F",
+        "ColorRuinsGreen_1F",
+        "ColorRuinsBlue_1F",
+        "ColorRuinsRed_B1F",
+        "ColorRuinsYellow_B1F",
+        "ColorRuinsGreen_B1F",
+        "ColorRuinsBlue_B1F",
+        "DarkCityEntrance",
+        "DarkCityMain",
+        "DarkRuins",
+        "LinkingTunnel"
+    ],
+    "gMapGroup36": [
+        "FarmerHut"
+    ],
+    "gMapGroup37": [
+        "ChoVillage_House1",
+        "ChoVillage_House2",
+        "ChoVillage_House3",
+        "ChoVillage_House4",
+        "ChoVillage_House5"
+    ],
+    "gMapGroup38": [
     ],
     "gMapGroup4": [
         "LavaridgeTown_HerbShop",
@@ -633,7 +657,10 @@
         "gMapGroup32",
         "gMapGroup33",
         "gMapGroup34",
-        "gMapGroup35"
+        "gMapGroup35",
+        "gMapGroup36",
+        "gMapGroup37",
+        "gMapGroup38"
     ],
     "layouts_table_label": "gMapLayouts"
 }

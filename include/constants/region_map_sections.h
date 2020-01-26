@@ -224,6 +224,11 @@
 #define MAPSEC_COLOR_RUINS_GREEN            0xDC
 #define MAPSEC_COLOR_RUINS_BLUE             0xDD
 #define MAPSEC_COLOR_RUINS_YELLOW           0xDE
+#define MAPSEC_ORACLE_HILL                  0xDF
+#define MAPSEC_LINKING_TUNNEL               0xE0
+#define MAPSEC_TIYU_FOREST                  0xE1
+#define MAPSEC_DARK_CITY                    0xE2
+#define MAPSEC_DARK_RUINS                   0xE3
 
 #define MAPSEC_NONE                         0xFC
 #define METLOC_SPECIAL_EGG                  0xFD

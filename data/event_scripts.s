@@ -1132,3 +1132,39 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/KimyangRoad/scripts.inc"
 
 	.include "data/maps/ColorRuinsRed_1F/scripts.inc"
+
+	.include "data/maps/OracleHill/scripts.inc"
+
+	.include "data/maps/TiyuForest/scripts.inc"
+
+	.include "data/maps/ColorRuinsYellow_1F/scripts.inc"
+
+	.include "data/maps/ColorRuinsGreen_1F/scripts.inc"
+
+	.include "data/maps/ColorRuinsBlue_1F/scripts.inc"
+
+	.include "data/maps/ColorRuinsRed_B1F/scripts.inc"
+
+	.include "data/maps/ColorRuinsYellow_B1F/scripts.inc"
+
+	.include "data/maps/ColorRuinsGreen_B1F/scripts.inc"
+
+	.include "data/maps/ColorRuinsBlue_B1F/scripts.inc"
+
+	.include "data/maps/DarkCityEntrance/scripts.inc"
+
+	.include "data/maps/DarkCityMain/scripts.inc"
+
+	.include "data/maps/DarkRuins/scripts.inc"
+
+	.include "data/maps/LinkingTunnel/scripts.inc"
+
+	.include "data/maps/ChoVillage_House1/scripts.inc"
+
+	.include "data/maps/ChoVillage_House2/scripts.inc"
+
+	.include "data/maps/ChoVillage_House3/scripts.inc"
+
+	.include "data/maps/ChoVillage_House4/scripts.inc"
+
+	.include "data/maps/ChoVillage_House5/scripts.inc"

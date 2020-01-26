@@ -205,6 +205,11 @@ static const u8 sMapName_ChoVillage[] = _("Cho Village");
 static const u8 sMapName_WangyongMarsh[] = _("Wangyong Marsh");
 static const u8 sMapName_KimyangRoad[] = _("Kimyang Road");
 static const u8 sMapName_ColorRuins[] = _("Color Ruins");
+static const u8 sMapName_OracleHill[] = _("Oracle Hill");
+static const u8 sMapName_LinkingTunnel[] = _("Linking Tunnel");
+static const u8 sMapName_TiyuForest[] = _("Tiyu Forest");
+static const u8 sMapName_DarkCity[] = _("Dark City");
+static const u8 sMapName_DarkRuins[] = _("Dark Ruins");
 
 const struct RegionMapLocation gRegionMapEntries[] = {
     [MAPSEC_LITTLEROOT_TOWN]           = { 4, 11, 1, 1, sMapName_LittlerootTown},
@@ -429,7 +434,12 @@ const struct RegionMapLocation gRegionMapEntries[] = {
     [MAPSEC_COLOR_RUINS_RED]           = { 0,  0, 1, 1, sMapName_ColorRuins},
     [MAPSEC_COLOR_RUINS_GREEN]         = { 0,  0, 1, 1, sMapName_ColorRuins},
     [MAPSEC_COLOR_RUINS_BLUE]          = { 0,  0, 1, 1, sMapName_ColorRuins},
-    [MAPSEC_COLOR_RUINS_YELLOW]        = { 0,  0, 1, 1, sMapName_ColorRuins}
+    [MAPSEC_COLOR_RUINS_YELLOW]        = { 0,  0, 1, 1, sMapName_ColorRuins},
+    [MAPSEC_ORACLE_HILL]               = { 0,  0, 1, 1, sMapName_OracleHill},
+    [MAPSEC_LINKING_TUNNEL]            = { 0,  0, 1, 1, sMapName_LinkingTunnel},
+    [MAPSEC_TIYU_FOREST]               = { 0,  0, 1, 1, sMapName_TiyuForest},
+    [MAPSEC_DARK_CITY]                 = { 0,  0, 1, 1, sMapName_DarkCity},
+    [MAPSEC_DARK_RUINS]                = { 0,  0, 1, 1, sMapName_DarkRuins}
 };
 
 #endif //GUARD_DATA_REGION_MAP_REGION_MAP_ENTRIES_H

@@ -1,0 +1,38 @@
+{
+    "allow_bike": true,
+    "allow_escape_rope": false,
+    "allow_running": true,
+    "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+    "bg_events": [
+    ],
+    "connections": null,
+    "coord_events": [
+    ],
+    "id": "MAP_TIYU_FOREST",
+    "layout": "LAYOUT_TIYU_FOREST",
+    "map_type": "MAP_TYPE_ROUTE",
+    "music": "MUS_DAN02",
+    "name": "TiyuForest",
+    "object_events": [
+    ],
+    "region_map_section": "MAPSEC_TIYU_FOREST",
+    "requires_flash": false,
+    "show_map_name": true,
+    "warp_events": [
+        {
+            "dest_map": "MAP_LINKING_TUNNEL",
+            "dest_warp_id": 1,
+            "elevation": 0,
+            "x": 14,
+            "y": 60
+        },
+        {
+            "dest_map": "MAP_COLOR_RUINS_GREEN_1F",
+            "dest_warp_id": 0,
+            "elevation": 0,
+            "x": 24,
+            "y": 8
+        }
+    ],
+    "weather": "WEATHER_SUNNY"
+}

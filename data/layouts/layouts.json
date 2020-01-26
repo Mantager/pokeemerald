@@ -4483,12 +4483,192 @@
         {
             "blockdata_filepath": "data/layouts/ColorRuinsRed_1F/map.bin",
             "border_filepath": "data/layouts/ColorRuinsRed_1F/border.bin",
-            "height": 8,
+            "height": 20,
             "id": "LAYOUT_COLOR_RUINS_RED_1F",
             "name": "ColorRuinsRed_1F_Layout",
             "primary_tileset": "gTileset_General",
             "secondary_tileset": "gTileset_ColorRuinsGeneric",
-            "width": 8
+            "width": 16
+        },
+        {
+            "blockdata_filepath": "data/layouts/OracleHill/map.bin",
+            "border_filepath": "data/layouts/OracleHill/border.bin",
+            "height": 24,
+            "id": "LAYOUT_ORACLE_HILL",
+            "name": "OracleHill_Layout",
+            "primary_tileset": "gTileset_General",
+            "secondary_tileset": "gTileset_Mossdeep",
+            "width": 28
+        },
+        {
+            "blockdata_filepath": "data/layouts/TiyuForest/map.bin",
+            "border_filepath": "data/layouts/TiyuForest/border.bin",
+            "height": 66,
+            "id": "LAYOUT_TIYU_FOREST",
+            "name": "TiyuForest_Layout",
+            "primary_tileset": "gTileset_General",
+            "secondary_tileset": "gTileset_Rustboro",
+            "width": 34
+        },
+        {
+            "blockdata_filepath": "data/layouts/ColorRuinsYellow_1F/map.bin",
+            "border_filepath": "data/layouts/ColorRuinsYellow_1F/border.bin",
+            "height": 20,
+            "id": "LAYOUT_COLOR_RUINS_YELLOW_1F",
+            "name": "ColorRuinsYellow_1F_Layout",
+            "primary_tileset": "gTileset_General",
+            "secondary_tileset": "gTileset_ColorRuinsGeneric",
+            "width": 16
+        },
+        {
+            "blockdata_filepath": "data/layouts/ColorRuinsGreen_1F/map.bin",
+            "border_filepath": "data/layouts/ColorRuinsGreen_1F/border.bin",
+            "height": 20,
+            "id": "LAYOUT_COLOR_RUINS_GREEN_1F",
+            "name": "ColorRuinsGreen_1F_Layout",
+            "primary_tileset": "gTileset_General",
+            "secondary_tileset": "gTileset_ColorRuinsGeneric",
+            "width": 16
+        },
+        {
+            "blockdata_filepath": "data/layouts/ColorRuinsBlue_1F/map.bin",
+            "border_filepath": "data/layouts/ColorRuinsBlue_1F/border.bin",
+            "height": 20,
+            "id": "LAYOUT_COLOR_RUINS_BLUE_1F",
+            "name": "ColorRuinsBlue_1F_Layout",
+            "primary_tileset": "gTileset_General",
+            "secondary_tileset": "gTileset_ColorRuinsGeneric",
+            "width": 16
+        },
+        {
+            "blockdata_filepath": "data/layouts/ColorRuinsRed_B1F/map.bin",
+            "border_filepath": "data/layouts/ColorRuinsRed_B1F/border.bin",
+            "height": 40,
+            "id": "LAYOUT_COLOR_RUINS_RED_B1F",
+            "name": "ColorRuinsRed_B1F_Layout",
+            "primary_tileset": "gTileset_General",
+            "secondary_tileset": "gTileset_Cave",
+            "width": 36
+        },
+        {
+            "blockdata_filepath": "data/layouts/ColorRuinsYellow_B1F/map.bin",
+            "border_filepath": "data/layouts/ColorRuinsYellow_B1F/border.bin",
+            "height": 40,
+            "id": "LAYOUT_COLOR_RUINS_YELLOW_B1F",
+            "name": "ColorRuinsYellow_B1F_Layout",
+            "primary_tileset": "gTileset_General",
+            "secondary_tileset": "gTileset_Cave",
+            "width": 36
+        },
+        {
+            "blockdata_filepath": "data/layouts/ColorRuinsGreen_B1F/map.bin",
+            "border_filepath": "data/layouts/ColorRuinsGreen_B1F/border.bin",
+            "height": 40,
+            "id": "LAYOUT_COLOR_RUINS_GREEN_B1F",
+            "name": "ColorRuinsGreen_B1F_Layout",
+            "primary_tileset": "gTileset_General",
+            "secondary_tileset": "gTileset_Cave",
+            "width": 36
+        },
+        {
+            "blockdata_filepath": "data/layouts/ColorRuinsBlue_B1F/map.bin",
+            "border_filepath": "data/layouts/ColorRuinsBlue_B1F/border.bin",
+            "height": 40,
+            "id": "LAYOUT_COLOR_RUINS_BLUE_B1F",
+            "name": "ColorRuinsBlue_B1F_Layout",
+            "primary_tileset": "gTileset_General",
+            "secondary_tileset": "gTileset_Cave",
+            "width": 36
+        },
+        {
+            "blockdata_filepath": "data/layouts/DarkCityEntrance/map.bin",
+            "border_filepath": "data/layouts/DarkCityEntrance/border.bin",
+            "height": 36,
+            "id": "LAYOUT_DARK_CITY_ENTRANCE",
+            "name": "DarkCityEntrance_Layout",
+            "primary_tileset": "gTileset_General",
+            "secondary_tileset": "gTileset_Cave",
+            "width": 28
+        },
+        {
+            "blockdata_filepath": "data/layouts/DarkCityMain/map.bin",
+            "border_filepath": "data/layouts/DarkCityMain/border.bin",
+            "height": 38,
+            "id": "LAYOUT_DARK_CITY_MAIN",
+            "name": "DarkCityMain_Layout",
+            "primary_tileset": "gTileset_General",
+            "secondary_tileset": "gTileset_Cave",
+            "width": 38
+        },
+        {
+            "blockdata_filepath": "data/layouts/DarkRuins/map.bin",
+            "border_filepath": "data/layouts/DarkRuins/border.bin",
+            "height": 46,
+            "id": "LAYOUT_DARK_RUINS",
+            "name": "DarkRuins_Layout",
+            "primary_tileset": "gTileset_General",
+            "secondary_tileset": "gTileset_Cave",
+            "width": 36
+        },
+        {
+            "blockdata_filepath": "data/layouts/LinkingTunnel/map.bin",
+            "border_filepath": "data/layouts/LinkingTunnel/border.bin",
+            "height": 34,
+            "id": "LAYOUT_LINKING_TUNNEL",
+            "name": "LinkingTunnel_Layout",
+            "primary_tileset": "gTileset_General",
+            "secondary_tileset": "gTileset_RusturfTunnel",
+            "width": 32
+        },
+        {
+            "blockdata_filepath": "data/layouts/ChoVillage_House1/map.bin",
+            "border_filepath": "data/layouts/ChoVillage_House1/border.bin",
+            "height": 9,
+            "id": "LAYOUT_CHO_VILLAGE_HOUSE1",
+            "name": "ChoVillage_House1_Layout",
+            "primary_tileset": "gTileset_Building",
+            "secondary_tileset": "gTileset_GenericBuilding",
+            "width": 10
+        },
+        {
+            "blockdata_filepath": "data/layouts/ChoVillage_House2/map.bin",
+            "border_filepath": "data/layouts/ChoVillage_House2/border.bin",
+            "height": 9,
+            "id": "LAYOUT_CHO_VILLAGE_HOUSE2",
+            "name": "ChoVillage_House2_Layout",
+            "primary_tileset": "gTileset_Building",
+            "secondary_tileset": "gTileset_GenericBuilding",
+            "width": 10
+        },
+        {
+            "blockdata_filepath": "data/layouts/ChoVillage_House3/map.bin",
+            "border_filepath": "data/layouts/ChoVillage_House3/border.bin",
+            "height": 9,
+            "id": "LAYOUT_CHO_VILLAGE_HOUSE3",
+            "name": "ChoVillage_House3_Layout",
+            "primary_tileset": "gTileset_Building",
+            "secondary_tileset": "gTileset_GenericBuilding",
+            "width": 10
+        },
+        {
+            "blockdata_filepath": "data/layouts/ChoVillage_House4/map.bin",
+            "border_filepath": "data/layouts/ChoVillage_House4/border.bin",
+            "height": 9,
+            "id": "LAYOUT_CHO_VILLAGE_HOUSE4",
+            "name": "ChoVillage_House4_Layout",
+            "primary_tileset": "gTileset_Building",
+            "secondary_tileset": "gTileset_GenericBuilding",
+            "width": 10
+        },
+        {
+            "blockdata_filepath": "data/layouts/ChoVillage_House5/map.bin",
+            "border_filepath": "data/layouts/ChoVillage_House5/border.bin",
+            "height": 9,
+            "id": "LAYOUT_CHO_VILLAGE_HOUSE5",
+            "name": "ChoVillage_House5_Layout",
+            "primary_tileset": "gTileset_Building",
+            "secondary_tileset": "gTileset_GenericBuilding",
+            "width": 10
         }
     ],
     "layouts_table_label": "gMapLayouts"

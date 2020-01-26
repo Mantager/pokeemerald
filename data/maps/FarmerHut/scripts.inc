@@ -6,7 +6,7 @@ FarmerHut_EventScript_DedenneTest::
 	showmonpic SPECIES_DEDENNE, 10, 3
 	bufferspeciesname 0, SPECIES_DEDENNE
 	setvar VAR_TEMP_1, SPECIES_DEDENNE
-	givemon SPECIES_DEDENNE, 12, ITEM_NONE
+	givemon SPECIES_DEDENNE, 15, ITEM_NONE
 	playfanfare MUS_FANFA4
 	message FarmerHut_Text_ReceivedDedenne
 	waitmessage

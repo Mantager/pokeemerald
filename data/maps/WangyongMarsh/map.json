@@ -15,6 +15,11 @@
             "direction": "right",
             "map": "MAP_KIMYANG_ROAD",
             "offset": 6
+        },
+        {
+            "direction": "up",
+            "map": "MAP_ORACLE_HILL",
+            "offset": 7
         }
     ],
     "coord_events": [

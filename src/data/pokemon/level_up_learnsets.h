@@ -1,5 +1,4 @@
 #define LEVEL_UP_MOVE(lvl, moveLearned) {.move = moveLearned, .level = lvl}
-#define LEVEL_UP_END 0xffff
 
 static const struct LevelUpMove sBulbasaurLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
@@ -7099,7 +7098,7 @@ static const struct LevelUpMove sDedenneLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 11, MOVE_CHARGE),
     LEVEL_UP_MOVE( 14, MOVE_CHARM),
     LEVEL_UP_MOVE( 17, MOVE_NATURAL_GIFT),
-    LEVEL_UP_MOVE( 20, MOVE_PARABOLIC_CHARGE),
+    LEVEL_UP_MOVE( 20, MOVE_CHARGE_BEAM),
     LEVEL_UP_MOVE( 23, MOVE_NUZZLE),
     LEVEL_UP_MOVE( 26, MOVE_RECYCLE),
     LEVEL_UP_MOVE( 30, MOVE_VOLT_SWITCH),
