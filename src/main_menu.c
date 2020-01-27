@@ -410,6 +410,7 @@ static const struct WindowTemplate gNewGameBirchSpeechTextWindows[] =
 };
 
 static const u16 sMainMenuBgPal[] = INCBIN_U16("graphics/misc/main_menu_bg.gbapal");
+static const u16 sMainMenuGameClearBgPal[] = INCBIN_U16("graphics/misc/main_menu_game_clear_bg.gbapal");
 static const u16 sMainMenuTextPal[] = INCBIN_U16("graphics/misc/main_menu_text.gbapal");
 
 static const u8 sTextColor_Headers[] = {TEXT_DYNAMIC_COLOR_1, TEXT_DYNAMIC_COLOR_2, TEXT_DYNAMIC_COLOR_3};
@@ -577,7 +578,14 @@ static u32 InitMainMenu(bool8 returningFromOptionsMenu)
     DmaFill16(3, 0, (void *)(PLTT + 2), PLTT_SIZE - 2);
 
     ResetPaletteFade();
-    LoadPalette(sMainMenuBgPal, 0, 32);
+    if (FlagGet(FLAG_SYS_GAME_CLEAR))
+    {
+        LoadPalette(sMainMenuGameClearBgPal, 0, 32);
+    }
+    else
+    {
+        LoadPalette(sMainMenuBgPal, 0, 32);
+    }
     LoadPalette(sMainMenuTextPal, 0xF0, 32);
     ScanlineEffect_Stop();
     ResetTasks();
