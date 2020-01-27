@@ -4583,12 +4583,12 @@
         {
             "blockdata_filepath": "data/layouts/DarkCityEntrance/map.bin",
             "border_filepath": "data/layouts/DarkCityEntrance/border.bin",
-            "height": 36,
+            "height": 44,
             "id": "LAYOUT_DARK_CITY_ENTRANCE",
             "name": "DarkCityEntrance_Layout",
             "primary_tileset": "gTileset_General",
             "secondary_tileset": "gTileset_Cave",
-            "width": 28
+            "width": 30
         },
         {
             "blockdata_filepath": "data/layouts/DarkCityMain/map.bin",
