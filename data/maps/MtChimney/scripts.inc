@@ -530,28 +530,6 @@ MtChimney_EventScript_Grunt1:: @ 822F1F1
 	msgbox MtChimney_Text_Grunt1PostBattle, MSGBOX_AUTOCLOSE
 	end
 
-MtChimney_EventScript_Sawyer:: @ 822F208
-	trainerbattle_single TRAINER_SAWYER_1, MtChimney_Text_SawyerIntro, MtChimney_Text_SawyerDefeat, MtChimney_EventScript_SawyerDefeated
-	specialvar VAR_RESULT, ShouldTryRematchBattle
-	compare VAR_RESULT, TRUE
-	goto_if_eq MtChimney_EventScript_SawyerRematch
-	msgbox MtChimney_Text_SawyerPostBattle, MSGBOX_DEFAULT
-	release
-	end
-
-MtChimney_EventScript_SawyerDefeated:: @ 822F234
-	special PlayerFaceTrainerAfterBattle
-	waitmovement 0
-	msgbox MtChimney_Text_SawyerRegister, MSGBOX_DEFAULT
-	register_matchcall TRAINER_SAWYER_1
-	release
-	end
-
-MtChimney_EventScript_SawyerRematch:: @ 822F253
-	trainerbattle_rematch TRAINER_SAWYER_1, MtChimney_Text_SawyerRematchIntro, MtChimney_Text_SawyerRematchDefeat
-	msgbox MtChimney_Text_SawyerPostRematch, MSGBOX_AUTOCLOSE
-	end
-
 MtChimney_Text_MeteoriteWillActivateVolcano: @ 822F26A
 	.string "The power contained in the METEORITE…\p"
 	.string "By amplifying its power with this\n"
@@ -835,31 +813,4 @@ MtChimney_Text_ShirleyPostBattle: @ 8230463
 	.string "I'll have to take another dip in the\n"
 	.string "hot springs. Want to join me?\p"
 	.string "Just joking!$"
-
-MtChimney_Text_SawyerIntro: @ 82304B3
-	.string "This is one fine mountain! Plenty of\n"
-	.string "hot people around for company!$"
-
-MtChimney_Text_SawyerDefeat: @ 82304F7
-	.string "Oh, you're a real firebrand, too!$"
-
-MtChimney_Text_SawyerPostBattle: @ 8230519
-	.string "I think I need a dip in LAVARIDGE\n"
-	.string "HOT SPRING with the locals!$"
-
-MtChimney_Text_SawyerRegister: @ 8230557
-	.string "I like little fireballs like you.\n"
-	.string "Let me register you in my POKéNAV.$"
-
-MtChimney_Text_SawyerRematchIntro: @ 823059C
-	.string "I'm happily surrounded by hot people\n"
-	.string "around these parts. I won't lose!$"
-
-MtChimney_Text_SawyerRematchDefeat: @ 82305E3
-	.string "Gosh, you're still the same\n"
-	.string "firebrand as before!$"
-
-MtChimney_Text_SawyerPostRematch: @ 8230614
-	.string "Actually, it really is hot here.\n"
-	.string "I'm overdressed for these parts.$"
 

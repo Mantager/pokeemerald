@@ -288,3 +288,17 @@ const u8 gTrainerBackPic_Steven[] = INCBIN_U8("graphics/trainers/back_pics/steve
 
 const u32 gTrainerBackPicPalette_Red[] = INCBIN_U32("graphics/trainers/palettes/red_back_pic.gbapal.lz");
 const u32 gTrainerBackPicPalette_Leaf[] = INCBIN_U32("graphics/trainers/palettes/leaf_back_pic.gbapal.lz");
+
+// GAIDEN 1 TRAINERS
+
+const u32 gTrainerFrontPic_Engineer[] = INCBIN_U32("graphics/trainers/front_pics/red_front_pic.4bpp.lz");
+const u32 gTrainerPalette_Engineer[] = INCBIN_U32("graphics/trainers/palettes/red.gbapal.lz");
+
+const u32 gTrainerFrontPic_Farmer[] = INCBIN_U32("graphics/trainers/front_pics/leaf_front_pic.4bpp.lz");
+const u32 gTrainerPalette_Farmer[] = INCBIN_U32("graphics/trainers/palettes/leaf.gbapal.lz");
+
+const u32 gTrainerFrontPic_Tailor[] = INCBIN_U32("graphics/trainers/front_pics/ruby_sapphire_brendan_front_pic.4bpp.lz");
+const u32 gTrainerPalette_Tailor[] = INCBIN_U32("graphics/trainers/palettes/ruby_sapphire_brendan.gbapal.lz");
+
+const u32 gTrainerFrontPic_Keeper[] = INCBIN_U32("graphics/trainers/front_pics/ruby_sapphire_may_front_pic.4bpp.lz");
+const u32 gTrainerPalette_Keeper[] = INCBIN_U32("graphics/trainers/palettes/ruby_sapphire_may.gbapal.lz");

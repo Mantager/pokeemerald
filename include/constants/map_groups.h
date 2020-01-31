@@ -595,6 +595,7 @@
 #define MAP_WANGYONG_MARSH (4 | (34 << 8))
 #define MAP_KIMYANG_ROAD   (5 | (34 << 8))
 #define MAP_ORACLE_HILL    (6 | (34 << 8))
+#define MAP_ZHAOUN_PATH    (7 | (34 << 8))
 
 // Map Group 35
 #define MAP_COLOR_RUINS_RED_1F     (0 | (35 << 8))

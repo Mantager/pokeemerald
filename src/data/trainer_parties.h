@@ -12434,3 +12434,363 @@ static const struct TrainerMonNoItemDefaultMoves sParty_MayLinkPlaceholder[] = {
     .species = SPECIES_KYOGRE,
     }
 };
+
+static const struct TrainerMonItemDefaultMoves sParty_Ling[] = {
+    {
+    .iv = 0,
+    .lvl = 14,
+    .species = SPECIES_SURSKIT,
+    .heldItem = ITEM_WACAN_BERRY,
+    }
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_Bai[] = {
+    {
+    .iv = 0,
+    .lvl = 13,
+    .species = SPECIES_ZIGZAGOON,
+    .heldItem = ITEM_LEPPA_BERRY
+    },
+    {
+    .iv = 0,
+    .lvl = 13,
+    .species = SPECIES_TYMPOLE,
+    .heldItem = ITEM_PETAYA_BERRY
+    }
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_Hong[] = {
+    {
+    .iv = 0,
+    .lvl = 14,
+    .species = SPECIES_ODDISH,
+    .heldItem = ITEM_APICOT_BERRY
+    }
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_Log1[] = {
+    {
+    .iv = 0,
+    .lvl = 15,
+    .species = SPECIES_MACHOP,
+    .heldItem = ITEM_ORAN_BERRY
+    },
+    {
+    .iv = 0,
+    .lvl = 15,
+    .species = SPECIES_PANCHAM,
+    .heldItem = ITEM_CHERI_BERRY
+    }
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_Fan[] = {
+    {
+    .iv = 0,
+    .lvl = 16,
+    .species = SPECIES_FARFETCHD,
+    .heldItem = ITEM_SITRUS_BERRY
+    }
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_Bolin[] = {
+    {
+    .iv = 0,
+    .lvl = 15,
+    .species = SPECIES_GRIMER,
+    .heldItem = ITEM_SHUCA_BERRY
+    },
+    {
+    .iv = 0,
+    .lvl = 15,
+    .species = SPECIES_GRIMER,
+    .heldItem = ITEM_ROWAP_BERRY
+    }
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_Changpu[] = {
+    {
+    .iv = 0,
+    .lvl = 17,
+    .species = SPECIES_CROAGUNK,
+    .heldItem = ITEM_COBA_BERRY
+    }
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_Kang[] = {
+    {
+    .iv = 0,
+    .lvl = 14,
+    .species = SPECIES_BIDOOF,
+    .heldItem = ITEM_PECHA_BERRY
+    },
+    {
+    .iv = 0,
+    .lvl = 16,
+    .species = SPECIES_BIBAREL,
+    .heldItem = ITEM_ROWAP_BERRY
+    }
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_Dandan[] = {
+    {
+    .iv = 0,
+    .lvl = 16,
+    .species = SPECIES_CARNIVINE,
+    .heldItem = ITEM_KEBIA_BERRY
+    }
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_Xiu[] = {
+    {
+    .iv = 0,
+    .lvl = 16,
+    .species = SPECIES_CHINGLING,
+    .heldItem = ITEM_MARANGA_BERRY
+    },
+    {
+    .iv = 0,
+    .lvl = 16,
+    .species = SPECIES_GOOMY,
+    .heldItem = ITEM_CHILAN_BERRY
+    }
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_Gen[] = {
+    {
+    .iv = 0,
+    .lvl = 15,
+    .species = SPECIES_SPINARAK,
+    .heldItem = ITEM_MAGO_BERRY
+    },
+    {
+    .iv = 0,
+    .lvl = 17,
+    .species = SPECIES_SPINARAK,
+    .heldItem = ITEM_SALAC_BERRY
+    }
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_Nian[] = {
+    {
+    .iv = 0,
+    .lvl = 16,
+    .species = SPECIES_SEEDOT,
+    .heldItem = ITEM_AGUAV_BERRY
+    },
+    {
+    .iv = 0,
+    .lvl = 16,
+    .species = SPECIES_BIDOOF,
+    .heldItem = ITEM_CHOPLE_BERRY
+    },
+    {
+    .iv = 0,
+    .lvl = 16,
+    .species = SPECIES_GEODUDE,
+    .heldItem = ITEM_LEPPA_BERRY
+    }
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_Shi[] = {
+    {
+    .iv = 0,
+    .lvl = 18,
+    .species = SPECIES_SPINARAK,
+    .heldItem = ITEM_PAYAPA_BERRY
+    },
+    {
+    .iv = 0,
+    .lvl = 18,
+    .species = SPECIES_SURSKIT,
+    .heldItem = ITEM_FIGY_BERRY
+    },
+    {
+    .iv = 0,
+    .lvl = 18,
+    .species = SPECIES_PINECO,
+    .heldItem = ITEM_LIECHI_BERRY
+    }
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_Ping[] = {
+    {
+    .iv = 0,
+    .lvl = 19,
+    .species = SPECIES_PINECO,
+    .heldItem = ITEM_CHARTI_BERRY
+    },
+    {
+    .iv = 0,
+    .lvl = 19,
+    .species = SPECIES_SPINARAK,
+    .heldItem = ITEM_PERSIM_BERRY
+    }
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_Chuntao[] = {
+    {
+    .iv = 0,
+    .lvl = 20,
+    .species = SPECIES_FARFETCHD,
+    .heldItem = ITEM_JABOCA_BERRY
+    }
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_Daiyu[] = {
+    {
+    .iv = 0,
+    .lvl = 19,
+    .species = SPECIES_WOOBAT,
+    .heldItem = ITEM_COLBUR_BERRY
+    },
+    {
+    .iv = 0,
+    .lvl = 19,
+    .species = SPECIES_TYMPOLE,
+    .heldItem = ITEM_RINDO_BERRY
+    },
+    {
+    .iv = 0,
+    .lvl = 20,
+    .species = SPECIES_CHERUBI,
+    .heldItem = ITEM_WIKI_BERRY
+    }
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_Pengfei[] = {
+    {
+    .iv = 0,
+    .lvl = 22,
+    .species = SPECIES_ARIADOS,
+    .heldItem = ITEM_SITRUS_BERRY
+    },
+    {
+    .iv = 0,
+    .lvl = 22,
+    .species = SPECIES_MASQUERAIN,
+    .heldItem = ITEM_YACHE_BERRY
+    }
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_Yao[] = {
+    {
+    .iv = 0,
+    .lvl = 21,
+    .species = SPECIES_MACHOP,
+    .heldItem = ITEM_LEPPA_BERRY
+    },
+    {
+    .iv = 0,
+    .lvl = 21,
+    .species = SPECIES_NUZLEAF,
+    .heldItem = ITEM_TANGA_BERRY
+    },
+    {
+    .iv = 0,
+    .lvl = 22,
+    .species = SPECIES_DUNSPARCE,
+    .heldItem = ITEM_IAPAPA_BERRY
+    }
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_Lu[] = {
+    {
+    .iv = 0,
+    .lvl = 24,
+    .species = SPECIES_BALTOY,
+    .heldItem = ITEM_MICLE_BERRY
+    },
+    {
+    .iv = 0,
+    .lvl = 24,
+    .species = SPECIES_YAMASK,
+    .heldItem = ITEM_KASIB_BERRY
+    }
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_Rue[] = {
+    {
+    .iv = 0,
+    .lvl = 24,
+    .species = SPECIES_YAMASK,
+    .heldItem = ITEM_RAWST_BERRY
+    },
+    {
+    .iv = 0,
+    .lvl = 24,
+    .species = SPECIES_BALTOY,
+    .heldItem = ITEM_PASSHO_BERRY
+    }
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_Arum[] = {
+    {
+    .iv = 0,
+    .lvl = 27,
+    .species = SPECIES_SMEARGLE,
+    .heldItem = ITEM_LANSAT_BERRY
+    },
+    {
+    .iv = 0,
+    .lvl = 27,
+    .species = SPECIES_YAMASK,
+    .heldItem = ITEM_APICOT_BERRY
+    },
+    {
+    .iv = 0,
+    .lvl = 27,
+    .species = SPECIES_BALTOY,
+    .heldItem = ITEM_KASIB_BERRY
+    },
+    {
+    .iv = 0,
+    .lvl = 27,
+    .species = SPECIES_GRAVELER,
+    .heldItem = ITEM_PASSHO_BERRY
+    },
+    {
+    .iv = 0,
+    .lvl = 29,
+    .species = SPECIES_TORKOAL,
+    .heldItem = ITEM_CUSTAP_BERRY
+    }
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_Log2[] = {
+    {
+    .iv = 0,
+    .lvl = 28,
+    .species = SPECIES_GRAVELER,
+    .heldItem = ITEM_RINDO_BERRY
+    },
+    {
+    .iv = 0,
+    .lvl = 28,
+    .species = SPECIES_STUNFISK,
+    .heldItem = ITEM_SHUCA_BERRY
+    },
+    {
+    .iv = 0,
+    .lvl = 28,
+    .species = SPECIES_BIBAREL,
+    .heldItem = ITEM_WACAN_BERRY
+    },
+    {
+    .iv = 0,
+    .lvl = 29,
+    .species = SPECIES_GURDURR,
+    .heldItem = ITEM_ROWAP_BERRY
+    },
+    {
+    .iv = 0,
+    .lvl = 29,
+    .species = SPECIES_MACHOKE,
+    .heldItem = ITEM_SALAC_BERRY
+    },
+    {
+    .iv = 0,
+    .lvl = 30,
+    .species = SPECIES_PANGORO,
+    .heldItem = ITEM_ROSELI_BERRY
+    }
+};

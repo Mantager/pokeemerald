@@ -2,7 +2,7 @@
 #define GUARD_CONSTANTS_OPPONENTS_H
 
 #define TRAINER_NONE                          0
-#define TRAINER_SAWYER_1                      1
+#define TRAINER_SHI                           1 // GAIDEN 1
 #define TRAINER_GRUNT_AQUA_HIDEOUT_1          2
 #define TRAINER_GRUNT_AQUA_HIDEOUT_2          3
 #define TRAINER_GRUNT_AQUA_HIDEOUT_3          4
@@ -10,10 +10,10 @@
 #define TRAINER_GRUNT_SEAFLOOR_CAVERN_1       6
 #define TRAINER_GRUNT_SEAFLOOR_CAVERN_2       7
 #define TRAINER_GRUNT_SEAFLOOR_CAVERN_3       8
-#define TRAINER_GABRIELLE_1                   9
+#define TRAINER_YAO                           9 // GAIDEN 1
 #define TRAINER_GRUNT_PETALBURG_WOODS        10
-#define TRAINER_MARCEL                       11
-#define TRAINER_ALBERTO                      12
+#define TRAINER_LING                         11 // GAIDEN 1
+#define TRAINER_BAI                          12 // GAIDEN 1
 #define TRAINER_ED                           13
 #define TRAINER_GRUNT_SEAFLOOR_CAVERN_4      14
 #define TRAINER_DECLAN                       15
@@ -38,13 +38,13 @@
 #define TRAINER_ARCHIE                       34
 #define TRAINER_LEAH                         35
 #define TRAINER_DAISY                        36
-#define TRAINER_ROSE_1                       37
+#define TRAINER_HONG                         37 // GAIDEN 1
 #define TRAINER_FELIX                        38
 #define TRAINER_VIOLET                       39
-#define TRAINER_ROSE_2                       40
-#define TRAINER_ROSE_3                       41
-#define TRAINER_ROSE_4                       42
-#define TRAINER_ROSE_5                       43
+#define TRAINER_LOG_1                        40 // GAIDEN 1
+#define TRAINER_FAN                          41 // GAIDEN 1
+#define TRAINER_BOLIN                        42 // GAIDEN 1
+#define TRAINER_CHANGPU                      43 // GAIDEN 1
 #define TRAINER_DUSTY_1                      44
 #define TRAINER_CHIP                         45
 #define TRAINER_FOSTER                       46
@@ -319,7 +319,7 @@
 #define TRAINER_SHELBY_3                    315
 #define TRAINER_SHELBY_4                    316
 #define TRAINER_SHELBY_5                    317
-#define TRAINER_CALVIN_1                    318
+#define TRAINER_KANG                        318 // GAIDEN 1
 #define TRAINER_BILLY                       319
 #define TRAINER_JOSH                        320
 #define TRAINER_TOMMY                       321
@@ -329,10 +329,10 @@
 #define TRAINER_KATELYNN                    325
 #define TRAINER_JAYLEN                      326
 #define TRAINER_DILLON                      327
-#define TRAINER_CALVIN_2                    328
-#define TRAINER_CALVIN_3                    329
-#define TRAINER_CALVIN_4                    330
-#define TRAINER_CALVIN_5                    331
+#define TRAINER_DANDAN                      328 // GAIDEN 1
+#define TRAINER_XIU                         329 // GAIDEN 1
+#define TRAINER_GEN                         330 // GAIDEN 1
+#define TRAINER_NIAN                        331 // GAIDEN 1
 #define TRAINER_EDDIE                       332
 #define TRAINER_ALLEN                       333
 #define TRAINER_TIMMY                       334
@@ -837,14 +837,14 @@
 #define TRAINER_FERNANDO_3                  833
 #define TRAINER_FERNANDO_4                  834
 #define TRAINER_FERNANDO_5                  835
-#define TRAINER_SAWYER_2                    836
-#define TRAINER_SAWYER_3                    837
-#define TRAINER_SAWYER_4                    838
-#define TRAINER_SAWYER_5                    839
-#define TRAINER_GABRIELLE_2                 840
-#define TRAINER_GABRIELLE_3                 841
-#define TRAINER_GABRIELLE_4                 842
-#define TRAINER_GABRIELLE_5                 843
+#define TRAINER_PING                        836 // GAIDEN 1
+#define TRAINER_CHUNTAO                     837 // GAIDEN 1
+#define TRAINER_DAIYU                       838 // GAIDEN 1
+#define TRAINER_PENGFEI                     839 // GAIDEN 1
+#define TRAINER_LU                          840 // GAIDEN 1
+#define TRAINER_RUE                         841 // GAIDEN 1
+#define TRAINER_ARUM                        842 // GAIDEN 1
+#define TRAINER_LOG_2                       843 // GAIDEN 1
 #define TRAINER_THALIA_2                    844
 #define TRAINER_THALIA_3                    845
 #define TRAINER_THALIA_4                    846

@@ -57,19 +57,6 @@
         {
             "elevation": 3,
             "flag": "0",
-            "graphics_id": "EVENT_OBJ_GFX_YOUNGSTER",
-            "movement_range_x": 0,
-            "movement_range_y": 0,
-            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
-            "script": "Route102_EventScript_Calvin",
-            "trainer_sight_or_berry_tree_id": "3",
-            "trainer_type": "1",
-            "x": 33,
-            "y": 14
-        },
-        {
-            "elevation": 3,
-            "flag": "0",
             "graphics_id": "EVENT_OBJ_GFX_BUG_CATCHER",
             "movement_range_x": 0,
             "movement_range_y": 0,
