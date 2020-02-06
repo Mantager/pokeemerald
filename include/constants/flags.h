@@ -39,12 +39,12 @@
 #define FLAG_TEMP_1F     (TEMP_FLAGS_START + 0x1F)
 #define TEMP_FLAGS_END   FLAG_TEMP_1F
 
-#define FLAG_UNUSED_0x020    0x20 // Unused Flag
-#define FLAG_UNUSED_0x021    0x21 // Unused Flag
-#define FLAG_UNUSED_0x022    0x22 // Unused Flag
-#define FLAG_UNUSED_0x023    0x23 // Unused Flag
-#define FLAG_UNUSED_0x024    0x24 // Unused Flag
-#define FLAG_UNUSED_0x025    0x25 // Unused Flag
+#define FLAG_MEET_LOG_CHO_VILLAGE_1    0x20 // GAIDEN 1 story
+#define FLAG_MEET_LOG_CHO_VILLAGE_2    0x21 // GAIDEN 1 story
+#define FLAG_MEET_LOG_SHENDOWN_PATH    0x22 // GAIDEN 1 story
+#define FLAG_MEET_LOG_PULP_BYROAD      0x23 // GAIDEN 1 story
+#define FLAG_OBTAINED_ROCK_SMASH       0x24 // Used as Rock Smash replacement
+#define FLAG_OBTAINED_STRENGTH         0x25 // Used as Strength replacement
 #define FLAG_UNUSED_0x026    0x26 // Unused Flag
 #define FLAG_UNUSED_0x027    0x27 // Unused Flag
 #define FLAG_UNUSED_0x028    0x28 // Unused Flag
@@ -1044,33 +1044,33 @@
 #define FLAG_HIDE_RUSTBORO_CITY_POKEMON_SCHOOL_SCOTT                0x3E7
 
 // Item Ball Flags
-#define FLAG_ITEM_ROUTE_102_POTION                                  0x3E8
-#define FLAG_ITEM_ROUTE_116_X_SPECIAL                               0x3E9
-#define FLAG_ITEM_ROUTE_104_PP_UP                                   0x3EA
-#define FLAG_ITEM_ROUTE_105_IRON                                    0x3EB
-#define FLAG_ITEM_ROUTE_106_PROTEIN                                 0x3EC
-#define FLAG_ITEM_ROUTE_109_PP_UP                                   0x3ED
-#define FLAG_ITEM_ROUTE_109_RARE_CANDY                              0x3EE
-#define FLAG_ITEM_ROUTE_110_DIRE_HIT                                0x3EF
-#define FLAG_ITEM_ROUTE_111_TM_37                                   0x3F0
-#define FLAG_ITEM_ROUTE_111_STARDUST                                0x3F1
-#define FLAG_ITEM_ROUTE_111_HP_UP                                   0x3F2
-#define FLAG_ITEM_ROUTE_112_NUGGET                                  0x3F3
-#define FLAG_ITEM_ROUTE_113_MAX_ETHER                               0x3F4
-#define FLAG_ITEM_ROUTE_113_SUPER_REPEL                             0x3F5
-#define FLAG_ITEM_ROUTE_114_RARE_CANDY                              0x3F6
-#define FLAG_ITEM_ROUTE_114_PROTEIN                                 0x3F7
-#define FLAG_ITEM_ROUTE_115_SUPER_POTION                            0x3F8
-#define FLAG_ITEM_ROUTE_115_TM_01                                   0x3F9
-#define FLAG_ITEM_ROUTE_115_IRON                                    0x3FA
-#define FLAG_ITEM_ROUTE_116_ETHER                                   0x3FB
-#define FLAG_ITEM_ROUTE_116_REPEL                                   0x3FC
-#define FLAG_ITEM_ROUTE_116_HP_UP                                   0x3FD
-#define FLAG_ITEM_ROUTE_117_GREAT_BALL                              0x3FE
-#define FLAG_ITEM_ROUTE_117_REVIVE                                  0x3FF
-#define FLAG_ITEM_ROUTE_119_SUPER_REPEL                             0x400
-#define FLAG_ITEM_ROUTE_119_ZINC                                    0x401
-#define FLAG_ITEM_ROUTE_119_ELIXIR_1                                0x402
+#define FLAG_ITEM_SHENDOWN_PATH_HEAL_POWDER                         0x3E8 // Gaiden 1 flags start here
+#define FLAG_ITEM_SHENDOWN_PATH_POKE_BALL                           0x3E9
+#define FLAG_ITEM_SHENDOWN_PATH_QUICK_CLAW                          0x3EA
+#define FLAG_ITEM_CHO_VILLAGE_REVIVAL_HERB                          0x3EB
+#define FLAG_ITEM_CHO_VILLAGE_SMOKE_BALL                            0x3EC
+#define FLAG_ITEM_WANGYONG_MARSH_BLACK_SLUDGE                       0x3ED
+#define FLAG_ITEM_WANGYONG_MARSH_ABSORB_BULB                        0x3EE
+#define FLAG_ITEM_WANGYONG_MARSH_ENERGY_POWDER                      0x3EF
+#define FLAG_ITEM_WANGYONG_MARSH_STICK                              0x3F0
+#define FLAG_ITEM_ORACLE_HILL_CLEANSE_TAG                           0x3F1
+#define FLAG_ITEM_KIMYANG_ROAD_LUMINOUS_MOSS                        0x3F2
+#define FLAG_ITEM_KIMYANG_ROAD_POKE_BALL                            0x3F3
+#define FLAG_ITEM_KIMYANG_ROAD_BIG_ROOT                             0x3F4
+#define FLAG_ITEM_ZHAOUN_PATH_GRIP_CLAW                             0x3F5
+#define FLAG_ITEM_ZHAOUN_PATH_REVIVAL_HERB                          0x3F6
+#define FLAG_ITEM_TIYU_FOREST_HEAL_POWDER                           0x3F7
+#define FLAG_ITEM_TIYU_FOREST_BINDING_BAND                          0x3F8
+#define FLAG_ITEM_TIYU_FOREST_ETHER                                 0x3F9
+#define FLAG_ITEM_TIYU_FOREST_BRIGHT_POWDER                         0x3FA
+#define FLAG_ITEM_TIYU_FOREST_SHED_SHELL                            0x3FB
+#define FLAG_ITEM_TIYU_FOREST_DIRE_HIT                              0x3FC
+#define FLAG_ITEM_LINKING_TUNNEL_HARD_STONE                         0x3FD
+#define FLAG_ITEM_LINKING_TUNNEL_POKE_BALL                          0x3FE
+#define FLAG_ITEM_LINKING_TUNNEL_FOCUS_SASH                         0x3FF
+#define FLAG_ITEM_COLOR_RUINS_RED_B1F_METRONOME                     0x400
+#define FLAG_ITEM_DARK_CITY_MAIN_BLACK_GLASSES                     0x401
+#define FLAG_ITEM_DARK_CITY_MAIN_ELIXIR                            0x402
 #define FLAG_ITEM_ROUTE_119_LEAF_STONE                              0x403
 #define FLAG_ITEM_ROUTE_119_RARE_CANDY                              0x404
 #define FLAG_ITEM_ROUTE_119_HYPER_POTION_1                          0x405

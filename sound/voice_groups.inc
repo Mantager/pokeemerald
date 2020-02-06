@@ -22691,8 +22691,8 @@ voicegroup189:: @ 86B3E4C
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 86B4260
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 86B426C
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 86B4278
-	voice_square_1 0, 2, 0, 0, 15, 0  @ 86B4284
-	voice_square_1 0, 2, 0, 0, 15, 0  @ 86B4290
+	voice_noise_alt 0, 0, 2, 7, 0  @ 86B3E34
+	voice_noise_alt 0, 0, 1, 9, 1  @ 86B3E40
 
 	.align 2
 voicegroup190:: @ 86B429C

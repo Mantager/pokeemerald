@@ -1170,3 +1170,5 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/ChoVillage_House5/scripts.inc"
 
 	.include "data/maps/ZhaounPath/scripts.inc"
+
+	.include "data/maps/DarkCity_ArumsHouse/scripts.inc"

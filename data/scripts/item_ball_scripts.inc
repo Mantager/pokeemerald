@@ -656,3 +656,111 @@ MagmaHideout_4F_EventScript_MaxRevive:: @ 829151F
 MagmaHideout_3F_3R_EventScript_ItemEscapeRope:: @ 829152C
 	finditem_std ITEM_ESCAPE_ROPE
 	end
+
+ShendownPath_EventScript_ItemHealPowder::
+	finditem_std ITEM_HEAL_POWDER
+	end
+
+ShendownPath_EventScript_ItemPokeBall::
+	finditem_std ITEM_POKE_BALL
+	end
+
+ShendownPath_EventScript_ItemQuickClaw::
+	finditem_std ITEM_QUICK_CLAW
+	end
+
+ChoVillage_EventScript_ItemRevivalHerb::
+	finditem_std ITEM_REVIVAL_HERB
+	end
+
+ChoVillage_EventScript_ItemSmokeBall::
+	finditem_std ITEM_SMOKE_BALL
+	end
+
+WangyongMarsh_EventScript_ItemBlackSludge::
+	finditem_std ITEM_BLACK_SLUDGE
+	end
+
+WangyongMarsh_EventScript_ItemAbsorbBulb::
+	finditem_std ITEM_ABSORB_BULB
+	end
+
+WangyongMarsh_EventScript_ItemEnergyPowder::
+	finditem_std ITEM_ENERGY_POWDER
+	end
+
+WangyongMarsh_EventScript_ItemStick::
+	finditem_std ITEM_STICK
+	end
+
+OracleHill_EventScript_ItemCleanseTag::
+	finditem_std ITEM_CLEANSE_TAG
+	end
+
+KimyangRoad_EventScript_ItemLuminousMoss::
+	finditem_std ITEM_LUMINOUS_MOSS
+	end
+
+KimyangRoad_EventScript_ItemPokeBall::
+	finditem_std ITEM_POKE_BALL
+	end
+
+KimyangRoad_EventScript_ItemBigRoot::
+	finditem_std ITEM_BIG_ROOT
+	end
+
+ZhaounPath_EventScript_ItemGripClaw::
+	finditem_std ITEM_GRIP_CLAW
+	end
+
+ZhaounPath_EventScript_ItemRevivalHerb::
+	finditem_std ITEM_REVIVAL_HERB
+	end
+
+TiyuForest_EventScript_ItemHealPowder::
+	finditem_std ITEM_HEAL_POWDER
+	end
+
+TiyuForest_EventScript_ItemBindingBand::
+	finditem_std ITEM_BINDING_BAND
+	end
+
+TiyuForest_EventScript_ItemEther::
+	finditem_std ITEM_ETHER
+	end
+
+TiyuForest_EventScript_ItemBrightPowder::
+	finditem_std ITEM_BRIGHT_POWDER
+	end
+
+TiyuForest_EventScript_ItemShedShell::
+	finditem_std ITEM_SHED_SHELL
+	end
+
+TiyuForest_EventScript_ItemDireHit::
+	finditem_std ITEM_DIRE_HIT
+	end
+
+LinkingTunnel_EventScript_ItemHardStone::
+	finditem_std ITEM_HARD_STONE
+	end
+
+LinkingTunnel_EventScript_ItemPokeBall::
+	finditem_std ITEM_POKE_BALL
+	end
+
+LinkingTunnel_EventScript_ItemFocusSash::
+	finditem_std ITEM_FOCUS_SASH
+	end
+
+ColorRuinsRed_B1F_EventScript_ItemMetronome::
+	finditem_std ITEM_METRONOME
+	end
+
+DarkCityMain_EventScript_ItemBlackGlasses::
+	finditem_std ITEM_BLACK_GLASSES
+	end
+
+DarkCityMain_EventScript_ItemElixir::
+	finditem_std ITEM_ELIXIR
+	end

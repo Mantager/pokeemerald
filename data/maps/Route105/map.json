@@ -100,19 +100,6 @@
         },
         {
             "elevation": 3,
-            "flag": "FLAG_ITEM_ROUTE_105_IRON",
-            "graphics_id": "EVENT_OBJ_GFX_ITEM_BALL",
-            "movement_range_x": 0,
-            "movement_range_y": 0,
-            "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
-            "script": "Route105_EventScript_ItemIron",
-            "trainer_sight_or_berry_tree_id": "0",
-            "trainer_type": "0",
-            "x": 8,
-            "y": 73
-        },
-        {
-            "elevation": 3,
             "flag": "0",
             "graphics_id": "EVENT_OBJ_GFX_HIKER",
             "movement_range_x": 0,

@@ -57,21 +57,21 @@ static void task08_080C9820(u8 taskId)
     u8 eventObjId;
 
     ScriptContext2_Enable();
-    gPlayerAvatar.preventStep = TRUE;
+    //gPlayerAvatar.preventStep = TRUE;
     eventObjId = gPlayerAvatar.eventObjectId;
     if (!EventObjectIsMovementOverridden(&gEventObjects[eventObjId])
      || EventObjectClearHeldMovementIfFinished(&gEventObjects[eventObjId]))
     {
         if (gMapHeader.mapType == MAP_TYPE_UNDERWATER)
         {
-            FieldEffectStart(FLDEFF_FIELD_MOVE_SHOW_MON_INIT);
+            //FieldEffectStart(FLDEFF_FIELD_MOVE_SHOW_MON_INIT);
             gTasks[taskId].func = sub_8135578;
         }
         else
         {
-            sub_808C114();
-            EventObjectSetHeldMovement(&gEventObjects[eventObjId], MOVEMENT_ACTION_START_ANIM_IN_DIRECTION);
-            gTasks[taskId].func = sub_813552C;
+            //sub_808C114();
+            //EventObjectSetHeldMovement(&gEventObjects[eventObjId], MOVEMENT_ACTION_START_ANIM_IN_DIRECTION);
+            gTasks[taskId].func = sub_8135578;
         }
     }
 }
@@ -80,7 +80,7 @@ static void sub_813552C(u8 taskId)
 {
     if (EventObjectCheckHeldMovementStatus(&gEventObjects[gPlayerAvatar.eventObjectId]) == TRUE)
     {
-        FieldEffectStart(FLDEFF_FIELD_MOVE_SHOW_MON_INIT);
+        //FieldEffectStart(FLDEFF_FIELD_MOVE_SHOW_MON_INIT);
         gTasks[taskId].func = sub_8135578;
     }
 }

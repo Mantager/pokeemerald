@@ -14,11 +14,90 @@
     "music": "MUS_DAN02",
     "name": "ZhaounPath",
     "object_events": [
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "EVENT_OBJ_GFX_ANABEL",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_NONE",
+            "script": "NULL",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 28,
+            "y": 20
+        },
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "EVENT_OBJ_GFX_ANABEL",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_NONE",
+            "script": "NULL",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 16,
+            "y": 15
+        },
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "EVENT_OBJ_GFX_ANABEL",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_NONE",
+            "script": "NULL",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 8,
+            "y": 15
+        },
+        {
+            "elevation": 3,
+            "flag": "FLAG_ITEM_ZHAOUN_PATH_GRIP_CLAW",
+            "graphics_id": "EVENT_OBJ_GFX_ITEM_BALL",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_NONE",
+            "script": "ZhaounPath_EventScript_ItemGripClaw",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 14,
+            "y": 6
+        },
+        {
+            "elevation": 3,
+            "flag": "FLAG_ITEM_ZHAOUN_PATH_REVIVAL_HERB",
+            "graphics_id": "EVENT_OBJ_GFX_ITEM_BALL",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_NONE",
+            "script": "ZhaounPath_EventScript_ItemRevivalHerb",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 26,
+            "y": 18
+        }
     ],
     "region_map_section": "MAPSEC_DARK_RUINS",
     "requires_flash": false,
     "show_map_name": true,
     "warp_events": [
+        {
+            "dest_map": "MAP_LINKING_TUNNEL",
+            "dest_warp_id": 2,
+            "elevation": 0,
+            "x": 9,
+            "y": 7
+        },
+        {
+            "dest_map": "MAP_COLOR_RUINS_BLUE_1F",
+            "dest_warp_id": 0,
+            "elevation": 0,
+            "x": 33,
+            "y": 17
+        }
     ],
     "weather": "WEATHER_RAIN"
 }

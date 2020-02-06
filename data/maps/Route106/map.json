@@ -108,19 +108,6 @@
             "trainer_type": "1",
             "x": 65,
             "y": 14
-        },
-        {
-            "elevation": 3,
-            "flag": "FLAG_ITEM_ROUTE_106_PROTEIN",
-            "graphics_id": "EVENT_OBJ_GFX_ITEM_BALL",
-            "movement_range_x": 0,
-            "movement_range_y": 0,
-            "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
-            "script": "Route106_EventScript_ItemProtein",
-            "trainer_sight_or_berry_tree_id": "0",
-            "trainer_type": "0",
-            "x": 29,
-            "y": 14
         }
     ],
     "region_map_section": "MAPSEC_ROUTE_106",

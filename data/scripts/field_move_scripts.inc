@@ -60,17 +60,6 @@ Text_CantCut: @ 829077D
 
 EventScript_RockSmash:: @ 82907A6
 	lockall
-	goto_if_unset FLAG_BADGE03_GET, EventScript_CantSmashRock
-	checkpartymove MOVE_ROCK_SMASH
-	compare VAR_RESULT, PARTY_SIZE
-	goto_if_eq EventScript_CantSmashRock
-	setfieldeffectargument 0, VAR_RESULT
-	bufferpartymonnick 0, VAR_RESULT
-	buffermovename 1, MOVE_ROCK_SMASH
-	msgbox Text_WantToSmash, MSGBOX_YESNO
-	compare VAR_RESULT, NO
-	goto_if_eq EventScript_CancelSmash
-	msgbox Text_MonUsedFieldMove, MSGBOX_DEFAULT
 	closemessage
 	dofieldeffect FLDEFF_USE_ROCK_SMASH
 	waitstate
@@ -79,6 +68,7 @@ EventScript_RockSmash:: @ 82907A6
 
 EventScript_FldEffRockSmash:: @ 82907F0
 	lockall
+	goto_if_unset FLAG_OBTAINED_ROCK_SMASH, EventScript_CantSmashRock
 	dofieldeffect FLDEFF_USE_ROCK_SMASH
 	waitstate
 	goto EventScript_SmashRock
@@ -126,7 +116,8 @@ Text_CantSmash: @ 829087F
 
 EventScript_StrengthBoulder:: @ 82908BA
 	lockall
-	goto_if_unset FLAG_BADGE04_GET, EventScript_CantStrength
+	goto_if_unset FLAG_OBTAINED_STRENGTH, EventScript_CantStrength
+	setflag FLAG_SYS_USE_STRENGTH
 	goto_if_set FLAG_SYS_USE_STRENGTH, EventScript_CheckActivatedBoulder
 	checkpartymove MOVE_STRENGTH
 	compare VAR_RESULT, PARTY_SIZE

@@ -4679,6 +4679,16 @@
             "primary_tileset": "gTileset_General",
             "secondary_tileset": "gTileset_Petalburg",
             "width": 42
+        },
+        {
+            "blockdata_filepath": "data/layouts/DarkCity_ArumsHouse/map.bin",
+            "border_filepath": "data/layouts/DarkCity_ArumsHouse/border.bin",
+            "height": 20,
+            "id": "LAYOUT_DARK_CITY_ARUMS_HOUSE",
+            "name": "DarkCity_ArumsHouse_Layout",
+            "primary_tileset": "gTileset_General",
+            "secondary_tileset": "gTileset_Cave",
+            "width": 20
         }
     ],
     "layouts_table_label": "gMapLayouts"

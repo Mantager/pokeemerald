@@ -14,6 +14,19 @@
     "music": "MUS_DAN02",
     "name": "ColorRuinsRed_B1F",
     "object_events": [
+        {
+            "elevation": 3,
+            "flag": "FLAG_ITEM_COLOR_RUINS_RED_B1F_METRONOME",
+            "graphics_id": "EVENT_OBJ_GFX_ITEM_BALL",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "script": "ColorRuinsRed_B1F_EventScript_ItemMetronome",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 23,
+            "y": 26
+        }
     ],
     "region_map_section": "MAPSEC_COLOR_RUINS_RED",
     "requires_flash": false,

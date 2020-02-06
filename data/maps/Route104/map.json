@@ -381,19 +381,6 @@
         },
         {
             "elevation": 3,
-            "flag": "FLAG_ITEM_ROUTE_104_PP_UP",
-            "graphics_id": "EVENT_OBJ_GFX_ITEM_BALL",
-            "movement_range_x": 0,
-            "movement_range_y": 0,
-            "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
-            "script": "Route104_EventScript_ItemPPUp",
-            "trainer_sight_or_berry_tree_id": "0",
-            "trainer_type": "0",
-            "x": 39,
-            "y": 15
-        },
-        {
-            "elevation": 3,
             "flag": "FLAG_HIDE_ROUTE_104_WHITE_HERB_FLORIST",
             "graphics_id": "EVENT_OBJ_GFX_WOMAN_5",
             "movement_range_x": 1,

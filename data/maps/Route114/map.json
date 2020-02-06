@@ -219,32 +219,6 @@
             "y": 45
         },
         {
-            "elevation": 3,
-            "flag": "FLAG_ITEM_ROUTE_114_RARE_CANDY",
-            "graphics_id": "EVENT_OBJ_GFX_ITEM_BALL",
-            "movement_range_x": 0,
-            "movement_range_y": 0,
-            "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
-            "script": "Route114_EventScript_ItemRareCandy",
-            "trainer_sight_or_berry_tree_id": "0",
-            "trainer_type": "0",
-            "x": 7,
-            "y": 6
-        },
-        {
-            "elevation": 4,
-            "flag": "FLAG_ITEM_ROUTE_114_PROTEIN",
-            "graphics_id": "EVENT_OBJ_GFX_ITEM_BALL",
-            "movement_range_x": 0,
-            "movement_range_y": 0,
-            "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
-            "script": "Route114_EventScript_ItemProtein",
-            "trainer_sight_or_berry_tree_id": "0",
-            "trainer_type": "0",
-            "x": 11,
-            "y": 37
-        },
-        {
             "elevation": 4,
             "flag": "FLAG_TEMP_11",
             "graphics_id": "EVENT_OBJ_GFX_BREAKABLE_ROCK",

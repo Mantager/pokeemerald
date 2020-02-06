@@ -20,6 +20,45 @@
     "music": "MUS_DAN02",
     "name": "OracleHill",
     "object_events": [
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "EVENT_OBJ_GFX_LASS",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_UP",
+            "script": "OracleHill_EventScript_Xiu",
+            "trainer_sight_or_berry_tree_id": "2",
+            "trainer_type": "1",
+            "x": 10,
+            "y": 13
+        },
+        {
+            "elevation": 3,
+            "flag": "FLAG_ITEM_ORACLE_HILL_CLEANSE_TAG",
+            "graphics_id": "EVENT_OBJ_GFX_ITEM_BALL",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "script": "OracleHill_EventScript_ItemCleanseTag",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 17,
+            "y": 12
+        },
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "EVENT_OBJ_GFX_OLD_WOMAN",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+            "script": "OracleHill_EventScript_OldWoman",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 9,
+            "y": 8
+        }
     ],
     "region_map_section": "MAPSEC_NONE",
     "requires_flash": false,

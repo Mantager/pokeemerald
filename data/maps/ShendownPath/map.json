@@ -71,6 +71,58 @@
             "trainer_type": "1",
             "x": 19,
             "y": 19
+        },
+        {
+            "elevation": 3,
+            "flag": "FLAG_ITEM_SHENDOWN_PATH_QUICK_CLAW",
+            "graphics_id": "EVENT_OBJ_GFX_ITEM_BALL",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "script": "ShendownPath_EventScript_ItemQuickClaw",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 14,
+            "y": 18
+        },
+        {
+            "elevation": 3,
+            "flag": "FLAG_ITEM_SHENDOWN_PATH_HEAL_POWDER",
+            "graphics_id": "EVENT_OBJ_GFX_ITEM_BALL",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "script": "ShendownPath_EventScript_ItemHealPowder",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 49,
+            "y": 21
+        },
+        {
+            "elevation": 3,
+            "flag": "FLAG_ITEM_SHENDOWN_PATH_POKE_BALL",
+            "graphics_id": "EVENT_OBJ_GFX_ITEM_BALL",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "script": "ShendownPath_EventScript_ItemPokeBall",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 34,
+            "y": 23
+        },
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "EVENT_OBJ_GFX_FISHERMAN",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+            "script": "ShendownPath_EventScript_Fisherman",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 55,
+            "y": 16
         }
     ],
     "region_map_section": "MAPSEC_SHENDOWN_PATH",

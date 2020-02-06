@@ -12471,14 +12471,14 @@ static const struct TrainerMonItemDefaultMoves sParty_Hong[] = {
 static const struct TrainerMonItemDefaultMoves sParty_Log1[] = {
     {
     .iv = 0,
-    .lvl = 15,
+    .lvl = 14,
     .species = SPECIES_MACHOP,
     .heldItem = ITEM_ORAN_BERRY
     },
     {
     .iv = 0,
-    .lvl = 15,
-    .species = SPECIES_PANCHAM,
+    .lvl = 16,
+    .species = SPECIES_TIMBURR,
     .heldItem = ITEM_CHERI_BERRY
     }
 };
@@ -12778,7 +12778,7 @@ static const struct TrainerMonItemDefaultMoves sParty_Log2[] = {
     {
     .iv = 0,
     .lvl = 29,
-    .species = SPECIES_GURDURR,
+    .species = SPECIES_PANCHAM,
     .heldItem = ITEM_ROWAP_BERRY
     },
     {
@@ -12790,7 +12790,7 @@ static const struct TrainerMonItemDefaultMoves sParty_Log2[] = {
     {
     .iv = 0,
     .lvl = 30,
-    .species = SPECIES_PANGORO,
+    .species = SPECIES_CONKELDURR,
     .heldItem = ITEM_ROSELI_BERRY
     }
 };

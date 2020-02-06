@@ -623,6 +623,7 @@
 #define MAP_CHO_VILLAGE_HOUSE5 (4 | (37 << 8))
 
 // Map Group 38
+#define MAP_DARK_CITY_ARUMS_HOUSE (0 | (38 << 8))
 
 #define MAP_GROUPS_COUNT 39
 
