@@ -61,6 +61,7 @@ Text_CantCut: @ 829077D
 EventScript_RockSmash:: @ 82907A6
 	lockall
 	closemessage
+	goto_if_unset FLAG_OBTAINED_ROCK_SMASH, EventScript_CantSmashRock
 	dofieldeffect FLDEFF_USE_ROCK_SMASH
 	waitstate
 	goto EventScript_SmashRock
