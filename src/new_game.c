@@ -128,7 +128,7 @@ static void ClearFrontierRecord(void)
 
 static void WarpToTruck(void)
 {
-    SetWarpDestination(MAP_GROUP(JAM_KEY_MAP), MAP_NUM(JAM_KEY_MAP), 26, 20, -1);
+    SetWarpDestination(MAP_GROUP(FARMER_FIELD), MAP_NUM(FARMER_FIELD), 26, 20, -1);
     WarpIntoMap();
 }
 

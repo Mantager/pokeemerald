@@ -11,6 +11,54 @@
             "type": "sign",
             "x": 47,
             "y": 9
+        },
+        {
+            "elevation": 3,
+            "flag": "FLAG_HIDDEN_ITEM_SHENDOWN_PATH_CHILAN_BERRY",
+            "item": "ITEM_CHILAN_BERRY",
+            "type": "hidden_item",
+            "x": 67,
+            "y": 10
+        },
+        {
+            "elevation": 3,
+            "flag": "FLAG_HIDDEN_ITEM_SHENDOWN_PATH_CHESTO_BERRY",
+            "item": "ITEM_CHESTO_BERRY",
+            "type": "hidden_item",
+            "x": 52,
+            "y": 17
+        },
+        {
+            "elevation": 3,
+            "flag": "FLAG_HIDDEN_ITEM_SHENDOWN_PATH_RARE_CANDY",
+            "item": "ITEM_RARE_CANDY",
+            "type": "hidden_item",
+            "x": 40,
+            "y": 11
+        },
+        {
+            "elevation": 3,
+            "flag": "FLAG_HIDDEN_ITEM_SHENDOWN_PATH_BIG_MUSHROOM",
+            "item": "ITEM_BIG_MUSHROOM",
+            "type": "hidden_item",
+            "x": 29,
+            "y": 19
+        },
+        {
+            "elevation": 3,
+            "flag": "FLAG_HIDDEN_ITEM_SHENDOWN_PATH_RINDO_BERRY",
+            "item": "ITEM_RINDO_BERRY",
+            "type": "hidden_item",
+            "x": 11,
+            "y": 19
+        },
+        {
+            "elevation": 3,
+            "flag": "FLAG_HIDDEN_ITEM_SHENDOWN_PATH_TINY_MUSHROOM",
+            "item": "ITEM_TINY_MUSHROOM",
+            "type": "hidden_item",
+            "x": 65,
+            "y": 12
         }
     ],
     "connections": [

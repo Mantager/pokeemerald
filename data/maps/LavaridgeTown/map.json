@@ -59,14 +59,6 @@
             "type": "sign",
             "x": 11,
             "y": 6
-        },
-        {
-            "elevation": 3,
-            "flag": "FLAG_HIDDEN_ITEM_LAVARIDGE_TOWN_ICE_HEAL",
-            "item": "ITEM_ICE_HEAL",
-            "type": "hidden_item",
-            "x": 4,
-            "y": 5
         }
     ],
     "connections": [

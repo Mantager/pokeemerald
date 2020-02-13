@@ -4433,7 +4433,7 @@
         {
             "blockdata_filepath": "data/layouts/FarmerField/map.bin",
             "border_filepath": "data/layouts/FarmerField/border.bin",
-            "height": 38,
+            "height": 34,
             "id": "LAYOUT_FARMER_FIELD",
             "name": "FarmerField_Layout",
             "primary_tileset": "gTileset_General",
@@ -4468,7 +4468,7 @@
             "name": "WangyongMarsh_Layout",
             "primary_tileset": "gTileset_General",
             "secondary_tileset": "gTileset_Mossdeep",
-            "width": 36
+            "width": 40
         },
         {
             "blockdata_filepath": "data/layouts/KimyangRoad/map.bin",
@@ -4683,12 +4683,32 @@
         {
             "blockdata_filepath": "data/layouts/DarkCity_ArumsHouse/map.bin",
             "border_filepath": "data/layouts/DarkCity_ArumsHouse/border.bin",
-            "height": 20,
+            "height": 10,
             "id": "LAYOUT_DARK_CITY_ARUMS_HOUSE",
             "name": "DarkCity_ArumsHouse_Layout",
+            "primary_tileset": "gTileset_SecretBase",
+            "secondary_tileset": "gTileset_SecretBaseBrownCave",
+            "width": 13
+        },
+        {
+            "blockdata_filepath": "data/layouts/OracleHill_Cave/map.bin",
+            "border_filepath": "data/layouts/OracleHill_Cave/border.bin",
+            "height": 19,
+            "id": "LAYOUT_ORACLE_HILL_CAVE",
+            "name": "OracleHill_Cave_Layout",
+            "primary_tileset": "gTileset_SecretBase",
+            "secondary_tileset": "gTileset_SecretBaseBrownCave",
+            "width": 15
+        },
+        {
+            "blockdata_filepath": "data/layouts/TiyuForest_Clearing/map.bin",
+            "border_filepath": "data/layouts/TiyuForest_Clearing/border.bin",
+            "height": 22,
+            "id": "LAYOUT_TIYU_FOREST_CLEARING",
+            "name": "TiyuForest_Clearing_Layout",
             "primary_tileset": "gTileset_General",
-            "secondary_tileset": "gTileset_Cave",
-            "width": 20
+            "secondary_tileset": "gTileset_Rustboro",
+            "width": 18
         }
     ],
     "layouts_table_label": "gMapLayouts"

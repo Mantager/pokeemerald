@@ -4,6 +4,46 @@
     "allow_running": true,
     "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
     "bg_events": [
+        {
+            "elevation": 3,
+            "flag": "FLAG_HIDDEN_ITEM_KIMYANG_ROAD_POKE_BALL",
+            "item": "ITEM_POKE_BALL",
+            "type": "hidden_item",
+            "x": 41,
+            "y": 13
+        },
+        {
+            "elevation": 3,
+            "flag": "FLAG_HIDDEN_ITEM_KIMYANG_ROAD_COLBUR_BERRY",
+            "item": "ITEM_COLBUR_BERRY",
+            "type": "hidden_item",
+            "x": 6,
+            "y": 12
+        },
+        {
+            "elevation": 3,
+            "flag": "FLAG_HIDDEN_ITEM_KIMYANG_ROAD_PERSIM_BERRY",
+            "item": "ITEM_PERSIM_BERRY",
+            "type": "hidden_item",
+            "x": 15,
+            "y": 13
+        },
+        {
+            "elevation": 3,
+            "flag": "FLAG_HIDDEN_ITEM_KIMYANG_ROAD_MUSCLE_BAND",
+            "item": "ITEM_MUSCLE_BAND",
+            "type": "hidden_item",
+            "x": 32,
+            "y": 19
+        },
+        {
+            "elevation": 3,
+            "flag": "FLAG_HIDDEN_ITEM_KIMYANG_ROAD_KEBIA_BERRY",
+            "item": "ITEM_KEBIA_BERRY",
+            "type": "hidden_item",
+            "x": 25,
+            "y": 13
+        }
     ],
     "connections": [
         {
@@ -23,37 +63,37 @@
         {
             "elevation": 3,
             "flag": "0",
-            "graphics_id": "EVENT_OBJ_GFX_ANABEL",
+            "graphics_id": "EVENT_OBJ_GFX_BUG_CATCHER",
             "movement_range_x": 0,
             "movement_range_y": 0,
-            "movement_type": "MOVEMENT_TYPE_NONE",
-            "script": "NULL",
-            "trainer_sight_or_berry_tree_id": "0",
-            "trainer_type": "0",
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "script": "KimyangRoad_EventScript_Gen",
+            "trainer_sight_or_berry_tree_id": "3",
+            "trainer_type": "1",
             "x": 9,
             "y": 15
         },
         {
             "elevation": 3,
             "flag": "0",
-            "graphics_id": "EVENT_OBJ_GFX_ANABEL",
+            "graphics_id": "EVENT_OBJ_GFX_FISHERMAN",
             "movement_range_x": 0,
             "movement_range_y": 0,
-            "movement_type": "MOVEMENT_TYPE_NONE",
-            "script": "NULL",
-            "trainer_sight_or_berry_tree_id": "0",
-            "trainer_type": "0",
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "script": "KimyangRoad_EventScript_Nian",
+            "trainer_sight_or_berry_tree_id": "1",
+            "trainer_type": "1",
             "x": 20,
             "y": 9
         },
         {
             "elevation": 3,
             "flag": "0",
-            "graphics_id": "EVENT_OBJ_GFX_ANABEL",
+            "graphics_id": "EVENT_OBJ_GFX_MAN_4",
             "movement_range_x": 0,
             "movement_range_y": 0,
-            "movement_type": "MOVEMENT_TYPE_NONE",
-            "script": "NULL",
+            "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+            "script": "KimyangRoad_EventScript_ItemfinderMan",
             "trainer_sight_or_berry_tree_id": "0",
             "trainer_type": "0",
             "x": 34,

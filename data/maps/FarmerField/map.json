@@ -9,7 +9,7 @@
         {
             "direction": "left",
             "map": "MAP_JAM_KEY_MAP",
-            "offset": 4
+            "offset": 0
         }
     ],
     "coord_events": [

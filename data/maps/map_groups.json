@@ -554,7 +554,9 @@
         "ChoVillage_House2",
         "ChoVillage_House3",
         "ChoVillage_House4",
-        "ChoVillage_House5"
+        "ChoVillage_House5",
+        "OracleHill_Cave",
+        "TiyuForest_Clearing"
     ],
     "gMapGroup38": [
         "DarkCity_ArumsHouse"

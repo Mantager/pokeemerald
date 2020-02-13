@@ -1,5 +1,19 @@
 ShendownPath_MapScripts::
+	map_script MAP_SCRIPT_ON_LOAD, ShendownPath_OnLoad
 	.byte 0
+
+ShendownPath_OnLoad::
+	call_if_set FLAG_MEET_LOG_SHENDOWN_PATH, ShendownPath_BuildBridge
+	end
+
+ShendownPath_BuildBridge::
+	setmetatile 19, 13, METATILE_Fortree_WoodBridge2_Left, 3
+	setmetatile 20, 13, METATILE_Fortree_WoodBridge2_Right, 3
+	setmetatile 19, 14, METATILE_Fortree_WoodBridge2_Left, 3
+	setmetatile 20, 14, METATILE_Fortree_WoodBridge2_Right, 3
+	setmetatile 19, 15, METATILE_Fortree_WoodBridge2_Left, 3
+	setmetatile 20, 15, METATILE_Fortree_WoodBridge2_Right, 3
+	return
 
 ShendownPath_EventScript_Ling::
 	trainerbattle_single TRAINER_LING, ShendownPath_Text_LingIntro, ShendownPath_Text_LingDefeat

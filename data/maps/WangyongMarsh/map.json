@@ -4,12 +4,44 @@
     "allow_running": true,
     "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
     "bg_events": [
+        {
+            "elevation": 3,
+            "flag": "FLAG_HIDDEN_ITEM_WANGYONG_MARSH_TINY_MUSHROOM",
+            "item": "ITEM_TINY_MUSHROOM",
+            "type": "hidden_item",
+            "x": 30,
+            "y": 44
+        },
+        {
+            "elevation": 3,
+            "flag": "FLAG_HIDDEN_ITEM_WANGYONG_MARSH_BIG_MUSHROOM",
+            "item": "ITEM_BIG_MUSHROOM",
+            "type": "hidden_item",
+            "x": 21,
+            "y": 32
+        },
+        {
+            "elevation": 3,
+            "flag": "FLAG_HIDDEN_ITEM_WANGYONG_MARSH_WACAN_BERRY",
+            "item": "ITEM_WACAN_BERRY",
+            "type": "hidden_item",
+            "x": 11,
+            "y": 15
+        },
+        {
+            "elevation": 3,
+            "flag": "FLAG_HIDDEN_ITEM_WANGYONG_MARSH_REPEL",
+            "item": "ITEM_REPEL",
+            "type": "hidden_item",
+            "x": 13,
+            "y": 44
+        }
     ],
     "connections": [
         {
             "direction": "down",
             "map": "MAP_CHO_VILLAGE",
-            "offset": 0
+            "offset": 4
         },
         {
             "direction": "right",
@@ -19,7 +51,7 @@
         {
             "direction": "up",
             "map": "MAP_ORACLE_HILL",
-            "offset": 7
+            "offset": 11
         }
     ],
     "coord_events": [
@@ -40,7 +72,7 @@
             "script": "WangyongMarsh_EventScript_Dandan",
             "trainer_sight_or_berry_tree_id": "2",
             "trainer_type": "1",
-            "x": 27,
+            "x": 31,
             "y": 8
         },
         {
@@ -53,7 +85,7 @@
             "script": "WangyongMarsh_EventScript_Fan",
             "trainer_sight_or_berry_tree_id": "1",
             "trainer_type": "1",
-            "x": 8,
+            "x": 12,
             "y": 23
         },
         {
@@ -66,7 +98,7 @@
             "script": "WangyongMarsh_EventScript_ThinkingMan",
             "trainer_sight_or_berry_tree_id": "0",
             "trainer_type": "0",
-            "x": 4,
+            "x": 8,
             "y": 34
         },
         {
@@ -78,8 +110,8 @@
             "movement_type": "MOVEMENT_TYPE_FACE_LEFT_AND_RIGHT",
             "script": "WangyongMarsh_EventScript_Kang",
             "trainer_sight_or_berry_tree_id": "3",
-            "trainer_type": "0",
-            "x": 27,
+            "trainer_type": "1",
+            "x": 32,
             "y": 38
         },
         {
@@ -92,7 +124,7 @@
             "script": "WangyongMarsh_EventScript_Bolin",
             "trainer_sight_or_berry_tree_id": "1",
             "trainer_type": "1",
-            "x": 20,
+            "x": 24,
             "y": 20
         },
         {
@@ -105,7 +137,7 @@
             "script": "WangyongMarsh_EventScript_Changpu",
             "trainer_sight_or_berry_tree_id": "2",
             "trainer_type": "1",
-            "x": 10,
+            "x": 14,
             "y": 16
         },
         {
@@ -118,7 +150,7 @@
             "script": "WangyongMarsh_EventScript_ItemAbsorbBulb",
             "trainer_sight_or_berry_tree_id": "0",
             "trainer_type": "0",
-            "x": 7,
+            "x": 11,
             "y": 28
         },
         {
@@ -131,7 +163,7 @@
             "script": "WangyongMarsh_EventScript_ItemStick",
             "trainer_sight_or_berry_tree_id": "0",
             "trainer_type": "0",
-            "x": 14,
+            "x": 18,
             "y": 14
         },
         {
@@ -144,7 +176,7 @@
             "script": "WangyongMarsh_EventScript_ItemEnergyPowder",
             "trainer_sight_or_berry_tree_id": "0",
             "trainer_type": "0",
-            "x": 28,
+            "x": 32,
             "y": 34
         },
         {
@@ -157,7 +189,7 @@
             "script": "WangyongMarsh_EventScript_ItemBlackSludge",
             "trainer_sight_or_berry_tree_id": "0",
             "trainer_type": "0",
-            "x": 21,
+            "x": 25,
             "y": 8
         }
     ],

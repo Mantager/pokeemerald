@@ -172,9 +172,9 @@ const struct Trainer gTrainers[] = {
     [TRAINER_NIAN] =
     {
         .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
-        .trainerClass = TRAINER_CLASS_FARMER,
+        .trainerClass = TRAINER_CLASS_FISHERMAN,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FARMER,
+        .trainerPic = TRAINER_PIC_FISHERMAN,
         .trainerName = _("Nian"),
         .items = {},
         .doubleBattle = FALSE,

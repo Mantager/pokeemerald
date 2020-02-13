@@ -616,11 +616,13 @@
 #define MAP_FARMER_HUT (0 | (36 << 8))
 
 // Map Group 37
-#define MAP_CHO_VILLAGE_HOUSE1 (0 | (37 << 8))
-#define MAP_CHO_VILLAGE_HOUSE2 (1 | (37 << 8))
-#define MAP_CHO_VILLAGE_HOUSE3 (2 | (37 << 8))
-#define MAP_CHO_VILLAGE_HOUSE4 (3 | (37 << 8))
-#define MAP_CHO_VILLAGE_HOUSE5 (4 | (37 << 8))
+#define MAP_CHO_VILLAGE_HOUSE1   (0 | (37 << 8))
+#define MAP_CHO_VILLAGE_HOUSE2   (1 | (37 << 8))
+#define MAP_CHO_VILLAGE_HOUSE3   (2 | (37 << 8))
+#define MAP_CHO_VILLAGE_HOUSE4   (3 | (37 << 8))
+#define MAP_CHO_VILLAGE_HOUSE5   (4 | (37 << 8))
+#define MAP_ORACLE_HILL_CAVE     (5 | (37 << 8))
+#define MAP_TIYU_FOREST_CLEARING (6 | (37 << 8))
 
 // Map Group 38
 #define MAP_DARK_CITY_ARUMS_HOUSE (0 | (38 << 8))

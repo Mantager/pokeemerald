@@ -4,6 +4,38 @@
     "allow_running": false,
     "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
     "bg_events": [
+        {
+            "elevation": 3,
+            "flag": "FLAG_HIDDEN_ITEM_ZHAOUN_PATH_WISE_GLASSES",
+            "item": "ITEM_WISE_GLASSES",
+            "type": "hidden_item",
+            "x": 33,
+            "y": 21
+        },
+        {
+            "elevation": 3,
+            "flag": "FLAG_HIDDEN_ITEM_ZHAOUN_PATH_ENERGY_ROOT",
+            "item": "ITEM_ENERGY_ROOT",
+            "type": "hidden_item",
+            "x": 39,
+            "y": 17
+        },
+        {
+            "elevation": 3,
+            "flag": "FLAG_HIDDEN_ITEM_ZHAOUN_PATH_FLUFFY_TAIL",
+            "item": "ITEM_FLUFFY_TAIL",
+            "type": "hidden_item",
+            "x": 25,
+            "y": 20
+        },
+        {
+            "elevation": 3,
+            "flag": "FLAG_HIDDEN_ITEM_ZHAOUN_PATH_CHOPLE_BERRY",
+            "item": "ITEM_CHOPLE_BERRY",
+            "type": "hidden_item",
+            "x": 19,
+            "y": 14
+        }
     ],
     "connections": null,
     "coord_events": [

@@ -26,5 +26,18 @@ FarmerHut_EventScript_DedenneTest_2::
 	releaseall
 	end
 
+FarmerHut_EventScript_Bed::
+	lockall
+	setrespawn HEAL_LOCATION_JAM_KEY_MAP
+	msgbox FarmerHut_Text_TakeRestInBed, MSGBOX_DEFAULT
+	closemessage
+	call Common_EventScript_OutOfCenterPartyHeal
+	releaseall
+	end
+
+FarmerHut_Text_TakeRestInBed:
+	.string "It's {PLAYER}'s bed…\n"
+	.string "Let's take a rest.$"
+
 FarmerHut_Text_ReceivedDedenne:
 	.string "{PLAYER} received the {STR_VAR_1}!$"

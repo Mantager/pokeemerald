@@ -59,14 +59,6 @@
             "type": "sign",
             "x": 3,
             "y": 7
-        },
-        {
-            "elevation": 3,
-            "flag": "FLAG_HIDDEN_ITEM_FALLARBOR_TOWN_NUGGET",
-            "item": "ITEM_NUGGET",
-            "type": "hidden_item",
-            "x": 2,
-            "y": 15
         }
     ],
     "connections": [

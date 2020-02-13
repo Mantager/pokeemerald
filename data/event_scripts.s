@@ -1172,3 +1172,7 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/ZhaounPath/scripts.inc"
 
 	.include "data/maps/DarkCity_ArumsHouse/scripts.inc"
+
+	.include "data/maps/OracleHill_Cave/scripts.inc"
+
+	.include "data/maps/TiyuForest_Clearing/scripts.inc"

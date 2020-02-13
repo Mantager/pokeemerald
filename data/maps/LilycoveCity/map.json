@@ -83,30 +83,6 @@
             "type": "sign",
             "x": 34,
             "y": 6
-        },
-        {
-            "elevation": 3,
-            "flag": "FLAG_HIDDEN_ITEM_LILYCOVE_CITY_HEART_SCALE",
-            "item": "ITEM_HEART_SCALE",
-            "type": "hidden_item",
-            "x": 36,
-            "y": 31
-        },
-        {
-            "elevation": 0,
-            "flag": "FLAG_HIDDEN_ITEM_LILYCOVE_CITY_PP_UP",
-            "item": "ITEM_PP_UP",
-            "type": "hidden_item",
-            "x": 61,
-            "y": 7
-        },
-        {
-            "elevation": 0,
-            "flag": "FLAG_HIDDEN_ITEM_LILYCOVE_CITY_POKE_BALL",
-            "item": "ITEM_POKE_BALL",
-            "type": "hidden_item",
-            "x": 64,
-            "y": 31
         }
     ],
     "connections": [
