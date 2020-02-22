@@ -51,7 +51,7 @@ EverGrandeCity_HallOfFame_EventScript_EnterHallOfFame:: @ 8229850
 	end
 
 EverGrandeCity_HallOfFame_EventScript_GameClearMale:: @ 82298E9
-	setrespawn HEAL_LOCATION_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F
+	setrespawn HEAL_LOCATION_JAM_KEY_MAP
 	fadescreenspeed FADE_TO_BLACK, 24
 	special GameClear
 	waitstate
@@ -59,7 +59,7 @@ EverGrandeCity_HallOfFame_EventScript_GameClearMale:: @ 82298E9
 	end
 
 EverGrandeCity_HallOfFame_EventScript_GameClearFemale:: @ 82298F5
-	setrespawn HEAL_LOCATION_LITTLEROOT_TOWN_MAYS_HOUSE_2F
+	setrespawn HEAL_LOCATION_JAM_KEY_MAP
 	fadescreenspeed FADE_TO_BLACK, 24
 	special GameClear
 	waitstate

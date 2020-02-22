@@ -82,32 +82,52 @@ JamKeyMap_EventScript_Truck::
 	release
 	end
 
-JamKeyMap_EventScript_TruckInitialEvent::
+JamKeyMap_EventScript_TruckWontMove::
 	msgbox JamKeyMap_Text_TruckWontStart, MSGBOX_DEFAULT
 	release
 	end
 
-JamKeyMap_EventScript_TruckWontMove::
+JamKeyMap_EventScript_TruckInitialEvent::
 	msgbox JamKeyMap_Text_PulpUrgh, MSGBOX_DEFAULT
+	setvar VAR_STORY_EVENT_PROGRESS, 2
 	release
 	end
 
 JamKeyMap_EventScript_LogFinalFight::
 	fadescreen 1
-	setobjectxy 5, 17, 21
-	applymovement 5, JamKeyMap_Movement_LogFacePlayer
+	clearflag FLAG_LOG_PULP_BYROAD
+	addobject 5
 	fadescreen 0
-	fadeoutbgm 1
 	delay 20
-	trainerbattle_no_intro TRAINER_LOG_2, DarkRuins_FinalRoom_Text_ArumDefeat
+	applymovement EVENT_OBJ_ID_PLAYER, JamKeyMap_Movement_MechanicFacePlayer
+	waitmovement 0
 	delay 30
+	msgbox JamKeyMap_Text_LogPleaseBattleMe, MSGBOX_DEFAULT
+	closemessage
 	fadescreen 1
-	setobjectxy 5, 0, 0
-	fadedefaultbgm
 	setvar VAR_STORY_EVENT_PROGRESS, 11
 	fadescreen 0
 	delay 8
 	release
+	end
+
+JamKeyMap_EventScript_Log::
+	lock
+	faceplayer
+	msgbox JamKeyMap_Text_LogIntro, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_LOG_2, JamKeyMap_Text_LogDefeat
+	msgbox JamKeyMap_Text_LogPostBattle, MSGBOX_DEFAULT
+	closemessage
+	delay 20
+	dofieldeffect FLDEFF_HALL_OF_FAME_RECORD
+	waitfieldeffect FLDEFF_HALL_OF_FAME_RECORD
+	delay 40
+	setvar VAR_STORY_EVENT_PROGRESS, 12
+	setvar VAR_TEMP_1, 1
+	call EverGrandeCity_HallOfFame_EventScript_SetGameClearFlags
+	checkplayergender
+	compare VAR_RESULT, MALE
+	goto_if_eq EverGrandeCity_HallOfFame_EventScript_GameClearMale
 	end
 
 JamKeyMap_Movement_MoveToMechanicTop:
@@ -144,10 +164,6 @@ JamKeyMap_Movement_MechanicFacePlayer:
 	face_right
 	step_end
 
-JamKeyMap_Movement_LogFacePlayer:
-	face_left
-	step_end
-
 JamKeyMap_Movement_WalkDown:
 	walk_down
 	step_end
@@ -182,3 +198,42 @@ JamKeyMap_Text_PulpUrgh:
 	.string "The truck won't start!\p"
 	.string "Looks like {PLAYER} has to travel\n"
 	.string "to Cho Village in the east on foot.$"
+
+JamKeyMap_Text_LogPleaseBattleMe:
+	.string "Oh, it's {PLAYER}!\n"
+	.string "How's it going?\p"
+	.string "W-whaat?!\n"
+	.string "You actually found that relic?!\l"
+	.string "T-that's incredible!\p"
+	.string "So, I guess you're… going?\p"
+	.string "Before you go, {PLAYER}…\n"
+	.string "Let's have another battle.\p"
+	.string "But this time, I'll win!\p"
+	.string "I'll let you prepare, so talk\n"
+	.string "to me when you're ready to fight.$"
+
+JamKeyMap_Text_LogIntro:
+	.string "Well then, {PLAYER}!\n"
+	.string "Our final fight… here I come!$"
+
+JamKeyMap_Text_LogDefeat:
+	.string "Aha, nothing's changed!$"
+
+JamKeyMap_Text_LogPostBattle:
+	.string "Like always, you win…\n"
+	.string "But I don't care!\p"
+	.string "I just like to battle, whether\n"
+	.string "I win or lose!\p"
+	.string "My Pokémon feel the same way.\p"
+	.string "So, looks like this is goodbye…\n"
+	.string "I'm not jealous or anything.\p"
+	.string "I can find meaning in my construction\n"
+	.string "work, so I'm happy right here!\p"
+	.string "Yup, so go ahead and enjoy yourself\n"
+	.string "in big ol' Honzhu City!\n"
+	.string "Make sure you work hard on the\n"
+	.string "Berry business too, though!\p"
+	.string "And send me a postcard when you\n"
+	.string "get there!\p"
+	.string "Well, old friend…\n"
+	.string "Farewell!$"

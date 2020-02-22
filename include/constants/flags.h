@@ -71,13 +71,13 @@
 #define FLAG_DARK_RUINS_DIGLETT_4         0x3D // Hide Diglett in Dark Ruins
 #define FLAG_DARK_RUINS_DIGLETT_5         0x3E // Hide Diglett in Dark Ruins
 #define FLAG_DARK_RUINS_DIGLETT_6         0x3F // Hide Diglett in Dark Ruins
-#define FLAG_DARK_RUINS_YELLOW_COMPLETE   0x40 // Unused Flag
-#define FLAG_DARK_RUINS_GREEN_COMPLETE    0x41 // Unused Flag
-#define FLAG_DARK_RUINS_RED_COMPLETE      0x42 // Unused Flag
-#define FLAG_DARK_RUINS_BLUE_COMPLETE     0x43 // Unused Flag
-#define FLAG_OBTAINED_RELIC_CROWN         0x44 // Unused Flag
-#define FLAG_UNUSED_0x045    0x45 // Unused Flag
-#define FLAG_UNUSED_0x046    0x46 // Unused Flag
+#define FLAG_DARK_RUINS_YELLOW_COMPLETE   0x40 // GAIDEN 1 story
+#define FLAG_DARK_RUINS_GREEN_COMPLETE    0x41 // GAIDEN 1 story
+#define FLAG_DARK_RUINS_RED_COMPLETE      0x42 // GAIDEN 1 story
+#define FLAG_DARK_RUINS_BLUE_COMPLETE     0x43 // GAIDEN 1 story
+#define FLAG_OBTAINED_RELIC_CROWN         0x44 // GAIDEN 1 story
+#define FLAG_LOG_PULP_BYROAD              0x45 // GAIDEN 1 story
+#define FLAG_START_EVENT_BERRY_TREES_2    0x46 // GAIDEN 1 story
 #define FLAG_UNUSED_0x047    0x47 // Unused Flag
 #define FLAG_UNUSED_0x048    0x48 // Unused Flag
 #define FLAG_UNUSED_0x049    0x49 // Unused Flag

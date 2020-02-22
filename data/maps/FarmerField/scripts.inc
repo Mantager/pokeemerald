@@ -70,6 +70,7 @@ FarmerField_IntroEvent::
 	givemon SPECIES_DEDENNE, 15, ITEM_NONE
 	setflag FLAG_SYS_POKEMON_GET
 	setflag FLAG_PULP_BYROAD_MECHANIC
+	setflag FLAG_LOG_PULP_BYROAD
 	giveitem ITEM_BERRY_PACKAGE, 1
 	setrespawn HEAL_LOCATION_JAM_KEY_MAP
 	release
@@ -142,7 +143,7 @@ FarmerField_Text_CityIsAmazing:
 	.string "to escape this place and move there.$"
 
 FarmerField_Text_AllDone:
-	.string "…All done!\n"
+	.string "…All done!\p"
 	.string "Finally, I managed to pick all the\n"
 	.string "Berries for the mechanic's order.\p"
 	.string "Now to get in the truck and deliver\n"

@@ -23,6 +23,7 @@ DarkRuins_FinalRoom_EventScript_ArumReturnToSurface::
 	msgbox DarkRuins_FinalRoom_Text_ArumLetsGo, MSGBOX_DEFAULT
 	closemessage
 	setvar VAR_STORY_EVENT_PROGRESS, 9
+	setflag FLAG_LOG_PULP_BYROAD
 	setrespawn HEAL_LOCATION_JAM_KEY_MAP
 	warp MAP_FARMER_FIELD, 255, 9, 7
 	release
