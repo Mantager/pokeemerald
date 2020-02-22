@@ -207,32 +207,6 @@
             "y": 6
         },
         {
-            "elevation": 3,
-            "flag": "0",
-            "graphics_id": "EVENT_OBJ_GFX_TUBER_F",
-            "movement_range_x": 0,
-            "movement_range_y": 0,
-            "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_UP",
-            "script": "Route109_EventScript_Gwen",
-            "trainer_sight_or_berry_tree_id": "3",
-            "trainer_type": "1",
-            "x": 29,
-            "y": 32
-        },
-        {
-            "elevation": 3,
-            "flag": "0",
-            "graphics_id": "EVENT_OBJ_GFX_TUBER_F",
-            "movement_range_x": 0,
-            "movement_range_y": 0,
-            "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_LEFT",
-            "script": "Route109_EventScript_Austina",
-            "trainer_sight_or_berry_tree_id": "3",
-            "trainer_type": "1",
-            "x": 28,
-            "y": 31
-        },
-        {
             "elevation": 0,
             "flag": "0",
             "graphics_id": "EVENT_OBJ_GFX_FISHERMAN",

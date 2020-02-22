@@ -1,0 +1,216 @@
+{
+    "allow_bike": true,
+    "allow_escape_rope": false,
+    "allow_running": true,
+    "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+    "bg_events": [
+        {
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+            "script": "DarkRuins_YellowRoom_EventScript_RoomGuide",
+            "type": "sign",
+            "x": 9,
+            "y": 16
+        },
+        {
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+            "script": "DarkRuins_YellowRoom_EventScript_RoomGuide",
+            "type": "sign",
+            "x": 10,
+            "y": 16
+        }
+    ],
+    "connections": null,
+    "coord_events": [
+    ],
+    "id": "MAP_DARK_RUINS_YELLOW_ROOM",
+    "layout": "LAYOUT_DARK_RUINS_YELLOW_ROOM",
+    "map_type": "MAP_TYPE_UNDERGROUND",
+    "music": "MUS_B_TUBE",
+    "name": "DarkRuins_YellowRoom",
+    "object_events": [
+        {
+            "elevation": 3,
+            "flag": "FLAG_ITEM_DARK_RUINS_YELLOW_ROOM_ZOOM_LENS",
+            "graphics_id": "EVENT_OBJ_GFX_ITEM_BALL",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "script": "DarkRuins_YellowRoom_EventScript_ItemZoomLens",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 13,
+            "y": 2
+        },
+        {
+            "elevation": 3,
+            "flag": "FLAG_ITEM_DARK_RUINS_YELLOW_ROOM_RARE_CANDY",
+            "graphics_id": "EVENT_OBJ_GFX_ITEM_BALL",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "script": "DarkRuins_YellowRoom_EventScript_ItemRareCandy",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 2,
+            "y": 4
+        },
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "EVENT_OBJ_GFX_MAN_4",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "script": "DarkRuins_YellowRoom_EventScript_Huizhong",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 8,
+            "y": 2
+        },
+        {
+            "elevation": 3,
+            "flag": "FLAG_DARK_RUINS_DIGLETT_1",
+            "graphics_id": "EVENT_OBJ_GFX_DIGLETT",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_FACE_UP",
+            "script": "DarkRuins_YellowRoom_EventScript_Diglett4",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 2,
+            "y": 14
+        },
+        {
+            "elevation": 3,
+            "flag": "FLAG_DARK_RUINS_DIGLETT_3",
+            "graphics_id": "EVENT_OBJ_GFX_DIGLETT",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "script": "DarkRuins_YellowRoom_EventScript_Diglett5",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 1,
+            "y": 11
+        },
+        {
+            "elevation": 3,
+            "flag": "FLAG_DARK_RUINS_DIGLETT_1",
+            "graphics_id": "EVENT_OBJ_GFX_DIGLETT",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "script": "DarkRuins_YellowRoom_EventScript_Diglett6",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 5,
+            "y": 11
+        },
+        {
+            "elevation": 3,
+            "flag": "FLAG_DARK_RUINS_DIGLETT_2",
+            "graphics_id": "EVENT_OBJ_GFX_DIGLETT",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "script": "DarkRuins_YellowRoom_EventScript_Diglett7",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 11,
+            "y": 16
+        },
+        {
+            "elevation": 3,
+            "flag": "FLAG_DARK_RUINS_DIGLETT_3",
+            "graphics_id": "EVENT_OBJ_GFX_DIGLETT",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "script": "DarkRuins_YellowRoom_EventScript_Diglett8",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 15,
+            "y": 15
+        },
+        {
+            "elevation": 3,
+            "flag": "FLAG_DARK_RUINS_DIGLETT_3",
+            "graphics_id": "EVENT_OBJ_GFX_DIGLETT",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "script": "DarkRuins_YellowRoom_EventScript_Diglett9",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 10,
+            "y": 12
+        },
+        {
+            "elevation": 3,
+            "flag": "FLAG_DARK_RUINS_DIGLETT_5",
+            "graphics_id": "EVENT_OBJ_GFX_DIGLETT",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "script": "DarkRuins_YellowRoom_EventScript_Diglett10",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 13,
+            "y": 8
+        },
+        {
+            "elevation": 3,
+            "flag": "FLAG_DARK_RUINS_DIGLETT_6",
+            "graphics_id": "EVENT_OBJ_GFX_DIGLETT",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "script": "DarkRuins_YellowRoom_EventScript_Diglett11",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 6,
+            "y": 8
+        },
+        {
+            "elevation": 3,
+            "flag": "FLAG_DARK_RUINS_DIGLETT_4",
+            "graphics_id": "EVENT_OBJ_GFX_DIGLETT",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "script": "DarkRuins_YellowRoom_EventScript_Diglett12",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 1,
+            "y": 7
+        },
+        {
+            "elevation": 3,
+            "flag": "FLAG_DARK_RUINS_DIGLETT_6",
+            "graphics_id": "EVENT_OBJ_GFX_DIGLETT",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "script": "DarkRuins_YellowRoom_EventScript_Diglett13",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 8,
+            "y": 5
+        }
+    ],
+    "region_map_section": "MAPSEC_DARK_RUINS",
+    "requires_flash": false,
+    "show_map_name": false,
+    "warp_events": [
+        {
+            "dest_map": "MAP_DARK_RUINS",
+            "dest_warp_id": 1,
+            "elevation": 0,
+            "x": 8,
+            "y": 18
+        }
+    ],
+    "weather": "WEATHER_NONE"
+}

@@ -3,16 +3,17 @@ ShendownPath_MapScripts::
 	.byte 0
 
 ShendownPath_OnLoad::
-	call_if_set FLAG_MEET_LOG_SHENDOWN_PATH, ShendownPath_BuildBridge
+	call_if_set FLAG_COLOR_RUINS_GREEN_WALL_READ, ShendownPath_BuildBridge
 	end
 
 ShendownPath_BuildBridge::
-	setmetatile 19, 13, METATILE_Fortree_WoodBridge2_Left, 3
-	setmetatile 20, 13, METATILE_Fortree_WoodBridge2_Right, 3
-	setmetatile 19, 14, METATILE_Fortree_WoodBridge2_Left, 3
-	setmetatile 20, 14, METATILE_Fortree_WoodBridge2_Right, 3
-	setmetatile 19, 15, METATILE_Fortree_WoodBridge2_Left, 3
-	setmetatile 20, 15, METATILE_Fortree_WoodBridge2_Right, 3
+	setmetatile 19, 13, METATILE_Fortree_WoodBridge2_Left, 0
+	setmetatile 20, 13, METATILE_Fortree_WoodBridge2_Right, 0
+	setmetatile 19, 14, METATILE_Fortree_WoodBridge2_Left, 0
+	setmetatile 20, 14, METATILE_Fortree_WoodBridge2_Right, 0
+	setmetatile 19, 15, METATILE_Fortree_WoodBridge2_Left, 0
+	setmetatile 20, 15, METATILE_Fortree_WoodBridge2_Right, 0
+	special DrawWholeMapView
 	return
 
 ShendownPath_EventScript_Ling::
@@ -21,12 +22,12 @@ ShendownPath_EventScript_Ling::
 	end
 
 ShendownPath_EventScript_Bai::
-	trainerbattle_single TRAINER_BAI, ShendownPath_Text_BaiIntro ShendownPath_Text_BaiDefeat
+	trainerbattle_single TRAINER_BAI, ShendownPath_Text_BaiIntro, ShendownPath_Text_BaiDefeat
 	msgbox ShendownPath_Text_BaiPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 ShendownPath_EventScript_Hong::
-	trainerbattle_single TRAINER_HONG, ShendownPath_Text_HongIntro ShendownPath_Text_HongDefeat
+	trainerbattle_single TRAINER_HONG, ShendownPath_Text_HongIntro, ShendownPath_Text_HongDefeat
 	msgbox ShendownPath_Text_HongPostBattle, MSGBOX_AUTOCLOSE
 	end
 

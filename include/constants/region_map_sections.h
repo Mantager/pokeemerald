@@ -229,6 +229,7 @@
 #define MAPSEC_TIYU_FOREST                  0xE1
 #define MAPSEC_DARK_CITY                    0xE2
 #define MAPSEC_DARK_RUINS                   0xE3
+#define MAPSEC_ZHAOUN_PATH                  0xE4
 
 #define MAPSEC_NONE                         0xFC
 #define METLOC_SPECIAL_EGG                  0xFD

@@ -83,6 +83,7 @@
 #define METATILE_Building_PC_On   0x005
 
 // gTileset_Cave
+#define METATILE_Cave_CrackedFloorHole                   0x206
 #define METATILE_Cave_EntranceCover                      0x229
 #define METATILE_Cave_SealedChamberBraille_Mid           0x235
 #define METATILE_Cave_SealedChamberEntrance_BottomLeft   0x232
@@ -95,6 +96,28 @@
 #define METATILE_Cave_ShoalCave_BlueStone_Small          0x35B
 #define METATILE_Cave_ShoalCave_DirtPile_Large           0x358
 #define METATILE_Cave_ShoalCave_DirtPile_Small           0x35A
+
+// gTileset_ColorRuinsGeneric
+#define METATILE_ColorRuinsGeneric_DoorBottom           0x264
+#define METATILE_ColorRuinsGeneric_DoorTopBlue          0x266
+#define METATILE_ColorRuinsGeneric_DoorTopGreen         0x268
+#define METATILE_ColorRuinsGeneric_DoorTopPurple        0x269
+#define METATILE_ColorRuinsGeneric_DoorTopRed           0x267
+#define METATILE_ColorRuinsGeneric_DoorTopYellow        0x265
+#define METATILE_ColorRuinsGeneric_FloorTileUp          0x270
+#define METATILE_ColorRuinsGeneric_GreyWallBottom       0x261
+#define METATILE_ColorRuinsGeneric_GreyWallBottomLeft   0x262
+#define METATILE_ColorRuinsGeneric_GreyWallBottomRight  0x260
+#define METATILE_ColorRuinsGeneric_GreyWallTop          0x221
+#define METATILE_ColorRuinsGeneric_GreyWallTopLeft      0x226
+#define METATILE_ColorRuinsGeneric_GreyWallTopRight     0x225
+#define METATILE_ColorRuinsGeneric_Ground               0x208
+#define METATILE_ColorRuinsGeneric_WallBottom           0x207
+#define METATILE_ColorRuinsGeneric_WallTop_Blue         0x205
+#define METATILE_ColorRuinsGeneric_WallTop_Green        0x24E
+#define METATILE_ColorRuinsGeneric_WallTop_Purple       0x204
+#define METATILE_ColorRuinsGeneric_WallTop_Red          0x201
+#define METATILE_ColorRuinsGeneric_WallTop_Yellow       0x202
 
 // gTileset_Contest
 #define METATILE_Contest_CounterFlap_Bottom  0x2D9
@@ -150,6 +173,7 @@
 #define METATILE_Fortree_SecretBase_LongGrass_TopLeft      0x279
 #define METATILE_Fortree_SecretBase_LongGrass_TopMid       0x27A
 #define METATILE_Fortree_SecretBase_LongGrass_TopRight     0x27B
+#define METATILE_Fortree_ShrubOpen                         0x278
 #define METATILE_Fortree_WoodBridge1_Bottom                0x29F
 #define METATILE_Fortree_WoodBridge1_Top                   0x297
 #define METATILE_Fortree_WoodBridge2_Left                  0x220

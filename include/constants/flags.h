@@ -39,43 +39,43 @@
 #define FLAG_TEMP_1F     (TEMP_FLAGS_START + 0x1F)
 #define TEMP_FLAGS_END   FLAG_TEMP_1F
 
-#define FLAG_MEET_LOG_CHO_VILLAGE_1    0x20 // GAIDEN 1 story
-#define FLAG_MEET_LOG_CHO_VILLAGE_2    0x21 // GAIDEN 1 story
-#define FLAG_MEET_LOG_SHENDOWN_PATH    0x22 // GAIDEN 1 story
-#define FLAG_MEET_LOG_PULP_BYROAD      0x23 // GAIDEN 1 story
-#define FLAG_OBTAINED_ROCK_SMASH       0x24 // Used as Rock Smash replacement
-#define FLAG_OBTAINED_STRENGTH         0x25 // Used as Strength replacement
-#define FLAG_OBTAINED_ITEMFINDER       0x26 // Itemfinder obtained
-#define FLAG_UNUSED_0x027    0x27 // Unused Flag
-#define FLAG_UNUSED_0x028    0x28 // Unused Flag
-#define FLAG_UNUSED_0x029    0x29 // Unused Flag
-#define FLAG_UNUSED_0x02A    0x2A // Unused Flag
-#define FLAG_UNUSED_0x02B    0x2B // Unused Flag
-#define FLAG_UNUSED_0x02C    0x2C // Unused Flag
-#define FLAG_UNUSED_0x02D    0x2D // Unused Flag
-#define FLAG_UNUSED_0x02E    0x2E // Unused Flag
-#define FLAG_UNUSED_0x02F    0x2F // Unused Flag
-#define FLAG_UNUSED_0x030    0x30 // Unused Flag
-#define FLAG_UNUSED_0x031    0x31 // Unused Flag
-#define FLAG_UNUSED_0x032    0x32 // Unused Flag
-#define FLAG_UNUSED_0x033    0x33 // Unused Flag
-#define FLAG_UNUSED_0x034    0x34 // Unused Flag
-#define FLAG_UNUSED_0x035    0x35 // Unused Flag
-#define FLAG_UNUSED_0x036    0x36 // Unused Flag
-#define FLAG_UNUSED_0x037    0x37 // Unused Flag
-#define FLAG_UNUSED_0x038    0x38 // Unused Flag
-#define FLAG_UNUSED_0x039    0x39 // Unused Flag
-#define FLAG_UNUSED_0x03A    0x3A // Unused Flag
-#define FLAG_UNUSED_0x03B    0x3B // Unused Flag
-#define FLAG_UNUSED_0x03C    0x3C // Unused Flag
-#define FLAG_UNUSED_0x03D    0x3D // Unused Flag
-#define FLAG_UNUSED_0x03E    0x3E // Unused Flag
-#define FLAG_UNUSED_0x03F    0x3F // Unused Flag
-#define FLAG_UNUSED_0x040    0x40 // Unused Flag
-#define FLAG_UNUSED_0x041    0x41 // Unused Flag
-#define FLAG_UNUSED_0x042    0x42 // Unused Flag
-#define FLAG_UNUSED_0x043    0x43 // Unused Flag
-#define FLAG_UNUSED_0x044    0x44 // Unused Flag
+#define FLAG_MEET_LOG_CHO_VILLAGE_1       0x20 // GAIDEN 1 story
+#define FLAG_MEET_LOG_CHO_VILLAGE_2       0x21 // GAIDEN 1 story
+#define FLAG_MEET_LOG_PULP_BYROAD_1       0x22 // GAIDEN 1 story
+#define FLAG_MEET_LOG_PULP_BYROAD_2       0x23 // GAIDEN 1 story
+#define FLAG_OBTAINED_ROCK_SMASH          0x24 // Used as Rock Smash replacement
+#define FLAG_OBTAINED_STRENGTH            0x25 // Used as Strength replacement
+#define FLAG_OBTAINED_ITEMFINDER          0x26 // Itemfinder obtained
+#define FLAG_MEET_ORACLE                  0x27 // GAIDEN 1 story
+#define FLAG_COLOR_RUINS_YELLOW_PUZZLE    0x28 // Color Ruins Yellow puzzle complete
+#define FLAG_COLOR_RUINS_GREEN_PUZZLE     0x29 // Color Ruins Green puzzle complete
+#define FLAG_COLOR_RUINS_RED_PUZZLE       0x2A // Color Ruins Red puzzle complete
+#define FLAG_COLOR_RUINS_BLUE_PUZZLE      0x2B // Color Ruins Blue puzzle complete
+#define FLAG_MEET_MECHANIC                0x2C // GAIDEN 1 story
+#define FLAG_START_EVENT_BERRY_TREES      0x2D // GAIDEN 1 story
+#define FLAG_PULP_BYROAD_MECHANIC         0x2E // GAIDEN 1 story
+#define FLAG_DARK_CITY_NPC_TRADE_COMPLETE 0x2F // Torkoal trade
+#define FLAG_COLOR_RUINS_YELLOW_WALL_READ 0x30 // GAIDEN 1 story
+#define FLAG_COLOR_RUINS_GREEN_WALL_READ  0x31 // GAIDEN 1 story
+#define FLAG_COLOR_RUINS_RED_WALL_READ    0x32 // GAIDEN 1 story
+#define FLAG_COLOR_RUINS_BLUE_WALL_READ   0x33 // GAIDEN 1 story
+#define FLAG_HIDE_COLOR_RUINS_RED_STATUE  0x34 // Hide statue in Color Ruins Red
+#define FLAG_MEET_ARUM_DARK_CITY_ENTRANCE 0x35 // GAIDEN 1 story
+#define FLAG_MEET_ARUM_DARK_CITY_MAIN     0x36 // GAIDEN 1 story
+#define FLAG_MEET_SHOPOWNER_DARK_CITY     0x37 // Extended intro if not set
+#define FLAG_DARK_CITY_RECIEVED_LUCKY_EGG 0x38 // Lucky Egg given
+#define FLAG_MEET_ARUM_DARK_RUINS_LOBBY   0x39 // GAIDEN 1 story
+#define FLAG_DARK_RUINS_DIGLETT_1         0x3A // Hide Diglett in Dark Ruins
+#define FLAG_DARK_RUINS_DIGLETT_2         0x3B // Hide Diglett in Dark Ruins
+#define FLAG_DARK_RUINS_DIGLETT_3         0x3C // Hide Diglett in Dark Ruins
+#define FLAG_DARK_RUINS_DIGLETT_4         0x3D // Hide Diglett in Dark Ruins
+#define FLAG_DARK_RUINS_DIGLETT_5         0x3E // Hide Diglett in Dark Ruins
+#define FLAG_DARK_RUINS_DIGLETT_6         0x3F // Hide Diglett in Dark Ruins
+#define FLAG_DARK_RUINS_YELLOW_COMPLETE   0x40 // Unused Flag
+#define FLAG_DARK_RUINS_GREEN_COMPLETE    0x41 // Unused Flag
+#define FLAG_DARK_RUINS_RED_COMPLETE      0x42 // Unused Flag
+#define FLAG_DARK_RUINS_BLUE_COMPLETE     0x43 // Unused Flag
+#define FLAG_OBTAINED_RELIC_CROWN         0x44 // Unused Flag
 #define FLAG_UNUSED_0x045    0x45 // Unused Flag
 #define FLAG_UNUSED_0x046    0x46 // Unused Flag
 #define FLAG_UNUSED_0x047    0x47 // Unused Flag
@@ -575,8 +575,8 @@
 #define FLAG_HIDDEN_ITEM_TIYU_FOREST_TINY_MUSHROOM_1         (FLAG_HIDDEN_ITEMS_START + 0x4D)
 #define FLAG_HIDDEN_ITEM_TIYU_FOREST_TINY_MUSHROOM_2         (FLAG_HIDDEN_ITEMS_START + 0x1B)
 #define FLAG_HIDDEN_ITEM_TIYU_FOREST_TINY_MUSHROOM_3         (FLAG_HIDDEN_ITEMS_START + 0x2B)
-#define FLAG_HIDDEN_ITEM_LILYCOVE_CITY_POKE_BALL             (FLAG_HIDDEN_ITEMS_START + 0x4B)
-#define FLAG_HIDDEN_ITEM_MT_PYRE_EXTERIOR_ULTRA_BALL         (FLAG_HIDDEN_ITEMS_START + 0x1D)
+#define FLAG_HIDDEN_ITEM_COLOR_RUINS_RED_B1F_SPELL_TAG       (FLAG_HIDDEN_ITEMS_START + 0x4B)
+#define FLAG_HIDDEN_ITEM_DARK_CITY_ENTRANCE_PEARL            (FLAG_HIDDEN_ITEMS_START + 0x1D)
 #define FLAG_HIDDEN_ITEM_MT_PYRE_EXTERIOR_MAX_ETHER          (FLAG_HIDDEN_ITEMS_START + 0x4E)
 #define FLAG_HIDDEN_ITEM_MT_PYRE_SUMMIT_ZINC                 (FLAG_HIDDEN_ITEMS_START + 0x4F)
 #define FLAG_HIDDEN_ITEM_MT_PYRE_SUMMIT_RARE_CANDY           (FLAG_HIDDEN_ITEMS_START + 0x50)
@@ -1069,18 +1069,18 @@
 #define FLAG_ITEM_LINKING_TUNNEL_POKE_BALL                          0x3FE
 #define FLAG_ITEM_LINKING_TUNNEL_FOCUS_SASH                         0x3FF
 #define FLAG_ITEM_COLOR_RUINS_RED_B1F_METRONOME                     0x400
-#define FLAG_ITEM_DARK_CITY_MAIN_BLACK_GLASSES                     0x401
-#define FLAG_ITEM_DARK_CITY_MAIN_ELIXIR                            0x402
-#define FLAG_ITEM_ROUTE_119_LEAF_STONE                              0x403
-#define FLAG_ITEM_ROUTE_119_RARE_CANDY                              0x404
-#define FLAG_ITEM_ROUTE_119_HYPER_POTION_1                          0x405
-#define FLAG_ITEM_ROUTE_120_NUGGET                                  0x406
-#define FLAG_ITEM_ROUTE_120_FULL_HEAL                               0x407
-#define FLAG_ITEM_ROUTE_123_CALCIUM                                 0x408
+#define FLAG_ITEM_DARK_CITY_MAIN_BLACK_GLASSES                      0x401
+#define FLAG_ITEM_DARK_CITY_MAIN_ELIXIR                             0x402
+#define FLAG_ITEM_COLOR_RUINS_GREEN_B1F_SUN_STONE                   0x403
+#define FLAG_ITEM_TIYU_FOREST_CLEARING_LEAF_STONE                   0x404
+#define FLAG_ITEM_COLOR_RUINS_RED_B1F_STARDUST                      0x405
+#define FLAG_ITEM_COLOR_RUINS_BLUE_B1F_WATER_STONE                  0x406
+#define FLAG_ITEM_DARK_RUINS_YELLOW_ROOM_RARE_CANDY                 0x407
+#define FLAG_ITEM_DARK_RUINS_YELLOW_ROOM_ZOOM_LENS                  0x408
 
-#define FLAG_UNUSED_0x409                                           0x409 // Unused Flag
+#define FLAG_ITEM_DARK_RUINS_GREEN_ROOM_RARE_CANDY                  0x409
 
-#define FLAG_ITEM_ROUTE_127_ZINC                                    0x40A
+#define FLAG_ITEM_DARK_RUINS_RED_ROOM_RARE_CANDY                    0x40A
 #define FLAG_ITEM_ROUTE_127_CARBOS                                  0x40B
 #define FLAG_ITEM_ROUTE_132_RARE_CANDY                              0x40C
 #define FLAG_ITEM_ROUTE_133_BIG_PEARL                               0x40D

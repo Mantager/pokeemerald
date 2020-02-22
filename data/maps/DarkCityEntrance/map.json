@@ -4,21 +4,124 @@
     "allow_running": true,
     "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
     "bg_events": [
+        {
+            "elevation": 3,
+            "flag": "FLAG_HIDDEN_ITEM_DARK_CITY_ENTRANCE_PEARL",
+            "item": "ITEM_PEARL",
+            "type": "hidden_item",
+            "x": 20,
+            "y": 11
+        }
     ],
     "connections": null,
     "coord_events": [
+        {
+            "elevation": 0,
+            "script": "DarkCityEntrance_EventScript_ArumTriggerLeft",
+            "type": "trigger",
+            "var": "VAR_STORY_EVENT_PROGRESS",
+            "var_value": "6",
+            "x": 13,
+            "y": 33
+        },
+        {
+            "elevation": 0,
+            "script": "DarkCityEntrance_EventScript_ArumTriggerMiddleLeft",
+            "type": "trigger",
+            "var": "VAR_STORY_EVENT_PROGRESS",
+            "var_value": "6",
+            "x": 14,
+            "y": 33
+        },
+        {
+            "elevation": 0,
+            "script": "DarkCityEntrance_EventScript_ArumTriggerMiddleRight",
+            "type": "trigger",
+            "var": "VAR_STORY_EVENT_PROGRESS",
+            "var_value": "6",
+            "x": 15,
+            "y": 33
+        },
+        {
+            "elevation": 0,
+            "script": "DarkCityEntrance_EventScript_ArumTriggerRight",
+            "type": "trigger",
+            "var": "VAR_STORY_EVENT_PROGRESS",
+            "var_value": "6",
+            "x": 16,
+            "y": 33
+        }
     ],
     "id": "MAP_DARK_CITY_ENTRANCE",
     "layout": "LAYOUT_DARK_CITY_ENTRANCE",
     "map_type": "MAP_TYPE_UNDERGROUND",
-    "music": "MUS_DAN02",
+    "music": "MUS_PYRAMID",
     "name": "DarkCityEntrance",
     "object_events": [
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "EVENT_OBJ_GFX_HEX_MANIAC",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_FACE_LEFT_AND_RIGHT",
+            "script": "DarkCityEntrance_EventScript_Lu",
+            "trainer_sight_or_berry_tree_id": "2",
+            "trainer_type": "1",
+            "x": 5,
+            "y": 17
+        },
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "EVENT_OBJ_GFX_HEX_MANIAC",
+            "movement_range_x": 0,
+            "movement_range_y": 6,
+            "movement_type": "MOVEMENT_TYPE_WALK_DOWN_AND_UP",
+            "script": "DarkCityEntrance_EventScript_Rue",
+            "trainer_sight_or_berry_tree_id": "2",
+            "trainer_type": "1",
+            "x": 24,
+            "y": 14
+        },
+        {
+            "elevation": 3,
+            "flag": "FLAG_MEET_ARUM_DARK_CITY_ENTRANCE",
+            "graphics_id": "EVENT_OBJ_GFX_ARTIST",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "script": "NULL",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 13,
+            "y": 27
+        },
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "EVENT_OBJ_GFX_EXPERT_M",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+            "script": "DarkCityEntrance_EventScript_Guowei",
+            "trainer_sight_or_berry_tree_id": "2",
+            "trainer_type": "1",
+            "x": 15,
+            "y": 8
+        }
     ],
     "region_map_section": "MAPSEC_DARK_CITY",
     "requires_flash": false,
     "show_map_name": true,
     "warp_events": [
+        {
+            "dest_map": "MAP_DARK_CITY_MAIN",
+            "dest_warp_id": 4,
+            "elevation": 0,
+            "x": 15,
+            "y": 2
+        }
     ],
-    "weather": "WEATHER_SUNNY"
+    "weather": "WEATHER_NONE"
 }

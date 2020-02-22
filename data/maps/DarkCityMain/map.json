@@ -4,24 +4,67 @@
     "allow_running": true,
     "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
     "bg_events": [
+        {
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+            "script": "DarkCityMain_EventScript_ShopSign",
+            "type": "sign",
+            "x": 23,
+            "y": 17
+        },
+        {
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+            "script": "DarkCityMain_EventScript_ShopSign",
+            "type": "sign",
+            "x": 24,
+            "y": 17
+        }
     ],
     "connections": null,
     "coord_events": [
+        {
+            "elevation": 0,
+            "script": "DarkCityMain_EventScript_HealPokemonTrigger",
+            "type": "trigger",
+            "var": "VAR_TEMP_F",
+            "var_value": "0",
+            "x": 29,
+            "y": 18
+        },
+        {
+            "elevation": 0,
+            "script": "DarkCityMain_EventScript_HealPokemonTrigger",
+            "type": "trigger",
+            "var": "VAR_TEMP_F",
+            "var_value": "0",
+            "x": 28,
+            "y": 19
+        },
+        {
+            "elevation": 0,
+            "script": "DarkCityMain_EventScript_HealPokemonTrigger",
+            "type": "trigger",
+            "var": "VAR_TEMP_F",
+            "var_value": "0",
+            "x": 30,
+            "y": 19
+        }
     ],
     "id": "MAP_DARK_CITY_MAIN",
     "layout": "LAYOUT_DARK_CITY_MAIN",
     "map_type": "MAP_TYPE_UNDERGROUND",
-    "music": "MUS_DAN02",
+    "music": "MUS_NIBI",
     "name": "DarkCityMain",
     "object_events": [
         {
             "elevation": 3,
             "flag": "0",
-            "graphics_id": "EVENT_OBJ_GFX_ANABEL",
-            "movement_range_x": 0,
-            "movement_range_y": 0,
-            "movement_type": "MOVEMENT_TYPE_NONE",
-            "script": "NULL",
+            "graphics_id": "EVENT_OBJ_GFX_HIKER",
+            "movement_range_x": 2,
+            "movement_range_y": 2,
+            "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+            "script": "DarkCityMain_EventScript_CaveLoverHiker",
             "trainer_sight_or_berry_tree_id": "0",
             "trainer_type": "0",
             "x": 9,
@@ -52,6 +95,71 @@
             "trainer_type": "0",
             "x": 2,
             "y": 14
+        },
+        {
+            "elevation": 3,
+            "flag": "FLAG_MEET_ARUM_DARK_CITY_MAIN",
+            "graphics_id": "EVENT_OBJ_GFX_ARTIST",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "script": "DarkCityMain_EventScript_FrontOfRuinsArum",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 14,
+            "y": 2
+        },
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "EVENT_OBJ_GFX_EXPERT_F",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "script": "DarkCityMain_EventScript_HotSpringInfoWoman",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 27,
+            "y": 21
+        },
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "EVENT_OBJ_GFX_HOT_SPRINGS_OLD_WOMAN",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "script": "DarkCityMain_EventScript_WomanBathingInSpring",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 31,
+            "y": 16
+        },
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "EVENT_OBJ_GFX_LITTLE_BOY",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_FACE_UP_AND_RIGHT",
+            "script": "DarkCityMain_EventScript_ArumSoCoolKid",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 12,
+            "y": 10
+        },
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "EVENT_OBJ_GFX_EXPERT_M",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "script": "DarkCityMain_EventScript_MoneyRareMan",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 24,
+            "y": 30
         }
     ],
     "region_map_section": "MAPSEC_DARK_CITY",
@@ -59,12 +167,47 @@
     "show_map_name": true,
     "warp_events": [
         {
-            "dest_map": "MAP_DARK_CITY_MAIN",
+            "dest_map": "MAP_DARK_CITY_ARUMS_HOUSE",
             "dest_warp_id": 0,
             "elevation": 0,
             "x": 13,
             "y": 27
+        },
+        {
+            "dest_map": "MAP_DARK_CITY_HOUSE1",
+            "dest_warp_id": 0,
+            "elevation": 0,
+            "x": 30,
+            "y": 31
+        },
+        {
+            "dest_map": "MAP_DARK_CITY_HOUSE2",
+            "dest_warp_id": 0,
+            "elevation": 0,
+            "x": 22,
+            "y": 17
+        },
+        {
+            "dest_map": "MAP_DARK_CITY_HOUSE3",
+            "dest_warp_id": 0,
+            "elevation": 0,
+            "x": 7,
+            "y": 19
+        },
+        {
+            "dest_map": "MAP_DARK_CITY_ENTRANCE",
+            "dest_warp_id": 0,
+            "elevation": 0,
+            "x": 19,
+            "y": 35
+        },
+        {
+            "dest_map": "MAP_DARK_RUINS",
+            "dest_warp_id": 0,
+            "elevation": 0,
+            "x": 14,
+            "y": 1
         }
     ],
-    "weather": "WEATHER_SUNNY"
+    "weather": "WEATHER_NONE"
 }

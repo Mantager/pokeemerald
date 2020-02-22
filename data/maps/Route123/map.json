@@ -526,19 +526,6 @@
         },
         {
             "elevation": 3,
-            "flag": "FLAG_ITEM_ROUTE_123_CALCIUM",
-            "graphics_id": "EVENT_OBJ_GFX_ITEM_BALL",
-            "movement_range_x": 0,
-            "movement_range_y": 0,
-            "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
-            "script": "Route123_EventScript_ItemCalcium",
-            "trainer_sight_or_berry_tree_id": "0",
-            "trainer_type": "0",
-            "x": 31,
-            "y": 8
-        },
-        {
-            "elevation": 3,
             "flag": "0",
             "graphics_id": "EVENT_OBJ_GFX_GIRL_3",
             "movement_range_x": 0,
@@ -669,32 +656,6 @@
         },
         {
             "elevation": 3,
-            "flag": "FLAG_ITEM_ROUTE_123_ULTRA_BALL",
-            "graphics_id": "EVENT_OBJ_GFX_ITEM_BALL",
-            "movement_range_x": 1,
-            "movement_range_y": 1,
-            "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
-            "script": "Route123_EventScript_ItemUltraBall",
-            "trainer_sight_or_berry_tree_id": "0",
-            "trainer_type": "0",
-            "x": 27,
-            "y": 18
-        },
-        {
-            "elevation": 3,
-            "flag": "FLAG_ITEM_ROUTE_123_ELIXIR",
-            "graphics_id": "EVENT_OBJ_GFX_ITEM_BALL",
-            "movement_range_x": 1,
-            "movement_range_y": 1,
-            "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
-            "script": "Route123_EventScript_ItemElixir",
-            "trainer_sight_or_berry_tree_id": "0",
-            "trainer_type": "0",
-            "x": 75,
-            "y": 9
-        },
-        {
-            "elevation": 3,
             "flag": "0",
             "graphics_id": "EVENT_OBJ_GFX_NINJA_BOY",
             "movement_range_x": 1,
@@ -747,19 +708,6 @@
         },
         {
             "elevation": 3,
-            "flag": "FLAG_ITEM_ROUTE_123_PP_UP",
-            "graphics_id": "EVENT_OBJ_GFX_ITEM_BALL",
-            "movement_range_x": 1,
-            "movement_range_y": 1,
-            "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
-            "script": "Route123_EventScript_ItemPPUp",
-            "trainer_sight_or_berry_tree_id": "0",
-            "trainer_type": "0",
-            "x": 43,
-            "y": 15
-        },
-        {
-            "elevation": 3,
             "flag": "0",
             "graphics_id": "EVENT_OBJ_GFX_WOMAN_5",
             "movement_range_x": 1,
@@ -783,19 +731,6 @@
             "trainer_type": "1",
             "x": 14,
             "y": 12
-        },
-        {
-            "elevation": 3,
-            "flag": "FLAG_ITEM_ROUTE_123_REVIVAL_HERB",
-            "graphics_id": "EVENT_OBJ_GFX_ITEM_BALL",
-            "movement_range_x": 1,
-            "movement_range_y": 1,
-            "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
-            "script": "Route123_EventScript_ItemRevivalHerb",
-            "trainer_sight_or_berry_tree_id": "0",
-            "trainer_type": "0",
-            "x": 57,
-            "y": 16
         }
     ],
     "region_map_section": "MAPSEC_ROUTE_123",

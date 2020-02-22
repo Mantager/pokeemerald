@@ -210,6 +210,7 @@ static const u8 sMapName_LinkingTunnel[] = _("Linking Tunnel");
 static const u8 sMapName_TiyuForest[] = _("Tiyu Forest");
 static const u8 sMapName_DarkCity[] = _("Dark City");
 static const u8 sMapName_DarkRuins[] = _("Dark Ruins");
+static const u8 sMapName_ZhaounPath[] = _("Zhaoun Path");
 
 const struct RegionMapLocation gRegionMapEntries[] = {
     [MAPSEC_LITTLEROOT_TOWN]           = { 4, 11, 1, 1, sMapName_LittlerootTown},
@@ -439,7 +440,8 @@ const struct RegionMapLocation gRegionMapEntries[] = {
     [MAPSEC_LINKING_TUNNEL]            = { 0,  0, 1, 1, sMapName_LinkingTunnel},
     [MAPSEC_TIYU_FOREST]               = { 0,  0, 1, 1, sMapName_TiyuForest},
     [MAPSEC_DARK_CITY]                 = { 0,  0, 1, 1, sMapName_DarkCity},
-    [MAPSEC_DARK_RUINS]                = { 0,  0, 1, 1, sMapName_DarkRuins}
+    [MAPSEC_DARK_RUINS]                = { 0,  0, 1, 1, sMapName_DarkRuins},
+    [MAPSEC_ZHAOUN_PATH]                = { 0,  0, 1, 1, sMapName_ZhaounPath}
 };
 
 #endif //GUARD_DATA_REGION_MAP_REGION_MAP_ENTRIES_H

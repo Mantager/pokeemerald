@@ -11,7 +11,7 @@
     "id": "MAP_ORACLE_HILL_CAVE",
     "layout": "LAYOUT_ORACLE_HILL_CAVE",
     "map_type": "MAP_TYPE_INDOOR",
-    "music": "MUS_DAN02",
+    "music": "MUS_MACHI_S3",
     "name": "OracleHill_Cave",
     "object_events": [
         {
@@ -21,7 +21,7 @@
             "movement_range_x": 0,
             "movement_range_y": 0,
             "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
-            "script": "NULL",
+            "script": "OracleHill_EventScript_Oracle",
             "trainer_sight_or_berry_tree_id": "0",
             "trainer_type": "0",
             "x": 7,
@@ -30,7 +30,7 @@
     ],
     "region_map_section": "MAPSEC_ORACLE_HILL",
     "requires_flash": false,
-    "show_map_name": true,
+    "show_map_name": false,
     "warp_events": [
         {
             "dest_map": "MAP_ORACLE_HILL",
@@ -40,5 +40,5 @@
             "y": 16
         }
     ],
-    "weather": "WEATHER_SUNNY"
+    "weather": "WEATHER_NONE"
 }

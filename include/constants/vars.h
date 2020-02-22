@@ -263,13 +263,13 @@
 #define VAR_ROXANNE_CALL_STEP_COUNTER        0x40F4
 #define VAR_SCOTT_BF_CALL_STEP_COUNTER       0x40F5
 #define VAR_RIVAL_RAYQUAZA_CALL_STEP_COUNTER 0x40F6
-#define VAR_UNUSED_0x40F7                    0x40F7 // Unused Var
-#define VAR_UNUSED_0x40F8                    0x40F8 // Unused Var
-#define VAR_UNUSED_0x40F9                    0x40F9 // Unused Var
-#define VAR_UNUSED_0x40FA                    0x40FA // Unused Var
-#define VAR_UNUSED_0x40FB                    0x40FB // Unused Var
-#define VAR_UNUSED_0x40FC                    0x40FC // Unused Var
-#define VAR_UNUSED_0x40FD                    0x40FD // Unused Var
+#define VAR_COLOR_RUINS_YELLOW_COUNTER       0x40F7 // Stores the player's progress in Color Ruins (Yellow) puzzle
+#define VAR_STORY_EVENT_PROGRESS             0x40F8 // GAIDEN 1 story
+#define VAR_COLOR_RUINS_GREEN_COUNTER        0x40F9 // Stores the player's progress in Color Ruins (Green) puzzle
+#define VAR_COLOR_RUINS_RED_COUNTER          0x40FA // Stores the player's progress in Color Ruins (Red) puzzle
+#define VAR_DARK_RUINS_ROOMS_COMPLETED       0x40FB // Number of rooms the player has cleared in Dark Ruins
+#define VAR_DARK_RUINS_DIGLETT_COUNTER       0x40FC // Stores the player's position in the Diglett sequence
+#define VAR_DARK_RUINS_SONG_COUNTER          0x40FD // Stores the amount of songs performed in Dark Ruins (blue room)
 #define VAR_UNUSED_0x40FE                    0x40FE // Unused Var
 #define VAR_UNUSED_0x40FF                    0x40FF // Unused Var
 

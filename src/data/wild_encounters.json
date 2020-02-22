@@ -1287,7 +1287,7 @@
                 {
                     "base_label": "gColorRuinsBlue_1F0",
                     "land_mons": {
-                        "encounter_rate": 0,
+                        "encounter_rate": 4,
                         "mons": [
                             {
                                 "max_level": 13,
@@ -1354,9 +1354,78 @@
                     "map": "MAP_COLOR_RUINS_BLUE_1F"
                 },
                 {
-                    "base_label": "gColorRuinsGreen_1F0",
+                    "base_label": "gColorRuinsBlue_B1F0",
                     "land_mons": {
                         "encounter_rate": 0,
+                        "mons": [
+                            {
+                                "max_level": 15,
+                                "min_level": 15,
+                                "species": "SPECIES_DIGLETT"
+                            },
+                            {
+                                "max_level": 15,
+                                "min_level": 15,
+                                "species": "SPECIES_BALTOY"
+                            },
+                            {
+                                "max_level": 15,
+                                "min_level": 15,
+                                "species": "SPECIES_GEODUDE"
+                            },
+                            {
+                                "max_level": 15,
+                                "min_level": 15,
+                                "species": "SPECIES_DIGLETT"
+                            },
+                            {
+                                "max_level": 14,
+                                "min_level": 14,
+                                "species": "SPECIES_GEODUDE"
+                            },
+                            {
+                                "max_level": 14,
+                                "min_level": 14,
+                                "species": "SPECIES_BALTOY"
+                            },
+                            {
+                                "max_level": 15,
+                                "min_level": 15,
+                                "species": "SPECIES_DIGLETT"
+                            },
+                            {
+                                "max_level": 15,
+                                "min_level": 15,
+                                "species": "SPECIES_GEODUDE"
+                            },
+                            {
+                                "max_level": 16,
+                                "min_level": 16,
+                                "species": "SPECIES_YAMASK"
+                            },
+                            {
+                                "max_level": 16,
+                                "min_level": 16,
+                                "species": "SPECIES_YAMASK"
+                            },
+                            {
+                                "max_level": 16,
+                                "min_level": 16,
+                                "species": "SPECIES_YAMASK"
+                            },
+                            {
+                                "max_level": 16,
+                                "min_level": 16,
+                                "species": "SPECIES_YAMASK"
+                            }
+                        ]
+                    },
+                    "map": "MAP_COLOR_RUINS_BLUE_B1F"
+                },
+                {
+                    "base_label": "gColorRuinsGreen_1F0",
+                    "land_mons": {
+                        "encounter_rate": 4,
                         "mons": [
                             {
                                 "max_level": 13,
@@ -1423,9 +1492,78 @@
                     "map": "MAP_COLOR_RUINS_GREEN_1F"
                 },
                 {
-                    "base_label": "gColorRuinsRed_1F0",
+                    "base_label": "gColorRuinsGreen_B1F0",
                     "land_mons": {
                         "encounter_rate": 0,
+                        "mons": [
+                            {
+                                "max_level": 15,
+                                "min_level": 15,
+                                "species": "SPECIES_DIGLETT"
+                            },
+                            {
+                                "max_level": 15,
+                                "min_level": 15,
+                                "species": "SPECIES_BALTOY"
+                            },
+                            {
+                                "max_level": 15,
+                                "min_level": 15,
+                                "species": "SPECIES_GEODUDE"
+                            },
+                            {
+                                "max_level": 15,
+                                "min_level": 15,
+                                "species": "SPECIES_DIGLETT"
+                            },
+                            {
+                                "max_level": 14,
+                                "min_level": 14,
+                                "species": "SPECIES_GEODUDE"
+                            },
+                            {
+                                "max_level": 14,
+                                "min_level": 14,
+                                "species": "SPECIES_BALTOY"
+                            },
+                            {
+                                "max_level": 15,
+                                "min_level": 15,
+                                "species": "SPECIES_DIGLETT"
+                            },
+                            {
+                                "max_level": 15,
+                                "min_level": 15,
+                                "species": "SPECIES_GEODUDE"
+                            },
+                            {
+                                "max_level": 16,
+                                "min_level": 16,
+                                "species": "SPECIES_YAMASK"
+                            },
+                            {
+                                "max_level": 16,
+                                "min_level": 16,
+                                "species": "SPECIES_YAMASK"
+                            },
+                            {
+                                "max_level": 16,
+                                "min_level": 16,
+                                "species": "SPECIES_YAMASK"
+                            },
+                            {
+                                "max_level": 16,
+                                "min_level": 16,
+                                "species": "SPECIES_YAMASK"
+                            }
+                        ]
+                    },
+                    "map": "MAP_COLOR_RUINS_GREEN_B1F"
+                },
+                {
+                    "base_label": "gColorRuinsRed_1F0",
+                    "land_mons": {
+                        "encounter_rate": 4,
                         "mons": [
                             {
                                 "max_level": 13,
@@ -1492,9 +1630,78 @@
                     "map": "MAP_COLOR_RUINS_RED_1F"
                 },
                 {
+                    "base_label": "gColorRuinsRed_B1F0",
+                    "land_mons": {
+                        "encounter_rate": 4,
+                        "mons": [
+                            {
+                                "max_level": 15,
+                                "min_level": 15,
+                                "species": "SPECIES_DIGLETT"
+                            },
+                            {
+                                "max_level": 15,
+                                "min_level": 15,
+                                "species": "SPECIES_BALTOY"
+                            },
+                            {
+                                "max_level": 15,
+                                "min_level": 15,
+                                "species": "SPECIES_GEODUDE"
+                            },
+                            {
+                                "max_level": 15,
+                                "min_level": 15,
+                                "species": "SPECIES_DIGLETT"
+                            },
+                            {
+                                "max_level": 14,
+                                "min_level": 14,
+                                "species": "SPECIES_GEODUDE"
+                            },
+                            {
+                                "max_level": 14,
+                                "min_level": 14,
+                                "species": "SPECIES_BALTOY"
+                            },
+                            {
+                                "max_level": 15,
+                                "min_level": 15,
+                                "species": "SPECIES_DIGLETT"
+                            },
+                            {
+                                "max_level": 15,
+                                "min_level": 15,
+                                "species": "SPECIES_GEODUDE"
+                            },
+                            {
+                                "max_level": 16,
+                                "min_level": 16,
+                                "species": "SPECIES_YAMASK"
+                            },
+                            {
+                                "max_level": 16,
+                                "min_level": 16,
+                                "species": "SPECIES_YAMASK"
+                            },
+                            {
+                                "max_level": 16,
+                                "min_level": 16,
+                                "species": "SPECIES_YAMASK"
+                            },
+                            {
+                                "max_level": 16,
+                                "min_level": 16,
+                                "species": "SPECIES_YAMASK"
+                            }
+                        ]
+                    },
+                    "map": "MAP_COLOR_RUINS_RED_B1F"
+                },
+                {
                     "base_label": "gColorRuinsYellow_1F0",
                     "land_mons": {
-                        "encounter_rate": 0,
+                        "encounter_rate": 4,
                         "mons": [
                             {
                                 "max_level": 13,
@@ -1559,6 +1766,144 @@
                         ]
                     },
                     "map": "MAP_COLOR_RUINS_YELLOW_1F"
+                },
+                {
+                    "base_label": "gColorRuinsYellow_B1F0",
+                    "land_mons": {
+                        "encounter_rate": 4,
+                        "mons": [
+                            {
+                                "max_level": 15,
+                                "min_level": 15,
+                                "species": "SPECIES_DIGLETT"
+                            },
+                            {
+                                "max_level": 15,
+                                "min_level": 15,
+                                "species": "SPECIES_BALTOY"
+                            },
+                            {
+                                "max_level": 15,
+                                "min_level": 15,
+                                "species": "SPECIES_GEODUDE"
+                            },
+                            {
+                                "max_level": 15,
+                                "min_level": 15,
+                                "species": "SPECIES_DIGLETT"
+                            },
+                            {
+                                "max_level": 14,
+                                "min_level": 14,
+                                "species": "SPECIES_GEODUDE"
+                            },
+                            {
+                                "max_level": 14,
+                                "min_level": 14,
+                                "species": "SPECIES_BALTOY"
+                            },
+                            {
+                                "max_level": 15,
+                                "min_level": 15,
+                                "species": "SPECIES_DIGLETT"
+                            },
+                            {
+                                "max_level": 15,
+                                "min_level": 15,
+                                "species": "SPECIES_GEODUDE"
+                            },
+                            {
+                                "max_level": 16,
+                                "min_level": 16,
+                                "species": "SPECIES_YAMASK"
+                            },
+                            {
+                                "max_level": 16,
+                                "min_level": 16,
+                                "species": "SPECIES_YAMASK"
+                            },
+                            {
+                                "max_level": 16,
+                                "min_level": 16,
+                                "species": "SPECIES_YAMASK"
+                            },
+                            {
+                                "max_level": 16,
+                                "min_level": 16,
+                                "species": "SPECIES_YAMASK"
+                            }
+                        ]
+                    },
+                    "map": "MAP_COLOR_RUINS_YELLOW_B1F"
+                },
+                {
+                    "base_label": "gDarkCityEntrance0",
+                    "land_mons": {
+                        "encounter_rate": 5,
+                        "mons": [
+                            {
+                                "max_level": 15,
+                                "min_level": 15,
+                                "species": "SPECIES_DIGLETT"
+                            },
+                            {
+                                "max_level": 15,
+                                "min_level": 15,
+                                "species": "SPECIES_BALTOY"
+                            },
+                            {
+                                "max_level": 15,
+                                "min_level": 15,
+                                "species": "SPECIES_GEODUDE"
+                            },
+                            {
+                                "max_level": 15,
+                                "min_level": 15,
+                                "species": "SPECIES_DIGLETT"
+                            },
+                            {
+                                "max_level": 14,
+                                "min_level": 14,
+                                "species": "SPECIES_BALTOY"
+                            },
+                            {
+                                "max_level": 14,
+                                "min_level": 14,
+                                "species": "SPECIES_GEODUDE"
+                            },
+                            {
+                                "max_level": 15,
+                                "min_level": 15,
+                                "species": "SPECIES_DIGLETT"
+                            },
+                            {
+                                "max_level": 15,
+                                "min_level": 15,
+                                "species": "SPECIES_SLUGMA"
+                            },
+                            {
+                                "max_level": 16,
+                                "min_level": 16,
+                                "species": "SPECIES_YAMASK"
+                            },
+                            {
+                                "max_level": 16,
+                                "min_level": 16,
+                                "species": "SPECIES_YAMASK"
+                            },
+                            {
+                                "max_level": 16,
+                                "min_level": 16,
+                                "species": "SPECIES_YAMASK"
+                            },
+                            {
+                                "max_level": 16,
+                                "min_level": 16,
+                                "species": "SPECIES_YAMASK"
+                            }
+                        ]
+                    },
+                    "map": "MAP_DARK_CITY_ENTRANCE"
                 },
                 {
                     "base_label": "gDesertUnderpass",
@@ -2501,7 +2846,7 @@
                             {
                                 "max_level": 11,
                                 "min_level": 11,
-                                "species": "SPECIES_GEODUDE"
+                                "species": "SPECIES_DIGLETT"
                             },
                             {
                                 "max_level": 11,
@@ -11678,6 +12023,75 @@
                             }
                         ]
                     }
+                },
+                {
+                    "base_label": "gTiyuForest0",
+                    "land_mons": {
+                        "encounter_rate": 5,
+                        "mons": [
+                            {
+                                "max_level": 13,
+                                "min_level": 13,
+                                "species": "SPECIES_FOONGUS"
+                            },
+                            {
+                                "max_level": 13,
+                                "min_level": 13,
+                                "species": "SPECIES_SEEDOT"
+                            },
+                            {
+                                "max_level": 14,
+                                "min_level": 14,
+                                "species": "SPECIES_SPINARAK"
+                            },
+                            {
+                                "max_level": 14,
+                                "min_level": 14,
+                                "species": "SPECIES_PINECO"
+                            },
+                            {
+                                "max_level": 14,
+                                "min_level": 14,
+                                "species": "SPECIES_SPINARAK"
+                            },
+                            {
+                                "max_level": 14,
+                                "min_level": 14,
+                                "species": "SPECIES_ODDISH"
+                            },
+                            {
+                                "max_level": 13,
+                                "min_level": 13,
+                                "species": "SPECIES_SPINARAK"
+                            },
+                            {
+                                "max_level": 14,
+                                "min_level": 14,
+                                "species": "SPECIES_FOONGUS"
+                            },
+                            {
+                                "max_level": 15,
+                                "min_level": 15,
+                                "species": "SPECIES_CARNIVINE"
+                            },
+                            {
+                                "max_level": 15,
+                                "min_level": 15,
+                                "species": "SPECIES_FARFETCHD"
+                            },
+                            {
+                                "max_level": 15,
+                                "min_level": 15,
+                                "species": "SPECIES_CARNIVINE"
+                            },
+                            {
+                                "max_level": 15,
+                                "min_level": 15,
+                                "species": "SPECIES_FARFETCHD"
+                            }
+                        ]
+                    },
+                    "map": "MAP_TIYU_FOREST"
                 },
                 {
                     "base_label": "gUnderwater1",

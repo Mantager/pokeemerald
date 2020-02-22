@@ -6563,6 +6563,10 @@ extern const u32 gItemIcon_SwiftWing[];
 extern const u32 gItemIconPalette_SwiftWing[];
 extern const u32 gItemIcon_PrettyWing[];
 extern const u32 gItemIconPalette_PrettyWing[];
+extern const u32 gItemIconPalette_BrailleGuide[];
+extern const u32 gItemIconPalette_PowerGlove[];
+extern const u32 gItemIcon_RelicCrown[];
+extern const u32 gItemIconPalette_RelicCrown[];
 extern const u32 gItemIcon_ReturnToFieldArrow[];
 extern const u32 gItemIconPalette_ReturnToFieldArrow[];
 

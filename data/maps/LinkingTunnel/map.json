@@ -11,7 +11,7 @@
     "id": "MAP_LINKING_TUNNEL",
     "layout": "LAYOUT_LINKING_TUNNEL",
     "map_type": "MAP_TYPE_UNDERGROUND",
-    "music": "MUS_DAN02",
+    "music": "MUS_DAN01",
     "name": "LinkingTunnel",
     "object_events": [
         {
@@ -55,25 +55,25 @@
         },
         {
             "elevation": 3,
-            "flag": "0",
-            "graphics_id": "EVENT_OBJ_GFX_PUSHABLE_BOULDER",
+            "flag": "FLAG_COLOR_RUINS_RED_WALL_READ",
+            "graphics_id": "EVENT_OBJ_GFX_DIGLETT",
             "movement_range_x": 0,
             "movement_range_y": 0,
-            "movement_type": "MOVEMENT_TYPE_NONE",
-            "script": "NULL",
+            "movement_type": "MOVEMENT_TYPE_FACE_UP",
+            "script": "LinkingTunnel_EventScript_Diglett",
             "trainer_sight_or_berry_tree_id": "0",
             "trainer_type": "0",
-            "x": 24,
+            "x": 23,
             "y": 16
         },
         {
             "elevation": 3,
-            "flag": "0",
-            "graphics_id": "EVENT_OBJ_GFX_PUSHABLE_BOULDER",
+            "flag": "FLAG_COLOR_RUINS_RED_WALL_READ",
+            "graphics_id": "EVENT_OBJ_GFX_DIGLETT",
             "movement_range_x": 0,
             "movement_range_y": 0,
-            "movement_type": "MOVEMENT_TYPE_NONE",
-            "script": "NULL",
+            "movement_type": "MOVEMENT_TYPE_FACE_UP",
+            "script": "LinkingTunnel_EventScript_Diglett",
             "trainer_sight_or_berry_tree_id": "0",
             "trainer_type": "0",
             "x": 25,
@@ -117,6 +117,19 @@
             "trainer_type": "0",
             "x": 3,
             "y": 4
+        },
+        {
+            "elevation": 3,
+            "flag": "FLAG_COLOR_RUINS_RED_WALL_READ",
+            "graphics_id": "EVENT_OBJ_GFX_MAN_3",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_RIGHT",
+            "script": "LinkingTunnel_EventScript_DiglettGuy",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 22,
+            "y": 14
         }
     ],
     "region_map_section": "MAPSEC_LINKING_TUNNEL",

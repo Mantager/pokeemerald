@@ -625,7 +625,16 @@
 #define MAP_TIYU_FOREST_CLEARING (6 | (37 << 8))
 
 // Map Group 38
-#define MAP_DARK_CITY_ARUMS_HOUSE (0 | (38 << 8))
+#define MAP_DARK_CITY_ARUMS_HOUSE  (0 | (38 << 8))
+#define MAP_DARK_CITY_HOUSE1       (1 | (38 << 8))
+#define MAP_DARK_CITY_HOUSE2       (2 | (38 << 8))
+#define MAP_DARK_CITY_HOUSE3       (3 | (38 << 8))
+#define MAP_DARK_RUINS_YELLOW_ROOM (4 | (38 << 8))
+#define MAP_DARK_CITY_GREEN_ROOM   (5 | (38 << 8))
+#define MAP_DARK_RUINS_GREEN_ROOM  (6 | (38 << 8))
+#define MAP_DARK_RUINS_RED_ROOM    (7 | (38 << 8))
+#define MAP_DARK_RUINS_BLUE_ROOM   (8 | (38 << 8))
+#define MAP_DARK_RUINS_FINAL_ROOM  (9 | (38 << 8))
 
 #define MAP_GROUPS_COUNT 39
 

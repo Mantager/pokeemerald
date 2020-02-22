@@ -4458,7 +4458,7 @@
             "name": "ChoVillage_Layout",
             "primary_tileset": "gTileset_General",
             "secondary_tileset": "gTileset_Mossdeep",
-            "width": 40
+            "width": 44
         },
         {
             "blockdata_filepath": "data/layouts/WangyongMarsh/map.bin",
@@ -4603,12 +4603,12 @@
         {
             "blockdata_filepath": "data/layouts/DarkRuins/map.bin",
             "border_filepath": "data/layouts/DarkRuins/border.bin",
-            "height": 46,
+            "height": 8,
             "id": "LAYOUT_DARK_RUINS",
             "name": "DarkRuins_Layout",
             "primary_tileset": "gTileset_General",
-            "secondary_tileset": "gTileset_Cave",
-            "width": 36
+            "secondary_tileset": "gTileset_ColorRuinsGeneric",
+            "width": 37
         },
         {
             "blockdata_filepath": "data/layouts/LinkingTunnel/map.bin",
@@ -4628,7 +4628,7 @@
             "name": "ChoVillage_House1_Layout",
             "primary_tileset": "gTileset_Building",
             "secondary_tileset": "gTileset_GenericBuilding",
-            "width": 10
+            "width": 20
         },
         {
             "blockdata_filepath": "data/layouts/ChoVillage_House2/map.bin",
@@ -4709,6 +4709,96 @@
             "primary_tileset": "gTileset_General",
             "secondary_tileset": "gTileset_Rustboro",
             "width": 18
+        },
+        {
+            "blockdata_filepath": "data/layouts/DarkCity_House1/map.bin",
+            "border_filepath": "data/layouts/DarkCity_House1/border.bin",
+            "height": 10,
+            "id": "LAYOUT_DARK_CITY_HOUSE1",
+            "name": "DarkCity_House1_Layout",
+            "primary_tileset": "gTileset_SecretBase",
+            "secondary_tileset": "gTileset_SecretBaseBrownCave",
+            "width": 13
+        },
+        {
+            "blockdata_filepath": "data/layouts/DarkCity_House2/map.bin",
+            "border_filepath": "data/layouts/DarkCity_House2/border.bin",
+            "height": 10,
+            "id": "LAYOUT_DARK_CITY_HOUSE2",
+            "name": "DarkCity_House2_Layout",
+            "primary_tileset": "gTileset_SecretBase",
+            "secondary_tileset": "gTileset_SecretBaseBrownCave",
+            "width": 13
+        },
+        {
+            "blockdata_filepath": "data/layouts/DarkCity_House3/map.bin",
+            "border_filepath": "data/layouts/DarkCity_House3/border.bin",
+            "height": 10,
+            "id": "LAYOUT_DARK_CITY_HOUSE3",
+            "name": "DarkCity_House3_Layout",
+            "primary_tileset": "gTileset_SecretBase",
+            "secondary_tileset": "gTileset_SecretBaseBrownCave",
+            "width": 13
+        },
+        {
+            "blockdata_filepath": "data/layouts/DarkRuins_YellowRoom/map.bin",
+            "border_filepath": "data/layouts/DarkRuins_YellowRoom/border.bin",
+            "height": 20,
+            "id": "LAYOUT_DARK_RUINS_YELLOW_ROOM",
+            "name": "DarkRuins_YellowRoom_Layout",
+            "primary_tileset": "gTileset_General",
+            "secondary_tileset": "gTileset_ColorRuinsGeneric",
+            "width": 17
+        },
+        {
+            "blockdata_filepath": "data/layouts/DarkCity_GreenRoom/map.bin",
+            "border_filepath": "data/layouts/DarkCity_GreenRoom/border.bin",
+            "height": 20,
+            "id": "LAYOUT_DARK_CITY_GREEN_ROOM",
+            "name": "DarkCity_GreenRoom_Layout",
+            "primary_tileset": "gTileset_General",
+            "secondary_tileset": "gTileset_ColorRuinsGeneric",
+            "width": 17
+        },
+        {
+            "blockdata_filepath": "data/layouts/DarkRuins_GreenRoom/map.bin",
+            "border_filepath": "data/layouts/DarkRuins_GreenRoom/border.bin",
+            "height": 20,
+            "id": "LAYOUT_DARK_RUINS_GREEN_ROOM",
+            "name": "DarkRuins_GreenRoom_Layout",
+            "primary_tileset": "gTileset_General",
+            "secondary_tileset": "gTileset_ColorRuinsGeneric",
+            "width": 17
+        },
+        {
+            "blockdata_filepath": "data/layouts/DarkRuins_RedRoom/map.bin",
+            "border_filepath": "data/layouts/DarkRuins_RedRoom/border.bin",
+            "height": 20,
+            "id": "LAYOUT_DARK_RUINS_RED_ROOM",
+            "name": "DarkRuins_RedRoom_Layout",
+            "primary_tileset": "gTileset_General",
+            "secondary_tileset": "gTileset_ColorRuinsGeneric",
+            "width": 17
+        },
+        {
+            "blockdata_filepath": "data/layouts/DarkRuins_BlueRoom/map.bin",
+            "border_filepath": "data/layouts/DarkRuins_BlueRoom/border.bin",
+            "height": 20,
+            "id": "LAYOUT_DARK_RUINS_BLUE_ROOM",
+            "name": "DarkRuins_BlueRoom_Layout",
+            "primary_tileset": "gTileset_General",
+            "secondary_tileset": "gTileset_ColorRuinsGeneric",
+            "width": 17
+        },
+        {
+            "blockdata_filepath": "data/layouts/DarkRuins_FinalRoom/map.bin",
+            "border_filepath": "data/layouts/DarkRuins_FinalRoom/border.bin",
+            "height": 14,
+            "id": "LAYOUT_DARK_RUINS_FINAL_ROOM",
+            "name": "DarkRuins_FinalRoom_Layout",
+            "primary_tileset": "gTileset_General",
+            "secondary_tileset": "gTileset_ColorRuinsGeneric",
+            "width": 9
         }
     ],
     "layouts_table_label": "gMapLayouts"

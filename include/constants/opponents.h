@@ -46,8 +46,8 @@
 #define TRAINER_BOLIN                        42 // GAIDEN 1
 #define TRAINER_CHANGPU                      43 // GAIDEN 1
 #define TRAINER_DUSTY_1                      44
-#define TRAINER_CHIP                         45
-#define TRAINER_FOSTER                       46
+#define TRAINER_GUOWEI                       45 // GAIDEN 1
+#define TRAINER_HUIZHONG                     46 // GAIDEN 1
 #define TRAINER_DUSTY_2                      47
 #define TRAINER_DUSTY_3                      48
 #define TRAINER_DUSTY_4                      49
@@ -59,7 +59,7 @@
 #define TRAINER_GABBY_AND_TY_5               55
 #define TRAINER_GABBY_AND_TY_6               56
 #define TRAINER_LOLA_1                       57
-#define TRAINER_AUSTINA                      58
+#define TRAINER_BAOZHAI                      58
 #define TRAINER_GWEN                         59
 #define TRAINER_LOLA_2                       60
 #define TRAINER_LOLA_3                       61

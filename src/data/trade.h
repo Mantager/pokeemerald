@@ -1050,13 +1050,13 @@ static const struct InGameTrade sIngameTrades[] =
         .abilityNum = 0, 
         .otId = 91481,
         .conditions = {5, 5, 5, 30, 5},
-        .personality = 0x51,
+        .personality = 0xCD,
         .heldItem = ITEM_SHUCA_BERRY, 
         .mailNum = 2,
         .otName = _("Zheng"), 
         .otGender = MALE, 
         .sheen = 10,
-        .requestedSpecies = SPECIES_BULBASAUR
+        .requestedSpecies = SPECIES_NONE
     },
 };
 

@@ -6362,6 +6362,7 @@ u16 GetBattleBGM(void)
             return MUS_BATTLE32;
         case TRAINER_CLASS_CHAMPION:
             return MUS_BATTLE33;
+        case TRAINER_CLASS_ENGINEER:
         case TRAINER_CLASS_PKMN_TRAINER_3:
             if (gBattleTypeFlags & BATTLE_TYPE_FRONTIER)
                 return MUS_BATTLE35;
@@ -6377,11 +6378,8 @@ u16 GetBattleBGM(void)
         case TRAINER_CLASS_FACTORY_HEAD:
         case TRAINER_CLASS_PIKE_QUEEN:
         case TRAINER_CLASS_PYRAMID_KING:
+        case TRAINER_CLASS_KEEPER:
             return MUS_VS_FRONT;
-        // case TRAINER_CLASS_KEEPER:
-        //     return MUS_GA_VS_ARUM;
-        // case TRAINER_CLASS_ENGINEER:
-        //     return MUS_GA_VS_LOG;
         default:
             return MUS_BATTLE20;
         }

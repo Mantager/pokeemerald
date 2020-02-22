@@ -9,16 +9,24 @@
             "flag": "FLAG_HIDDEN_ITEM_CHO_VILLAGE_FLOAT_STONE",
             "item": "ITEM_FLOAT_STONE",
             "type": "hidden_item",
-            "x": 8,
-            "y": 4
+            "x": 12,
+            "y": 3
         },
         {
             "elevation": 3,
             "flag": "FLAG_HIDDEN_ITEM_CHO_VILLAGE_POKE_DOLL",
             "item": "ITEM_POKE_DOLL",
             "type": "hidden_item",
-            "x": 23,
-            "y": 27
+            "x": 8,
+            "y": 4
+        },
+        {
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+            "script": "ChoVillage_EventScript_InnSign",
+            "type": "sign",
+            "x": 26,
+            "y": 4
         }
     ],
     "connections": [
@@ -34,6 +42,78 @@
         }
     ],
     "coord_events": [
+        {
+            "elevation": 0,
+            "script": "ChoVillage_EventScript_EarlyLogTrigger_Top",
+            "type": "trigger",
+            "var": "VAR_STORY_EVENT_PROGRESS",
+            "var_value": "3",
+            "x": 42,
+            "y": 10
+        },
+        {
+            "elevation": 0,
+            "script": "ChoVillage_EventScript_EarlyLogTrigger_MiddleTop",
+            "type": "trigger",
+            "var": "VAR_STORY_EVENT_PROGRESS",
+            "var_value": "3",
+            "x": 42,
+            "y": 11
+        },
+        {
+            "elevation": 0,
+            "script": "ChoVillage_EventScript_EarlyLogTrigger_MiddleBottom",
+            "type": "trigger",
+            "var": "VAR_STORY_EVENT_PROGRESS",
+            "var_value": "3",
+            "x": 42,
+            "y": 12
+        },
+        {
+            "elevation": 0,
+            "script": "ChoVillage_EventScript_EarlyLogTrigger_Bottom",
+            "type": "trigger",
+            "var": "VAR_STORY_EVENT_PROGRESS",
+            "var_value": "3",
+            "x": 42,
+            "y": 13
+        },
+        {
+            "elevation": 0,
+            "script": "ChoVillage_EventScript_LogTrigger_Left",
+            "type": "trigger",
+            "var": "VAR_STORY_EVENT_PROGRESS",
+            "var_value": "15",
+            "x": 18,
+            "y": 0
+        },
+        {
+            "elevation": 0,
+            "script": "ChoVillage_EventScript_LogTrigger_MiddleLeft",
+            "type": "trigger",
+            "var": "VAR_STORY_EVENT_PROGRESS",
+            "var_value": "15",
+            "x": 19,
+            "y": 0
+        },
+        {
+            "elevation": 0,
+            "script": "ChoVillage_EventScript_LogTrigger_MiddleRight",
+            "type": "trigger",
+            "var": "VAR_STORY_EVENT_PROGRESS",
+            "var_value": "15",
+            "x": 20,
+            "y": 0
+        },
+        {
+            "elevation": 0,
+            "script": "ChoVillage_EventScript_LogTrigger_Right",
+            "type": "trigger",
+            "var": "VAR_STORY_EVENT_PROGRESS",
+            "var_value": "15",
+            "x": 21,
+            "y": 0
+        }
     ],
     "id": "MAP_CHO_VILLAGE",
     "layout": "LAYOUT_CHO_VILLAGE",
@@ -51,7 +131,7 @@
             "script": "ChoVillage_EventScript_ItemRevivalHerb",
             "trainer_sight_or_berry_tree_id": "0",
             "trainer_type": "0",
-            "x": 25,
+            "x": 26,
             "y": 13
         },
         {
@@ -61,7 +141,7 @@
             "movement_range_x": 0,
             "movement_range_y": 0,
             "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
-            "script": "NULL",
+            "script": "ChoVillage_EventScript_Woman",
             "trainer_sight_or_berry_tree_id": "0",
             "trainer_type": "0",
             "x": 25,
@@ -74,7 +154,7 @@
             "movement_range_x": 0,
             "movement_range_y": 0,
             "movement_type": "MOVEMENT_TYPE_WANDER_DOWN_AND_UP",
-            "script": "NULL",
+            "script": "ChoVillage_EventScript_Man",
             "trainer_sight_or_berry_tree_id": "0",
             "trainer_type": "0",
             "x": 18,
@@ -92,6 +172,32 @@
             "trainer_type": "0",
             "x": 9,
             "y": 27
+        },
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "EVENT_OBJ_GFX_FISHERMAN",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "script": "ChoVillage_EventScript_ComplainingFisherman",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 23,
+            "y": 28
+        },
+        {
+            "elevation": 3,
+            "flag": "FLAG_MEET_LOG_CHO_VILLAGE_1",
+            "graphics_id": "EVENT_OBJ_GFX_LOG",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+            "script": "NULL",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 34,
+            "y": 10
         }
     ],
     "region_map_section": "MAPSEC_CHO_VILLAGE",
@@ -99,11 +205,39 @@
     "show_map_name": true,
     "warp_events": [
         {
-            "dest_map": "MAP_COLOR_RUINS_RED_1F",
+            "dest_map": "MAP_CHO_VILLAGE_HOUSE1",
+            "dest_warp_id": 0,
+            "elevation": 0,
+            "x": 23,
+            "y": 3
+        },
+        {
+            "dest_map": "MAP_CHO_VILLAGE_HOUSE2",
             "dest_warp_id": 0,
             "elevation": 0,
             "x": 10,
             "y": 7
+        },
+        {
+            "dest_map": "MAP_CHO_VILLAGE_HOUSE3",
+            "dest_warp_id": 0,
+            "elevation": 0,
+            "x": 9,
+            "y": 15
+        },
+        {
+            "dest_map": "MAP_CHO_VILLAGE_HOUSE4",
+            "dest_warp_id": 0,
+            "elevation": 0,
+            "x": 22,
+            "y": 18
+        },
+        {
+            "dest_map": "MAP_CHO_VILLAGE_HOUSE5",
+            "dest_warp_id": 0,
+            "elevation": 0,
+            "x": 28,
+            "y": 18
         }
     ],
     "weather": "WEATHER_SUNNY"

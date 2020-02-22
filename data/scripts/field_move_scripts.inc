@@ -112,8 +112,8 @@ Text_WantToSmash: @ 829083A
 	.string "Would you like to use ROCK SMASH?$"
 
 Text_CantSmash: @ 829087F
-	.string "It's a rugged rock, but a POKéMON\n"
-	.string "may be able to smash it.$"
+	.string "It's a rugged rock, but a certain\n"
+	.string "tool may be able to smash it.$"
 
 EventScript_StrengthBoulder:: @ 82908BA
 	lockall

@@ -4,6 +4,126 @@
     "allow_running": true,
     "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
     "bg_events": [
+        {
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+            "script": "ColorRuinsBlue_1F_EventScript_TiredMindsTranslated",
+            "type": "sign",
+            "x": 3,
+            "y": 5
+        },
+        {
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+            "script": "ColorRuinsBlue_1F_EventScript_TiredMindsTranslated",
+            "type": "sign",
+            "x": 4,
+            "y": 5
+        },
+        {
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+            "script": "ColorRuinsBlue_1F_EventScript_TriggerRainTranslated",
+            "type": "sign",
+            "x": 6,
+            "y": 5
+        },
+        {
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+            "script": "ColorRuinsBlue_1F_EventScript_TriggerRainTranslated",
+            "type": "sign",
+            "x": 7,
+            "y": 5
+        },
+        {
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+            "script": "ColorRuinsBlue_1F_EventScript_WhitePearlTranslated",
+            "type": "sign",
+            "x": 12,
+            "y": 5
+        },
+        {
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+            "script": "ColorRuinsBlue_1F_EventScript_WhitePearlTranslated",
+            "type": "sign",
+            "x": 13,
+            "y": 5
+        },
+        {
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+            "script": "ColorRuinsBlue_1F_EventScript_HotSpringTranslated",
+            "type": "sign",
+            "x": 11,
+            "y": 8
+        },
+        {
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+            "script": "ColorRuinsBlue_1F_EventScript_HotSpringTranslated",
+            "type": "sign",
+            "x": 12,
+            "y": 8
+        },
+        {
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+            "script": "ColorRuinsBlue_1F_EventScript_BambooCropTranslated",
+            "type": "sign",
+            "x": 3,
+            "y": 15
+        },
+        {
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+            "script": "ColorRuinsBlue_1F_EventScript_BambooCropTranslated",
+            "type": "sign",
+            "x": 4,
+            "y": 15
+        },
+        {
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+            "script": "ColorRuinsBlue_1F_EventScript_ShadowsDanceTranslated",
+            "type": "sign",
+            "x": 9,
+            "y": 15
+        },
+        {
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+            "script": "ColorRuinsBlue_1F_EventScript_ShadowsDanceTranslated",
+            "type": "sign",
+            "x": 10,
+            "y": 15
+        },
+        {
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+            "script": "ColorRuinsBlue_1F_EventScript_PerfectPetalsTranslated",
+            "type": "sign",
+            "x": 12,
+            "y": 15
+        },
+        {
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+            "script": "ColorRuinsBlue_1F_EventScript_PerfectPetalsTranslated",
+            "type": "sign",
+            "x": 13,
+            "y": 15
+        },
+        {
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+            "script": "ColorRuinsBlue_1F_EventScript_RainMaker",
+            "type": "sign",
+            "x": 9,
+            "y": 8
+        }
     ],
     "connections": null,
     "coord_events": [
@@ -11,7 +131,7 @@
     "id": "MAP_COLOR_RUINS_BLUE_1F",
     "layout": "LAYOUT_COLOR_RUINS_BLUE_1F",
     "map_type": "MAP_TYPE_UNDERGROUND",
-    "music": "MUS_DAN02",
+    "music": "MUS_MABOROSI",
     "name": "ColorRuinsBlue_1F",
     "object_events": [
     ],
@@ -25,7 +145,14 @@
             "elevation": 0,
             "x": 8,
             "y": 18
+        },
+        {
+            "dest_map": "MAP_COLOR_RUINS_BLUE_B1F",
+            "dest_warp_id": 0,
+            "elevation": 0,
+            "x": 8,
+            "y": 1
         }
     ],
-    "weather": "WEATHER_SUNNY"
+    "weather": "WEATHER_NONE"
 }

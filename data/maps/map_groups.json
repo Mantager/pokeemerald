@@ -559,7 +559,16 @@
         "TiyuForest_Clearing"
     ],
     "gMapGroup38": [
-        "DarkCity_ArumsHouse"
+        "DarkCity_ArumsHouse",
+        "DarkCity_House1",
+        "DarkCity_House2",
+        "DarkCity_House3",
+        "DarkRuins_YellowRoom",
+        "DarkCity_GreenRoom",
+        "DarkRuins_GreenRoom",
+        "DarkRuins_RedRoom",
+        "DarkRuins_BlueRoom",
+        "DarkRuins_FinalRoom"
     ],
     "gMapGroup4": [
         "LavaridgeTown_HerbShop",

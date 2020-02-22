@@ -1514,3 +1514,10 @@ const u32 gItemIconPalette_SwiftWing[] = INCBIN_U32("graphics/items/icon_palette
 
 const u32 gItemIcon_PrettyWing[] = INCBIN_U32("graphics/items/icons/pretty_wing.4bpp.lz");
 const u32 gItemIconPalette_PrettyWing[] = INCBIN_U32("graphics/items/icon_palettes/pretty_wing.gbapal.lz");
+
+const u32 gItemIconPalette_BrailleGuide[] = INCBIN_U32("graphics/items/icon_palettes/braille_guide.gbapal.lz");
+
+const u32 gItemIconPalette_PowerGlove[] = INCBIN_U32("graphics/items/icon_palettes/power_glove.gbapal.lz");
+
+const u32 gItemIcon_RelicCrown[] = INCBIN_U32("graphics/items/icons/relic_crown.4bpp.lz");
+const u32 gItemIconPalette_RelicCrown[] = INCBIN_U32("graphics/items/icon_palettes/relic_crown.gbapal.lz");

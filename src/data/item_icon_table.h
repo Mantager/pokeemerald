@@ -589,4 +589,8 @@ const u32 *const gItemIconTable[][2] =
     [ITEM_CLEVER_WING] = {gItemIcon_CleverWing, gItemIconPalette_CleverWing},
     [ITEM_SWIFT_WING] = {gItemIcon_SwiftWing, gItemIconPalette_SwiftWing},
     [ITEM_PRETTY_WING] = {gItemIcon_PrettyWing, gItemIconPalette_PrettyWing},
+    [ITEM_BRAILLE_GUIDE] = {gItemIcon_WeaknessPolicy, gItemIconPalette_BrailleGuide},
+    [ITEM_BERRY_PACKAGE] = {gItemIcon_OaksParcel, gItemIconPalette_OaksParcel},
+    [ITEM_POWER_GLOVE] = {gItemIcon_LuckyPunch, gItemIconPalette_PowerGlove},
+    [ITEM_RELIC_CROWN] = {gItemIcon_RelicCrown, gItemIconPalette_RelicCrown},
 };

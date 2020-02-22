@@ -221,3 +221,99 @@ AncientTomb_Braille_ShineInTheMiddle: @ 82A6D06
 	.braille "INHERIT OUR\n"
 	.braille "WILL, SHINE\n"
 	.braille "IN THE MIDDLE.$"
+
+ColorRuinsYellow_1F_Braille_TouchPillars:
+	.byte 3
+	.byte 0
+	.byte 25
+	.byte 19
+	.byte 6
+	.byte 3
+	.braille "TOUCH\n"
+	.braille "PILLARS FROM\n"
+	.braille "RIGHT TO\n"
+	.braille "LEFT.$"
+
+ColorRuinsYellow_1F_Braille_SacredStones:
+	.byte 3
+	.byte 0
+	.byte 25
+	.byte 19
+	.byte 6
+	.byte 3
+	.braille "SACRED\n"
+	.braille "STONES LIE\n"
+	.braille "BENEATH\n"
+	.braille "GOLD.$"
+
+ColorRuinsYellow_1F_Braille_MazhouTei:
+	.byte 3
+	.byte 0
+	.byte 25
+	.byte 19
+	.byte 6
+	.byte 3
+	.braille "MAZHOU X\n"
+	.braille "TEI.\n"
+	.braille "TOGETHER IN\n"
+	.braille "HARMONY.$"
+
+ColorRuinsYellow_1F_Braille_GoldenCups:
+	.byte 3
+	.byte 0
+	.byte 25
+	.byte 19
+	.byte 6
+	.byte 3
+	.braille "GOLDEN\n"
+	.braille "CUPS.\n"
+	.braille "MANY\n"
+	.braille "YUAN$"
+
+ColorRuinsYellow_1F_Braille_VermillionBird:
+	.byte 3
+	.byte 0
+	.byte 25
+	.byte 19
+	.byte 6
+	.byte 3
+	.braille "I SAW A\n"
+	.braille "VERMILLION\n"
+	.braille "BIRD\n"
+	.braille "IN EAST.$"
+
+ColorRuinsYellow_1F_Braille_TalkingToPeople:
+	.byte 3
+	.byte 0
+	.byte 25
+	.byte 19
+	.byte 6
+	.byte 3
+	.braille "I AM NOT\n"
+	.braille "GOOD AT\n"
+	.braille "TALKING\n"
+	.braille "TO PEOPLE.$"
+
+ColorRuinsYellow_1F_Braille_CurseTheEmperor:
+	.byte 3
+	.byte 0
+	.byte 25
+	.byte 19
+	.byte 6
+	.byte 3
+	.braille "CURSE THE\n"
+	.braille "EMPEROR.\n"
+	.braille "HE IS A\n"
+	.braille "FRAUD.$"
+
+ColorRuinsYellow_1F_Braille_PurpleTrees:
+	.byte 3
+	.byte 0
+	.byte 25
+	.byte 19
+	.byte 6
+	.byte 3
+	.braille "STAY AWAY\n"
+	.braille "FROM PURPLE\n"
+	.braille "TALKING\n"
+	.braille "TREES.$"

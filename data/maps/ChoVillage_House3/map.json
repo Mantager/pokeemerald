@@ -11,14 +11,41 @@
     "id": "MAP_CHO_VILLAGE_HOUSE3",
     "layout": "LAYOUT_CHO_VILLAGE_HOUSE3",
     "map_type": "MAP_TYPE_INDOOR",
-    "music": "MUS_DAN02",
+    "music": "MUS_MACHI_S3",
     "name": "ChoVillage_House3",
     "object_events": [
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "EVENT_OBJ_GFX_MAN_4",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "script": "ChoVillage_House3_EventScript_ShopOwner",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 6,
+            "y": 3
+        }
     ],
     "region_map_section": "MAPSEC_CHO_VILLAGE",
     "requires_flash": false,
-    "show_map_name": true,
+    "show_map_name": false,
     "warp_events": [
+        {
+            "dest_map": "MAP_CHO_VILLAGE",
+            "dest_warp_id": 2,
+            "elevation": 0,
+            "x": 3,
+            "y": 8
+        },
+        {
+            "dest_map": "MAP_CHO_VILLAGE",
+            "dest_warp_id": 2,
+            "elevation": 0,
+            "x": 4,
+            "y": 8
+        }
     ],
-    "weather": "WEATHER_SUNNY"
+    "weather": "WEATHER_NONE"
 }

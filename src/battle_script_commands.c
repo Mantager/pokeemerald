@@ -3385,6 +3385,7 @@ static void Cmd_jumpbasedontype(void)
 static void Cmd_getexp(void)
 {
     u16 item;
+    u8 levelDifference;
     s32 i; // also used as stringId
     u8 holdEffect;
     s32 sentIn;
@@ -3437,7 +3438,7 @@ static void Cmd_getexp(void)
                     viaExpShare++;
             }
 
-            calculatedExp = gBaseStats[gBattleMons[gBattlerFainted].species].expYield * gBattleMons[gBattlerFainted].level / 7;
+            calculatedExp = gBaseStats[gBattleMons[gBattlerFainted].species].expYield * gBattleMons[gBattlerFainted].level / 5;
 
             if (viaExpShare) // at least one mon is getting exp via exp share
             {
@@ -3511,8 +3512,15 @@ static void Cmd_getexp(void)
                         gBattleMoveDamage = (gBattleMoveDamage * 150) / 100;
                     if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)
                         gBattleMoveDamage = (gBattleMoveDamage * 150) / 100;
-                    gBattleMoveDamage = (gBattleMoveDamage * 140) / 100;
 
+                    if (GetMonData(&gPlayerParty[gBattleStruct->expGetterMonId], MON_DATA_LEVEL) < gBattleMons[gBattlerFainted].level)
+                    {
+                        levelDifference = (gBattleMons[gBattlerFainted].level - GetMonData(&gPlayerParty[gBattleStruct->expGetterMonId], MON_DATA_LEVEL)) * 10;
+                        if (levelDifference > 100)
+                            levelDifference = 100;
+                        gBattleMoveDamage = (gBattleMoveDamage * (100 + levelDifference)) / 100;
+                    }
+                    
                     if (IsTradedMon(&gPlayerParty[gBattleStruct->expGetterMonId]))
                     {
                         // check if the pokemon doesn't belong to the player
@@ -5924,11 +5932,11 @@ static u32 GetTrainerMoneyToGive(u16 trainerId)
         }
 
         if (gBattleTypeFlags & BATTLE_TYPE_TWO_OPPONENTS)
-            moneyReward = 4 * lastMonLevel * gBattleStruct->moneyMultiplier * gTrainerMoneyTable[i].value;
+            moneyReward = lastMonLevel * gBattleStruct->moneyMultiplier * gTrainerMoneyTable[i].value;
         else if (gBattleTypeFlags & BATTLE_TYPE_DOUBLE)
-            moneyReward = 4 * lastMonLevel * gBattleStruct->moneyMultiplier * 2 * gTrainerMoneyTable[i].value;
+            moneyReward = lastMonLevel * gBattleStruct->moneyMultiplier * 2 * gTrainerMoneyTable[i].value;
         else
-            moneyReward = 4 * lastMonLevel * gBattleStruct->moneyMultiplier * gTrainerMoneyTable[i].value;
+            moneyReward = lastMonLevel * gBattleStruct->moneyMultiplier * gTrainerMoneyTable[i].value;
     }
 
     return moneyReward;

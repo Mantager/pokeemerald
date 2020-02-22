@@ -1941,18 +1941,6 @@ const struct SpriteFrameImage gEventObjectPicTable_Statue[] = {
     obj_frame_tiles(gEventObjectPic_Statue),
 };
 
-const struct SpriteFrameImage gEventObjectPicTable_Dusclops[] = {
-    overworld_frame(gEventObjectPic_Dusclops, 2, 4, 0),
-    overworld_frame(gEventObjectPic_Dusclops, 2, 4, 1),
-    overworld_frame(gEventObjectPic_Dusclops, 2, 4, 2),
-    overworld_frame(gEventObjectPic_Dusclops, 2, 4, 3),
-    overworld_frame(gEventObjectPic_Dusclops, 2, 4, 4),
-    overworld_frame(gEventObjectPic_Dusclops, 2, 4, 5),
-    overworld_frame(gEventObjectPic_Dusclops, 2, 4, 6),
-    overworld_frame(gEventObjectPic_Dusclops, 2, 4, 7),
-    overworld_frame(gEventObjectPic_Dusclops, 2, 4, 8),
-};
-
 const struct SpriteFrameImage gEventObjectPicTable_Kirlia[] = {
     overworld_frame(gEventObjectPic_Kirlia, 2, 4, 0),
     overworld_frame(gEventObjectPic_Kirlia, 2, 4, 1),
@@ -2171,4 +2159,28 @@ const struct SpriteFrameImage gEventObjectPicTable_RubySapphireMay[] = {
     overworld_frame(gEventObjectPic_RubySapphireMayNormal, 2, 4, 6),
     overworld_frame(gEventObjectPic_RubySapphireMayNormal, 2, 4, 7),
     overworld_frame(gEventObjectPic_RubySapphireMayNormal, 2, 4, 8),
+};
+
+const struct SpriteFrameImage gEventObjectPicTable_Log[] = {
+    overworld_frame(gEventObjectPic_Log, 2, 4, 0),
+    overworld_frame(gEventObjectPic_Log, 2, 4, 1),
+    overworld_frame(gEventObjectPic_Log, 2, 4, 2),
+    overworld_frame(gEventObjectPic_Log, 2, 4, 3),
+    overworld_frame(gEventObjectPic_Log, 2, 4, 4),
+    overworld_frame(gEventObjectPic_Log, 2, 4, 5),
+    overworld_frame(gEventObjectPic_Log, 2, 4, 6),
+    overworld_frame(gEventObjectPic_Log, 2, 4, 7),
+    overworld_frame(gEventObjectPic_Log, 2, 4, 8),
+};
+
+const struct SpriteFrameImage gEventObjectPicTable_Diglett[] = {
+    overworld_frame(gEventObjectPic_Diglett, 2, 4, 0),
+    overworld_frame(gEventObjectPic_Diglett, 2, 4, 1),
+    overworld_frame(gEventObjectPic_Diglett, 2, 4, 2),
+    overworld_frame(gEventObjectPic_Diglett, 2, 4, 3),
+    overworld_frame(gEventObjectPic_Diglett, 2, 4, 4),
+    overworld_frame(gEventObjectPic_Diglett, 2, 4, 5),
+    overworld_frame(gEventObjectPic_Diglett, 2, 4, 6),
+    overworld_frame(gEventObjectPic_Diglett, 2, 4, 7),
+    overworld_frame(gEventObjectPic_Diglett, 2, 4, 8),
 };

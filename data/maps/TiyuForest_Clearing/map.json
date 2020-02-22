@@ -11,13 +11,26 @@
     "id": "MAP_TIYU_FOREST_CLEARING",
     "layout": "LAYOUT_TIYU_FOREST_CLEARING",
     "map_type": "MAP_TYPE_ROUTE",
-    "music": "MUS_DAN02",
+    "music": "MUS_RG_T_MORI",
     "name": "TiyuForest_Clearing",
     "object_events": [
+        {
+            "elevation": 3,
+            "flag": "FLAG_ITEM_TIYU_FOREST_CLEARING_LEAF_STONE",
+            "graphics_id": "EVENT_OBJ_GFX_ITEM_BALL",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "script": "TiyuForest_Clearing_EventScript_ItemLeafStone",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 5,
+            "y": 5
+        }
     ],
     "region_map_section": "MAPSEC_TIYU_FOREST",
     "requires_flash": false,
-    "show_map_name": true,
+    "show_map_name": false,
     "warp_events": [
         {
             "dest_map": "MAP_TIYU_FOREST",

@@ -967,7 +967,7 @@ static void Task_SecretBaseMusicNoteMatSound(u8 taskId)
         case 638:
             PlaySE(SE_TOY_B);
             break;
-        case 691:
+        case 639:
             PlaySE(SE_TOY_C1);
             break;
         }

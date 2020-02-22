@@ -4,6 +4,22 @@
     "allow_running": true,
     "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
     "bg_events": [
+        {
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+            "script": "ColorRuinsYellow_B1F_EventScript_GiantWall",
+            "type": "sign",
+            "x": 29,
+            "y": 3
+        },
+        {
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+            "script": "ColorRuinsYellow_B1F_EventScript_GiantWall",
+            "type": "sign",
+            "x": 30,
+            "y": 3
+        }
     ],
     "connections": null,
     "coord_events": [
@@ -11,14 +27,21 @@
     "id": "MAP_COLOR_RUINS_YELLOW_B1F",
     "layout": "LAYOUT_COLOR_RUINS_YELLOW_B1F",
     "map_type": "MAP_TYPE_UNDERGROUND",
-    "music": "MUS_DAN02",
+    "music": "MUS_MABOROSI",
     "name": "ColorRuinsYellow_B1F",
     "object_events": [
     ],
     "region_map_section": "MAPSEC_COLOR_RUINS_YELLOW",
     "requires_flash": false,
-    "show_map_name": true,
+    "show_map_name": false,
     "warp_events": [
+        {
+            "dest_map": "MAP_COLOR_RUINS_YELLOW_1F",
+            "dest_warp_id": 1,
+            "elevation": 0,
+            "x": 5,
+            "y": 37
+        }
     ],
-    "weather": "WEATHER_SUNNY"
+    "weather": "WEATHER_NONE"
 }

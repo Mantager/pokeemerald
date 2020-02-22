@@ -11,14 +11,69 @@
     "id": "MAP_DARK_RUINS",
     "layout": "LAYOUT_DARK_RUINS",
     "map_type": "MAP_TYPE_UNDERGROUND",
-    "music": "MUS_DAN02",
+    "music": "MUS_PYRAMID_TOP",
     "name": "DarkRuins",
     "object_events": [
+        {
+            "elevation": 3,
+            "flag": "FLAG_MEET_ARUM_DARK_RUINS_LOBBY",
+            "graphics_id": "EVENT_OBJ_GFX_ARTIST",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "script": "NULL",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 18,
+            "y": 4
+        }
     ],
     "region_map_section": "MAPSEC_DARK_RUINS",
     "requires_flash": false,
     "show_map_name": true,
     "warp_events": [
+        {
+            "dest_map": "MAP_DARK_CITY_MAIN",
+            "dest_warp_id": 5,
+            "elevation": 0,
+            "x": 18,
+            "y": 6
+        },
+        {
+            "dest_map": "MAP_DARK_RUINS_YELLOW_ROOM",
+            "dest_warp_id": 0,
+            "elevation": 0,
+            "x": 6,
+            "y": 1
+        },
+        {
+            "dest_map": "MAP_DARK_RUINS_GREEN_ROOM",
+            "dest_warp_id": 0,
+            "elevation": 0,
+            "x": 30,
+            "y": 1
+        },
+        {
+            "dest_map": "MAP_DARK_RUINS_RED_ROOM",
+            "dest_warp_id": 0,
+            "elevation": 0,
+            "x": 24,
+            "y": 1
+        },
+        {
+            "dest_map": "MAP_DARK_RUINS_BLUE_ROOM",
+            "dest_warp_id": 0,
+            "elevation": 0,
+            "x": 12,
+            "y": 1
+        },
+        {
+            "dest_map": "MAP_DARK_RUINS_FINAL_ROOM",
+            "dest_warp_id": 0,
+            "elevation": 0,
+            "x": 18,
+            "y": 1
+        }
     ],
-    "weather": "WEATHER_SUNNY"
+    "weather": "WEATHER_NONE"
 }

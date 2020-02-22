@@ -1176,3 +1176,21 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/OracleHill_Cave/scripts.inc"
 
 	.include "data/maps/TiyuForest_Clearing/scripts.inc"
+
+	.include "data/maps/DarkCity_House1/scripts.inc"
+
+	.include "data/maps/DarkCity_House2/scripts.inc"
+
+	.include "data/maps/DarkCity_House3/scripts.inc"
+
+	.include "data/maps/DarkRuins_YellowRoom/scripts.inc"
+
+	.include "data/maps/DarkCity_GreenRoom/scripts.inc"
+
+	.include "data/maps/DarkRuins_GreenRoom/scripts.inc"
+
+	.include "data/maps/DarkRuins_RedRoom/scripts.inc"
+
+	.include "data/maps/DarkRuins_BlueRoom/scripts.inc"
+
+	.include "data/maps/DarkRuins_FinalRoom/scripts.inc"

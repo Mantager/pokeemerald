@@ -736,8 +736,7 @@ static bool8 ShouldJumpLedge(s16 x, s16 y, u8 z)
 
 static bool8 TryPushBoulder(s16 x, s16 y, u8 direction)
 {
-    if (FlagGet(FLAG_SYS_USE_STRENGTH))
-    {
+    
         u8 eventObjectId = GetEventObjectIdByXY(x, y);
 
         if (eventObjectId != 16 && gEventObjects[eventObjectId].graphicsId == EVENT_OBJ_GFX_PUSHABLE_BOULDER)
@@ -752,7 +751,6 @@ static bool8 TryPushBoulder(s16 x, s16 y, u8 direction)
                 return TRUE;
             }
         }
-    }
     return FALSE;
 }
 

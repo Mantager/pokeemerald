@@ -4,14 +4,226 @@
     "allow_running": true,
     "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
     "bg_events": [
+        {
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+            "script": "ColorRuinsGreen_1F_EventScript_BallsFromNuggetsTranslated",
+            "type": "sign",
+            "x": 9,
+            "y": 7
+        },
+        {
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+            "script": "ColorRuinsGreen_1F_EventScript_CarnivineBestTranslated",
+            "type": "sign",
+            "x": 8,
+            "y": 5
+        },
+        {
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+            "script": "ColorRuinsGreen_1F_EventScript_BallsFromNuggetsTranslated",
+            "type": "sign",
+            "x": 8,
+            "y": 7
+        },
+        {
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+            "script": "ColorRuinsGreen_1F_EventScript_TouchCornersTranslated",
+            "type": "sign",
+            "x": 10,
+            "y": 7
+        },
+        {
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+            "script": "ColorRuinsGreen_1F_EventScript_TouchCornersTranslated",
+            "type": "sign",
+            "x": 11,
+            "y": 7
+        },
+        {
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+            "script": "ColorRuinsGreen_1F_EventScript_CarnivineBestTranslated",
+            "type": "sign",
+            "x": 9,
+            "y": 5
+        },
+        {
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+            "script": "ColorRuinsGreen_1F_EventScript_MushroomsDustTranslated",
+            "type": "sign",
+            "x": 8,
+            "y": 9
+        },
+        {
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+            "script": "ColorRuinsGreen_1F_EventScript_MushroomsDustTranslated",
+            "type": "sign",
+            "x": 9,
+            "y": 9
+        },
+        {
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+            "script": "ColorRuinsGreen_1F_EventScript_QinqinWasHereTranslated",
+            "type": "sign",
+            "x": 12,
+            "y": 9
+        },
+        {
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+            "script": "ColorRuinsGreen_1F_EventScript_QinqinWasHereTranslated",
+            "type": "sign",
+            "x": 13,
+            "y": 9
+        },
+        {
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+            "script": "ColorRuinsGreen_1F_EventScript_SunStoneEvolvedTranslated",
+            "type": "sign",
+            "x": 8,
+            "y": 11
+        },
+        {
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+            "script": "ColorRuinsGreen_1F_EventScript_SunStoneEvolvedTranslated",
+            "type": "sign",
+            "x": 9,
+            "y": 11
+        },
+        {
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+            "script": "ColorRuinsGreen_1F_EventScript_UniteTheCountryTranslated",
+            "type": "sign",
+            "x": 2,
+            "y": 8
+        },
+        {
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+            "script": "ColorRuinsGreen_1F_EventScript_UniteTheCountryTranslated",
+            "type": "sign",
+            "x": 3,
+            "y": 8
+        },
+        {
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+            "script": "ColorRuinsGreen_1F_EventScript_SwimmingInTheMarshTranslated",
+            "type": "sign",
+            "x": 5,
+            "y": 11
+        },
+        {
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+            "script": "ColorRuinsGreen_1F_EventScript_SwimmingInTheMarshTranslated",
+            "type": "sign",
+            "x": 6,
+            "y": 11
+        },
+        {
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+            "script": "ColorRuinsGreen_1F_EventScript_AnotherColorRuinsTranslated",
+            "type": "sign",
+            "x": 2,
+            "y": 11
+        },
+        {
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+            "script": "ColorRuinsGreen_1F_EventScript_AnotherColorRuinsTranslated",
+            "type": "sign",
+            "x": 3,
+            "y": 11
+        },
+        {
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+            "script": "ColorRuinsGreen_1F_EventScript_PureHeartsTranslated",
+            "type": "sign",
+            "x": 3,
+            "y": 14
+        },
+        {
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+            "script": "ColorRuinsGreen_1F_EventScript_PureHeartsTranslated",
+            "type": "sign",
+            "x": 4,
+            "y": 14
+        },
+        {
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+            "script": "ColorRuinsGreen_1F_EventScript_MoneyIsNotAllTranslated",
+            "type": "sign",
+            "x": 5,
+            "y": 13
+        },
+        {
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+            "script": "ColorRuinsGreen_1F_EventScript_MoneyIsNotAllTranslated",
+            "type": "sign",
+            "x": 6,
+            "y": 13
+        }
     ],
     "connections": null,
     "coord_events": [
+        {
+            "elevation": 0,
+            "script": "ColorRuinsGreen_1F_EventScript_FirstStepPuzzle",
+            "type": "trigger",
+            "var": "VAR_STORY_EVENT_PROGRESS",
+            "var_value": "5",
+            "x": 1,
+            "y": 2
+        },
+        {
+            "elevation": 0,
+            "script": "ColorRuinsGreen_1F_EventScript_SecondStepPuzzle",
+            "type": "trigger",
+            "var": "VAR_STORY_EVENT_PROGRESS",
+            "var_value": "5",
+            "x": 1,
+            "y": 18
+        },
+        {
+            "elevation": 0,
+            "script": "ColorRuinsGreen_1F_EventScript_ThirdStepPuzzle",
+            "type": "trigger",
+            "var": "VAR_STORY_EVENT_PROGRESS",
+            "var_value": "5",
+            "x": 14,
+            "y": 18
+        },
+        {
+            "elevation": 0,
+            "script": "ColorRuinsGreen_1F_EventScript_LastStepPuzzle",
+            "type": "trigger",
+            "var": "VAR_STORY_EVENT_PROGRESS",
+            "var_value": "5",
+            "x": 14,
+            "y": 2
+        }
     ],
     "id": "MAP_COLOR_RUINS_GREEN_1F",
     "layout": "LAYOUT_COLOR_RUINS_GREEN_1F",
     "map_type": "MAP_TYPE_UNDERGROUND",
-    "music": "MUS_DAN02",
+    "music": "MUS_MABOROSI",
     "name": "ColorRuinsGreen_1F",
     "object_events": [
     ],
@@ -25,7 +237,14 @@
             "elevation": 0,
             "x": 8,
             "y": 18
+        },
+        {
+            "dest_map": "MAP_COLOR_RUINS_GREEN_B1F",
+            "dest_warp_id": 0,
+            "elevation": 0,
+            "x": 8,
+            "y": 1
         }
     ],
-    "weather": "WEATHER_SUNNY"
+    "weather": "WEATHER_NONE"
 }

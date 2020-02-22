@@ -3,6 +3,7 @@
 
 bool8 ShouldDoBrailleRegisteelEffect(void);
 bool8 ShouldDoBrailleRegirockEffect(void);
+bool8 ShouldDoColorRuinsGreenEffect(void);
 bool8 ShouldDoBrailleDigEffect(void);
 void DoBrailleDigEffect(void);
 void SetUpPuzzleEffectRegisteel(void);

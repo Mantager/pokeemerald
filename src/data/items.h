@@ -7448,5 +7448,57 @@ const struct Item gItems[] =
         .type = 4,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = 0,
-    }
+    },
+
+    [ITEM_BRAILLE_GUIDE] =
+    {
+        .name = _("Script Guide"),
+        .itemId = ITEM_BRAILLE_GUIDE,
+        .price = 0,
+        .description = sBrailleGuideDesc,
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = 4,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = 0,
+    },
+
+    [ITEM_BERRY_PACKAGE] =
+    {
+        .name = _("Berry Package"),
+        .itemId = ITEM_BERRY_PACKAGE,
+        .price = 0,
+        .description = sBerryPackageDesc,
+        .importance = 2,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = 4,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = 0,
+    },
+
+    [ITEM_POWER_GLOVE] =
+    {
+        .name = _("Power Glove"),
+        .itemId = ITEM_POWER_GLOVE,
+        .price = 0,
+        .description = sPowerGloveDesc,
+        .importance = 2,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = 4,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = 0,
+    },
+
+    [ITEM_RELIC_CROWN] =
+    {
+        .name = _("Relic Crown"),
+        .itemId = ITEM_RELIC_CROWN,
+        .price = 0,
+        .description = sRelicCrownDesc,
+        .importance = 2,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = 4,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = 0,
+    },
 };

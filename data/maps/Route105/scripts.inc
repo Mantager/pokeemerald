@@ -30,11 +30,6 @@ Route105_OnFrame: @ 81EE240
 	map_script_2 VAR_SHOULD_END_ABNORMAL_WEATHER, 1, AbnormalWeather_EventScript_EndEventAndCleanup_1
 	.2byte 0
 
-Route105_EventScript_Foster:: @ 81EE24A
-	trainerbattle_single TRAINER_FOSTER, Route105_Text_FosterIntro, Route105_Text_FosterDefeated
-	msgbox Route105_Text_FosterPostBattle, MSGBOX_AUTOCLOSE
-	end
-
 Route105_EventScript_Luis:: @ 81EE261
 	trainerbattle_single TRAINER_LUIS, Route105_Text_LuisIntro, Route105_Text_LuisDefeated
 	msgbox Route105_Text_LuisPostBattle, MSGBOX_AUTOCLOSE

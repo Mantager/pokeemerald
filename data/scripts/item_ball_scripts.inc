@@ -741,6 +741,10 @@ TiyuForest_EventScript_ItemDireHit::
 	finditem_std ITEM_DIRE_HIT
 	end
 
+TiyuForest_Clearing_EventScript_ItemLeafStone::
+	finditem_std ITEM_LEAF_STONE
+	end
+
 LinkingTunnel_EventScript_ItemHardStone::
 	finditem_std ITEM_HARD_STONE
 	end
@@ -757,10 +761,38 @@ ColorRuinsRed_B1F_EventScript_ItemMetronome::
 	finditem_std ITEM_METRONOME
 	end
 
+ColorRuinsGreen_B1F_EventScript_ItemSunStone::
+	finditem_std ITEM_SUN_STONE
+	end
+
 DarkCityMain_EventScript_ItemBlackGlasses::
 	finditem_std ITEM_BLACK_GLASSES
 	end
 
 DarkCityMain_EventScript_ItemElixir::
 	finditem_std ITEM_ELIXIR
+	end
+
+ColorRuinsRed_B1F_EventScript_ItemStardust::
+	finditem_std ITEM_STARDUST
+	end
+
+ColorRuinsBlue_B1F_EventScript_ItemWaterStone::
+	finditem_std ITEM_WATER_STONE
+	end
+
+DarkRuins_YellowRoom_EventScript_ItemRareCandy::
+	finditem_std ITEM_RARE_CANDY
+	end
+
+DarkRuins_YellowRoom_EventScript_ItemZoomLens::
+	finditem_std ITEM_ZOOM_LENS
+	end
+
+DarkRuins_GreenRoom_EventScript_ItemRareCandy::
+	finditem_std ITEM_RARE_CANDY
+	end
+
+DarkRuins_RedRoom_EventScript_ItemRareCandy::
+	finditem_std ITEM_RARE_CANDY
 	end

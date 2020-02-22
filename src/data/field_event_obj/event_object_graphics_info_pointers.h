@@ -473,7 +473,6 @@ const struct EventObjectGraphicsInfo *const gEventObjectGraphicsInfoPointers[] =
     [EVENT_OBJ_GFX_MYSTERY_GIFT_MAN] =         &gEventObjectGraphicsInfo_MysteryEventDeliveryman,
     [EVENT_OBJ_GFX_TRICK_HOUSE_STATUE] =       &gEventObjectGraphicsInfo_Statue,
     [EVENT_OBJ_GFX_KIRLIA] =                   &gEventObjectGraphicsInfo_Kirlia,
-    [EVENT_OBJ_GFX_DUSCLOPS] =                 &gEventObjectGraphicsInfo_Dusclops,
     [EVENT_OBJ_GFX_UNION_ROOM_NURSE] =         &gEventObjectGraphicsInfo_UnionRoomAttendant,
     [EVENT_OBJ_GFX_SUDOWOODO] =                &gEventObjectGraphicsInfo_Sudowoodo,
     [EVENT_OBJ_GFX_MEW] =                      &gEventObjectGraphicsInfo_Mew,
@@ -486,6 +485,8 @@ const struct EventObjectGraphicsInfo *const gEventObjectGraphicsInfoPointers[] =
     [EVENT_OBJ_GFX_LINK_RS_MAY] =              &gEventObjectGraphicsInfo_RubySapphireMay,
     [EVENT_OBJ_GFX_LUGIA] =                    &gEventObjectGraphicsInfo_Lugia,
     [EVENT_OBJ_GFX_HOOH] =                     &gEventObjectGraphicsInfo_HoOh,
+    [EVENT_OBJ_GFX_LOG] =                      &gEventObjectGraphicsInfo_Log,
+    [EVENT_OBJ_GFX_DIGLETT] =                  &gEventObjectGraphicsInfo_Diglett,
 };
 
 const struct EventObjectGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {

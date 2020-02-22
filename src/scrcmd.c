@@ -794,6 +794,8 @@ bool8 ScrCmd_warphole(struct ScriptContext *ctx)
     PlayerGetDestCoords(&x, &y);
     if (mapGroup == 0xFF && mapNum == 0xFF)
         SetWarpDestinationToFixedHoleWarp(x - 7, y - 7);
+    else if (mapGroup == 0x23 && mapNum == 0x09)
+        SetWarpDestination(mapGroup, mapNum, -1, 14, 39);
     else
         SetWarpDestination(mapGroup, mapNum, -1, x - 7, y - 7);
     DoFallWarp();
