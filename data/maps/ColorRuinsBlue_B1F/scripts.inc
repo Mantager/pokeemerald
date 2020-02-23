@@ -37,11 +37,16 @@ ColorRuinsBlue_B1F_EventScript_FallThroughHole::
 	waitmovement 0
 	playse SE_RU_HYUU
 	delay 60
-	setvar VAR_STORY_EVENT_PROGRESS, 6
+	compare VAR_STORY_EVENT_PROGRESS, 5
+	call_if_eq ColorRuinsBlue_B1F_EventScript_SetVar
 	setrespawn HEAL_LOCATION_DARK_CITY_ENTRANCE
 	warphole MAP_DARK_CITY_ENTRANCE
 	waitstate
 	end
+
+ColorRuinsBlue_B1F_EventScript_SetVar::
+	setvar VAR_STORY_EVENT_PROGRESS, 6
+	return
 
 ColorRuinsBlue_B1F_Text_AfterTheAttack:
 	.string "AFTER THE ATTACK SOME OF US\n"

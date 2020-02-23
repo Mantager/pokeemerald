@@ -1821,3 +1821,6 @@ const u8 gText_Berries[] = _("Berries");
 const u8 gText_Nickname[] = _("Nickname");
 
 const u8 gText_DefaultNamePulp[] = _("Pulp");
+
+const u8 gText_Whiteouts[] = _("Whiteouts");
+const u8 gText_Over10[] = _("10+");

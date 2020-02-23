@@ -29,7 +29,7 @@ JamKeyMap_EventScript_TriggerCantLeave::
 	end
 
 JamKeyMap_EventScript_MechanicEndGame::
-	applymovement 4, JamKeyMap_Movement_MechanicFacePlayer
+	applymovement 2, JamKeyMap_Movement_MechanicFacePlayer
 	waitmovement 0
 	msgbox JamKeyMap_Text_MechanicHey, MSGBOX_DEFAULT
 	closemessage
@@ -43,7 +43,7 @@ JamKeyMap_EventScript_MechanicEndGame::
 	closemessage
 	fadescreen 1
 	setflag FLAG_PULP_BYROAD_MECHANIC
-	removeobject 4
+	removeobject 2
 	setvar VAR_STORY_EVENT_PROGRESS, 10
 	fadescreen 0
 	delay 16
@@ -96,7 +96,7 @@ JamKeyMap_EventScript_TruckInitialEvent::
 JamKeyMap_EventScript_LogFinalFight::
 	fadescreen 1
 	clearflag FLAG_LOG_PULP_BYROAD
-	addobject 5
+	addobject 3
 	fadescreen 0
 	delay 20
 	applymovement EVENT_OBJ_ID_PLAYER, JamKeyMap_Movement_MechanicFacePlayer
@@ -116,11 +116,9 @@ JamKeyMap_EventScript_Log::
 	faceplayer
 	msgbox JamKeyMap_Text_LogIntro, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_LOG_2, JamKeyMap_Text_LogDefeat
+	playbgm MUS_END, 0x00
 	msgbox JamKeyMap_Text_LogPostBattle, MSGBOX_DEFAULT
 	closemessage
-	delay 20
-	dofieldeffect FLDEFF_HALL_OF_FAME_RECORD
-	waitfieldeffect FLDEFF_HALL_OF_FAME_RECORD
 	delay 40
 	setvar VAR_STORY_EVENT_PROGRESS, 12
 	setvar VAR_TEMP_1, 1

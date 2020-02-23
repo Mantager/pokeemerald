@@ -270,7 +270,7 @@
 #define VAR_DARK_RUINS_ROOMS_COMPLETED       0x40FB // Number of rooms the player has cleared in Dark Ruins
 #define VAR_DARK_RUINS_DIGLETT_COUNTER       0x40FC // Stores the player's position in the Diglett sequence
 #define VAR_DARK_RUINS_SONG_COUNTER          0x40FD // Stores the amount of songs performed in Dark Ruins (blue room)
-#define VAR_UNUSED_0x40FE                    0x40FE // Unused Var
+#define VAR_NUMBER_OF_WHITEOUTS              0x40FE // Stores the number of times the player whited out
 #define VAR_UNUSED_0x40FF                    0x40FF // Unused Var
 
 #define VARS_END                             0x40FF

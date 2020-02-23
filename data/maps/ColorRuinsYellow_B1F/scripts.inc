@@ -10,7 +10,8 @@ ColorRuinsYellow_B1F_EventScript_GiantWall::
 	msgbox ColorRuinsYellow_B1F_Text_ColorRuinsHistory, MSGBOX_DEFAULT
 	closemessage
 	goto_if_set FLAG_COLOR_RUINS_YELLOW_WALL_READ, ColorRuinsYellow_B1F_EventScript_DecidedNotToRead
-	setvar VAR_STORY_EVENT_PROGRESS, 15
+	compare VAR_STORY_EVENT_PROGRESS, 4
+	call_if_eq ColorRuinsYellow_B1F_EventScript_SetVar
 	setflag FLAG_COLOR_RUINS_YELLOW_WALL_READ
 	releaseall
 	end
@@ -18,6 +19,10 @@ ColorRuinsYellow_B1F_EventScript_GiantWall::
 ColorRuinsYellow_B1F_EventScript_DecidedNotToRead::
 	releaseall
 	end
+
+ColorRuinsYellow_B1F_EventScript_SetVar::
+	setvar VAR_STORY_EVENT_PROGRESS, 15
+	return
 
 ColorRuinsYellow_B1F_Text_LotsOfWriting:
 	.string "This wall is filled with writing…\n"

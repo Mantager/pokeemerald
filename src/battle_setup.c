@@ -47,6 +47,7 @@
 #include "constants/species.h"
 #include "constants/trainers.h"
 #include "constants/trainer_hill.h"
+#include "constants/region_map_sections.h"
 
 enum
 {
@@ -546,9 +547,15 @@ u8 BattleSetup_GetTerrainId(void)
 {
     u16 tileBehavior;
     s16 x, y;
+    u16 regionMapSectionId = gMapHeader.regionMapSectionId;
 
     PlayerGetDestCoords(&x, &y);
     tileBehavior = MapGridGetMetatileBehaviorAt(x, y);
+
+    if ((regionMapSectionId >= MAPSEC_COLOR_RUINS_RED) && (regionMapSectionId <= MAPSEC_COLOR_RUINS_YELLOW))
+        return BATTLE_TERRAIN_CAVE;
+    if (regionMapSectionId == MAPSEC_DARK_RUINS)
+        return BATTLE_TERRAIN_CAVE;
 
     if (MetatileBehavior_IsTallGrass(tileBehavior))
         return BATTLE_TERRAIN_GRASS;

@@ -1,6 +1,16 @@
 ChoVillage_MapScripts::
 	.byte 0
 
+ChoVillage_EventScript_HallOfFameDebug::
+	delay 40
+	setvar VAR_STORY_EVENT_PROGRESS, 12
+	setvar VAR_TEMP_1, 1
+	call EverGrandeCity_HallOfFame_EventScript_SetGameClearFlags
+	checkplayergender
+	compare VAR_RESULT, MALE
+	goto_if_eq EverGrandeCity_HallOfFame_EventScript_GameClearMale
+	end
+
 ChoVillage_EventScript_InnSign::
 	msgbox ChoVillage_Text_InnSign, MSGBOX_SIGN
 	end
@@ -243,7 +253,7 @@ ChoVillage_Text_EarlyLogPostBattle:
 	.string "If anyone can fix your truck, it'll\n"
 	.string "be that guy.\p"
 	.string "By the way, I was thinking about\n"
-	.string "you told me the other day.\p"
+	.string "what you told me the other day.\p"
 	.string "You said you wanted to move to the\n"
 	.string "city, and I was all for it, but…\p"
 	.string "Now that I think about it, moving\n"

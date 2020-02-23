@@ -47,7 +47,7 @@
             "script": "ChoVillage_EventScript_EarlyLogTrigger_Top",
             "type": "trigger",
             "var": "VAR_STORY_EVENT_PROGRESS",
-            "var_value": "3",
+            "var_value": "2",
             "x": 42,
             "y": 10
         },
@@ -56,7 +56,7 @@
             "script": "ChoVillage_EventScript_EarlyLogTrigger_MiddleTop",
             "type": "trigger",
             "var": "VAR_STORY_EVENT_PROGRESS",
-            "var_value": "3",
+            "var_value": "2",
             "x": 42,
             "y": 11
         },
@@ -65,7 +65,7 @@
             "script": "ChoVillage_EventScript_EarlyLogTrigger_MiddleBottom",
             "type": "trigger",
             "var": "VAR_STORY_EVENT_PROGRESS",
-            "var_value": "3",
+            "var_value": "2",
             "x": 42,
             "y": 12
         },
@@ -74,7 +74,7 @@
             "script": "ChoVillage_EventScript_EarlyLogTrigger_Bottom",
             "type": "trigger",
             "var": "VAR_STORY_EVENT_PROGRESS",
-            "var_value": "3",
+            "var_value": "2",
             "x": 42,
             "y": 13
         },

@@ -2301,11 +2301,11 @@ static void DeterminePokemonToShow(void)
     u16 dexNum;
     u16 j;
     
-    // Go through the Pokedex, and anything that has gotten caught we put into our massive array.
+    // Go through the Pokedex, and anything that has gotten seen we put into our massive array.
     // This basically packs all of the caught pokemon into the front of the array
     for (dexNum = 1, j = 0; dexNum < NATIONAL_DEX_COUNT; dexNum++)
     {
-        if (GetSetPokedexFlag(dexNum, FLAG_GET_CAUGHT))
+        if (GetSetPokedexFlag(dexNum, FLAG_GET_SEEN))
         {
             sCreditsData->caughtMonIds[j] = dexNum;
             j++;
