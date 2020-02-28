@@ -9,6 +9,11 @@ ColorRuinsBlue_B1F_EventScript_GiantWall::
 	delay 15
 	msgbox ColorRuinsBlue_B1F_Text_AfterTheAttack, MSGBOX_DEFAULT
 	closemessage
+	goto_if_unset FLAG_COLOR_RUINS_BLUE_WALL_READ, ColorRuinsBlue_B1F_EventScript_BeginFallingSequence
+	releaseall
+	end
+
+ColorRuinsBlue_B1F_EventScript_BeginFallingSequence::
 	setflag FLAG_COLOR_RUINS_BLUE_WALL_READ
 	delay 30
 	getplayerxy VAR_TEMP_0, VAR_TEMP_1

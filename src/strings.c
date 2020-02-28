@@ -1824,3 +1824,8 @@ const u8 gText_DefaultNamePulp[] = _("Pulp");
 
 const u8 gText_Whiteouts[] = _("Whiteouts");
 const u8 gText_Over10[] = _("10+");
+
+const u8 gText_Covet[] = _("Covet");
+const u8 gText_BugBite[] = _("Bug Bite");
+const u8 gText_Fling[] = _("Fling");
+const u8 gText_Recycle[] = _("Recycle");

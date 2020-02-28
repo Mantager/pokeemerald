@@ -11,6 +11,13 @@ ChoVillage_House3_EventScript_ShopOwner::
 	release
 	end
 
+ChoVillage_House3_EventScript_Youngster::
+	lock
+	faceplayer
+	msgbox ChoVillage_House3_Text_NotMuchForSale, MSGBOX_DEFAULT
+	release
+	end
+
 ChoVillage_House3_Mart:
 	.2byte ITEM_ENERGY_POWDER
 	.2byte ITEM_HEAL_POWDER
@@ -22,3 +29,9 @@ ChoVillage_House3_Mart:
 ChoVillage_House3_Text_HowMayIServeYou:
 	.string "Hey, {PLAYER}!\n"
 	.string "How may I serve you?$"
+
+ChoVillage_House3_Text_NotMuchForSale:
+	.string "Man, all the vases are empty…\n"
+	.string "And the shelves are almost bare…\p"
+	.string "Looks like there isn't much for\n"
+	.string "sale around here.$"

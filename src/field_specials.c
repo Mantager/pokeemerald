@@ -3175,20 +3175,33 @@ static const u16 sBattleFrontier_TutorMoves2[] =
     MOVE_ENDURE, 
     MOVE_PSYCH_UP, 
     MOVE_ICE_PUNCH, 
-    MOVE_THUNDER_PUNCH, 
-    MOVE_FIRE_PUNCH 
+    MOVE_BUG_BITE, 
+    MOVE_FLING 
+};
+
+static const u16 sChoVillage_TutorMoves[] =
+{ 
+    MOVE_COVET,
+    MOVE_BUG_BITE,
+    MOVE_FLING,
+    MOVE_RECYCLE
 };
 
 void BufferBattleFrontierTutorMoveName(void)
 {
-    if (gSpecialVar_0x8005 != 0)
+    if (gSpecialVar_0x8005 == 1)
     {
         StringCopy(gStringVar1, gMoveNames[sBattleFrontier_TutorMoves2[gSpecialVar_0x8004]]);
     }
-    else
+    else if (gSpecialVar_0x8005 == 0)
     {
         StringCopy(gStringVar1, gMoveNames[sBattleFrontier_TutorMoves1[gSpecialVar_0x8004]]);
     }
+    else
+    {
+        StringCopy(gStringVar1, gMoveNames[sChoVillage_TutorMoves[gSpecialVar_0x8004]]);
+    }
+    
 }
 
 static void ShowBattleFrontierTutorWindow(u8 menu, u16 selection)
@@ -3300,7 +3313,7 @@ void GetBattleFrontierTutorMoveIndex(void)
     moveTutor = VarGet(VAR_TEMP_E);
     moveIndex = VarGet(VAR_TEMP_D);
 
-    if (moveTutor != 0)
+    if (moveTutor == 1)
     {
         i = 0;
         do
@@ -3313,7 +3326,7 @@ void GetBattleFrontierTutorMoveIndex(void)
             i++;
         } while (i < TUTOR_MOVE_COUNT);
     }
-    else
+    else if (moveTutor == 0)
     {
         i = 0;
         do
@@ -3326,7 +3339,22 @@ void GetBattleFrontierTutorMoveIndex(void)
             i++;
         } while (i < TUTOR_MOVE_COUNT);
     }
+    else
+    {
+        i = 0;
+        do
+        {
+            if (gTutorMoves[i] == sChoVillage_TutorMoves[moveIndex])
+            {
+                gSpecialVar_0x8005 = i;
+                break;
+            }
+            i++;
+        } while (i < TUTOR_MOVE_COUNT);
+    }
+    
 }
+
 
 // Never called
 void sub_813AF48(void)

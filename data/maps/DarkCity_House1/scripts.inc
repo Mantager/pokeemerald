@@ -14,6 +14,9 @@ DarkCity_House1_EventScript_GiveLuckyEgg::
 	goto_if_set FLAG_DARK_CITY_RECIEVED_LUCKY_EGG, DarkCity_House1_EventScript_RecievedLuckyEgg
 	msgbox DarkCity_House1_Text_HeresLuckyEgg, MSGBOX_DEFAULT
 	closemessage
+	checkitemspace ITEM_LUCKY_EGG, 1
+	compare VAR_RESULT, FALSE
+	goto_if_eq DarkCity_House1_EventScript_NoRoomForItem
 	giveitem_std ITEM_LUCKY_EGG, 1
 	delay 8
 	setflag FLAG_DARK_CITY_RECIEVED_LUCKY_EGG
@@ -32,6 +35,11 @@ DarkCity_House1_EventScript_RecievedLuckyEgg::
 	release
 	end
 
+DarkCity_House1_EventScript_NoRoomForItem::
+	msgbox DarkCity_House1_Text_NoRoomForLuckyEgg, MSGBOX_DEFAULT
+	release
+	end
+
 DarkCity_House1_Text_GlitterYay:
 	.string "Yay! Glitter! So pretty!$"
 
@@ -44,6 +52,10 @@ DarkCity_House1_Text_LuckyEggGainMore:
 	.string "That's a Lucky Egg.\n"
 	.string "A Pokémon holding it will gain more\l"
 	.string "experience points in battle.$"
+
+DarkCity_House1_Text_NoRoomForLuckyEgg:
+	.string "Oh? You don't seem to have room\n"
+	.string "for this.$"
 
 DarkCity_House1_Text_DecorationMaker:
 	.string "I make decorations like tables and\n"

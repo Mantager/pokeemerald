@@ -37,11 +37,12 @@
 #define TUTOR_MOVE_SLEEP_TALK      24
 #define TUTOR_MOVE_SWIFT           25
 #define TUTOR_MOVE_DEFENSE_CURL    26
-#define TUTOR_MOVE_THUNDER_PUNCH   27
-#define TUTOR_MOVE_FIRE_PUNCH      28
-#define TUTOR_MOVE_FURY_CUTTER     29
+#define TUTOR_MOVE_BUG_BITE        27
+#define TUTOR_MOVE_FLING           28
+#define TUTOR_MOVE_RECYCLE         29
 #define TUTOR_MOVE_NATURAL_GIFT    30
-#define TUTOR_MOVE_COUNT           31
+#define TUTOR_MOVE_COVET           31
+#define TUTOR_MOVE_COUNT           32
 
 #define PARTY_LAYOUT_SINGLE          0
 #define PARTY_LAYOUT_DOUBLE          1

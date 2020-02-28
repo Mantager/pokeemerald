@@ -1159,8 +1159,8 @@ static void HallOfFame_PrintMonInfo(struct HallofFameMon* currMon, u8 unused1, u
         }
 
         stringPtr[0] = EOS;
-        width = GetStringRightAlignXOffset(0x11, text, 0x70);
-        AddTextPrinterParameterized3(0, 1, width, 1, sMonInfoTextColors, -1, text);
+        width = GetStringRightAlignXOffset(1, text, 0x70);
+        AddTextPrinterParameterized3(0, 1, width, 17, sMonInfoTextColors, -1, text);
 
         stringPtr = StringCopy(text, gText_Level);
         ConvertIntToDecimalStringN(stringPtr, currMon->lvl, STR_CONV_MODE_LEFT_ALIGN, 3);

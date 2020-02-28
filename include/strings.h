@@ -2959,4 +2959,9 @@ extern const u8 gText_DefaultNamePulp[];
 extern const u8 gText_Whiteouts[];
 extern const u8 gText_Over10[];
 
+extern const u8 gText_Covet[];
+extern const u8 gText_BugBite[];
+extern const u8 gText_Fling[];
+extern const u8 gText_Recycle[];
+
 #endif // GUARD_STRINGS_H

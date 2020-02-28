@@ -116,7 +116,9 @@ JamKeyMap_EventScript_Log::
 	faceplayer
 	msgbox JamKeyMap_Text_LogIntro, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_LOG_2, JamKeyMap_Text_LogDefeat
-	playbgm MUS_END, 0x00
+	fadeoutbgm 0
+	delay 40
+	playbgm MUS_END, 0
 	msgbox JamKeyMap_Text_LogPostBattle, MSGBOX_DEFAULT
 	closemessage
 	delay 40

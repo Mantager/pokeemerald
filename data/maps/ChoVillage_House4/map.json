@@ -26,6 +26,19 @@
             "trainer_type": "0",
             "x": 6,
             "y": 5
+        },
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "EVENT_OBJ_GFX_WOMAN_3",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+            "script": "ChoVillage_House4_EventScript_MoveTutor",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 4,
+            "y": 4
         }
     ],
     "region_map_section": "MAPSEC_CHO_VILLAGE",
