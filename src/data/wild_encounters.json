@@ -1285,6 +1285,65 @@
                     "map": "MAP_CAVE_OF_ORIGIN_UNUSED_RUBY_SAPPHIRE_MAP3"
                 },
                 {
+                    "base_label": "gChoVillage0",
+                    "fishing_mons": {
+                        "encounter_rate": 14,
+                        "mons": [
+                            {
+                                "max_level": 11,
+                                "min_level": 11,
+                                "species": "SPECIES_GOLDEEN"
+                            },
+                            {
+                                "max_level": 11,
+                                "min_level": 11,
+                                "species": "SPECIES_GRIMER"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_GOLDEEN"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_GOLDEEN"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_GOLDEEN"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_GOLDEEN"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_GOLDEEN"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_GOLDEEN"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_GOLDEEN"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_GOLDEEN"
+                            }
+                        ]
+                    },
+                    "map": "MAP_CHO_VILLAGE"
+                },
+                {
                     "base_label": "gColorRuinsBlue_1F0",
                     "land_mons": {
                         "encounter_rate": 4,
@@ -2667,6 +2726,61 @@
                 },
                 {
                     "base_label": "gKimyangRoad0",
+                    "fishing_mons": {
+                        "encounter_rate": 14,
+                        "mons": [
+                            {
+                                "max_level": 12,
+                                "min_level": 12,
+                                "species": "SPECIES_GOLDEEN"
+                            },
+                            {
+                                "max_level": 12,
+                                "min_level": 12,
+                                "species": "SPECIES_GRIMER"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_GOLDEEN"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_GOLDEEN"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_GOLDEEN"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_GOLDEEN"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_GOLDEEN"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_GOLDEEN"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_GOLDEEN"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_GOLDEEN"
+                            }
+                        ]
+                    },
                     "land_mons": {
                         "encounter_rate": 15,
                         "mons": [
@@ -2729,6 +2843,65 @@
                                 "max_level": 15,
                                 "min_level": 15,
                                 "species": "SPECIES_FARFETCHD"
+                            }
+                        ]
+                    },
+                    "map": "MAP_KIMYANG_ROAD"
+                },
+                {
+                    "base_label": "gKimyangRoad1",
+                    "fishing_mons": {
+                        "encounter_rate": 14,
+                        "mons": [
+                            {
+                                "max_level": 11,
+                                "min_level": 11,
+                                "species": "SPECIES_GOLDEEN"
+                            },
+                            {
+                                "max_level": 11,
+                                "min_level": 11,
+                                "species": "SPECIES_GRIMER"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_GOLDEEN"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_GOLDEEN"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_GOLDEEN"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_GOLDEEN"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_GOLDEEN"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_GOLDEEN"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_GOLDEEN"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_GOLDEEN"
                             }
                         ]
                     },
@@ -11057,6 +11230,61 @@
                 },
                 {
                     "base_label": "gShendownPath0",
+                    "fishing_mons": {
+                        "encounter_rate": 14,
+                        "mons": [
+                            {
+                                "max_level": 11,
+                                "min_level": 11,
+                                "species": "SPECIES_GRIMER"
+                            },
+                            {
+                                "max_level": 11,
+                                "min_level": 11,
+                                "species": "SPECIES_GOLDEEN"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_GOLDEEN"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_GOLDEEN"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_GOLDEEN"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_GOLDEEN"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_GOLDEEN"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_GOLDEEN"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_GOLDEEN"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_GOLDEEN"
+                            }
+                        ]
+                    },
                     "land_mons": {
                         "encounter_rate": 12,
                         "mons": [
@@ -11119,6 +11347,65 @@
                                 "max_level": 12,
                                 "min_level": 12,
                                 "species": "SPECIES_FARFETCHD"
+                            }
+                        ]
+                    },
+                    "map": "MAP_SHENDOWN_PATH"
+                },
+                {
+                    "base_label": "gShendownPath1",
+                    "fishing_mons": {
+                        "encounter_rate": 14,
+                        "mons": [
+                            {
+                                "max_level": 11,
+                                "min_level": 11,
+                                "species": "SPECIES_GOLDEEN"
+                            },
+                            {
+                                "max_level": 11,
+                                "min_level": 11,
+                                "species": "SPECIES_GRIMER"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_GOLDEEN"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_GOLDEEN"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_GOLDEEN"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_GOLDEEN"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_GOLDEEN"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_GOLDEEN"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_GOLDEEN"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_GOLDEEN"
                             }
                         ]
                     },
@@ -12485,6 +12772,61 @@
                 },
                 {
                     "base_label": "gWangyongMarsh0",
+                    "fishing_mons": {
+                        "encounter_rate": 14,
+                        "mons": [
+                            {
+                                "max_level": 11,
+                                "min_level": 11,
+                                "species": "SPECIES_GOLDEEN"
+                            },
+                            {
+                                "max_level": 11,
+                                "min_level": 11,
+                                "species": "SPECIES_GRIMER"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_GOLDEEN"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_GOLDEEN"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_GOLDEEN"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_GOLDEEN"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_GOLDEEN"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_GOLDEEN"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_GOLDEEN"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_GOLDEEN"
+                            }
+                        ]
+                    },
                     "land_mons": {
                         "encounter_rate": 10,
                         "mons": [
@@ -12547,6 +12889,65 @@
                                 "max_level": 14,
                                 "min_level": 14,
                                 "species": "SPECIES_GOOMY"
+                            }
+                        ]
+                    },
+                    "map": "MAP_WANGYONG_MARSH"
+                },
+                {
+                    "base_label": "gWangyongMarsh1",
+                    "fishing_mons": {
+                        "encounter_rate": 14,
+                        "mons": [
+                            {
+                                "max_level": 11,
+                                "min_level": 11,
+                                "species": "SPECIES_GOLDEEN"
+                            },
+                            {
+                                "max_level": 11,
+                                "min_level": 11,
+                                "species": "SPECIES_GRIMER"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_GOLDEEN"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_GOLDEEN"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_GOLDEEN"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_GOLDEEN"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_GOLDEEN"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_GOLDEEN"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_GOLDEEN"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_GOLDEEN"
                             }
                         ]
                     },

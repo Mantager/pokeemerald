@@ -36,6 +36,50 @@ ChoVillage_EventScript_ComplainingFisherman::
 	release
 	end
 
+ChoVillage_EventScript_OldRodFisherman::
+	lock
+	faceplayer
+	goto_if_set FLAG_RECEIVED_OLD_ROD, ChoVillage_EventScript_HowsFishing
+	msgbox ChoVillage_Text_WantMorePeopleFish, MSGBOX_YESNO
+	compare VAR_RESULT, YES
+	goto_if_eq ChoVillage_EventScript_GiveOldRod
+	compare VAR_RESULT, NO
+	goto_if_eq ChoVillage_EventScript_NotGettingItchToFish
+	end
+
+ChoVillage_EventScript_GiveOldRod::
+	msgbox ChoVillage_Text_MyOldFishingRod, MSGBOX_DEFAULT
+	giveitem_std ITEM_OLD_ROD
+	setflag FLAG_RECEIVED_OLD_ROD
+	msgbox ChoVillage_Text_FishingMaySeemDifficult, MSGBOX_DEFAULT
+	release
+	end
+
+ChoVillage_EventScript_NotGettingItchToFish::
+	msgbox ChoVillage_Text_ThatsTooBadThen, MSGBOX_DEFAULT
+	release
+	end
+
+ChoVillage_EventScript_HowsFishing::
+	message ChoVillage_Text_HowsYourFishing
+	waitmessage
+	multichoice 20, 8, MULTI_HOWS_FISHING, 1
+	compare VAR_RESULT, 0
+	goto_if_eq ChoVillage_EventScript_FishingExcellent
+	compare VAR_RESULT, 1
+	goto_if_eq ChoVillage_EventScript_FishingNotSoGood
+	end
+
+ChoVillage_EventScript_FishingExcellent::
+	msgbox ChoVillage_Text_GreatHaulInSomeBigOnes, MSGBOX_DEFAULT
+	release
+	end
+
+ChoVillage_EventScript_FishingNotSoGood::
+	msgbox ChoVillage_Text_TimingYourPulls, MSGBOX_DEFAULT
+	release
+	end
+
 ChoVillage_EventScript_EarlyLogTrigger_Top::
 	lockall
 	goto ChoVillage_EventScript_EarlyLog
@@ -288,3 +332,39 @@ ChoVillage_Text_LogNext:
 	.string "It might take a little while though!\p"
 	.string "I've got yet another job to get to, so\n"
 	.string "I'll speak to you again later! See ya!$"
+
+ChoVillage_Text_WantMorePeopleFish:
+	.string "I want more young people to fish.\n"
+	.string "Do you want to learn to fish?$"
+
+ChoVillage_Text_MyOldFishingRod:
+	.string "Very good!\n"
+	.string "Here, take my old fishing rod.$"
+
+ChoVillage_Text_FishingMaySeemDifficult:
+	.string "Now, fishing may seem difficult,\n"
+	.string "but it's actually very simple.\p"
+	.string "First, you want to face the water,\n"
+	.string "then use the rod.\p"
+	.string "Focus your mind…\n"
+	.string "If you get a bite, pull on the rod.\p"
+	.string "Sometimes you can snag something\n"
+	.string "immediately, but with bigger catches,\l"
+	.string "you need to time the pulls on your rod\l"
+	.string "to haul them in.$"
+
+ChoVillage_Text_ThatsTooBadThen:
+	.string "Oh, is that so?\n"
+	.string "That's too bad, then.$"
+
+ChoVillage_Text_HowsYourFishing:
+	.string "Yo!\n"
+	.string "How's your fishing?$"
+
+ChoVillage_Text_GreatHaulInSomeBigOnes:
+	.string "Is that right! That's great!\n"
+	.string "Haul in some big ones!$"
+
+ChoVillage_Text_TimingYourPulls:
+	.string "Remember, timing your pulls\n"
+	.string "is key when it comes to fishing.$"

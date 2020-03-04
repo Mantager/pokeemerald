@@ -84,7 +84,7 @@ ColorRuinsBlue_1F_Text_TiredMinds:
 	.string "TIRED MINDS THINK HARD$"
 
 ColorRuinsBlue_1F_Text_WhitePearls:
-	.string "SOMEONE SAID WHITE PEARLS LIE IN THE RIVER$"
+	.string "HE SAID WHITE PEARLS LIE IN RIVERS$"
 
 ColorRuinsBlue_1F_Text_HotSpring:
 	.string "THERE IS A HOT SPRING NEAR HERE$"

@@ -8,7 +8,7 @@ DarkRuins_OnFrame::
 	.2byte 0
 
 DarkRuins_OnLoad::
-	compare VAR_DARK_RUINS_ROOMS_COMPLETED, 3
+	compare VAR_DARK_RUINS_ROOMS_COMPLETED, 4
 	call_if_lt DarkRuins_EventScript_CloseDoor
 	end
 

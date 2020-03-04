@@ -130,8 +130,8 @@
             "script": "ShendownPath_EventScript_ItemQuickClaw",
             "trainer_sight_or_berry_tree_id": "0",
             "trainer_type": "0",
-            "x": 14,
-            "y": 18
+            "x": 12,
+            "y": 16
         },
         {
             "elevation": 3,
