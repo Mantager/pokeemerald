@@ -4409,6 +4409,46 @@
             "primary_tileset": "gTileset_Building",
             "secondary_tileset": "gTileset_MysteryEventsHouse",
             "width": 11
+        },
+        {
+            "blockdata_filepath": "data/layouts/SydneyCity/map.bin",
+            "border_filepath": "data/layouts/SydneyCity/border.bin",
+            "height": 38,
+            "id": "LAYOUT_SYDNEY_CITY",
+            "name": "SydneyCity_Layout",
+            "primary_tileset": "gTileset_General",
+            "secondary_tileset": "gTileset_Rustboro",
+            "width": 50
+        },
+        {
+            "blockdata_filepath": "data/layouts/SydneyCity_PlayersHouse_1F/map.bin",
+            "border_filepath": "data/layouts/SydneyCity_PlayersHouse_1F/border.bin",
+            "height": 9,
+            "id": "LAYOUT_SYDNEY_CITY_PLAYERS_HOUSE_1F",
+            "name": "SydneyCity_PlayersHouse_1F_Layout",
+            "primary_tileset": "gTileset_Building",
+            "secondary_tileset": "gTileset_BrendansMaysHouse",
+            "width": 15
+        },
+        {
+            "blockdata_filepath": "data/layouts/SydneyCity_PlayersHouse_2F/map.bin",
+            "border_filepath": "data/layouts/SydneyCity_PlayersHouse_2F/border.bin",
+            "height": 8,
+            "id": "LAYOUT_SYDNEY_CITY_PLAYERS_HOUSE_2F",
+            "name": "SydneyCity_PlayersHouse_2F_Layout",
+            "primary_tileset": "gTileset_Building",
+            "secondary_tileset": "gTileset_BrendansMaysHouse",
+            "width": 9
+        },
+        {
+            "blockdata_filepath": "data/layouts/StargazePoint/map.bin",
+            "border_filepath": "data/layouts/StargazePoint/border.bin",
+            "height": 28,
+            "id": "LAYOUT_STARGAZE_POINT",
+            "name": "StargazePoint_Layout",
+            "primary_tileset": "gTileset_General",
+            "secondary_tileset": "gTileset_Rustboro",
+            "width": 32
         }
     ],
     "layouts_table_label": "gMapLayouts"

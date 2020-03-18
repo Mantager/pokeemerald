@@ -588,12 +588,16 @@
 #define MAP_ROUTE124_DIVING_TREASURE_HUNTERS_HOUSE (0 | (33 << 8))
 
 // Map Group 34
+#define MAP_SYDNEY_CITY    (0 | (34 << 8))
+#define MAP_STARGAZE_POINT (1 | (34 << 8))
 
 // Map Group 35
 
 // Map Group 36
 
 // Map Group 37
+#define MAP_SYDNEY_CITY_PLAYERS_HOUSE_1F (0 | (37 << 8))
+#define MAP_SYDNEY_CITY_PLAYERS_HOUSE_2F (1 | (37 << 8))
 
 // Map Group 38
 
