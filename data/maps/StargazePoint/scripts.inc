@@ -5,6 +5,7 @@ StargazePoint_EventScript_StarterChooseTest::
 	lock
 	faceplayer
 	setflag FLAG_SYS_POKEMON_GET
+	setflag FLAG_SYS_POKEDEX_GET
 	special ChooseStarter
 	waitstate
 	special HealPlayerParty

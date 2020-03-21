@@ -523,7 +523,9 @@
     ],
     "gMapGroup34": [
         "SydneyCity",
-        "StargazePoint"
+        "StargazePoint",
+        "Route1",
+        "FableSquare"
     ],
     "gMapGroup35": [
     ],
@@ -531,7 +533,8 @@
     ],
     "gMapGroup37": [
         "SydneyCity_PlayersHouse_1F",
-        "SydneyCity_PlayersHouse_2F"
+        "SydneyCity_PlayersHouse_2F",
+        "SydneyCity_PokemonCenter"
     ],
     "gMapGroup38": [
     ],

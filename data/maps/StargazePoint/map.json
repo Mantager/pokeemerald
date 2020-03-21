@@ -25,7 +25,7 @@
         {
             "direction": "right",
             "map": "MAP_SYDNEY_CITY",
-            "offset": 6
+            "offset": 4
         }
     ],
     "coord_events": [

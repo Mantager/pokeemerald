@@ -4413,7 +4413,7 @@
         {
             "blockdata_filepath": "data/layouts/SydneyCity/map.bin",
             "border_filepath": "data/layouts/SydneyCity/border.bin",
-            "height": 38,
+            "height": 40,
             "id": "LAYOUT_SYDNEY_CITY",
             "name": "SydneyCity_Layout",
             "primary_tileset": "gTileset_General",
@@ -4449,6 +4449,36 @@
             "primary_tileset": "gTileset_General",
             "secondary_tileset": "gTileset_Rustboro",
             "width": 32
+        },
+        {
+            "blockdata_filepath": "data/layouts/Route1/map.bin",
+            "border_filepath": "data/layouts/Route1/border.bin",
+            "height": 32,
+            "id": "LAYOUT_ROUTE1",
+            "name": "Route1_Layout",
+            "primary_tileset": "gTileset_General",
+            "secondary_tileset": "gTileset_Rustboro",
+            "width": 42
+        },
+        {
+            "blockdata_filepath": "data/layouts/FableSquare/map.bin",
+            "border_filepath": "data/layouts/FableSquare/border.bin",
+            "height": 22,
+            "id": "LAYOUT_FABLE_SQUARE",
+            "name": "FableSquare_Layout",
+            "primary_tileset": "gTileset_General",
+            "secondary_tileset": "gTileset_Lilycove",
+            "width": 38
+        },
+        {
+            "blockdata_filepath": "data/layouts/SydneyCity_PokemonCenter/map.bin",
+            "border_filepath": "data/layouts/SydneyCity_PokemonCenter/border.bin",
+            "height": 9,
+            "id": "LAYOUT_SYDNEY_CITY_POKEMON_CENTER",
+            "name": "SydneyCity_PokemonCenter_Layout",
+            "primary_tileset": "gTileset_Building",
+            "secondary_tileset": "gTileset_PokemonCenter",
+            "width": 20
         }
     ],
     "layouts_table_label": "gMapLayouts"

@@ -1067,3 +1067,9 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/SydneyCity_PlayersHouse_2F/scripts.inc"
 
 	.include "data/maps/StargazePoint/scripts.inc"
+
+	.include "data/maps/Route1/scripts.inc"
+
+	.include "data/maps/FableSquare/scripts.inc"
+
+	.include "data/maps/SydneyCity_PokemonCenter/scripts.inc"

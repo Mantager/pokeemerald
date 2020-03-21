@@ -1,0 +1,17 @@
+SydneyCity_PokemonCenter_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, SydneyCity_PokemonCenter_OnTransition
+	map_script MAP_SCRIPT_ON_RESUME, CableClub_OnResume
+	.byte 0
+
+SydneyCity_PokemonCenter_OnTransition: @ 8200BD8
+	setrespawn HEAL_LOCATION_SYDNEY_CITY
+	end
+
+@ VAR_0x800B is the Nurse's object event id
+SydneyCity_PokemonCenter_EventScript_Nurse::
+	setvar VAR_0x800B, 0
+	call Common_EventScript_PkmnCenterNurse
+	waitmessage
+	waitbuttonpress
+	release
+	end
