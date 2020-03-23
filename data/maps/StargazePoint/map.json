@@ -15,7 +15,7 @@
         {
             "elevation": 0,
             "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
-            "script": "NULL",
+            "script": "StargazePoint_EventScript_FlowerShopSign",
             "type": "sign",
             "x": 25,
             "y": 21
@@ -55,7 +55,7 @@
     "show_map_name": true,
     "warp_events": [
         {
-            "dest_map": "MAP_STARGAZE_POINT",
+            "dest_map": "MAP_STARGAZE_POINT_STARGAZE_FLORISTS",
             "dest_warp_id": 0,
             "elevation": 0,
             "x": 23,

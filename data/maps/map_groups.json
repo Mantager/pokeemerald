@@ -534,7 +534,18 @@
     "gMapGroup37": [
         "SydneyCity_PlayersHouse_1F",
         "SydneyCity_PlayersHouse_2F",
-        "SydneyCity_PokemonCenter"
+        "SydneyCity_PokemonCenter",
+        "SydneyCity_RivalsHouse_1F",
+        "SydneyCity_RivalsHouse_2F",
+        "SydneyCity_MantlesHouse",
+        "SydneyCity_House1",
+        "SydneyCity_House2",
+        "SydneyCity_House3_1F",
+        "SydneyCity_House3_2F",
+        "SydneyCity_SydneyTower_1F",
+        "SydneyCity_SydneyTower_2F",
+        "SydneyCity_SydneyTower_3F",
+        "StargazePoint_StargazeFlorists"
     ],
     "gMapGroup38": [
     ],

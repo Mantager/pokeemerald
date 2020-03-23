@@ -4418,7 +4418,7 @@
             "name": "SydneyCity_Layout",
             "primary_tileset": "gTileset_General",
             "secondary_tileset": "gTileset_Rustboro",
-            "width": 50
+            "width": 44
         },
         {
             "blockdata_filepath": "data/layouts/SydneyCity_PlayersHouse_1F/map.bin",
@@ -4448,7 +4448,7 @@
             "name": "StargazePoint_Layout",
             "primary_tileset": "gTileset_General",
             "secondary_tileset": "gTileset_Rustboro",
-            "width": 32
+            "width": 38
         },
         {
             "blockdata_filepath": "data/layouts/Route1/map.bin",
@@ -4479,6 +4479,116 @@
             "primary_tileset": "gTileset_Building",
             "secondary_tileset": "gTileset_PokemonCenter",
             "width": 20
+        },
+        {
+            "blockdata_filepath": "data/layouts/SydneyCity_RivalsHouse_1F/map.bin",
+            "border_filepath": "data/layouts/SydneyCity_RivalsHouse_1F/border.bin",
+            "height": 9,
+            "id": "LAYOUT_SYDNEY_CITY_RIVALS_HOUSE_1F",
+            "name": "SydneyCity_RivalsHouse_1F_Layout",
+            "primary_tileset": "gTileset_Building",
+            "secondary_tileset": "gTileset_BrendansMaysHouse",
+            "width": 15
+        },
+        {
+            "blockdata_filepath": "data/layouts/SydneyCity_RivalsHouse_2F/map.bin",
+            "border_filepath": "data/layouts/SydneyCity_RivalsHouse_2F/border.bin",
+            "height": 8,
+            "id": "LAYOUT_SYDNEY_CITY_RIVALS_HOUSE_2F",
+            "name": "SydneyCity_RivalsHouse_2F_Layout",
+            "primary_tileset": "gTileset_Building",
+            "secondary_tileset": "gTileset_BrendansMaysHouse",
+            "width": 9
+        },
+        {
+            "blockdata_filepath": "data/layouts/SydneyCity_MantlesHouse/map.bin",
+            "border_filepath": "data/layouts/SydneyCity_MantlesHouse/border.bin",
+            "height": 9,
+            "id": "LAYOUT_SYDNEY_CITY_MANTLES_HOUSE",
+            "name": "SydneyCity_MantlesHouse_Layout",
+            "primary_tileset": "gTileset_Building",
+            "secondary_tileset": "gTileset_Lab",
+            "width": 12
+        },
+        {
+            "blockdata_filepath": "data/layouts/SydneyCity_House1/map.bin",
+            "border_filepath": "data/layouts/SydneyCity_House1/border.bin",
+            "height": 9,
+            "id": "LAYOUT_SYDNEY_CITY_HOUSE1",
+            "name": "SydneyCity_House1_Layout",
+            "primary_tileset": "gTileset_Building",
+            "secondary_tileset": "gTileset_GenericBuilding",
+            "width": 11
+        },
+        {
+            "blockdata_filepath": "data/layouts/SydneyCity_House2/map.bin",
+            "border_filepath": "data/layouts/SydneyCity_House2/border.bin",
+            "height": 9,
+            "id": "LAYOUT_SYDNEY_CITY_HOUSE2",
+            "name": "SydneyCity_House2_Layout",
+            "primary_tileset": "gTileset_Building",
+            "secondary_tileset": "gTileset_GenericBuilding",
+            "width": 11
+        },
+        {
+            "blockdata_filepath": "data/layouts/SydneyCity_House3_1F/map.bin",
+            "border_filepath": "data/layouts/SydneyCity_House3_1F/border.bin",
+            "height": 9,
+            "id": "LAYOUT_SYDNEY_CITY_HOUSE3_1F",
+            "name": "SydneyCity_House3_1F_Layout",
+            "primary_tileset": "gTileset_Building",
+            "secondary_tileset": "gTileset_GenericBuilding",
+            "width": 10
+        },
+        {
+            "blockdata_filepath": "data/layouts/SydneyCity_House3_2F/map.bin",
+            "border_filepath": "data/layouts/SydneyCity_House3_2F/border.bin",
+            "height": 9,
+            "id": "LAYOUT_SYDNEY_CITY_HOUSE3_2F",
+            "name": "SydneyCity_House3_2F_Layout",
+            "primary_tileset": "gTileset_Building",
+            "secondary_tileset": "gTileset_GenericBuilding",
+            "width": 10
+        },
+        {
+            "blockdata_filepath": "data/layouts/SydneyCity_SydneyTower_1F/map.bin",
+            "border_filepath": "data/layouts/SydneyCity_SydneyTower_1F/border.bin",
+            "height": 9,
+            "id": "LAYOUT_SYDNEY_CITY_SYDNEY_TOWER_1F",
+            "name": "SydneyCity_SydneyTower_1F_Layout",
+            "primary_tileset": "gTileset_Building",
+            "secondary_tileset": "gTileset_Facility",
+            "width": 15
+        },
+        {
+            "blockdata_filepath": "data/layouts/SydneyCity_SydneyTower_2F/map.bin",
+            "border_filepath": "data/layouts/SydneyCity_SydneyTower_2F/border.bin",
+            "height": 9,
+            "id": "LAYOUT_SYDNEY_CITY_SYDNEY_TOWER_2F",
+            "name": "SydneyCity_SydneyTower_2F_Layout",
+            "primary_tileset": "gTileset_Building",
+            "secondary_tileset": "gTileset_Facility",
+            "width": 15
+        },
+        {
+            "blockdata_filepath": "data/layouts/SydneyCity_SydneyTower_3F/map.bin",
+            "border_filepath": "data/layouts/SydneyCity_SydneyTower_3F/border.bin",
+            "height": 9,
+            "id": "LAYOUT_SYDNEY_CITY_SYDNEY_TOWER_3F",
+            "name": "SydneyCity_SydneyTower_3F_Layout",
+            "primary_tileset": "gTileset_Building",
+            "secondary_tileset": "gTileset_Facility",
+            "width": 15
+        },
+        {
+            "blockdata_filepath": "data/layouts/StargazePoint_StargazeFlorists/map.bin",
+            "border_filepath": "data/layouts/StargazePoint_StargazeFlorists/border.bin",
+            "height": 9,
+            "id": "LAYOUT_STARGAZE_POINT_STARGAZE_FLORISTS",
+            "name": "StargazePoint_StargazeFlorists_Layout",
+            "primary_tileset": "gTileset_Building",
+            "secondary_tileset": "gTileset_PrettyPetalFlowerShop",
+            "width": 15
         }
     ],
     "layouts_table_label": "gMapLayouts"

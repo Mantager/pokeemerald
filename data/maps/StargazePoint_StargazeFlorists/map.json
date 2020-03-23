@@ -1,0 +1,38 @@
+{
+    "allow_bike": false,
+    "allow_escape_rope": false,
+    "allow_running": true,
+    "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+    "bg_events": [
+    ],
+    "connections": null,
+    "coord_events": [
+    ],
+    "id": "MAP_STARGAZE_POINT_STARGAZE_FLORISTS",
+    "layout": "LAYOUT_STARGAZE_POINT_STARGAZE_FLORISTS",
+    "map_type": "MAP_TYPE_INDOOR",
+    "music": "MUS_DAN02",
+    "name": "StargazePoint_StargazeFlorists",
+    "object_events": [
+    ],
+    "region_map_section": "MAPSEC_STARGAZE_POINT",
+    "requires_flash": false,
+    "show_map_name": true,
+    "warp_events": [
+        {
+            "dest_map": "MAP_STARGAZE_POINT",
+            "dest_warp_id": 0,
+            "elevation": 0,
+            "x": 2,
+            "y": 8
+        },
+        {
+            "dest_map": "MAP_STARGAZE_POINT",
+            "dest_warp_id": 0,
+            "elevation": 0,
+            "x": 3,
+            "y": 8
+        }
+    ],
+    "weather": "WEATHER_SUNNY"
+}

@@ -1073,3 +1073,25 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/FableSquare/scripts.inc"
 
 	.include "data/maps/SydneyCity_PokemonCenter/scripts.inc"
+
+	.include "data/maps/SydneyCity_RivalsHouse_1F/scripts.inc"
+
+	.include "data/maps/SydneyCity_RivalsHouse_2F/scripts.inc"
+
+	.include "data/maps/SydneyCity_MantlesHouse/scripts.inc"
+
+	.include "data/maps/SydneyCity_House1/scripts.inc"
+
+	.include "data/maps/SydneyCity_House2/scripts.inc"
+
+	.include "data/maps/SydneyCity_House3_1F/scripts.inc"
+
+	.include "data/maps/SydneyCity_House3_2F/scripts.inc"
+
+	.include "data/maps/SydneyCity_SydneyTower_1F/scripts.inc"
+
+	.include "data/maps/SydneyCity_SydneyTower_2F/scripts.inc"
+
+	.include "data/maps/SydneyCity_SydneyTower_3F/scripts.inc"
+
+	.include "data/maps/StargazePoint_StargazeFlorists/scripts.inc"

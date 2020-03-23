@@ -1,5 +1,20 @@
 SydneyCity_MapScripts::
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, SydneyCity_OnFrame
 	.byte 0
+
+SydneyCity_OnFrame::
+	map_script_2 VAR_TEMP_F, 0, SydneyCity_EventScript_CheckIfRivalShouldBeInvisible
+	.2byte 0
+
+SydneyCity_EventScript_CheckIfRivalShouldBeInvisible::
+	compare VAR_STORY_INTRO_STATE, 2
+	call_if_ne SydneyCity_EventScript_SetRivalInvisible
+	setvar VAR_TEMP_F, 1
+	end
+
+SydneyCity_EventScript_SetRivalInvisible::
+	applymovement 7, Common_Movement_SetInvisible
+	return
 
 SydneyCity_EventScript_SydneyTowerSign::
 	msgbox SydneyCity_Text_SydneyTowerSign, MSGBOX_SIGN

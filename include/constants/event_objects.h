@@ -143,9 +143,9 @@
 #define OBJ_EVENT_GFX_HOT_SPRINGS_OLD_WOMAN      139
 #define OBJ_EVENT_GFX_SS_TIDAL                   140
 #define OBJ_EVENT_GFX_SUBMARINE_SHADOW           141
-#define OBJ_EVENT_GFX_PICHU_DOLL                 142
-#define OBJ_EVENT_GFX_PIKACHU_DOLL               143
-#define OBJ_EVENT_GFX_MARILL_DOLL                144
+#define OBJ_EVENT_GFX_RIVAL                      142
+#define OBJ_EVENT_GFX_MANTLE                     143
+#define OBJ_EVENT_GFX_DURIAN                     144
 #define OBJ_EVENT_GFX_TOGEPI_DOLL                145
 #define OBJ_EVENT_GFX_CYNDAQUIL_DOLL             146
 #define OBJ_EVENT_GFX_CHIKORITA_DOLL             147
@@ -277,7 +277,7 @@
 #define TRACKS_FOOT       1
 #define TRACKS_BIKE_TIRE  2
 
-#define FIRST_DECORATION_SPRITE_GFX OBJ_EVENT_GFX_PICHU_DOLL
+#define FIRST_DECORATION_SPRITE_GFX OBJ_EVENT_GFX_TOGEPI_DOLL
 
 #define OBJ_EVENT_ID_PLAYER 0xFF
 #define OBJ_EVENT_ID_CAMERA 0x7F

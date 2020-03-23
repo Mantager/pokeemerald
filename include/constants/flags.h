@@ -537,7 +537,7 @@
 
 // Hidden Items -- sorted by location
 #define FLAG_HIDDEN_ITEMS_START                                                         0x1F4
-#define FLAG_HIDDEN_ITEM_TRICK_HOUSE_NUGGET                  (FLAG_HIDDEN_ITEMS_START + 0x01)
+#define FLAG_HIDDEN_ITEM_PLAYERS_HOUSE_2F_POKE_DOLL          (FLAG_HIDDEN_ITEMS_START + 0x01)
 #define FLAG_HIDDEN_ITEM_UNDERWATER_1_CARBOS                 (FLAG_HIDDEN_ITEMS_START + 0x08)
 #define FLAG_HIDDEN_ITEM_UNDERWATER_1_GREEN_SHARD            (FLAG_HIDDEN_ITEMS_START + 0x09)
 #define FLAG_HIDDEN_ITEM_UNDERWATER_1_PEARL                  (FLAG_HIDDEN_ITEMS_START + 0x0A)
@@ -650,9 +650,9 @@
 #define FLAG_HIDDEN_ITEM_ROUTE_128_HEART_SCALE_2             (FLAG_HIDDEN_ITEMS_START + 0x5D)
 #define FLAG_HIDDEN_ITEM_ROUTE_128_HEART_SCALE_3             (FLAG_HIDDEN_ITEMS_START + 0x5E)
 
-#define FLAG_UNUSED_0x264  0x264 // Unused Flag
-#define FLAG_UNUSED_0x265  0x265 // Unused Flag
-#define FLAG_UNUSED_0x266  0x266 // Unused Flag
+#define FLAG_SYDNEY_CITY_RIVALS_HOUSE_2F_RIVAL     0x264 // Is Rival in his room or not?
+#define FLAG_SYDNEY_CITY_RIVAL_INVISIBLE           0x265
+#define FLAG_SYDNEY_CITY_MANTLES_HOUSE_MANTLE_BAG  0x266
 #define FLAG_UNUSED_0x267  0x267 // Unused Flag
 #define FLAG_UNUSED_0x268  0x268 // Unused Flag
 #define FLAG_UNUSED_0x269  0x269 // Unused Flag

@@ -17,3 +17,24 @@ SydneyCity_PlayersHouse_2F_EventScript_TurnOffPlayerPC:: @ 81F863F
 	special DoPCTurnOffEffect
 	releaseall
 	end
+
+SydneyCity_PlayersHouse_2F_EventScript_DrawerPokeDoll::
+	lock
+	goto_if_set FLAG_HIDDEN_ITEM_PLAYERS_HOUSE_2F_POKE_DOLL, SydneyCity_PlayersHouse_2F_EventScript_DrawerEmpty
+	msgbox SydneyCity_PlayersHouse_2F_Text_OhPokeDoll, MSGBOX_DEFAULT
+	finditem ITEM_POKE_DOLL, 1
+	setflag FLAG_HIDDEN_ITEM_PLAYERS_HOUSE_2F_POKE_DOLL
+	release
+	end
+
+SydneyCity_PlayersHouse_2F_EventScript_DrawerEmpty::
+	msgbox SydneyCity_PlayersHouse_2F_Text_ClothesAndClothes, MSGBOX_DEFAULT
+	release
+	end
+
+SydneyCity_PlayersHouse_2F_Text_OhPokeDoll:
+	.string "Clothes, clothes and more clothes…\n"
+	.string "Oh! There's something in the drawer!$"
+
+SydneyCity_PlayersHouse_2F_Text_ClothesAndClothes:
+	.string "Clothes, clothes and more clothes…$"

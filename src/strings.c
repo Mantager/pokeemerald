@@ -16,6 +16,7 @@ const u8 gText_ExpandedPlaceholder_Kyogre[] = _("Kyogre");
 const u8 gText_ExpandedPlaceholder_Groudon[] = _("Groudon");
 const u8 gText_ExpandedPlaceholder_Brendan[] = _("Brendan");
 const u8 gText_ExpandedPlaceholder_May[] = _("May");
+const u8 gText_ExpandedPlaceholder_Jacob[] = _("Jacob"); // Used as Rival's name
 const u8 gText_EggNickname[] = _("Egg");
 const u8 gText_Pokemon[] = _("Pokémon");
 const u8 gText_ProfBirchMatchCallName[] = _("Prof. Birch");

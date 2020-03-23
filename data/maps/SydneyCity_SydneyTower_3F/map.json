@@ -1,0 +1,31 @@
+{
+    "allow_bike": false,
+    "allow_escape_rope": false,
+    "allow_running": true,
+    "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+    "bg_events": [
+    ],
+    "connections": null,
+    "coord_events": [
+    ],
+    "id": "MAP_SYDNEY_CITY_SYDNEY_TOWER_3F",
+    "layout": "LAYOUT_SYDNEY_CITY_SYDNEY_TOWER_3F",
+    "map_type": "MAP_TYPE_INDOOR",
+    "music": "MUS_RG_KUCHIBA",
+    "name": "SydneyCity_SydneyTower_3F",
+    "object_events": [
+    ],
+    "region_map_section": "MAPSEC_SYDNEY_CITY",
+    "requires_flash": false,
+    "show_map_name": false,
+    "warp_events": [
+        {
+            "dest_map": "MAP_SYDNEY_CITY_SYDNEY_TOWER_2F",
+            "dest_warp_id": 1,
+            "elevation": 0,
+            "x": 1,
+            "y": 1
+        }
+    ],
+    "weather": "WEATHER_NONE"
+}

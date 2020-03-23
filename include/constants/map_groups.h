@@ -598,9 +598,20 @@
 // Map Group 36
 
 // Map Group 37
-#define MAP_SYDNEY_CITY_PLAYERS_HOUSE_1F (0 | (37 << 8))
-#define MAP_SYDNEY_CITY_PLAYERS_HOUSE_2F (1 | (37 << 8))
-#define MAP_SYDNEY_CITY_POKEMON_CENTER   (2 | (37 << 8))
+#define MAP_SYDNEY_CITY_PLAYERS_HOUSE_1F     (0 | (37 << 8))
+#define MAP_SYDNEY_CITY_PLAYERS_HOUSE_2F     (1 | (37 << 8))
+#define MAP_SYDNEY_CITY_POKEMON_CENTER       (2 | (37 << 8))
+#define MAP_SYDNEY_CITY_RIVALS_HOUSE_1F      (3 | (37 << 8))
+#define MAP_SYDNEY_CITY_RIVALS_HOUSE_2F      (4 | (37 << 8))
+#define MAP_SYDNEY_CITY_MANTLES_HOUSE        (5 | (37 << 8))
+#define MAP_SYDNEY_CITY_HOUSE1               (6 | (37 << 8))
+#define MAP_SYDNEY_CITY_HOUSE2               (7 | (37 << 8))
+#define MAP_SYDNEY_CITY_HOUSE3_1F            (8 | (37 << 8))
+#define MAP_SYDNEY_CITY_HOUSE3_2F            (9 | (37 << 8))
+#define MAP_SYDNEY_CITY_SYDNEY_TOWER_1F      (10 | (37 << 8))
+#define MAP_SYDNEY_CITY_SYDNEY_TOWER_2F      (11 | (37 << 8))
+#define MAP_SYDNEY_CITY_SYDNEY_TOWER_3F      (12 | (37 << 8))
+#define MAP_STARGAZE_POINT_STARGAZE_FLORISTS (13 | (37 << 8))
 
 // Map Group 38
 

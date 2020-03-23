@@ -460,17 +460,17 @@ const u16 DecorGfx_KISS_POSTER[] = {
     0x12D
 };
 
-const u16 DecorGfx_PICHU_DOLL[] = {
-    OBJ_EVENT_GFX_PICHU_DOLL
-};
+// const u16 DecorGfx_PICHU_DOLL[] = {
+//     OBJ_EVENT_GFX_PICHU_DOLL
+// };
 
-const u16 DecorGfx_PIKACHU_DOLL[] = {
-    OBJ_EVENT_GFX_PIKACHU_DOLL
-};
+// const u16 DecorGfx_PIKACHU_DOLL[] = {
+//     OBJ_EVENT_GFX_PIKACHU_DOLL
+// };
 
-const u16 DecorGfx_MARILL_DOLL[] = {
-    OBJ_EVENT_GFX_MARILL_DOLL
-};
+// const u16 DecorGfx_MARILL_DOLL[] = {
+//     OBJ_EVENT_GFX_MARILL_DOLL
+// };
 
 const u16 DecorGfx_TOGEPI_DOLL[] = {
     OBJ_EVENT_GFX_TOGEPI_DOLL

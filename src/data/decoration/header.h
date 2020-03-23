@@ -683,7 +683,7 @@ const struct Decoration gDecorations[] = {
         1500,
         DecorDesc_KISS_POSTER,
         DecorGfx_KISS_POSTER
-    }, {
+    }, /*{
         DECOR_PICHU_DOLL,
         _("PICHU DOLL"),
         DECORPERM_SPRITE,
@@ -710,7 +710,7 @@ const struct Decoration gDecorations[] = {
         3000,
         DecorDesc_MARILL_DOLL,
         DecorGfx_MARILL_DOLL
-    }, {
+    }, */{
         DECOR_TOGEPI_DOLL,
         _("TOGEPI DOLL"),
         DECORPERM_SPRITE,

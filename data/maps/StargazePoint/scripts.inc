@@ -1,6 +1,10 @@
 StargazePoint_MapScripts::
 	.byte 0
 
+StargazePoint_EventScript_FlowerShopSign::
+	msgbox StargazePoint_Text_FlowerShopSign, MSGBOX_SIGN
+	end
+
 StargazePoint_EventScript_StarterChooseTest::
 	lock
 	faceplayer
@@ -14,3 +18,7 @@ StargazePoint_EventScript_StarterChooseTest::
 	fadescreen 0
 	release
 	end
+
+StargazePoint_Text_FlowerShopSign:
+	.string "Stargaze Florists\n"
+	.string "Every flower tells a story.$"

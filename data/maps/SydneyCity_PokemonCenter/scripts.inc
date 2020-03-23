@@ -9,7 +9,7 @@ SydneyCity_PokemonCenter_OnTransition: @ 8200BD8
 
 @ VAR_0x800B is the Nurse's object event id
 SydneyCity_PokemonCenter_EventScript_Nurse::
-	setvar VAR_0x800B, 0
+	setvar VAR_0x800B, 1
 	call Common_EventScript_PkmnCenterNurse
 	waitmessage
 	waitbuttonpress

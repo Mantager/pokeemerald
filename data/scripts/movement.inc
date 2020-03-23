@@ -93,6 +93,10 @@ Common_Movement_WalkUp: @ 82725C9
 	walk_up
 	step_end
 
+Common_Movement_SetInvisible:
+	set_invisible
+	step_end
+
 @ Unused
 Common_Movement_WalkUp2:: @ 82725CB
 	walk_up
