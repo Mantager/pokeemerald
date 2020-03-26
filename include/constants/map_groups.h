@@ -592,6 +592,7 @@
 #define MAP_STARGAZE_POINT (1 | (34 << 8))
 #define MAP_ROUTE1         (2 | (34 << 8))
 #define MAP_FABLE_SQUARE   (3 | (34 << 8))
+#define MAP_ROUTE2         (4 | (34 << 8))
 
 // Map Group 35
 

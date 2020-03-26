@@ -27,7 +27,9 @@ SydneyCity_PlayersHouse_1F_EventScript_MomIntro::
 	applymovement 1, SydneyCity_PlayersHouse_1F_Movement_MomMoveBack
 	waitmovement 0
 	setvar VAR_STORY_INTRO_STATE, 1
-	setflag FLAG_SYDNEY_CITY_RIVAL_INVISIBLE
+	setflag FLAG_HIDE_SYDNEY_CITY_RIVAL
+	setflag FLAG_HIDE_STARGAZE_POINT_MANTLE_RIVAL
+	setflag FLAG_HIDE_STARGAZE_POINT_MANTLE_BAG
 	fadedefaultbgm
 	releaseall
 	end
@@ -39,7 +41,7 @@ SydneyCity_PlayersHouse_1F_EventScript_Mom::
 	goto_if_le SydneyCity_PlayersHouse_1F_EventScript_MomBeforeMeetingRival
 	compare VAR_STORY_INTRO_STATE, 4
 	goto_if_le SydneyCity_PlayersHouse_1F_EventScript_MomAfterStarter
-	compare VAR_STORY_INTRO_STATE, 5
+	compare VAR_STORY_INTRO_STATE, 6
 	goto_if_le SydneyCity_PlayersHouse_1F_EventScript_MomJourneyStarted
 	release
 	end
@@ -59,7 +61,7 @@ SydneyCity_PlayersHouse_1F_EventScript_MomAfterStarter::
 	giveitem ITEM_POKE_BALL, 5
 	msgbox SydneyCity_PlayersHouse_1F_Text_GoToFableSquare, MSGBOX_DEFAULT
 	closemessage
-	setvar VAR_STORY_INTRO_STATE, 3
+	setvar VAR_STORY_INTRO_STATE, 6
 	release
 	end
 
@@ -112,29 +114,29 @@ SydneyCity_PlayersHouse_1F_Text_CompetingInTournament:
 	.string "Huh? Dr. Mantle gave you a Pokémon?\p"
 	.string "And now you're going to enter the\n"
 	.string "Wisteria Tournament?\p"
-	.string "That's great, {PLAYER}\n"
-	.string "Of course, I'm not shocked.\p"
+	.string "That's great, {PLAYER}!\n"
+	.string "I'm not shocked, though.\p"
 	.string "Your dad was a strong Trainer, so\n"
-	.string "I'm not expecting any less from you!\p"
+	.string "I wasn't expecting any less from you!\p"
 	.string "But you know, if you're really going\n"
 	.string "to compete, you'll need to travel\l"
 	.string "all around Tomen.\p"
-	.string "I don't mind, of course.\n"
+	.string "I don't mind, of course.\p"
 	.string "When I was your age, I went on a\l"
-	.string "journey around the region myself.\p"
-	.string "Back in those days, the old Gym\n"
-	.string "system was in place, though.\p"
+	.string "journey around Tomen myself.\p"
+	.string "Back in those days, the old Gym system\n"
+	.string "was in place, though.\p"
 
 SydneyCity_PlayersHouse_1F_Text_AnywayTakeThis:
-	.string "Oh! Anyway, before you go, take\n"
-	.string "these Poké Balls as a gift from me.$"
+	.string "Anyway, before you go, take these\n"
+	.string "Poké Balls as a gift from me.$"
 
 SydneyCity_PlayersHouse_1F_Text_GoToFableSquare:
 	.string "By the way, I heard from a friend\n"
 	.string "that you can register for the\l"
 	.string "tournament in Fable Square.\p"
 	.string "To get to Fable Square, just head\n"
-	.string "east and go through Route 1.$"
+	.string "east and go through Route 1.\p"
 	.string "I can't deny that I'm a little\n"
 	.string "worried about you leaving…\l"
 	.string "But worrying is just what moms do.\p"

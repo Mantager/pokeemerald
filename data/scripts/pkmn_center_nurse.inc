@@ -18,6 +18,7 @@ EventScript_PkmnCenterNurse_Goodbye:: @ 8271954
 
 @ VAR_0x8004 is 1 when player has Gold Card; jumps are identical
 EventScript_PkmnCenterNurse_HealPkmn:: @ 827195A
+    goto_if_unset FLAG_SYS_POKEMON_GET, EventScript_PkmnCenterNurse_NoPokemon
     incrementgamestat GAME_STAT_USED_POKECENTER
     compare VAR_0x8004, 0
     call_if_eq EventScript_PkmnCenterNurse_IllTakeYourPkmn
@@ -28,6 +29,10 @@ EventScript_PkmnCenterNurse_HealPkmn:: @ 827195A
     goto_if_unset FLAG_POKERUS_EXPLAINED, EventScript_PkmnCenterNurse_CheckPokerus
     goto EventScript_PkmnCenterNurse_CheckTrainerHillAndUnionRoom
     end
+
+EventScript_PkmnCenterNurse_NoPokemon::
+    message gText_OhYouHaveNoPokemon
+    return
 
 EventScript_PkmnCenterNurse_IllTakeYourPkmn:: @ 8271987
     message gText_IllTakeYourPkmn

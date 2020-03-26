@@ -9,6 +9,7 @@
 #include "field_weather.h"
 #include "berry.h"
 #include "main.h"
+#include "main_menu.h"
 #include "overworld.h"
 #include "wallclock.h"
 
@@ -76,7 +77,7 @@ static void UpdatePerMinute(struct Time *localTime)
 static void ReturnFromStartWallClock(void)
 {
     InitTimeBasedEvents();
-    SetMainCallback2(CB2_ReturnToFieldContinueScriptPlayMapMusic);
+    SetMainCallback2(CB2_NewGameBirchSpeech_ReturnFromClockScreen);
 }
 
 void StartWallClock(void)

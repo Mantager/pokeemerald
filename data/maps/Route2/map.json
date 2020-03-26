@@ -7,26 +7,21 @@
     ],
     "connections": [
         {
-            "direction": "left",
-            "map": "MAP_SYDNEY_CITY",
-            "offset": -2
-        },
-        {
-            "direction": "right",
+            "direction": "down",
             "map": "MAP_FABLE_SQUARE",
-            "offset": 6
+            "offset": -4
         }
     ],
     "coord_events": [
     ],
-    "id": "MAP_ROUTE1",
-    "layout": "LAYOUT_ROUTE1",
+    "id": "MAP_ROUTE2",
+    "layout": "LAYOUT_ROUTE2",
     "map_type": "MAP_TYPE_ROUTE",
-    "music": "MUS_DOORO1",
-    "name": "Route1",
+    "music": "MUS_DOORO_X1",
+    "name": "Route2",
     "object_events": [
     ],
-    "region_map_section": "MAPSEC_ROUTE_1",
+    "region_map_section": "MAPSEC_ROUTE_2",
     "requires_flash": false,
     "show_map_name": true,
     "warp_events": [

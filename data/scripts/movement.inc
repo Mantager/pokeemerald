@@ -40,6 +40,22 @@ Common_Movement_WalkInPlaceFastestDown: @ 82725AA
 	walk_in_place_fastest_down
 	step_end
 
+Common_Movement_WalkInPlaceSlowLeft:
+	walk_in_place_slow_left
+	step_end
+
+Common_Movement_WalkInPlaceSlowUp:
+	walk_in_place_slow_up
+	step_end
+
+Common_Movement_WalkInPlaceSlowRight:
+	walk_in_place_slow_right
+	step_end
+
+Common_Movement_WalkInPlaceSlowDown:
+	walk_in_place_slow_down
+	step_end
+
 Common_Movement_FaceRight: @ 82725AC
 	face_right
 	step_end
@@ -95,6 +111,10 @@ Common_Movement_WalkUp: @ 82725C9
 
 Common_Movement_SetInvisible:
 	set_invisible
+	step_end
+
+Common_Movement_WalkLeft:
+	walk_left
 	step_end
 
 @ Unused

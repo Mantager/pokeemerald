@@ -16,7 +16,7 @@
     "object_events": [
         {
             "elevation": 3,
-            "flag": "FLAG_SYDNEY_CITY_RIVALS_HOUSE_2F_RIVAL",
+            "flag": "FLAG_HIDE_SYDNEY_CITY_RIVALS_HOUSE_2F_RIVAL",
             "graphics_id": "OBJ_EVENT_GFX_RIVAL",
             "movement_range_x": 0,
             "movement_range_y": 0,

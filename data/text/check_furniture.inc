@@ -25,3 +25,6 @@ Text_ShopShelf: @ 82A82BF
 Text_Blueprint: @ 82A82F7
 	.string "A blueprint of some sort?\n"
 	.string "It's too complicated!$"
+
+Text_LockedDoor:
+	.string "The door is locked.$"

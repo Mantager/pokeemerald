@@ -1,6 +1,7 @@
 #include "global.h"
 #include "trainer_pokemon_sprites.h"
 #include "bg.h"
+#include "clock.h"
 #include "constants/flags.h"
 #include "constants/rgb.h"
 #include "constants/songs.h"
@@ -37,6 +38,7 @@
 #include "text.h"
 #include "text_window.h"
 #include "title_screen.h"
+#include "wallclock.h"
 #include "window.h"
 #include "mystery_gift.h"
 
@@ -229,6 +231,7 @@ static void Task_NewGameBirchSpeech_WaitForWhatsYourNameToPrint(u8);
 static void Task_NewGameBirchSpeech_WaitPressBeforeNameChoice(u8);
 static void Task_NewGameBirchSpeech_StartNamingScreen(u8);
 static void CB2_NewGameBirchSpeech_ReturnFromNamingScreen(void);
+void CB2_NewGameBirchSpeech_ReturnFromClockScreen(void);
 static void NewGameBirchSpeech_SetDefaultPlayerName(u8);
 static void Task_NewGameBirchSpeech_CreateNameYesNo(u8);
 static void Task_NewGameBirchSpeech_ProcessNameYesNoMenu(u8);
@@ -1062,6 +1065,7 @@ static void Task_HandleMainMenuAPressed(u8 taskId)
             default:
                 gPlttBufferUnfaded[0] = RGB_BLACK;
                 gPlttBufferFaded[0] = RGB_BLACK;
+                StartWallClock();
                 gTasks[taskId].func = Task_NewGameBirchSpeech_Init;
                 break;
             case ACTION_CONTINUE:
@@ -1791,6 +1795,60 @@ static void Task_NewGameBirchSpeech_Cleanup(u8 taskId)
         SetMainCallback2(CB2_NewGame);
         DestroyTask(taskId);
     }
+}
+
+void CB2_NewGameBirchSpeech_ReturnFromClockScreen(void)
+{
+    u8 taskId;
+    u8 spriteId;
+    u16 savedIme;
+
+    ResetBgsAndClearDma3BusyFlags(0);
+    SetGpuReg(REG_OFFSET_DISPCNT, 0);
+    SetGpuReg(REG_OFFSET_DISPCNT, DISPCNT_OBJ_ON | DISPCNT_OBJ_1D_MAP);
+    InitBgsFromTemplates(0, sMainMenuBgTemplates, 2);
+    SetVBlankCallback(NULL);
+    SetGpuReg(REG_OFFSET_BG2CNT, 0);
+    SetGpuReg(REG_OFFSET_BG1CNT, 0);
+    SetGpuReg(REG_OFFSET_BG0CNT, 0);
+    SetGpuReg(REG_OFFSET_BG2HOFS, 0);
+    SetGpuReg(REG_OFFSET_BG2VOFS, 0);
+    SetGpuReg(REG_OFFSET_BG1HOFS, 0);
+    SetGpuReg(REG_OFFSET_BG1VOFS, 0);
+    SetGpuReg(REG_OFFSET_BG0HOFS, 0);
+    SetGpuReg(REG_OFFSET_BG0VOFS, 0);
+    DmaFill16(3, 0, VRAM, VRAM_SIZE);
+    DmaFill32(3, 0, OAM, OAM_SIZE);
+    DmaFill16(3, 0, PLTT, PLTT_SIZE);
+    ResetTasks();
+    taskId = CreateTask(Task_NewGameBirchSpeech_Init, 0);
+    gTasks[taskId].tTimer = 0;
+    gTasks[taskId].tBG1HOFS = 0;
+    ScanlineEffect_Stop();
+    ResetSpriteData();
+    FreeAllSpritePalettes();
+    ResetAllPicSprites();
+    AddBirchSpeechObjects(taskId);
+    SetGpuReg(REG_OFFSET_WIN0H, 0);
+    SetGpuReg(REG_OFFSET_WIN0V, 0);
+    SetGpuReg(REG_OFFSET_WININ, 0);
+    SetGpuReg(REG_OFFSET_WINOUT, 0);
+    SetGpuReg(REG_OFFSET_BLDCNT, 0);
+    SetGpuReg(REG_OFFSET_BLDALPHA, 0);
+    SetGpuReg(REG_OFFSET_BLDY, 0);
+    ShowBg(0);
+    ShowBg(1);
+    savedIme = REG_IME;
+    REG_IME = 0;
+    REG_IE |= 1;
+    REG_IME = savedIme;
+    SetVBlankCallback(VBlankCB_MainMenu);
+    SetMainCallback2(CB2_MainMenu);
+    InitWindows(gNewGameBirchSpeechTextWindows);
+    LoadMainMenuWindowFrameTiles(0, 0xF3);
+    LoadMessageBoxGfx(0, 0xFC, 0xF0);
+    PutWindowTilemap(0);
+    CopyWindowToVram(0, 3);
 }
 
 static void CB2_NewGameBirchSpeech_ReturnFromNamingScreen(void)

@@ -86,8 +86,17 @@ static const struct WindowTemplate gUnknown_085B21DC[] =
     {
         .bg = 2,
         .tilemapLeft = 24,
-        .tilemapTop = 16,
+        .tilemapTop = 15,
         .width = 6,
+        .height = 2,
+        .paletteNum = 12,
+        .baseBlock = 560
+    },
+    {
+        .bg = 0,
+        .tilemapLeft = 8,
+        .tilemapTop = 17,
+        .width = 16,
         .height = 2,
         .paletteNum = 12,
         .baseBlock = 560
@@ -702,21 +711,21 @@ void CB2_StartWallClock(void)
     gTasks[taskId].tMinuteHandAngle = 0;
     gTasks[taskId].tHourHandAngle = 300;
 
-    spriteId = CreateSprite(&gUnknown_085B2250, 120, 80, 1);
+    spriteId = CreateSprite(&gUnknown_085B2250, 120, 72, 1);
     gSprites[spriteId].data[0] = taskId;
     gSprites[spriteId].oam.affineMode = ST_OAM_AFFINE_NORMAL;
     gSprites[spriteId].oam.matrixNum = 0;
 
-    spriteId = CreateSprite(&gUnknown_085B2268, 120, 80, 0);
+    spriteId = CreateSprite(&gUnknown_085B2268, 120, 72, 0);
     gSprites[spriteId].data[0] = taskId;
     gSprites[spriteId].oam.affineMode = ST_OAM_AFFINE_NORMAL;
     gSprites[spriteId].oam.matrixNum = 1;
 
-    spriteId = CreateSprite(&gUnknown_085B22A0, 120, 80, 2);
+    spriteId = CreateSprite(&gUnknown_085B22A0, 120, 72, 2);
     gSprites[spriteId].data[0] = taskId;
     gSprites[spriteId].data[1] = 45;
 
-    spriteId = CreateSprite(&gUnknown_085B22B8, 120, 80, 2);
+    spriteId = CreateSprite(&gUnknown_085B22B8, 120, 72, 2);
     gSprites[spriteId].data[0] = taskId;
     gSprites[spriteId].data[1] = 90;
 
@@ -725,6 +734,10 @@ void CB2_StartWallClock(void)
     AddTextPrinterParameterized(1, 1, gText_Confirm3, 0, 1, 0, NULL);
     PutWindowTilemap(1);
     schedule_bg_copy_tilemap_to_vram(2);
+
+    AddTextPrinterParameterized(2, 1, gText_PleaseSetTheTime, 0, 1, 0, NULL);
+    PutWindowTilemap(2);
+    schedule_bg_copy_tilemap_to_vram(0);
 }
 
 void CB2_ViewWallClock(void)
@@ -857,6 +870,9 @@ static void Task_SetClock4(u8 taskId)
             PlaySE(SE_SELECT);
             ClearStdWindowAndFrameToTransparent(0, FALSE);
             ClearWindowTilemap(0);
+            AddTextPrinterParameterized(2, 1, gText_PleaseSetTheTime, 0, 1, 0, NULL);
+            PutWindowTilemap(2);
+            schedule_bg_copy_tilemap_to_vram(0);
             gTasks[taskId].func = Task_SetClock2;
             break;
     }

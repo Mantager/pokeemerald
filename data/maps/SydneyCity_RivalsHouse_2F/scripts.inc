@@ -46,7 +46,7 @@ SydneyCity_RivalsHouse_2F_EventScript_Rival::
 	removeobject 1
 	playse SE_KAIDAN
 	setvar VAR_STORY_INTRO_STATE, 2
-	clearflag FLAG_SYDNEY_CITY_RIVAL_INVISIBLE
+	clearflag FLAG_HIDE_SYDNEY_CITY_RIVAL
 	releaseall
 	end
 

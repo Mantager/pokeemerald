@@ -25,3 +25,7 @@ EventScript_ShopShelf:: @ 82725FB
 EventScript_Blueprint:: @ 8272604
 	msgbox Text_Blueprint, MSGBOX_SIGN
 	end
+
+EventScript_LockedDoor::
+	msgbox Text_LockedDoor, MSGBOX_SIGN
+	end

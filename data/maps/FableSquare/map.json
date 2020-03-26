@@ -9,7 +9,12 @@
         {
             "direction": "left",
             "map": "MAP_ROUTE1",
-            "offset": -4
+            "offset": -6
+        },
+        {
+            "direction": "up",
+            "map": "MAP_ROUTE2",
+            "offset": 4
         }
     ],
     "coord_events": [
@@ -17,7 +22,7 @@
     "id": "MAP_FABLE_SQUARE",
     "layout": "LAYOUT_FABLE_SQUARE",
     "map_type": "MAP_TYPE_TOWN",
-    "music": "MUS_DAN02",
+    "music": "MUS_MACHI_S4",
     "name": "FableSquare",
     "object_events": [
     ],
