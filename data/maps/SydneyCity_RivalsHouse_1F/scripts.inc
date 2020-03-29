@@ -8,7 +8,7 @@ SydneyCity_RivalsHouse_1F_EventScript_RivalsDad::
 	goto_if_le SydneyCity_RivalsHouse_1F_EventScript_BeforeMeetingRival
 	compare VAR_STORY_INTRO_STATE, 2
 	goto_if_le SydneyCity_RivalsHouse_1F_EventScript_BeforeStarter
-	compare VAR_STORY_INTRO_STATE, 4
+	compare VAR_STORY_INTRO_STATE, 5
 	goto_if_le SydneyCity_RivalsHouse_1F_EventScript_AfterStarter
 	release
 	end

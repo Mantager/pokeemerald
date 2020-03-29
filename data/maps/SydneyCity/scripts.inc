@@ -1,22 +1,37 @@
 SydneyCity_MapScripts::
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, SydneyCity_OnFrame
 	map_script MAP_SCRIPT_ON_TRANSITION, SydneyCity_OnTransition
 	.byte 0
 
+SydneyCity_OnFrame::
+	map_script_2 VAR_TEMP_F, 0, SydneyCity_EventScript_SetUpStoryScripts
+	.2byte 0
+
 SydneyCity_OnTransition::
+	compare VAR_STORY_INTRO_STATE, 6
+	call_if_ge SydneyCity_EventScript_MoveRoadblockKid
+	end
+
+SydneyCity_EventScript_SetUpStoryScripts::
 	compare VAR_STORY_INTRO_STATE, 2
 	call_if_lt SydneyCity_EventScript_SetRivalInvisibleLockMantleDoor
 	compare VAR_STORY_INTRO_STATE, 6
 	call_if_lt SydneyCity_EventScript_StopPlayerLeaving
+	setvar VAR_TEMP_F, 1
 	end
 
 SydneyCity_EventScript_SetRivalInvisibleLockMantleDoor::
 	applymovement 7, Common_Movement_SetInvisible
 	setmetatile 11, 6, METATILE_Rustboro_LockedDoor, 1
-	special DrawWholeMapView
 	return
 
 SydneyCity_EventScript_StopPlayerLeaving::
 	setvar VAR_TEMP_E, 1
+	return
+
+SydneyCity_EventScript_MoveRoadblockKid::
+	setobjectxyperm 6, 12, 20
+	setobjectmovementtype 6, MOVEMENT_TYPE_WANDER_AROUND
 	return
 
 SydneyCity_EventScript_RoadblockKid::
@@ -24,7 +39,7 @@ SydneyCity_EventScript_RoadblockKid::
 	faceplayer
 	compare VAR_STORY_INTRO_STATE, 3
 	call_if_le SydneyCity_EventScript_CantLeaveWithoutPokemon
-	compare VAR_STORY_INTRO_STATE, 4
+	compare VAR_STORY_INTRO_STATE, 5
 	call_if_eq SydneyCity_EventScript_GoTalkToYourMom
 	compare VAR_STORY_INTRO_STATE, 6
 	call_if_eq SydneyCity_EventScript_WannaGetPokemonLikeYours
@@ -40,7 +55,7 @@ SydneyCity_EventScript_GoTalkToYourMom::
 	return
 
 SydneyCity_EventScript_WannaGetPokemonLikeYours::
-	msgbox SydneyCity_EventScript_WannaGetPokemonLikeYours, MSGBOX_DEFAULT
+	msgbox SydneyCity_Text_GetPokemonLikeYours, MSGBOX_DEFAULT
 	return
 
 SydneyCity_EventScript_RoadblockKidTriggerA::
@@ -90,7 +105,7 @@ SydneyCity_EventScript_RoadblockKidStopPlayer::
 	waitmovement 0
 	compare VAR_STORY_INTRO_STATE, 3
 	call_if_le SydneyCity_EventScript_CantLeaveWithoutPokemon
-	compare VAR_STORY_INTRO_STATE, 4
+	compare VAR_STORY_INTRO_STATE, 5
 	call_if_eq SydneyCity_EventScript_GoTalkToYourMom
 	compare VAR_STORY_INTRO_STATE, 6
 	call_if_eq SydneyCity_EventScript_WannaGetPokemonLikeYours
@@ -189,6 +204,41 @@ SydneyCity_EventScript_TrainerTipsSign::
 
 SydneyCity_EventScript_MantleHouseSign::
 	msgbox SydneyCity_Text_MantleHouseSign, MSGBOX_SIGN
+	end
+
+SydneyCity_EventScript_TechnologyFatGuy::
+	lock
+	faceplayer
+	msgbox SydneyCity_Text_TechnologyIsIncredible, MSGBOX_DEFAULT
+	release
+	end
+
+SydneyCity_EventScript_SydneyIndustryGuy::
+	lock
+	faceplayer
+	msgbox SydneyCity_Text_SydneyGreatIndustry, MSGBOX_DEFAULT
+	release
+	end
+
+SydneyCity_EventScript_DojoInfoOldMan::
+	lock
+	faceplayer
+	msgbox SydneyCity_Text_UsedToBeADojo, MSGBOX_DEFAULT
+	release
+	end
+
+SydneyCity_EventScript_GameboyKid::
+	lock
+	faceplayer
+	msgbox SydneyCity_Text_PracticeBattlingWithGameboy, MSGBOX_DEFAULT
+	release
+	end
+
+SydneyCity_EventScript_Fisherman::
+	lock
+	faceplayer
+	msgbox SydneyCity_Text_ThisSpotGoodForFishing, MSGBOX_DEFAULT
+	release
 	end
 
 SydneyCity_Movement_RoadblockKidMoveToPlayerA:
@@ -330,7 +380,7 @@ SydneyCity_Text_TalkToYourMom:
 	.string "You ought to go see her before you\n"
 	.string "leave!$"
 
-SydneyCity_Text_ImJealousOfYourPokemon:
+SydneyCity_Text_GetPokemonLikeYours:
 	.string "I wanna get a Pokémon just like yours!$"
 
 SydneyCity_Text_IllKnockDoor:
@@ -361,3 +411,34 @@ SydneyCity_Text_ComeIn:
 SydneyCity_Text_PlayerLetsGo:
 	.string "Let's go, {PLAYER}!\n"
 	.string "I hope this works!$"
+
+SydneyCity_Text_TechnologyIsIncredible:
+	.string "Technology is incredible!\p"
+	.string "But you knew that, right?\n"
+	.string "Wahahaha!$"
+
+SydneyCity_Text_SydneyGreatIndustry:
+	.string "Sydney City is a great contributor\n"
+	.string "to Tomen's tech industry, you know!\p"
+	.string "You may not realise it, but in those\n"
+	.string "tall buildings are many companies\l"
+	.string "developing useful products.$"
+
+SydneyCity_Text_UsedToBeADojo:
+	.string "There used to be a dojo in this city.\n"
+	.string "I trained there when I was a child.\p"
+	.string "Back in the day, it was a popular\n"
+	.string "place to learn how to battle Pokémon.\p"
+	.string "It shut down many years ago, but I\n"
+	.string "have fond memories of my time there.$"
+
+SydneyCity_Text_PracticeBattlingWithGameboy:
+	.string "I can win lots of battles in this game,\n"
+	.string "but I always seem to lose whenever\l"
+	.string "I battle for real…$"
+
+SydneyCity_Text_ThisSpotGoodForFishing:
+	.string "Yo, kiddo!\p"
+	.string "If you acquire a fishing Rod, be sure\n"
+	.string "to come back here and try it out.\p"
+	.string "You won't be disappointed!$"

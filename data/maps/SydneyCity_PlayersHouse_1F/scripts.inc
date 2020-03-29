@@ -27,9 +27,6 @@ SydneyCity_PlayersHouse_1F_EventScript_MomIntro::
 	applymovement 1, SydneyCity_PlayersHouse_1F_Movement_MomMoveBack
 	waitmovement 0
 	setvar VAR_STORY_INTRO_STATE, 1
-	setflag FLAG_HIDE_SYDNEY_CITY_RIVAL
-	setflag FLAG_HIDE_STARGAZE_POINT_MANTLE_RIVAL
-	setflag FLAG_HIDE_STARGAZE_POINT_MANTLE_BAG
 	fadedefaultbgm
 	releaseall
 	end
@@ -39,7 +36,7 @@ SydneyCity_PlayersHouse_1F_EventScript_Mom::
 	faceplayer
 	compare VAR_STORY_INTRO_STATE, 1
 	goto_if_le SydneyCity_PlayersHouse_1F_EventScript_MomBeforeMeetingRival
-	compare VAR_STORY_INTRO_STATE, 4
+	compare VAR_STORY_INTRO_STATE, 5
 	goto_if_le SydneyCity_PlayersHouse_1F_EventScript_MomAfterStarter
 	compare VAR_STORY_INTRO_STATE, 6
 	goto_if_le SydneyCity_PlayersHouse_1F_EventScript_MomJourneyStarted
@@ -122,10 +119,10 @@ SydneyCity_PlayersHouse_1F_Text_CompetingInTournament:
 	.string "to compete, you'll need to travel\l"
 	.string "all around Tomen.\p"
 	.string "I don't mind, of course.\p"
-	.string "When I was your age, I went on a\l"
+	.string "When I was your age, I went on a\n"
 	.string "journey around Tomen myself.\p"
 	.string "Back in those days, the old Gym system\n"
-	.string "was in place, though.\p"
+	.string "was in place, though.$"
 
 SydneyCity_PlayersHouse_1F_Text_AnywayTakeThis:
 	.string "Anyway, before you go, take these\n"

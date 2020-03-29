@@ -10,7 +10,7 @@
             "script": "NULL",
             "type": "sign",
             "x": 14,
-            "y": 9
+            "y": 8
         },
         {
             "elevation": 0,
@@ -31,11 +31,29 @@
     "coord_events": [
         {
             "elevation": 0,
-            "script": "NULL",
+            "script": "StargazePoint_EventScript_TriggerCantLeave",
             "type": "trigger",
             "var": "VAR_STORY_INTRO_STATE",
             "var_value": "4",
             "x": 17,
+            "y": 9
+        },
+        {
+            "elevation": 0,
+            "script": "StargazePoint_EventScript_TriggerStarterEventLeft",
+            "type": "trigger",
+            "var": "VAR_STORY_INTRO_STATE",
+            "var_value": "3",
+            "x": 17,
+            "y": 9
+        },
+        {
+            "elevation": 0,
+            "script": "StargazePoint_EventScript_TriggerStarterEventRight",
+            "type": "trigger",
+            "var": "VAR_STORY_INTRO_STATE",
+            "var_value": "3",
+            "x": 18,
             "y": 9
         }
     ],
@@ -47,29 +65,16 @@
     "object_events": [
         {
             "elevation": 3,
-            "flag": "FLAG_HIDE_STARGAZE_POINT_MANTLE_BAG",
-            "graphics_id": "OBJ_EVENT_GFX_BIRCHS_BAG",
-            "movement_range_x": 0,
-            "movement_range_y": 0,
-            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
-            "script": "StargazePoint_EventScript_StarterChooseTest",
-            "trainer_sight_or_berry_tree_id": "0",
-            "trainer_type": "0",
-            "x": 17,
-            "y": 6
-        },
-        {
-            "elevation": 3,
             "flag": "FLAG_HIDE_STARGAZE_POINT_MANTLE_RIVAL",
             "graphics_id": "OBJ_EVENT_GFX_MANTLE",
             "movement_range_x": 0,
             "movement_range_y": 0,
             "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
-            "script": "NULL",
+            "script": "StargazePoint_EventScript_Mantle",
             "trainer_sight_or_berry_tree_id": "0",
             "trainer_type": "0",
             "x": 17,
-            "y": 6
+            "y": 7
         },
         {
             "elevation": 3,
@@ -78,11 +83,128 @@
             "movement_range_x": 0,
             "movement_range_y": 0,
             "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
-            "script": "NULL",
+            "script": "StargazePoint_EventScript_Rival",
             "trainer_sight_or_berry_tree_id": "0",
             "trainer_type": "0",
             "x": 16,
             "y": 9
+        },
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "OBJ_EVENT_GFX_BERRY_TREE",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
+            "script": "BerryTreeScript",
+            "trainer_sight_or_berry_tree_id": "1",
+            "trainer_type": "0",
+            "x": 28,
+            "y": 15
+        },
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "OBJ_EVENT_GFX_BERRY_TREE",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
+            "script": "BerryTreeScript",
+            "trainer_sight_or_berry_tree_id": "2",
+            "trainer_type": "0",
+            "x": 28,
+            "y": 16
+        },
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "OBJ_EVENT_GFX_BERRY_TREE",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
+            "script": "BerryTreeScript",
+            "trainer_sight_or_berry_tree_id": "3",
+            "trainer_type": "0",
+            "x": 28,
+            "y": 17
+        },
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "OBJ_EVENT_GFX_MAN_5",
+            "movement_range_x": 3,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+            "script": "NULL",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 11,
+            "y": 11
+        },
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "OBJ_EVENT_GFX_LITTLE_BOY",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+            "script": "NULL",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 11,
+            "y": 18
+        },
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "OBJ_EVENT_GFX_LASS",
+            "movement_range_x": 2,
+            "movement_range_y": 3,
+            "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+            "script": "NULL",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 21,
+            "y": 15
+        },
+        {
+            "elevation": 3,
+            "flag": "FLAG_HIDE_STARGAZE_POINT_MANTLE_BAG",
+            "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "script": "StargazePoint_EventScript_ChespinBall",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 16,
+            "y": 6
+        },
+        {
+            "elevation": 3,
+            "flag": "FLAG_HIDE_STARGAZE_POINT_MANTLE_BAG",
+            "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "script": "StargazePoint_EventScript_FennekinBall",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 17,
+            "y": 6
+        },
+        {
+            "elevation": 3,
+            "flag": "FLAG_HIDE_STARGAZE_POINT_MANTLE_BAG",
+            "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "script": "StargazePoint_EventScript_FroakieBall",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 18,
+            "y": 6
         }
     ],
     "region_map_section": "MAPSEC_STARGAZE_POINT",
