@@ -14846,6 +14846,10 @@ gCryTable:: @ 869DCF4
 	cry_not Cry_Stakataka
 	cry_not Cry_Blacephalon
 	cry_not Cry_Zeraora
+	cry_not Cry_Skwovet
+	cry_not Cry_Skwovet
+	cry_not Cry_Skwovet
+	cry_not Cry_Greedent
 
 	.align 2
 gCryTable2:: @ 869EF24
@@ -15656,6 +15660,10 @@ gCryTable2:: @ 869EF24
 	cry2_not Cry_Stakataka
 	cry2_not Cry_Blacephalon
 	cry2_not Cry_Zeraora
+	cry2_not Cry_Skwovet
+	cry2_not Cry_Skwovet
+	cry2_not Cry_Skwovet
+	cry2_not Cry_Greedent
 	
 	.align 2
 voicegroup129:: @ 86A0154

@@ -615,6 +615,7 @@
 #define MAP_STARGAZE_POINT_STARGAZE_FLORISTS (13 | (37 << 8))
 
 // Map Group 38
+#define MAP_FABLE_SQUARE_POKEMON_CENTER (0 | (38 << 8))
 
 // Map Group 39
 

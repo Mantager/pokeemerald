@@ -4599,6 +4599,16 @@
             "primary_tileset": "gTileset_General",
             "secondary_tileset": "gTileset_Lilycove",
             "width": 40
+        },
+        {
+            "blockdata_filepath": "data/layouts/FableSquare_PokemonCenter/map.bin",
+            "border_filepath": "data/layouts/FableSquare_PokemonCenter/border.bin",
+            "height": 9,
+            "id": "LAYOUT_FABLE_SQUARE_POKEMON_CENTER",
+            "name": "FableSquare_PokemonCenter_Layout",
+            "primary_tileset": "gTileset_Building",
+            "secondary_tileset": "gTileset_PokemonCenter",
+            "width": 20
         }
     ],
     "layouts_table_label": "gMapLayouts"

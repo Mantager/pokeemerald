@@ -4857,3 +4857,15 @@ const u8 gMelmetalPokedexText[] = _(
     "Revered long ago for its capacity to create\n"
     "iron from nothing, for some reason it has\n"
     "come back to life after 3,000 years.");
+
+const u8 gSkwovetPokedexText[] = _(
+    "It eats berries nonstop, a habit that\n"
+    "has made it more resilient than it looks.\n"
+    "It'll show up on farms, searching for yet\n"
+    "more berries.");
+
+const u8 gGreedentPokedexText[] = _(
+    "It stashes berries in its tail, so many\n"
+    "berries that they fall out constantly.\n"
+    "But this Pokémon is a bit slow-witted,\n"
+    "so it doesn't notice.");

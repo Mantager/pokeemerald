@@ -3623,6 +3623,14 @@ Cry_Zeraora::
 	.incbin "sound/direct_sound_samples/cry_not_zeraora.bin"
 
 	.align 2
+Cry_Skwovet::
+	.incbin "sound/direct_sound_samples/cry_not_skwovet.bin"
+
+	.align 2
+Cry_Greedent::
+	.incbin "sound/direct_sound_samples/cry_not_greedent.bin"
+
+	.align 2
 DirectSoundWaveData_register_noise::
 	.incbin "sound/direct_sound_samples/register_noise.bin"
 

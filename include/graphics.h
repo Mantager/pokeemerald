@@ -914,6 +914,8 @@ extern const u32 gMonFrontPic_Blacephalon[];
 extern const u32 gMonFrontPic_Zeraora[];
 extern const u32 gMonFrontPic_Meltan[];
 extern const u32 gMonFrontPic_Melmetal[];
+extern const u32 gMonFrontPic_Skwovet[];
+extern const u32 gMonFrontPic_Greedent[];
 
 extern const u32 gMonBackPic_CircledQuestionMark[];
 extern const u32 gMonBackPic_Bulbasaur[];
@@ -1763,6 +1765,8 @@ extern const u32 gMonBackPic_Blacephalon[];
 extern const u32 gMonBackPic_Zeraora[];
 extern const u32 gMonBackPic_Meltan[];
 extern const u32 gMonBackPic_Melmetal[];
+extern const u32 gMonBackPic_Skwovet[];
+extern const u32 gMonBackPic_Greedent[];
 
 extern const u32 gMonPalette_CircledQuestionMark[];
 extern const u32 gMonPalette_Bulbasaur[];
@@ -2586,6 +2590,8 @@ extern const u32 gMonPalette_Blacephalon[];
 extern const u32 gMonPalette_Zeraora[];
 extern const u32 gMonPalette_Meltan[];
 extern const u32 gMonPalette_Melmetal[];
+extern const u32 gMonPalette_Skwovet[];
+extern const u32 gMonPalette_Greedent[];
 
 extern const u32 gMonShinyPalette_CircledQuestionMark[];
 extern const u32 gMonShinyPalette_Bulbasaur[];
@@ -3408,6 +3414,8 @@ extern const u32 gMonShinyPalette_Blacephalon[];
 extern const u32 gMonShinyPalette_Zeraora[];
 extern const u32 gMonShinyPalette_Meltan[];
 extern const u32 gMonShinyPalette_Melmetal[];
+extern const u32 gMonShinyPalette_Skwovet[];
+extern const u32 gMonShinyPalette_Greedent[];
 
 extern const u32 gMonFrontPic_MegaVenusaur[];
 extern const u32 gMonBackPic_MegaVenusaur[];
@@ -4596,6 +4604,9 @@ extern const u8 gMonIcon_Blacephalon[];
 extern const u8 gMonIcon_Zeraora[];
 extern const u8 gMonIcon_Meltan[];
 extern const u8 gMonIcon_Melmetal[];
+extern const u8 gMonIcon_Skwovet[];
+extern const u8 gMonIcon_Greedent[];
+
 extern const u8 gMonIcon_MegaVenusaur[];
 extern const u8 gMonIcon_MegaCharizardX[];
 extern const u8 gMonIcon_MegaCharizardY[];

@@ -7900,6 +7900,18 @@ static const union AnimCmd sAnim_MELMETAL_1[] =
     ANIMCMD_END,
 };
 
+static const union AnimCmd sAnim_SKWOVET_1[] =
+{
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_GREEDENT_1[] =
+{
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
+
 static const union AnimCmd sAnim_MEGA_VENUSAUR_1[] =
 {
 	ANIMCMD_FRAME(0, 1),
@@ -12684,6 +12696,16 @@ static const union AnimCmd *const sAnims_MELMETAL[] ={
     sAnim_MELMETAL_1,
 };
 
+static const union AnimCmd *const sAnims_SKWOVET[] ={
+    sAnim_GeneralFrame0,
+    sAnim_SKWOVET_1,
+};
+
+static const union AnimCmd *const sAnims_GREEDENT[] ={
+    sAnim_GeneralFrame0,
+    sAnim_GREEDENT_1,
+};
+
 static const union AnimCmd *const sAnims_MEGA_VENUSAUR[] ={
 	sAnim_GeneralFrame0,
 	sAnim_MEGA_VENUSAUR_1,
@@ -13929,6 +13951,8 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     ANIM_CMD(ZERAORA),
     ANIM_CMD(MELTAN),
     ANIM_CMD(MELMETAL),
+    ANIM_CMD(SKWOVET),
+    ANIM_CMD(GREEDENT),
     ANIM_CMD(EGG),
     ANIM_CMD(MEGA_VENUSAUR),
     ANIM_CMD(MEGA_CHARIZARD_X),

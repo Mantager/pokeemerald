@@ -9719,4 +9719,28 @@ const struct PokedexEntry gPokedexEntries[] =
 		.trainerScale = 387,
 		.trainerOffset = 2,
 	},
+
+	[NATIONAL_DEX_SKWOVET] =
+	{
+		.categoryName = _("Cheeky"),
+		.height = 3,
+		.weight = 25,
+		.description = gSkwovetPokedexText,
+		.pokemonScale = 640,
+		.pokemonOffset = 23,
+		.trainerScale = 256,
+		.trainerOffset = 0,
+	},
+
+	[NATIONAL_DEX_GREEDENT] =
+	{
+		.categoryName = _("Greedy"),
+		.height = 6,
+		.weight = 60,
+		.description = gGreedentPokedexText,
+		.pokemonScale = 255,
+		.pokemonOffset = 1,
+		.trainerScale = 387,
+		.trainerOffset = 2,
+	},
 };

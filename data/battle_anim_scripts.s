@@ -637,6 +637,7 @@ gBattleAnims_Moves::
 	.4byte Move_PRECIPICE_BLADES
 	.4byte Move_DRAGON_ASCENT
 	.4byte Move_HYPERSPACE_FURY
+	.4byte Move_STUFF_CHEEKS
 	.4byte Move_COUNT @ cannot be reached, because last move is Psycho Boost
 
 	.align 2
@@ -4518,6 +4519,9 @@ Move_DRAGON_ASCENT:
 	end
 	
 Move_HYPERSPACE_FURY:
+	end
+
+Move_STUFF_CHEEKS:
 	end
 
 Move_NONE:

@@ -822,6 +822,8 @@ const struct LevelUpMove *const gLevelUpLearnsets[NUM_SPECIES] =
     [SPECIES_ZERAORA] = sZeraoraLevelUpLearnset,
     [SPECIES_MELTAN] = sMeltanLevelUpLearnset,
     [SPECIES_MELMETAL] = sMelmetalLevelUpLearnset,
+    [SPECIES_SKWOVET] = sSkwovetLevelUpLearnset,
+    [SPECIES_GREEDENT] = sGreedentLevelUpLearnset,
     // Megas have the same learnsets
     [SPECIES_MEGA_VENUSAUR] = sVenusaurLevelUpLearnset,
     [SPECIES_MEGA_CHARIZARD_X] = sCharizardLevelUpLearnset,

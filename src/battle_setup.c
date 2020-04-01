@@ -1316,9 +1316,19 @@ static void CB2_EndTrainerBattle(void)
     else if (IsPlayerDefeated(gBattleOutcome) == TRUE)
     {
         if (InBattlePyramid() || InTrainerHillChallenge())
+        {
             SetMainCallback2(CB2_ReturnToFieldContinueScriptPlayMapMusic);
+        }
+        else if ((gTrainerBattleOpponent_A == TRAINER_MAY_ROUTE_103_MUDKIP)
+        || (gTrainerBattleOpponent_A == TRAINER_MAY_ROUTE_103_TREECKO)
+        || (gTrainerBattleOpponent_A == TRAINER_MAY_ROUTE_103_TORCHIC))
+        {
+            SetMainCallback2(CB2_ReturnToFieldContinueScriptPlayMapMusic);
+        }
         else
+        {
             SetMainCallback2(CB2_WhiteOut);
+        }
     }
     else
     {

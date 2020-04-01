@@ -630,6 +630,7 @@ const u16 gEasyChatWordsByLetter_G[] = {
     EC_POKEMON(GRAVELER),
     EC_POKEMON2(GRAVELER),
     EC_WORD_GREAT,
+    EC_POKEMON(GREEDENT),
     EC_WORD_GREEN,
     -1, 2, // Doubled pokemon species name
     EC_POKEMON(GRIMER),
@@ -1476,6 +1477,7 @@ const u16 gEasyChatWordsByLetter_S[] = {
     EC_POKEMON2(SKIPLOOM),
     EC_POKEMON(SKITTY),
     EC_MOVE2(SKULL_BASH),
+    EC_POKEMON(SKWOVET),
     EC_MOVE(SKY_ATTACK),
     EC_MOVE(SKY_UPPERCUT),
     EC_MOVE2(SLACK_OFF),

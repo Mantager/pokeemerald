@@ -368,6 +368,7 @@ StargazePoint_EventScript_RivalBattleChespin::
 	goto StargazePoint_EventScript_StarterEventEnd
 
 StargazePoint_EventScript_StarterEventEnd::
+	special HealPlayerParty
 	bufferspeciesname 0, PLAYER_STARTER_SPECIES
 	msgbox StargazePoint_Text_DrMantleIsGreat, MSGBOX_DEFAULT
 	closemessage
@@ -376,6 +377,27 @@ StargazePoint_EventScript_StarterEventEnd::
 	setvar VAR_STORY_INTRO_STATE, 5
 	setflag FLAG_SYS_POKEDEX_GET
 	fadescreen 0
+	release
+	end
+
+StargazePoint_EventScript_StargazeInfoGuy::
+	lock
+	faceplayer
+	msgbox StargazePoint_Text_StargazingPopular, MSGBOX_DEFAULT
+	release
+	end
+
+StargazePoint_EventScript_ClefairyFan::
+	lock
+	faceplayer
+	msgbox StargazePoint_Text_ClefairyRarelyAppear, MSGBOX_DEFAULT
+	release
+	end
+
+StargazePoint_EventScript_KidKeepingWatch::
+	lock
+	faceplayer
+	msgbox StargazePoint_Text_KeepingWatch, MSGBOX_DEFAULT
 	release
 	end
 
@@ -619,3 +641,22 @@ StargazePoint_Text_DrMantleIsGreat:
 StargazePoint_Text_NicknameYesNo:
 	.string "Would you like to give a nickname\n"
 	.string "to the {STR_VAR_1} you recieved?$"
+
+StargazePoint_Text_StargazingPopular:
+	.string "This is a popular spot for stargazing.\p"
+	.string "I guess that's where the name\n"
+	.string "Stargaze Point comes from.$"
+
+StargazePoint_Text_ClefairyRarelyAppear:
+	.string "Apparently, Clefairy appear here on\n"
+	.string "the night of a full moon.\p"
+	.string "I love Clefairy, so I've been coming\n"
+	.string "here every night, but…\l"
+	.string "I haven't found any!\l"
+	.string "Perhaps that was just a rumour.$"
+
+StargazePoint_Text_KeepingWatch:
+	.string "I'm guarding this flower patch against\n"
+	.string "troublemakers!\p"
+	.string "Don't trample these flowers, okay?\n"
+	.string "Or I'll know!$"

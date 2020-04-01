@@ -821,6 +821,8 @@ const u8 gSpeciesNames[][POKEMON_NAME_LENGTH + 1] = {
     [SPECIES_ZERAORA] = _("Zeraora"),
     [SPECIES_MELTAN] = _("Meltan"),
     [SPECIES_MELMETAL] = _("Melmetal"),
+    [SPECIES_SKWOVET] = _("Skwovet"),
+    [SPECIES_GREEDENT] = _("Greedent"),
 
     [SPECIES_MEGA_VENUSAUR] = _("Venusaur"),
     [SPECIES_MEGA_CHARIZARD_X] = _("Charizard"),

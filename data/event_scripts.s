@@ -651,6 +651,7 @@ EventScript_SetBrineyLocation_Route109:: @ 8271918
 
 	.include "data/scripts/pkmn_center_nurse.inc"
 	.include "data/scripts/pkmn_center_mart.inc"
+	.include "data/scripts/pkmn_center_searcher.inc"
 	.include "data/scripts/obtain_item.inc"
 	.include "data/scripts/record_mix.inc"
 	.include "data/scripts/pc.inc"
@@ -1098,3 +1099,5 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/StargazePoint_StargazeFlorists/scripts.inc"
 
 	.include "data/maps/Route2/scripts.inc"
+
+	.include "data/maps/FableSquare_PokemonCenter/scripts.inc"
