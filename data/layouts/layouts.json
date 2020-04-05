@@ -4598,7 +4598,7 @@
             "name": "Route2_Layout",
             "primary_tileset": "gTileset_General",
             "secondary_tileset": "gTileset_Lilycove",
-            "width": 40
+            "width": 38
         },
         {
             "blockdata_filepath": "data/layouts/FableSquare_PokemonCenter/map.bin",
@@ -4609,6 +4609,46 @@
             "primary_tileset": "gTileset_Building",
             "secondary_tileset": "gTileset_PokemonCenter",
             "width": 20
+        },
+        {
+            "blockdata_filepath": "data/layouts/TwistedWoods/map.bin",
+            "border_filepath": "data/layouts/TwistedWoods/border.bin",
+            "height": 56,
+            "id": "LAYOUT_TWISTED_WOODS",
+            "name": "TwistedWoods_Layout",
+            "primary_tileset": "gTileset_General",
+            "secondary_tileset": "gTileset_Rustboro",
+            "width": 56
+        },
+        {
+            "blockdata_filepath": "data/layouts/DotsyCity/map.bin",
+            "border_filepath": "data/layouts/DotsyCity/border.bin",
+            "height": 28,
+            "id": "LAYOUT_DOTSY_CITY",
+            "name": "DotsyCity_Layout",
+            "primary_tileset": "gTileset_General",
+            "secondary_tileset": "gTileset_Dotsy",
+            "width": 50
+        },
+        {
+            "blockdata_filepath": "data/layouts/Route3_Top/map.bin",
+            "border_filepath": "data/layouts/Route3_Top/border.bin",
+            "height": 68,
+            "id": "LAYOUT_ROUTE3_TOP",
+            "name": "Route3_Top_Layout",
+            "primary_tileset": "gTileset_General",
+            "secondary_tileset": "gTileset_Dotsy",
+            "width": 28
+        },
+        {
+            "blockdata_filepath": "data/layouts/GloomyCavern_1F/map.bin",
+            "border_filepath": "data/layouts/GloomyCavern_1F/border.bin",
+            "height": 54,
+            "id": "LAYOUT_GLOOMY_CAVERN_1F",
+            "name": "GloomyCavern_1F_Layout",
+            "primary_tileset": "gTileset_General",
+            "secondary_tileset": "gTileset_Cave",
+            "width": 28
         }
     ],
     "layouts_table_label": "gMapLayouts"

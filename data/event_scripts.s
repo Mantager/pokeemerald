@@ -1101,3 +1101,11 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/Route2/scripts.inc"
 
 	.include "data/maps/FableSquare_PokemonCenter/scripts.inc"
+
+	.include "data/maps/TwistedWoods/scripts.inc"
+
+	.include "data/maps/DotsyCity/scripts.inc"
+
+	.include "data/maps/Route3_Top/scripts.inc"
+
+	.include "data/maps/GloomyCavern_1F/scripts.inc"

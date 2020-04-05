@@ -19,34 +19,6 @@
     "requires_flash": false,
     "show_map_name": false,
     "warp_events": [
-        {
-            "dest_map": "MAP_ROUTE110_TRICK_HOUSE_END",
-            "dest_warp_id": 1,
-            "elevation": 3,
-            "x": 13,
-            "y": 3
-        },
-        {
-            "dest_map": "MAP_ROUTE110_TRICK_HOUSE_END",
-            "dest_warp_id": 1,
-            "elevation": 3,
-            "x": 14,
-            "y": 3
-        },
-        {
-            "dest_map": "MAP_ROUTE110_TRICK_HOUSE_ENTRANCE",
-            "dest_warp_id": 2,
-            "elevation": 3,
-            "x": 4,
-            "y": 23
-        },
-        {
-            "dest_map": "MAP_ROUTE110_TRICK_HOUSE_ENTRANCE",
-            "dest_warp_id": 2,
-            "elevation": 3,
-            "x": 5,
-            "y": 23
-        }
     ],
     "weather": "WEATHER_NONE"
 }

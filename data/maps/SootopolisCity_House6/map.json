@@ -14,38 +14,11 @@
     "music": "MUS_RUNECITY",
     "name": "SootopolisCity_House6",
     "object_events": [
-        {
-            "elevation": 3,
-            "flag": "0",
-            "graphics_id": "OBJ_EVENT_GFX_WOMAN_2",
-            "movement_range_x": 1,
-            "movement_range_y": 1,
-            "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
-            "script": "SootopolisCity_House6_EventScript_Woman",
-            "trainer_sight_or_berry_tree_id": "0",
-            "trainer_type": "0",
-            "x": 4,
-            "y": 3
-        }
     ],
     "region_map_section": "MAPSEC_SOOTOPOLIS_CITY",
     "requires_flash": false,
     "show_map_name": false,
     "warp_events": [
-        {
-            "dest_map": "MAP_SOOTOPOLIS_CITY",
-            "dest_warp_id": 9,
-            "elevation": 0,
-            "x": 3,
-            "y": 6
-        },
-        {
-            "dest_map": "MAP_SOOTOPOLIS_CITY",
-            "dest_warp_id": 9,
-            "elevation": 0,
-            "x": 4,
-            "y": 6
-        }
     ],
     "weather": "WEATHER_NONE"
 }

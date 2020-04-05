@@ -4765,7 +4765,7 @@
                             {
                                 "max_level": 2,
                                 "min_level": 2,
-                                "species": "SPECIES_WURMPLE"
+                                "species": "SPECIES_PIDOVE"
                             },
                             {
                                 "max_level": 2,
@@ -11339,6 +11339,75 @@
                             }
                         ]
                     }
+                },
+                {
+                    "base_label": "gTwistedWoods",
+                    "land_mons": {
+                        "encounter_rate": 18,
+                        "mons": [
+                            {
+                                "max_level": 3,
+                                "min_level": 3,
+                                "species": "SPECIES_SEWADDLE"
+                            },
+                            {
+                                "max_level": 3,
+                                "min_level": 3,
+                                "species": "SPECIES_VENIPEDE"
+                            },
+                            {
+                                "max_level": 3,
+                                "min_level": 3,
+                                "species": "SPECIES_SKWOVET"
+                            },
+                            {
+                                "max_level": 3,
+                                "min_level": 3,
+                                "species": "SPECIES_SKWOVET"
+                            },
+                            {
+                                "max_level": 4,
+                                "min_level": 4,
+                                "species": "SPECIES_SEWADDLE"
+                            },
+                            {
+                                "max_level": 4,
+                                "min_level": 4,
+                                "species": "SPECIES_VENIPEDE"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_PIDOVE"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_SLAKOTH"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_SEWADDLE"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_VENIPEDE"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_SEWADDLE"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_VENIPEDE"
+                            }
+                        ]
+                    },
+                    "map": "MAP_TWISTED_WOODS"
                 },
                 {
                     "base_label": "gUnderwater1",

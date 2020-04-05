@@ -593,8 +593,12 @@
 #define MAP_ROUTE1         (2 | (34 << 8))
 #define MAP_FABLE_SQUARE   (3 | (34 << 8))
 #define MAP_ROUTE2         (4 | (34 << 8))
+#define MAP_DOTSY_CITY     (5 | (34 << 8))
+#define MAP_ROUTE3_TOP     (6 | (34 << 8))
 
 // Map Group 35
+#define MAP_TWISTED_WOODS    (0 | (35 << 8))
+#define MAP_GLOOMY_CAVERN_1F (1 | (35 << 8))
 
 // Map Group 36
 
