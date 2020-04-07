@@ -1109,3 +1109,7 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/Route3_Top/scripts.inc"
 
 	.include "data/maps/GloomyCavern_1F/scripts.inc"
+
+	.include "data/maps/GloomyCavern_B1F/scripts.inc"
+
+	.include "data/maps/Route3_Bottom/scripts.inc"

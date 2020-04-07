@@ -528,11 +528,13 @@
         "FableSquare",
         "Route2",
         "DotsyCity",
-        "Route3_Top"
+        "Route3_Top",
+        "Route3_Bottom"
     ],
     "gMapGroup35": [
         "TwistedWoods",
-        "GloomyCavern_1F"
+        "GloomyCavern_1F",
+        "GloomyCavern_B1F"
     ],
     "gMapGroup36": [
     ],

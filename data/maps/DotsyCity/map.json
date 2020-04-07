@@ -29,28 +29,28 @@
             "dest_map": "MAP_TWISTED_WOODS",
             "dest_warp_id": 4,
             "elevation": 0,
-            "x": 2,
+            "x": 5,
             "y": 18
         },
         {
             "dest_map": "MAP_TWISTED_WOODS",
             "dest_warp_id": 5,
             "elevation": 0,
-            "x": 3,
+            "x": 4,
             "y": 18
         },
         {
             "dest_map": "MAP_TWISTED_WOODS",
             "dest_warp_id": 6,
             "elevation": 0,
-            "x": 4,
+            "x": 3,
             "y": 18
         },
         {
             "dest_map": "MAP_TWISTED_WOODS",
             "dest_warp_id": 7,
             "elevation": 0,
-            "x": 5,
+            "x": 2,
             "y": 18
         }
     ],

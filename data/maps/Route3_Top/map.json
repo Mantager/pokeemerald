@@ -21,10 +21,17 @@
     "name": "Route3_Top",
     "object_events": [
     ],
-    "region_map_section": "MAPSEC_ROUTE_3",
+    "region_map_section": "MAPSEC_ROUTE_3_NORTH",
     "requires_flash": false,
     "show_map_name": true,
     "warp_events": [
+        {
+            "dest_map": "MAP_GLOOMY_CAVERN_1F",
+            "dest_warp_id": 0,
+            "elevation": 0,
+            "x": 18,
+            "y": 54
+        }
     ],
     "weather": "WEATHER_SUNNY"
 }

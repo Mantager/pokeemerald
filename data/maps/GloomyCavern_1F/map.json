@@ -19,6 +19,55 @@
     "requires_flash": false,
     "show_map_name": true,
     "warp_events": [
+        {
+            "dest_map": "MAP_ROUTE3_TOP",
+            "dest_warp_id": 0,
+            "elevation": 0,
+            "x": 4,
+            "y": 6
+        },
+        {
+            "dest_map": "MAP_GLOOMY_CAVERN_B1F",
+            "dest_warp_id": 0,
+            "elevation": 0,
+            "x": 32,
+            "y": 7
+        },
+        {
+            "dest_map": "MAP_GLOOMY_CAVERN_B1F",
+            "dest_warp_id": 1,
+            "elevation": 0,
+            "x": 18,
+            "y": 3
+        },
+        {
+            "dest_map": "MAP_GLOOMY_CAVERN_B1F",
+            "dest_warp_id": 2,
+            "elevation": 0,
+            "x": 11,
+            "y": 30
+        },
+        {
+            "dest_map": "MAP_GLOOMY_CAVERN_B1F",
+            "dest_warp_id": 3,
+            "elevation": 0,
+            "x": 30,
+            "y": 41
+        },
+        {
+            "dest_map": "MAP_GLOOMY_CAVERN_B1F",
+            "dest_warp_id": 4,
+            "elevation": 0,
+            "x": 32,
+            "y": 59
+        },
+        {
+            "dest_map": "MAP_ROUTE3_BOTTOM",
+            "dest_warp_id": 0,
+            "elevation": 0,
+            "x": 6,
+            "y": 61
+        }
     ],
-    "weather": "WEATHER_SUNNY"
+    "weather": "WEATHER_NONE"
 }
