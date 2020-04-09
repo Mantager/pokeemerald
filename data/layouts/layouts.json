@@ -4598,7 +4598,7 @@
             "name": "Route2_Layout",
             "primary_tileset": "gTileset_General",
             "secondary_tileset": "gTileset_Lilycove",
-            "width": 38
+            "width": 24
         },
         {
             "blockdata_filepath": "data/layouts/FableSquare_PokemonCenter/map.bin",
@@ -4667,8 +4667,118 @@
             "id": "LAYOUT_ROUTE3_BOTTOM",
             "name": "Route3_Bottom_Layout",
             "primary_tileset": "gTileset_General",
-            "secondary_tileset": "gTileset_Mauville",
+            "secondary_tileset": "gTileset_Oaken",
             "width": 28
+        },
+        {
+            "blockdata_filepath": "data/layouts/OakenCity/map.bin",
+            "border_filepath": "data/layouts/OakenCity/border.bin",
+            "height": 24,
+            "id": "LAYOUT_OAKEN_CITY",
+            "name": "OakenCity_Layout",
+            "primary_tileset": "gTileset_General",
+            "secondary_tileset": "gTileset_Oaken",
+            "width": 46
+        },
+        {
+            "blockdata_filepath": "data/layouts/FableSquare_House1/map.bin",
+            "border_filepath": "data/layouts/FableSquare_House1/border.bin",
+            "height": 9,
+            "id": "LAYOUT_FABLE_SQUARE_HOUSE1",
+            "name": "FableSquare_House1_Layout",
+            "primary_tileset": "gTileset_Building",
+            "secondary_tileset": "gTileset_GenericBuilding",
+            "width": 10
+        },
+        {
+            "blockdata_filepath": "data/layouts/FableSquare_House2/map.bin",
+            "border_filepath": "data/layouts/FableSquare_House2/border.bin",
+            "height": 9,
+            "id": "LAYOUT_FABLE_SQUARE_HOUSE2",
+            "name": "FableSquare_House2_Layout",
+            "primary_tileset": "gTileset_Building",
+            "secondary_tileset": "gTileset_GenericBuilding",
+            "width": 10
+        },
+        {
+            "blockdata_filepath": "data/layouts/FableSquare_House3/map.bin",
+            "border_filepath": "data/layouts/FableSquare_House3/border.bin",
+            "height": 9,
+            "id": "LAYOUT_FABLE_SQUARE_HOUSE3",
+            "name": "FableSquare_House3_Layout",
+            "primary_tileset": "gTileset_Building",
+            "secondary_tileset": "gTileset_GenericBuilding",
+            "width": 10
+        },
+        {
+            "blockdata_filepath": "data/layouts/FableSquare_RegistrationHall/map.bin",
+            "border_filepath": "data/layouts/FableSquare_RegistrationHall/border.bin",
+            "height": 11,
+            "id": "LAYOUT_FABLE_SQUARE_REGISTRATION_HALL",
+            "name": "FableSquare_RegistrationHall_Layout",
+            "primary_tileset": "gTileset_Building",
+            "secondary_tileset": "gTileset_Contest",
+            "width": 18
+        },
+        {
+            "blockdata_filepath": "data/layouts/DotsyCity_PokemonCenter/map.bin",
+            "border_filepath": "data/layouts/DotsyCity_PokemonCenter/border.bin",
+            "height": 9,
+            "id": "LAYOUT_DOTSY_CITY_POKEMON_CENTER",
+            "name": "DotsyCity_PokemonCenter_Layout",
+            "primary_tileset": "gTileset_Building",
+            "secondary_tileset": "gTileset_PokemonCenter",
+            "width": 20
+        },
+        {
+            "blockdata_filepath": "data/layouts/OakenCity_PokemonCenter/map.bin",
+            "border_filepath": "data/layouts/OakenCity_PokemonCenter/border.bin",
+            "height": 9,
+            "id": "LAYOUT_OAKEN_CITY_POKEMON_CENTER",
+            "name": "OakenCity_PokemonCenter_Layout",
+            "primary_tileset": "gTileset_Building",
+            "secondary_tileset": "gTileset_PokemonCenter",
+            "width": 20
+        },
+        {
+            "blockdata_filepath": "data/layouts/DotsyCity_House1/map.bin",
+            "border_filepath": "data/layouts/DotsyCity_House1/border.bin",
+            "height": 9,
+            "id": "LAYOUT_DOTSY_CITY_HOUSE1",
+            "name": "DotsyCity_House1_Layout",
+            "primary_tileset": "gTileset_Building",
+            "secondary_tileset": "gTileset_GenericBuilding",
+            "width": 12
+        },
+        {
+            "blockdata_filepath": "data/layouts/FableSquare_PokemonFanClub/map.bin",
+            "border_filepath": "data/layouts/FableSquare_PokemonFanClub/border.bin",
+            "height": 14,
+            "id": "LAYOUT_FABLE_SQUARE_POKEMON_FAN_CLUB",
+            "name": "FableSquare_PokemonFanClub_Layout",
+            "primary_tileset": "gTileset_Building",
+            "secondary_tileset": "gTileset_GenericBuilding",
+            "width": 12
+        },
+        {
+            "blockdata_filepath": "data/layouts/DotsyCity_House2/map.bin",
+            "border_filepath": "data/layouts/DotsyCity_House2/border.bin",
+            "height": 9,
+            "id": "LAYOUT_DOTSY_CITY_HOUSE2",
+            "name": "DotsyCity_House2_Layout",
+            "primary_tileset": "gTileset_Building",
+            "secondary_tileset": "gTileset_GenericBuilding",
+            "width": 12
+        },
+        {
+            "blockdata_filepath": "data/layouts/DotsyCity_House3/map.bin",
+            "border_filepath": "data/layouts/DotsyCity_House3/border.bin",
+            "height": 9,
+            "id": "LAYOUT_DOTSY_CITY_HOUSE3",
+            "name": "DotsyCity_House3_Layout",
+            "primary_tileset": "gTileset_Building",
+            "secondary_tileset": "gTileset_GenericBuilding",
+            "width": 12
         }
     ],
     "layouts_table_label": "gMapLayouts"

@@ -565,3 +565,10 @@ gMetatiles_Dotsy::
 	.align 1
 gMetatileAttributes_Dotsy::
 	.incbin "data/tilesets/secondary/dotsy/metatile_attributes.bin"
+	.align 1
+gMetatiles_Oaken::
+	.incbin "data/tilesets/secondary/oaken/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_Oaken::
+	.incbin "data/tilesets/secondary/oaken/metatile_attributes.bin"

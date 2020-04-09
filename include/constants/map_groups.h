@@ -596,6 +596,7 @@
 #define MAP_DOTSY_CITY     (5 | (34 << 8))
 #define MAP_ROUTE3_TOP     (6 | (34 << 8))
 #define MAP_ROUTE3_BOTTOM  (7 | (34 << 8))
+#define MAP_OAKEN_CITY     (8 | (34 << 8))
 
 // Map Group 35
 #define MAP_TWISTED_WOODS     (0 | (35 << 8))
@@ -621,11 +622,21 @@
 #define MAP_STARGAZE_POINT_STARGAZE_FLORISTS (13 | (37 << 8))
 
 // Map Group 38
-#define MAP_FABLE_SQUARE_POKEMON_CENTER (0 | (38 << 8))
+#define MAP_FABLE_SQUARE_POKEMON_CENTER    (0 | (38 << 8))
+#define MAP_FABLE_SQUARE_HOUSE1            (1 | (38 << 8))
+#define MAP_FABLE_SQUARE_HOUSE2            (2 | (38 << 8))
+#define MAP_FABLE_SQUARE_HOUSE3            (3 | (38 << 8))
+#define MAP_FABLE_SQUARE_REGISTRATION_HALL (4 | (38 << 8))
+#define MAP_FABLE_SQUARE_POKEMON_FAN_CLUB  (5 | (38 << 8))
 
 // Map Group 39
+#define MAP_DOTSY_CITY_POKEMON_CENTER (0 | (39 << 8))
+#define MAP_DOTSY_CITY_HOUSE1         (1 | (39 << 8))
+#define MAP_DOTSY_CITY_HOUSE2         (2 | (39 << 8))
+#define MAP_DOTSY_CITY_HOUSE3         (3 | (39 << 8))
 
 // Map Group 40
+#define MAP_OAKEN_CITY_POKEMON_CENTER (0 | (40 << 8))
 
 #define MAP_GROUPS_COUNT 41
 

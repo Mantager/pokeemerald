@@ -9,7 +9,7 @@
         {
             "direction": "down",
             "map": "MAP_FABLE_SQUARE",
-            "offset": -4
+            "offset": -12
         }
     ],
     "coord_events": [

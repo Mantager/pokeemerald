@@ -5,7 +5,13 @@
     "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
     "bg_events": [
     ],
-    "connections": null,
+    "connections": [
+        {
+            "direction": "down",
+            "map": "MAP_OAKEN_CITY",
+            "offset": -2
+        }
+    ],
     "coord_events": [
     ],
     "id": "MAP_ROUTE3_BOTTOM",

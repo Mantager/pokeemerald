@@ -1113,3 +1113,25 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/GloomyCavern_B1F/scripts.inc"
 
 	.include "data/maps/Route3_Bottom/scripts.inc"
+
+	.include "data/maps/OakenCity/scripts.inc"
+
+	.include "data/maps/FableSquare_House1/scripts.inc"
+
+	.include "data/maps/FableSquare_House2/scripts.inc"
+
+	.include "data/maps/FableSquare_House3/scripts.inc"
+
+	.include "data/maps/FableSquare_RegistrationHall/scripts.inc"
+
+	.include "data/maps/DotsyCity_PokemonCenter/scripts.inc"
+
+	.include "data/maps/OakenCity_PokemonCenter/scripts.inc"
+
+	.include "data/maps/DotsyCity_House1/scripts.inc"
+
+	.include "data/maps/FableSquare_PokemonFanClub/scripts.inc"
+
+	.include "data/maps/DotsyCity_House2/scripts.inc"
+
+	.include "data/maps/DotsyCity_House3/scripts.inc"

@@ -14,7 +14,7 @@
         {
             "direction": "up",
             "map": "MAP_ROUTE2",
-            "offset": 4
+            "offset": 12
         }
     ],
     "coord_events": [

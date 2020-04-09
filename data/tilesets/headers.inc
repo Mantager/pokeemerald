@@ -841,3 +841,14 @@ gTileset_Dotsy::
 	.4byte gMetatiles_Dotsy
 	.4byte gMetatileAttributes_Dotsy
 	.4byte NULL
+
+	.align 2
+gTileset_Oaken::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_Oaken
+	.4byte gTilesetPalettes_Oaken
+	.4byte gMetatiles_Oaken
+	.4byte gMetatileAttributes_Oaken
+	.4byte NULL

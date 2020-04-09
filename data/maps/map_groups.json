@@ -529,7 +529,8 @@
         "Route2",
         "DotsyCity",
         "Route3_Top",
-        "Route3_Bottom"
+        "Route3_Bottom",
+        "OakenCity"
     ],
     "gMapGroup35": [
         "TwistedWoods",
@@ -555,9 +556,18 @@
         "StargazePoint_StargazeFlorists"
     ],
     "gMapGroup38": [
-        "FableSquare_PokemonCenter"
+        "FableSquare_PokemonCenter",
+        "FableSquare_House1",
+        "FableSquare_House2",
+        "FableSquare_House3",
+        "FableSquare_RegistrationHall",
+        "FableSquare_PokemonFanClub"
     ],
     "gMapGroup39": [
+        "DotsyCity_PokemonCenter",
+        "DotsyCity_House1",
+        "DotsyCity_House2",
+        "DotsyCity_House3"
     ],
     "gMapGroup4": [
         "LavaridgeTown_HerbShop",
@@ -569,6 +579,7 @@
         "LavaridgeTown_PokemonCenter_2F"
     ],
     "gMapGroup40": [
+        "OakenCity_PokemonCenter"
     ],
     "gMapGroup5": [
         "FallarborTown_Mart",
