@@ -155,7 +155,7 @@ SydneyCity_MantlesHouse_Text_SoSorryForTangent:
 	.string "What was it you two came here for?$"
 
 SydneyCity_MantlesHouse_Text_PleaseGiveAPokemon:
-	.string "We want to compete in the Wisteria\n"
+	.string "We want to compete in the Sting\n"
 	.string "Tournament, but we have no Pokémon\l"
 	.string "to battle with…\p"
 	.string "And well, we heard you've been giving\n"

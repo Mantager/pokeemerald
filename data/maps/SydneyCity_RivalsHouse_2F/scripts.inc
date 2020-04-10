@@ -71,11 +71,11 @@ SydneyCity_RivalsHouse_2F_Text_ThereYouAre:
 	.string "Hey, check this out!$"
 
 SydneyCity_RivalsHouse_2F_Text_TVAnnouncement:
-	.string "The Wisteria Tournament!\p"
-	.string "An annual tournament that aims\n"
+	.string "The Sting Tournament!\p"
+	.string "A new national tournament that aims\n"
 	.string "to find the best Trainer in Tomen!\p"
 	.string "Registrations are now open for the\n"
-	.string "Wisteria Tournament's qualifiers.\p"
+	.string "Sting Tournament's qualifiers.\p"
 	.string "This year's lead commentor, DJ Durian,\n"
 	.string "is here to give more information!$"
 

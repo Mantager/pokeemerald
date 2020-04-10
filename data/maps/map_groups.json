@@ -567,7 +567,12 @@
         "DotsyCity_PokemonCenter",
         "DotsyCity_House1",
         "DotsyCity_House2",
-        "DotsyCity_House3"
+        "DotsyCity_House3",
+        "DotsyCity_Flat1_1F",
+        "DotsyCity_Flat1_2F",
+        "DotsyCity_Flat2_1F",
+        "DotsyCity_Flat2_2F",
+        "DotsyCity_TownHall"
     ],
     "gMapGroup4": [
         "LavaridgeTown_HerbShop",

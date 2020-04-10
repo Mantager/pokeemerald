@@ -17,9 +17,22 @@
     "id": "MAP_DOTSY_CITY",
     "layout": "LAYOUT_DOTSY_CITY",
     "map_type": "MAP_TYPE_CITY",
-    "music": "MUS_DAN02",
+    "music": "MUS_MACHI_S3",
     "name": "DotsyCity",
     "object_events": [
+        {
+            "elevation": 3,
+            "flag": "FLAG_ITEM_DOTSY_CITY_SMOKE_BALL",
+            "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "script": "DotsyCity_EventScript_ItemSmokeBall",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 24,
+            "y": 10
+        }
     ],
     "region_map_section": "MAPSEC_DOTSY_CITY",
     "requires_flash": false,
@@ -52,6 +65,55 @@
             "elevation": 0,
             "x": 2,
             "y": 18
+        },
+        {
+            "dest_map": "MAP_DOTSY_CITY_POKEMON_CENTER",
+            "dest_warp_id": 1,
+            "elevation": 0,
+            "x": 15,
+            "y": 23
+        },
+        {
+            "dest_map": "MAP_DOTSY_CITY_HOUSE1",
+            "dest_warp_id": 0,
+            "elevation": 0,
+            "x": 10,
+            "y": 23
+        },
+        {
+            "dest_map": "MAP_DOTSY_CITY_HOUSE2",
+            "dest_warp_id": 0,
+            "elevation": 0,
+            "x": 35,
+            "y": 21
+        },
+        {
+            "dest_map": "MAP_DOTSY_CITY_HOUSE3",
+            "dest_warp_id": 0,
+            "elevation": 0,
+            "x": 43,
+            "y": 12
+        },
+        {
+            "dest_map": "MAP_DOTSY_CITY_FLAT1_1F",
+            "dest_warp_id": 0,
+            "elevation": 0,
+            "x": 25,
+            "y": 23
+        },
+        {
+            "dest_map": "MAP_DOTSY_CITY_FLAT2_1F",
+            "dest_warp_id": 0,
+            "elevation": 0,
+            "x": 21,
+            "y": 11
+        },
+        {
+            "dest_map": "MAP_DOTSY_CITY_TOWN_HALL",
+            "dest_warp_id": 0,
+            "elevation": 0,
+            "x": 29,
+            "y": 11
         }
     ],
     "weather": "WEATHER_SUNNY"

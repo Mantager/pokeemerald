@@ -652,6 +652,7 @@ EventScript_SetBrineyLocation_Route109:: @ 8271918
 	.include "data/scripts/pkmn_center_nurse.inc"
 	.include "data/scripts/pkmn_center_mart.inc"
 	.include "data/scripts/pkmn_center_searcher.inc"
+	.include "data/scripts/field_trainers.inc"
 	.include "data/scripts/obtain_item.inc"
 	.include "data/scripts/record_mix.inc"
 	.include "data/scripts/pc.inc"
@@ -835,16 +836,17 @@ Common_EventScript_PlayerHandedOverTheItem:: @ 82723E4
 	.include "data/text/pc.inc"
 	.include "data/text/pkmn_center_nurse.inc"
 	.include "data/text/mart_clerk.inc"
+	.include "data/text/field_trainers.inc"
 	.include "data/text/obtain_item.inc"
 
 @ The below and surf.inc could be split into some text/notices.inc
 gText_PokemartSign:: @ 8272B6A
 	.string "“Selected items for your convenience!”\n"
-	.string "POKéMON MART$"
+	.string "Pokémon Mart$"
 
 gText_PokemonCenterSign:: @ 8272B9E
 	.string "“Rejuvenate your tired partners!”\n"
-	.string "POKéMON CENTER$"
+	.string "Pokémon Center$"
 
 gText_MomOrDadMightLikeThisProgram:: @ 8272BCF
 	.string "{STR_VAR_1} might like this program.\n"
@@ -864,12 +866,12 @@ gText_SelectWithoutRegisteredItem:: @ 8272C98
 	.string "registered to SELECT for easy use.$"
 
 gText_PokemonTrainerSchoolEmail:: @ 8272CD5
-	.string "There's an e-mail from POKéMON TRAINER\n"
+	.string "There's an e-mail from Pokémon TRAINER\n"
 	.string "SCHOOL.\p"
 	.string "… … … … … …\p"
-	.string "A POKéMON may learn up to four moves.\p"
+	.string "A Pokémon may learn up to four moves.\p"
 	.string "A TRAINER's expertise is tested on the\n"
-	.string "move sets chosen for POKéMON.\p"
+	.string "move sets chosen for Pokémon.\p"
 	.string "… … … … … …$"
 
 gText_PlayerHouseBootPC:: @ 8272D87
@@ -884,7 +886,7 @@ gText_UnusedNicknameReceivedPokemon:: @ 8272DB3
 
 gText_PlayerWhitedOut:: @ 8272DE3
 	.string "{PLAYER} is out of usable\n"
-	.string "POKéMON!\p{PLAYER} whited out!$"
+	.string "Pokémon!\p{PLAYER} whited out!$"
 
 gText_RegisteredTrainerinPokeNav:: @ 8272E0F
 	.string "Registered {STR_VAR_1} {STR_VAR_2}\n"
@@ -900,12 +902,12 @@ gText_ComeBackWithSecretPower:: @ 8272E30
 	.string "you good stuff in secrecy.$"
 
 gText_PokerusExplanation:: @ 8272F07
-	.string "Your POKéMON may be infected with\n"
+	.string "Your Pokémon may be infected with\n"
 	.string "POKéRUS.\p"
 	.string "Little is known about the POKéRUS\n"
 	.string "except that they are microscopic life-\l"
-	.string "forms that attach to POKéMON.\p"
-	.string "While infected, POKéMON are said to\n"
+	.string "forms that attach to Pokémon.\p"
+	.string "While infected, Pokémon are said to\n"
 	.string "grow exceptionally well.$"
 
 	.include "data/text/surf.inc"
@@ -919,7 +921,7 @@ gText_BigHoleInTheWall:: @ 827304E
 
 gText_SorryWirelessClubAdjustments:: @ 827306F
 	.string "I'm terribly sorry.\n"
-	.string "The POKéMON WIRELESS CLUB is\l"
+	.string "The Pokémon WIRELESS CLUB is\l"
 	.string "undergoing adjustments now.$"
 
 gText_UndergoingAdjustments:: @ 82730BC
@@ -1135,3 +1137,13 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/DotsyCity_House2/scripts.inc"
 
 	.include "data/maps/DotsyCity_House3/scripts.inc"
+
+	.include "data/maps/DotsyCity_Flat1_1F/scripts.inc"
+
+	.include "data/maps/DotsyCity_Flat1_2F/scripts.inc"
+
+	.include "data/maps/DotsyCity_Flat2_1F/scripts.inc"
+
+	.include "data/maps/DotsyCity_Flat2_2F/scripts.inc"
+
+	.include "data/maps/DotsyCity_TownHall/scripts.inc"

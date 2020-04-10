@@ -634,7 +634,7 @@ StargazePoint_Text_LetsHaveABattle:
 StargazePoint_Text_DrMantleIsGreat:
 	.string "Man, Dr. Mantle is great.\p"
 	.string "Now we can go and compete in the\n"
-	.string "Wisteria Tournament!\p"
+	.string "Sting Tournament!\p"
 	.string "I'm gonna go show my dad my new Pokémon!\n"
 	.string "You should show your mom your {STR_VAR_1}!$"
 

@@ -851,4 +851,4 @@ gTileset_Oaken::
 	.4byte gTilesetPalettes_Oaken
 	.4byte gMetatiles_Oaken
 	.4byte gMetatileAttributes_Oaken
-	.4byte NULL
+	.4byte InitTilesetAnim_Oaken

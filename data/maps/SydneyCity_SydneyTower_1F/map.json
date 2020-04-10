@@ -14,6 +14,19 @@
     "music": "MUS_RG_KUCHIBA",
     "name": "SydneyCity_SydneyTower_1F",
     "object_events": [
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "OBJ_EVENT_GFX_LINK_RECEPTIONIST",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "script": "SydneyCity_SydneyTower_1F_EventScript_Receptionist",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 5,
+            "y": 2
+        }
     ],
     "region_map_section": "MAPSEC_SYDNEY_CITY",
     "requires_flash": false,

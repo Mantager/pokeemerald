@@ -11,14 +11,28 @@
     "id": "MAP_FABLE_SQUARE_POKEMON_FAN_CLUB",
     "layout": "LAYOUT_FABLE_SQUARE_POKEMON_FAN_CLUB",
     "map_type": "MAP_TYPE_INDOOR",
-    "music": "MUS_DAN02",
+    "music": "MUS_MACHI_S4",
     "name": "FableSquare_PokemonFanClub",
     "object_events": [
     ],
     "region_map_section": "MAPSEC_FABLE_SQUARE",
     "requires_flash": false,
-    "show_map_name": true,
+    "show_map_name": false,
     "warp_events": [
+        {
+            "dest_map": "MAP_FABLE_SQUARE",
+            "dest_warp_id": 5,
+            "elevation": 0,
+            "x": 6,
+            "y": 10
+        },
+        {
+            "dest_map": "MAP_FABLE_SQUARE",
+            "dest_warp_id": 5,
+            "elevation": 0,
+            "x": 7,
+            "y": 10
+        }
     ],
-    "weather": "WEATHER_SUNNY"
+    "weather": "WEATHER_NONE"
 }

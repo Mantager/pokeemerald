@@ -20,6 +20,58 @@
     "music": "MUS_DOORO_X3",
     "name": "Route3_Top",
     "object_events": [
+        {
+            "elevation": 3,
+            "flag": "FLAG_ITEM_ROUTE_3_AWAKENING",
+            "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "script": "Route3_Top_EventScript_ItemAwakening",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 9,
+            "y": 12
+        },
+        {
+            "elevation": 3,
+            "flag": "FLAG_ITEM_ROUTE_3_SUPER_POTION",
+            "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "script": "Route3_Top_EventScript_ItemSuperPotion",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 0,
+            "y": 21
+        },
+        {
+            "elevation": 3,
+            "flag": "FLAG_ITEM_ROUTE_3_TM_22",
+            "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "script": "Route3_Top_EventScript_ItemTM22",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 15,
+            "y": 38
+        },
+        {
+            "elevation": 3,
+            "flag": "FLAG_ITEM_ROUTE_3_REPEL",
+            "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "script": "Route3_Top_EventScript_ItemRepel",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 2,
+            "y": 53
+        }
     ],
     "region_map_section": "MAPSEC_ROUTE_3_NORTH",
     "requires_flash": false,

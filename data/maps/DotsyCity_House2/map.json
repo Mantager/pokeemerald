@@ -11,14 +11,28 @@
     "id": "MAP_DOTSY_CITY_HOUSE2",
     "layout": "LAYOUT_DOTSY_CITY_HOUSE2",
     "map_type": "MAP_TYPE_INDOOR",
-    "music": "MUS_DAN02",
+    "music": "MUS_MACHI_S3",
     "name": "DotsyCity_House2",
     "object_events": [
     ],
     "region_map_section": "MAPSEC_DOTSY_CITY",
     "requires_flash": false,
-    "show_map_name": true,
+    "show_map_name": false,
     "warp_events": [
+        {
+            "dest_map": "MAP_DOTSY_CITY",
+            "dest_warp_id": 6,
+            "elevation": 0,
+            "x": 5,
+            "y": 8
+        },
+        {
+            "dest_map": "MAP_DOTSY_CITY",
+            "dest_warp_id": 6,
+            "elevation": 0,
+            "x": 6,
+            "y": 8
+        }
     ],
-    "weather": "WEATHER_SUNNY"
+    "weather": "WEATHER_NONE"
 }

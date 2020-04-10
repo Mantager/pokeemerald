@@ -6,7 +6,7 @@ RustboroCity_Gym_EventScript_Roxanne:: @ 8212F31
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	compare VAR_RESULT, TRUE
 	goto_if_eq RustboroCity_Gym_EventScript_RoxanneRematch
-	goto_if_unset FLAG_RECEIVED_TM39, RustboroCity_Gym_EventScript_GiveRockTomb
+	goto_if_unset FLAG_RECEIVED_TM01, RustboroCity_Gym_EventScript_GiveRockTomb
 	msgbox RustboroCity_Gym_Text_RoxannePostBattle, MSGBOX_DEFAULT
 	release
 	end
@@ -28,10 +28,10 @@ RustboroCity_Gym_EventScript_RoxanneDefeated:: @ 8212F66
 	end
 
 RustboroCity_Gym_EventScript_GiveRockTomb:: @ 8212FA4
-	giveitem ITEM_TM39
+	giveitem ITEM_TM01
 	compare VAR_RESULT, 0
 	goto_if_eq Common_EventScript_ShowBagIsFull
-	setflag FLAG_RECEIVED_TM39
+	setflag FLAG_RECEIVED_TM01
 	msgbox RustboroCity_Gym_Text_ExplainRockTomb, MSGBOX_DEFAULT
 	release
 	end
@@ -211,7 +211,7 @@ RustboroCity_Gym_Text_StoneBadgeInfoTakeThis: @ 8213816
 	.string "Please take this with you, too.$"
 
 RustboroCity_Gym_Text_ExplainRockTomb: @ 82138B1
-	.string "That TECHNICAL MACHINE, TM39,\n"
+	.string "That TECHNICAL MACHINE, TM01,\n"
 	.string "contains ROCK TOMB.\p"
 	.string "It not only inflicts damage by dropping\n"
 	.string "rocks, it also lowers SPEED.\p"

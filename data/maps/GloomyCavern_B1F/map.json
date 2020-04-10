@@ -11,7 +11,7 @@
     "id": "MAP_GLOOMY_CAVERN_B1F",
     "layout": "LAYOUT_GLOOMY_CAVERN_B1F",
     "map_type": "MAP_TYPE_UNDERGROUND",
-    "music": "MUS_DAN02",
+    "music": "MUS_RG_HANADA",
     "name": "GloomyCavern_B1F",
     "object_events": [
     ],

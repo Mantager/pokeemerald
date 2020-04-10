@@ -110,7 +110,7 @@ SydneyCity_PlayersHouse_1F_Text_WonderWhyRivalCame:
 SydneyCity_PlayersHouse_1F_Text_CompetingInTournament:
 	.string "Huh? Dr. Mantle gave you a Pokémon?\p"
 	.string "And now you're going to enter the\n"
-	.string "Wisteria Tournament?\p"
+	.string "Sting Tournament?\p"
 	.string "That's great, {PLAYER}!\n"
 	.string "I'm not shocked, though.\p"
 	.string "Your dad was a strong Trainer, so\n"

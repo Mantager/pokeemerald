@@ -634,6 +634,11 @@
 #define MAP_DOTSY_CITY_HOUSE1         (1 | (39 << 8))
 #define MAP_DOTSY_CITY_HOUSE2         (2 | (39 << 8))
 #define MAP_DOTSY_CITY_HOUSE3         (3 | (39 << 8))
+#define MAP_DOTSY_CITY_FLAT1_1F       (4 | (39 << 8))
+#define MAP_DOTSY_CITY_FLAT1_2F       (5 | (39 << 8))
+#define MAP_DOTSY_CITY_FLAT2_1F       (6 | (39 << 8))
+#define MAP_DOTSY_CITY_FLAT2_2F       (7 | (39 << 8))
+#define MAP_DOTSY_CITY_TOWN_HALL      (8 | (39 << 8))
 
 // Map Group 40
 #define MAP_OAKEN_CITY_POKEMON_CENTER (0 | (40 << 8))
