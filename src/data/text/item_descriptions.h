@@ -3,19 +3,19 @@ static const u8 sDummyDesc[] = _(
 
 // Pokeballs
 static const u8 sMasterBallDesc[] = _(
-    "The best BALL that\n"
+    "The best Ball that\n"
     "catches a Pokémon\n"
     "without fail.");
 
 static const u8 sUltraBallDesc[] = _(
-    "A better BALL with\n"
+    "A better Ball with\n"
     "a higher catch rate\n"
-    "than a GREAT BALL.");
+    "than a Great Ball.");
 
 static const u8 sGreatBallDesc[] = _(
-    "A good BALL with a\n"
+    "A good Ball with a\n"
     "higher catch rate\n"
-    "than a POKé BALL.");
+    "than a Poké Ball.");
 
 static const u8 sPokeBallDesc[] = _(
     "A tool used for\n"
@@ -23,42 +23,42 @@ static const u8 sPokeBallDesc[] = _(
     "Pokémon.");
 
 static const u8 sSafariBallDesc[] = _(
-    "A special BALL that\n"
+    "A special Ball that\n"
     "is used only in the\n"
-    "SAFARI ZONE.");
+    "Safari Zone.");
 
 static const u8 sNetBallDesc[] = _(
-    "A BALL that works\n"
-    "well on WATER- and\n"
-    "BUG-type Pokémon.");
+    "A Ball that works\n"
+    "well on Water- and\n"
+    "Bug-type Pokémon.");
 
 static const u8 sDiveBallDesc[] = _(
-    "A BALL that works\n"
+    "A Ball that works\n"
     "better on Pokémon\n"
     "on the ocean floor.");
 
 static const u8 sNestBallDesc[] = _(
-    "A BALL that works\n"
+    "A Ball that works\n"
     "better on weaker\n"
     "Pokémon.");
 
 static const u8 sRepeatBallDesc[] = _(
-    "A BALL that works\n"
+    "A Ball that works\n"
     "better on Pokémon\n"
     "caught before.");
 
 static const u8 sTimerBallDesc[] = _(
-    "A BALL that gains\n"
+    "A Ball that gains\n"
     "power in battles\n"
     "taking many turns.");
 
 static const u8 sLuxuryBallDesc[] = _(
-    "A cozy BALL that\n"
+    "A cozy Ball that\n"
     "makes Pokémon\n"
     "more friendly.");
 
 static const u8 sPremierBallDesc[] = _(
-    "A rare BALL made\n"
+    "A rare Ball made\n"
     "in commemoration\n"
     "of some event.");
 
@@ -447,7 +447,7 @@ static const u8 sMaxRepelDesc[] = _(
     "steps.");
 
 static const u8 sAbilityCapsuleDesc[] = _(
-    "Switches a POKé-\n"
+    "Switches a Poké-\n"
     "MON's ability.");
 
 static const u8 sEscapeRopeDesc[] = _(
@@ -1034,7 +1034,7 @@ static const u8 sKingsRockDesc[] = _(
 static const u8 sSilverPowderDesc[] = _(
     "A hold item that\n"
     "raises the power of\n"
-    "BUG-type moves.");
+    "Bug-type moves.");
 
 static const u8 sAmuletCoinDesc[] = _(
     "Doubles money in\n"
@@ -1194,7 +1194,7 @@ static const u8 sMagnetDesc[] = _(
 static const u8 sMysticWaterDesc[] = _(
     "A hold item that\n"
     "raises the power of\n"
-    "WATER-type moves.");
+    "Water-type moves.");
 
 static const u8 sSharpBeakDesc[] = _(
     "A hold item that\n"
@@ -1278,7 +1278,7 @@ static const u8 sPowerWeightDesc[] = _(
 static const u8 sSeaIncenseDesc[] = _(
     "A hold item that\n"
     "slightly boosts\n"
-    "WATER-type moves.");
+    "Water-type moves.");
 
 static const u8 sLaxIncenseDesc[] = _(
     "A hold item that\n"
@@ -1303,7 +1303,7 @@ static const u8 sFullIncenseDesc[] = _(
 static const u8 sWaveIncenseDesc[] = _(
     "A hold item that\n"
     "slightly boosts\n"
-    "WATER-type moves.");
+    "Water-type moves.");
 
 static const u8 sRoseIncenseDesc[] = _(
     "A hold item that\n"
@@ -1597,7 +1597,7 @@ static const u8 sTM17Desc[] = _(
 
 static const u8 sTM18Desc[] = _(
     "Raises the power of\n"
-    "WATER-type moves\n"
+    "Water-type moves\n"
     "for 5 turns.");
 
 static const u8 sTM19Desc[] = _(
@@ -1844,12 +1844,12 @@ static const u8 sLiftKeyDesc[] = _(
 
 static const u8 sArmorFossilDesc[] = _(
     "A piece of a\n"
-    "prehistoric POKé-\n"
+    "prehistoric Poké-\n"
     "MON's head.");
 
 static const u8 sSkullFossilDesc[] = _(
     "A piece of a\n"
-    "prehistoric POKé-\n"
+    "prehistoric Poké-\n"
     "MON's head.");
 
 static const u8 sHelixFossilDesc[] = _(
@@ -1864,12 +1864,12 @@ static const u8 sDomeFossilDesc[] = _(
 
 static const u8 sCoverFossilDesc[] = _(
     "A piece of a\n"
-    "prehistoric POKé-\n"
+    "prehistoric Poké-\n"
     "MON's back.");
 
 static const u8 sPlumeFossilDesc[] = _(
     "A piece of a\n"
-    "prehistoric POKé-\n"
+    "prehistoric Poké-\n"
     "MON's wing.");
 
 static const u8 sJawFossilDesc[] = _(
@@ -2027,12 +2027,12 @@ static const u8 sQuickPowderDesc[] = _(
 static const u8 sFocusSashDesc[] = _(
     "If the holder has\n"
     "full HP, it endures\n"
-    "KO attacks with 1 HP.");
+    "KOs with 1 HP.");
 
 static const u8 sZoomLensDesc[] = _(
     "If the holder moves\n"
     "after the foe, its\n"
-    "accuracy is boosted.");
+    "accuracy's boosted.");
 
 static const u8 sMetronomeDesc[] = _(
     "A held item that\n"

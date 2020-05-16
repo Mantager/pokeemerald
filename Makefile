@@ -1,6 +1,8 @@
 TOOLCHAIN := $(DEVKITARM)
 COMPARE ?= 0
 
+include config.mk
+
 ifeq ($(CC),)
 HOSTCC := gcc
 else
@@ -31,7 +33,7 @@ else
 EXE :=
 endif
 
-TITLE       := POKEMON EMER
+TITLE       := POKEMON GAI1
 GAME_CODE   := BPEE
 MAKER_CODE  := 01
 REVISION    := 0
@@ -64,8 +66,8 @@ GCC_VER = $(shell $(CC) -dumpversion)
 ifeq ($(MODERN),0)
 CC1             := tools/agbcc/bin/agbcc$(EXE)
 override CFLAGS += -mthumb-interwork -Wimplicit -Wparentheses -Werror -O2 -fhex-asm
-ROM := pokeemerald.gba
-OBJ_DIR := build/emerald
+ROM := poke$(BUILD_NAME).gba
+OBJ_DIR := build/$(BUILD_NAME)
 LIBPATH := -L ../../tools/agbcc/lib
 else
 CC1              = $(shell $(CC) --print-prog-name=cc1) -quiet
@@ -77,7 +79,7 @@ endif
 
 CPPFLAGS := -iquote include -iquote $(GFLIB_SUBDIR) -Wno-trigraphs -DMODERN=$(MODERN)
 ifeq ($(MODERN),0)
-CPPFLAGS += -I tools/agbcc/include -I tools/agbcc
+CPPFLAGS += -I tools/agbcc/include -I tools/agbcc -iquote include -nostdinc -undef -D$(GAME_VERSION) -D$(GAME_LANGUAGE) -DREVISION=$(GAME_REVISION) -DDEBUG=$(DEBUG)
 endif
 
 LDFLAGS = -Map ../../$(MAP)
@@ -329,3 +331,6 @@ berry_fix:
 
 libagbsyscall:
 	@$(MAKE) -C libagbsyscall TOOLCHAIN=$(TOOLCHAIN)
+
+en:     ; @$(MAKE) GAME_LANGUAGE=ENGLISH
+jp:     ; @$(MAKE) GAME_LANGUAGE=JAPANESE

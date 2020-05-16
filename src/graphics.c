@@ -1646,12 +1646,18 @@ const u16 gTitleScreenEmeraldVersionPal[] = INCBIN_U16("graphics/title_screen/em
 
 const u32 gUnknown_08DDE458[] = INCBIN_U32("graphics/title_screen/title_screen1.bin.lz");
 
-const u32 gTitleScreenPokemonLogoGfx[] = INCBIN_U32("graphics/title_screen/gaidenone_logo.8bpp.lz");
+#ifdef ENGLISH
+const u32 gTitleScreenPokemonLogoGfx[] = INCBIN_U32("graphics/title_screen/gaidenone_logo_en.8bpp.lz");
+const u32 gTitleScreenPressStartGfx[] = INCBIN_U32("graphics/title_screen/press_start.4bpp.lz");
+#else
+const u32 gTitleScreenPokemonLogoGfx[] = INCBIN_U32("graphics/title_screen/gaidenone_logo_jp.8bpp.lz");
+const u32 gTitleScreenPressStartGfx[] = INCBIN_U32("graphics/title_screen/push_start_button.4bpp.lz");
+#endif
 
 const u32 gTitleScreenEmeraldVersionGfx[] = INCBIN_U32("graphics/title_screen/emerald_version.8bpp.lz");
 
 const u16 gTitleScreenPressStartPal[] = INCBIN_U16("graphics/title_screen/press_start.gbapal");
-const u32 gTitleScreenPressStartGfx[] = INCBIN_U32("graphics/title_screen/press_start.4bpp.lz");
+
 
 const u32 gUnknown_08DE0644[] = INCBIN_U32("graphics/title_screen/title_screen2.bin.lz");
 

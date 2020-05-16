@@ -1901,63 +1901,63 @@
                         "encounter_rate": 5,
                         "mons": [
                             {
-                                "max_level": 15,
-                                "min_level": 15,
+                                "max_level": 16,
+                                "min_level": 16,
                                 "species": "SPECIES_DIGLETT"
                             },
                             {
-                                "max_level": 15,
-                                "min_level": 15,
+                                "max_level": 16,
+                                "min_level": 16,
                                 "species": "SPECIES_BALTOY"
                             },
                             {
-                                "max_level": 15,
-                                "min_level": 15,
+                                "max_level": 16,
+                                "min_level": 16,
                                 "species": "SPECIES_GEODUDE"
                             },
                             {
-                                "max_level": 15,
-                                "min_level": 15,
+                                "max_level": 16,
+                                "min_level": 16,
                                 "species": "SPECIES_DIGLETT"
                             },
                             {
-                                "max_level": 14,
-                                "min_level": 14,
+                                "max_level": 17,
+                                "min_level": 17,
                                 "species": "SPECIES_BALTOY"
                             },
                             {
-                                "max_level": 14,
-                                "min_level": 14,
+                                "max_level": 17,
+                                "min_level": 17,
                                 "species": "SPECIES_GEODUDE"
                             },
                             {
-                                "max_level": 15,
-                                "min_level": 15,
+                                "max_level": 17,
+                                "min_level": 17,
                                 "species": "SPECIES_DIGLETT"
                             },
                             {
-                                "max_level": 15,
-                                "min_level": 15,
+                                "max_level": 17,
+                                "min_level": 17,
                                 "species": "SPECIES_SLUGMA"
                             },
                             {
-                                "max_level": 16,
-                                "min_level": 16,
+                                "max_level": 18,
+                                "min_level": 18,
                                 "species": "SPECIES_YAMASK"
                             },
                             {
-                                "max_level": 16,
-                                "min_level": 16,
+                                "max_level": 18,
+                                "min_level": 18,
                                 "species": "SPECIES_YAMASK"
                             },
                             {
-                                "max_level": 16,
-                                "min_level": 16,
+                                "max_level": 18,
+                                "min_level": 18,
                                 "species": "SPECIES_YAMASK"
                             },
                             {
-                                "max_level": 16,
-                                "min_level": 16,
+                                "max_level": 18,
+                                "min_level": 18,
                                 "species": "SPECIES_YAMASK"
                             }
                         ]

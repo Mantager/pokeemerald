@@ -544,13 +544,13 @@ static const struct TrainerMonItemDefaultMoves sParty_Huizhong[] = {
     .iv = 100,
     .lvl = 23,
     .species = SPECIES_DUGTRIO,
-    .heldItem = ITEM_KEE_BERRY
+    .heldItem = ITEM_PASSHO_BERRY
     },
     {
     .iv = 100,
     .lvl = 25,
     .species = SPECIES_DUGTRIO,
-    .heldItem = ITEM_MARANGA_BERRY
+    .heldItem = ITEM_RINDO_BERRY
     }
 };
 
@@ -12772,7 +12772,7 @@ static const struct TrainerMonItemDefaultMoves sParty_Bolin[] = {
     .iv = 0,
     .lvl = 15,
     .species = SPECIES_GRIMER,
-    .heldItem = ITEM_ROWAP_BERRY
+    .heldItem = ITEM_APICOT_BERRY
     }
 };
 
@@ -12796,7 +12796,7 @@ static const struct TrainerMonItemDefaultMoves sParty_Kang[] = {
     .iv = 0,
     .lvl = 16,
     .species = SPECIES_BIBAREL,
-    .heldItem = ITEM_ROWAP_BERRY
+    .heldItem = ITEM_GANLON_BERRY
     }
 };
 
@@ -12814,7 +12814,7 @@ static const struct TrainerMonItemDefaultMoves sParty_Xiu[] = {
     .iv = 0,
     .lvl = 16,
     .species = SPECIES_CHINGLING,
-    .heldItem = ITEM_MARANGA_BERRY
+    .heldItem = ITEM_COLBUR_BERRY
     },
     {
     .iv = 0,
@@ -12994,42 +12994,42 @@ static const struct TrainerMonItemDefaultMoves sParty_Rue[] = {
 
 static const struct TrainerMonItemCustomMoves sParty_Arum[] = {
     {
-    .iv = 75,
-    .lvl = 26,
+    .iv = 125,
+    .lvl = 25,
     .species = SPECIES_SMEARGLE,
     .heldItem = ITEM_LANSAT_BERRY,
-    .moves = {MOVE_SPORE, MOVE_LEECH_SEED, MOVE_SHADOW_BALL, MOVE_DOUBLE_EDGE},
+    .moves = {MOVE_WILL_O_WISP, MOVE_LEECH_SEED, MOVE_SHADOW_BALL, MOVE_DOUBLE_EDGE},
     .abilityNum = 0
     },
     {
-    .iv = 75,
-    .lvl = 26,
+    .iv = 125,
+    .lvl = 25,
     .species = SPECIES_YAMASK,
     .heldItem = ITEM_APICOT_BERRY,
     .moves = {MOVE_WILL_O_WISP, MOVE_HEX, MOVE_NIGHT_SHADE, MOVE_DISABLE},
     .abilityNum = 0
     },
     {
-    .iv = 75,
-    .lvl = 26,
+    .iv = 125,
+    .lvl = 25,
     .species = SPECIES_BALTOY,
     .heldItem = ITEM_KASIB_BERRY,
     .moves = {MOVE_PSYBEAM, MOVE_EARTH_POWER, MOVE_COSMIC_POWER, MOVE_ROCK_TOMB},
     .abilityNum = 0
     },
     {
-    .iv = 75,
-    .lvl = 26,
+    .iv = 125,
+    .lvl = 25,
     .species = SPECIES_DUGTRIO,
     .heldItem = ITEM_PASSHO_BERRY,
     .moves = {MOVE_TRI_ATTACK, MOVE_DIG, MOVE_SAND_ATTACK, MOVE_NIGHT_SLASH},
     .abilityNum = 1
     },
     {
-    .iv = 75,
-    .lvl = 28,
+    .iv = 125,
+    .lvl = 27,
     .species = SPECIES_TORKOAL,
-    .heldItem = ITEM_CUSTAP_BERRY,
+    .heldItem = ITEM_CHILAN_BERRY,
     .moves = {MOVE_LAVA_PLUME, MOVE_AMNESIA, MOVE_BODY_SLAM, MOVE_SHELL_SMASH},
     .abilityNum = 1
     }
@@ -13037,7 +13037,7 @@ static const struct TrainerMonItemCustomMoves sParty_Arum[] = {
 
 static const struct TrainerMonItemCustomMoves sParty_Log2[] = {
     {
-    .iv = 100,
+    .iv = 150,
     .lvl = 26,
     .species = SPECIES_GRAVELER,
     .heldItem = ITEM_RINDO_BERRY,
@@ -13045,7 +13045,7 @@ static const struct TrainerMonItemCustomMoves sParty_Log2[] = {
     .abilityNum = 0
     },
     {
-    .iv = 100,
+    .iv = 150,
     .lvl = 26,
     .species = SPECIES_STUNFISK,
     .heldItem = ITEM_SHUCA_BERRY,
@@ -13053,7 +13053,7 @@ static const struct TrainerMonItemCustomMoves sParty_Log2[] = {
     .abilityNum = 0
     },
     {
-    .iv = 100,
+    .iv = 150,
     .lvl = 26,
     .species = SPECIES_BIBAREL,
     .heldItem = ITEM_WACAN_BERRY,
@@ -13061,26 +13061,26 @@ static const struct TrainerMonItemCustomMoves sParty_Log2[] = {
     .abilityNum = 2
     },
     {
-    .iv = 100,
-    .lvl = 27,
+    .iv = 150,
+    .lvl = 26,
     .species = SPECIES_PANCHAM,
-    .heldItem = ITEM_ROWAP_BERRY,
+    .heldItem = ITEM_ROSELI_BERRY,
     .moves = {MOVE_SLASH, MOVE_CRUNCH, MOVE_VITAL_THROW, MOVE_WORK_UP},
     .abilityNum = 1
     },
     {
-    .iv = 100,
-    .lvl = 27,
+    .iv = 150,
+    .lvl = 26,
     .species = SPECIES_MACHOKE,
     .heldItem = ITEM_SALAC_BERRY,
     .moves = {MOVE_DYNAMIC_PUNCH, MOVE_SUBMISSION, MOVE_KNOCK_OFF, MOVE_FOCUS_ENERGY},
     .abilityNum = 1
     },
     {
-    .iv = 100,
-    .lvl = 29,
+    .iv = 150,
+    .lvl = 28,
     .species = SPECIES_CONKELDURR,
-    .heldItem = ITEM_ROSELI_BERRY,
+    .heldItem = ITEM_LANSAT_BERRY,
     .moves = {MOVE_BULK_UP, MOVE_CHIP_AWAY, MOVE_ROCK_SLIDE, MOVE_SUPERPOWER},
     .abilityNum = 0
     }
