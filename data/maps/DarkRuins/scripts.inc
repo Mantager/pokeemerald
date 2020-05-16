@@ -63,20 +63,3 @@ DarkRuins_Movement_FaceDown:
 DarkRuins_Movement_FaceUp:
 	face_up
 	step_end
-
-DarkRuins_Text_ArumExplanation:
-	.string "Welcome to the Dark Ruins!\p"
-	.string "Each room in here has a puzzle\n"
-	.string "expertly crafted by yours truly!\p"
-	.string "If you can solve all four puzzles,\n"
-	.string "the Relic Crown will be your reward.\p"
-	.string "Nobody has ever been able to solve\n"
-	.string "all four of my puzzles, so you have\l"
-	.string "quite the challenge ahead of you!$"
-
-DarkRuins_Text_ArumWaitAtEnd:
-	.string "I'll be waiting inside this room,\n"
-	.string "which will close once I step inside.\p"
-	.string "It will reopen once you've solved\n"
-	.string "all four puzzles.\p"
-	.string "Good luck, {PLAYER}…$"

@@ -52,14 +52,3 @@ ColorRuinsBlue_B1F_EventScript_FallThroughHole::
 ColorRuinsBlue_B1F_EventScript_SetVar::
 	setvar VAR_STORY_EVENT_PROGRESS, 6
 	return
-
-ColorRuinsBlue_B1F_Text_AfterTheAttack:
-	.string "AFTER THE ATTACK SOME OF US\n"
-	.string "RETURNED TO OUR FORMER HOMES.\p"
-	.string "IT WAS OUR LUCK THAT THE\n"
-	.string "PILLAGERS HAD NOT SETTLED.\p"
-	.string "EVERYTHING WAS INTACT\n"
-	.string "OUR PLAN HAD WORKED.\p"
-	.string "WE THEN BEGAN -\p"
-	.string "The rest of the wall is damaged\n"
-	.string "to a point of being unreadable.$"

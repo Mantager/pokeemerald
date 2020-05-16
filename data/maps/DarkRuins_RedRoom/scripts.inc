@@ -28,26 +28,3 @@ DarkRuins_RedRoom_EventScript_BaozhaiPostBattle::
 	msgbox DarkRuins_RedRoom_Text_BaozhaiAfter, MSGBOX_DEFAULT
 	release
 	end
-
-DarkRuins_RedRoom_Text_RoomGuide:
-	.string "These boulders are replicas, so\n"
-	.string "you should be able to move them\l"
-	.string "with ease.$"
-
-DarkRuins_RedRoom_Text_Congratulations:
-	.string "You pushed your way to victory!\n"
-	.string "Congratulations!\p"
-	.string "But now, you need to push past\n"
-	.string "my powerful Pokémon team!$"
-
-DarkRuins_RedRoom_Text_BaozhaiDefeat:
-	.string "I hope I could push you to your\n"
-	.string "limits!$"
-
-DarkRuins_RedRoom_Text_BaozhaiPostBattle:
-	.string "Okay, good job.\n"
-	.string "You're tough!$"
-
-DarkRuins_RedRoom_Text_BaozhaiAfter:
-	.string "Real boulders aren't as easy to\n"
-	.string "push as these replicas.$"

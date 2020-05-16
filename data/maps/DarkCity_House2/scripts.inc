@@ -41,29 +41,3 @@ DarkCity_House2_Mart:
 	.2byte ITEM_NONE
 	release
 	end
-
-DarkCity_House2_Text_ShopOwnerIntro:
-	.string "Oh, you're from the surface?\n"
-	.string "We just began supporting surface\l"
-	.string "currency, so feel free to shop here.$"
-
-DarkCity_House2_Text_DecorationInfo:
-	.string "We craft these decorations out of\n"
-	.string "stone and wood we gather from the\l"
-	.string "surface about once a month.$"
-
-DarkCity_House2_Text_ContainerInfo:
-	.string "There are about 3 shelves inside these\n"
-	.string "containers, which we fill with a layer\l"
-	.string "of fertile soil from the ground.\p"
-	.string "Then we mix in some compost and add\n"
-	.string "some seeds and fertilizer.\p"
-	.string "We can grow fruit and vegetables\n"
-	.string "even deep underground this way.\p"
-	.string "Pretty amazing, right?\p"
-	.string "But the key is using Pokémon such\n"
-	.string "as Oddish and Cherubi to help\l"
-	.string "speed up the growth of our crop.\p"
-	.string "Without Pokémon, we wouldn't be\n"
-	.string "be able to grow food at a rate at\l"
-	.string "which we could sustain ourselves.$"

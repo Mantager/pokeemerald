@@ -70,30 +70,3 @@ ColorRuinsBlue_1F_EventScript_PerfectPetalsTranslated::
 	msgbox ColorRuinsBlue_1F_Text_PerfectPetals, MSGBOX_DEFAULT
 	closemessage
 	end
-
-ColorRuinsBlue_1F_Text_TouchedWall:
-	.string "{PLAYER} touched the wall…$"
-
-ColorRuinsBlue_1F_Text_NothingHappened:
-	.string "But nothing happened.$"
-
-ColorRuinsBlue_1F_Text_TriggerRain:
-	.string "FIND THE WALL AND TRIGGER THE RAIN$"
-
-ColorRuinsBlue_1F_Text_TiredMinds:
-	.string "TIRED MINDS THINK HARD$"
-
-ColorRuinsBlue_1F_Text_WhitePearls:
-	.string "HE SAID WHITE PEARLS LIE IN RIVERS$"
-
-ColorRuinsBlue_1F_Text_HotSpring:
-	.string "THERE IS A HOT SPRING NEAR HERE$"
-
-ColorRuinsBlue_1F_Text_BambooCrop:
-	.string "MY BAMBOO CROP HAS BEEN BURNT DOWN$"
-
-ColorRuinsBlue_1F_Text_ShadowsDance:
-	.string "SHADOWS DANCE IN THE SKY$"
-
-ColorRuinsBlue_1F_Text_PerfectPetals:
-	.string "PERFECT PETALS ARE HARD TO COME BY$"

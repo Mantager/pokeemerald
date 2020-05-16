@@ -34,10 +34,3 @@ FarmerHut_EventScript_Bed::
 	call Common_EventScript_OutOfCenterPartyHeal
 	releaseall
 	end
-
-FarmerHut_Text_TakeRestInBed:
-	.string "It's {PLAYER}'s bed…\n"
-	.string "Let's take a rest.$"
-
-FarmerHut_Text_ReceivedDedenne:
-	.string "{PLAYER} received the {STR_VAR_1}!$"

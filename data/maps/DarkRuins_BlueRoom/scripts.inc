@@ -369,24 +369,3 @@ DarkRuins_BlueRoom_EventScript_AfterPuzzleCompleteGuy::
 	msgbox DarkRuins_BlueRoom_Text_AfterPuzzleComplete, MSGBOX_DEFAULT
 	release
 	end
-
-
-DarkRuins_BlueRoom_EventScript_Text_Pattern1:
-	.string "C D c A B E F G$"
-
-DarkRuins_BlueRoom_EventScript_Text_Pattern2:
-	.string "c B E A G F D C$"
-
-DarkRuins_BlueRoom_EventScript_Text_Pattern3:
-	.string "F E D G c A C B$"
-
-DarkRuins_BlueRoom_Text_Congratulations:
-	.string "Congratulations on making it to me!\p"
-	.string "I forgot to bring my Pokémon,\n"
-	.string "so you won't have to battle me.$"
-
-DarkRuins_BlueRoom_Text_AfterPuzzleComplete:
-	.string "According to Arum, these note mats\n"
-	.string "are really expensive.\p"
-	.string "He said he got them from some exotic\n"
-	.string "foreign region or something.$"

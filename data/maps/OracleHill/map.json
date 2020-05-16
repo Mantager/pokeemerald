@@ -25,7 +25,7 @@
         {
             "direction": "down",
             "map": "MAP_WANGYONG_MARSH",
-            "offset": -11
+            "offset": -9
         }
     ],
     "coord_events": [

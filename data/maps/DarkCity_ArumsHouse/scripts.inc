@@ -42,22 +42,3 @@ DarkCity_ArumsHouse_EventScript_TradeCompleted:: @ 8203CAB
 	release
 	end
 
-
-DarkCity_ArumsHouse_Text_WillingToTradeIt:
-	.string "My {STR_VAR_2} is really rare…\n"
-	.string "You're jealous, aren't you?\p"
-	.string "Well, luckily for you, I'm willing\n"
-	.string "to trade it for any Pokémon you have!\p"
-	.string "So, do you want to trade?$"
-
-DarkCity_ArumsHouse_Text_DeclinedTrade:
-	.string "You don't want to trade?\n"
-	.string "Fine! You'll be back.$"
-
-DarkCity_ArumsHouse_Text_TradeCompleted:
-	.string "Oh, your Pokémon is pretty cool!\p"
-	.string "I'm sure it's not as cool as my\n"
-	.string "{STR_VAR_2} though, right?!$"
-
-DarkCity_ArumsHouse_Text_PostTrade:
-	.string "How's my old {STR_VAR_2} doing?$"

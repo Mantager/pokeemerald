@@ -115,37 +115,3 @@ ColorRuinsGreen_1F_EventScript_MoneyIsNotAllTranslated::
 	msgbox ColorRuinsGreen_1F_Text_MoneyIsNotAll, MSGBOX_DEFAULT
 	closemessage
 	end
-
-ColorRuinsGreen_1F_Text_TouchCorners:
-	.string "TOUCH THE CORNERS COUNTERCLOCKWISE.$"
-
-ColorRuinsGreen_1F_Text_BallsFromNuggets:
-	.string "CAN YOU MAKE BALLS FROM NUGGETS$"
-
-ColorRuinsGreen_1F_Text_CarnivineBest:
-	.string "CARNIVINE IS SURELY THE BEST.$"
-
-ColorRuinsGreen_1F_Text_MushroomsDust:
-	.string "GRIND MUSHROOMS INTO MEDICINAL DUST.$"
-
-ColorRuinsGreen_1F_Text_QinqinWasHere:
-	.string "QINQIN WAS HERE$"
-
-ColorRuinsGreen_1F_Text_SunStoneEvolved:
-	.string "IT TOUCHED A SUN STONE AND EVOLVED.$"
-
-ColorRuinsGreen_1F_Text_UniteTheCountry:
-	.string "I WANT TO UNITE THE COUNTRY.$"
-
-ColorRuinsGreen_1F_Text_SwimmingInTheMarsh:
-	.string "SWIMMING IN THE MARSH IS GREAT$"
-
-ColorRuinsGreen_1F_Text_AnotherColorRuins:
-	.string "I AM WORKING ON ANOTHER COLOR RUINS$"
-
-ColorRuinsGreen_1F_Text_PureHearts:
-	.string "PURE HEARTS WILL GO FAR.$"
-
-ColorRuinsGreen_1F_Text_MoneyIsNotAll:
-	.string "MONEY IS NOT ALL THAT MATTERS.$"
-

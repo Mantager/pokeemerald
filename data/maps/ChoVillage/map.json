@@ -6,14 +6,6 @@
     "bg_events": [
         {
             "elevation": 3,
-            "flag": "FLAG_HIDDEN_ITEM_CHO_VILLAGE_FLOAT_STONE",
-            "item": "ITEM_FLOAT_STONE",
-            "type": "hidden_item",
-            "x": 12,
-            "y": 3
-        },
-        {
-            "elevation": 3,
             "flag": "FLAG_HIDDEN_ITEM_CHO_VILLAGE_POKE_DOLL",
             "item": "ITEM_POKE_DOLL",
             "type": "hidden_item",

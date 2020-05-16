@@ -51,7 +51,7 @@
         {
             "direction": "up",
             "map": "MAP_ORACLE_HILL",
-            "offset": 11
+            "offset": 9
         }
     ],
     "coord_events": [

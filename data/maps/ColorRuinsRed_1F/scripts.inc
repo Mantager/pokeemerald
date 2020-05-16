@@ -157,18 +157,3 @@ ColorRuinsRed_1F_EventScript_CheapRiceTranslated::
 	msgbox ColorRuinsRed_1F_Text_CheapRice, MSGBOX_DEFAULT
 	closemessage
 	end
-
-ColorRuinsRed_1F_Text_GiveChase:
-	.string "SUMMON THE STATUE AND GIVE CHASE.$"
-
-ColorRuinsRed_1F_Text_KeepToRight:
-	.string "KEEPING TO THE RIGHT IS THE KEY.$"
-
-ColorRuinsRed_1F_Text_StrongOpponents:
-	.string "STRONG OPPONENTS GIVE GREAT REWARDS.$"
-
-ColorRuinsRed_1F_Text_RighteousPath:
-	.string "I WANT TO WALK A RIGHTEOUS PATH.$"
-
-ColorRuinsRed_1F_Text_CheapRice:
-	.string "CHEAP RICE TODAY ONLY$"

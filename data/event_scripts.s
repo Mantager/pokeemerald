@@ -1194,3 +1194,13 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/DarkRuins_BlueRoom/scripts.inc"
 
 	.include "data/maps/DarkRuins_FinalRoom/scripts.inc"
+
+#ifdef ENGLISH
+	.include "data/text/story/story_text_en.inc"
+	.include "data/text/story/trainer_text_en.inc"
+	.include "data/text/story/color_ruins_text_en.inc"
+#else
+	.include "data/text/story/story_text_jp.inc"
+	.include "data/text/story/trainer_text_jp.inc"
+	.include "data/text/story/color_ruins_text_jp.inc"
+#endif

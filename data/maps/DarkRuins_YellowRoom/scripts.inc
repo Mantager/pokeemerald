@@ -165,34 +165,3 @@ DarkRuins_YellowRoom_EventScript_DiglettIncorrect::
 DarkRuins_YellowRoom_Movement_SetInvisible:
 	set_invisible
 	step_end
-
-DarkRuins_YellowRoom_Text_RoomGuide:
-	.string "In this room, you must interact\n"
-	.string "with each Diglett in a specific\l"
-	.string "order.$"
-
-DarkRuins_YellowRoom_Text_DiglettIncorrect:
-	.string "Diiiig…$"
-
-DarkRuins_YellowRoom_Text_DiglettCorrect:
-	.string "Dig dig!$"
-
-DarkRuins_YellowRoom_Text_Congratulations:
-	.string "Congratulations on clearing all\n"
-	.string "the Diglett out of the way!\p"
-	.string "But to fully solve the puzzle,\n"
-	.string "you have to beat me in a battle!$"
-
-DarkRuins_YellowRoom_Text_HuizhongDefeat:
-	.string "Hey, you're good!$"
-
-DarkRuins_YellowRoom_Text_HuizhongPostBattle:
-	.string "Okay, okay…\n"
-	.string "I accept defeat.$"
-
-DarkRuins_YellowRoom_Text_PuzzleComplete:
-	.string "{PLAYER} completed the puzzle!$"
-
-DarkRuins_YellowRoom_Text_HuizhongAfter:
-	.string "I'm a Diglett fanatic, so it\n"
-	.string "was fun to wait in this room.$"

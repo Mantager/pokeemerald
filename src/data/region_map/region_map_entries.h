@@ -198,6 +198,7 @@ static const u8 sMapName_MarineCave[] = _("MARINE CAVE");
 static const u8 sMapName_TerraCave[] = _("TERRA CAVE");
 static const u8 sMapName_DesertUnderpass[] = _("DESERT UNDERPASS");
 static const u8 sMapName_TrainerHill[] = _("TRAINER HILL");
+#ifdef ENGLISH
 static const u8 sMapName_PulpByroad[] = _("Pulp Byroad");
 static const u8 sMapName_PulpField[] = _("Pulp Field");
 static const u8 sMapName_ShendownPath[] = _("Shendown Path");
@@ -211,6 +212,21 @@ static const u8 sMapName_TiyuForest[] = _("Tiyu Forest");
 static const u8 sMapName_DarkCity[] = _("Dark City");
 static const u8 sMapName_DarkRuins[] = _("Dark Ruins");
 static const u8 sMapName_ZhaounPath[] = _("Zhaoun Path");
+#else
+static const u8 sMapName_PulpByroad[] = _("{JPN}パルプのはたけ");
+static const u8 sMapName_PulpField[] = _("{JPN}パルプのいなか");
+static const u8 sMapName_ShendownPath[] = _("{JPN}シェンどうろ");
+static const u8 sMapName_ChoVillage[] = _("{JPN}チョむら");
+static const u8 sMapName_WangyongMarsh[] = _("{JPN}ワングぬま");
+static const u8 sMapName_KimyangRoad[] = _("{JPN}ヤンどうろ");
+static const u8 sMapName_ColorRuins[] = _("{JPN}カラールインズ");
+static const u8 sMapName_OracleHill[] = _("{JPN}そんおうのやま");
+static const u8 sMapName_LinkingTunnel[] = _("{JPN}ひみつのトンネル");
+static const u8 sMapName_TiyuForest[] = _("{JPN}チユのもり");
+static const u8 sMapName_DarkCity[] = _("{JPN}ダークシティ");
+static const u8 sMapName_DarkRuins[] = _("{JPN}ダークルインズ");
+static const u8 sMapName_ZhaounPath[] = _("{JPN}ウンどうろ");
+#endif
 
 const struct RegionMapLocation gRegionMapEntries[] = {
     [MAPSEC_LITTLEROOT_TOWN]           = { 4, 11, 1, 1, sMapName_LittlerootTown},

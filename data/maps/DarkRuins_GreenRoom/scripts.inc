@@ -31,12 +31,3 @@ DarkRuins_GreenRoom_EventScript_AfterPuzzleCompleteGuy::
 	release
 	end
 
-DarkRuins_GreenRoom_Text_Congratulations:
-	.string "Con… grat… ulations…\n"
-	.string "Urrrrrp…\p"
-	.string "Watching… you… spin…\n"
-	.string "made… me… really… sick…$"
-
-DarkRuins_GreenRoom_Text_AfterPuzzleComplete:
-	.string "No… more… spinning… please…!$"
-

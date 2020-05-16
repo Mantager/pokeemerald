@@ -157,27 +157,3 @@ ColorRuinsYellow_1F_EventScript_PurpleTreesTranslated::
 	msgbox ColorRuinsYellow_1F_Text_PurpleTrees, MSGBOX_DEFAULT
 	closemessage
 	end
-
-ColorRuinsYellow_1F_Text_TouchPillars:
-	.string "TOUCH PILLARS FROM RIGHT TO LEFT.$"
-
-ColorRuinsYellow_1F_Text_SacredStones:
-	.string "SACRED STONES LIE BENEATH GOLD.$"
-
-ColorRuinsYellow_1F_Text_MazhouTei:
-	.string "MAZHOU X TEI. TOGETHER IN HARMONY.$"
-
-ColorRuinsYellow_1F_Text_GoldenCups:
-	.string "GOLDEN CUPS. MANY YUAN$"
-
-ColorRuinsYellow_1F_Text_VermillionBird:
-	.string "I SAW A VERMILLION BIRD IN EAST.$"
-
-ColorRuinsYellow_1F_Text_TalkingToPeople:
-	.string "I AM NOT GOOD AT TALKING TO PEOPLE.$"
-
-ColorRuinsYellow_1F_Text_CurseTheEmperor:
-	.string "CURSE THE EMPEROR. HE IS A FRAUD.$"
-
-ColorRuinsYellow_1F_Text_PurpleTrees:
-	.string "STAY AWAY FROM PURPLE TALKING TREES.$"

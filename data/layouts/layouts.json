@@ -4478,7 +4478,7 @@
             "name": "KimyangRoad_Layout",
             "primary_tileset": "gTileset_General",
             "secondary_tileset": "gTileset_Mossdeep",
-            "width": 48
+            "width": 50
         },
         {
             "blockdata_filepath": "data/layouts/ColorRuinsRed_1F/map.bin",
@@ -4498,7 +4498,7 @@
             "name": "OracleHill_Layout",
             "primary_tileset": "gTileset_General",
             "secondary_tileset": "gTileset_Mossdeep",
-            "width": 28
+            "width": 32
         },
         {
             "blockdata_filepath": "data/layouts/TiyuForest/map.bin",
