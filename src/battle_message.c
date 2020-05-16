@@ -1880,6 +1880,7 @@ const u16 gStatusConditionsStringIds[] =
     STRINGID_PKMNWASPOISONED, STRINGID_PKMNBADLYPOISONED, STRINGID_PKMNWASBURNED, STRINGID_PKMNWASPARALYZED, STRINGID_PKMNFELLASLEEP
 };
 
+#ifdef ENGLISH
 const u8 gText_PkmnIsEvolving[] = _("What?\n{STR_VAR_1} is evolving!");
 const u8 gText_CongratsPkmnEvolved[] = _("Congratulations! Your {STR_VAR_1}\nevolved into {STR_VAR_2}!{UNKNOWN_A}\p");
 const u8 gText_PkmnStoppedEvolving[] = _("Huh? {STR_VAR_1}\nstopped evolving!\p");
@@ -1898,6 +1899,26 @@ const u8 gText_WhichMoveToForget4[] = _("{PALETTE 5}{COLOR_HIGHLIGHT_SHADOW DYNA
 const u8 gText_BattleYesNoChoice[] = _("{PALETTE 5}{COLOR_HIGHLIGHT_SHADOW DYNAMIC_COLOR4 DYNAMIC_COLOR5 DYNAMIC_COLOR6}Yes\nNo");
 const u8 gText_BattleSwitchWhich[] = _("{PALETTE 5}{COLOR_HIGHLIGHT_SHADOW DYNAMIC_COLOR4 DYNAMIC_COLOR5 DYNAMIC_COLOR6}Switch\nwhich?");
 const u8 gText_BattleSwitchWhich2[] = _("{PALETTE 5}{COLOR_HIGHLIGHT_SHADOW DYNAMIC_COLOR4 DYNAMIC_COLOR5 DYNAMIC_COLOR6}");
+#else
+const u8 gText_PkmnIsEvolving[] = _("{JPN}…おや！？\n{STR_VAR_1}の　ようすが…！");
+const u8 gText_CongratsPkmnEvolved[] = _("{JPN}おめでとう！ {STR_VAR_1}は\n{STR_VAR_2}に　しんかした！{UNKNOWN_A}\p");
+const u8 gText_PkmnStoppedEvolving[] = _("{JPN}あれ……?\n{STR_VAR_1}の　へんかが　とまった！\p");
+const u8 gText_EllipsisQuestionMark[] = _("……?\p");
+const u8 gText_WhatWillPkmnDo[] = _("{JPN}{B_ACTIVE_NAME_WITH_PREFIX}は　どうする？");
+const u8 gText_WhatWillPkmnDo2[] = _("{JPN}{B_PLAYER_NAME}は　どうする？");
+const u8 gText_WhatWillWallyDo[] = _("{JPN}ミツルは　どうする？");
+const u8 gText_LinkStandby[] = _("{PAUSE 16}Link standby…");
+const u8 gText_BattleMenu[] = _("{JPN}たたかう{CLEAR_TO 56}バッグ\nポケモン{CLEAR_TO 56}にげる");
+const u8 gText_SafariZoneMenu[] = _("BALL{CLEAR_TO 56}{POKEBLOCK}\nGO NEAR{CLEAR_TO 56}RUN");
+const u8 gText_MoveInterfacePP[] = _("{JPN}PP ");
+const u8 gText_MoveInterfaceType[] = _("{JPN}タイプ/");
+const u8 gText_MoveInterfacePpType[] = _("{JPN}{PALETTE 5}{COLOR_HIGHLIGHT_SHADOW DYNAMIC_COLOR4 DYNAMIC_COLOR5 DYNAMIC_COLOR6}PP\nタイプ/");
+const u8 gText_MoveInterfaceDynamicColors[] = _("{PALETTE 5}{COLOR_HIGHLIGHT_SHADOW DYNAMIC_COLOR4 DYNAMIC_COLOR5 DYNAMIC_COLOR6}");
+const u8 gText_WhichMoveToForget4[] = _("{JPN}{PALETTE 5}{COLOR_HIGHLIGHT_SHADOW DYNAMIC_COLOR4 DYNAMIC_COLOR5 DYNAMIC_COLOR6}どの　わざを\nわすれさせたい？");
+const u8 gText_BattleYesNoChoice[] = _("{JPN}{PALETTE 5}{COLOR_HIGHLIGHT_SHADOW DYNAMIC_COLOR4 DYNAMIC_COLOR5 DYNAMIC_COLOR6}はい\nいいえ");
+const u8 gText_BattleSwitchWhich[] = _("{JPN}{PALETTE 5}{COLOR_HIGHLIGHT_SHADOW DYNAMIC_COLOR4 DYNAMIC_COLOR5 DYNAMIC_COLOR6}いれかえるわざを\nえらんでください");
+const u8 gText_BattleSwitchWhich2[] = _("{PALETTE 5}{COLOR_HIGHLIGHT_SHADOW DYNAMIC_COLOR4 DYNAMIC_COLOR5 DYNAMIC_COLOR6}");
+#endif
 const u8 gText_BattleSwitchWhich3[] = _("{UP_ARROW}");
 const u8 gText_BattleSwitchWhich4[] = _("{ESCAPE 4}");
 const u8 gText_BattleSwitchWhich5[] = _("-");

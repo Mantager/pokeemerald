@@ -21,7 +21,11 @@ const struct Trainer gTrainers[] = {
         .trainerClass = TRAINER_CLASS_BUG_CATCHER,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
         .trainerPic = TRAINER_PIC_BUG_CATCHER,
+        #ifdef ENGLISH
         .trainerName = _("Ling"),
+        #else
+        .trainerName = _("{JPN}リーン"),
+        #endif
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
@@ -35,7 +39,11 @@ const struct Trainer gTrainers[] = {
         .trainerClass = TRAINER_CLASS_YOUNGSTER,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
         .trainerPic = TRAINER_PIC_YOUNGSTER,
+        #ifdef ENGLISH
         .trainerName = _("Bai"),
+        #else
+        .trainerName = _("{JPN}バイ"),
+        #endif
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
@@ -49,7 +57,11 @@ const struct Trainer gTrainers[] = {
         .trainerClass = TRAINER_CLASS_LASS,
         .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
         .trainerPic = TRAINER_PIC_LASS,
+        #ifdef ENGLISH
         .trainerName = _("Hong"),
+        #else
+        .trainerName = _("{JPN}ホーン"),
+        #endif
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
