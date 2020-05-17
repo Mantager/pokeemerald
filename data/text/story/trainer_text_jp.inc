@@ -32,7 +32,7 @@ ShendownPath_Text_HongPostBattle: @ 82318F2
 	.string "{JPN}パパの　たんぼへ　かえらなければならない$"
 
 WangyongMarsh_Text_KangIntro:
-	.string "{JPN}えー？せんにんとあうにいっている？\n"
+	.string "{JPN}えー？　せんにんと　あうに　いっている？\n"
 	.string "{JPN}だれが　そのための　じかんを　もっているのか？$"
 
 WangyongMarsh_Text_KangDefeat:
