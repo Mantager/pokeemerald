@@ -36,13 +36,11 @@ WangyongMarsh_Text_KangIntro:
 	.string "{JPN}だれが　そのための　じかんを　もっているのか？$"
 
 WangyongMarsh_Text_KangDefeat:
-	.string "{JPN}Who has time to battle, even?\n"
-	.string "{JPN}I need to get back to work!$"
+	.string "{JPN}だれが　しょうぶの　じかんを　もっているのか？\n"
+	.string "{JPN}しごとに　もどるのは　ひつようだ$"
 
 WangyongMarsh_Text_KangPostBattle:
-	.string "{JPN}The marshlands are full of nutrients,\n"
-	.string "{JPN}so they're the perfect place for\l"
-	.string "{JPN}gathering plants for compost.$"
+	.string "{JPN}ぬまちの　くさきは　いいえいようげんだ$"
 
 WangyongMarsh_Text_FanIntro:
 	.string "{JPN}I almost had that one!\n"

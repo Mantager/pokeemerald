@@ -32,11 +32,11 @@ JamKeyMap_Text_PulpUrgh:
 	.string "{JPN}あるいていくが　ひつよう…$"
 
 JamKeyMap_Text_LogPleaseBattleMe:
-	.string "{JPN}Oh, it's {PLAYER}!\n"
-	.string "{JPN}How's it going?\p"
-	.string "{JPN}W-whaat?!\n"
-	.string "{JPN}You actually found that relic?!\l"
-	.string "{JPN}T-that's incredible!\p"
+	.string "{JPN}よー！ {PLAYER}だ!\n"
+	.string "{JPN}げんきか?\p"
+	.string "{JPN}えっ　えええ?!\n"
+	.string "{JPN}やっぱり　そのレリックを みつけたの!!\l"
+	.string "{JPN}すっ　すごい!\p"
 	.string "{JPN}So, I guess you're… going?\p"
 	.string "{JPN}Before you go, {PLAYER}…\n"
 	.string "{JPN}Let's have another battle.\p"

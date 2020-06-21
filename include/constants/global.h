@@ -17,6 +17,8 @@
 #define VERSION_PLATINUM 12
 #define VERSION_GAMECUBE 15
 
+#define VERSION_GAIDENONE 6
+
 #define LANGUAGE_JAPANESE 1
 #define LANGUAGE_ENGLISH  2
 #define LANGUAGE_FRENCH   3
@@ -26,7 +28,7 @@
 #define LANGUAGE_SPANISH  7
 #define NUM_LANGUAGES     7
 
-#define GAME_VERSION (VERSION_EMERALD)
+#define GAME_VERSION VERSION_GAIDENONE
 #define GAME_LANGUAGE (LANGUAGE_ENGLISH)
 
 // capacities of various saveblock objects

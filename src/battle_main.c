@@ -319,6 +319,7 @@ static const s8 gUnknown_0831ACE0[] ={-32, -16, -16, -32, -32, 0, 0, 0};
 
 const u8 gTypeNames[NUMBER_OF_MON_TYPES][TYPE_NAME_LENGTH + 1] =
 {
+#ifdef ENGLISH
     _("NORMAL"),
     _("FIGHT"),
     _("FLYING"),
@@ -338,6 +339,27 @@ const u8 gTypeNames[NUMBER_OF_MON_TYPES][TYPE_NAME_LENGTH + 1] =
     _("DRAGON"),
     _("DARK"),
     _("FAIRY"),
+#else
+    _("{JPN}ノーマル"),
+    _("{JPN}かくとう"),
+    _("{JPN}ひこう"),
+    _("{JPN}どく"),
+    _("{JPN}じめん"),
+    _("{JPN}いわ"),
+    _("{JPN}むし"),
+    _("{JPN}ゴースト"),
+    _("{JPN}はがね"),
+    _("{JPN}???"),
+    _("{JPN}ほのお"),
+    _("{JPN}みず"),
+    _("{JPN}くさ"),
+    _("{JPN}でんき"),
+    _("{JPN}エスパー"),
+    _("{JPN}こおり"),
+    _("{JPN}ドラゴン"),
+    _("{JPN}あく"),
+    _("{JPN}フェアリ"),
+#endif
 };
 
 // This is a factor in how much money you get for beating a trainer.
