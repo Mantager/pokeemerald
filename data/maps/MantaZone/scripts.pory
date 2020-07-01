@@ -1,0 +1,9 @@
+mapscripts MantaZone_MapScripts {
+}
+
+script MantaZone_Sign {
+	lock
+    msgbox("Manta Zone", MSGBOX_SIGN)
+    release
+    end
+}

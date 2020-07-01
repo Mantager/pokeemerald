@@ -4417,7 +4417,7 @@
       "width": 20,
       "height": 20,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_Dewford",
       "border_filepath": "data/layouts/MantaZone/border.bin",
       "blockdata_filepath": "data/layouts/MantaZone/map.bin"
     }

@@ -2,14 +2,14 @@
   "id": "MAP_MANTA_ZONE",
   "name": "MantaZone",
   "layout": "LAYOUT_MANTA_ZONE",
-  "music": "MUS_AJITO",
-  "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
+  "music": "MUS_PCC",
+  "region_map_section": "MAPSEC_DEWFORD_TOWN",
   "requires_flash": false,
-  "weather": "WEATHER_NONE",
-  "map_type": "MAP_TYPE_NONE",
-  "allow_cycling": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_TOWN",
+  "allow_cycling": true,
   "allow_escaping": false,
-  "allow_running": false,
+  "allow_running": true,
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": 0,
@@ -23,6 +23,13 @@
 
   ],
   "bg_events": [
-
+    {
+      "type": "sign",
+      "x": 7,
+      "y": 6,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "MantaZone_Sign"
+    }
   ]
 }
