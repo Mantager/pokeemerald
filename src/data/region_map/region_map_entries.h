@@ -198,6 +198,18 @@ static const u8 sMapName_MarineCave[] = _("MARINE CAVE");
 static const u8 sMapName_TerraCave[] = _("TERRA CAVE");
 static const u8 sMapName_DesertUnderpass[] = _("DESERT UNDERPASS");
 static const u8 sMapName_TrainerHill[] = _("TRAINER HILL");
+static const u8 sMapName_PrimeCity[] = _("Prime City");
+static const u8 sMapName_NewValleyWay[] = _("New Valley Way");
+static const u8 sMapName_YanurasTown[] = _("Yanuras Town");
+static const u8 sMapName_RocarohaValley[] = _("Rocaroha Valley");
+static const u8 sMapName_DelaguaTown[] = _("Delagua Town");
+static const u8 sMapName_DerivaWalk[] = _("Deriva Walk");
+static const u8 sMapName_LandBridge[] = _("Land Bridge");
+static const u8 sMapName_OroTown[] = _("Oro Town");
+static const u8 sMapName_VientoWalk[] = _("Viento Walk");
+static const u8 sMapName_PistaVillage[] = _("Pista Village");
+static const u8 sMapName_AgudoWoods[] = _("Agudo Woods");
+static const u8 sMapName_WingPeak[] = _("Wing Peak");
 
 const struct RegionMapLocation gRegionMapEntries[] = {
     [MAPSEC_LITTLEROOT_TOWN]           = { 4, 11, 1, 1, sMapName_LittlerootTown},
@@ -412,7 +424,21 @@ const struct RegionMapLocation gRegionMapEntries[] = {
     [MAPSEC_DESERT_UNDERPASS]          = { 2,  0, 1, 1, sMapName_DesertUnderpass},
     [MAPSEC_ALTERING_CAVE]             = { 6,  8, 1, 1, sMapName_AlteringCave},
     [MAPSEC_NAVEL_ROCK]                = { 0,  0, 1, 1, sMapName_NavelRock},
-    [MAPSEC_TRAINER_HILL]              = { 8,  4, 1, 1, sMapName_TrainerHill}
+    [MAPSEC_TRAINER_HILL]              = { 8,  4, 1, 1, sMapName_TrainerHill},
+    [MAPSEC_PRIME_CITY]                = { 8,  4, 1, 1, sMapName_PrimeCity},
+    [MAPSEC_NEW_VALLEY_WAY]            = { 8,  2, 1, 1, sMapName_NewValleyWay},
+    [MAPSEC_YANURAS_TOWN]              = { 0,  0, 1, 1, sMapName_YanurasTown},
+    [MAPSEC_ROCAROHA_VALLEY]           = { 0,  0, 1, 1, sMapName_RocarohaValley},
+    [MAPSEC_DELAGUA_TOWN]              = {22, 12, 1, 1, sMapName_DelaguaTown},
+    [MAPSEC_DERIVA_WALK]               = { 0,  0, 1, 1, sMapName_DerivaWalk},
+    [MAPSEC_LAND_BRIDGE_SOUTH]         = { 0,  0, 1, 1, sMapName_LandBridge},
+    [MAPSEC_ORO_TOWN]                  = { 0,  0, 1, 1, sMapName_OroTown},
+    [MAPSEC_LAND_BRIDGE_NORTH]         = { 0, 10, 1, 3, sMapName_LandBridge},
+    [MAPSEC_VIENTO_WALK]               = {24,  3, 2, 2, sMapName_VientoWalk},
+    [MAPSEC_PISTA_VILLAGE]             = {24, 10, 2, 1, sMapName_PistaVillage},
+    [MAPSEC_AGUDO_WOODS]               = { 2,  0, 1, 1, sMapName_AgudoWoods},
+    [MAPSEC_WING_PEAK]                 = { 6,  8, 1, 1, sMapName_WingPeak},
+    [MAPSEC_WING_PEAK_TOP]             = { 0,  0, 1, 1, sMapName_WingPeak}
 };
 
 #endif //GUARD_DATA_REGION_MAP_REGION_MAP_ENTRIES_H

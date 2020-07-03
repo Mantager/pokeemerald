@@ -214,8 +214,23 @@
 #define MAPSEC_ALTERING_CAVE                0xD2
 #define MAPSEC_NAVEL_ROCK                   0xD3
 #define MAPSEC_TRAINER_HILL                 0xD4
-#define MAPSEC_NONE                         0xD5
+#define MAPSEC_PRIME_CITY                   0xD5
+#define MAPSEC_NEW_VALLEY_WAY               0xD6
+#define MAPSEC_YANURAS_TOWN                 0xD7
+#define MAPSEC_ROCAROHA_VALLEY              0xD8
+#define MAPSEC_DELAGUA_TOWN                 0xD9
+#define MAPSEC_DERIVA_WALK                  0xDA
+#define MAPSEC_LAND_BRIDGE_SOUTH            0xDB
+#define MAPSEC_ORO_TOWN                     0xDC
+#define MAPSEC_LAND_BRIDGE_NORTH            0xDD
+#define MAPSEC_VIENTO_WALK                  0xDE
+#define MAPSEC_PISTA_VILLAGE                0xDF
+#define MAPSEC_AGUDO_WOODS                  0xE1
+#define MAPSEC_WING_PEAK                    0xE2
+#define MAPSEC_WING_PEAK_TOP                0xE3
 
+
+#define MAPSEC_NONE                         0xFC
 #define METLOC_SPECIAL_EGG                  0xFD
 #define METLOC_IN_GAME_TRADE                0xFE
 #define METLOC_FATEFUL_ENCOUNTER            0xFF
