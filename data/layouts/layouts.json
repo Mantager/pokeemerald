@@ -4414,12 +4414,22 @@
     {
       "id": "LAYOUT_MANTA_ZONE",
       "name": "MantaZone_Layout",
-      "width": 20,
-      "height": 20,
+      "width": 24,
+      "height": 28,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Dewford",
       "border_filepath": "data/layouts/MantaZone/border.bin",
       "blockdata_filepath": "data/layouts/MantaZone/map.bin"
+    },
+    {
+      "id": "LAYOUT_MANTA_ZONE_HOUSE1",
+      "name": "MantaZone_House1_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/MantaZone_House1/border.bin",
+      "blockdata_filepath": "data/layouts/MantaZone_House1/map.bin"
     }
   ]
 }

@@ -1,0 +1,124 @@
+mapscripts MantaZone_House1_MapScripts {
+}
+
+script MantaZone_House1_EventScript_PsyduckPokeBall {
+    lockall
+    msgbox (MantaZone_House1_Text_TakeThisBall, MSGBOX_YESNO)
+    if (var(VAR_RESULT) == NO) {
+        msgbox (MantaZone_House1_Text_LeftTheBall)
+        releaseall
+        end
+    }
+    else {
+        givemon (SPECIES_PSYDUCK, 5, ITEM_ORAN_BERRY)
+        if (var(VAR_RESULT) == 0) {
+            call (MantaZone_House1_EventScript_PsyduckFanfare)
+            msgbox (gText_NicknameThisPokemon, MSGBOX_YESNO)
+            if (var(VAR_RESULT) == YES) {
+	            call (Common_EventScript_GetGiftMonPartySlot)
+	            call (Common_EventScript_NameReceivedPartyMon)
+            }
+            setflag (FLAG_UNUSED_0x020)
+        }
+        elif (var(VAR_RESULT) == 1) {
+            call (MantaZone_House1_EventScript_PsyduckFanfare)
+            msgbox (gText_NicknameThisPokemon, MSGBOX_YESNO)
+            if (var(VAR_RESULT) == YES) {
+	            call (Common_EventScript_NameReceivedBoxMon)
+            }
+	        call (Common_EventScript_TransferredToPC)
+            setflag (FLAG_UNUSED_0x020)
+        }
+        else {
+            goto (Common_EventScript_NoMoreRoomForPokemon)
+        }
+        releaseall
+        end
+    }
+}
+
+script MantaZone_House1_EventScript_PsyduckFanfare {
+	bufferspeciesname (1, SPECIES_PSYDUCK)
+	removeobject (1)
+	playfanfare (MUS_FANFA4)
+    setflag (FLAG_SYS_POKEMON_GET)
+	message (MantaZone_House1_Text_ObtainedPsyduck)
+	waitmessage
+	waitfanfare
+	bufferspeciesname (0, SPECIES_PSYDUCK)
+	return
+}
+
+script MantaZone_House1_EventScript_EggWoman {
+    lock
+    faceplayer
+    if (flag(FLAG_UNUSED_0x021)) {
+        msgbox (MantaZone_House1_Text_SomethingNice)
+        release
+        end
+    } else {
+        msgbox(MantaZone_House1_Text_WantThisEgg, MSGBOX_YESNO)
+        if (var(VAR_RESULT) == NO) {
+            msgbox (MantaZone_House1_Text_OkayThen)
+            release
+            end
+        } else {
+	        getpartysize
+	        if (var(VAR_RESULT) == PARTY_SIZE) {
+                msgbox (MantaZone_House1_Text_NoRoomForEgg)
+                release
+                end
+            } else {
+                setflag (FLAG_UNUSED_0x021)
+                msgbox (MantaZone_House1_Text_TakeCareOfIt)
+	            playfanfare (MUS_FANFA4)
+	            message (MantaZone_House1_Text_ReceivedTheEgg)
+	            waitfanfare
+	            giveegg (SPECIES_PICHU)
+	            release
+	            end
+            }
+        }
+    }
+}
+
+text MantaZone_House1_Text_LeftTheBall {
+    "Decided to leave the Poké Ball."
+}
+
+text MantaZone_House1_Text_TakeThisBall {
+    "This Poké Ball contains a Psyduck.\p"
+    "Will you take it?"
+}
+
+text MantaZone_House1_Text_ObtainedPsyduck {
+    "{PLAYER} obtained Psyduck!"
+}
+
+text MantaZone_House1_Text_NoRoomForEgg {
+    "Oh, you have no room for this!"
+}
+
+text MantaZone_House1_Text_OkayThen {
+    "I see.\n"
+    "I hope you reconsider."
+}
+
+text MantaZone_House1_Text_ReceivedTheEgg {
+    "{PLAYER} received the mysterious Egg!"
+}
+
+text MantaZone_House1_Text_TakeCareOfIt {
+    "I hope you take care of it."
+}
+
+text MantaZone_House1_Text_SomethingNice {
+    "Did that Egg hatch yet?\n"
+    "I hope something nice came out."
+}
+
+text MantaZone_House1_Text_WantThisEgg {
+    "I've got a Pokémon Egg here.\p"
+    "I'm not sure what's inside of it,\n"
+    "but will you take it for me?"
+}
