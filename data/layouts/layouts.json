@@ -4410,6 +4410,16 @@
       "secondary_tileset": "gTileset_MysteryEventsHouse",
       "border_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/border.bin",
       "blockdata_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/map.bin"
+    },
+    {
+      "id": "LAYOUT_PRIME_CITY",
+      "name": "PrimeCity_Layout",
+      "width": 80,
+      "height": 64,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Prime",
+      "border_filepath": "data/layouts/PrimeCity/border.bin",
+      "blockdata_filepath": "data/layouts/PrimeCity/map.bin"
     }
   ]
 }

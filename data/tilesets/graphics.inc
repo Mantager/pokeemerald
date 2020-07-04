@@ -1729,3 +1729,23 @@ gTilesetPalettes_UnionRoom:: @ 8395678
 	.align 2
 gTilesetTiles_UnionRoom:: @ 8395878
 	.incbin "data/tilesets/secondary/union_room/tiles.4bpp.lz"
+
+	.align 2
+gTilesetPalettes_Prime::
+	.incbin "data/tilesets/secondary/prime/palettes/00.gbapal"
+	.incbin "data/tilesets/secondary/prime/palettes/01.gbapal"
+	.incbin "data/tilesets/secondary/prime/palettes/02.gbapal"
+	.incbin "data/tilesets/secondary/prime/palettes/03.gbapal"
+	.incbin "data/tilesets/secondary/prime/palettes/04.gbapal"
+	.incbin "data/tilesets/secondary/prime/palettes/05.gbapal"
+	.incbin "data/tilesets/secondary/prime/palettes/06.gbapal"
+	.incbin "data/tilesets/secondary/prime/palettes/07.gbapal"
+	.incbin "data/tilesets/secondary/prime/palettes/08.gbapal"
+	.incbin "data/tilesets/secondary/prime/palettes/09.gbapal"
+	.incbin "data/tilesets/secondary/prime/palettes/10.gbapal"
+	.incbin "data/tilesets/secondary/prime/palettes/11.gbapal"
+	.incbin "data/tilesets/secondary/prime/palettes/12.gbapal"
+
+	.align 2
+gTilesetTiles_Prime::
+	.incbin "data/tilesets/secondary/prime/tiles.4bpp.lz"
