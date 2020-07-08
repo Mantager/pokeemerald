@@ -248,6 +248,7 @@ EWRAM_DATA u32 gFieldStatuses = 0;
 EWRAM_DATA struct FieldTimer gFieldTimers = {0};
 EWRAM_DATA u8 gBattlerAbility = 0;
 EWRAM_DATA u16 gPartnerSpriteId = 0;
+EWRAM_DATA u8 gItemUseCount = 0;
 
 // IWRAM common vars
 void (*gPreBattleCallback1)(void);
@@ -546,6 +547,8 @@ static void CB2_InitBattleInternal(void)
     gBattle_BG2_Y = 0;
     gBattle_BG3_X = 0;
     gBattle_BG3_Y = 0;
+
+    gItemUseCount = 0;
 
     gBattleTerrain = BattleSetup_GetTerrainId();
     if (gBattleTypeFlags & BATTLE_TYPE_RECORDED)
@@ -5703,3 +5706,20 @@ static void HandleAction_ActionFinished(void)
     gBattleScripting.multihitMoveEffect = 0;
     gBattleResources->battleScriptsStack->size = 0;
 }
+
+// void IncrementItemUseCount(void)
+// {
+//     gItemUseCount += 1;
+// }
+
+// bool8 IsItemLimitReached(void)
+// {
+//     if (gItemUseCount >= 4)
+//     {
+//         return TRUE;
+//     }
+//     else
+//     {
+//         return FALSE;
+//     }
+// }

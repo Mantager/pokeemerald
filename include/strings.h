@@ -2963,4 +2963,6 @@ extern const u8 gText_Beauty3[];
 
 extern const u8 gText_Clad[];
 
+extern const u8 gText_FourItemsAlreadyUsed[];
+
 #endif // GUARD_STRINGS_H
