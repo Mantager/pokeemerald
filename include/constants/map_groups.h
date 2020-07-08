@@ -588,7 +588,9 @@
 #define MAP_ROUTE124_DIVING_TREASURE_HUNTERS_HOUSE (0 | (33 << 8))
 
 // Map Group 34
-#define MAP_PRIME_CITY (0 | (34 << 8))
+#define MAP_PRIME_CITY     (0 | (34 << 8))
+#define MAP_NEW_VALLEY_WAY (1 | (34 << 8))
+#define MAP_YANURAS_TOWN   (2 | (34 << 8))
 
 // Map Group 35
 

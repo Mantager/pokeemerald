@@ -4415,11 +4415,31 @@
       "id": "LAYOUT_PRIME_CITY",
       "name": "PrimeCity_Layout",
       "width": 80,
-      "height": 64,
+      "height": 70,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Prime",
       "border_filepath": "data/layouts/PrimeCity/border.bin",
       "blockdata_filepath": "data/layouts/PrimeCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_NEW_VALLEY_WAY",
+      "name": "NewValleyWay_Layout",
+      "width": 61,
+      "height": 94,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Fallarbor",
+      "border_filepath": "data/layouts/NewValleyWay/border.bin",
+      "blockdata_filepath": "data/layouts/NewValleyWay/map.bin"
+    },
+    {
+      "id": "LAYOUT_YANURAS_TOWN",
+      "name": "YanurasTown_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Fallarbor",
+      "border_filepath": "data/layouts/YanurasTown/border.bin",
+      "blockdata_filepath": "data/layouts/YanurasTown/map.bin"
     }
   ]
 }
