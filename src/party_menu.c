@@ -4241,27 +4241,43 @@ static void GetMedicineItemEffectMessage(u16 item)
     switch (GetItemEffectType(item))
     {
     case ITEM_EFFECT_CURE_POISON:
+        if (gMain.inBattle)
+            gItemUseCount += 1;
         StringExpandPlaceholders(gStringVar4, gText_PkmnCuredOfPoison);
         break;
     case ITEM_EFFECT_CURE_SLEEP:
+        if (gMain.inBattle)
+            gItemUseCount += 1;
         StringExpandPlaceholders(gStringVar4, gText_PkmnWokeUp2);
         break;
     case ITEM_EFFECT_CURE_BURN:
+        if (gMain.inBattle)
+            gItemUseCount += 1;
         StringExpandPlaceholders(gStringVar4, gText_PkmnBurnHealed);
         break;
     case ITEM_EFFECT_CURE_FREEZE:
+        if (gMain.inBattle)
+            gItemUseCount += 1;
         StringExpandPlaceholders(gStringVar4, gText_PkmnThawedOut);
         break;
     case ITEM_EFFECT_CURE_PARALYSIS:
+        if (gMain.inBattle)
+            gItemUseCount += 1;
         StringExpandPlaceholders(gStringVar4, gText_PkmnCuredOfParalysis);
         break;
     case ITEM_EFFECT_CURE_CONFUSION:
+        if (gMain.inBattle)
+            gItemUseCount += 1;
         StringExpandPlaceholders(gStringVar4, gText_PkmnSnappedOutOfConfusion);
         break;
     case ITEM_EFFECT_CURE_INFATUATION:
+        if (gMain.inBattle)
+            gItemUseCount += 1;
         StringExpandPlaceholders(gStringVar4, gText_PkmnGotOverInfatuation);
         break;
     case ITEM_EFFECT_CURE_ALL_STATUS:
+        if (gMain.inBattle)
+            gItemUseCount += 1;
         StringExpandPlaceholders(gStringVar4, gText_PkmnBecameHealthy);
         break;
     case ITEM_EFFECT_HP_EV:
@@ -4293,6 +4309,8 @@ static void GetMedicineItemEffectMessage(u16 item)
         StringExpandPlaceholders(gStringVar4, gText_MovesPPIncreased);
         break;
     case ITEM_EFFECT_HEAL_PP:
+        if (gMain.inBattle)
+            gItemUseCount += 1;
         StringExpandPlaceholders(gStringVar4, gText_PPWasRestored);
         break;
     default:
@@ -4691,6 +4709,8 @@ static void TryUsePPItem(u8 taskId)
     }
     else
     {
+        if (gMain.inBattle)
+            gItemUseCount += 1;
         gPartyMenuUseExitCallback = TRUE;
         mon = &gPlayerParty[ptr->slotId];
         PlaySE(SE_KAIFUKU);

@@ -1026,7 +1026,6 @@ void ItemUseInBattle_StatIncrease(u8 taskId)
     }
     else
     {
-        gItemUseCount += 1;
         gTasks[taskId].func = Task_UseStatIncreaseItem;
         gTasks[taskId].data[8] = 0;
     }
@@ -1055,7 +1054,6 @@ void ItemUseInBattle_Medicine(u8 taskId)
     }
     else 
     {
-        gItemUseCount += 1;
         gItemUseCB = ItemUseCB_Medicine;
         ItemUseInBattle_ShowPartyMenu(taskId);
     }
@@ -1077,7 +1075,6 @@ void ItemUseInBattle_PPRecovery(u8 taskId)
     }
     else 
     {
-        gItemUseCount += 1;
         gItemUseCB = ItemUseCB_PPRecovery;
         ItemUseInBattle_ShowPartyMenu(taskId);
     }
