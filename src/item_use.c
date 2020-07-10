@@ -999,6 +999,7 @@ static void Task_UseStatIncreaseItem(u8 taskId)
 {
     if(++gTasks[taskId].data[8] > 7)
     {
+        gItemUseCount += 1;
         PlaySE(SE_KAIFUKU);
         RemoveBagItem(gSpecialVar_ItemId, 1);
         if (!InBattlePyramid())

@@ -1065,3 +1065,7 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/NewValleyWay/scripts.inc"
 
 	.include "data/maps/YanurasTown/scripts.inc"
+
+	.include "data/maps/RocarohaValley/scripts.inc"
+
+	.include "data/maps/DelaguaTown/scripts.inc"

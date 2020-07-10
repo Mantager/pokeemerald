@@ -4424,7 +4424,7 @@
     {
       "id": "LAYOUT_NEW_VALLEY_WAY",
       "name": "NewValleyWay_Layout",
-      "width": 61,
+      "width": 60,
       "height": 94,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Fallarbor",
@@ -4440,6 +4440,26 @@
       "secondary_tileset": "gTileset_Fallarbor",
       "border_filepath": "data/layouts/YanurasTown/border.bin",
       "blockdata_filepath": "data/layouts/YanurasTown/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROCAROHA_VALLEY",
+      "name": "RocarohaValley_Layout",
+      "width": 71,
+      "height": 104,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Fallarbor",
+      "border_filepath": "data/layouts/RocarohaValley/border.bin",
+      "blockdata_filepath": "data/layouts/RocarohaValley/map.bin"
+    },
+    {
+      "id": "LAYOUT_DELAGUA_TOWN",
+      "name": "DelaguaTown_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Fallarbor",
+      "border_filepath": "data/layouts/DelaguaTown/border.bin",
+      "blockdata_filepath": "data/layouts/DelaguaTown/map.bin"
     }
   ]
 }

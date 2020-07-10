@@ -11499,63 +11499,132 @@
             "encounter_rate": 12,
             "mons": [
               {
-                "min_level": 8,
-                "max_level": 12,
+                "min_level": 10,
+                "max_level": 14,
                 "species": "SPECIES_SANDILE"
               },
               {
-                "min_level": 8,
-                "max_level": 12,
+                "min_level": 10,
+                "max_level": 14,
                 "species": "SPECIES_SHINX"
               },
               {
-                "min_level": 8,
-                "max_level": 12,
+                "min_level": 10,
+                "max_level": 14,
                 "species": "SPECIES_SLAKOTH"
-              },
-              {
-                "min_level": 8,
-                "max_level": 12,
-                "species": "SPECIES_CACNEA"
-              },
-              {
-                "min_level": 8,
-                "max_level": 12,
-                "species": "SPECIES_SLAKOTH"
-              },
-              {
-                "min_level": 8,
-                "max_level": 12,
-                "species": "SPECIES_CACNEA"
-              },
-              {
-                "min_level": 8,
-                "max_level": 12,
-                "species": "SPECIES_AXEW"
-              },
-              {
-                "min_level": 8,
-                "max_level": 12,
-                "species": "SPECIES_AXEW"
               },
               {
                 "min_level": 10,
-                "max_level": 12,
+                "max_level": 14,
+                "species": "SPECIES_CACNEA"
+              },
+              {
+                "min_level": 10,
+                "max_level": 14,
+                "species": "SPECIES_SLAKOTH"
+              },
+              {
+                "min_level": 10,
+                "max_level": 14,
+                "species": "SPECIES_CACNEA"
+              },
+              {
+                "min_level": 10,
+                "max_level": 14,
+                "species": "SPECIES_ROGGENROLA"
+              },
+              {
+                "min_level": 10,
+                "max_level": 14,
+                "species": "SPECIES_ROGGENROLA"
+              },
+              {
+                "min_level": 10,
+                "max_level": 14,
+                "species": "SPECIES_PONYTA"
+              },
+              {
+                "min_level": 10,
+                "max_level": 14,
+                "species": "SPECIES_PONYTA"
+              },
+              {
+                "min_level": 10,
+                "max_level": 14,
+                "species": "SPECIES_PONYTA"
+              },
+              {
+                "min_level": 10,
+                "max_level": 14,
+                "species": "SPECIES_PONYTA"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_ROCAROHA_VALLEY",
+          "base_label": "gRocarohaValley0",
+          "land_mons": {
+            "encounter_rate": 12,
+            "mons": [
+              {
+                "min_level": 15,
+                "max_level": 18,
+                "species": "SPECIES_SANDILE"
+              },
+              {
+                "min_level": 15,
+                "max_level": 18,
+                "species": "SPECIES_ROGGENROLA"
+              },
+              {
+                "min_level": 15,
+                "max_level": 18,
+                "species": "SPECIES_SHINX"
+              },
+              {
+                "min_level": 15,
+                "max_level": 18,
+                "species": "SPECIES_DWEBBLE"
+              },
+              {
+                "min_level": 15,
+                "max_level": 18,
+                "species": "SPECIES_CACNEA"
+              },
+              {
+                "min_level": 15,
+                "max_level": 18,
+                "species": "SPECIES_PONYTA"
+              },
+              {
+                "min_level": 15,
+                "max_level": 18,
+                "species": "SPECIES_SKARMORY"
+              },
+              {
+                "min_level": 15,
+                "max_level": 18,
                 "species": "SPECIES_DURANT"
               },
               {
-                "min_level": 10,
-                "max_level": 12,
+                "min_level": 15,
+                "max_level": 18,
+                "species": "SPECIES_AXEW"
+              },
+              {
+                "min_level": 15,
+                "max_level": 18,
                 "species": "SPECIES_HEATMOR"
               },
               {
-                "min_level": 10,
-                "max_level": 12,
-                "species": "SPECIES_DURANT"
+                "min_level": 15,
+                "max_level": 18,
+                "species": "SPECIES_AXEW"
               },
               {
-                "min_level": 10,
-                "max_level": 12,
+                "min_level": 15,
+                "max_level": 18,
                 "species": "SPECIES_HEATMOR"
               }
             ]

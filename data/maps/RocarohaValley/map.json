@@ -1,9 +1,9 @@
 {
-  "id": "MAP_NEW_VALLEY_WAY",
-  "name": "NewValleyWay",
-  "layout": "LAYOUT_NEW_VALLEY_WAY",
+  "id": "MAP_ROCAROHA_VALLEY",
+  "name": "RocarohaValley",
+  "layout": "LAYOUT_ROCAROHA_VALLEY",
   "music": "MUS_AJITO",
-  "region_map_section": "MAPSEC_NEW_VALLEY_WAY",
+  "region_map_section": "MAPSEC_ROCAROHA_VALLEY",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_ROUTE",
@@ -14,19 +14,14 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "down",
-      "offset": -8,
-      "map": "MAP_PRIME_CITY"
+      "direction": "right",
+      "offset": 84,
+      "map": "MAP_NEW_VALLEY_WAY"
     },
     {
       "direction": "up",
-      "offset": 19,
-      "map": "MAP_YANURAS_TOWN"
-    },
-    {
-      "direction": "left",
-      "offset": -84,
-      "map": "MAP_ROCAROHA_VALLEY"
+      "offset": 39,
+      "map": "MAP_DELAGUA_TOWN"
     }
   ],
   "object_events": [

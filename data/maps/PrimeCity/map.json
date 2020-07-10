@@ -15,7 +15,7 @@
   "connections": [
     {
       "direction": "up",
-      "offset": 7,
+      "offset": 8,
       "map": "MAP_NEW_VALLEY_WAY"
     }
   ],
