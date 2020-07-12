@@ -1069,3 +1069,7 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/RocarohaValley/scripts.inc"
 
 	.include "data/maps/DelaguaTown/scripts.inc"
+
+	.include "data/maps/RocarohaValley_Cave/scripts.inc"
+
+	.include "data/maps/DerivaWalk/scripts.inc"

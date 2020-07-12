@@ -4457,9 +4457,29 @@
       "width": 30,
       "height": 30,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Fallarbor",
+      "secondary_tileset": "gTileset_Dewford",
       "border_filepath": "data/layouts/DelaguaTown/border.bin",
       "blockdata_filepath": "data/layouts/DelaguaTown/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROCAROHA_VALLEY_CAVE",
+      "name": "RocarohaValley_Cave_Layout",
+      "width": 19,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/RocarohaValley_Cave/border.bin",
+      "blockdata_filepath": "data/layouts/RocarohaValley_Cave/map.bin"
+    },
+    {
+      "id": "LAYOUT_DERIVA_WALK",
+      "name": "DerivaWalk_Layout",
+      "width": 92,
+      "height": 34,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Fortree",
+      "border_filepath": "data/layouts/DerivaWalk/border.bin",
+      "blockdata_filepath": "data/layouts/DerivaWalk/map.bin"
     }
   ]
 }

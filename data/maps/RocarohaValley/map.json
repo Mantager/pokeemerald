@@ -22,13 +22,24 @@
       "direction": "up",
       "offset": 39,
       "map": "MAP_DELAGUA_TOWN"
+    },
+    {
+      "direction": "left",
+      "offset": -8,
+      "map": "MAP_DERIVA_WALK"
     }
   ],
   "object_events": [
 
   ],
   "warp_events": [
-
+    {
+      "x": 50,
+      "y": 44,
+      "elevation": 0,
+      "dest_map": "MAP_ROCAROHA_VALLEY_CAVE",
+      "dest_warp_id": 0
+    }
   ],
   "coord_events": [
 

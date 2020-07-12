@@ -593,8 +593,10 @@
 #define MAP_YANURAS_TOWN    (2 | (34 << 8))
 #define MAP_ROCAROHA_VALLEY (3 | (34 << 8))
 #define MAP_DELAGUA_TOWN    (4 | (34 << 8))
+#define MAP_DERIVA_WALK     (5 | (34 << 8))
 
 // Map Group 35
+#define MAP_ROCAROHA_VALLEY_CAVE (0 | (35 << 8))
 
 // Map Group 36
 
