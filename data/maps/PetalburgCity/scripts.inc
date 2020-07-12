@@ -92,7 +92,7 @@ PetalburgCity_EventScript_Boy1:: @ 81DC3E6
 	@applymovement 3, Common_Movement_FaceOriginalDirection
 	@waitmovement 0
 	msgbox Testing MSGBOX_AUTOCLOSE
-    setfollower 2, FOLLOWER_FLAG_ALL_LAND
+    @setfollower 2, FOLLOWER_FLAG_ALL_LAND
     release
 	end
 Testing:
