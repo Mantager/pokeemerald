@@ -588,12 +588,15 @@
 #define MAP_ROUTE124_DIVING_TREASURE_HUNTERS_HOUSE (0 | (33 << 8))
 
 // Map Group 34
-#define MAP_PRIME_CITY      (0 | (34 << 8))
-#define MAP_NEW_VALLEY_WAY  (1 | (34 << 8))
-#define MAP_YANURAS_TOWN    (2 | (34 << 8))
-#define MAP_ROCAROHA_VALLEY (3 | (34 << 8))
-#define MAP_DELAGUA_TOWN    (4 | (34 << 8))
-#define MAP_DERIVA_WALK     (5 | (34 << 8))
+#define MAP_PRIME_CITY        (0 | (34 << 8))
+#define MAP_NEW_VALLEY_WAY    (1 | (34 << 8))
+#define MAP_YANURAS_TOWN      (2 | (34 << 8))
+#define MAP_ROCAROHA_VALLEY   (3 | (34 << 8))
+#define MAP_DELAGUA_TOWN      (4 | (34 << 8))
+#define MAP_DERIVA_WALK       (5 | (34 << 8))
+#define MAP_LAND_BRIDGE_SOUTH (6 | (34 << 8))
+#define MAP_ORO_TOWN          (7 | (34 << 8))
+#define MAP_LAND_BRIDGE_NORTH (8 | (34 << 8))
 
 // Map Group 35
 #define MAP_ROCAROHA_VALLEY_CAVE (0 | (35 << 8))

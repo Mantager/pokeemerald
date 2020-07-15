@@ -635,7 +635,10 @@
     "YanurasTown",
     "RocarohaValley",
     "DelaguaTown",
-    "DerivaWalk"
+    "DerivaWalk",
+    "LandBridgeSouth",
+    "OroTown",
+    "LandBridgeNorth"
   ],
   "gMapGroup35": [
     "RocarohaValley_Cave"

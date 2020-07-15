@@ -1,9 +1,9 @@
 {
-  "id": "MAP_DERIVA_WALK",
-  "name": "DerivaWalk",
-  "layout": "LAYOUT_DERIVA_WALK",
+  "id": "MAP_ORO_TOWN",
+  "name": "OroTown",
+  "layout": "LAYOUT_ORO_TOWN",
   "music": "MUS_AJITO",
-  "region_map_section": "MAPSEC_DERIVA_WALK",
+  "region_map_section": "MAPSEC_ORO_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_TOWN",
@@ -14,14 +14,14 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "right",
-      "offset": 8,
-      "map": "MAP_ROCAROHA_VALLEY"
+      "direction": "down",
+      "offset": 0,
+      "map": "MAP_LAND_BRIDGE_SOUTH"
     },
     {
-      "direction": "left",
-      "offset": -20,
-      "map": "MAP_LAND_BRIDGE_SOUTH"
+      "direction": "up",
+      "offset": 0,
+      "map": "MAP_LAND_BRIDGE_NORTH"
     }
   ],
   "object_events": [

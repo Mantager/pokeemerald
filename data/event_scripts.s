@@ -1073,3 +1073,9 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/RocarohaValley_Cave/scripts.inc"
 
 	.include "data/maps/DerivaWalk/scripts.inc"
+
+	.include "data/maps/LandBridgeSouth/scripts.inc"
+
+	.include "data/maps/OroTown/scripts.inc"
+
+	.include "data/maps/LandBridgeNorth/scripts.inc"

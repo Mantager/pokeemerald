@@ -1,12 +1,12 @@
 {
-  "id": "MAP_DERIVA_WALK",
-  "name": "DerivaWalk",
-  "layout": "LAYOUT_DERIVA_WALK",
+  "id": "MAP_LAND_BRIDGE_SOUTH",
+  "name": "LandBridgeSouth",
+  "layout": "LAYOUT_LAND_BRIDGE_SOUTH",
   "music": "MUS_AJITO",
-  "region_map_section": "MAPSEC_DERIVA_WALK",
+  "region_map_section": "MAPSEC_LAND_BRIDGE_SOUTH",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
-  "map_type": "MAP_TYPE_TOWN",
+  "map_type": "MAP_TYPE_ROUTE",
   "allow_cycling": true,
   "allow_escaping": false,
   "allow_running": true,
@@ -15,13 +15,13 @@
   "connections": [
     {
       "direction": "right",
-      "offset": 8,
-      "map": "MAP_ROCAROHA_VALLEY"
+      "offset": 20,
+      "map": "MAP_DERIVA_WALK"
     },
     {
-      "direction": "left",
-      "offset": -20,
-      "map": "MAP_LAND_BRIDGE_SOUTH"
+      "direction": "up",
+      "offset": 0,
+      "map": "MAP_ORO_TOWN"
     }
   ],
   "object_events": [

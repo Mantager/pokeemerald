@@ -4475,11 +4475,41 @@
       "id": "LAYOUT_DERIVA_WALK",
       "name": "DerivaWalk_Layout",
       "width": 92,
-      "height": 34,
+      "height": 32,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Fortree",
+      "secondary_tileset": "gTileset_Pacifidlog",
       "border_filepath": "data/layouts/DerivaWalk/border.bin",
       "blockdata_filepath": "data/layouts/DerivaWalk/map.bin"
+    },
+    {
+      "id": "LAYOUT_LAND_BRIDGE_SOUTH",
+      "name": "LandBridgeSouth_Layout",
+      "width": 32,
+      "height": 54,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Dewford",
+      "border_filepath": "data/layouts/LandBridgeSouth/border.bin",
+      "blockdata_filepath": "data/layouts/LandBridgeSouth/map.bin"
+    },
+    {
+      "id": "LAYOUT_ORO_TOWN",
+      "name": "OroTown_Layout",
+      "width": 32,
+      "height": 28,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Dewford",
+      "border_filepath": "data/layouts/OroTown/border.bin",
+      "blockdata_filepath": "data/layouts/OroTown/map.bin"
+    },
+    {
+      "id": "LAYOUT_LAND_BRIDGE_NORTH",
+      "name": "LandBridgeNorth_Layout",
+      "width": 33,
+      "height": 68,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Dewford",
+      "border_filepath": "data/layouts/LandBridgeNorth/border.bin",
+      "blockdata_filepath": "data/layouts/LandBridgeNorth/map.bin"
     }
   ]
 }
