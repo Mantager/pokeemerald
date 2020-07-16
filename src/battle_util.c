@@ -6327,6 +6327,10 @@ static u32 CalcDefenseStat(u16 move, u8 battlerAtk, u8 battlerDef, u8 moveType, 
         if (!usesDefStat)
             MulModifier(&modifier, UQ_4_12(1.5));
         break;
+    case HOLD_EFFECT_EXTRA_BLUBBER:
+        if ((gBattleMons[battlerDef].species == SPECIES_WAILMER || gBattleMons[battlerDef].species == SPECIES_WAILORD))
+            MulModifier(&modifier, UQ_4_12(2.0));
+        break;
     }
 
     // sandstorm sp.def boost for rock types

@@ -36,6 +36,7 @@ LilycoveCity_DepartmentStore_2F_Pokemart1: @ 821FB60
 	.2byte ITEM_ICE_HEAL
 	.2byte ITEM_AWAKENING
 	.2byte ITEM_FLUFFY_TAIL
+	.2byte ITEM_EXTRA_BLUBBER
 	.2byte ITEM_NONE
 	release
 	end

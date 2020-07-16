@@ -7461,4 +7461,17 @@ const struct Item gItems[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = 0,
     },
+
+    [ITEM_EXTRA_BLUBBER] =
+    {
+        .name = _("Extra Blubber"),
+        .itemId = ITEM_EXTRA_BLUBBER,
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_EXTRA_BLUBBER,
+        .description = sExtraBlubberDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 4,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = 0,
+    },
 };

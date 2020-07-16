@@ -1518,3 +1518,5 @@ const u32 gItemIconPalette_WaterMemory[] = INCBIN_U32("graphics/items/icon_palet
 const u32 gItemIconPalette_BugTMHM[] = INCBIN_U32("graphics/items/icon_palettes/bug_tm_hm.gbapal.lz");
 
 const u32 gItemIconPalette_FairyTMHM[] = INCBIN_U32("graphics/items/icon_palettes/fairy_tm_hm.gbapal.lz");
+
+const u32 gItemIconPalette_ExtraBlubber[] = INCBIN_U32("graphics/items/icon_palettes/extra_blubber.gbapal.lz");

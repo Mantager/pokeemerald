@@ -87,7 +87,13 @@
     }
   ],
   "warp_events": [
-
+    {
+      "x": 34,
+      "y": 47,
+      "elevation": 0,
+      "dest_map": "MAP_EVER_GRANDE_CITY_CHAMPIONS_ROOM",
+      "dest_warp_id": 0
+    }
   ],
   "coord_events": [
 
