@@ -21466,6 +21466,31 @@ const struct BaseStats gBaseStats[] =
         .noFlip = FALSE,
     },
 
+    [SPECIES_EXCJINN] =
+    {
+        .baseHP        = 71,
+        .baseAttack    = 94,
+        .baseDefense   = 107,
+        .baseSpeed     = 94,
+        .baseSpAttack  = 107,
+        .baseSpDefense = 73,
+        .type1 = TYPE_GHOST,
+        .type2 = TYPE_FAIRY,
+        .catchRate = 255,
+        .expYield = 300,
+        .evYield_Defense = 1,
+        .evYield_SpDefense = 2,
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 120,
+        .friendship = 0,
+        .growthRate = GROWTH_SLOW,
+        .eggGroup1 = EGG_GROUP_UNDISCOVERED,
+        .eggGroup2 = EGG_GROUP_UNDISCOVERED,
+        .abilities = {ABILITY_WATER_VEIL, ABILITY_WATER_VEIL},
+        .bodyColor = BODY_COLOR_WHITE,
+        .noFlip = FALSE,
+    },
+
     [SPECIES_MEGA_GENGAR] =
     {
         .baseHP        = 60,

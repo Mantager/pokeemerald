@@ -4857,3 +4857,9 @@ const u8 gMelmetalPokedexText[] = _(
     "Revered long ago for its capacity to create\n"
     "iron from nothing, for some reason it has\n"
     "come back to life after 3,000 years.");
+
+const u8 gExcjinnPokedexText[] = _(
+    "The wishes it grants come at a great cost.\n"
+    "Tears streaming from its human-like eyes\n"
+    "form limbs that enable it to move around.\n"
+    "Nobody knows how Excjinn came to be.");

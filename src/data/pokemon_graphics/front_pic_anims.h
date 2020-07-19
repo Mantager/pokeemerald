@@ -13104,6 +13104,19 @@ static const union AnimCmd *const sAnims_LYCANROC_DUSK[] ={
     sAnim_LYCANROC_DUSK_1,
 };
 
+static const union AnimCmd sAnim_EXCJINN_1[] =
+{
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 20),
+    ANIMCMD_END,
+};
+
+
+static const union AnimCmd *const sAnims_EXCJINN[] ={
+    sAnim_GeneralFrame0,
+    sAnim_EXCJINN_1,
+};
+
 #define ANIM_CMD(name)             [SPECIES_##name] = sAnims_##name
 #define ANIM_CMD_FULL(name, anims) [SPECIES_##name] = anims
 
@@ -13929,6 +13942,7 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     ANIM_CMD(ZERAORA),
     ANIM_CMD(MELTAN),
     ANIM_CMD(MELMETAL),
+    ANIM_CMD(EXCJINN),
     ANIM_CMD(EGG),
     ANIM_CMD(MEGA_VENUSAUR),
     ANIM_CMD(MEGA_CHARIZARD_X),

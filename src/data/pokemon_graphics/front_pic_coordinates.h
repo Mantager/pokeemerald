@@ -4046,6 +4046,11 @@ const struct MonCoords gMonFrontPicCoords[] =
         .size = 0x86,
         .y_offset = 0x04,
     },
+    [SPECIES_EXCJINN] =
+    {
+        .size = 0x88,
+        .y_offset = 0x00,
+    },
     [SPECIES_EGG] =
     {
         .size = 0x33,

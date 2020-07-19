@@ -16513,6 +16513,14 @@ static const struct LevelUpMove sMelmetalLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
+static const struct LevelUpMove sExcjinnLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_AQUA_RING),
+    LEVEL_UP_MOVE( 1, MOVE_CURSE),
+    LEVEL_UP_MOVE( 1, MOVE_SHADOW_PUNCH),
+    LEVEL_UP_MOVE( 1, MOVE_DAZZLING_GLEAM),
+    LEVEL_UP_END
+};
+
 static const struct LevelUpMove sAlolanRattataLevelUpLearnset[] = {
 	LEVEL_UP_MOVE( 1, MOVE_TACKLE),
 	LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),

@@ -8104,4 +8104,12 @@ extern const u16 gPokenavOptions_Pal[];
 
 extern const u32 gItemIconPalette_ExtraBlubber[];
 
+extern const u32 gMonFrontPic_Excjinn[];
+extern const u32 gMonPalette_Excjinn[];
+extern const u32 gMonBackPic_Excjinn[];
+extern const u32 gMonShinyPalette_Excjinn[];
+extern const u32 gMonStillFrontPic_Excjinn[];
+extern const u8 gMonIcon_Excjinn[];
+extern const u8 gMonFootprint_Excjinn[];
+
 #endif //GUARD_GRAPHICS_H

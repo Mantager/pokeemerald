@@ -9719,4 +9719,16 @@ const struct PokedexEntry gPokedexEntries[] =
 		.trainerScale = 387,
 		.trainerOffset = 2,
 	},
+
+	[NATIONAL_DEX_EXCJINN] =
+	{
+		.categoryName = _("Miracle"),
+		.height = 25,
+		.weight = 350,
+		.description = gExcjinnPokedexText,
+		.pokemonScale = 255,
+		.pokemonOffset = 1,
+		.trainerScale = 389,
+		.trainerOffset = 2,
+	},
 };

@@ -1154,6 +1154,7 @@ const u16 gSpeciesToNationalPokedexNum[NUM_SPECIES] = // Assigns all species to 
 	SPECIES_TO_NATIONAL(ZERAORA),
 	SPECIES_TO_NATIONAL(MELTAN),
 	SPECIES_TO_NATIONAL(MELMETAL),
+	SPECIES_TO_NATIONAL(EXCJINN),
 };
 
 const u16 gHoennToNationalOrder[HOENN_DEX_COUNT] = // Assigns Hoenn Dex Pokémon (Using National Dex Index)
@@ -2082,6 +2083,7 @@ static const u8 sMonFrontAnimIdsTable[NUM_SPECIES - 1] =
     [SPECIES_ZERAORA - 1] = 0x17,
     [SPECIES_MELTAN - 1] = 0x65,
     [SPECIES_MELMETAL - 1] = 0x09,
+    [SPECIES_EXCJINN - 1] = 0x09,
 
     // Forms
     [SPECIES_ROTOM_HEAT - 1] = 0,
