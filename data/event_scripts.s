@@ -1085,3 +1085,59 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/PistaVillage/scripts.inc"
 
 	.include "data/maps/AgudoWoodland/scripts.inc"
+
+	.include "data/maps/WingPeak_1F/scripts.inc"
+
+	.include "data/maps/WingPeak_2F/scripts.inc"
+
+	.include "data/maps/WingPeak_3F/scripts.inc"
+
+	.include "data/maps/PrimeCity_PokemonCenter_1F/scripts.inc"
+
+	.include "data/maps/PrimeCity_PokemonCenter_2F/scripts.inc"
+
+	.include "data/maps/PrimeCity_PokemonCenter_3F/scripts.inc"
+
+	.include "data/maps/PrimeCity_DepartmentStore_1F/scripts.inc"
+
+	.include "data/maps/PrimeCity_DepartmentStore_2F/scripts.inc"
+
+	.include "data/maps/PrimeCity_DepartmentStore_3F/scripts.inc"
+
+	.include "data/maps/PrimeCity_CladBuilding_1F/scripts.inc"
+
+	.include "data/maps/PrimeCity_CladBuilding_2F/scripts.inc"
+
+	.include "data/maps/PrimeCity_CladBuilding_3F/scripts.inc"
+
+	.include "data/maps/PrimeCity_PoliceStation_1F/scripts.inc"
+
+	.include "data/maps/PrimeCity_PoliceStation_2F/scripts.inc"
+
+	.include "data/maps/PrimeCity_ApartmentsA_1F/scripts.inc"
+
+	.include "data/maps/PrimeCity_ApartmentsB_2F/scripts.inc"
+
+	.include "data/maps/PrimeCity_ApartmentsA_2F/scripts.inc"
+
+	.include "data/maps/PrimeCity_ApartmentsB_1F/scripts.inc"
+
+	.include "data/maps/PrimeCity_PrimeHotel/scripts.inc"
+
+	.include "data/maps/PrimeCity_HouseA_1F/scripts.inc"
+
+	.include "data/maps/PrimeCity_HouseA_2F/scripts.inc"
+
+	.include "data/maps/PrimeCity_HouseB/scripts.inc"
+
+	.include "data/maps/PrimeCity_Restaurant_1F/scripts.inc"
+
+	.include "data/maps/PrimeCity_Restaurant_2F/scripts.inc"
+
+	.include "data/maps/PrimeCity_ShadyBuilding_1F/scripts.inc"
+
+	.include "data/maps/PrimeCity_ShadyBuilding_2F/scripts.inc"
+
+	.include "data/maps/PrimeCity_Nursery/scripts.inc"
+
+	.include "data/maps/PrimeCity_SecretBuilding/scripts.inc"

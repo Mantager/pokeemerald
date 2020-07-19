@@ -644,10 +644,37 @@
     "AgudoWoodland"
   ],
   "gMapGroup35": [
-    "RocarohaValley_Cave"
+    "RocarohaValley_Cave",
+    "WingPeak_1F",
+    "WingPeak_2F",
+    "WingPeak_3F"
   ],
   "gMapGroup36": [
-
+    "PrimeCity_PokemonCenter_1F",
+    "PrimeCity_PokemonCenter_2F",
+    "PrimeCity_PokemonCenter_3F",
+    "PrimeCity_DepartmentStore_1F",
+    "PrimeCity_DepartmentStore_2F",
+    "PrimeCity_DepartmentStore_3F",
+    "PrimeCity_CladBuilding_1F",
+    "PrimeCity_CladBuilding_2F",
+    "PrimeCity_CladBuilding_3F",
+    "PrimeCity_PoliceStation_1F",
+    "PrimeCity_PoliceStation_2F",
+    "PrimeCity_ApartmentsA_1F",
+    "PrimeCity_ApartmentsB_2F",
+    "PrimeCity_ApartmentsA_2F",
+    "PrimeCity_ApartmentsB_1F",
+    "PrimeCity_PrimeHotel",
+    "PrimeCity_HouseA_1F",
+    "PrimeCity_HouseA_2F",
+    "PrimeCity_HouseB",
+    "PrimeCity_Restaurant_1F",
+    "PrimeCity_Restaurant_2F",
+    "PrimeCity_ShadyBuilding_1F",
+    "PrimeCity_ShadyBuilding_2F",
+    "PrimeCity_Nursery",
+    "PrimeCity_SecretBuilding"
   ],
   "gMapGroup37": [
 

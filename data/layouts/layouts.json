@@ -4534,12 +4534,292 @@
     {
       "id": "LAYOUT_AGUDO_WOODLAND",
       "name": "AgudoWoodland_Layout",
-      "width": 128,
+      "width": 130,
       "height": 54,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Mauville",
       "border_filepath": "data/layouts/AgudoWoodland/border.bin",
       "blockdata_filepath": "data/layouts/AgudoWoodland/map.bin"
+    },
+    {
+      "id": "LAYOUT_WING_PEAK_1F",
+      "name": "WingPeak_1F_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/WingPeak_1F/border.bin",
+      "blockdata_filepath": "data/layouts/WingPeak_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_WING_PEAK_2F",
+      "name": "WingPeak_2F_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/WingPeak_2F/border.bin",
+      "blockdata_filepath": "data/layouts/WingPeak_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_WING_PEAK_3F",
+      "name": "WingPeak_3F_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/WingPeak_3F/border.bin",
+      "blockdata_filepath": "data/layouts/WingPeak_3F/map.bin"
+    },
+    {
+      "id": "LAYOUT_PRIME_CITY_POKEMON_CENTER_1F",
+      "name": "PrimeCity_PokemonCenter_1F_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/PrimeCity_PokemonCenter_1F/border.bin",
+      "blockdata_filepath": "data/layouts/PrimeCity_PokemonCenter_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_PRIME_CITY_POKEMON_CENTER_2F",
+      "name": "PrimeCity_PokemonCenter_2F_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/PrimeCity_PokemonCenter_2F/border.bin",
+      "blockdata_filepath": "data/layouts/PrimeCity_PokemonCenter_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_PRIME_CITY_POKEMON_CENTER_3F",
+      "name": "PrimeCity_PokemonCenter_3F_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/PrimeCity_PokemonCenter_3F/border.bin",
+      "blockdata_filepath": "data/layouts/PrimeCity_PokemonCenter_3F/map.bin"
+    },
+    {
+      "id": "LAYOUT_PRIME_CITY_DEPARTMENT_STORE_1F",
+      "name": "PrimeCity_DepartmentStore_1F_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/PrimeCity_DepartmentStore_1F/border.bin",
+      "blockdata_filepath": "data/layouts/PrimeCity_DepartmentStore_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_PRIME_CITY_DEPARTMENT_STORE_2F",
+      "name": "PrimeCity_DepartmentStore_2F_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/PrimeCity_DepartmentStore_2F/border.bin",
+      "blockdata_filepath": "data/layouts/PrimeCity_DepartmentStore_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_PRIME_CITY_DEPARTMENT_STORE_3F",
+      "name": "PrimeCity_DepartmentStore_3F_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/PrimeCity_DepartmentStore_3F/border.bin",
+      "blockdata_filepath": "data/layouts/PrimeCity_DepartmentStore_3F/map.bin"
+    },
+    {
+      "id": "LAYOUT_PRIME_CITY_CLAD_BUILDING_1F",
+      "name": "PrimeCity_CladBuilding_1F_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/PrimeCity_CladBuilding_1F/border.bin",
+      "blockdata_filepath": "data/layouts/PrimeCity_CladBuilding_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_PRIME_CITY_CLAD_BUILDING_2F",
+      "name": "PrimeCity_CladBuilding_2F_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/PrimeCity_CladBuilding_2F/border.bin",
+      "blockdata_filepath": "data/layouts/PrimeCity_CladBuilding_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_PRIME_CITY_CLAD_BUILDING_3F",
+      "name": "PrimeCity_CladBuilding_3F_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/PrimeCity_CladBuilding_3F/border.bin",
+      "blockdata_filepath": "data/layouts/PrimeCity_CladBuilding_3F/map.bin"
+    },
+    {
+      "id": "LAYOUT_PRIME_CITY_POLICE_STATION_1F",
+      "name": "PrimeCity_PoliceStation_1F_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Facility",
+      "border_filepath": "data/layouts/PrimeCity_PoliceStation_1F/border.bin",
+      "blockdata_filepath": "data/layouts/PrimeCity_PoliceStation_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_PRIME_CITY_POLICE_STATION_2F",
+      "name": "PrimeCity_PoliceStation_2F_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Facility",
+      "border_filepath": "data/layouts/PrimeCity_PoliceStation_2F/border.bin",
+      "blockdata_filepath": "data/layouts/PrimeCity_PoliceStation_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_PRIME_CITY_APARTMENTS_A_1F",
+      "name": "PrimeCity_ApartmentsA_1F_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/PrimeCity_ApartmentsA_1F/border.bin",
+      "blockdata_filepath": "data/layouts/PrimeCity_ApartmentsA_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_PRIME_CITY_APARTMENTS_B_2F",
+      "name": "PrimeCity_ApartmentsB_2F_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/PrimeCity_ApartmentsB_2F/border.bin",
+      "blockdata_filepath": "data/layouts/PrimeCity_ApartmentsB_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_PRIME_CITY_APARTMENTS_A_2F",
+      "name": "PrimeCity_ApartmentsA_2F_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/PrimeCity_ApartmentsA_2F/border.bin",
+      "blockdata_filepath": "data/layouts/PrimeCity_ApartmentsA_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_PRIME_CITY_APARTMENTS_B_1F",
+      "name": "PrimeCity_ApartmentsB_1F_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/PrimeCity_ApartmentsB_1F/border.bin",
+      "blockdata_filepath": "data/layouts/PrimeCity_ApartmentsB_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_PRIME_CITY_PRIME_HOTEL",
+      "name": "PrimeCity_PrimeHotel_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonFanClub",
+      "border_filepath": "data/layouts/PrimeCity_PrimeHotel/border.bin",
+      "blockdata_filepath": "data/layouts/PrimeCity_PrimeHotel/map.bin"
+    },
+    {
+      "id": "LAYOUT_PRIME_CITY_HOUSE_A_1F",
+      "name": "PrimeCity_HouseA_1F_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/PrimeCity_HouseA_1F/border.bin",
+      "blockdata_filepath": "data/layouts/PrimeCity_HouseA_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_PRIME_CITY_HOUSE_A_2F",
+      "name": "PrimeCity_HouseA_2F_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/PrimeCity_HouseA_2F/border.bin",
+      "blockdata_filepath": "data/layouts/PrimeCity_HouseA_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_PRIME_CITY_HOUSE_B",
+      "name": "PrimeCity_HouseB_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/PrimeCity_HouseB/border.bin",
+      "blockdata_filepath": "data/layouts/PrimeCity_HouseB/map.bin"
+    },
+    {
+      "id": "LAYOUT_PRIME_CITY_RESTAURANT_1F",
+      "name": "PrimeCity_Restaurant_1F_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/PrimeCity_Restaurant_1F/border.bin",
+      "blockdata_filepath": "data/layouts/PrimeCity_Restaurant_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_PRIME_CITY_RESTAURANT_2F",
+      "name": "PrimeCity_Restaurant_2F_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/PrimeCity_Restaurant_2F/border.bin",
+      "blockdata_filepath": "data/layouts/PrimeCity_Restaurant_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_PRIME_CITY_SHADY_BUILDING_1F",
+      "name": "PrimeCity_ShadyBuilding_1F_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/PrimeCity_ShadyBuilding_1F/border.bin",
+      "blockdata_filepath": "data/layouts/PrimeCity_ShadyBuilding_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_PRIME_CITY_SHADY_BUILDING_2F",
+      "name": "PrimeCity_ShadyBuilding_2F_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/PrimeCity_ShadyBuilding_2F/border.bin",
+      "blockdata_filepath": "data/layouts/PrimeCity_ShadyBuilding_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_PRIME_CITY_NURSERY",
+      "name": "PrimeCity_Nursery_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonDayCare",
+      "border_filepath": "data/layouts/PrimeCity_Nursery/border.bin",
+      "blockdata_filepath": "data/layouts/PrimeCity_Nursery/map.bin"
+    },
+    {
+      "id": "LAYOUT_PRIME_CITY_SECRET_BUILDING",
+      "name": "PrimeCity_SecretBuilding_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/PrimeCity_SecretBuilding/border.bin",
+      "blockdata_filepath": "data/layouts/PrimeCity_SecretBuilding/map.bin"
     }
   ]
 }
