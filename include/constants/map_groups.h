@@ -597,6 +597,9 @@
 #define MAP_LAND_BRIDGE_SOUTH (6 | (34 << 8))
 #define MAP_ORO_TOWN          (7 | (34 << 8))
 #define MAP_LAND_BRIDGE_NORTH (8 | (34 << 8))
+#define MAP_VIENTO_WALK       (9 | (34 << 8))
+#define MAP_PISTA_VILLAGE     (10 | (34 << 8))
+#define MAP_AGUDO_WOODLAND    (11 | (34 << 8))
 
 // Map Group 35
 #define MAP_ROCAROHA_VALLEY_CAVE (0 | (35 << 8))

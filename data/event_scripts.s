@@ -1079,3 +1079,9 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/OroTown/scripts.inc"
 
 	.include "data/maps/LandBridgeNorth/scripts.inc"
+
+	.include "data/maps/VientoWalk/scripts.inc"
+
+	.include "data/maps/PistaVillage/scripts.inc"
+
+	.include "data/maps/AgudoWoodland/scripts.inc"

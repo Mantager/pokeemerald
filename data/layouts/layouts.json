@@ -4454,8 +4454,8 @@
     {
       "id": "LAYOUT_DELAGUA_TOWN",
       "name": "DelaguaTown_Layout",
-      "width": 30,
-      "height": 30,
+      "width": 38,
+      "height": 34,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Dewford",
       "border_filepath": "data/layouts/DelaguaTown/border.bin",
@@ -4510,6 +4510,36 @@
       "secondary_tileset": "gTileset_Dewford",
       "border_filepath": "data/layouts/LandBridgeNorth/border.bin",
       "blockdata_filepath": "data/layouts/LandBridgeNorth/map.bin"
+    },
+    {
+      "id": "LAYOUT_VIENTO_WALK",
+      "name": "VientoWalk_Layout",
+      "width": 84,
+      "height": 39,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mauville",
+      "border_filepath": "data/layouts/VientoWalk/border.bin",
+      "blockdata_filepath": "data/layouts/VientoWalk/map.bin"
+    },
+    {
+      "id": "LAYOUT_PISTA_VILLAGE",
+      "name": "PistaVillage_Layout",
+      "width": 34,
+      "height": 28,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mauville",
+      "border_filepath": "data/layouts/PistaVillage/border.bin",
+      "blockdata_filepath": "data/layouts/PistaVillage/map.bin"
+    },
+    {
+      "id": "LAYOUT_AGUDO_WOODLAND",
+      "name": "AgudoWoodland_Layout",
+      "width": 128,
+      "height": 54,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mauville",
+      "border_filepath": "data/layouts/AgudoWoodland/border.bin",
+      "blockdata_filepath": "data/layouts/AgudoWoodland/map.bin"
     }
   ]
 }

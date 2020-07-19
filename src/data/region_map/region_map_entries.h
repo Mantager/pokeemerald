@@ -208,7 +208,7 @@ static const u8 sMapName_LandBridge[] = _("Land Bridge");
 static const u8 sMapName_OroTown[] = _("Oro Town");
 static const u8 sMapName_VientoWalk[] = _("Viento Walk");
 static const u8 sMapName_PistaVillage[] = _("Pista Village");
-static const u8 sMapName_AgudoWoods[] = _("Agudo Woods");
+static const u8 sMapName_AgudoWoods[] = _("Agudo Woodland");
 static const u8 sMapName_WingPeak[] = _("Wing Peak");
 
 const struct RegionMapLocation gRegionMapEntries[] = {

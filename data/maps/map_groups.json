@@ -638,7 +638,10 @@
     "DerivaWalk",
     "LandBridgeSouth",
     "OroTown",
-    "LandBridgeNorth"
+    "LandBridgeNorth",
+    "VientoWalk",
+    "PistaVillage",
+    "AgudoWoodland"
   ],
   "gMapGroup35": [
     "RocarohaValley_Cave"
