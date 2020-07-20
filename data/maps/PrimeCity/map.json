@@ -91,7 +91,28 @@
       "x": 34,
       "y": 47,
       "elevation": 0,
-      "dest_map": "MAP_EVER_GRANDE_CITY_CHAMPIONS_ROOM",
+      "dest_map": "MAP_PRIME_CITY_POKEMON_CENTER_1F",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 56,
+      "y": 54,
+      "elevation": 0,
+      "dest_map": "MAP_PRIME_CITY_DEPARTMENT_STORE_1F",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 46,
+      "y": 55,
+      "elevation": 0,
+      "dest_map": "MAP_PRIME_CITY_CLAD_BUILDING_1F",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 65,
+      "y": 50,
+      "elevation": 0,
+      "dest_map": "MAP_PRIME_CITY_POLICE_STATION_1F",
       "dest_warp_id": 0
     }
   ],

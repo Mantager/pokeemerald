@@ -5,7 +5,6 @@ PrimeCity_MapScripts::
 PrimeCity_DebugWailmer::
 	setflag FLAG_SYS_POKEMON_GET
 	givemon SPECIES_WAILMER, 15, ITEM_NONE
-	givemon SPECIES_EXCJINN, 50, ITEM_NONE
 	end
 
 

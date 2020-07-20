@@ -17,7 +17,27 @@
 
   ],
   "warp_events": [
-
+    {
+      "x": 9,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_PRIME_CITY",
+      "dest_warp_id": 3
+    },
+    {
+      "x": 10,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_PRIME_CITY",
+      "dest_warp_id": 3
+    },
+    {
+      "x": 16,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_PRIME_CITY_POLICE_STATION_2F",
+      "dest_warp_id": 0
+    }
   ],
   "coord_events": [
 
