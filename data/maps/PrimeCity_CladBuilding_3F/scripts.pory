@@ -1,1 +1,33 @@
-mapscripts PrimeCity_CladBuilding_3F_MapScripts {}
+mapscripts PrimeCity_CladBuilding_3F_MapScripts {
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_PRIME_CITY_STATE, 2 {
+            delay(32)
+            fadeoutbgm(1)
+            lockall
+            delay(8)
+            msgbox("H-help me…\n"
+                   "Somebody… please…")
+            message("Are you okay-")
+            delay(32)
+            applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown)
+            waitmessage
+            waitmovement(0)
+            closemessage
+            removeobject(1)
+            playse(SE_W185)
+            waitse
+            delay(8)
+            playse(SE_PIN)
+            applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark)
+            waitmovement(0)
+            msgbox("(Wh… what was that?\n"
+                   "He just disappeared…)\p"
+                   "(Am I seeing things?\n"
+                   "I've got no time for this…)")
+            fadeinbgm(1)
+            releaseall
+            setvar(VAR_PRIME_CITY_STATE, 3)
+            end
+        }
+    ]
+}
