@@ -365,6 +365,7 @@ gBattleScriptsForMoveEffects:: @ 82D86A8
 	.4byte BattleScript_EffectFairyLock
 	.4byte BattleScript_EffectAllySwitch
 	.4byte BattleScript_EffectSleepHit
+	.4byte BattleScript_EffectTitanSplash
 
 BattleScript_EffectSleepHit:
 	setmoveeffect MOVE_EFFECT_SLEEP
@@ -2048,6 +2049,7 @@ BattleScript_EffectJudgment:
 BattleScript_EffectFusionCombo:
 BattleScript_EffectRevelationDance:
 BattleScript_EffectBelch:
+BattleScript_EffectTitanSplash:
 
 BattleScript_HitFromAtkCanceler::
 	attackcanceler

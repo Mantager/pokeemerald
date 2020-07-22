@@ -6037,6 +6037,10 @@ static u32 CalcMoveBasePowerAfterModifiers(u16 move, u8 battlerAtk, u8 battlerDe
         if (gBattleMons[battlerDef].item != ITEM_NONE && GetBattlerAbility(battlerDef) != ABILITY_STICKY_HOLD)
             MulModifier(&modifier, UQ_4_12(1.5));
         break;
+    case EFFECT_TITAN_SPLASH:
+        if ((IsAbilityPreventingEscape(battlerDef)) || (!(CanBattlerEscape(battlerDef))))
+            MulModifier(&modifier, UQ_4_12(2.0));
+        break;
     }
 
     // various effecs
