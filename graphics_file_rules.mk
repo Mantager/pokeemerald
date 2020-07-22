@@ -362,7 +362,7 @@ $(FONTGFXDIR)/keypad_icons.4bpp: %.4bpp: %.png
 
 ### Miscellaneous ###
 graphics/title_screen/pokemon_logo.gbapal: %.gbapal: %.pal
-	$(GFX) $< $@ -num_colors 224
+	$(GFX) $< $@ -num_colors 64
 
 graphics/link_games/pkmnjump_bg.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -num_tiles 63

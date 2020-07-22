@@ -43,6 +43,7 @@ PrimeCity_EventScript_MalimoInitMeeting::
 	applymovement OBJ_EVENT_ID_CAMERA, PrimeCity_Movement_CameraToFern
 	waitmovement 0
 	msgbox PrimeCity_EventScript_MalimoInitMeeting_Text_4
+	closemessage
 	applymovement 7, Common_Movement_FaceLeft
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft
 	waitmovement 0
@@ -75,9 +76,9 @@ PrimeCity_EventScript_MalimoInitMeeting::
 	msgbox PrimeCity_EventScript_MalimoInitMeeting_Text_19
 	msgbox PrimeCity_EventScript_MalimoInitMeeting_Text_20
 	msgbox PrimeCity_EventScript_MalimoInitMeeting_Text_21
-	msgbox PrimeCity_EventScript_MalimoInitMeeting_Text_22
-	msgbox PrimeCity_EventScript_MalimoInitMeeting_Text_24
+	msgbox PrimeCity_EventScript_MalimoInitMeeting_Text_23
 	msgbox PrimeCity_EventScript_MalimoInitMeeting_Text_25
+	msgbox PrimeCity_EventScript_MalimoInitMeeting_Text_26
 	fadescreen 1
 	removeobject 6
 	setflag FLAG_PRIME_CITY_HIDE_FERN
@@ -85,13 +86,14 @@ PrimeCity_EventScript_MalimoInitMeeting::
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
 	applymovement 7, Common_Movement_FaceDown
 	waitmovement 0
-	msgbox PrimeCity_EventScript_MalimoInitMeeting_Text_26
+	msgbox PrimeCity_EventScript_MalimoInitMeeting_Text_27
 	applymovement 7, Common_Movement_FaceUp
 	waitmovement 0
-	msgbox PrimeCity_EventScript_MalimoInitMeeting_Text_27
+	msgbox PrimeCity_EventScript_MalimoInitMeeting_Text_28
 	applymovement 7, Common_Movement_FaceDown
 	waitmovement 0
-	msgbox PrimeCity_EventScript_MalimoInitMeeting_Text_28
+	msgbox PrimeCity_EventScript_MalimoInitMeeting_Text_29
+	closemessage
 	fadescreen 1
 	removeobject 7
 	setflag FLAG_PRIME_CITY_HIDE_MALIMO
@@ -108,7 +110,6 @@ PrimeCity_Movement_CameraToFern:
 	walk_fast_left
 	walk_fast_down
 	walk_fast_down
-	walk_fast_left
 	walk_fast_left
 	walk_fast_left
 	walk_fast_left
@@ -140,13 +141,13 @@ PrimeCity_Trigger_CantLeave_Text_0:
 	.string "(They're probably waiting for me.)$"
 
 PrimeCity_EventScript_MalimoInitMeeting_Text_0:
-	.string "Clad! You're here!$"
+	.string "{COLOR}{BLUE}Clad! You're here!$"
 
 PrimeCity_EventScript_MalimoInitMeeting_Text_1:
 	.string "Good to see you, Malimo.$"
 
 PrimeCity_EventScript_MalimoInitMeeting_Text_2:
-	.string "Heh heh! And you!\n"
+	.string "{COLOR}{BLUE}Heh heh! And you!\n"
 	.string "How're ya after the Swim-Off?\p"
 	.string "Not too tired, I hope…$"
 
@@ -174,7 +175,7 @@ PrimeCity_EventScript_MalimoInitMeeting_Text_8:
 
 PrimeCity_EventScript_MalimoInitMeeting_Text_9:
 	.string "{COLOR}{RED}Lame.\n"
-	.string "I suppose we'll have to make a stop\nat Yanuras Town.$"
+	.string "I suppose we'll have to make a stop\lat Yanuras Town.$"
 
 PrimeCity_EventScript_MalimoInitMeeting_Text_10:
 	.string "Uh? Fern?\n"
@@ -234,28 +235,30 @@ PrimeCity_EventScript_MalimoInitMeeting_Text_21:
 	.string "I said yes already, so let's go!$"
 
 PrimeCity_EventScript_MalimoInitMeeting_Text_22:
-	.string "{COLOR}{RED}Alllrightey then!"
-	.string "Go and get yourselves ready, and we'll meet\n"
-	.string "at the entrance to New Valley Way.\p$"
+	.string "{COLOR}{RED}Alllrightey then!$"
 
 PrimeCity_EventScript_MalimoInitMeeting_Text_23:
-	.string "New Valley Way?$"
+	.string "Go and get yourselves ready, and we'll meet\n"
+	.string "at the entrance to New Valley Way.$"
 
 PrimeCity_EventScript_MalimoInitMeeting_Text_24:
-	.string "North of town, you mean? By the fence?$"
+	.string "New Valley Way?$"
 
 PrimeCity_EventScript_MalimoInitMeeting_Text_25:
+	.string "North of town, you mean? By the fence?$"
+
+PrimeCity_EventScript_MalimoInitMeeting_Text_26:
 	.string "{COLOR}{RED}Yeah, I'm sure you guys know it.\n"
 	.string "Well, see ya, wouldn't wanna be ya!$"
 
-PrimeCity_EventScript_MalimoInitMeeting_Text_26:
+PrimeCity_EventScript_MalimoInitMeeting_Text_27:
 	.string "{COLOR}{BLUE}Clad.\p"
 	.string "Even if Fern is a bit of a nutter, he is\n"
 	.string "right y'know, we'd better be prepared.$"
 
-PrimeCity_EventScript_MalimoInitMeeting_Text_27:
+PrimeCity_EventScript_MalimoInitMeeting_Text_28:
 	.string "{COLOR}{BLUE}Luckily, right behind us is\nthe Dept. Store, so buying supplies\lis no problem.$"
 
-PrimeCity_EventScript_MalimoInitMeeting_Text_28:
+PrimeCity_EventScript_MalimoInitMeeting_Text_29:
 	.string "{COLOR}{BLUE}Anyway, I'll meet you in a bit!\n"
 	.string "Gotta sort out some home stuff first.$"
