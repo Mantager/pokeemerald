@@ -2168,6 +2168,18 @@ BattleScript_SweetVeilProtects:
 	orhalfword gMoveResultFlags, MOVE_RESULT_FAILED
 	goto BattleScript_MoveEnd
 
+BattleScript_ObliviousProtectsRet::
+	pause 0x20
+	call BattleScript_AbilityPopUp
+	printstring STRINGID_ITDOESNTAFFECT
+	waitmessage 0x40
+	return
+
+BattleScript_ObliviousProtects::
+	call BattleScript_ObliviousProtectsRet
+	orhalfword gMoveResultFlags, MOVE_RESULT_FAILED
+	goto BattleScript_MoveEnd
+
 BattleScript_AromaVeilProtectsRet::
 	pause 0x20
 	call BattleScript_AbilityPopUp
@@ -4392,6 +4404,7 @@ BattleScript_EffectTaunt::
 	attackstring
 	ppreduce
 	jumpifability BS_TARGET_SIDE, ABILITY_AROMA_VEIL, BattleScript_AromaVeilProtects
+	jumpifability BS_TARGET_SIDE, ABILITY_OBLIVIOUS, BattleScript_ObliviousProtects
 	accuracycheck BattleScript_ButItFailed, ACC_CURR_MOVE
 	settaunt BattleScript_ButItFailed
 	attackanimation
