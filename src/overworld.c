@@ -950,6 +950,8 @@ static u8 GetAdjustedInitialDirection(struct InitialPlayerAvatarState *playerStr
 {
     if (FlagGet(FLAG_SYS_CRUISE_MODE) && mapType == MAP_TYPE_OCEAN_ROUTE)
         return DIR_EAST;
+    else if (VarGet(VAR_PRIME_CITY_STATE) == 0)
+        return DIR_NORTH;
     else if (MetatileBehavior_IsDeepSouthWarp(metatileBehavior) == TRUE)
         return DIR_NORTH;
     else if (MetatileBehavior_IsNonAnimDoor(metatileBehavior) == TRUE || MetatileBehavior_IsDoor(metatileBehavior) == TRUE)
@@ -1080,6 +1082,18 @@ static bool16 IsInfiltratedWeatherInstitute(struct WarpData *warp)
         return FALSE;
 }
 
+static bool16 IsBeforeInitialEvent(struct WarpData *warp)
+{
+    if (VarGet(VAR_PRIME_CITY_STATE))
+        return FALSE;
+    else if (warp->mapGroup != MAP_GROUP(PRIME_CITY_CLAD_BUILDING_3F_CLAD_ROOM))
+        return FALSE;
+    else if (warp->mapNum != MAP_NUM(PRIME_CITY_CLAD_BUILDING_3F_CLAD_ROOM))
+        return FALSE;
+    else
+        return TRUE;
+}
+
 static bool16 IsInflitratedSpaceCenter(struct WarpData *warp)
 {
     if (VarGet(VAR_MOSSDEEP_CITY_STATE) == 0)
@@ -1104,6 +1118,8 @@ u16 GetLocationMusic(struct WarpData *warp)
         return MUS_MGM0;
     else if (IsInfiltratedWeatherInstitute(warp) == TRUE)
         return MUS_TOZAN;
+    else if (IsBeforeInitialEvent(warp) == TRUE)
+        return MUS_INTER_V;
     else
         return Overworld_GetMapHeaderByGroupAndId(warp->mapGroup, warp->mapNum)->music;
 }

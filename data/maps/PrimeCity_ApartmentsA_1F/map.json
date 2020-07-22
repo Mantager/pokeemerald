@@ -2,7 +2,7 @@
   "id": "MAP_PRIME_CITY_APARTMENTS_A_1F",
   "name": "PrimeCity_ApartmentsA_1F",
   "layout": "LAYOUT_PRIME_CITY_APARTMENTS_A_1F",
-  "music": "MUS_AJITO",
+  "music": "MUS_B_FRONTIER",
   "region_map_section": "MAPSEC_PRIME_CITY",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

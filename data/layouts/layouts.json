@@ -4820,6 +4820,16 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/PrimeCity_SecretBuilding/border.bin",
       "blockdata_filepath": "data/layouts/PrimeCity_SecretBuilding/map.bin"
+    },
+    {
+      "id": "LAYOUT_PRIME_CITY_CLAD_BUILDING_3F_CLAD_ROOM",
+      "name": "PrimeCity_CladBuilding_3F_CladRoom_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/PrimeCity_CladBuilding_3F_CladRoom/border.bin",
+      "blockdata_filepath": "data/layouts/PrimeCity_CladBuilding_3F_CladRoom/map.bin"
     }
   ]
 }

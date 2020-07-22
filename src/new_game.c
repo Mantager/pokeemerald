@@ -128,7 +128,9 @@ static void ClearFrontierRecord(void)
 
 static void WarpToTruck(void)
 {
-    SetWarpDestination(MAP_GROUP(PRIME_CITY), MAP_NUM(PRIME_CITY), -1, 46, 56);
+    u32 trainerId = (1) | GetGeneratedTrainerIdLower();
+    SetTrainerId(trainerId, gSaveBlock2Ptr->playerTrainerId);
+    SetWarpDestination(MAP_GROUP(PRIME_CITY_CLAD_BUILDING_3F_CLAD_ROOM), MAP_NUM(PRIME_CITY_CLAD_BUILDING_3F_CLAD_ROOM), -1, 5, 3);
     WarpIntoMap();
 }
 

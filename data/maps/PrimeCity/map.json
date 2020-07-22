@@ -2,7 +2,7 @@
   "id": "MAP_PRIME_CITY",
   "name": "PrimeCity",
   "layout": "LAYOUT_PRIME_CITY",
-  "music": "MUS_AJITO",
+  "music": "MUS_B_FRONTIER",
   "region_map_section": "MAPSEC_PRIME_CITY",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
@@ -22,8 +22,8 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_M",
-      "x": 32,
-      "y": 48,
+      "x": 0,
+      "y": 16,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
@@ -61,8 +61,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MART_EMPLOYEE",
-      "x": 37,
-      "y": 48,
+      "x": 0,
+      "y": 18,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
@@ -74,8 +74,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MART_EMPLOYEE",
-      "x": 36,
-      "y": 48,
+      "x": 0,
+      "y": 17,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
@@ -84,6 +84,45 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "LilycoveCity_DepartmentStore_2F_EventScript_ClerkLeft",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_FERN",
+      "x": 55,
+      "y": 55,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_PRIME_CITY_HIDE_FRIENDS"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MALIMO",
+      "x": 56,
+      "y": 56,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_PRIME_CITY_HIDE_FRIENDS"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_RYAN",
+      "x": 57,
+      "y": 55,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_PRIME_CITY_HIDE_FRIENDS"
     }
   ],
   "warp_events": [

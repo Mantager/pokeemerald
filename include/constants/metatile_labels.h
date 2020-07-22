@@ -237,6 +237,7 @@
 #define METATILE_General_YellowCaveOpen        0x1A9
 
 // gTileset_GenericBuilding
+#define METATILE_GenericBuilding_TV_Off                  0x21E
 #define METATILE_GenericBuilding_TableEdge               0x2F1
 #define METATILE_GenericBuilding_TrickHouse_Door_Closed  0x21B
 #define METATILE_GenericBuilding_TrickHouse_Stairs_Down  0x219
@@ -420,6 +421,12 @@
 #define METATILE_PokemonCenter_Floor_Plain_Alt          0x2E4
 #define METATILE_PokemonCenter_Floor_ShadowTop          0x21E
 #define METATILE_PokemonCenter_Floor_ShadowTop_Alt      0x2DC
+
+// gTileset_Prime
+#define METATILE_Prime_Door_DeptStore         0x22C
+#define METATILE_Prime_Door_Gray              0x243
+#define METATILE_Prime_Door_Tan               0x265
+#define METATILE_Prime_PokeCenter_Door_Prime  0x25E
 
 // gTileset_RS
 #define METATILE_RS_MossdeepGym_RedArrow_Down   0x205

@@ -1,0 +1,114 @@
+mapscripts PrimeCity_CladBuilding_3F_CladRoom_MapScripts {
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_PRIME_CITY_STATE, 0 {
+            lock
+            delay(16)
+            msgbox("We welcome you back to the\n"
+                   "Ríota Swim-Off, where our contestants\l"
+                   "are still fiercely fighting!")
+            playse(SE_DENDOU)
+            waitse
+            msgbox("We're reaching the end of the final\n"
+                   "round of the competition now!\n")
+            delay(8)
+            msgbox("After five tough trials, who will\n"
+                   "be the one to take this 1000m race?!\n")
+            delay(8)
+            msgbox("It looks like Marlon and his\n"
+                   "Carracosta are about to win this!")
+            delay(8)
+            msgbox("But wait, what's this?!\p"
+                   "Clad and his partner Wailmer are\n"
+                   "gaining on Marlon, fast!")
+            playse(SE_TOREEYE)
+            waitse
+            delay(8)
+            msgbox("(My phone's ringing.)\n"
+                   "(I'll just wait until this is finished…)")
+            delay(8)
+            playse(SE_TOREEYE)
+            waitse
+            msgbox("(Argh. It's not gonna stop, is it?)")
+            delay(8)
+            playse(SE_TOREEYE)
+            waitse
+            msgbox("(F-i-n-e.)")
+            closemessage
+            setmetatile(5,1,METATILE_GenericBuilding_TV_Off,1)
+            special(DrawWholeMapView)
+            playse(SE_PN_OFF)
+            waitse
+            fadeoutbgm(1)
+            applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown)
+            waitmovement(0)
+            delay(16)
+            playse(SE_TOREOFF)
+            waitse
+            msgbox("Yo, it's Clad.\n"
+                   "What's happenin'?")
+            msgbox("Clad! Malimo here.\n"
+                   "We're meeting at the Dept. Store later.\p"
+                   "Fern was making a big deal out of it.\n"
+                   "You come too, okay?")
+            msgbox("Sure, okay.\n"
+                   "Well, see you then. Bye-bye.")
+            closemessage
+            playse(SE_PC_OFF)
+            waitse
+            delay(8)
+            msgbox("(The Dept. Store is close, but maybe\n"
+                   "I should walk about town first.)\p"
+                   "(I don't like being early at all.)")
+            release
+            setvar(VAR_PRIME_CITY_STATE, 1)
+            playbgm(MUS_B_FRONTIER, 0)
+        }
+        VAR_TEMP_0, 0 {
+            setmetatile(5,1,METATILE_GenericBuilding_TV_Off,1)
+            special(DrawWholeMapView)
+            setvar(VAR_TEMP_0, 1)
+        }
+    ]
+}
+
+script PrimeCity_CladBuilding_3F_CladRoom_Trigger_LeaveWithoutWailmer {
+    lockall
+    msgbox("(Ah, I shouldn't leave without a Pokémon.)")
+    closemessage
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp)
+    waitmovement(0)
+    releaseall
+    end
+}
+
+script PrimeCity_CladBuilding_3F_CladRoom_EventScript_WailmerBall {
+    lockall
+    setflag(FLAG_PRIME_CITY_HIDE_WAILMER_BALL)
+    removeobject(1)
+    playse(SE_BOWA2)
+    waitse
+    clearflag(FLAG_PRIME_CITY_HIDE_WAILMER)
+    addobject(2)
+    applymovement(2, Common_Movement_FacePlayer)
+    waitmovement(0)
+    delay(16)
+    playmoncry(SPECIES_WAILMER, 0)
+    msgbox("Welko! Welko!")
+    waitmoncry
+    closemessage
+    delay(8)
+    msgbox("You think I'd forget you, Wailmer?\n"
+           "C'mon big guy, we're heading out.")
+    closemessage
+    setflag(FLAG_PRIME_CITY_HIDE_WAILMER)
+    removeobject(2)
+    playse(SE_BOWA2)
+    waitse
+    setflag(FLAG_SYS_POKEMON_GET)
+    givemon(SPECIES_WAILMER,15,ITEM_NONE)
+    setvar(VAR_PRIME_CITY_STATE, 2)
+    msgbox("Would you like to nickname Wailmer?", MSGBOX_YESNO)
+    if(var(VAR_RESULT) == 1) { call(Common_EventScript_NameReceivedPartyMon) }
+    releaseall
+    end
+}

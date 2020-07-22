@@ -1141,3 +1141,5 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/PrimeCity_Nursery/scripts.inc"
 
 	.include "data/maps/PrimeCity_SecretBuilding/scripts.inc"
+
+	.include "data/maps/PrimeCity_CladBuilding_3F_CladRoom/scripts.inc"
