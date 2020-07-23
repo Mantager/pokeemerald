@@ -1,0 +1,49 @@
+mapscripts NewValleyWay_MapScripts { }
+
+script NewValleyWay_EventScript_Terence {
+    trainerbattle_single(TRAINER_G2_TERENCE, "Battle me now!", "No, I lost!")
+    msgbox("You're good.")
+    end
+}
+
+script NewValleyWay_EventScript_Mimi {
+    trainerbattle_single(TRAINER_G2_MIMI, "Battle me now!", "No, I lost!")
+    msgbox("You're good.")
+    end
+}
+
+script NewValleyWay_EventScript_Katalan {
+    trainerbattle_single(TRAINER_G2_KATALAN, "Battle me now!", "No, I lost!")
+    msgbox("You're good.")
+    end
+}
+
+script NewValleyWay_EventScript_Sergei {
+    trainerbattle_single(TRAINER_G2_SERGEI, "Battle me now!", "No, I lost!")
+    msgbox("You're good.")
+    end
+}
+
+script NewValleyWay_EventScript_Camila {
+    trainerbattle_single(TRAINER_G2_CAMILA, "Battle me now!", "No, I lost!")
+    msgbox("You're good.")
+    end
+}
+
+script NewValleyWay_EventScript_Mateo {
+    trainerbattle_single(TRAINER_G2_MATEO, "Battle me now!", "No, I lost!")
+    msgbox("You're good.")
+    end
+}
+
+script NewValleyWay_EventScript_Thiago {
+    trainerbattle_single(TRAINER_G2_THIAGO, "Battle me now!", "No, I lost!")
+    msgbox("You're good.")
+    end
+}
+
+script NewValleyWay_EventScript_Daniel {
+    trainerbattle_single(TRAINER_G2_DANIEL, "Battle me now!", "No, I lost!")
+    msgbox("You're good.")
+    end
+}

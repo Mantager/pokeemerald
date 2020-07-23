@@ -1,2 +1,60 @@
 NewValleyWay_MapScripts::
 	.byte 0
+
+
+NewValleyWay_EventScript_Terence::
+	trainerbattle_single TRAINER_G2_TERENCE, NewValleyWay_EventScript_Terence_Text_0, NewValleyWay_EventScript_Terence_Text_1
+	msgbox NewValleyWay_EventScript_Terence_Text_2
+	end
+
+
+NewValleyWay_EventScript_Mimi::
+	trainerbattle_single TRAINER_G2_MIMI, NewValleyWay_EventScript_Terence_Text_0, NewValleyWay_EventScript_Terence_Text_1
+	msgbox NewValleyWay_EventScript_Terence_Text_2
+	end
+
+
+NewValleyWay_EventScript_Katalan::
+	trainerbattle_single TRAINER_G2_KATALAN, NewValleyWay_EventScript_Terence_Text_0, NewValleyWay_EventScript_Terence_Text_1
+	msgbox NewValleyWay_EventScript_Terence_Text_2
+	end
+
+
+NewValleyWay_EventScript_Sergei::
+	trainerbattle_single TRAINER_G2_SERGEI, NewValleyWay_EventScript_Terence_Text_0, NewValleyWay_EventScript_Terence_Text_1
+	msgbox NewValleyWay_EventScript_Terence_Text_2
+	end
+
+
+NewValleyWay_EventScript_Camila::
+	trainerbattle_single TRAINER_G2_CAMILA, NewValleyWay_EventScript_Terence_Text_0, NewValleyWay_EventScript_Terence_Text_1
+	msgbox NewValleyWay_EventScript_Terence_Text_2
+	end
+
+
+NewValleyWay_EventScript_Mateo::
+	trainerbattle_single TRAINER_G2_MATEO, NewValleyWay_EventScript_Terence_Text_0, NewValleyWay_EventScript_Terence_Text_1
+	msgbox NewValleyWay_EventScript_Terence_Text_2
+	end
+
+
+NewValleyWay_EventScript_Thiago::
+	trainerbattle_single TRAINER_G2_THIAGO, NewValleyWay_EventScript_Terence_Text_0, NewValleyWay_EventScript_Terence_Text_1
+	msgbox NewValleyWay_EventScript_Terence_Text_2
+	end
+
+
+NewValleyWay_EventScript_Daniel::
+	trainerbattle_single TRAINER_G2_DANIEL, NewValleyWay_EventScript_Terence_Text_0, NewValleyWay_EventScript_Terence_Text_1
+	msgbox NewValleyWay_EventScript_Terence_Text_2
+	end
+
+
+NewValleyWay_EventScript_Terence_Text_0:
+	.string "Battle me now!$"
+
+NewValleyWay_EventScript_Terence_Text_1:
+	.string "No, I lost!$"
+
+NewValleyWay_EventScript_Terence_Text_2:
+	.string "You're good.$"

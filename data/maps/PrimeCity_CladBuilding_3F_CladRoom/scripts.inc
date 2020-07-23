@@ -9,6 +9,7 @@ PrimeCity_CladBuilding_3F_CladRoom_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
 
 PrimeCity_CladBuilding_3F_CladRoom_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE_0:
 	lock
+	setrespawn HEAL_LOCATION_PRIME_CITY
 	delay 16
 	msgbox PrimeCity_CladBuilding_3F_CladRoom_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE_0_Text_0
 	playse SE_DENDOU

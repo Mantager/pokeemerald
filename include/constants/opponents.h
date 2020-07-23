@@ -2,6 +2,14 @@
 #define GUARD_CONSTANTS_OPPONENTS_H
 
 #define TRAINER_NONE                          0
+#define TRAINER_G2_TERENCE                    1
+#define TRAINER_G2_MIMI                       2
+#define TRAINER_G2_KATALAN                    3
+#define TRAINER_G2_SERGEI                     4
+#define TRAINER_G2_CAMILA                     5
+#define TRAINER_G2_MATEO                      6
+#define TRAINER_G2_THIAGO                     7
+#define TRAINER_G2_DANIEL                     8
 #define TRAINER_SAWYER_1                      1
 #define TRAINER_GRUNT_AQUA_HIDEOUT_1          2
 #define TRAINER_GRUNT_AQUA_HIDEOUT_2          3

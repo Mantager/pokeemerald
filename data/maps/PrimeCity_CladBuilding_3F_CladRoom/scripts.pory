@@ -2,6 +2,7 @@ mapscripts PrimeCity_CladBuilding_3F_CladRoom_MapScripts {
     MAP_SCRIPT_ON_FRAME_TABLE [
         VAR_PRIME_CITY_STATE, 0 {
             lock
+            setrespawn(HEAL_LOCATION_PRIME_CITY)
             delay(16)
             msgbox("We welcome you back to the\n"
                    "Ríota Swim-Off, where our contestants\l"
