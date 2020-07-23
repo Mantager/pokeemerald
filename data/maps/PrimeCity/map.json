@@ -140,6 +140,48 @@
       "elevation": 0,
       "dest_map": "MAP_PRIME_CITY_POLICE_STATION_1F",
       "dest_warp_id": 0
+    },
+    {
+      "x": 16,
+      "y": 21,
+      "elevation": 0,
+      "dest_map": "MAP_PRIME_CITY_APARTMENTS_A_1F",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 56,
+      "y": 36,
+      "elevation": 0,
+      "dest_map": "MAP_PRIME_CITY_APARTMENTS_B_1F",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 61,
+      "y": 13,
+      "elevation": 0,
+      "dest_map": "MAP_PRIME_CITY_HOUSE_A_1F",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 54,
+      "y": 22,
+      "elevation": 0,
+      "dest_map": "MAP_PRIME_CITY_HOUSE_B",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 11,
+      "y": 54,
+      "elevation": 0,
+      "dest_map": "MAP_PRIME_CITY_RESTAURANT_1F",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 32,
+      "y": 36,
+      "elevation": 0,
+      "dest_map": "MAP_PRIME_CITY_NURSERY",
+      "dest_warp_id": 0
     }
   ],
   "coord_events": [
@@ -187,6 +229,51 @@
       "var": "VAR_PRIME_CITY_STATE",
       "var_value": "3",
       "script": "PrimeCity_Trigger_CantLeave"
+    },
+    {
+      "type": "trigger",
+      "x": 40,
+      "y": 6,
+      "elevation": 0,
+      "var": "VAR_PRIME_CITY_STATE",
+      "var_value": "4",
+      "script": "PrimeCity_Trigger_LeavingEvent"
+    },
+    {
+      "type": "trigger",
+      "x": 41,
+      "y": 6,
+      "elevation": 0,
+      "var": "VAR_PRIME_CITY_STATE",
+      "var_value": "4",
+      "script": "PrimeCity_Trigger_LeavingEvent"
+    },
+    {
+      "type": "trigger",
+      "x": 42,
+      "y": 6,
+      "elevation": 0,
+      "var": "VAR_PRIME_CITY_STATE",
+      "var_value": "4",
+      "script": "PrimeCity_Trigger_LeavingEvent"
+    },
+    {
+      "type": "trigger",
+      "x": 43,
+      "y": 6,
+      "elevation": 0,
+      "var": "VAR_PRIME_CITY_STATE",
+      "var_value": "4",
+      "script": "PrimeCity_Trigger_LeavingEvent"
+    },
+    {
+      "type": "trigger",
+      "x": 44,
+      "y": 6,
+      "elevation": 0,
+      "var": "VAR_PRIME_CITY_STATE",
+      "var_value": "4",
+      "script": "PrimeCity_Trigger_LeavingEvent"
     }
   ],
   "bg_events": [

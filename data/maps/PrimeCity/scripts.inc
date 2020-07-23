@@ -1,5 +1,18 @@
 PrimeCity_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, PrimeCity_MapScripts_MAP_SCRIPT_ON_TRANSITION
 	.byte 0
+
+PrimeCity_MapScripts_MAP_SCRIPT_ON_TRANSITION:
+	compare VAR_PRIME_CITY_STATE, 4
+	goto_if_eq PrimeCity_MapScripts_MAP_SCRIPT_ON_TRANSITION_1
+	return
+
+PrimeCity_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
+	setobjectxyperm 6, 41, 4
+	setobjectmovementtype 6, MOVEMENT_TYPE_FACE_RIGHT
+	setobjectxyperm 7, 43, 4
+	setobjectmovementtype 7, MOVEMENT_TYPE_FACE_LEFT
+	return
 
 
 PrimeCity_DebugWailmer::
@@ -27,16 +40,28 @@ PrimeCity_Trigger_CantLeave::
 	msgbox PrimeCity_Trigger_CantLeave_Text_0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown
 	waitmovement 0
+	fadescreen 0
 	release
 	end
 
 
 PrimeCity_EventScript_MalimoInitMeeting::
 	lockall
+	fadescreen 1
+	getplayerxy VAR_TEMP_1, VAR_TEMP_2
+	compare VAR_TEMP_1, 55
+	goto_if_eq PrimeCity_EventScript_MalimoInitMeeting_2
+PrimeCity_EventScript_MalimoInitMeeting_1:
+	compare VAR_TEMP_1, 57
+	goto_if_eq PrimeCity_EventScript_MalimoInitMeeting_5
+PrimeCity_EventScript_MalimoInitMeeting_4:
+	waitmovement 0
+	fadescreen 0
 	msgbox PrimeCity_EventScript_MalimoInitMeeting_Text_0
 	msgbox PrimeCity_EventScript_MalimoInitMeeting_Text_1
 	msgbox PrimeCity_EventScript_MalimoInitMeeting_Text_2
 	msgbox PrimeCity_EventScript_MalimoInitMeeting_Text_3
+	closemessage
 	clearflag FLAG_PRIME_CITY_HIDE_FERN
 	addobject 6
 	special SpawnCameraObject
@@ -76,32 +101,123 @@ PrimeCity_EventScript_MalimoInitMeeting::
 	msgbox PrimeCity_EventScript_MalimoInitMeeting_Text_19
 	msgbox PrimeCity_EventScript_MalimoInitMeeting_Text_20
 	msgbox PrimeCity_EventScript_MalimoInitMeeting_Text_21
-	msgbox PrimeCity_EventScript_MalimoInitMeeting_Text_23
+	msgbox PrimeCity_EventScript_MalimoInitMeeting_Text_22
+	msgbox PrimeCity_EventScript_MalimoInitMeeting_Text_24
 	msgbox PrimeCity_EventScript_MalimoInitMeeting_Text_25
-	msgbox PrimeCity_EventScript_MalimoInitMeeting_Text_26
+	closemessage
 	fadescreen 1
-	removeobject 6
-	setflag FLAG_PRIME_CITY_HIDE_FERN
+	setobjectxy 6, 41, 4
+	setobjectxyperm 6, 41, 4
+	setobjectmovementtype 6, MOVEMENT_TYPE_FACE_RIGHT
 	fadescreen 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
 	applymovement 7, Common_Movement_FaceDown
 	waitmovement 0
-	msgbox PrimeCity_EventScript_MalimoInitMeeting_Text_27
+	msgbox PrimeCity_EventScript_MalimoInitMeeting_Text_26
 	applymovement 7, Common_Movement_FaceUp
 	waitmovement 0
-	msgbox PrimeCity_EventScript_MalimoInitMeeting_Text_28
+	msgbox PrimeCity_EventScript_MalimoInitMeeting_Text_27
 	applymovement 7, Common_Movement_FaceDown
 	waitmovement 0
-	msgbox PrimeCity_EventScript_MalimoInitMeeting_Text_29
+	msgbox PrimeCity_EventScript_MalimoInitMeeting_Text_28
 	closemessage
 	fadescreen 1
-	removeobject 7
-	setflag FLAG_PRIME_CITY_HIDE_MALIMO
+	setobjectxy 7, 43, 4
+	setobjectxyperm 7, 43, 4
+	setobjectmovementtype 7, MOVEMENT_TYPE_FACE_LEFT
 	fadescreen 0
 	releaseall
 	setvar VAR_PRIME_CITY_STATE, 4
 	special RemoveCameraObject
 	end
+
+PrimeCity_EventScript_MalimoInitMeeting_2:
+	applymovement OBJ_EVENT_ID_PLAYER, PrimeCity_Movement_PlayerToMalimoLeft
+	goto PrimeCity_EventScript_MalimoInitMeeting_1
+
+PrimeCity_EventScript_MalimoInitMeeting_5:
+	applymovement OBJ_EVENT_ID_PLAYER, PrimeCity_Movement_PlayerToMalimoRight
+	goto PrimeCity_EventScript_MalimoInitMeeting_4
+
+
+PrimeCity_Trigger_LeavingEvent::
+	lockall
+	fadescreen 1
+	getplayerxy VAR_TEMP_1, VAR_TEMP_2
+	compare VAR_TEMP_1, 40
+	goto_if_eq PrimeCity_Trigger_LeavingEvent_2
+PrimeCity_Trigger_LeavingEvent_1:
+	compare VAR_TEMP_1, 41
+	goto_if_eq PrimeCity_Trigger_LeavingEvent_5
+PrimeCity_Trigger_LeavingEvent_4:
+	compare VAR_TEMP_1, 42
+	goto_if_eq PrimeCity_Trigger_LeavingEvent_8
+PrimeCity_Trigger_LeavingEvent_7:
+	compare VAR_TEMP_1, 43
+	goto_if_eq PrimeCity_Trigger_LeavingEvent_11
+PrimeCity_Trigger_LeavingEvent_10:
+	compare VAR_TEMP_1, 44
+	goto_if_eq PrimeCity_Trigger_LeavingEvent_14
+PrimeCity_Trigger_LeavingEvent_13:
+	waitmovement 0
+	fadescreen 0
+	msgbox PrimeCity_Trigger_LeavingEvent_Text_0
+	msgbox PrimeCity_Trigger_LeavingEvent_Text_1
+	msgbox PrimeCity_Trigger_LeavingEvent_Text_2
+	applymovement 6, Common_Movement_FaceDown
+	waitmovement 0
+	msgbox PrimeCity_Trigger_LeavingEvent_Text_3
+	msgbox PrimeCity_Trigger_LeavingEvent_Text_4
+	applymovement 6, Common_Movement_FaceRight
+	waitmovement 0
+	msgbox PrimeCity_Trigger_LeavingEvent_Text_5
+	msgbox PrimeCity_Trigger_LeavingEvent_Text_6
+	msgbox PrimeCity_Trigger_LeavingEvent_Text_7
+	msgbox PrimeCity_Trigger_LeavingEvent_Text_8
+	applymovement 6, Common_Movement_FaceDown
+	applymovement 7, Common_Movement_FaceDown
+	waitmovement 0
+	msgbox PrimeCity_Trigger_LeavingEvent_Text_9
+	applymovement 7, Common_Movement_FaceLeft
+	waitmovement 0
+	msgbox PrimeCity_Trigger_LeavingEvent_Text_10
+	applymovement 6, Common_Movement_FaceRight
+	waitmovement 0
+	msgbox PrimeCity_Trigger_LeavingEvent_Text_11
+	msgbox PrimeCity_Trigger_LeavingEvent_Text_12
+	msgbox PrimeCity_Trigger_LeavingEvent_Text_13
+	msgbox PrimeCity_Trigger_LeavingEvent_Text_14
+	msgbox PrimeCity_Trigger_LeavingEvent_Text_15
+	closemessage
+	fadescreen 1
+	setflag FLAG_PRIME_CITY_HIDE_FERN
+	removeobject 6
+	setflag FLAG_PRIME_CITY_HIDE_MALIMO
+	removeobject 7
+	setvar VAR_PRIME_CITY_STATE, 5
+	fadescreen 0
+	releaseall
+	end
+
+PrimeCity_Trigger_LeavingEvent_2:
+	applymovement OBJ_EVENT_ID_PLAYER, PrimeCity_Movement_PlayerToMaliFernFarLeft
+	goto PrimeCity_Trigger_LeavingEvent_1
+
+PrimeCity_Trigger_LeavingEvent_5:
+	applymovement OBJ_EVENT_ID_PLAYER, PrimeCity_Movement_PlayerToMaliFernLeft
+	goto PrimeCity_Trigger_LeavingEvent_4
+
+PrimeCity_Trigger_LeavingEvent_8:
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp
+	goto PrimeCity_Trigger_LeavingEvent_7
+
+PrimeCity_Trigger_LeavingEvent_11:
+	applymovement OBJ_EVENT_ID_PLAYER, PrimeCity_Movement_PlayerToMaliFernRight
+	goto PrimeCity_Trigger_LeavingEvent_10
+
+PrimeCity_Trigger_LeavingEvent_14:
+	applymovement OBJ_EVENT_ID_PLAYER, PrimeCity_Movement_PlayerToMaliFernFarRight
+	goto PrimeCity_Trigger_LeavingEvent_13
 
 
 PrimeCity_Movement_CameraToFern:
@@ -128,6 +244,40 @@ PrimeCity_Movement_FernToPlayer:
 	walk_up
 	walk_right
 	walk_right
+	step_end
+
+PrimeCity_Movement_PlayerToMalimoLeft:
+	walk_fastest_down
+	walk_fastest_right
+	face_up
+	step_end
+
+PrimeCity_Movement_PlayerToMalimoRight:
+	walk_fastest_down
+	walk_fastest_left
+	face_up
+	step_end
+
+PrimeCity_Movement_PlayerToMaliFernFarLeft:
+	walk_fastest_right
+	walk_fastest_right
+	walk_fastest_up
+	step_end
+
+PrimeCity_Movement_PlayerToMaliFernLeft:
+	walk_fastest_right
+	walk_fastest_up
+	step_end
+
+PrimeCity_Movement_PlayerToMaliFernRight:
+	walk_fastest_left
+	walk_fastest_up
+	step_end
+
+PrimeCity_Movement_PlayerToMaliFernFarRight:
+	walk_fastest_left
+	walk_fastest_left
+	walk_fastest_up
 	step_end
 
 PrimeCity_EventScript_PrimeWherePartyAt_Text_0:
@@ -235,30 +385,78 @@ PrimeCity_EventScript_MalimoInitMeeting_Text_21:
 	.string "I said yes already, so let's go!$"
 
 PrimeCity_EventScript_MalimoInitMeeting_Text_22:
-	.string "{COLOR}{RED}Alllrightey then!$"
-
-PrimeCity_EventScript_MalimoInitMeeting_Text_23:
-	.string "Go and get yourselves ready, and we'll meet\n"
+	.string "{COLOR}{RED}Alllrightey then!\p"
+	.string "When you're ready, we'll meet\n"
 	.string "at the entrance to New Valley Way.$"
 
-PrimeCity_EventScript_MalimoInitMeeting_Text_24:
+PrimeCity_EventScript_MalimoInitMeeting_Text_23:
 	.string "New Valley Way?$"
 
-PrimeCity_EventScript_MalimoInitMeeting_Text_25:
-	.string "North of town, you mean? By the fence?$"
+PrimeCity_EventScript_MalimoInitMeeting_Text_24:
+	.string "North of town, you mean?\nBy the fence?$"
 
-PrimeCity_EventScript_MalimoInitMeeting_Text_26:
+PrimeCity_EventScript_MalimoInitMeeting_Text_25:
 	.string "{COLOR}{RED}Yeah, I'm sure you guys know it.\n"
 	.string "Well, see ya, wouldn't wanna be ya!$"
 
-PrimeCity_EventScript_MalimoInitMeeting_Text_27:
+PrimeCity_EventScript_MalimoInitMeeting_Text_26:
 	.string "{COLOR}{BLUE}Clad.\p"
 	.string "Even if Fern is a bit of a nutter, he is\n"
 	.string "right y'know, we'd better be prepared.$"
 
-PrimeCity_EventScript_MalimoInitMeeting_Text_28:
+PrimeCity_EventScript_MalimoInitMeeting_Text_27:
 	.string "{COLOR}{BLUE}Luckily, right behind us is\nthe Dept. Store, so buying supplies\lis no problem.$"
 
-PrimeCity_EventScript_MalimoInitMeeting_Text_29:
+PrimeCity_EventScript_MalimoInitMeeting_Text_28:
 	.string "{COLOR}{BLUE}Anyway, I'll meet you in a bit!\n"
-	.string "Gotta sort out some home stuff first.$"
+	.string "Gotta sort out some home stuff quick.$"
+
+PrimeCity_Trigger_LeavingEvent_Text_0:
+	.string "{COLOR}{BLUE}Well, we're all here.\nAre you guys all prepared?$"
+
+PrimeCity_Trigger_LeavingEvent_Text_1:
+	.string "{COLOR}{RED}Of course, of course!\nAnd even if we're not, it'll be fine!$"
+
+PrimeCity_Trigger_LeavingEvent_Text_2:
+	.string "{SIZE} I don't like the sound of that…$"
+
+PrimeCity_Trigger_LeavingEvent_Text_3:
+	.string "{COLOR}{RED}Hmph! We'll be having no more\nof that out of you, Clad!\p$"
+
+PrimeCity_Trigger_LeavingEvent_Text_4:
+	.string "Alright, alright.\nSorry.$"
+
+PrimeCity_Trigger_LeavingEvent_Text_5:
+	.string "{COLOR}{BLUE}So what's the route we're taking\nto Wing Peak?$"
+
+PrimeCity_Trigger_LeavingEvent_Text_6:
+	.string "{COLOR}{RED}Weeeell, let me explain.\p"
+	.string "First we trek up New Valley Way\nand go get Rye from Yanuras Town.\p"
+	.string "Next we make our way through\nRocaroha Valley…$"
+
+PrimeCity_Trigger_LeavingEvent_Text_7:
+	.string "{COLOR}{BLUE}The Valley, huh?\nIsn't that kind of rough?$"
+
+PrimeCity_Trigger_LeavingEvent_Text_8:
+	.string "{COLOR}{RED}It's the quickest way through.\nWe wouldn't want somebody else getting\lto Wing Peak first, right?\p…Like Nas.$"
+
+PrimeCity_Trigger_LeavingEvent_Text_9:
+	.string "Didn't you say that anybody that\ngets to the top has a wish granted?\lWhy do we need to get there first?$"
+
+PrimeCity_Trigger_LeavingEvent_Text_10:
+	.string "{COLOR}{RED}Well, what if there's a finite amount\nof wishes?\pAnd we went all that way\nand somebody else took all of ours?$"
+
+PrimeCity_Trigger_LeavingEvent_Text_11:
+	.string "{COLOR}{BLUE}You worry too much, Fern.\pAnyway, after making our way through\nthe Valley, we have to cross\lthe Land Bridge, right?$"
+
+PrimeCity_Trigger_LeavingEvent_Text_12:
+	.string "{COLOR}{RED}That's right!\pAnd from there we head up to\nAgudo Woods, where the foot of\lWing Peak lies.$"
+
+PrimeCity_Trigger_LeavingEvent_Text_13:
+	.string "Huh, that seems…\nquite manageable actually.$"
+
+PrimeCity_Trigger_LeavingEvent_Text_14:
+	.string "{COLOR}{RED}Right?! So let's get a move on!$"
+
+PrimeCity_Trigger_LeavingEvent_Text_15:
+	.string "{COLOR}{BLUE}Okay!\pLet's meet at the entrance to\nthe Valley.$"

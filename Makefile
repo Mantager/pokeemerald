@@ -205,6 +205,7 @@ include songs.mk
 %.png: ;
 %.pal: ;
 %.aif: ;
+%.aiff: ;
 %.pory: ;
 
 %.1bpp: %.png  ; $(GFX) $< $@
@@ -217,6 +218,7 @@ include songs.mk
 sound/direct_sound_samples/cry_not_%.bin: sound/direct_sound_samples/cry_not_%.aif ; $(AIF) $< $@
 sound/direct_sound_samples/cry_%.bin: sound/direct_sound_samples/cry_%.aif ; $(AIF) $< $@ --compress
 sound/%.bin: sound/%.aif ; $(AIF) $< $@
+sound/%.bin: sound/%.aiff ; $(AIF) $< $@
 data/%.inc: data/%.pory; $(SCRIPT) -i $< -o $@ -fw tools/poryscript/font_widths.json
 
 ifeq ($(MODERN),0)

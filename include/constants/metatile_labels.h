@@ -423,10 +423,11 @@
 #define METATILE_PokemonCenter_Floor_ShadowTop_Alt      0x2DC
 
 // gTileset_Prime
-#define METATILE_Prime_Door_DeptStore         0x22C
-#define METATILE_Prime_Door_Gray              0x243
-#define METATILE_Prime_Door_Tan               0x265
-#define METATILE_Prime_PokeCenter_Door_Prime  0x25E
+#define METATILE_Prime_Door_DeptStore   0x22C
+#define METATILE_Prime_Door_Gray        0x243
+#define METATILE_Prime_Door_Pink        0x2AC
+#define METATILE_Prime_Door_PokeCenter  0x290
+#define METATILE_Prime_Door_Tan         0x265
 
 // gTileset_RS
 #define METATILE_RS_MossdeepGym_RedArrow_Down   0x205

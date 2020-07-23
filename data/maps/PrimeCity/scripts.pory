@@ -1,5 +1,13 @@
 mapscripts PrimeCity_MapScripts {
-    
+    MAP_SCRIPT_ON_TRANSITION {
+           if (var(VAR_PRIME_CITY_STATE) == 4) {
+                  setobjectxyperm(6, 41, 4)
+                  setobjectmovementtype(6, MOVEMENT_TYPE_FACE_RIGHT)
+                  setobjectxyperm(7, 43, 4)
+                  setobjectmovementtype(7, MOVEMENT_TYPE_FACE_LEFT)
+                  return
+           }
+    }
 }
 
 script PrimeCity_DebugWailmer {
@@ -28,12 +36,19 @@ script PrimeCity_Trigger_CantLeave {
            "(They're probably waiting for me.)")
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown)
     waitmovement(0)
+    fadescreen(0)
     release
     end
 }
 
 script PrimeCity_EventScript_MalimoInitMeeting {
     lockall
+    fadescreen(1)
+    getplayerxy(VAR_TEMP_1, VAR_TEMP_2)
+    if(var(VAR_TEMP_1) == 55) { applymovement (OBJ_EVENT_ID_PLAYER, PrimeCity_Movement_PlayerToMalimoLeft) }
+    if(var(VAR_TEMP_1) == 57) { applymovement (OBJ_EVENT_ID_PLAYER, PrimeCity_Movement_PlayerToMalimoRight) }
+    waitmovement(0)
+    fadescreen(0)
     msgbox("{COLOR}{BLUE}Clad! You're here!")
     msgbox("Good to see you, Malimo.")
     msgbox("{COLOR}{BLUE}Heh heh! And you!\n"
@@ -43,6 +58,7 @@ script PrimeCity_EventScript_MalimoInitMeeting {
            "I'm fine, obviously.\p"
            "More importantly, where's Fern and Rye?\n"
            "I wanna know why you called me so early.")
+    closemessage
     clearflag(FLAG_PRIME_CITY_HIDE_FERN)
     addobject(6)
     special(SpawnCameraObject)
@@ -105,16 +121,18 @@ script PrimeCity_EventScript_MalimoInitMeeting {
            "Your parents might even come back\nfrom their trip before we\leven get near Wing Peak!")
     msgbox("What are you trying to do, put me off?\n"
            "I said yes already, so let's go!")
-    msgbox("{COLOR}{RED}Alllrightey then!"\p
-           "Go and get yourselves ready, and we'll meet\n"
+    msgbox("{COLOR}{RED}Alllrightey then!\p"
+           "When you're ready, we'll meet\n"
            "at the entrance to New Valley Way.")
     msgbox("New Valley Way?"\p
-           "North of town, you mean? By the fence?")
+           "North of town, you mean?\nBy the fence?")
     msgbox("{COLOR}{RED}Yeah, I'm sure you guys know it.\n"
            "Well, see ya, wouldn't wanna be ya!")
+    closemessage
     fadescreen(1)
-    removeobject(6)
-    setflag(FLAG_PRIME_CITY_HIDE_FERN)
+    setobjectxy(6, 41, 4)
+    setobjectxyperm(6, 41, 4)
+    setobjectmovementtype(6, MOVEMENT_TYPE_FACE_RIGHT)
     fadescreen(0)
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
     applymovement(7, Common_Movement_FaceDown)
@@ -128,15 +146,68 @@ script PrimeCity_EventScript_MalimoInitMeeting {
     applymovement(7, Common_Movement_FaceDown)
     waitmovement(0)
     msgbox("{COLOR}{BLUE}Anyway, I'll meet you in a bit!\n"
-           "Gotta sort out some home stuff first.")
+           "Gotta sort out some home stuff quick.")
     closemessage
     fadescreen(1)
-    removeobject(7)
-    setflag(FLAG_PRIME_CITY_HIDE_MALIMO)
+    setobjectxy(7, 43, 4)
+    setobjectxyperm(7, 43, 4)
+    setobjectmovementtype(7, MOVEMENT_TYPE_FACE_LEFT)
     fadescreen(0)
     releaseall
     setvar(VAR_PRIME_CITY_STATE, 4)
     special(RemoveCameraObject)
+    end
+}
+
+script PrimeCity_Trigger_LeavingEvent {
+    lockall
+    fadescreen(1)
+    getplayerxy(VAR_TEMP_1, VAR_TEMP_2)
+    if(var(VAR_TEMP_1) == 40) { applymovement (OBJ_EVENT_ID_PLAYER, PrimeCity_Movement_PlayerToMaliFernFarLeft) }
+    if(var(VAR_TEMP_1) == 41) { applymovement (OBJ_EVENT_ID_PLAYER, PrimeCity_Movement_PlayerToMaliFernLeft) }
+    if(var(VAR_TEMP_1) == 42) { applymovement (OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp) }
+    if(var(VAR_TEMP_1) == 43) { applymovement (OBJ_EVENT_ID_PLAYER, PrimeCity_Movement_PlayerToMaliFernRight) }
+    if(var(VAR_TEMP_1) == 44) { applymovement (OBJ_EVENT_ID_PLAYER, PrimeCity_Movement_PlayerToMaliFernFarRight) }
+    waitmovement(0)
+    fadescreen(0)
+    msgbox("{COLOR}{BLUE}Well, we're all here.\nAre you guys all prepared?")
+    msgbox("{COLOR}{RED}Of course, of course!\nAnd even if we're not, it'll be fine!")
+    msgbox("{SIZE} I don't like the sound of that…")
+    applymovement(6, Common_Movement_FaceDown)
+    waitmovement(0)
+    msgbox("{COLOR}{RED}Hmph! We'll be having no more\nof that out of you, Clad!\p")
+    msgbox("Alright, alright.\nSorry.")
+    applymovement(6, Common_Movement_FaceRight)
+    waitmovement(0)
+    msgbox("{COLOR}{BLUE}So what's the route we're taking\nto Wing Peak?")
+    msgbox("{COLOR}{RED}Weeeell, let me explain.\p"
+           "First we trek up New Valley Way\nand go get Rye from Yanuras Town.\p"
+           "Next we make our way through\nRocaroha Valley…")
+    msgbox("{COLOR}{BLUE}The Valley, huh?\nIsn't that kind of rough?")
+    msgbox("{COLOR}{RED}It's the quickest way through.\nWe wouldn't want somebody else getting\lto Wing Peak first, right?\p…Like Nas.")
+    applymovement(6, Common_Movement_FaceDown)
+    applymovement(7, Common_Movement_FaceDown)
+    waitmovement(0)
+    msgbox("Didn't you say that anybody that\ngets to the top has a wish granted?\lWhy do we need to get there first?")
+    applymovement(7, Common_Movement_FaceLeft)
+    waitmovement(0)
+    msgbox("{COLOR}{RED}Well, what if there's a finite amount\nof wishes?\pAnd we went all that way\nand somebody else took all of ours?")
+    applymovement(6, Common_Movement_FaceRight)
+    waitmovement(0)
+    msgbox("{COLOR}{BLUE}You worry too much, Fern.\pAnyway, after making our way through\nthe Valley, we have to cross\lthe Land Bridge, right?")
+    msgbox("{COLOR}{RED}That's right!\pAnd from there we head up to\nAgudo Woods, where the foot of\lWing Peak lies.")
+    msgbox("Huh, that seems…\nquite manageable actually.")
+    msgbox("{COLOR}{RED}Right?! So let's get a move on!")
+    msgbox("{COLOR}{BLUE}Okay!\pLet's meet at the entrance to\nthe Valley.")
+    closemessage
+    fadescreen(1)
+    setflag(FLAG_PRIME_CITY_HIDE_FERN)
+    removeobject(6)
+    setflag(FLAG_PRIME_CITY_HIDE_MALIMO)
+    removeobject(7)
+    setvar(VAR_PRIME_CITY_STATE, 5)
+    fadescreen(0)
+    releaseall
     end
 }
 
@@ -152,4 +223,42 @@ movement PrimeCity_Movement_FernToPlayer {
     walk_up * 2
     walk_right * 2
     step_end
+}
+
+movement PrimeCity_Movement_PlayerToMalimoLeft {
+       walk_fastest_down
+       walk_fastest_right
+       face_up
+       step_end
+}
+
+movement PrimeCity_Movement_PlayerToMalimoRight {
+       walk_fastest_down
+       walk_fastest_left
+       face_up
+       step_end
+}
+
+movement PrimeCity_Movement_PlayerToMaliFernFarLeft {
+       walk_fastest_right * 2
+       walk_fastest_up
+       step_end
+}
+
+movement PrimeCity_Movement_PlayerToMaliFernLeft {
+       walk_fastest_right
+       walk_fastest_up
+       step_end
+}
+
+movement PrimeCity_Movement_PlayerToMaliFernRight {
+       walk_fastest_left
+       walk_fastest_up
+       step_end
+}
+
+movement PrimeCity_Movement_PlayerToMaliFernFarRight {
+       walk_fastest_left * 2
+       walk_fastest_up
+       step_end
 }

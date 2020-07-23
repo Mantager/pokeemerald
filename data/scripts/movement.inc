@@ -102,3 +102,11 @@ Common_Movement_WalkUp2:: @ 82725CB
 Common_Movement_WalkDown:
 	walk_down
 	step_end
+
+Common_Movement_SetInvisible:
+	set_invisible
+	step_end
+
+Common_Movement_SetVisible:
+	set_visible
+	step_end

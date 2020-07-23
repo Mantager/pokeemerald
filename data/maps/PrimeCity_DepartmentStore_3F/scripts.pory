@@ -1,1 +1,53 @@
 mapscripts PrimeCity_DepartmentStore_3F_MapScripts {}
+
+script PrimeCity_DepartmentStore_3F_EventScript_Employee {
+    lock
+    faceplayer
+    message(gText_HowMayIServeYou)
+    waitmessage
+    pokemart(PrimeCity_DepartmentStore_3F_Pokemart1)
+    msgbox(gText_PleaseComeAgain)
+    release
+    end
+}
+
+script PrimeCity_DepartmentStore_3F_EventScript_TMGirl {
+    lock
+    faceplayer
+    msgbox("Ohhhhh!\nReflect or Light Screen?\lI can't decide!")
+    release
+    end
+}
+
+script PrimeCity_DepartmentStore_3F_EventScript_SecretPowerGiver {
+    lock
+    faceplayer
+    if (flag(FLAG_RECEIVED_SECRET_POWER) == FALSE) {
+        msgbox("Fufufufu…\nI can sense it!\lYes, you'll be the one!\lThe one to master this move…")
+        giveitem(ITEM_TM43)
+        if (var(VAR_RESULT) == FALSE) { msgbox("Oh, but you have no room for this!")}
+        else {
+            msgbox("That is Secret Power…\pIt is an incredible move that\nchanges to fit your surroundings…\p"
+                   "It will be of great use to you.\nI'm sure of it!")
+            setflag(FLAG_RECEIVED_SECRET_POWER)
+        }
+    } else {
+        msgbox("That is Secret Power…\pIt is an incredible move that\nchanges to fit your surroundings…\p"
+                   "It will be of great use to you.\nI'm sure of it!")
+    }
+    release
+    end
+}
+
+raw `
+	.align 2
+PrimeCity_DepartmentStore_3F_Pokemart1:
+	.2byte ITEM_TM05
+    .2byte ITEM_TM10
+    .2byte ITEM_TM17
+    .2byte ITEM_TM44
+	.2byte ITEM_TM46
+    .2byte ITEM_NONE
+	release
+	end
+`
