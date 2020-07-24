@@ -190,7 +190,7 @@ static const struct WindowTemplate sUnknown_085105AC[] =
     DUMMY_WIN_TEMPLATE
 };
 
-static const struct WindowTemplate sSaveInfoWindowTemplate = {0, 1, 1, 0xE, 0xA, 0xF, 8};
+static const struct WindowTemplate sSaveInfoWindowTemplate = {0, 1, 1, 0xE, 0x8, 0xF, 8};
 
 // Local functions
 static void BuildStartMenuActions(void);
@@ -289,7 +289,6 @@ static void BuildNormalStartMenu(void)
         AddStartMenuAction(MENU_ACTION_POKENAV);
     }
 
-    AddStartMenuAction(MENU_ACTION_PLAYER);
     AddStartMenuAction(MENU_ACTION_SAVE);
     AddStartMenuAction(MENU_ACTION_OPTION);
     AddStartMenuAction(MENU_ACTION_EXIT);
@@ -999,7 +998,7 @@ static u8 SaveFileExistsCallback(void)
     }
     else
     {
-        ShowSaveMessage(gText_AlreadySavedFile, SaveConfirmOverwriteCallback);
+        sSaveDialogCallback = SaveSavingMessageCallback;
     }
 
     return SAVE_IN_PROGRESS;
@@ -1325,11 +1324,11 @@ static void ShowSaveInfoWindow(void)
     PrintPlayerNameOnWindow(sSaveInfoWindowId, gStringVar4, xOffset, yOffset);
 
     // Print badge count
-    yOffset += 16;
-    AddTextPrinterParameterized(sSaveInfoWindowId, 1, gText_SavingBadges, 0, yOffset, 0xFF, NULL);
-    BufferSaveMenuText(SAVE_MENU_BADGES, gStringVar4, color);
-    xOffset = GetStringRightAlignXOffset(1, gStringVar4, 0x70);
-    AddTextPrinterParameterized(sSaveInfoWindowId, 1, gStringVar4, xOffset, yOffset, 0xFF, NULL);
+    // yOffset += 16;
+    // AddTextPrinterParameterized(sSaveInfoWindowId, 1, gText_SavingBadges, 0, yOffset, 0xFF, NULL);
+    // BufferSaveMenuText(SAVE_MENU_BADGES, gStringVar4, color);
+    // xOffset = GetStringRightAlignXOffset(1, gStringVar4, 0x70);
+    // AddTextPrinterParameterized(sSaveInfoWindowId, 1, gStringVar4, xOffset, yOffset, 0xFF, NULL);
 
     if (FlagGet(FLAG_SYS_POKEDEX_GET) == TRUE)
     {

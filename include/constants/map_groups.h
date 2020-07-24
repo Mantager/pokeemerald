@@ -636,6 +636,8 @@
 #define MAP_PRIME_CITY_CLAD_BUILDING_3F_CLAD_ROOM (25 | (36 << 8))
 
 // Map Group 37
+#define MAP_YANURAS_TOWN_RYAN_HOUSE    (0 | (37 << 8))
+#define MAP_YANURAS_TOWN_GENERAL_STORE (1 | (37 << 8))
 
 // Map Group 38
 

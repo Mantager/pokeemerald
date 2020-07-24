@@ -103,6 +103,10 @@ Common_Movement_WalkDown:
 	walk_down
 	step_end
 
+Common_Movement_WalkRight:
+	walk_right
+	step_end
+
 Common_Movement_SetInvisible:
 	set_invisible
 	step_end

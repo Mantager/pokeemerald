@@ -1,0 +1,28 @@
+mapscripts YanurasTown_RyanHouse_MapScripts {}
+
+script YanurasTown_RyanHouse_EventScript_Ryan {
+    lock
+    faceplayer
+    msgbox("{COLOR}{GREEN}Huff…\nHaaaah…")
+    msgbox("Rye?\nYou alright, man?\lYou look slaughtered!")
+    msgbox("{COLOR}{GREEN}Clad!\nJust… Give me a second…")
+    msgbox("Seriously dude, what have you been\nup to?")
+    msgbox("{COLOR}{GREEN}I had to help my dad with the harvest…\nAll morning. It was a big one!")
+    msgbox("I bet.\nYou're sweating like mad!\pY'know, the others are waiting for us.")
+    msgbox("{COLOR}{GREEN}Ah! I lost track of time!\nSorry for keeping you waiting so long…")
+    msgbox("It's no biggie, man.\nYou gotta do what you gotta do.\pYou know what's going on, right?")
+    msgbox("{COLOR}{GREEN}That's right, Fern said before.\pA genie who gives wishes, eh?\nWhat would you wish for?")
+    msgbox("Hmm… Not sure.\nThere's no way it's real, anyway.")
+    msgbox("{COLOR}{GREEN}Well, you know what I'd wish for…\nMoney. And lots of it.\lIt's tough here, you know.")
+    msgbox("Yeah…")
+    msgbox("{COLOR}{GREEN}Sorry.\nBit of a bum note.\pLet's get going, Claderino!")
+    applymovement(1, Common_Movement_WalkUp)
+    waitmovement(0)
+    removeobject(1)
+    setflag(FLAG_YANURAS_TOWN_RYAN_HOUSE_HIDE_RYAN)
+    clearflag(FLAG_YANURAS_TOWN_HIDE_FERN)
+    clearflag(FLAG_YANURAS_TOWN_HIDE_MALIMO)
+    setvar(VAR_YANURAS_TOWN_STATE, 1)
+    release
+    end
+}

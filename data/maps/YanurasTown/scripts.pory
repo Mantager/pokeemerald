@@ -1,0 +1,113 @@
+mapscripts YanurasTown_MapScripts {}
+
+script YanurasTown_Trigger_AfterMeetingRyan {
+    lockall
+    fadescreen(1)
+    clearflag(FLAG_YANURAS_TOWN_HIDE_RYAN)
+    addobject(3)
+    getplayerxy(VAR_TEMP_1, VAR_TEMP_2)
+    if (var(VAR_TEMP_1) == 13) {applymovement(OBJ_EVENT_ID_PLAYER, YanurasTown_Movement_LeftPlayerMoveToSide)}
+    if (var(VAR_TEMP_1) == 14) {applymovement(OBJ_EVENT_ID_PLAYER, YanurasTown_Movement_MiddlePlayerMoveToSide)}
+    if (var(VAR_TEMP_1) == 15) {applymovement(OBJ_EVENT_ID_PLAYER, YanurasTown_Movement_RightPlayerMoveToSide)}
+    waitmovement(0)
+    fadescreen(0)
+    delay(8)
+    msgbox("{COLOR}{GREEN}Howzit, guys.")
+    applymovement(1, Common_Movement_FaceUp)
+    applymovement(2, Common_Movement_FaceUp)
+    waitmovement(0)
+    msgbox("{COLOR}{RED}F-i-n-a-l-l-y!\nWe haven't got all day, you know!\lCome on, let's go!\pOr else Nas-I mean somebody will\nget to Wing Peak first!")
+    closemessage
+    applymovement(3, Common_Movement_WalkInPlaceFastestDown)
+    waitmovement(0)
+    msgbox("{COLOR}{GREEN}What was that, you looney?!\pYou know, not everyone can afford to\ndrop everything right away!")
+    closemessage
+    applymovement(2, Common_Movement_FaceLeft)
+    waitmovement(0)
+    delay(24)
+    applymovement(2, Common_Movement_FaceUp)
+    waitmovement(0)
+    delay(24)
+    msgbox("{COLOR}{BLUE}Lads, lads.\nCool it, will you?\lWe're all friends here.")
+    applymovement(2, Common_Movement_FaceLeft)
+    waitmovement(0)
+    msgbox("{COLOR}{BLUE}What's with you and Nas today, anyway?\nYou've been mentioning him a lot.")
+    applymovement(3, Common_Movement_WalkInPlaceFastestDown)
+    waitmovement(0)
+    msgbox("{COLOR}{GREEN}Nas, that guy…\nHas he been on your case again?")
+    applymovement(1, Common_Movement_FaceDown)
+    waitmovement(0)
+    msgbox("{COLOR}{RED}I don't want to talk about it.")
+    msgbox("Clearly it's on your mind a lot…")
+    msgbox("{COLOR}{RED}I said I don't want to talk about it!")
+    msgbox("{COLOR}{BLUE}…Sorry, Fern.\nI shouldn't have asked…")
+    applymovement(1, Common_Movement_FaceUp)
+    waitmovement(0)
+    msgbox("{COLOR}{RED}Let's just get going, shall we?\nWe've gotta head through the Valley,\nso make sure your Pokémon are in top shape.")
+    msgbox("{COLOR}{GREEN}Got it.")
+    applymovement(2, Common_Movement_WalkInPlaceFastestLeft)
+    waitmovement(0)
+    msgbox("{COLOR}{BLUE}What if we get lost?\nI mean, the Valley is huge.")
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFastestDown)
+    waitmovement(0)
+    msgbox("If we just keep going north, we'll reach\nDeriva Walk.\pI think we'll be okay.")
+    applymovement(3, Common_Movement_WalkInPlaceFastestDown)
+    waitmovement(0)
+    msgbox("{COLOR}{GREEN}Alright then, let's head out!")
+    closemessage
+    applymovement(3, Common_Movement_WalkRight)
+    waitmovement(0)
+    setflag(FLAG_YANURAS_TOWN_HIDE_RYAN)
+    removeobject(3)
+    applymovement(2, YanurasTown_Movement_MalimoMoveToPlayer)
+    waitmovement(0)
+    setflag(FLAG_YANURAS_TOWN_HIDE_MALIMO)
+    removeobject(2)
+    applymovement(1, YanurasTown_Movement_FernMoveToPlayer)
+    waitmovement(0)
+    setflag(FLAG_YANURAS_TOWN_HIDE_FERN)
+    removeobject(1)
+    setflag(FLAG_NEW_VALLEY_WAY_HIDE_FERN)
+    setflag(FLAG_NEW_VALLEY_WAY_HIDE_MALIMO)
+    setvar(VAR_YANURAS_TOWN_STATE, 2)
+    releaseall
+    end
+}
+
+script YanurasTown_EventScript_StoreSign {
+    lock
+    msgbox("Yanuras Town General Store")
+    release
+    end
+}
+
+movement YanurasTown_Movement_LeftPlayerMoveToSide {
+    walk_down
+    walk_right
+    walk_down
+    step_end
+}
+
+movement YanurasTown_Movement_MiddlePlayerMoveToSide {
+    walk_down * 2
+    step_end
+}
+
+movement YanurasTown_Movement_RightPlayerMoveToSide {
+    walk_down
+    walk_left
+    walk_down
+    step_end
+}
+
+movement YanurasTown_Movement_FernMoveToPlayer {
+    walk_right
+    walk_up
+    step_end
+}
+
+movement YanurasTown_Movement_MalimoMoveToPlayer {
+    walk_left
+    walk_up
+    step_end
+}

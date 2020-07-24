@@ -1230,16 +1230,16 @@
 
 #define FLAG_PRIME_CITY_HIDE_WAILMER                                0x493
 #define FLAG_PRIME_CITY_HIDE_WAILMER_BALL                           0x494
-#define FLAG_PRIME_CITY_HIDE_FERN                                   0x495
-#define FLAG_PRIME_CITY_HIDE_MISLE                                  0x496
-#define FLAG_PRIME_CITY_HIDE_RYAN                                   0x497
-#define FLAG_PRIME_CITY_HIDE_MALIMO                                 0x498
-#define FLAG_UNUSED_0x499                                           0x499 // Unused Flag
-#define FLAG_UNUSED_0x49A                                           0x49A // Unused Flag
-#define FLAG_UNUSED_0x49B                                           0x49B // Unused Flag
-#define FLAG_UNUSED_0x49C                                           0x49C // Unused Flag
-#define FLAG_UNUSED_0x49D                                           0x49D // Unused Flag
-#define FLAG_UNUSED_0x49E                                           0x49E // Unused Flag
+#define FLAG_PRIME_CITY_HIDE_MISLE                                  0x495
+#define FLAG_PRIME_CITY_HIDE_FERN                                   0x496
+#define FLAG_PRIME_CITY_HIDE_MALIMO                                 0x497
+#define FLAG_PRIME_CITY_HIDE_RYAN                                   0x498
+#define FLAG_NEW_VALLEY_WAY_HIDE_FERN                               0x499
+#define FLAG_NEW_VALLEY_WAY_HIDE_MALIMO                             0x49A
+#define FLAG_YANURAS_TOWN_RYAN_HOUSE_HIDE_RYAN                      0x49B
+#define FLAG_YANURAS_TOWN_HIDE_FERN                                           0x49C // Unused Flag
+#define FLAG_YANURAS_TOWN_HIDE_MALIMO                                           0x49D // Unused Flag
+#define FLAG_YANURAS_TOWN_HIDE_RYAN                                           0x49E // Unused Flag
 #define FLAG_UNUSED_0x49F                                           0x49F // Unused Flag
 #define FLAG_UNUSED_0x4A0                                           0x4A0 // Unused Flag
 #define FLAG_UNUSED_0x4A1                                           0x4A1 // Unused Flag

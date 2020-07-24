@@ -2,7 +2,7 @@
   "id": "MAP_YANURAS_TOWN",
   "name": "YanurasTown",
   "layout": "LAYOUT_YANURAS_TOWN",
-  "music": "MUS_AJITO",
+  "music": "MUS_MACHI_S4",
   "region_map_section": "MAPSEC_YANURAS_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
@@ -20,15 +20,99 @@
     }
   ],
   "object_events": [
-
+    {
+      "graphics_id": "OBJ_EVENT_GFX_FERN",
+      "x": 13,
+      "y": 24,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_YANURAS_TOWN_HIDE_FERN"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MALIMO",
+      "x": 15,
+      "y": 24,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_YANURAS_TOWN_HIDE_MALIMO"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_RYAN",
+      "x": 13,
+      "y": 23,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_YANURAS_TOWN_HIDE_RYAN"
+    }
   ],
   "warp_events": [
-
+    {
+      "x": 19,
+      "y": 11,
+      "elevation": 0,
+      "dest_map": "MAP_YANURAS_TOWN_RYAN_HOUSE",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 8,
+      "y": 13,
+      "elevation": 0,
+      "dest_map": "MAP_YANURAS_TOWN",
+      "dest_warp_id": 0
+    }
   ],
   "coord_events": [
-
+    {
+      "type": "trigger",
+      "x": 13,
+      "y": 21,
+      "elevation": 0,
+      "var": "VAR_YANURAS_TOWN_STATE",
+      "var_value": "1",
+      "script": "YanurasTown_Trigger_AfterMeetingRyan"
+    },
+    {
+      "type": "trigger",
+      "x": 14,
+      "y": 21,
+      "elevation": 0,
+      "var": "VAR_YANURAS_TOWN_STATE",
+      "var_value": "1",
+      "script": "YanurasTown_Trigger_AfterMeetingRyan"
+    },
+    {
+      "type": "trigger",
+      "x": 15,
+      "y": 21,
+      "elevation": 0,
+      "var": "VAR_YANURAS_TOWN_STATE",
+      "var_value": "1",
+      "script": "YanurasTown_Trigger_AfterMeetingRyan"
+    }
   ],
   "bg_events": [
-
+    {
+      "type": "sign",
+      "x": 7,
+      "y": 14,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "YanurasTown_EventScript_StoreSign"
+    }
   ]
 }

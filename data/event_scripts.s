@@ -1143,3 +1143,7 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/PrimeCity_SecretBuilding/scripts.inc"
 
 	.include "data/maps/PrimeCity_CladBuilding_3F_CladRoom/scripts.inc"
+
+	.include "data/maps/YanurasTown_RyanHouse/scripts.inc"
+
+	.include "data/maps/YanurasTown_GeneralStore/scripts.inc"

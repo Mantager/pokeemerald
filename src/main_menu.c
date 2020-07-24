@@ -267,14 +267,14 @@ static const u16 sBirchSpeechPlatformBlackPal[] = {RGB_BLACK, RGB_BLACK, RGB_BLA
 #define MENU_TOP_WIN0 1
 #define MENU_TOP_WIN1 5
 #define MENU_TOP_WIN2 1
-#define MENU_TOP_WIN3 9
-#define MENU_TOP_WIN4 13
+#define MENU_TOP_WIN3 7
+#define MENU_TOP_WIN4 11
 #define MENU_TOP_WIN5 17
 #define MENU_TOP_WIN6 21
 #define MENU_WIDTH 26
 #define MENU_HEIGHT_WIN0 2
 #define MENU_HEIGHT_WIN1 2
-#define MENU_HEIGHT_WIN2 6
+#define MENU_HEIGHT_WIN2 4
 #define MENU_HEIGHT_WIN3 2
 #define MENU_HEIGHT_WIN4 2
 #define MENU_HEIGHT_WIN5 2

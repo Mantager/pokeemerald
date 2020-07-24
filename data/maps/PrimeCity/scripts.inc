@@ -55,7 +55,6 @@ PrimeCity_EventScript_MalimoInitMeeting_1:
 	compare VAR_TEMP_1, 57
 	goto_if_eq PrimeCity_EventScript_MalimoInitMeeting_5
 PrimeCity_EventScript_MalimoInitMeeting_4:
-	waitmovement 0
 	fadescreen 0
 	msgbox PrimeCity_EventScript_MalimoInitMeeting_Text_0
 	msgbox PrimeCity_EventScript_MalimoInitMeeting_Text_1
@@ -133,10 +132,12 @@ PrimeCity_EventScript_MalimoInitMeeting_4:
 
 PrimeCity_EventScript_MalimoInitMeeting_2:
 	applymovement OBJ_EVENT_ID_PLAYER, PrimeCity_Movement_PlayerToMalimoLeft
+	waitmovement 0
 	goto PrimeCity_EventScript_MalimoInitMeeting_1
 
 PrimeCity_EventScript_MalimoInitMeeting_5:
 	applymovement OBJ_EVENT_ID_PLAYER, PrimeCity_Movement_PlayerToMalimoRight
+	waitmovement 0
 	goto PrimeCity_EventScript_MalimoInitMeeting_4
 
 
@@ -194,6 +195,9 @@ PrimeCity_Trigger_LeavingEvent_13:
 	removeobject 6
 	setflag FLAG_PRIME_CITY_HIDE_MALIMO
 	removeobject 7
+	setflag FLAG_YANURAS_TOWN_HIDE_FERN
+	setflag FLAG_YANURAS_TOWN_HIDE_MALIMO
+	setflag FLAG_YANURAS_TOWN_HIDE_RYAN
 	setvar VAR_PRIME_CITY_STATE, 5
 	fadescreen 0
 	releaseall

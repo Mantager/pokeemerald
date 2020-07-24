@@ -3,47 +3,89 @@ mapscripts NewValleyWay_MapScripts { }
 script NewValleyWay_EventScript_Terence {
     trainerbattle_single(TRAINER_G2_TERENCE, "Battle me now!", "No, I lost!")
     msgbox("You're good.")
+    release
     end
 }
 
 script NewValleyWay_EventScript_Mimi {
     trainerbattle_single(TRAINER_G2_MIMI, "Battle me now!", "No, I lost!")
     msgbox("You're good.")
+    release
     end
 }
 
 script NewValleyWay_EventScript_Katalan {
     trainerbattle_single(TRAINER_G2_KATALAN, "Battle me now!", "No, I lost!")
     msgbox("You're good.")
+    release
     end
 }
 
 script NewValleyWay_EventScript_Sergei {
     trainerbattle_single(TRAINER_G2_SERGEI, "Battle me now!", "No, I lost!")
     msgbox("You're good.")
+    release
     end
 }
 
 script NewValleyWay_EventScript_Camila {
     trainerbattle_single(TRAINER_G2_CAMILA, "Battle me now!", "No, I lost!")
     msgbox("You're good.")
+    release
     end
 }
 
 script NewValleyWay_EventScript_Mateo {
     trainerbattle_single(TRAINER_G2_MATEO, "Battle me now!", "No, I lost!")
     msgbox("You're good.")
+    release
     end
 }
 
 script NewValleyWay_EventScript_Thiago {
     trainerbattle_single(TRAINER_G2_THIAGO, "Battle me now!", "No, I lost!")
     msgbox("You're good.")
+    release
     end
 }
 
 script NewValleyWay_EventScript_Daniel {
     trainerbattle_single(TRAINER_G2_DANIEL, "Battle me now!", "No, I lost!")
     msgbox("You're good.")
+    release
+    end
+}
+
+script NewValleyWay_Trigger_CantLeave {
+    lockall
+    applymovement(9, Common_Movement_FaceDown)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
+    waitmovement(0)
+    msgbox("{COLOR}{RED}Oh, here comes the slowpoke!\pGo and get Rye from Yanuras Town,\nwon't ya?")
+    msgbox("What?\nWhy me?")
+    msgbox("{COLOR}{RED}Because you were last to arrive!\nDon't keep us waiting now!")
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkRight)
+    waitmovement(0)
+    releaseall
+    end
+}
+
+script NewValleyWay_EventScript_Fern {
+    lock
+    faceplayer
+    msgbox("{COLOR}{RED}Oh, here comes the slowpoke!\pGo and get Rye from Yanuras Town,\nwon't ya?")
+    msgbox("What?\nWhy me?")
+    msgbox("{COLOR}{RED}Because you were last to arrive!\nDon't keep us waiting now!")
+    release
+    end
+}
+
+script NewValleyWay_EventScript_Malimo {
+    lock
+    faceplayer
+    msgbox("{COLOR}{BLUE}To be honest, I had to skip a\nprep school class for this…")
+    msgbox("…So you weren't allowed to come?\nAren't your parents gonna be mad?")
+    msgbox("{COLOR}{BLUE}…You and me both know that some\nrules are worth breaking, Clad.")
+    release
     end
 }

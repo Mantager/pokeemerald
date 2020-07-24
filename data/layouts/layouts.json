@@ -4830,6 +4830,26 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/PrimeCity_CladBuilding_3F_CladRoom/border.bin",
       "blockdata_filepath": "data/layouts/PrimeCity_CladBuilding_3F_CladRoom/map.bin"
+    },
+    {
+      "id": "LAYOUT_YANURAS_TOWN_RYAN_HOUSE",
+      "name": "YanurasTown_RyanHouse_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/YanurasTown_RyanHouse/border.bin",
+      "blockdata_filepath": "data/layouts/YanurasTown_RyanHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_YANURAS_TOWN_GENERAL_STORE",
+      "name": "YanurasTown_GeneralStore_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/YanurasTown_GeneralStore/border.bin",
+      "blockdata_filepath": "data/layouts/YanurasTown_GeneralStore/map.bin"
     }
   ]
 }
