@@ -11499,62 +11499,62 @@
             "encounter_rate": 12,
             "mons": [
               {
-                "min_level": 10,
+                "min_level": 12,
                 "max_level": 14,
                 "species": "SPECIES_SANDILE"
               },
               {
-                "min_level": 10,
+                "min_level": 12,
                 "max_level": 14,
                 "species": "SPECIES_SHINX"
               },
               {
-                "min_level": 10,
+                "min_level": 12,
                 "max_level": 14,
                 "species": "SPECIES_SLAKOTH"
               },
               {
-                "min_level": 10,
+                "min_level": 12,
                 "max_level": 14,
                 "species": "SPECIES_CACNEA"
               },
               {
-                "min_level": 10,
+                "min_level": 12,
                 "max_level": 14,
                 "species": "SPECIES_SLAKOTH"
               },
               {
-                "min_level": 10,
+                "min_level": 12,
                 "max_level": 14,
                 "species": "SPECIES_CACNEA"
               },
               {
-                "min_level": 10,
+                "min_level": 12,
                 "max_level": 14,
                 "species": "SPECIES_ROGGENROLA"
               },
               {
-                "min_level": 10,
+                "min_level": 12,
                 "max_level": 14,
                 "species": "SPECIES_ROGGENROLA"
               },
               {
-                "min_level": 10,
+                "min_level": 12,
                 "max_level": 14,
                 "species": "SPECIES_PONYTA"
               },
               {
-                "min_level": 10,
+                "min_level": 12,
                 "max_level": 14,
                 "species": "SPECIES_PONYTA"
               },
               {
-                "min_level": 10,
+                "min_level": 12,
                 "max_level": 14,
                 "species": "SPECIES_PONYTA"
               },
               {
-                "min_level": 10,
+                "min_level": 12,
                 "max_level": 14,
                 "species": "SPECIES_PONYTA"
               }
@@ -11569,62 +11569,62 @@
             "mons": [
               {
                 "min_level": 15,
-                "max_level": 18,
+                "max_level": 17,
                 "species": "SPECIES_SANDILE"
               },
               {
                 "min_level": 15,
-                "max_level": 18,
+                "max_level": 17,
                 "species": "SPECIES_ROGGENROLA"
               },
               {
                 "min_level": 15,
-                "max_level": 18,
+                "max_level": 17,
                 "species": "SPECIES_SHINX"
               },
               {
                 "min_level": 15,
-                "max_level": 18,
+                "max_level": 17,
                 "species": "SPECIES_DWEBBLE"
               },
               {
                 "min_level": 15,
-                "max_level": 18,
+                "max_level": 17,
                 "species": "SPECIES_CACNEA"
               },
               {
                 "min_level": 15,
-                "max_level": 18,
+                "max_level": 17,
                 "species": "SPECIES_PONYTA"
               },
               {
                 "min_level": 15,
-                "max_level": 18,
+                "max_level": 17,
                 "species": "SPECIES_SKARMORY"
               },
               {
                 "min_level": 15,
-                "max_level": 18,
+                "max_level": 17,
                 "species": "SPECIES_DURANT"
               },
               {
                 "min_level": 15,
-                "max_level": 18,
+                "max_level": 17,
                 "species": "SPECIES_SKORUPI"
               },
               {
                 "min_level": 15,
-                "max_level": 18,
+                "max_level": 17,
                 "species": "SPECIES_HEATMOR"
               },
               {
                 "min_level": 15,
-                "max_level": 18,
+                "max_level": 17,
                 "species": "SPECIES_SKORUPI"
               },
               {
                 "min_level": 15,
-                "max_level": 18,
+                "max_level": 17,
                 "species": "SPECIES_HEATMOR"
               }
             ]
@@ -11674,7 +11674,7 @@
               {
                 "min_level": 15,
                 "max_level": 17,
-                "species": "SPECIES_ZUBAT"
+                "species": "SPECIES_TYROGUE"
               },
               {
                 "min_level": 15,

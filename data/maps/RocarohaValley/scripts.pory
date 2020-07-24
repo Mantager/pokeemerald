@@ -1,0 +1,92 @@
+mapscripts RocarohaValley_MapScripts {}
+
+script RocarohaValley_EventScript_Santi {
+    trainerbattle_single(TRAINER_G2_SANTI, "I'm a fish out of water!", "All I could do was flop!")
+    msgbox("Y'know, lately I've been leaping\noff the cliffs at the Land Bridge.\pIt's great fun, I tell you!")
+    release
+    end
+}
+
+script RocarohaValley_EventScript_Lucia {
+    trainerbattle_single(TRAINER_G2_LUCIA, "Battle me now!", "No, I lost!")
+    msgbox("You're good.")
+    release
+    end
+}
+
+script RocarohaValley_EventScript_Vicky {
+    trainerbattle_single(TRAINER_G2_VICKY, "Battle me now!", "No, I lost!")
+    msgbox("You're good.")
+    release
+    end
+}
+
+script RocarohaValley_EventScript_Rafael {
+    trainerbattle_single(TRAINER_G2_RAFAEL, "Battle me now!", "No, I lost!")
+    msgbox("You're good.")
+    release
+    end
+}
+
+script RocarohaValley_EventScript_Paolo {
+    trainerbattle_single(TRAINER_G2_PAOLO, "Battle me now!", "No, I lost!")
+    msgbox("You're good.")
+    release
+    end
+}
+
+script RocarohaValley_EventScript_Martin {
+    trainerbattle_single(TRAINER_G2_MARTIN, "Battle me now!", "No, I lost!")
+    msgbox("You're good.")
+    release
+    end
+}
+
+script RocarohaValley_EventScript_Luisa {
+    trainerbattle_single(TRAINER_G2_LUISA, "Battle me now!", "No, I lost!")
+    msgbox("You're good.")
+    release
+    end
+}
+
+script RocarohaValley_EventScript_Alvaro {
+    trainerbattle_single(TRAINER_G2_ALVARO, "Battle me now!", "No, I lost!")
+    msgbox("You're good.")
+    release
+    end
+}
+
+script RocarohaValley_EventScript_Belen {
+    trainerbattle_single(TRAINER_G2_BELEN, "Battle me now!", "No, I lost!")
+    msgbox("You're good.")
+    release
+    end
+}
+
+script RocarohaValley_EventScript_Mari {
+    trainerbattle_double(TRAINER_G2_MARI_AND_NOEL, "Battle me now!", "No, I lost!", "We only battle folks with\ntwo Pokémon!")
+    msgbox("You're good.")
+    release
+    end
+}
+
+script RocarohaValley_EventScript_Noel {
+    trainerbattle_double(TRAINER_G2_MARI_AND_NOEL, "Battle me now!", "No, I lost!", "We only battle folks with\ntwo Pokémon!")
+    msgbox("You're good.")
+    release
+    end
+}
+
+script RocarohaValley_EventScript_Milton {
+    trainerbattle_single(TRAINER_G2_MILTON, "Battle me now!", "No, I lost!")
+    msgbox("You're good.")
+    release
+    end
+}
+
+script RocarohaValley_EventScript_Lionel {
+    trainerbattle_single(TRAINER_G2_LIONEL, "Battle me now!", "No, I lost!")
+    msgbox("You're good.")
+    release
+    end
+}
