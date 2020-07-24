@@ -1,17 +1,18 @@
-mapscripts YanurasTown_GeneralStore_MapScripts {}
+YanurasTown_GeneralStore_MapScripts::
+	.byte 0
 
-script YanurasTown_GeneralStore_EventScript_Vendor {
-    lock
-    faceplayer
-    message(gText_HowMayIServeYou)
-    waitmessage
-    pokemart(YanurasTown_GeneralStore_Mart, 1)
-    msgbox(gText_PleaseComeAgain)
-    release
-    end
-}
 
-raw `
+YanurasTown_GeneralStore_EventScript_Vendor::
+	lock
+	faceplayer
+	message gText_HowMayIServeYou
+	waitmessage
+	pokemart YanurasTown_GeneralStore_Mart, 1
+	msgbox gText_PleaseComeAgain
+	release
+	end
+
+
 	.align 2
 YanurasTown_GeneralStore_Mart::
 	.2byte ITEM_HYPER_POTION
@@ -26,4 +27,3 @@ YanurasTown_GeneralStore_Mart::
 	.2byte ITEM_NONE
 	release
 	end
-`

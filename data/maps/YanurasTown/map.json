@@ -72,7 +72,7 @@
       "x": 8,
       "y": 13,
       "elevation": 0,
-      "dest_map": "MAP_YANURAS_TOWN",
+      "dest_map": "MAP_YANURAS_TOWN_GENERAL_STORE",
       "dest_warp_id": 0
     }
   ],

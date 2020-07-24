@@ -53,17 +53,21 @@ YanurasTown_Trigger_AfterMeetingRyan_7:
 	waitmovement 0
 	msgbox YanurasTown_Trigger_AfterMeetingRyan_Text_10
 	msgbox YanurasTown_Trigger_AfterMeetingRyan_Text_11
+	applymovement 2, Common_Movement_WalkInPlaceFastestLeft
+	waitmovement 0
 	msgbox YanurasTown_Trigger_AfterMeetingRyan_Text_12
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFastestDown
 	waitmovement 0
 	msgbox YanurasTown_Trigger_AfterMeetingRyan_Text_13
+	applymovement 3, Common_Movement_WalkInPlaceFastestDown
+	waitmovement 0
 	msgbox YanurasTown_Trigger_AfterMeetingRyan_Text_14
 	closemessage
 	applymovement 3, Common_Movement_WalkRight
 	waitmovement 0
 	setflag FLAG_YANURAS_TOWN_HIDE_RYAN
 	removeobject 3
-	applymovement 2, Common_Movement_WalkUp
+	applymovement 2, YanurasTown_Movement_MalimoMoveToPlayer
 	waitmovement 0
 	setflag FLAG_YANURAS_TOWN_HIDE_MALIMO
 	removeobject 2
@@ -71,6 +75,8 @@ YanurasTown_Trigger_AfterMeetingRyan_7:
 	waitmovement 0
 	setflag FLAG_YANURAS_TOWN_HIDE_FERN
 	removeobject 1
+	setflag FLAG_NEW_VALLEY_WAY_HIDE_FERN
+	setflag FLAG_NEW_VALLEY_WAY_HIDE_MALIMO
 	setvar VAR_YANURAS_TOWN_STATE, 2
 	releaseall
 	end
@@ -86,6 +92,13 @@ YanurasTown_Trigger_AfterMeetingRyan_5:
 YanurasTown_Trigger_AfterMeetingRyan_8:
 	applymovement OBJ_EVENT_ID_PLAYER, YanurasTown_Movement_RightPlayerMoveToSide
 	goto YanurasTown_Trigger_AfterMeetingRyan_7
+
+
+YanurasTown_EventScript_StoreSign::
+	lock
+	msgbox YanurasTown_EventScript_StoreSign_Text_0
+	release
+	end
 
 
 YanurasTown_Movement_LeftPlayerMoveToSide:
@@ -107,6 +120,11 @@ YanurasTown_Movement_RightPlayerMoveToSide:
 
 YanurasTown_Movement_FernMoveToPlayer:
 	walk_right
+	walk_up
+	step_end
+
+YanurasTown_Movement_MalimoMoveToPlayer:
+	walk_left
 	walk_up
 	step_end
 
@@ -154,3 +172,6 @@ YanurasTown_Trigger_AfterMeetingRyan_Text_13:
 
 YanurasTown_Trigger_AfterMeetingRyan_Text_14:
 	.string "{COLOR}{GREEN}Alright then, let's head out!$"
+
+YanurasTown_EventScript_StoreSign_Text_0:
+	.string "Yanuras Town General Store$"
