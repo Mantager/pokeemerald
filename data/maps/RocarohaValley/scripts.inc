@@ -95,10 +95,10 @@ RocarohaValley_EventScript_Lionel::
 
 RocarohaValley_Trigger_MeetNas::
 	lockall
-	applymovement 10, Common_Movement_FaceDown
+	applymovement 14, Common_Movement_FaceDown
 	waitmovement 0
 	playse SE_PIN
-	applymovement 10, Common_Movement_ExclamationMark
+	applymovement 14, Common_Movement_ExclamationMark
 	waitmovement 0
 	getplayerxy VAR_TEMP_1, VAR_TEMP_2
 	compare VAR_TEMP_1, 10
@@ -121,7 +121,7 @@ RocarohaValley_Trigger_MeetNas_4:
 	msgbox RocarohaValley_Trigger_MeetNas_Text_5
 	delay 8
 	msgbox RocarohaValley_Trigger_MeetNas_Text_6
-	applymovement 10, Common_Movement_WalkUpBackwards
+	applymovement 14, Common_Movement_WalkUpBackwards
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp
 	msgbox RocarohaValley_Trigger_MeetNas_Text_7
 	delay 8
@@ -129,18 +129,18 @@ RocarohaValley_Trigger_MeetNas_4:
 	delay 8
 	msgbox RocarohaValley_Trigger_MeetNas_Text_9
 	delay 8
-	applymovement 10, Common_Movement_FaceUp
+	applymovement 14, Common_Movement_FaceUp
 	waitmovement 0
 	msgbox RocarohaValley_Trigger_MeetNas_Text_10
 	delay 8
 	msgbox RocarohaValley_Trigger_MeetNas_Text_11
 	delay 16
-	applymovement 10, Common_Movement_FaceDown
+	applymovement 14, Common_Movement_FaceDown
 	waitmovement 0
 	msgbox RocarohaValley_Trigger_MeetNas_Text_12
-	applymovement 10, RocarohaValley_Movement_NasLeave
+	applymovement 14, RocarohaValley_Movement_NasLeave
 	waitmovement 0
-	removeobject 10
+	removeobject 14
 	setflag FLAG_ROCAROHA_VALLEY_HIDE_NAS
 	delay 16
 	msgbox RocarohaValley_Trigger_MeetNas_Text_13
@@ -149,11 +149,11 @@ RocarohaValley_Trigger_MeetNas_4:
 	end
 
 RocarohaValley_Trigger_MeetNas_2:
-	applymovement 10, Common_Movement_WalkDown
+	applymovement 14, Common_Movement_WalkDown
 	goto RocarohaValley_Trigger_MeetNas_1
 
 RocarohaValley_Trigger_MeetNas_5:
-	applymovement 10, RocarohaValley_Movement_NasMoveToPlayer
+	applymovement 14, RocarohaValley_Movement_NasMoveToPlayer
 	goto RocarohaValley_Trigger_MeetNas_4
 
 
@@ -229,7 +229,7 @@ RocarohaValley_Trigger_MeetNas_Text_9:
 	.string "Stop playing around…\nHow did you know where Fern was?$"
 
 RocarohaValley_Trigger_MeetNas_Text_10:
-	.string "Oh, you know, Phelpsie,\nI was just passing.\lIt was sheer coincidence.\pWhat do you think I do,\nstalk wimps for a living?$"
+	.string "I didn't know at all, Phelpsie.\nI was just passing by!\lIt was sheer coincidence.\pWhat do you think I do,\nstalk wimps for a living?$"
 
 RocarohaValley_Trigger_MeetNas_Text_11:
 	.string "Then where's Fern now?!\nTell me! Nas!$"
@@ -238,4 +238,4 @@ RocarohaValley_Trigger_MeetNas_Text_12:
 	.string "Wouldn't you like to know?$"
 
 RocarohaValley_Trigger_MeetNas_Text_13:
-	.string "(I ought to wait for the others, but…\nI need to see if Nas is okay.)\p(I'll send a text to Malimo quick.)\p… …\n… …\pThere we go.$"
+	.string "(I ought to wait for the others, but…\nI need to find Nas.)\p(I'll send a text to Malimo quick.)\p… …\n… …\pThere we go.$"

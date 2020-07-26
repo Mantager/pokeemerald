@@ -18,6 +18,7 @@ script YanurasTown_RestHouse_EventScript_Man {
 
 script YanurasTown_RestHouse_EventScript_Bed {
     lock
+    setrespawn(HEAL_LOCATION_YANURAS_TOWN)
     msgbox("(Looks like this bed is free to use.\nLet's take a rest.)")
     closemessage
 	call(Common_EventScript_OutOfCenterPartyHeal)

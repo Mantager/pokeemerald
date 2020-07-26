@@ -42,7 +42,20 @@
     }
   ],
   "warp_events": [
-
+    {
+      "x": 4,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_YANURAS_TOWN",
+      "dest_warp_id": 2
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_YANURAS_TOWN",
+      "dest_warp_id": 2
+    }
   ],
   "coord_events": [
 

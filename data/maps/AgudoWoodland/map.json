@@ -20,7 +20,19 @@
     }
   ],
   "object_events": [
-
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MALIMO",
+      "x": 14,
+      "y": 51,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    }
   ],
   "warp_events": [
 
@@ -28,20 +40,6 @@
   "coord_events": [
     {
       "type": "weather",
-      "x": 11,
-      "y": 38,
-      "elevation": 0,
-      "weather": "COORD_EVENT_WEATHER_SUNNY"
-    },
-    {
-      "type": "weather",
-      "x": 12,
-      "y": 38,
-      "elevation": 0,
-      "weather": "COORD_EVENT_WEATHER_SUNNY"
-    },
-    {
-      "type": "weather",
       "x": 13,
       "y": 38,
       "elevation": 0,
@@ -56,17 +54,17 @@
     },
     {
       "type": "weather",
-      "x": 11,
-      "y": 34,
+      "x": 15,
+      "y": 38,
       "elevation": 0,
-      "weather": "COORD_EVENT_WEATHER_FOG_HORIZONTAL"
+      "weather": "COORD_EVENT_WEATHER_SUNNY"
     },
     {
       "type": "weather",
-      "x": 12,
-      "y": 34,
+      "x": 16,
+      "y": 38,
       "elevation": 0,
-      "weather": "COORD_EVENT_WEATHER_FOG_HORIZONTAL"
+      "weather": "COORD_EVENT_WEATHER_SUNNY"
     },
     {
       "type": "weather",
@@ -78,6 +76,20 @@
     {
       "type": "weather",
       "x": 14,
+      "y": 34,
+      "elevation": 0,
+      "weather": "COORD_EVENT_WEATHER_FOG_HORIZONTAL"
+    },
+    {
+      "type": "weather",
+      "x": 15,
+      "y": 34,
+      "elevation": 0,
+      "weather": "COORD_EVENT_WEATHER_FOG_HORIZONTAL"
+    },
+    {
+      "type": "weather",
+      "x": 16,
       "y": 34,
       "elevation": 0,
       "weather": "COORD_EVENT_WEATHER_FOG_HORIZONTAL"

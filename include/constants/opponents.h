@@ -22,6 +22,15 @@
 #define TRAINER_G2_MARI_AND_NOEL              18
 #define TRAINER_G2_MILTON                     19
 #define TRAINER_G2_LIONEL                     20
+#define TRAINER_G2_JOSEFINA                   21
+#define TRAINER_G2_EMILIO                     22
+#define TRAINER_G2_MEGAN                      23
+#define TRAINER_G2_FEDERICO                   24
+#define TRAINER_G2_FERN                       25
+#define TRAINER_G2_VINCENT                    26
+#define TRAINER_G2_NAKIA                      27
+#define TRAINER_G2_YAN_AND_IVO                28
+#define TRAINER_G2_MAIKEL                     29
 #define TRAINER_SAWYER_1                      1
 #define TRAINER_GRUNT_AQUA_HIDEOUT_1          2
 #define TRAINER_GRUNT_AQUA_HIDEOUT_2          3

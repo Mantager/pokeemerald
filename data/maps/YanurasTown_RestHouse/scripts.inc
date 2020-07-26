@@ -20,6 +20,7 @@ YanurasTown_RestHouse_EventScript_Man::
 
 YanurasTown_RestHouse_EventScript_Bed::
 	lock
+	setrespawn HEAL_LOCATION_YANURAS_TOWN
 	msgbox YanurasTown_RestHouse_EventScript_Bed_Text_0
 	closemessage
 	call Common_EventScript_OutOfCenterPartyHeal

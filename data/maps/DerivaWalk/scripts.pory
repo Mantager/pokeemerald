@@ -1,0 +1,64 @@
+mapscripts DerivaWalk_MapScripts {}
+
+script DerivaWalk_EventScript_Josefina {
+    trainerbattle_single(TRAINER_G2_JOSEFINA, "I'm a fish out of water!", "All I could do was flop!")
+    msgbox("Y'know, lately I've been leaping\noff the cliffs at the Land Bridge.\pIt's great fun, I tell you!")
+    release
+    end
+}
+
+script DerivaWalk_EventScript_Emilio {
+    trainerbattle_single(TRAINER_G2_EMILIO, "Battle me now!", "No, I lost!")
+    msgbox("You're good.")
+    release
+    end
+}
+
+script DerivaWalk_EventScript_Megan {
+    trainerbattle_single(TRAINER_G2_MEGAN, "Battle me now!", "No, I lost!")
+    msgbox("You're good.")
+    release
+    end
+}
+
+script DerivaWalk_EventScript_Federico {
+    trainerbattle_single(TRAINER_G2_FEDERICO, "Battle me now!", "No, I lost!")
+    msgbox("You're good.")
+    release
+    end
+}
+
+script DerivaWalk_EventScript_Vincent {
+    trainerbattle_single(TRAINER_G2_VINCENT, "Battle me now!", "No, I lost!")
+    msgbox("You're good.")
+    release
+    end
+}
+
+script DerivaWalk_EventScript_Nakia {
+    trainerbattle_single(TRAINER_G2_NAKIA, "Battle me now!", "No, I lost!")
+    msgbox("You're good.")
+    release
+    end
+}
+
+script DerivaWalk_EventScript_Yan {
+    trainerbattle_double(TRAINER_G2_YAN_AND_IVO, "Battle me now!", "No, I lost!", "Need two!")
+    msgbox("You're good.")
+    release
+    end
+}
+
+script DerivaWalk_EventScript_Ivo {
+    trainerbattle_double(TRAINER_G2_YAN_AND_IVO, "Battle me now!", "No, I lost!", "Need two!")
+    msgbox("You're good.")
+    release
+    end
+}
+
+script DerivaWalk_EventScript_Maikel {
+    trainerbattle_single(TRAINER_G2_MAIKEL, "Battle me now!", "No, I lost!")
+    msgbox("You're good.")
+    release
+    end
+}
