@@ -114,3 +114,9 @@ Common_Movement_SetInvisible:
 Common_Movement_SetVisible:
 	set_visible
 	step_end
+
+Common_Movement_WalkUpBackwards:
+	lock_facing_direction
+	walk_up
+	unlock_facing_direction
+	step_end

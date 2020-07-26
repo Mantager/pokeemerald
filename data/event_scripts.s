@@ -1147,3 +1147,5 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/YanurasTown_RyanHouse/scripts.inc"
 
 	.include "data/maps/YanurasTown_GeneralStore/scripts.inc"
+
+	.include "data/maps/YanurasTown_RestHouse/scripts.inc"

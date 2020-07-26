@@ -4850,6 +4850,16 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/YanurasTown_GeneralStore/border.bin",
       "blockdata_filepath": "data/layouts/YanurasTown_GeneralStore/map.bin"
+    },
+    {
+      "id": "LAYOUT_YANURAS_TOWN_REST_HOUSE",
+      "name": "YanurasTown_RestHouse_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/YanurasTown_RestHouse/border.bin",
+      "blockdata_filepath": "data/layouts/YanurasTown_RestHouse/map.bin"
     }
   ]
 }

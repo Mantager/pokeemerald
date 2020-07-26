@@ -638,6 +638,7 @@
 // Map Group 37
 #define MAP_YANURAS_TOWN_RYAN_HOUSE    (0 | (37 << 8))
 #define MAP_YANURAS_TOWN_GENERAL_STORE (1 | (37 << 8))
+#define MAP_YANURAS_TOWN_REST_HOUSE    (2 | (37 << 8))
 
 // Map Group 38
 

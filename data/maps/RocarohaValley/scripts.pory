@@ -90,3 +90,69 @@ script RocarohaValley_EventScript_Lionel {
     release
     end
 }
+
+script RocarohaValley_Trigger_MeetNas {
+    lockall
+    applymovement(14, Common_Movement_FaceDown)
+    waitmovement(0)
+    playse(SE_PIN)
+    applymovement(14, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    getplayerxy(VAR_TEMP_1, VAR_TEMP_2)
+    if (var(VAR_TEMP_1) == 10) { applymovement(14, Common_Movement_WalkDown) }
+    if (var(VAR_TEMP_1) == 11) { applymovement(14, RocarohaValley_Movement_NasMoveToPlayer) }
+    waitmovement(0)
+    msgbox("Well well well, if it isn't\nRíota's own swimming superstar, Clad!")
+    delay(8)
+    msgbox("Nas…\nWhat do you want?")
+    delay(8)
+    msgbox("I heard about your little trip, Clad.\nA genie that grants wishes?\lBahaha! You goons make me crack up.")
+    delay(8)
+    msgbox("…Who told you about that?\nFern didn't want anyone else to know…")
+    delay(8)
+    msgbox("Man Clad, you're just full of questions\ntoday, aren't you?\pWell, let me ask you a question.\nWhat's the name of the airy\nfairy loser that you're best mates with?")
+    delay(8)
+    msgbox("You mean… Fern…")
+    delay(8)
+    msgbox("There we go!\nYou're quick on the uptake, pool boy!\pThat ponce loves a good chat\nwith his buddy Nas…")
+    applymovement(14, Common_Movement_WalkUpBackwards)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp)
+    msgbox("You've been at him again, haven't you?\nYou were waiting here for him!")
+    delay(8)
+    msgbox("Don't get your swim shorts\nin a twist…\pShe's fine.")
+    delay(8)
+    msgbox("Stop playing around…\nHow did you know where Fern was?")
+    delay(8)
+    applymovement(14, Common_Movement_FaceUp)
+    waitmovement(0)
+    msgbox("I didn't know at all, Phelpsie.\nI was just passing by!\lIt was sheer coincidence.\pWhat do you think I do,\nstalk wimps for a living?")
+    delay(8)
+    msgbox("Then where's Fern now?!\nTell me! Nas!")
+    delay(16)
+    applymovement(14, Common_Movement_FaceDown)
+    waitmovement(0)
+    msgbox("Wouldn't you like to know?")
+    applymovement(14, RocarohaValley_Movement_NasLeave)
+    waitmovement(0)
+    removeobject(14)
+    setflag(FLAG_ROCAROHA_VALLEY_HIDE_NAS)
+    delay(16)
+    msgbox("(I ought to wait for the others, but…\nI need to find Nas.)\p(I'll send a text to Malimo quick.)\p… …\n… …\pThere we go.")
+    releaseall
+    setvar(VAR_YANURAS_TOWN_STATE, 3)
+    end
+}
+
+movement RocarohaValley_Movement_NasMoveToPlayer {
+    walk_down
+    walk_right
+    face_down
+    step_end
+}
+
+movement RocarohaValley_Movement_NasLeave {
+    walk_left * 2
+    walk_up * 3
+    walk_left * 6
+    step_end
+}

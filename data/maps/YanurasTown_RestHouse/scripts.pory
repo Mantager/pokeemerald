@@ -1,0 +1,26 @@
+mapscripts YanurasTown_RestHouse_MapScripts {}
+
+script YanurasTown_RestHouse_EventScript_Woman {
+    lock
+    faceplayer
+    msgbox("Oh my, you look exhausted.\pPlease feel free to take\na rest here if you need.")
+    release
+    end
+}
+
+script YanurasTown_RestHouse_EventScript_Man {
+    lock
+    faceplayer
+    msgbox("This town is a close-knit,\nhard-working community.\pBut let's face it,\nnobody wants to live here.")
+    release
+    end
+}
+
+script YanurasTown_RestHouse_EventScript_Bed {
+    lock
+    msgbox("(Looks like this bed is free to use.\nLet's take a rest.)")
+    closemessage
+	call(Common_EventScript_OutOfCenterPartyHeal)
+    release
+    end
+}
