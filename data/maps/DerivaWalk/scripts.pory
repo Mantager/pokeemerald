@@ -62,3 +62,52 @@ script DerivaWalk_EventScript_Maikel {
     release
     end
 }
+
+script DerivaWalk_Trigger_FernEvent {
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp)
+    waitmovement(0)
+    msgbox("Fern!")
+    delay(8)
+    applymovement(1, Common_Movement_FaceDown)
+    waitmovement(0)
+    msgbox("{COLOR}{RED}Clad…\nI…")
+    delay(8)
+    msgbox("I'm glad I could find you…\nI saw Nas earlier.\lWhat did he do to you?")
+    delay(8)
+    applymovement(1, Common_Movement_FaceLeft)
+    waitmovement(0)
+    msgbox("{COLOR}{RED}He… just pushed me around a bit.\pI'm so sick of it, Clad…\nThe constant trouble I get put in…")
+    closemessage
+    delay(8)
+    msgbox("{COLOR}{RED}Nas is so horrible to me!\nI can't help being different.\pI wear what I want, and\nI speak how I always have.\pI don't see how it's such\nan issue that I'm so feminine.")
+    msgbox("It's not an issue, man.")
+    applymovement(1, Common_Movement_FaceDown)
+    msgbox("{COLOR}{RED}Then why?!\nWhy can't that guy leave me alone?!\pIt's not like I don't try and\nstand up for myself.\pEvery time he sees me I\nget a kicking…")
+    msgbox("… …\n… …")
+    msgbox("{COLOR}{RED}Sorry, Clad.")
+    msgbox("What for?")
+    msgbox("{COLOR}{RED}I know it's ugly of me\nto cry like this…")
+    msgbox("It's not you, man.\pI'm just…\lnot good with things like this.\pI think… we need to deal\nwith Nas once and for all.\pHe's been picking on you since\nwe started secondary school.")
+    msgbox("{COLOR}{RED}I just want to escape from him…\nHe brings trouble everywhere.")
+    msgbox("Yeah…")
+    msgbox("{COLOR}{RED}Y'know what, Clad?\nI'd like a battle.\lIt'll clear my head.")
+    msgbox("Now that's something I can help\nyou with, buddy.")
+    msgbox("{COLOR}{RED}Wahey!\nI knew you'd be up for it!\pLet's start right away!")
+    trainerbattle_no_intro(TRAINER_G2_FERN, "You creamed me!")
+    msgbox("{COLOR}{RED}You always were the best of us\nwhen it came to battling!\lY'know what, I feel a lot better.")
+    msgbox("Glad to hear it.")
+    msgbox("{COLOR}{RED}Well, I'm gonna head over to Oro Town!")
+    msgbox("Huh?\nWhat about the others, Fern?")
+    msgbox("{COLOR}{RED}I'll text Malimo and Rye to meet\nus at Oro Town.\pI'm sure they aren't far from here\nnow, anyways.")
+    msgbox("Okay.\nSee you then.")
+    msgbox("{COLOR}{RED}Bye-bye!\nSee you in a bit!")
+    closemessage
+    fadescreen(1)
+    removeobject(1)
+    setflag(FLAG_DERIVA_WALK_HIDE_FERN)
+    setvar(VAR_YANURAS_TOWN_STATE, 4)
+    fadescreen(0)
+    releaseall
+    end
+}

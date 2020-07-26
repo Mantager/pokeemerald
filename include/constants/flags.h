@@ -1241,7 +1241,7 @@
 #define FLAG_YANURAS_TOWN_HIDE_MALIMO                                           0x49D // Unused Flag
 #define FLAG_YANURAS_TOWN_HIDE_RYAN                                           0x49E // Unused Flag
 #define FLAG_ROCAROHA_VALLEY_HIDE_NAS                                           0x49F // Unused Flag
-#define FLAG_UNUSED_0x4A0                                           0x4A0 // Unused Flag
+#define FLAG_DERIVA_WALK_HIDE_FERN                                           0x4A0 // Unused Flag
 #define FLAG_UNUSED_0x4A1                                           0x4A1 // Unused Flag
 #define FLAG_UNUSED_0x4A2                                           0x4A2 // Unused Flag
 #define FLAG_UNUSED_0x4A3                                           0x4A3 // Unused Flag

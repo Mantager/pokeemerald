@@ -100,6 +100,7 @@ RocarohaValley_Trigger_MeetNas::
 	playse SE_PIN
 	applymovement 14, Common_Movement_ExclamationMark
 	waitmovement 0
+	delay 16
 	getplayerxy VAR_TEMP_1, VAR_TEMP_2
 	compare VAR_TEMP_1, 10
 	goto_if_eq RocarohaValley_Trigger_MeetNas_2
@@ -138,12 +139,15 @@ RocarohaValley_Trigger_MeetNas_4:
 	applymovement 14, Common_Movement_FaceDown
 	waitmovement 0
 	msgbox RocarohaValley_Trigger_MeetNas_Text_12
+	closemessage
 	applymovement 14, RocarohaValley_Movement_NasLeave
+	msgbox RocarohaValley_Trigger_MeetNas_Text_13
+	closemessage
 	waitmovement 0
 	removeobject 14
 	setflag FLAG_ROCAROHA_VALLEY_HIDE_NAS
 	delay 16
-	msgbox RocarohaValley_Trigger_MeetNas_Text_13
+	msgbox RocarohaValley_Trigger_MeetNas_Text_14
 	releaseall
 	setvar VAR_YANURAS_TOWN_STATE, 3
 	end
@@ -214,7 +218,7 @@ RocarohaValley_Trigger_MeetNas_Text_4:
 	.string "Man Clad, you're just full of questions\ntoday, aren't you?\pWell, let me ask you a question.\nWhat's the name of the airy\nfairy loser that you're best mates with?$"
 
 RocarohaValley_Trigger_MeetNas_Text_5:
-	.string "You mean… Fern…$"
+	.string "You mean Fern…$"
 
 RocarohaValley_Trigger_MeetNas_Text_6:
 	.string "There we go!\nYou're quick on the uptake, pool boy!\pThat ponce loves a good chat\nwith his buddy Nas…$"
@@ -238,4 +242,7 @@ RocarohaValley_Trigger_MeetNas_Text_12:
 	.string "Wouldn't you like to know?$"
 
 RocarohaValley_Trigger_MeetNas_Text_13:
-	.string "(I ought to wait for the others, but…\nI need to find Nas.)\p(I'll send a text to Malimo quick.)\p… …\n… …\pThere we go.$"
+	.string "Wait!\nNas!$"
+
+RocarohaValley_Trigger_MeetNas_Text_14:
+	.string "(… …\n… …)\p(I ought to wait for the others, but…\nI need to find Fern.)\p(I'll send a text to Malimo quick.)\p… …\n… …\pThere we go.$"

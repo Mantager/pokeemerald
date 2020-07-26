@@ -56,6 +56,10 @@ Common_Movement_FaceUp: @ 82725B2
 	face_up
 	step_end
 
+Common_Movement_WalkInPlaceUp:
+	walk_in_place_up
+	step_end
+
 Common_Movement_WalkInPlaceDown: @ 82725B4
 	walk_in_place_down
 	step_end
