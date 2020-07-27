@@ -4860,6 +4860,66 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/YanurasTown_RestHouse/border.bin",
       "blockdata_filepath": "data/layouts/YanurasTown_RestHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_YANURAS_TOWN_HOUSE",
+      "name": "YanurasTown_House_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/YanurasTown_House/border.bin",
+      "blockdata_filepath": "data/layouts/YanurasTown_House/map.bin"
+    },
+    {
+      "id": "LAYOUT_DELAGUA_TOWN_POKEMON_CENTER",
+      "name": "DelaguaTown_PokemonCenter_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/DelaguaTown_PokemonCenter/border.bin",
+      "blockdata_filepath": "data/layouts/DelaguaTown_PokemonCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_DELAGUA_TOWN_MOVE_REMINDER_HOUSE",
+      "name": "DelaguaTown_MoveReminderHouse_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/DelaguaTown_MoveReminderHouse/border.bin",
+      "blockdata_filepath": "data/layouts/DelaguaTown_MoveReminderHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_DELAGUA_TOWN_HOUSE_A",
+      "name": "DelaguaTown_HouseA_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/DelaguaTown_HouseA/border.bin",
+      "blockdata_filepath": "data/layouts/DelaguaTown_HouseA/map.bin"
+    },
+    {
+      "id": "LAYOUT_DELAGUA_TOWN_HOUSE_B",
+      "name": "DelaguaTown_HouseB_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/DelaguaTown_HouseB/border.bin",
+      "blockdata_filepath": "data/layouts/DelaguaTown_HouseB/map.bin"
+    },
+    {
+      "id": "LAYOUT_DELAGUA_TOWN_HOUSE_C",
+      "name": "DelaguaTown_HouseC_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/DelaguaTown_HouseC/border.bin",
+      "blockdata_filepath": "data/layouts/DelaguaTown_HouseC/map.bin"
     }
   ]
 }

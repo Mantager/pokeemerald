@@ -1,2 +1,71 @@
 LandBridgeSouth_MapScripts::
 	.byte 0
+
+
+LandBridgeSouth_EventScript_Sigal::
+	trainerbattle_single TRAINER_G2_SIGAL, LandBridgeSouth_EventScript_Sigal_Text_0, LandBridgeSouth_EventScript_Sigal_Text_1
+	msgbox LandBridgeSouth_EventScript_Sigal_Text_2
+	release
+	end
+
+
+LandBridgeSouth_EventScript_Zane::
+	trainerbattle_single TRAINER_G2_ZANE, LandBridgeSouth_EventScript_Sigal_Text_0, LandBridgeSouth_EventScript_Sigal_Text_1
+	msgbox LandBridgeSouth_EventScript_Sigal_Text_2
+	release
+	end
+
+
+LandBridgeSouth_EventScript_Ei::
+	trainerbattle_double TRAINER_G2_EI_AND_AI, LandBridgeSouth_EventScript_Sigal_Text_0, LandBridgeSouth_EventScript_Sigal_Text_1, LandBridgeSouth_EventScript_Ei_Text_0
+	msgbox LandBridgeSouth_EventScript_Sigal_Text_2
+	release
+	end
+
+
+LandBridgeSouth_EventScript_Ai::
+	trainerbattle_double TRAINER_G2_EI_AND_AI, LandBridgeSouth_EventScript_Sigal_Text_0, LandBridgeSouth_EventScript_Sigal_Text_1, LandBridgeSouth_EventScript_Ei_Text_0
+	msgbox LandBridgeSouth_EventScript_Sigal_Text_2
+	release
+	end
+
+
+LandBridgeSouth_EventScript_Felipe::
+	trainerbattle_single TRAINER_G2_FELIPE, LandBridgeSouth_EventScript_Sigal_Text_0, LandBridgeSouth_EventScript_Sigal_Text_1
+	msgbox LandBridgeSouth_EventScript_Sigal_Text_2
+	release
+	end
+
+
+LandBridgeSouth_EventScript_Julieta::
+	trainerbattle_single TRAINER_G2_JULIETA, LandBridgeSouth_EventScript_Sigal_Text_0, LandBridgeSouth_EventScript_Sigal_Text_1
+	msgbox LandBridgeSouth_EventScript_Sigal_Text_2
+	release
+	end
+
+
+LandBridgeSouth_EventScript_Oru::
+	trainerbattle_single TRAINER_G2_ORU, LandBridgeSouth_EventScript_Sigal_Text_0, LandBridgeSouth_EventScript_Sigal_Text_1
+	msgbox LandBridgeSouth_EventScript_Sigal_Text_2
+	release
+	end
+
+
+LandBridgeSouth_EventScript_Nan::
+	trainerbattle_single TRAINER_G2_NAN, LandBridgeSouth_EventScript_Sigal_Text_0, LandBridgeSouth_EventScript_Sigal_Text_1
+	msgbox LandBridgeSouth_EventScript_Sigal_Text_2
+	release
+	end
+
+
+LandBridgeSouth_EventScript_Sigal_Text_0:
+	.string "Battle me now!$"
+
+LandBridgeSouth_EventScript_Sigal_Text_1:
+	.string "No, I lost!$"
+
+LandBridgeSouth_EventScript_Sigal_Text_2:
+	.string "You're good.$"
+
+LandBridgeSouth_EventScript_Ei_Text_0:
+	.string "Need two!$"

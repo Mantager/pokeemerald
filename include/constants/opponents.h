@@ -31,6 +31,13 @@
 #define TRAINER_G2_NAKIA                      27
 #define TRAINER_G2_YAN_AND_IVO                28
 #define TRAINER_G2_MAIKEL                     29
+#define TRAINER_G2_SIGAL                      30
+#define TRAINER_G2_ZANE                       31
+#define TRAINER_G2_EI_AND_AI                  32
+#define TRAINER_G2_FELIPE                     33
+#define TRAINER_G2_JULIETA                    34
+#define TRAINER_G2_ORU                        35
+#define TRAINER_G2_NAN                        36
 #define TRAINER_SAWYER_1                      1
 #define TRAINER_GRUNT_AQUA_HIDEOUT_1          2
 #define TRAINER_GRUNT_AQUA_HIDEOUT_2          3

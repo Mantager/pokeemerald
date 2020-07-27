@@ -1,0 +1,57 @@
+mapscripts LandBridgeSouth_MapScripts {}
+
+script LandBridgeSouth_EventScript_Sigal {
+    trainerbattle_single(TRAINER_G2_SIGAL, "Battle me now!", "No, I lost!")
+    msgbox("You're good.")
+    release
+    end
+}
+
+script LandBridgeSouth_EventScript_Zane {
+    trainerbattle_single(TRAINER_G2_ZANE, "Battle me now!", "No, I lost!")
+    msgbox("You're good.")
+    release
+    end
+}
+
+script LandBridgeSouth_EventScript_Ei {
+    trainerbattle_double(TRAINER_G2_EI_AND_AI, "Battle me now!", "No, I lost!", "Need two!")
+    msgbox("You're good.")
+    release
+    end
+}
+
+script LandBridgeSouth_EventScript_Ai {
+    trainerbattle_double(TRAINER_G2_EI_AND_AI, "Battle me now!", "No, I lost!", "Need two!")
+    msgbox("You're good.")
+    release
+    end
+}
+
+script LandBridgeSouth_EventScript_Felipe {
+    trainerbattle_single(TRAINER_G2_FELIPE, "Battle me now!", "No, I lost!")
+    msgbox("You're good.")
+    release
+    end
+}
+
+script LandBridgeSouth_EventScript_Julieta {
+    trainerbattle_single(TRAINER_G2_JULIETA, "Battle me now!", "No, I lost!")
+    msgbox("You're good.")
+    release
+    end
+}
+
+script LandBridgeSouth_EventScript_Oru {
+    trainerbattle_single(TRAINER_G2_ORU, "Battle me now!", "No, I lost!")
+    msgbox("You're good.")
+    release
+    end
+}
+
+script LandBridgeSouth_EventScript_Nan {
+    trainerbattle_single(TRAINER_G2_NAN, "Battle me now!", "No, I lost!")
+    msgbox("You're good.")
+    release
+    end
+}

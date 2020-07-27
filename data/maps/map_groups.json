@@ -680,10 +680,15 @@
   "gMapGroup37": [
     "YanurasTown_RyanHouse",
     "YanurasTown_GeneralStore",
-    "YanurasTown_RestHouse"
+    "YanurasTown_RestHouse",
+    "YanurasTown_House"
   ],
   "gMapGroup38": [
-
+    "DelaguaTown_PokemonCenter",
+    "DelaguaTown_MoveReminderHouse",
+    "DelaguaTown_HouseA",
+    "DelaguaTown_HouseB",
+    "DelaguaTown_HouseC"
   ],
   "gMapGroup39": [
 

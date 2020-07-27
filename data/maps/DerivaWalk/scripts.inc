@@ -104,6 +104,7 @@ DerivaWalk_Trigger_FernEvent::
 	msgbox DerivaWalk_Trigger_FernEvent_Text_22
 	msgbox DerivaWalk_Trigger_FernEvent_Text_23
 	msgbox DerivaWalk_Trigger_FernEvent_Text_24
+	closemessage
 	fadescreen 1
 	removeobject 1
 	setflag FLAG_DERIVA_WALK_HIDE_FERN

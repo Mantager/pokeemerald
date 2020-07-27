@@ -1149,3 +1149,15 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/YanurasTown_GeneralStore/scripts.inc"
 
 	.include "data/maps/YanurasTown_RestHouse/scripts.inc"
+
+	.include "data/maps/YanurasTown_House/scripts.inc"
+
+	.include "data/maps/DelaguaTown_PokemonCenter/scripts.inc"
+
+	.include "data/maps/DelaguaTown_MoveReminderHouse/scripts.inc"
+
+	.include "data/maps/DelaguaTown_HouseA/scripts.inc"
+
+	.include "data/maps/DelaguaTown_HouseB/scripts.inc"
+
+	.include "data/maps/DelaguaTown_HouseC/scripts.inc"

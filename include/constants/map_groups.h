@@ -639,8 +639,14 @@
 #define MAP_YANURAS_TOWN_RYAN_HOUSE    (0 | (37 << 8))
 #define MAP_YANURAS_TOWN_GENERAL_STORE (1 | (37 << 8))
 #define MAP_YANURAS_TOWN_REST_HOUSE    (2 | (37 << 8))
+#define MAP_YANURAS_TOWN_HOUSE         (3 | (37 << 8))
 
 // Map Group 38
+#define MAP_DELAGUA_TOWN_POKEMON_CENTER      (0 | (38 << 8))
+#define MAP_DELAGUA_TOWN_MOVE_REMINDER_HOUSE (1 | (38 << 8))
+#define MAP_DELAGUA_TOWN_HOUSE_A             (2 | (38 << 8))
+#define MAP_DELAGUA_TOWN_HOUSE_B             (3 | (38 << 8))
+#define MAP_DELAGUA_TOWN_HOUSE_C             (4 | (38 << 8))
 
 // Map Group 39
 
