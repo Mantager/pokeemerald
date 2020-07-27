@@ -649,6 +649,8 @@
 #define MAP_DELAGUA_TOWN_HOUSE_C             (4 | (38 << 8))
 
 // Map Group 39
+#define MAP_ORO_TOWN_POKEMON_CENTER (0 | (39 << 8))
+#define MAP_ORO_TOWN_HOUSE_A        (1 | (39 << 8))
 
 // Map Group 40
 

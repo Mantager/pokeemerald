@@ -2,7 +2,7 @@
   "id": "MAP_ORO_TOWN",
   "name": "OroTown",
   "layout": "LAYOUT_ORO_TOWN",
-  "music": "MUS_AJITO",
+  "music": "MUS_MACHI_S2",
   "region_map_section": "MAPSEC_ORO_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
@@ -36,11 +36,11 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_ORO_TOWN_HIDE_GOONS"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_NAS",
-      "x": 16,
+      "x": 17,
       "y": 11,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
@@ -49,11 +49,11 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_ORO_TOWN_HIDE_NAS"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BOY_2",
-      "x": 17,
+      "x": 16,
       "y": 11,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -62,7 +62,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_ORO_TOWN_HIDE_GOONS"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BOY_2",
@@ -75,14 +75,101 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_ORO_TOWN_HIDE_GOONS"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MALIMO",
+      "x": 16,
+      "y": 27,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_ORO_TOWN_HIDE_MALIMO"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_RYAN",
+      "x": 17,
+      "y": 27,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_ORO_TOWN_HIDE_RYAN"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_FERN",
+      "x": 16,
+      "y": 21,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_ORO_TOWN_HIDE_FERN"
     }
   ],
   "warp_events": [
-
+    {
+      "x": 11,
+      "y": 24,
+      "elevation": 0,
+      "dest_map": "MAP_ORO_TOWN_POKEMON_CENTER",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 10,
+      "y": 18,
+      "elevation": 0,
+      "dest_map": "MAP_ORO_TOWN_HOUSE_A",
+      "dest_warp_id": 0
+    }
   ],
   "coord_events": [
-
+    {
+      "type": "trigger",
+      "x": 15,
+      "y": 23,
+      "elevation": 0,
+      "var": "VAR_ORO_TOWN_STATE",
+      "var_value": "0",
+      "script": "OroTown_Trigger_MeetUp"
+    },
+    {
+      "type": "trigger",
+      "x": 16,
+      "y": 23,
+      "elevation": 0,
+      "var": "VAR_ORO_TOWN_STATE",
+      "var_value": "0",
+      "script": "OroTown_Trigger_MeetUp"
+    },
+    {
+      "type": "trigger",
+      "x": 17,
+      "y": 23,
+      "elevation": 0,
+      "var": "VAR_ORO_TOWN_STATE",
+      "var_value": "0",
+      "script": "OroTown_Trigger_MeetUp"
+    },
+    {
+      "type": "trigger",
+      "x": 18,
+      "y": 23,
+      "elevation": 0,
+      "var": "VAR_ORO_TOWN_STATE",
+      "var_value": "0",
+      "script": "OroTown_Trigger_MeetUp"
+    }
   ],
   "bg_events": [
 

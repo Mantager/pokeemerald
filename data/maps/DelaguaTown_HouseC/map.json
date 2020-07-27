@@ -2,7 +2,7 @@
   "id": "MAP_DELAGUA_TOWN_HOUSE_C",
   "name": "DelaguaTown_HouseC",
   "layout": "LAYOUT_DELAGUA_TOWN_HOUSE_C",
-  "music": "MUS_AJITO",
+  "music": "MUS_MACHI_S3",
   "region_map_section": "MAPSEC_DELAGUA_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

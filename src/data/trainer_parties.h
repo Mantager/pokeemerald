@@ -436,36 +436,44 @@ static const struct TrainerMonNoItemDefaultMoves sParty_G2_Nan[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_Rose1[] = {
+static const struct TrainerMonItemCustomMoves sParty_G2_Nas[] = {
     {
-    .iv = 15,
-    .lvl = 14,
-    .species = SPECIES_ROSELIA,
+    .iv = 150,
+    .lvl = 25,
+    .species = SPECIES_SANDILE,
+    .heldItem = ITEM_BLACK_GLASSES,
+    .moves = {MOVE_SAND_TOMB, MOVE_CRUNCH, MOVE_AQUA_TAIL, MOVE_DOUBLE_EDGE}
     },
     {
-    .iv = 15,
-    .lvl = 14,
-    .species = SPECIES_SHROOMISH,
+    .iv = 150,
+    .lvl = 25,
+    .species = SPECIES_SKARMORY,
+    .heldItem = ITEM_RED_CARD,
+    .moves = {MOVE_SPIKES, MOVE_WHIRLWIND, MOVE_AERIAL_ACE, MOVE_ROOST}
     },
     {
-    .iv = 15,
-    .lvl = 14,
-    .species = SPECIES_ROSELIA,
+    .iv = 150,
+    .lvl = 27,
+    .species = SPECIES_BOUFFALANT,
+    .heldItem = ITEM_ASSAULT_VEST,
+    .moves = {MOVE_THROAT_CHOP, MOVE_REVENGE, MOVE_RETURN, MOVE_MEGAHORN}
     }
 };
 
-static const struct TrainerMonNoItemCustomMoves sParty_Felix[] = {
+static const struct TrainerMonItemCustomMoves sParty_G2_Rodri[] = {
     {
-    .iv = 15,
-    .lvl = 43,
-    .species = SPECIES_MEDICHAM,
-    .moves = {MOVE_PSYCHIC, MOVE_NONE, MOVE_NONE, MOVE_NONE}
+    .iv = 140,
+    .lvl = 26,
+    .species = SPECIES_GOLBAT,
+    .heldItem = ITEM_POISON_BARB,
+    .moves = {MOVE_CONFUSE_RAY, MOVE_POISON_FANG, MOVE_LEECH_LIFE, MOVE_SCREECH}
     },
     {
-    .iv = 15,
-    .lvl = 43,
-    .species = SPECIES_CLAYDOL,
-    .moves = {MOVE_SKILL_SWAP, MOVE_EARTHQUAKE, MOVE_NONE, MOVE_NONE}
+    .iv = 150,
+    .lvl = 26,
+    .species = SPECIES_SKORUPI,
+    .heldItem = ITEM_EVIOLITE,
+    .moves = {MOVE_HONE_CLAWS, MOVE_POISON_FANG, MOVE_NIGHT_SLASH, MOVE_BUG_BITE}
     }
 };
 

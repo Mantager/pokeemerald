@@ -106,6 +106,8 @@ script DerivaWalk_Trigger_FernEvent {
     fadescreen(1)
     removeobject(1)
     setflag(FLAG_DERIVA_WALK_HIDE_FERN)
+    setflag(FLAG_ORO_TOWN_HIDE_MALIMO)
+    setflag(FLAG_ORO_TOWN_HIDE_RYAN)
     setvar(VAR_YANURAS_TOWN_STATE, 4)
     fadescreen(0)
     releaseall

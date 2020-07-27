@@ -2,7 +2,7 @@
   "id": "MAP_YANURAS_TOWN_REST_HOUSE",
   "name": "YanurasTown_RestHouse",
   "layout": "LAYOUT_YANURAS_TOWN_REST_HOUSE",
-  "music": "MUS_AJITO",
+  "music": "MUS_MACHI_S4",
   "region_map_section": "MAPSEC_YANURAS_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -66,7 +66,7 @@
       "x": 1,
       "y": 4,
       "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_EAST",
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_WEST",
       "script": "YanurasTown_RestHouse_EventScript_Bed"
     },
     {
@@ -74,7 +74,7 @@
       "x": 1,
       "y": 5,
       "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_EAST",
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_WEST",
       "script": "YanurasTown_RestHouse_EventScript_Bed"
     }
   ]

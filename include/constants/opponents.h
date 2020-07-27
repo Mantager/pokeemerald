@@ -38,6 +38,8 @@
 #define TRAINER_G2_JULIETA                    34
 #define TRAINER_G2_ORU                        35
 #define TRAINER_G2_NAN                        36
+#define TRAINER_G2_NAS                        37
+#define TRAINER_G2_RODRI                      38
 #define TRAINER_SAWYER_1                      1
 #define TRAINER_GRUNT_AQUA_HIDEOUT_1          2
 #define TRAINER_GRUNT_AQUA_HIDEOUT_2          3

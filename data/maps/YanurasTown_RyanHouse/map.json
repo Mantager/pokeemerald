@@ -2,7 +2,7 @@
   "id": "MAP_YANURAS_TOWN_RYAN_HOUSE",
   "name": "YanurasTown_RyanHouse",
   "layout": "LAYOUT_YANURAS_TOWN_RYAN_HOUSE",
-  "music": "MUS_AJITO",
+  "music": "MUS_MACHI_S4",
   "region_map_section": "MAPSEC_YANURAS_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

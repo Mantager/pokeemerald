@@ -2321,6 +2321,15 @@ static const struct SpriteTemplate gSpriteTemplateTable_TrainerBackSprites[] =
         .affineAnims = gUnknown_082FF618,
         .callback = sub_8039BB4,
     },
+    {
+        .tileTag = 0xFFFF,
+        .paletteTag = 0,
+        .oam = &gOamData_831ACB0,
+        .anims = NULL,
+        .images = gTrainerBackPicTable_Steven,
+        .affineAnims = gUnknown_082FF618,
+        .callback = sub_8039BB4,
+    },
 };
 
 static const u8 sSecretBaseFacilityClasses[2][5] =
@@ -6402,6 +6411,7 @@ u16 GetBattleBGM(void)
         {
         case TRAINER_CLASS_AQUA_LEADER:
         case TRAINER_CLASS_MAGMA_LEADER:
+        case TRAINER_CLASS_PKMN_TRAINER_2:
             return MUS_BATTLE30;
         case TRAINER_CLASS_TEAM_AQUA:
         case TRAINER_CLASS_TEAM_MAGMA:
@@ -6704,6 +6714,10 @@ const u8 *GetTrainerPartnerName(void)
         if (gPartnerTrainerId == TRAINER_STEVEN_PARTNER)
         {
             return gTrainers[TRAINER_STEVEN].trainerName;
+        }
+        else if (gPartnerTrainerId == TRAINER_FERN_PARTNER)
+        {
+            return gTrainers[TRAINER_G2_FERN].trainerName;
         }
         else
         {

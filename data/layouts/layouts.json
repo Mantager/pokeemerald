@@ -4514,7 +4514,7 @@
     {
       "id": "LAYOUT_VIENTO_WALK",
       "name": "VientoWalk_Layout",
-      "width": 84,
+      "width": 90,
       "height": 39,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Mauville",
@@ -4920,6 +4920,26 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/DelaguaTown_HouseC/border.bin",
       "blockdata_filepath": "data/layouts/DelaguaTown_HouseC/map.bin"
+    },
+    {
+      "id": "LAYOUT_ORO_TOWN_POKEMON_CENTER",
+      "name": "OroTown_PokemonCenter_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/OroTown_PokemonCenter/border.bin",
+      "blockdata_filepath": "data/layouts/OroTown_PokemonCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_ORO_TOWN_HOUSE_A",
+      "name": "OroTown_HouseA_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/OroTown_HouseA/border.bin",
+      "blockdata_filepath": "data/layouts/OroTown_HouseA/map.bin"
     }
   ]
 }

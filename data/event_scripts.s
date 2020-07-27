@@ -1161,3 +1161,7 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/DelaguaTown_HouseB/scripts.inc"
 
 	.include "data/maps/DelaguaTown_HouseC/scripts.inc"
+
+	.include "data/maps/OroTown_PokemonCenter/scripts.inc"
+
+	.include "data/maps/OroTown_HouseA/scripts.inc"

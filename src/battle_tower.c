@@ -41,6 +41,8 @@
 
 extern const u8 MossdeepCity_SpaceCenter_2F_EventScript_MaxieTrainer[];
 extern const u8 MossdeepCity_SpaceCenter_2F_EventScript_TabithaTrainer[];
+extern const u8 OroTown_EventScript_NasTrainer[];
+extern const u8 OroTown_EventScript_RodriTrainer[];
 
 // EWRAM vars.
 EWRAM_DATA const struct BattleFrontierTrainer *gFacilityTrainers = NULL;
@@ -800,6 +802,42 @@ struct
     }
 };
 
+struct
+{
+    u16 species;
+    u8 fixedIV;
+    u8 level;
+    u8 nature;
+    u8 evs[NUM_STATS];
+    u16 moves[MAX_MON_MOVES];
+} const sFernMons[MULTI_PARTY_SIZE] =
+{
+    {
+        .species = SPECIES_PETILIL,
+        .fixedIV = 16,
+        .level = 25,
+        .nature = NATURE_JOLLY,
+        .evs = {0, 0, 32, 128, 16, 64},
+        .moves = {MOVE_SYNTHESIS, MOVE_SLEEP_POWDER, MOVE_MAGICAL_LEAF, MOVE_SUNNY_DAY}
+    },
+    {
+        .species = SPECIES_PONYTA,
+        .fixedIV = 16,
+        .level = 25,
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 64, 0, 64, 32, 128},
+        .moves = {MOVE_FLAME_WHEEL, MOVE_STOMP, MOVE_AGILITY, MOVE_GROWL}
+    },
+    {
+        .species = SPECIES_BLISSEY,
+        .fixedIV = 16,
+        .level = 27,
+        .nature = NATURE_SERIOUS,
+        .evs = {64, 0, 128, 16, 128, 64},
+        .moves = {MOVE_SOFT_BOILED, MOVE_PROTECT, MOVE_SEISMIC_TOSS, MOVE_BESTOW}
+    }
+};
+
 #include "data/battle_frontier/battle_tent.h"
 
 static void (* const sBattleTowerFuncs[])(void) =
@@ -1449,6 +1487,10 @@ u8 GetFrontierOpponentClass(u16 trainerId)
     {
         trainerClass = GetFrontierBrainTrainerClass();
     }
+    else if (trainerId == TRAINER_FERN_PARTNER)
+    {
+        trainerClass = gTrainers[TRAINER_G2_FERN].trainerClass;
+    }
     else if (trainerId == TRAINER_STEVEN_PARTNER)
     {
         trainerClass = gTrainers[TRAINER_STEVEN].trainerClass;
@@ -1534,6 +1576,11 @@ void GetFrontierTrainerName(u8 *dst, u16 trainerId)
     {
         CopyFrontierBrainTrainerName(dst);
         return;
+    }
+    else if (trainerId == TRAINER_FERN_PARTNER)
+    {
+        for (i = 0; i < PLAYER_NAME_LENGTH; i++)
+            dst[i] = gTrainers[TRAINER_G2_FERN].trainerName[i];
     }
     else if (trainerId == TRAINER_STEVEN_PARTNER)
     {
@@ -2130,15 +2177,15 @@ void DoSpecialTrainerBattle(void)
         break;
     case SPECIAL_BATTLE_STEVEN:
         gBattleTypeFlags = BATTLE_TYPE_TRAINER | BATTLE_TYPE_DOUBLE | BATTLE_TYPE_TWO_OPPONENTS | BATTLE_TYPE_MULTI | BATTLE_TYPE_INGAME_PARTNER;
-        FillPartnerParty(TRAINER_STEVEN_PARTNER);
+        FillPartnerParty(TRAINER_FERN_PARTNER);
         gApproachingTrainerId = 0;
-        BattleSetup_ConfigureTrainerBattle(MossdeepCity_SpaceCenter_2F_EventScript_MaxieTrainer + 1);
+        BattleSetup_ConfigureTrainerBattle(OroTown_EventScript_NasTrainer + 1);
         gApproachingTrainerId = 1;
-        BattleSetup_ConfigureTrainerBattle(MossdeepCity_SpaceCenter_2F_EventScript_TabithaTrainer + 1);
-        gPartnerTrainerId = TRAINER_STEVEN_PARTNER;
+        BattleSetup_ConfigureTrainerBattle(OroTown_EventScript_RodriTrainer + 1);
+        gPartnerTrainerId = TRAINER_FERN_PARTNER;
         CreateTask(Task_StartBattleAfterTransition, 1);
         PlayMapChosenOrBattleBGM(0);
-        BattleTransition_StartOnField(B_TRANSITION_MAGMA);
+        BattleTransition_StartOnField(B_TRANSITION_SLICE);
         break;
     case SPECIAL_BATTLE_MULTI:
         if (gSpecialVar_0x8005 & MULTI_BATTLE_2_VS_WILD) // Player + AI against wild mon
@@ -2980,6 +3027,7 @@ void TryHideBattleTowerReporter(void)
 }
 
 #define STEVEN_OTID 61226
+#define FERN_OTID 14978
 
 static void FillPartnerParty(u16 trainerId)
 {
@@ -3010,6 +3058,30 @@ static void FillPartnerParty(u16 trainerId)
             for (j = 0; j < MAX_MON_MOVES; j++)
                 SetMonMoveSlot(&gPlayerParty[MULTI_PARTY_SIZE + i], sStevenMons[i].moves[j], j);
             SetMonData(&gPlayerParty[MULTI_PARTY_SIZE + i], MON_DATA_OT_NAME, gTrainers[TRAINER_STEVEN].trainerName);
+            j = MALE;
+            SetMonData(&gPlayerParty[MULTI_PARTY_SIZE + i], MON_DATA_OT_GENDER, &j);
+            CalculateMonStats(&gPlayerParty[MULTI_PARTY_SIZE + i]);
+        }
+    }
+    else if (trainerId == TRAINER_FERN_PARTNER)
+    {
+        for (i = 0; i < MULTI_PARTY_SIZE; i++)
+        {
+            do
+            {
+                j = Random32();
+            } while (IsShinyOtIdPersonality(FERN_OTID, j) || sFernMons[i].nature != GetNatureFromPersonality(j));
+            CreateMon(&gPlayerParty[MULTI_PARTY_SIZE + i],
+                      sFernMons[i].species,
+                      sFernMons[i].level,
+                      sFernMons[i].fixedIV,
+                      TRUE, j,
+                      OT_ID_PRESET, FERN_OTID);
+            for (j = 0; j < PARTY_SIZE; j++)
+                SetMonData(&gPlayerParty[MULTI_PARTY_SIZE + i], MON_DATA_HP_EV + j, &sFernMons[i].evs[j]);
+            for (j = 0; j < MAX_MON_MOVES; j++)
+                SetMonMoveSlot(&gPlayerParty[MULTI_PARTY_SIZE + i], sFernMons[i].moves[j], j);
+            SetMonData(&gPlayerParty[MULTI_PARTY_SIZE + i], MON_DATA_OT_NAME, gTrainers[TRAINER_G2_FERN].trainerName);
             j = MALE;
             SetMonData(&gPlayerParty[MULTI_PARTY_SIZE + i], MON_DATA_OT_GENDER, &j);
             CalculateMonStats(&gPlayerParty[MULTI_PARTY_SIZE + i]);
