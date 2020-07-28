@@ -1,0 +1,20 @@
+mapscripts DerivaWalk_Hut_MapScripts {}
+
+script DerivaWalk_EventScript_LuckyEggGiver {
+    lock
+    faceplayer
+    if(flag(FLAG_RECIEVED_LUCKY_EGG) == false) {
+        msgbox("Your Pokémon look as if they\ncould use some more experience.\pHere, take this!")
+        closemessage
+        giveitem(ITEM_LUCKY_EGG)
+        if(var(VAR_RESULT) == 0) { goto(Common_EventScript_ShowBagIsFull) }
+        setflag(FLAG_RECIEVED_LUCKY_EGG)
+        msgbox("If a Pokémon holds that Lucky Egg,\nit'll gain even more experience\lin a battle!")
+        release
+        end
+    } else {
+        msgbox("They say that Lucky Eggs\ncome from Chansey.\lNeat, huh?")
+        release
+        end
+    }
+}

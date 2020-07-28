@@ -736,7 +736,7 @@
 
 #define MOVES_COUNT_GEN8              (MOVES_COUNT_GEN7 + 35)
 
-#define MOVE_TITAN_SPLASH             MOVES_COUNT_GEN8
+#define MOVE_TITAN_SPLASH             (MOVES_COUNT_GEN8 + 0)
 
 #define MOVES_COUNT                 (MOVES_COUNT_GEN8 + 1)
 

@@ -647,6 +647,7 @@
 #define MAP_DELAGUA_TOWN_HOUSE_A             (2 | (38 << 8))
 #define MAP_DELAGUA_TOWN_HOUSE_B             (3 | (38 << 8))
 #define MAP_DELAGUA_TOWN_HOUSE_C             (4 | (38 << 8))
+#define MAP_DERIVA_WALK_HUT                  (5 | (38 << 8))
 
 // Map Group 39
 #define MAP_ORO_TOWN_POKEMON_CENTER (0 | (39 << 8))

@@ -144,7 +144,7 @@ OroTown_Trigger_MeetUp_10:
 	closemessage
 	msgbox OroTown_Trigger_MeetUp_Text_18
 	msgbox OroTown_Trigger_MeetUp_Text_19
-	goto OroTown_EventScript_AfterBattle
+	goto OroTown_EventScript_PrepareForBattle
 	return
 
 OroTown_Trigger_MeetUp_2:

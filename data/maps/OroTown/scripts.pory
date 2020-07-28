@@ -126,7 +126,7 @@ script OroTown_Trigger_MeetUp {
 	closemessage
 	msgbox("Oh, so you're up for a scrap?\nDon't you worry, Fern…\pI'll give you a beating that\nyou'll never forget!")
 	msgbox("{COLOR}{RED}For a long time now you've been\na massive pain, but that ends\lhere and now!\pI'll get to Wing Peak,\nand you ain't gonna stop me!")
-	goto(OroTown_EventScript_AfterBattle)
+	goto(OroTown_EventScript_PrepareForBattle)
 }
 
 script OroTown_EventScript_AfterBattle {

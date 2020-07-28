@@ -4940,6 +4940,16 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/OroTown_HouseA/border.bin",
       "blockdata_filepath": "data/layouts/OroTown_HouseA/map.bin"
+    },
+    {
+      "id": "LAYOUT_DERIVA_WALK_HUT",
+      "name": "DerivaWalk_Hut_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/DerivaWalk_Hut/border.bin",
+      "blockdata_filepath": "data/layouts/DerivaWalk_Hut/map.bin"
     }
   ]
 }

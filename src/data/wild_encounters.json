@@ -11802,7 +11802,7 @@
               {
                 "min_level": 19,
                 "max_level": 22,
-                "species": "SPECIES_LUXIO"
+                "species": "SPECIES_BUIZEL"
               },
               {
                 "min_level": 19,
@@ -11844,62 +11844,62 @@
             "encounter_rate": 13,
             "mons": [
               {
-                "min_level": 20,
+                "min_level": 21,
                 "max_level": 23,
                 "species": "SPECIES_WINGULL"
               },
               {
-                "min_level": 20,
+                "min_level": 21,
                 "max_level": 23,
                 "species": "SPECIES_DWEBBLE"
               },
               {
-                "min_level": 20,
+                "min_level": 21,
                 "max_level": 23,
                 "species": "SPECIES_SKIDDO"
               },
               {
-                "min_level": 20,
+                "min_level": 21,
                 "max_level": 23,
-                "species": "SPECIES_DODUO"
+                "species": "SPECIES_KRICKETOT"
               },
               {
-                "min_level": 20,
+                "min_level": 21,
                 "max_level": 23,
                 "species": "SPECIES_DRIFLOON"
               },
               {
-                "min_level": 20,
+                "min_level": 21,
                 "max_level": 23,
-                "species": "SPECIES_LUXIO"
+                "species": "SPECIES_BUIZEL"
               },
               {
-                "min_level": 20,
+                "min_level": 21,
                 "max_level": 23,
                 "species": "SPECIES_LITLEO"
               },
               {
-                "min_level": 20,
+                "min_level": 21,
                 "max_level": 23,
                 "species": "SPECIES_DRIFLOON"
               },
               {
-                "min_level": 20,
+                "min_level": 21,
                 "max_level": 23,
                 "species": "SPECIES_EKANS"
               },
               {
-                "min_level": 20,
+                "min_level": 21,
                 "max_level": 23,
                 "species": "SPECIES_EKANS"
               },
               {
-                "min_level": 20,
+                "min_level": 21,
                 "max_level": 23,
                 "species": "SPECIES_EKANS"
               },
               {
-                "min_level": 20,
+                "min_level": 21,
                 "max_level": 23,
                 "species": "SPECIES_EKANS"
               }
