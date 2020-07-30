@@ -1,8 +1,8 @@
 	.align 2
 voicegroup007:: @ 8676AE4
-	voice_directsound 60, 0, DirectSoundWaveData_sc88_trumpet_60, 255, 0, 255, 127  @ 8676AE4
-	voice_directsound 60, 0, DirectSoundWaveData_sc88_trumpet_72, 255, 0, 255, 127  @ 8676AF0
-	voice_directsound 60, 0, DirectSoundWaveData_sc88_trumpet_84, 255, 0, 255, 127  @ 8676AFC
+	voice_directsound 60, 0, DirectSoundWaveData_sc88_trumpet_60, 255, 0, 193, 127  @ 8676AE4
+	voice_directsound 60, 0, DirectSoundWaveData_sc88_trumpet_72, 255, 0, 193, 127  @ 8676AF0
+	voice_directsound 60, 0, DirectSoundWaveData_sc88_trumpet_84, 255, 0, 193, 127  @ 8676AFC
 	voice_square_1_alt 38, 2, 1, 0, 0, 0  @ 8676B08
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 8676B14
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 8676B20
@@ -129,6 +129,6 @@ voicegroup007:: @ 8676AE4
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 86770CC
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 86770D8
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 86770E4
-	voice_square_1_alt 36, 2, 0, 1, 4, 2  @ 86770F0
-	voice_square_1_alt 21, 2, 0, 0, 15, 2  @ 86770FC
+	voice_square_1 36, 2, 0, 1, 4, 2  @ 86770F0
+	voice_square_1 21, 2, 0, 0, 15, 2  @ 86770FC
 

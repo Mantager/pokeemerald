@@ -4245,3 +4245,43 @@ DirectSoundWaveData_sd90_enhanced_delay_shaku::
 	.align 2
 DirectSoundWaveData_roland_gr_trumpet::
 	.incbin "sound/direct_sound_samples/roland_gr_trumpet.bin"
+
+	.align 2
+DirectSoundWaveData_bw2_trumpet_1::
+	.incbin "sound/direct_sound_samples/BW2_trumpet_1.bin"
+
+	.align 2
+DirectSoundWaveData_bw2_trumpet_2::
+	.incbin "sound/direct_sound_samples/BW2_trumpet_2.bin"
+
+	.align 2
+DirectSoundWaveData_bw2_trumpet_3::
+	.incbin "sound/direct_sound_samples/BW2_trumpet_3.bin"
+
+	.align 2
+DirectSoundWaveData_bw2_pad3_1::
+	.incbin "sound/direct_sound_samples/bw2_pad3_1.bin"
+
+	.align 2
+DirectSoundWaveData_bw2_pad3_2::
+	.incbin "sound/direct_sound_samples/bw2_pad3_2.bin"
+
+	.align 2
+DirectSoundWaveData_bw2_pad3_3::
+	.incbin "sound/direct_sound_samples/bw2_pad3_3.bin"
+
+	.align 2
+DirectSoundWaveData_bw2_pad3_4::
+	.incbin "sound/direct_sound_samples/bw2_pad3_4.bin"
+
+	.align 2
+DirectSoundWaveData_bw2_pad3_5::
+	.incbin "sound/direct_sound_samples/bw2_pad3_5.bin"
+
+	.align 2
+DirectSoundWaveData_bw2_pad5::
+	.incbin "sound/direct_sound_samples/bw2_pad5.bin"
+
+	.align 2
+DirectSoundWaveData_bw2_charang::
+	.incbin "sound/direct_sound_samples/bw2_charang.bin"

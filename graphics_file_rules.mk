@@ -368,7 +368,7 @@ graphics/link_games/pkmnjump_bg.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -num_tiles 63
 
 graphics/pokenav/region_map.8bpp: %.8bpp: %.png
-	$(GFX) $< $@ -num_tiles 233
+	$(GFX) $< $@ -num_tiles 255
 
 $(MISCGFXDIR)/japanese_hof.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -num_tiles 29
@@ -734,7 +734,7 @@ $(PKNAVGFXDIR)/ui_matchcall.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -num_tiles 13
 
 $(INTERFACEGFXDIR)/region_map.8bpp: %.8bpp: %.png
-	$(GFX) $< $@ -num_tiles 232
+	$(GFX) $< $@ -num_tiles 255
 
 $(INTERFACEGFXDIR)/region_map_affine.8bpp: %.8bpp: %.png
 	$(GFX) $< $@ -num_tiles 233

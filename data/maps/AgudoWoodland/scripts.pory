@@ -1,1 +1,134 @@
-mapscripts AgudoWoodland_MapScripts {}
+mapscripts AgudoWoodland_MapScripts {
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_PISTA_VILLAGE_STATE, 3 {
+            lockall
+            fadescreen(1)
+            getplayerxy(VAR_TEMP_1, VAR_TEMP_2)
+            switch (var(VAR_TEMP_1)) {
+                case 10: applymovement(OBJ_EVENT_ID_PLAYER, AgudoWoodland_Movement_PlayerMoveToMalimoX10)
+                case 11: applymovement(OBJ_EVENT_ID_PLAYER, AgudoWoodland_Movement_PlayerMoveToMalimoX11)
+                case 12: applymovement(OBJ_EVENT_ID_PLAYER, AgudoWoodland_Movement_PlayerMoveToMalimoX12)
+                case 13: applymovement(OBJ_EVENT_ID_PLAYER, AgudoWoodland_Movement_PlayerMoveToMalimoX13)
+                case 14: applymovement(OBJ_EVENT_ID_PLAYER, AgudoWoodland_Movement_PlayerMoveToMalimoX14)
+                case 15: applymovement(OBJ_EVENT_ID_PLAYER, AgudoWoodland_Movement_PlayerMoveToMalimoX15)
+                case 16: applymovement(OBJ_EVENT_ID_PLAYER, AgudoWoodland_Movement_PlayerMoveToMalimoX16)
+                default: applymovement(OBJ_EVENT_ID_PLAYER, AgudoWoodland_Movement_PlayerMoveToMalimoX17)
+            }
+            waitmovement(0)
+            setobjectmovementtype(1, MOVEMENT_TYPE_FACE_LEFT)
+            applymovement(1, Common_Movement_FaceLeft)
+            waitmovement(0)
+            fadescreen(0)
+            delay(8)
+            msgbox("{COLOR}{BLUE}…Hey, Clad.")
+            msgbox("Hey, man.\pHave Fern and Rye not arrived yet?")
+            msgbox("{COLOR}{BLUE}Actually, they already went ahead.\nI told them to.\pI need to talk to you about\nsomething.")
+            msgbox("This doesn't sound good.\nYou only talk like this when\lsomething serious has gone down.\pWhat happened?")
+            closemessage
+            delay(8)
+            msgbox("{COLOR}{BLUE}…I just had a fight on the phone\nwith my parents.\pThey want me to go home.")
+            msgbox("I see…\nAre you going to?")
+            closemessage
+            delay(8)
+            msgbox("{COLOR}{BLUE}Well…\nI don't know.\pClad, can I ask you something?\pIt's something that I think only you\ncould really help me with.")
+            msgbox("Anything.")
+            closemessage
+            delay(8)
+            msgbox("{COLOR}{BLUE}You're on the path to becoming\na real professional swimmer.\pYou even did the Swim-Off last week,\nand I mean, that's a serious\lnational event.\pBut I mean…\nthat was of your own will, right?")
+            msgbox("My own will?\nWhat do you mean?")
+            closemessage
+            delay(8)
+            msgbox("{COLOR}{BLUE}Nobody's pressuring you to be a\ngreat swimmer, are they?\pYou're really doing it because you\nlove to compete?")
+            msgbox("Of course!\nIt's been my dream for a long time.\pYou've got a dream too, right?\nYou said you wanted to be a doctor.")
+            closemessage
+            delay(8)
+            applymovement(1, Common_Movement_FaceUp)
+            waitmovement(0)
+            msgbox("{COLOR}{BLUE}I realised…\nthat's not my dream.\pIt's my parents' dream that\nI become a doctor.")
+            closemessage
+            applymovement(1, Common_Movement_FaceLeft)
+            waitmovement(0)
+            msgbox("{COLOR}{BLUE}I've always been told that being\na doctor is the way to be…\pBoth of my parents are doctors.\nIt's the 'only path' to them.\pBut on this journey, I've realised\nthat I don't want it to be my path.")
+            msgbox("I see…\nhave you told them about this?")
+            msgbox("{COLOR}{BLUE}That was what the argument on\nthe phone was about.")
+            msgbox("I'm sure they'll come around eventually.\pBut…\nare you really gonna leave now?")
+            msgbox("{COLOR}{BLUE}No way.\nI told them that I'll be home soon.\pWe came this far, right?\nJust got to head through these woods.")
+            msgbox("Fair enough.\nAnd yeah, we're close to Wing Peak now.")
+            msgbox("{COLOR}{BLUE}Before we get going,\nI want you to have this.")
+            giveitem(ITEM_HM02_FLY, 1)
+            msgbox("{COLOR}{BLUE}That's the HM for Fly.\nY'know how it works, right?")
+            msgbox("You betcha, man.\nJust use it on a Pokémon.")
+            msgbox("{COLOR}{BLUE}My parents gave that HM to me\nso that I could get home at any time.\pI don't need it right now, though.\pSo if you need to go back\nsomewhere to help you prepare for\lWing Peak, go ahead.\pWith that said, I'm going to get\na move on, Clad!")
+            closemessage
+            delay(8)
+            fadescreen(1)
+            setobjectxy(1, 117, 17)
+            setobjectxyperm(1, 117, 17)
+            setobjectmovementtype(1, MOVEMENT_TYPE_FACE_RIGHT)
+            setvar(VAR_PISTA_VILLAGE_STATE, 4)
+            fadescreen(0)
+            delay(8)
+            releaseall
+            end
+        }
+    ]
+    MAP_SCRIPT_ON_TRANSITION {
+        if(var(VAR_PISTA_VILLAGE_STATE) >= 4) {
+            setobjectxy(1, 117, 17)
+            setobjectxyperm(1, 117, 17)
+            setobjectmovementtype(1, MOVEMENT_TYPE_FACE_RIGHT)
+        }
+    }
+}
+
+movement AgudoWoodland_Movement_PlayerMoveToMalimoX10 {
+    walk_fastest_up * 5
+    walk_fastest_right * 3
+    step_end
+}
+
+movement AgudoWoodland_Movement_PlayerMoveToMalimoX11 {
+    walk_fastest_up * 5
+    walk_fastest_right * 2
+    step_end
+}
+
+movement AgudoWoodland_Movement_PlayerMoveToMalimoX12 {
+    walk_fastest_up * 5
+    walk_fastest_right * 1
+    step_end
+}
+
+movement AgudoWoodland_Movement_PlayerMoveToMalimoX13 {
+    walk_fastest_up * 5
+    face_right
+    step_end
+}
+
+movement AgudoWoodland_Movement_PlayerMoveToMalimoX14 {
+    walk_fastest_up * 5
+    walk_fastest_left
+    face_right
+    step_end
+}
+
+movement AgudoWoodland_Movement_PlayerMoveToMalimoX15 {
+    walk_fastest_up * 5
+    walk_fastest_left * 2
+    face_right
+    step_end
+}
+
+movement AgudoWoodland_Movement_PlayerMoveToMalimoX16 {
+    walk_fastest_up * 5
+    walk_fastest_left * 3
+    face_right
+    step_end
+}
+
+movement AgudoWoodland_Movement_PlayerMoveToMalimoX17 {
+    walk_fastest_up * 5
+    walk_fastest_left * 4
+    face_right
+    step_end
+}

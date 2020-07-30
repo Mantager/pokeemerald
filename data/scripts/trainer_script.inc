@@ -21,3 +21,10 @@ EventScript_GotoTrainerScript:: @ 82742F6
 	gotobeatenscript
 	releaseall
 	end
+
+EventScript_ObjectApproachPlayer::
+	lock
+	special EndTrainerApproach
+	waitstate
+	gotonative LoadTrainerObjectScript
+	end

@@ -696,6 +696,8 @@
     "OroTown_HouseA"
   ],
   "gMapGroup40": [
-
+    "PistaVillage_PokemonCenter",
+    "PistaVillage_Dojo",
+    "PistaVillage_Mart"
   ]
 }

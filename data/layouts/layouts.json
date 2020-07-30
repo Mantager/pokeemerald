@@ -4544,8 +4544,8 @@
     {
       "id": "LAYOUT_WING_PEAK_1F",
       "name": "WingPeak_1F_Layout",
-      "width": 20,
-      "height": 20,
+      "width": 40,
+      "height": 40,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/WingPeak_1F/border.bin",
@@ -4554,8 +4554,8 @@
     {
       "id": "LAYOUT_WING_PEAK_2F",
       "name": "WingPeak_2F_Layout",
-      "width": 20,
-      "height": 20,
+      "width": 40,
+      "height": 40,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/WingPeak_2F/border.bin",
@@ -4564,8 +4564,8 @@
     {
       "id": "LAYOUT_WING_PEAK_3F",
       "name": "WingPeak_3F_Layout",
-      "width": 20,
-      "height": 20,
+      "width": 40,
+      "height": 40,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/WingPeak_3F/border.bin",
@@ -4950,6 +4950,36 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/DerivaWalk_Hut/border.bin",
       "blockdata_filepath": "data/layouts/DerivaWalk_Hut/map.bin"
+    },
+    {
+      "id": "LAYOUT_PISTA_VILLAGE_POKEMON_CENTER",
+      "name": "PistaVillage_PokemonCenter_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/PistaVillage_PokemonCenter/border.bin",
+      "blockdata_filepath": "data/layouts/PistaVillage_PokemonCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_PISTA_VILLAGE_DOJO",
+      "name": "PistaVillage_Dojo_Layout",
+      "width": 14,
+      "height": 24,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BattleArena",
+      "border_filepath": "data/layouts/PistaVillage_Dojo/border.bin",
+      "blockdata_filepath": "data/layouts/PistaVillage_Dojo/map.bin"
+    },
+    {
+      "id": "LAYOUT_PISTA_VILLAGE_MART",
+      "name": "PistaVillage_Mart_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/PistaVillage_Mart/border.bin",
+      "blockdata_filepath": "data/layouts/PistaVillage_Mart/map.bin"
     }
   ]
 }

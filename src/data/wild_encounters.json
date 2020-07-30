@@ -11905,6 +11905,144 @@
               }
             ]
           }
+        },
+        {
+          "map": "MAP_VIENTO_WALK",
+          "base_label": "gVientoWalk0",
+          "land_mons": {
+            "encounter_rate": 12,
+            "mons": [
+              {
+                "min_level": 24,
+                "max_level": 25,
+                "species": "SPECIES_COTTONEE"
+              },
+              {
+                "min_level": 24,
+                "max_level": 25,
+                "species": "SPECIES_PETILIL"
+              },
+              {
+                "min_level": 24,
+                "max_level": 25,
+                "species": "SPECIES_FLABEBE"
+              },
+              {
+                "min_level": 24,
+                "max_level": 25,
+                "species": "SPECIES_FLABEBE"
+              },
+              {
+                "min_level": 24,
+                "max_level": 25,
+                "species": "SPECIES_KRICKETOT"
+              },
+              {
+                "min_level": 24,
+                "max_level": 25,
+                "species": "SPECIES_EKANS"
+              },
+              {
+                "min_level": 24,
+                "max_level": 25,
+                "species": "SPECIES_HAPPINY"
+              },
+              {
+                "min_level": 24,
+                "max_level": 25,
+                "species": "SPECIES_DODUO"
+              },
+              {
+                "min_level": 24,
+                "max_level": 25,
+                "species": "SPECIES_DODUO"
+              },
+              {
+                "min_level": 24,
+                "max_level": 25,
+                "species": "SPECIES_GIRAFARIG"
+              },
+              {
+                "min_level": 24,
+                "max_level": 25,
+                "species": "SPECIES_DODUO"
+              },
+              {
+                "min_level": 24,
+                "max_level": 25,
+                "species": "SPECIES_GIRAFARIG"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_AGUDO_WOODLAND",
+          "base_label": "gAgudoWoodland0",
+          "land_mons": {
+            "encounter_rate": 13,
+            "mons": [
+              {
+                "min_level": 29,
+                "max_level": 30,
+                "species": "SPECIES_KRICKETUNE"
+              },
+              {
+                "min_level": 29,
+                "max_level": 30,
+                "species": "SPECIES_GASTLY"
+              },
+              {
+                "min_level": 29,
+                "max_level": 30,
+                "species": "SPECIES_ARBOK"
+              },
+              {
+                "min_level": 29,
+                "max_level": 30,
+                "species": "SPECIES_MURKROW"
+              },
+              {
+                "min_level": 29,
+                "max_level": 30,
+                "species": "SPECIES_GIRAFARIG"
+              },
+              {
+                "min_level": 29,
+                "max_level": 30,
+                "species": "SPECIES_SHROOMISH"
+              },
+              {
+                "min_level": 29,
+                "max_level": 30,
+                "species": "SPECIES_SHROOMISH"
+              },
+              {
+                "min_level": 29,
+                "max_level": 30,
+                "species": "SPECIES_HAPPINY"
+              },
+              {
+                "min_level": 29,
+                "max_level": 30,
+                "species": "SPECIES_PETILIL"
+              },
+              {
+                "min_level": 29,
+                "max_level": 30,
+                "species": "SPECIES_COTTONEE"
+              },
+              {
+                "min_level": 29,
+                "max_level": 30,
+                "species": "SPECIES_CHANSEY"
+              },
+              {
+                "min_level": 29,
+                "max_level": 30,
+                "species": "SPECIES_BOUFFALANT"
+              }
+            ]
+          }
         }
       ]
     },

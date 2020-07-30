@@ -1,1 +1,57 @@
 mapscripts VientoWalk_MapScripts {}
+
+script VientoWalk_EventScript_Sofia {
+    trainerbattle_single(TRAINER_G2_SOFIA, "Battle me now!", "No, I lost!")
+    msgbox("You're good.")
+    release
+    end
+}
+
+script VientoWalk_EventScript_Paula {
+    trainerbattle_single(TRAINER_G2_PAULA, "Battle me now!", "No, I lost!")
+    msgbox("You're good.")
+    release
+    end
+}
+
+script VientoWalk_EventScript_Carlos {
+    trainerbattle_single(TRAINER_G2_CARLOS, "Battle me now!", "No, I lost!")
+    msgbox("You're good.")
+    release
+    end
+}
+
+script VientoWalk_EventScript_Estefani {
+    trainerbattle_single(TRAINER_G2_ESTEFANI, "Battle me now!", "No, I lost!")
+    msgbox("You're good.")
+    release
+    end
+}
+
+script VientoWalk_EventScript_Amanda {
+    trainerbattle_single(TRAINER_G2_AMANDA, "Battle me now!", "No, I lost!")
+    msgbox("You're good.")
+    release
+    end
+}
+
+script VientoWalk_EventScript_Nicolas {
+    trainerbattle_single(TRAINER_G2_NICOLAS, "Battle me now!", "No, I lost!")
+    msgbox("You're good.")
+    release
+    end
+}
+
+script VientoWalk_EventScript_Merry {
+    trainerbattle_single(TRAINER_G2_MERRY, "Battle me now!", "No, I lost!")
+    msgbox("You're good.")
+    release
+    end
+}
+
+script VientoWalk_EventScript_Anahi {
+    trainerbattle_single(TRAINER_G2_ANAHI, "Battle me now!", "No, I lost!")
+    msgbox("You're good.")
+    release
+    end
+}

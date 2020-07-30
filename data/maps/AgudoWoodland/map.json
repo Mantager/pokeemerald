@@ -2,7 +2,7 @@
   "id": "MAP_AGUDO_WOODLAND",
   "name": "AgudoWoodland",
   "layout": "LAYOUT_AGUDO_WOODLAND",
-  "music": "MUS_AJITO",
+  "music": "MUS_KAZANBAI",
   "region_map_section": "MAPSEC_AGUDO_WOODS",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -23,7 +23,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_MALIMO",
       "x": 14,
-      "y": 51,
+      "y": 48,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -35,7 +35,20 @@
     }
   ],
   "warp_events": [
-
+    {
+      "x": 118,
+      "y": 15,
+      "elevation": 0,
+      "dest_map": "MAP_WING_PEAK_1F",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 119,
+      "y": 15,
+      "elevation": 0,
+      "dest_map": "MAP_WING_PEAK_1F",
+      "dest_warp_id": 0
+    }
   ],
   "coord_events": [
     {

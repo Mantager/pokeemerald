@@ -4,6 +4,7 @@
 #include "mevent.h"
 #include "util.h"
 #include "constants/map_scripts.h"
+#include "trainer_see.h"
 
 #define RAM_SCRIPT_MAGIC 51
 
@@ -431,4 +432,9 @@ void InitRamScript_NoObjectEvent(u8 *script, u16 scriptSize)
     if (scriptSize > sizeof(gSaveBlock1Ptr->ramScript.data.script))
         scriptSize = sizeof(gSaveBlock1Ptr->ramScript.data.script);
     InitRamScript(script, scriptSize, 0xFF, 0xFF, 0xFF);
+}
+
+bool8 LoadTrainerObjectScript(void)
+{
+    sScriptContext1.scriptPtr = gApproachingTrainers[gNoOfApproachingTrainers - 1].trainerScriptPtr;
 }

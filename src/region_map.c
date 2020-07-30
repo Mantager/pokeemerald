@@ -335,7 +335,12 @@ static const u8 sMapHealLocations[][3] =
     {MAP_GROUP(ROUTE131), MAP_NUM(ROUTE131), 0},
     {MAP_GROUP(ROUTE132), MAP_NUM(ROUTE132), 0},
     {MAP_GROUP(ROUTE133), MAP_NUM(ROUTE133), 0},
-    {MAP_GROUP(ROUTE134), MAP_NUM(ROUTE134), 0}
+    {MAP_GROUP(ROUTE134), MAP_NUM(ROUTE134), 0},
+    {MAP_GROUP(PRIME_CITY), MAP_NUM(PRIME_CITY), HEAL_LOCATION_PRIME_CITY},
+    {MAP_GROUP(YANURAS_TOWN), MAP_NUM(YANURAS_TOWN), HEAL_LOCATION_YANURAS_TOWN},
+    {MAP_GROUP(DELAGUA_TOWN), MAP_NUM(DELAGUA_TOWN), HEAL_LOCATION_DELAGUA_TOWN},
+    {MAP_GROUP(ORO_TOWN), MAP_NUM(ORO_TOWN), HEAL_LOCATION_ORO_TOWN},
+    {MAP_GROUP(PISTA_VILLAGE), MAP_NUM(PISTA_VILLAGE), HEAL_LOCATION_PISTA_VILLAGE}
 };
 
 static const u8 *const sEverGrandeCityNames[] =
@@ -1214,6 +1219,16 @@ static u8 GetMapsecType(u16 mapSecId)
         return FlagGet(FLAG_LANDMARK_BATTLE_FRONTIER) ? MAPSECTYPE_BATTLE_FRONTIER : MAPSECTYPE_NONE;
     case MAPSEC_SOUTHERN_ISLAND:
         return FlagGet(FLAG_LANDMARK_SOUTHERN_ISLAND) ? MAPSECTYPE_ROUTE : MAPSECTYPE_NONE;
+    case MAPSEC_PRIME_CITY:
+        return MAPSECTYPE_CITY_CANFLY;
+    case MAPSEC_YANURAS_TOWN:
+        return MAPSECTYPE_CITY_CANFLY;
+    case MAPSEC_DELAGUA_TOWN:
+        return MAPSECTYPE_CITY_CANFLY;
+    case MAPSEC_ORO_TOWN:
+        return MAPSECTYPE_CITY_CANFLY;
+    case MAPSEC_PISTA_VILLAGE:
+        return MAPSECTYPE_CITY_CANFLY;
     default:
         return MAPSECTYPE_ROUTE;
     }
@@ -1835,7 +1850,6 @@ static void LoadFlyDestIcons(void)
 
 static void CreateFlyDestIcons(void)
 {
-    u16 canFlyFlag;
     u16 mapSecId;
     u16 x;
     u16 y;
@@ -1844,8 +1858,7 @@ static void CreateFlyDestIcons(void)
     u16 shape;
     u8 spriteId;
 
-    canFlyFlag = FLAG_VISITED_LITTLEROOT_TOWN;
-    for (mapSecId = MAPSEC_LITTLEROOT_TOWN; mapSecId <= MAPSEC_EVER_GRANDE_CITY; mapSecId++)
+    for (mapSecId = MAPSEC_PRIME_CITY; mapSecId <= MAPSEC_PISTA_VILLAGE; mapSecId++)
     {
         GetMapSecDimensions(mapSecId, &x, &y, &width, &height);
         x = (x + MAPCURSOR_X_MIN) * 8 + 4;
@@ -1863,15 +1876,11 @@ static void CreateFlyDestIcons(void)
         {
             gSprites[spriteId].oam.shape = shape;
 
-            if (FlagGet(canFlyFlag))
-                gSprites[spriteId].callback = SpriteCB_FlyDestIcon;
-            else
-                shape += 3;
+            gSprites[spriteId].callback = SpriteCB_FlyDestIcon;
 
             StartSpriteAnim(&gSprites[spriteId], shape);
             gSprites[spriteId].sIconMapSec = mapSecId;
         }
-        canFlyFlag++;
     }
 }
 
@@ -1996,6 +2005,21 @@ static void CB_ExitFlyMap(void)
                     break;
                 case MAPSEC_BATTLE_FRONTIER:
                     SetWarpDestinationToHealLocation(HEAL_LOCATION_BATTLE_FRONTIER_OUTSIDE_EAST);
+                    break;
+                case MAPSEC_PRIME_CITY:
+                    SetWarpDestinationToHealLocation(HEAL_LOCATION_PRIME_CITY);
+                    break;
+                case MAPSEC_YANURAS_TOWN:
+                    SetWarpDestinationToHealLocation(HEAL_LOCATION_YANURAS_TOWN);
+                    break;
+                case MAPSEC_DELAGUA_TOWN:
+                    SetWarpDestinationToHealLocation(HEAL_LOCATION_DELAGUA_TOWN);
+                    break;
+                case MAPSEC_ORO_TOWN:
+                    SetWarpDestinationToHealLocation(HEAL_LOCATION_ORO_TOWN);
+                    break;
+                case MAPSEC_PISTA_VILLAGE:
+                    SetWarpDestinationToHealLocation(HEAL_LOCATION_PISTA_VILLAGE);
                     break;
                 case MAPSEC_LITTLEROOT_TOWN:
                     SetWarpDestinationToHealLocation(gSaveBlock2Ptr->playerGender == MALE ? HEAL_LOCATION_LITTLEROOT_TOWN_BRENDANS_HOUSE : HEAL_LOCATION_LITTLEROOT_TOWN_MAYS_HOUSE);

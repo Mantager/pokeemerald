@@ -654,6 +654,9 @@
 #define MAP_ORO_TOWN_HOUSE_A        (1 | (39 << 8))
 
 // Map Group 40
+#define MAP_PISTA_VILLAGE_POKEMON_CENTER (0 | (40 << 8))
+#define MAP_PISTA_VILLAGE_DOJO           (1 | (40 << 8))
+#define MAP_PISTA_VILLAGE_MART           (2 | (40 << 8))
 
 #define MAP_GROUPS_COUNT 41
 

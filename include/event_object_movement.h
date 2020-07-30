@@ -434,4 +434,6 @@ u8 GetSidewaysStairsToRightDirection(s16, s16, u8);
 u8 GetSidewaysStairsToLeftDirection(s16, s16, u8);
 u8 GetSidewaysStairsCollision(struct ObjectEvent *objectEvent, u8 dir, u8 currentBehavior, u8 nextBehavior, u8 collision);
 
+u16 GetObjectEventTrainerSightFlagByObjectEventId(u8 objEventId);
+
 #endif //GUARD_EVENT_OBJECT_MOVEMENT_H

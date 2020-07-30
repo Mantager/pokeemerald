@@ -29,7 +29,7 @@ voicegroup191:: @ 8678C74
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 869998C
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 8699998
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 86999A4
-	voice_directsound 60, 0, DirectSoundWaveData_sd90_classical_overdrive_guitar, 128, 0, 255, 214  @ 86999B0
+	voice_directsound 60, 0, DirectSoundWaveData_sd90_classical_overdrive_guitar, 255, 0, 255, 127  @ 86999B0
 	voice_directsound 60, 0, DirectSoundWaveData_sd90_classical_distortion_guitar_high, 255, 165, 154, 165  @ 86999BC
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 86999C8
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 86999D4

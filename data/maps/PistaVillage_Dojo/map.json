@@ -1,0 +1,135 @@
+{
+  "id": "MAP_PISTA_VILLAGE_DOJO",
+  "name": "PistaVillage_Dojo",
+  "layout": "LAYOUT_PISTA_VILLAGE_DOJO",
+  "music": "MUS_B_ARENA",
+  "region_map_section": "MAPSEC_PISTA_VILLAGE",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": false,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BLACK_BELT",
+      "x": 1,
+      "y": 17,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "11",
+      "script": "PistaVillage_Dojo_EventScript_Maga",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_GIRL_3",
+      "x": 12,
+      "y": 17,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "11",
+      "script": "PistaVillage_Dojo_EventScript_Holly",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_WOMAN_5",
+      "x": 1,
+      "y": 11,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "11",
+      "script": "PistaVillage_Dojo_EventScript_Aemilla",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MAN_3",
+      "x": 12,
+      "y": 11,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "11",
+      "script": "PistaVillage_Dojo_EventScript_Ignacio",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_RYAN",
+      "x": 6,
+      "y": 21,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "PistaVillage_Dojo_EventScript_Ryan",
+      "flag": "FLAG_PISTA_VILLAGE_DOJO_HIDE_RYAN"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_EXPERT_M",
+      "x": 7,
+      "y": 21,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "PistaVillage_Dojo_EventScript_Sanchez",
+      "flag": "0"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 6,
+      "y": 23,
+      "elevation": 0,
+      "dest_map": "MAP_PISTA_VILLAGE",
+      "dest_warp_id": 1
+    },
+    {
+      "x": 7,
+      "y": 23,
+      "elevation": 0,
+      "dest_map": "MAP_PISTA_VILLAGE",
+      "dest_warp_id": 1
+    }
+  ],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 6,
+      "y": 20,
+      "elevation": 0,
+      "var": "VAR_PISTA_VILLAGE_STATE",
+      "var_value": "2",
+      "script": "PistaVillage_Dojo_Trigger_AfterBeatenSanchez"
+    },
+    {
+      "type": "trigger",
+      "x": 7,
+      "y": 20,
+      "elevation": 0,
+      "var": "VAR_PISTA_VILLAGE_STATE",
+      "var_value": "2",
+      "script": "PistaVillage_Dojo_Trigger_AfterBeatenSanchez"
+    }
+  ],
+  "bg_events": [
+
+  ]
+}

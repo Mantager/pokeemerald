@@ -1,0 +1,185 @@
+mapscripts PistaVillage_Dojo_MapScripts {
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_PISTA_VILLAGE_STATE, 1 {
+            lockall
+            delay(8)
+            applymovement(6, Common_Movement_WalkInPlaceLeft)
+            waitmovement(0)
+            msgbox("You did well, Ryan.\pIt's clear you and your Pokémon\nhave a strong bond.")
+            closemessage
+            applymovement(5, Common_Movement_WalkInPlaceRight)
+            waitmovement(0)
+            msgbox("{COLOR}{GREEN}It's because we're always working\nthe fields together.\pWe've got a bond that goes\nbeyond just battles.")
+            closemessage
+            delay(8)
+            applymovement(5, Common_Movement_FaceDown)
+            waitmovement(0)
+            delay(8)
+            playse(SE_PIN)
+            applymovement(5, Common_Movement_ExclamationMark)
+            waitmovement(0)
+            delay(16)
+            applymovement(6, Common_Movement_FaceDown)
+            waitmovement(0)
+            msgbox("{COLOR}{GREEN}Oh, Clad!\nCome to get me, have you?")
+            msgbox("Actually, we're gonna stay here a\nlittle longer.")
+            msgbox("{COLOR}{GREEN}Okay, you got it!\pHey, let me introduce you.\nThis is Sanchez.\lHe runs a dojo here.")
+            closemessage
+            applymovement(6, Common_Movement_WalkInPlaceDown)
+            waitmovement(0)
+            msgbox("That's right!\nThis dojo just opened.\pBecause of that, I'm inviting\npeople to train with us for free.")
+            closemessage
+            msgbox("Ryan told me that you and\nyour friends are going to\lclimb Wing Peak.\pIn that case, you'll need all\nof the training you can get.")
+            msgbox("What kind of training did you\nhave in mind?")
+            msgbox("Pokémon training, of course!\pThere are four volunteers here now.\pIf you can beat them all,\nthen speak to me at the end.")
+            msgbox("{COLOR}{GREEN}You should give it a shot, Clad.\pThese guys are tough, but they're\nreally fun to battle.")
+            msgbox("Okay, I'll take on your challenge.")
+            msgbox("Good to hear!\nThen, let's begin.")
+            closemessage
+            delay(8)
+            fadescreen(1)
+            setvar(VAR_PISTA_VILLAGE_STATE, 2)
+            setobjectxy(5, 2, 22)
+            setobjectxyperm(5, 2, 22)
+            setobjectmovementtype(5, MOVEMENT_TYPE_LOOK_AROUND)
+            setobjectxy(6, 6, 3)
+            setobjectxyperm(6, 6, 3)
+            setobjectmovementtype(6, MOVEMENT_TYPE_FACE_DOWN)
+            settrainerflag(TRAINER_G2_MAGA)
+            settrainerflag(TRAINER_G2_HOLLY)
+            settrainerflag(TRAINER_G2_AEMILLA)
+            settrainerflag(TRAINER_G2_IGNACIO)
+            fadescreen(0)
+            releaseall
+            end
+        }
+    ]
+    MAP_SCRIPT_ON_TRANSITION {
+        if(var(VAR_PISTA_VILLAGE_STATE) >= 2) {
+            if(flag(FLAG_PISTA_VILLAGE_DOJO_DEFEATED_SANCHEZ) == FALSE) {
+                setobjectxy(5, 2, 22)
+                setobjectxyperm(5, 2, 22)
+                setobjectmovementtype(5, MOVEMENT_TYPE_LOOK_AROUND)
+            } else {
+                setobjectxy(5, 6, 21)
+                setobjectxyperm(5, 6, 21)
+                setobjectmovementtype(5, MOVEMENT_TYPE_FACE_UP)
+                settrainerflag(TRAINER_G2_MAGA)
+                settrainerflag(TRAINER_G2_HOLLY)
+                settrainerflag(TRAINER_G2_AEMILLA)
+                settrainerflag(TRAINER_G2_IGNACIO)
+            }
+            setobjectxy(6, 6, 3)
+            setobjectxyperm(6, 6, 3)
+            setobjectmovementtype(6, MOVEMENT_TYPE_FACE_DOWN)
+        }
+    }
+}
+
+script PistaVillage_Dojo_EventScript_Ryan {
+    lock
+    faceplayer
+    msgbox("Apparently, Sanchez ran a dojo like\nthis in Hoenn a couple years back.\pI wonder why he decided to\nmove to Ríota.\pAfter all, you don't really\nfind many oriental places here.")
+    release
+    end
+}
+
+script PistaVillage_Dojo_EventScript_Sanchez {
+    lock
+    faceplayer
+    if(flag(FLAG_PISTA_VILLAGE_DOJO_DEFEATED_SANCHEZ) == TRUE) {
+        if(flag(FLAG_RECIEVED_EXPERT_BELT) == TRUE) {
+            msgbox("Well, youngster.\pI hope that I can grow this dojo into\na truly remarkable place for Trainers\nto gather and train at.\pI hope that this training has\ngreater prepared you for Wing Peak!")
+        } else {
+            msgbox("Before you go,\nI'd like you to have this.")
+            if(var(VAR_RESULT) == 0) { msgbox("Oh, my apologies.\nYou have no room for this.") } else {
+                msgbox("If a Pokémon wears that\nExpert Belt, then its super-effective\lattacks will become much more\lpowerful.")
+                setflag(FLAG_RECIEVED_EXPERT_BELT)
+            }
+        }
+    } else {
+        msgbox("Ah, so you beat the other Trainers!\nThat's good to see.\pOf course, I would like to test\nyour strength for myself now.\pThink of it as one final challenge.\nIs this acceptable?", MSGBOX_YESNO)
+        if(var(VAR_RESULT) == TRUE) {
+            msgbox("Then let us begin!")
+            closemessage
+            trainerbattle_no_intro(TRAINER_G2_SANCHEZ, "Very good.")
+            setflag(FLAG_PISTA_VILLAGE_DOJO_DEFEATED_SANCHEZ)
+            msgbox("That was a grand battle.\pJust like your friend, you and\nyour Pokémon have a strong bond.\pPlease, take this.")
+            giveitem(ITEM_EXPERT_BELT)
+            if(var(VAR_RESULT) == 0) { msgbox("Oh, my apologies.\nYou have no room for this.") } else {
+                msgbox("If a Pokémon wears that Expert Belt,\nthen its super-effective attacks\lwill become much more powerful.")
+                setflag(FLAG_RECIEVED_EXPERT_BELT)
+            }
+            setobjectxy(5, 6, 21)
+            setobjectxyperm(5, 6, 21)
+            setobjectmovementtype(5, MOVEMENT_TYPE_FACE_UP)
+            msgbox("Well, youngster.\pI hope that I can grow this dojo into\na truly remarkable place for Trainers\lto gather and train at.\pI hope that this training has\ngreater prepared you for Wing Peak!")
+        } else {
+            msgbox("Ah, you need to prepare first?\nVery well.\lTalk to me when you're ready.")
+        }
+    }
+    release
+    end
+}
+
+script PistaVillage_Dojo_EventScript_Maga {
+    trainerbattle_single(TRAINER_G2_MAGA, "Battle me now!", "No, I lost!")
+    msgbox("You're good.")
+    release
+    end
+}
+
+script PistaVillage_Dojo_EventScript_Holly {
+    trainerbattle_single(TRAINER_G2_HOLLY, "Battle me now!", "No, I lost!")
+    msgbox("You're good.")
+    release
+    end
+}
+
+script PistaVillage_Dojo_EventScript_Aemilla {
+    trainerbattle_single(TRAINER_G2_AEMILLA, "Battle me now!", "No, I lost!")
+    msgbox("You're good.")
+    release
+    end
+}
+
+script PistaVillage_Dojo_EventScript_Ignacio {
+    trainerbattle_single(TRAINER_G2_IGNACIO, "Battle me now!", "No, I lost!")
+    msgbox("You're good.")
+    release
+    end
+}
+
+script PistaVillage_Dojo_Trigger_AfterBeatenSanchez {
+    lockall
+    getplayerxy(VAR_TEMP_1, VAR_TEMP_2)
+    if(var(VAR_TEMP_1) == 6) { applymovement(5, Common_Movement_FaceUp)
+    } else { applymovement(5, PistaVillage_Dojo_Movement_RyanMoveToPlayerRight) }
+    waitmovement(0)
+    msgbox("{COLOR}{GREEN}So you beat Sanchez too, huh?")
+    msgbox("Yeah.\nHe's pretty strong.")
+    msgbox("{COLOR}{GREEN}Right?\pAlthough, he's no match for Trainers\nfrom Ríota.\pWell, we should get going now.\pI've just gotten a text from Fern\ntelling me to meet him at Agudo Woodland.")
+    closemessage
+    delay(8)
+    applymovement(5, PistaVillage_Dojo_Movement_RyanLeave)
+    waitmovement(0)
+    removeobject(5)
+    setflag(FLAG_PISTA_VILLAGE_DOJO_HIDE_RYAN)
+    playse(SE_TK_WARPOUT)
+    waitse
+    delay(8)
+    setvar(VAR_PISTA_VILLAGE_STATE, 3)
+    releaseall
+    end
+}
+
+movement PistaVillage_Dojo_Movement_RyanLeave {
+    walk_down * 2
+    step_end
+}
+
+movement PistaVillage_Dojo_Movement_RyanMoveToPlayerRight {
+    walk_right
+    face_up
+    step_end
+}

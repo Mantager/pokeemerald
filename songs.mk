@@ -1268,3 +1268,9 @@ $(MID_SUBDIR)/seq_oro.s: %.s: %.mid
 
 $(MID_SUBDIR)/seq_vs_nas.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V090
+
+$(MID_SUBDIR)/SEQ_BGM_SW_D_24_W.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V090
+
+$(MID_SUBDIR)/SEQ_BGM_PW_SCENARIO_01_F.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V090

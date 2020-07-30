@@ -1,0 +1,16 @@
+mapscripts PistaVillage_PokemonCenter_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        setrespawn(HEAL_LOCATION_PISTA_VILLAGE)
+        end
+    }
+    MAP_SCRIPT_ON_RESUME: CableClub_OnResume
+}
+
+script PistaVillage_PokemonCenter_EventScript_Nurse {
+    setvar(VAR_0x800B, 1)
+    call(Common_EventScript_PkmnCenterNurse)
+    waitmessage
+    waitbuttonpress
+    release
+    end
+}

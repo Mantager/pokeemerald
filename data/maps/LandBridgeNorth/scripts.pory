@@ -1,0 +1,57 @@
+mapscripts LandBridgeNorth_MapScripts {}
+
+script LandBridgeNorth_EventScript_Ala {
+    trainerbattle_single(TRAINER_G2_ALA, "Battle me now!", "No, I lost!")
+    msgbox("You're good.")
+    release
+    end
+}
+
+script LandBridgeNorth_EventScript_Shanti {
+    trainerbattle_single(TRAINER_G2_SHANTI, "Battle me now!", "No, I lost!")
+    msgbox("You're good.")
+    release
+    end
+}
+
+script LandBridgeNorth_EventScript_Cesar {
+    trainerbattle_single(TRAINER_G2_CESAR, "Battle me now!", "No, I lost!")
+    msgbox("You're good.")
+    release
+    end
+}
+
+script LandBridgeNorth_EventScript_Guillermo {
+    trainerbattle_single(TRAINER_G2_GUILLERMO, "Battle me now!", "No, I lost!")
+    msgbox("You're good.")
+    release
+    end
+}
+
+script LandBridgeNorth_EventScript_Valentin {
+    trainerbattle_single(TRAINER_G2_VALENTIN, "Battle me now!", "No, I lost!")
+    msgbox("You're good.")
+    release
+    end
+}
+
+script LandBridgeNorth_EventScript_Torie {
+    trainerbattle_single(TRAINER_G2_TORIE, "Battle me now!", "No, I lost!")
+    msgbox("You're good.")
+    release
+    end
+}
+
+script LandBridgeNorth_EventScript_Jorge {
+    trainerbattle_single(TRAINER_G2_JORGE, "Battle me now!", "No, I lost!")
+    msgbox("You're good.")
+    release
+    end
+}
+
+script LandBridgeNorth_EventScript_Agustin {
+    trainerbattle_single(TRAINER_G2_AGUSTIN, "Battle me now!", "No, I lost!")
+    msgbox("You're good.")
+    release
+    end
+}

@@ -514,7 +514,7 @@ OroTown_EventScript_AfterBattle_Text_24:
 	.string "{COLOR}{RED}Well then, everyone!\pLike I said, we're about halfway\nbetween Prime City and Wing Peak.\pNot too long, at we'll be\nat Wing Peak!\pAhh, I'm so excited!$"
 
 OroTown_EventScript_AfterBattle_Text_25:
-	.string "{COLOR}{BLUE}After we pass the Land Bridge,\nwe're going through Viento Walk,\lright?$"
+	.string "{COLOR}{BLUE}After we pass the Land Bridge,\nwe're going through Viento Walk,\land then Pista Village, right?$"
 
 OroTown_EventScript_AfterBattle_Text_26:
-	.string "{COLOR}{RED}You got it, Malimo old pal!\nLet's all meet at Viento Walk!$"
+	.string "{COLOR}{RED}You got it, Malimo old pal!\nLet's all meet at Pista Village!$"

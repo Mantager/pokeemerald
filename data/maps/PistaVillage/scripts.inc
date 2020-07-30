@@ -1,3 +1,107 @@
 PistaVillage_MapScripts::
 	.byte 0
 
+
+PistaVillage_Trigger_PlayerMeetFern::
+	lockall
+	message PistaVillage_Trigger_PlayerMeetFern_Text_0
+	closemessage
+	getplayerxy VAR_TEMP_1, VAR_TEMP_2
+	setobjectxy 1, 9, VAR_TEMP_2
+	setobjectxyperm 1, 9, VAR_TEMP_2
+	applymovement 1, PistaVillage_Movement_WalkLeft7
+	waitmovement 0
+	delay 8
+	msgbox PistaVillage_Trigger_PlayerMeetFern_Text_1
+	msgbox PistaVillage_Trigger_PlayerMeetFern_Text_2
+	msgbox PistaVillage_Trigger_PlayerMeetFern_Text_3
+	msgbox PistaVillage_Trigger_PlayerMeetFern_Text_4
+	msgbox PistaVillage_Trigger_PlayerMeetFern_Text_5
+	msgbox PistaVillage_Trigger_PlayerMeetFern_Text_6
+	msgbox PistaVillage_Trigger_PlayerMeetFern_Text_7
+	closemessage
+	applymovement 1, Common_Movement_FaceDown
+	waitmovement 0
+	msgbox PistaVillage_Trigger_PlayerMeetFern_Text_8
+	closemessage
+	applymovement 1, Common_Movement_FaceLeft
+	waitmovement 0
+	msgbox PistaVillage_Trigger_PlayerMeetFern_Text_9
+	closemessage
+	fadescreen 1
+	removeobject 1
+	setflag FLAG_PISTA_VILLAGE_HIDE_FERN
+	setvar VAR_PISTA_VILLAGE_STATE, 1
+	fadescreen 0
+	delay 8
+	releaseall
+	end
+
+
+PistaVillage_Trigger_NeedToVisitDojo::
+	lock
+	compare VAR_PISTA_VILLAGE_STATE, 1
+	goto_if_eq PistaVillage_Trigger_NeedToVisitDojo_2
+	compare VAR_PISTA_VILLAGE_STATE, 2
+	goto_if_eq PistaVillage_Trigger_NeedToVisitDojo_3
+PistaVillage_Trigger_NeedToVisitDojo_1:
+	closemessage
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown
+	waitmovement 0
+	release
+	end
+
+PistaVillage_Trigger_NeedToVisitDojo_2:
+	msgbox PistaVillage_Trigger_NeedToVisitDojo_Text_0
+	goto PistaVillage_Trigger_NeedToVisitDojo_1
+
+PistaVillage_Trigger_NeedToVisitDojo_3:
+	msgbox PistaVillage_Trigger_NeedToVisitDojo_Text_1
+	goto PistaVillage_Trigger_NeedToVisitDojo_1
+
+
+PistaVillage_Movement_WalkLeft7:
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	step_end
+
+PistaVillage_Trigger_PlayerMeetFern_Text_0:
+	.string "{COLOR}{RED}Clad!$"
+
+PistaVillage_Trigger_PlayerMeetFern_Text_1:
+	.string "Fern.\nWhat's up?\lWhere are the others?$"
+
+PistaVillage_Trigger_PlayerMeetFern_Text_2:
+	.string "{COLOR}{RED}Some weird old guy invited Rye\nto check out his 'dojo',\nand he went along with him!\pMalimo tried to discourage him,\nbut Rye just went along\land left anyway!$"
+
+PistaVillage_Trigger_PlayerMeetFern_Text_3:
+	.string "So what?\nWhat's the problem?$"
+
+PistaVillage_Trigger_PlayerMeetFern_Text_4:
+	.string "{COLOR}{RED}Well Clad, we are supposed to be\ntravelling to Wing Peak, if\lyou can remember that far back!$"
+
+PistaVillage_Trigger_PlayerMeetFern_Text_5:
+	.string "We must be pretty close to\nWing Peak now though, right?\pAnd Nas is gone, so he's not\ngoing to 'steal our wishes'.$"
+
+PistaVillage_Trigger_PlayerMeetFern_Text_6:
+	.string "{COLOR}{RED}I guess you've got a point…$"
+
+PistaVillage_Trigger_PlayerMeetFern_Text_7:
+	.string "Let's rest up before we head off.\pThe climb to the top\nof Wing Peak will be tough.\pBesides, I kind of want to\nsee this dojo for myself.\pIs it in Pista Village?$"
+
+PistaVillage_Trigger_PlayerMeetFern_Text_8:
+	.string "{COLOR}{RED}Yup, it's right down there.$"
+
+PistaVillage_Trigger_PlayerMeetFern_Text_9:
+	.string "{COLOR}{RED}Maybe I've been too hasty on\nthis trip.\pI agree, let's take a break\nbefore the big climb.\pSee you in a bit!$"
+
+PistaVillage_Trigger_NeedToVisitDojo_Text_0:
+	.string "(I should probably go and check\nout the dojo before I leave.)$"
+
+PistaVillage_Trigger_NeedToVisitDojo_Text_1:
+	.string "(I shouldn't just ditch Sanchez\nlike that.)$"

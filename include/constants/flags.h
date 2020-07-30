@@ -1247,11 +1247,11 @@
 #define FLAG_ORO_TOWN_HIDE_RYAN                                           0x4A3 // Unused Flag
 #define FLAG_ORO_TOWN_HIDE_NAS                                           0x4A4 // Unused Flag
 #define FLAG_ORO_TOWN_HIDE_GOONS                                           0x4A5 // Unused Flag
-#define FLAG_UNUSED_0x4A6                                           0x4A6 // Unused Flag
-#define FLAG_UNUSED_0x4A7                                           0x4A7 // Unused Flag
-#define FLAG_UNUSED_0x4A8                                           0x4A8 // Unused Flag
-#define FLAG_UNUSED_0x4A9                                           0x4A9 // Unused Flag
-#define FLAG_UNUSED_0x4AA                                           0x4AA // Unused Flag
+#define FLAG_PISTA_VILLAGE_HIDE_FERN                                           0x4A6 // Unused Flag
+#define FLAG_PISTA_VILLAGE_DOJO_HIDE_RYAN                                          0x4A7 // Unused Flag
+#define FLAG_RECIEVED_EXPERT_BELT                                           0x4A8 // Unused Flag
+#define FLAG_PISTA_VILLAGE_DOJO_DEFEATED_SANCHEZ                                           0x4A9 // Unused Flag
+#define FLAG_AGUDO_WOODLAND_HIDE_MALIMO                                           0x4AA // Unused Flag
 #define FLAG_UNUSED_0x4AB                                           0x4AB // Unused Flag
 #define FLAG_UNUSED_0x4AC                                           0x4AC // Unused Flag
 #define FLAG_UNUSED_0x4AD                                           0x4AD // Unused Flag
