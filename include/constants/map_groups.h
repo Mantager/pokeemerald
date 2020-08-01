@@ -606,6 +606,8 @@
 #define MAP_WING_PEAK_1F         (1 | (35 << 8))
 #define MAP_WING_PEAK_2F         (2 | (35 << 8))
 #define MAP_WING_PEAK_3F         (3 | (35 << 8))
+#define MAP_WING_PEAK_TOP        (4 | (35 << 8))
+#define MAP_WING_PEAK_4F         (5 | (35 << 8))
 
 // Map Group 36
 #define MAP_PRIME_CITY_POKEMON_CENTER_1F          (0 | (36 << 8))

@@ -215,7 +215,7 @@ RocarohaValley_Trigger_MeetNas_Text_3:
 	.string "…Who told you about that?\nFern didn't want anyone else to know…$"
 
 RocarohaValley_Trigger_MeetNas_Text_4:
-	.string "Man Clad, you're just full of questions\ntoday, aren't you?\pWell, let me ask you a question.\nWhat's the name of the airy\nfairy loser that you're best mates with?$"
+	.string "Man Clad, you're just full of questions\ntoday, aren't you?\pWell, let me ask you a question.\nWhat's the name of the airy\lfairy loser that you're besties with?$"
 
 RocarohaValley_Trigger_MeetNas_Text_5:
 	.string "You mean Fern…$"

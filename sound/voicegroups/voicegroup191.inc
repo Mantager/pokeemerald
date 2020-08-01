@@ -1,6 +1,6 @@
 	.align 2
 voicegroup191:: @ 8678C74
-	voice_keysplit_all voicegroup001  @ 86A21B8
+	voice_keysplit_all voicegroup002  @ 86AEB6C
 	voice_keysplit voicegroup005, KeySplitTable1  @ 8699860
 	voice_keysplit voicegroup005, KeySplitTable1  @ 86B0BE8
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 8699878
@@ -19,7 +19,7 @@ voicegroup191:: @ 8678C74
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 8699914
 	voice_directsound 60, 0, DirectSoundWaveData_sc88_organ2, 255, 0, 255, 127  @ 8699920
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 869992C
-	voice_square_1 0, 2, 0, 0, 15, 0  @ 8699938
+	voice_directsound 60, 0, DirectSoundWaveData_unknown_church_organ, 255, 76, 154, 188  @ 8697754
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 8699944
 	voice_directsound 60, 0, DirectSoundWaveData_sc88_accordion, 255, 0, 255, 165  @ 8699F50
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 869995C
@@ -30,11 +30,11 @@ voicegroup191:: @ 8678C74
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 8699998
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 86999A4
 	voice_directsound 60, 0, DirectSoundWaveData_sd90_classical_overdrive_guitar, 255, 0, 255, 127  @ 86999B0
-	voice_directsound 60, 0, DirectSoundWaveData_sd90_classical_distortion_guitar_high, 255, 165, 154, 165  @ 86999BC
+	voice_directsound 60, 0, DirectSoundWaveData_sd90_classical_distortion_guitar_high, 255, 0, 255, 127
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 86999C8
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 86999D4
 	voice_directsound 60, 0, DirectSoundWaveData_sc88_pick_bass, 255, 253, 0, 149  @ 86999E0
-	voice_square_1 0, 2, 0, 0, 15, 0  @ 86999EC
+	voice_directsound 60, 0, DirectSoundWaveData_sc88_pick_bass, 255, 253, 0, 149  @ 86999E0
 	voice_directsound 60, 0, DirectSoundWaveData_sc88_fretless_bass, 255, 253, 0, 198  @ 86999F8
 	voice_directsound 60, 0, DirectSoundWaveData_jv1080_slap_bass, 255, 235, 128, 115  @ 8675EB4
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 8699A10
@@ -52,7 +52,7 @@ voicegroup191:: @ 8678C74
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 8699AA0
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 8699AAC
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 8699AB8
-	voice_square_1 0, 2, 0, 0, 15, 0  @ 8699AC4
+	voice_directsound 60, 0, DirectSoundWaveData_classical_choir_voice_ahhs, 255, 0, 255, 0  @ 86988C4
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 8699AD0
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 8699ADC
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 8699AE8

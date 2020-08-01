@@ -116,7 +116,7 @@
       "y": 20,
       "elevation": 0,
       "var": "VAR_PISTA_VILLAGE_STATE",
-      "var_value": "2",
+      "var_value": "3",
       "script": "PistaVillage_Dojo_Trigger_AfterBeatenSanchez"
     },
     {
@@ -125,7 +125,7 @@
       "y": 20,
       "elevation": 0,
       "var": "VAR_PISTA_VILLAGE_STATE",
-      "var_value": "2",
+      "var_value": "3",
       "script": "PistaVillage_Dojo_Trigger_AfterBeatenSanchez"
     }
   ],

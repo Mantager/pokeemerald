@@ -1,6 +1,6 @@
 mapscripts AgudoWoodland_MapScripts {
     MAP_SCRIPT_ON_FRAME_TABLE [
-        VAR_PISTA_VILLAGE_STATE, 3 {
+        VAR_PISTA_VILLAGE_STATE, 4 {
             lockall
             fadescreen(1)
             getplayerxy(VAR_TEMP_1, VAR_TEMP_2)
@@ -65,7 +65,7 @@ mapscripts AgudoWoodland_MapScripts {
             setobjectxy(1, 117, 17)
             setobjectxyperm(1, 117, 17)
             setobjectmovementtype(1, MOVEMENT_TYPE_FACE_RIGHT)
-            setvar(VAR_PISTA_VILLAGE_STATE, 4)
+            setvar(VAR_PISTA_VILLAGE_STATE, 5)
             fadescreen(0)
             delay(8)
             releaseall
@@ -73,12 +73,120 @@ mapscripts AgudoWoodland_MapScripts {
         }
     ]
     MAP_SCRIPT_ON_TRANSITION {
-        if(var(VAR_PISTA_VILLAGE_STATE) >= 4) {
+        if(var(VAR_PISTA_VILLAGE_STATE) >= 5) {
             setobjectxy(1, 117, 17)
             setobjectxyperm(1, 117, 17)
             setobjectmovementtype(1, MOVEMENT_TYPE_FACE_RIGHT)
         }
     }
+}
+
+script AgudoWoodland_EventScript_Keila {
+    trainerbattle_single(TRAINER_G2_KEILA, "Battle me now!", "No, I lost!")
+    msgbox("You're good.")
+    release
+    end
+}
+
+script AgudoWoodland_EventScript_Des {
+    trainerbattle_single(TRAINER_G2_DES, "Battle me now!", "No, I lost!")
+    msgbox("You're good.")
+    release
+    end
+}
+
+script AgudoWoodland_EventScript_Franco {
+    trainerbattle_single(TRAINER_G2_FRANCO, "Battle me now!", "No, I lost!")
+    msgbox("You're good.")
+    release
+    end
+}
+
+script AgudoWoodland_EventScript_Cristian {
+    trainerbattle_single(TRAINER_G2_CRISTIAN, "Battle me now!", "No, I lost!")
+    msgbox("You're good.")
+    release
+    end
+}
+
+script AgudoWoodland_EventScript_Mariana {
+    trainerbattle_single(TRAINER_G2_MARIANA, "Battle me now!", "No, I lost!")
+    msgbox("You're good.")
+    release
+    end
+}
+
+script AgudoWoodland_EventScript_Rep {
+    trainerbattle_single(TRAINER_G2_REP, "Battle me now!", "No, I lost!")
+    msgbox("You're good.")
+    release
+    end
+}
+
+script AgudoWoodland_EventScript_Luca {
+    trainerbattle_single(TRAINER_G2_LUCA, "Battle me now!", "No, I lost!")
+    msgbox("You're good.")
+    release
+    end
+}
+
+script AgudoWoodland_EventScript_Kireiya {
+    trainerbattle_single(TRAINER_G2_KIREIYA, "Battle me now!", "No, I lost!")
+    msgbox("You're good.")
+    release
+    end
+}
+
+script AgudoWoodland_Trigger_EntranceMeetUp {
+    lockall
+    fadescreen(1)
+    getplayerxy(VAR_TEMP_1, VAR_TEMP_2)
+    switch(var(VAR_TEMP_1)) {
+        case 117: applymovement(OBJ_EVENT_ID_PLAYER, AgudoWoodland_Movement_PlayerMoveToMeetupX117)
+        case 118: applymovement(OBJ_EVENT_ID_PLAYER, AgudoWoodland_Movement_PlayerMoveToMeetupX118)
+        case 119: applymovement(OBJ_EVENT_ID_PLAYER, AgudoWoodland_Movement_PlayerMoveToMeetupX119)
+        default: applymovement(OBJ_EVENT_ID_PLAYER, AgudoWoodland_Movement_PlayerMoveToMeetupX120)
+    }
+    waitmovement(0)
+    fadescreen(0)
+    delay(8)
+    applymovement(10, Common_Movement_WalkInPlaceUp)
+    waitmovement(0)
+    msgbox("{COLOR}{RED}We're finally here…\nIt's Wing Peak!\pThe genie on the peak is waiting,\nso let's go, everyone!")
+    closemessage
+    msgbox("{COLOR}{BLUE}Wait!\pI feel as if I need a\nlittle more training before\lI head on in.")
+    closemessage
+    applymovement(1, Common_Movement_FaceDown)
+    waitmovement(0)
+    msgbox("{COLOR}{BLUE}Clad, would you have a quick\nbattle with me?")
+    msgbox("You got it, Malimo!")
+    msgbox("{COLOR}{BLUE}Then let's start!")
+    closemessage
+    trainerbattle_no_intro(TRAINER_G2_MALIMO, "Aw…")
+    msgbox("{COLOR}{BLUE}Man, you're too good, Clad.\pThanks, though.\nI feel a lot more ready now.")
+    closemessage
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
+    applymovement(1, Common_Movement_FaceRight)
+    applymovement(10, Common_Movement_FaceRight)
+    waitmovement(0)
+    msgbox("{COLOR}{GREEN}Mind having a match with me too?\pI've been battling a lot on this\ntrip of ours.\pI want you see how much stronger\nmy team has grown.")
+    msgbox("Alright!\nLet's do it.")
+    closemessage
+    applymovement(OBJ_EVENT_ID_PLAYER, AgudoWoodland_Movement_PlayerMoveToBattle)
+    waitmovement(0)
+    trainerbattle_no_intro(TRAINER_G2_RYAN, "You've grown stronger, too!")
+    fadescreen(1)
+    removeobject(1)
+    removeobject(10)
+    removeobject(9)
+    setflag(FLAG_AGUDO_WOODLAND_HIDE_FERN)
+    setflag(FLAG_AGUDO_WOODLAND_HIDE_MALIMO)
+    setflag(FLAG_AGUDO_WOODLAND_HIDE_RYAN)
+    setvar(VAR_PISTA_VILLAGE_STATE, 6)
+    fadescreen(0)
+    delay(8)
+    releaseall
+    end
 }
 
 movement AgudoWoodland_Movement_PlayerMoveToMalimoX10 {
@@ -129,6 +237,35 @@ movement AgudoWoodland_Movement_PlayerMoveToMalimoX16 {
 movement AgudoWoodland_Movement_PlayerMoveToMalimoX17 {
     walk_fastest_up * 5
     walk_fastest_left * 4
+    face_right
+    step_end
+}
+
+movement AgudoWoodland_Movement_PlayerMoveToMeetupX117 {
+    walk_fastest_right
+    walk_fastest_up * 3
+    step_end
+}
+
+movement AgudoWoodland_Movement_PlayerMoveToMeetupX118 {
+    walk_fastest_up * 3
+    step_end
+}
+
+movement AgudoWoodland_Movement_PlayerMoveToMeetupX119 {
+    walk_fastest_left
+    walk_fastest_up * 3
+    step_end
+}
+
+movement AgudoWoodland_Movement_PlayerMoveToMeetupX120 {
+    walk_fastest_left * 2
+    walk_fastest_up * 3
+    step_end
+}
+
+movement AgudoWoodland_Movement_PlayerMoveToBattle {
+    walk_up
     face_right
     step_end
 }

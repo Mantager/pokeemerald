@@ -1173,3 +1173,7 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/PistaVillage_Dojo/scripts.inc"
 
 	.include "data/maps/PistaVillage_Mart/scripts.inc"
+
+	.include "data/maps/WingPeak_Top/scripts.inc"
+
+	.include "data/maps/WingPeak_4F/scripts.inc"

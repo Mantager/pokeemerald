@@ -111,7 +111,7 @@ script RocarohaValley_Trigger_MeetNas {
     delay(8)
     msgbox("…Who told you about that?\nFern didn't want anyone else to know…")
     delay(8)
-    msgbox("Man Clad, you're just full of questions\ntoday, aren't you?\pWell, let me ask you a question.\nWhat's the name of the airy\nfairy loser that you're best mates with?")
+    msgbox("Man Clad, you're just full of questions\ntoday, aren't you?\pWell, let me ask you a question.\nWhat's the name of the airy\lfairy loser that you're besties with?")
     delay(8)
     msgbox("You mean Fern…")
     delay(8)

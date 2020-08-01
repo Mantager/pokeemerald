@@ -4544,8 +4544,8 @@
     {
       "id": "LAYOUT_WING_PEAK_1F",
       "name": "WingPeak_1F_Layout",
-      "width": 40,
-      "height": 40,
+      "width": 48,
+      "height": 48,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/WingPeak_1F/border.bin",
@@ -4554,8 +4554,8 @@
     {
       "id": "LAYOUT_WING_PEAK_2F",
       "name": "WingPeak_2F_Layout",
-      "width": 40,
-      "height": 40,
+      "width": 48,
+      "height": 48,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/WingPeak_2F/border.bin",
@@ -4564,8 +4564,8 @@
     {
       "id": "LAYOUT_WING_PEAK_3F",
       "name": "WingPeak_3F_Layout",
-      "width": 40,
-      "height": 40,
+      "width": 48,
+      "height": 48,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/WingPeak_3F/border.bin",
@@ -4980,6 +4980,26 @@
       "secondary_tileset": "gTileset_Shop",
       "border_filepath": "data/layouts/PistaVillage_Mart/border.bin",
       "blockdata_filepath": "data/layouts/PistaVillage_Mart/map.bin"
+    },
+    {
+      "id": "LAYOUT_WING_PEAK_TOP",
+      "name": "WingPeak_Top_Layout",
+      "width": 48,
+      "height": 48,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/WingPeak_Top/border.bin",
+      "blockdata_filepath": "data/layouts/WingPeak_Top/map.bin"
+    },
+    {
+      "id": "LAYOUT_WING_PEAK_4F",
+      "name": "WingPeak_4F_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/WingPeak_4F/border.bin",
+      "blockdata_filepath": "data/layouts/WingPeak_4F/map.bin"
     }
   ]
 }

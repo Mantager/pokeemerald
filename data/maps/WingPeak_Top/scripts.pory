@@ -1,0 +1,186 @@
+mapscripts WingPeak_Top_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        if (var(VAR_PISTA_VILLAGE_STATE) == 9) {
+            setflag(FLAG_WING_PEAK_TOP_HIDE_NAS)
+        }
+        end
+    }
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_PISTA_VILLAGE_STATE, 9 {
+            lockall
+            clearflag(FLAG_WING_PEAK_TOP_HIDE_NAS)
+            addobject(4)
+            applymovement(4, Common_Movement_WalkRight)
+            waitmovement(0)
+            applymovement(4, Common_Movement_FaceLeft)
+            applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
+            waitmovement(0)
+            msgbox("Clad.\nWe're pretty close to the top now.\pAre you ready?")
+            closemessage
+            delay(8)
+            msgbox("Ready as I'll ever be.\nLet's go.")
+            closemessage
+            applymovement(4, Common_Movement_WalkLeft)
+            waitmovement(0)
+            setflag(FLAG_WING_PEAK_TOP_HIDE_NAS)
+            removeobject(4)
+            setvar(VAR_PISTA_VILLAGE_STATE, 10)
+            releaseall
+            end
+        }
+    ]
+}
+
+script WingPeak_Top_Trigger_TopEvent {
+    lockall
+    delay(16)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp2)
+    waitmovement(0)
+    delay(16)
+    msgbox("Hey, everyone.")
+    delay(8)
+    applymovement(1, Common_Movement_FaceDown)
+    applymovement(2, Common_Movement_FaceDown)
+    applymovement(3, Common_Movement_FaceDown)
+    waitmovement(0)
+    msgbox("{COLOR}{RED}Finally!\nYou took your time, Clad!")
+    closemessage
+    applymovement(3, Common_Movement_FaceLeft)
+    waitmovement(0)
+    msgbox("{COLOR}{GREEN}Man, you're just too impatient, Fern.")
+    closemessage
+    applymovement(2, Common_Movement_FaceLeft)
+    waitmovement(0)
+    applymovement(1, Common_Movement_WalkInPlaceDown)
+    waitmovement(0)
+    msgbox("{COLOR}{BLUE}That makes four of us now, anyway.\nEveryone's all here.")
+    closemessage
+    delay(8)
+    applymovement(2, Common_Movement_FaceDown)
+    applymovement(3, Common_Movement_FaceDown)
+    waitmovement(0)
+    msgbox("Actually, there's someone else.")
+    closemessage
+    getplayerxy(VAR_TEMP_1, VAR_TEMP_2)
+    setobjectxy(4, VAR_TEMP_1, VAR_TEMP_2)
+    setobjectxyperm(4, VAR_TEMP_1, VAR_TEMP_2)
+    clearflag(FLAG_WING_PEAK_TOP_HIDE_NAS)
+    addobject(4)
+    if(var(VAR_TEMP_1) == 23) { applymovement(4, WingPeak_Top_Movement_NasMoveRight) }
+    if(var(VAR_TEMP_1) == 24) { applymovement(4, WingPeak_Top_Movement_NasMoveLeft) }
+    waitmovement(0)
+    playse(SE_PIN)
+    applymovement(2, Common_Movement_ExclamationMark)
+    delay(4)
+    playse(SE_PIN)
+    applymovement(1, Common_Movement_ExclamationMark)
+    delay(4)
+    playse(SE_PIN)
+    applymovement(3, Common_Movement_ExclamationMark)
+    delay(4)
+    waitmovement(0)
+    delay(8)
+    msgbox("{COLOR}{RED}Nas?!\nWhy is Nas here?!")
+    closemessage
+    delay(16)
+    msgbox("Nas wants to apologise.")
+    closemessage
+    delay(16)
+    msgbox("{COLOR}{RED}Apologise?\nI don't believe it.\lAre you for real?\lDid you bring him here?")
+    closemessage
+    delay(16)
+    applymovement(4, Common_Movement_WalkInPlaceUp)
+    waitmovement(0)
+    msgbox("Wait, Fern!\nIt's true.\pI… I'm sorry, dude.\pI was wrong.\pI picked on you… not because\nI didn't understand you…\lbut because I didn't understand the world.")
+    closemessage
+    delay(8)
+    msgbox("{COLOR}{RED}… …\n… …")
+    closemessage
+    delay(8)
+    msgbox("I made other people's lives a\nmisery because I thought that\leveryone was out to get me.\pBut from today, that changes.\pI came here to save someone.")
+    delay(64)
+    message("Save someone?\nWhat do you-")
+    waitmessage
+    message("I-is someone out there?!\nPlease!")
+    closemessage
+    playse(SE_PIN)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark)
+    delay(2)
+    playse(SE_PIN)
+    applymovement(4, Common_Movement_ExclamationMark)
+    delay(2)
+    playse(SE_PIN)
+    applymovement(2, Common_Movement_ExclamationMark)
+    delay(2)
+    playse(SE_PIN)
+    applymovement(1, Common_Movement_ExclamationMark)
+    delay(2)
+    playse(SE_PIN)
+    applymovement(3, Common_Movement_ExclamationMark)
+    delay(2)
+    waitmovement(0)
+    waitse
+    applymovement(1, Common_Movement_FaceUp)
+    applymovement(2, Common_Movement_FaceUp)
+    applymovement(3, Common_Movement_FaceUp)
+    applymovement(4, Common_Movement_FaceUp)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
+    waitmovement(0)
+    delay(8)
+    applymovement(4, Common_Movement_WalkInPlaceUp)
+    waitmovement(0)
+    msgbox("That's it!\nThat's him!")
+    closemessage
+    applymovement(1, Common_Movement_FaceDown)
+    applymovement(2, Common_Movement_FaceDown)
+    applymovement(3, Common_Movement_FaceDown)
+    waitmovement(0)
+    msgbox("{COLOR}{BLUE}…'Him'?\nWhat do you mean?")
+    closemessage
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp)
+    waitmovement(0)
+    msgbox("Since we left Prime City, I've\nbeen seeing things.\pThis kid… he appears and\ndisappears, and tells me to\lsave him.")
+    closemessage
+    delay(8)
+    msgbox("{COLOR}{GREEN}Woah.\nThat's some real sci-fi stuff.")
+    applymovement(4, Common_Movement_FaceUp)
+    waitmovement(0)
+    delay(8)
+    msgbox("He also says to come to Wing Peak.\pI've seen it as well.")
+    closemessage
+    msgbox("{COLOR}{BLUE}So you were led here by the kid…\pAnd Clad, you were on the way\nto Wing Peak regardless as\nwe were travelling together.")
+    applymovement(4, Common_Movement_FaceUp)
+    waitmovement(0)
+    delay(8)
+    message("Urgh…\nPlease help me!\lI can't get out…\lI'm… so tired…")
+    waitmessage
+    closemessage
+    delay(8)
+    applymovement(3, Common_Movement_FaceUp)
+    waitmovement(0)
+    delay(8)
+    playbgm(MUS_VS_EXCJINN, 0)
+    msgbox("{COLOR}{GREEN}So the kid's in there?\pBut we can't get in anyway.\nIt's closed off by rocks.\pTrust me, we were trying to clear\nthe entrance whilst we were waiting.")
+    closemessage
+	setwildbattle(SPECIES_EXCJINN, 40, ITEM_NONE)
+    special(BattleSetup_StartExcjinnBattle)
+    releaseall
+    end
+}
+
+movement WingPeak_Top_Movement_NasMoveLeft {
+    walk_left
+    face_up
+    step_end
+}
+
+movement WingPeak_Top_Movement_NasMoveRight {
+    walk_right
+    face_up
+    step_end
+}
+
+script WingPeak_Top_EventScript_DebugExcjinnBattle {
+	setwildbattle(SPECIES_EXCJINN, 40, ITEM_NONE)
+    special(BattleSetup_StartExcjinnBattle)
+}

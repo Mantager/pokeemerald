@@ -12043,6 +12043,75 @@
               }
             ]
           }
+        },
+        {
+          "map": "MAP_WING_PEAK_1F",
+          "base_label": "gWingPeak_1F0",
+          "land_mons": {
+            "encounter_rate": 0,
+            "mons": [
+              {
+                "min_level": 32,
+                "max_level": 34,
+                "species": "SPECIES_BOLDORE"
+              },
+              {
+                "min_level": 32,
+                "max_level": 34,
+                "species": "SPECIES_RHYHORN"
+              },
+              {
+                "min_level": 32,
+                "max_level": 34,
+                "species": "SPECIES_GOLETT"
+              },
+              {
+                "min_level": 32,
+                "max_level": 34,
+                "species": "SPECIES_GOLBAT"
+              },
+              {
+                "min_level": 32,
+                "max_level": 34,
+                "species": "SPECIES_HEATMOR"
+              },
+              {
+                "min_level": 32,
+                "max_level": 34,
+                "species": "SPECIES_DURANT"
+              },
+              {
+                "min_level": 32,
+                "max_level": 34,
+                "species": "SPECIES_ZUBAT"
+              },
+              {
+                "min_level": 32,
+                "max_level": 34,
+                "species": "SPECIES_ROGGENROLA"
+              },
+              {
+                "min_level": 32,
+                "max_level": 34,
+                "species": "SPECIES_GIGALITH"
+              },
+              {
+                "min_level": 32,
+                "max_level": 34,
+                "species": "SPECIES_DRUDDIGON"
+              },
+              {
+                "min_level": 32,
+                "max_level": 34,
+                "species": "SPECIES_GIGALITH"
+              },
+              {
+                "min_level": 32,
+                "max_level": 34,
+                "species": "SPECIES_DRUDDIGON"
+              }
+            ]
+          }
         }
       ]
     },

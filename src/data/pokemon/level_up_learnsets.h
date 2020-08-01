@@ -16514,7 +16514,7 @@ static const struct LevelUpMove sMelmetalLevelUpLearnset[] = {
 
 static const struct LevelUpMove sExcjinnLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_AQUA_RING),
-    LEVEL_UP_MOVE( 1, MOVE_CURSE),
+    LEVEL_UP_MOVE( 1, MOVE_AURA_SPHERE),
     LEVEL_UP_MOVE( 1, MOVE_SHADOW_PUNCH),
     LEVEL_UP_MOVE( 1, MOVE_DAZZLING_GLEAM),
     LEVEL_UP_END

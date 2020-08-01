@@ -2,7 +2,7 @@
   "id": "MAP_WING_PEAK_1F",
   "name": "WingPeak_1F",
   "layout": "LAYOUT_WING_PEAK_1F",
-  "music": "MUS_AJITO",
+  "music": "MUS_DAN03",
   "region_map_section": "MAPSEC_WING_PEAK",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -14,19 +14,91 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": 0,
   "object_events": [
-
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MISLE",
+      "x": 16,
+      "y": 34,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_WING_PEAK_1F_HIDE_MISLE"
+    }
   ],
   "warp_events": [
     {
-      "x": 4,
-      "y": 37,
+      "x": 8,
+      "y": 41,
       "elevation": 0,
       "dest_map": "MAP_AGUDO_WOODLAND",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 6,
+      "y": 12,
+      "elevation": 0,
+      "dest_map": "MAP_WING_PEAK_2F",
       "dest_warp_id": 0
     }
   ],
   "coord_events": [
-
+    {
+      "type": "trigger",
+      "x": 13,
+      "y": 33,
+      "elevation": 0,
+      "var": "VAR_PISTA_VILLAGE_STATE",
+      "var_value": "6",
+      "script": "WingPeak_1F_Trigger_MisleEncounter"
+    },
+    {
+      "type": "trigger",
+      "x": 13,
+      "y": 34,
+      "elevation": 0,
+      "var": "VAR_PISTA_VILLAGE_STATE",
+      "var_value": "6",
+      "script": "WingPeak_1F_Trigger_MisleEncounter"
+    },
+    {
+      "type": "trigger",
+      "x": 13,
+      "y": 35,
+      "elevation": 0,
+      "var": "VAR_PISTA_VILLAGE_STATE",
+      "var_value": "6",
+      "script": "WingPeak_1F_Trigger_MisleEncounter"
+    },
+    {
+      "type": "trigger",
+      "x": 9,
+      "y": 5,
+      "elevation": 0,
+      "var": "VAR_PISTA_VILLAGE_STATE",
+      "var_value": "7",
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 9,
+      "y": 6,
+      "elevation": 0,
+      "var": "VAR_PISTA_VILLAGE_STATE",
+      "var_value": "7",
+      "script": "WingPeak_1F_Trigger_GolbatFight"
+    },
+    {
+      "type": "trigger",
+      "x": 9,
+      "y": 7,
+      "elevation": 0,
+      "var": "VAR_PISTA_VILLAGE_STATE",
+      "var_value": "7",
+      "script": "WingPeak_1F_Trigger_GolbatFight"
+    }
   ],
   "bg_events": [
 

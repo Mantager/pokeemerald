@@ -63,21 +63,18 @@ YanurasTown_Trigger_AfterMeetingRyan_7:
 	waitmovement 0
 	msgbox YanurasTown_Trigger_AfterMeetingRyan_Text_14
 	closemessage
-	applymovement 3, Common_Movement_WalkRight
-	waitmovement 0
+	fadescreen 1
 	setflag FLAG_YANURAS_TOWN_HIDE_RYAN
 	removeobject 3
-	applymovement 2, YanurasTown_Movement_MalimoMoveToPlayer
-	waitmovement 0
 	setflag FLAG_YANURAS_TOWN_HIDE_MALIMO
 	removeobject 2
-	applymovement 1, YanurasTown_Movement_FernMoveToPlayer
-	waitmovement 0
 	setflag FLAG_YANURAS_TOWN_HIDE_FERN
 	removeobject 1
 	setflag FLAG_NEW_VALLEY_WAY_HIDE_FERN
 	setflag FLAG_NEW_VALLEY_WAY_HIDE_MALIMO
 	setvar VAR_YANURAS_TOWN_STATE, 2
+	fadescreen 0
+	delay 8
 	releaseall
 	end
 

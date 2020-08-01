@@ -613,7 +613,7 @@ gSongTable:: @ 86B49F0
 	song ph_nurse_solo, 2, 2
 	song seq_oro, 0, 0       @ Oro Town
 	song seq_vs_nas, 0, 0       @ VS Nas
-	song seq_oro, 0, 0       @ VS Excjinn
+	song seq_vs_excjinn, 0, 0       @ VS Excjinn
 
 	.align 2
 dummy_song_header: @ 86B5D00

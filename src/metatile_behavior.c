@@ -168,7 +168,7 @@ static const u8 sTileBitAttributes[] =
     [MB_SECRET_BASE_SPOT_BLUE_CAVE_OPEN] = TILE_ATTRIBUTES(FALSE, FALSE, FALSE),
     [MB_SECRET_BASE_SPOT_TREE_RIGHT] = TILE_ATTRIBUTES(FALSE, FALSE, FALSE),
     [MB_SECRET_BASE_SPOT_TREE_RIGHT_OPEN] = TILE_ATTRIBUTES(FALSE, FALSE, FALSE),
-    [MB_UNUSED_9E] = TILE_ATTRIBUTES(FALSE, FALSE, FALSE),
+    [MB_ALL_DIRECTION_HOP] = TILE_ATTRIBUTES(FALSE, FALSE, FALSE),
     [MB_UNUSED_9F] = TILE_ATTRIBUTES(FALSE, FALSE, FALSE),
     [MB_BERRY_TREE_SOIL] = TILE_ATTRIBUTES(FALSE, FALSE, FALSE),
     [MB_UNUSED_A1] = TILE_ATTRIBUTES(FALSE, FALSE, FALSE),
@@ -1557,3 +1557,10 @@ bool8 MetatileBehavior_IsSidewaysStairsLeftSideAny(u8 metatileBehavior)
         return FALSE;
 }
 
+bool8 MetatileBehavior_IsAllDirectionHop(u8 metatileBehavior)
+{
+    if (metatileBehavior == MB_ALL_DIRECTION_HOP)
+        return TRUE;
+    else
+        return FALSE;
+}

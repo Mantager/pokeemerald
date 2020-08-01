@@ -6456,12 +6456,14 @@ void PlayBattleBGM(void)
 
 void PlayMapChosenOrBattleBGM(u16 songId)
 {
-    ResetMapMusic();
-    m4aMPlayAllStop();
-    if (songId)
-        PlayNewMapMusic(songId);
-    else
-        PlayNewMapMusic(GetBattleBGM());
+    if (!(gBattleTypeFlags & BATTLE_TYPE_EXCJINN)) {
+        ResetMapMusic();
+        m4aMPlayAllStop();
+        if (songId)
+            PlayNewMapMusic(songId);
+        else
+            PlayNewMapMusic(GetBattleBGM());
+    }
 }
 
 void sub_806E694(u16 songId)

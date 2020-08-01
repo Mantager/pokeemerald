@@ -1225,7 +1225,7 @@ SECTIONS {
         sound/songs/midi/ph_nurse_solo.o(.rodata);
         sound/songs/midi/seq_oro.o(.rodata);
         sound/songs/midi/seq_vs_nas.o(.rodata);
-        sound/songs/midi/seq_oro.o(.rodata);
+        sound/songs/midi/seq_vs_excjinn.o(.rodata);
     } =0
 
     lib_rodata :

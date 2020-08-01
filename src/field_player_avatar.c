@@ -686,6 +686,7 @@ u8 CheckForObjectEventCollision(struct ObjectEvent *objectEvent, s16 x, s16 y, u
 {
     u8 collision = GetCollisionAtCoords(objectEvent, x, y, direction);
     u8 currentBehavior = MapGridGetMetatileBehaviorAt(objectEvent->currentCoords.x, objectEvent->currentCoords.y);
+    u8 nextBehavior = MapGridGetMetatileBehaviorAt(x, y);
     
     if (collision == COLLISION_ELEVATION_MISMATCH && CanStopSurfing(x, y, direction))
         return COLLISION_STOP_SURFING;
@@ -695,6 +696,15 @@ u8 CheckForObjectEventCollision(struct ObjectEvent *objectEvent, s16 x, s16 y, u
         IncrementGameStat(GAME_STAT_JUMPED_DOWN_LEDGES);
         return COLLISION_LEDGE_JUMP;
     }
+
+    if (MetatileBehavior_IsAllDirectionHop(currentBehavior) == TRUE
+    && MetatileBehavior_IsAllDirectionHop(nextBehavior) == TRUE
+    && (collision == COLLISION_IMPASSABLE || collision == COLLISION_ELEVATION_MISMATCH)
+    && (PlayerGetZCoord() == 4))
+    {
+        return COLLISION_LEDGE_JUMP;
+    }
+
     if (collision == COLLISION_OBJECT_EVENT && TryPushBoulder(x, y, direction))
         return COLLISION_PUSHED_BOULDER;
 

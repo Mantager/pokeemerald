@@ -45,10 +45,6 @@ mapscripts PistaVillage_Dojo_MapScripts {
             setobjectxy(6, 6, 3)
             setobjectxyperm(6, 6, 3)
             setobjectmovementtype(6, MOVEMENT_TYPE_FACE_DOWN)
-            settrainerflag(TRAINER_G2_MAGA)
-            settrainerflag(TRAINER_G2_HOLLY)
-            settrainerflag(TRAINER_G2_AEMILLA)
-            settrainerflag(TRAINER_G2_IGNACIO)
             fadescreen(0)
             releaseall
             end
@@ -60,7 +56,7 @@ mapscripts PistaVillage_Dojo_MapScripts {
                 setobjectxy(5, 2, 22)
                 setobjectxyperm(5, 2, 22)
                 setobjectmovementtype(5, MOVEMENT_TYPE_LOOK_AROUND)
-            } else {
+            } elif(flag(FLAG_PISTA_VILLAGE_DOJO_DEFEATED_SANCHEZ) == TRUE) {
                 setobjectxy(5, 6, 21)
                 setobjectxyperm(5, 6, 21)
                 setobjectmovementtype(5, MOVEMENT_TYPE_FACE_UP)
@@ -113,6 +109,11 @@ script PistaVillage_Dojo_EventScript_Sanchez {
             setobjectxy(5, 6, 21)
             setobjectxyperm(5, 6, 21)
             setobjectmovementtype(5, MOVEMENT_TYPE_FACE_UP)
+            settrainerflag(TRAINER_G2_MAGA)
+            settrainerflag(TRAINER_G2_HOLLY)
+            settrainerflag(TRAINER_G2_AEMILLA)
+            settrainerflag(TRAINER_G2_IGNACIO)
+            setvar(VAR_PISTA_VILLAGE_STATE, 3)
             msgbox("Well, youngster.\pI hope that I can grow this dojo into\na truly remarkable place for Trainers\lto gather and train at.\pI hope that this training has\ngreater prepared you for Wing Peak!")
         } else {
             msgbox("Ah, you need to prepare first?\nVery well.\lTalk to me when you're ready.")
@@ -168,7 +169,7 @@ script PistaVillage_Dojo_Trigger_AfterBeatenSanchez {
     playse(SE_TK_WARPOUT)
     waitse
     delay(8)
-    setvar(VAR_PISTA_VILLAGE_STATE, 3)
+    setvar(VAR_PISTA_VILLAGE_STATE, 4)
     releaseall
     end
 }

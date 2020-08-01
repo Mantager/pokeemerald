@@ -1,1 +1,149 @@
-mapscripts WingPeak_2F_MapScripts {}
+mapscripts WingPeak_2F_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        if (var(VAR_PISTA_VILLAGE_STATE) == 8) {
+            setflag(FLAG_WING_PEAK_2F_HIDE_NAS)
+        }
+        end
+    }
+}
+
+script WingPeak_2F_Trigger_NasFight {
+    lockall
+    msgbox("Wait!")
+    closemessage
+    clearflag(FLAG_WING_PEAK_2F_HIDE_NAS)
+    addobject(1)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
+    waitmovement(0)
+    playse(SE_PIN)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark)
+    getplayerxy(VAR_TEMP_1, VAR_TEMP_2)
+    if(var(VAR_TEMP_2) == 37) { applymovement(1, WingPeak_2F_Movement_NasToPlayerY37) }
+    if(var(VAR_TEMP_2) == 38) { applymovement(1, WingPeak_2F_Movement_NasToPlayerY38) }
+    if(var(VAR_TEMP_2) == 39) { applymovement(1, WingPeak_2F_Movement_NasToPlayerY39) }
+    if(var(VAR_TEMP_2) == 40) { applymovement(1, WingPeak_2F_Movement_NasToPlayerY40) }
+    waitmovement(0)
+    delay(8)
+    msgbox("Clad, you little shrimp!")
+    closemessage
+    msgbox("Nas!?\nHow come you're here?!")
+    msgbox("That doesn't matter right now…\nBecause right now…\lI challenge you to a battle!")
+    closemessage
+    trainerbattle_no_intro(TRAINER_G2_NAS_2, "What?\nI lost again…\lLooks like last time wasn't a fluke…")
+    msgbox("Heh!\nYou guys aren't half-bad at battling…")
+    msgbox("Shut it!\pI still don't forgive you for\nhow you treated Fern!\pTell me, Nas.\nWhy do you have to be such\la jerk all the time?")
+    delay(16)
+    msgbox("…It's complicated, y'know?!\nGet off my case.")
+    delay(16)
+    msgbox("I don't care.\pYou've been such a pain\nthroughout the years, you could\lat least explain why.")
+    delay(16)
+    msgbox("Fine.")
+    fadeoutbgm(1)
+    fadescreen(1)
+    msgbox("When I was a kid, my dad always told\nme to stand up for myself.")
+    closemessage
+    delay(16)
+    msgbox("{COLOR}{BLUE}Is that Ferg kid picking on you, son?\nMake sure you let him have it!")
+    closemessage
+    delay(16)
+    msgbox("That's a good thing, but recently…\nI realised that he took it too far.")
+    closemessage
+    delay(16)
+    msgbox("If he saw somebody not taking me\nseriously, he'd say…")
+    closemessage
+    delay(16)
+    msgbox("{COLOR}{BLUE}No son of mine lets any snot-nosed\nlayabout talk down to him!\pGive that guy a good kicking, boy!")
+    closemessage
+    delay(16)
+    msgbox("When I was beaten at a track meet,\nhe said to me…")
+    closemessage
+    delay(16)
+    msgbox("{COLOR}{BLUE}What a fluke!\nThat boy was cheating.\lHe took something before the race!\lDidn't you see?!")
+    closemessage
+    delay(16)
+    msgbox("Dad's the kind of guy who sees\nconflict in everything.")
+    msgbox("But that way of thinking was\npassed onto me, too.")
+    msgbox("I thought that by being top dog\n and knocking everyone else down,\lit would make me respected.\pNobody would mess with me.")
+    msgbox("From my perspective, and my dad's too,\neveryone was waiting for the\lperfect moment to get you.\pI bullied people as a pre-emptive strike.")
+    closemessage
+    delay(16)
+    msgbox("But after you guys beat me back\nin Oro Town, I realised something.")
+    msgbox("I don't have real friends.\pI thought my friends liked me,\nbut it was just because nobody\lmessed with me.\pThey wanted to feel like\ntop dogs, as well.")
+    msgbox("That must've been why they\nditched you after you lost before.")
+    msgbox("You got it, Clad.")
+    closemessage
+    fadescreen(0)
+    msgbox("So you just wanted to feel like\npeople were taking you serious, then.")
+    closemessage
+    delay(8)
+    msgbox("I've realised that not everyone was\nout to get me after all.")
+    msgbox("And when I heard you guys speaking\nbefore, I was really surprised.")
+    closemessage
+    fadescreen(1)
+	msgbox("{COLOR}{RED}Thank you, guys.\pBecause of all of you, I was\nfinally able to properly\lstand up to Nas.")
+	msgbox("{COLOR}{GREEN}Don't mention it, man!\nThat's what friends are for.")
+	msgbox("That's right.")
+	msgbox("{COLOR}{BLUE}Mhm!")
+    closemessage
+    fadescreen(0)
+    msgbox("I started questioning my actions after\nhearing all of that.")
+    closemessage
+    delay(16)
+    msgbox("Hm…\nThat's deep.\pEven so…\pWhy are you here now?\nTo ask for forgiveness?\pIt can't have just been\nfor a fight, right?")
+    closemessage
+    delay(8)
+    msgbox("Correct, Claderino.\pActually…\nI've come looking for someone.")
+    closemessage
+    delay(8)
+    msgbox("Looking for someone?")
+    closemessage
+    delay(8)
+    playbgm(MUS_OOAME, 0)
+    msgbox("For a while now I've been having\nthese weird daydreams… at least\lI think that's what they are.\pThis kid appears, tells me to come\nand save him from Wing Peak,\land then vanishes.")
+    playse(SE_PIN)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    waitse
+    delay(8)
+    msgbox("I think I'm just going crazy,\nbut I decided to check out\lWing Peak anyway.")
+    closemessage
+    msgbox("No, you're not crazy.\nI'm having the same daydreams.\pI didn't tell anyone because I\ndidn't want them to think that\lI was a looney or something.")
+    closemessage
+    msgbox("Interesting…")
+    msgbox("In that case, mind if I tag along\nwith you, Claderino?")
+    closemessage
+    msgbox("I mean, we're both climbing the\nmountain, so why not.\pYou'll have a lot of explaining to\ndo at the top, though.\pI'm sure Fern and the others are\nthere already.")
+    closemessage
+    msgbox("We'll cross that bridge when\nwe come to it.")
+    closemessage
+    applymovement(1, Common_Movement_WalkRight)
+    waitmovement(0)
+    setvar(VAR_PISTA_VILLAGE_STATE, 9)
+    setflag(FLAG_WING_PEAK_2F_HIDE_NAS)
+    removeobject(1)
+    fadedefaultbgm
+    releaseall
+    end
+}
+
+movement WingPeak_2F_Movement_NasToPlayerY37 {
+    walk_right * 5
+    walk_up * 2
+    walk_right * 2
+}
+
+movement WingPeak_2F_Movement_NasToPlayerY38 {
+    walk_right * 5
+    walk_up * 1
+    walk_right * 2
+}
+
+movement WingPeak_2F_Movement_NasToPlayerY39 {
+    walk_right * 7
+}
+
+movement WingPeak_2F_Movement_NasToPlayerY40 {
+    walk_right * 5
+    walk_down
+    walk_right * 2
+}

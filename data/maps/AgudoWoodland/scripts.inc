@@ -4,7 +4,7 @@ AgudoWoodland_MapScripts::
 	.byte 0
 
 AgudoWoodland_MapScripts_MAP_SCRIPT_ON_TRANSITION:
-	compare VAR_PISTA_VILLAGE_STATE, 4
+	compare VAR_PISTA_VILLAGE_STATE, 5
 	goto_if_ge AgudoWoodland_MapScripts_MAP_SCRIPT_ON_TRANSITION_1
 	return
 
@@ -15,7 +15,7 @@ AgudoWoodland_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
 	return
 
 AgudoWoodland_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
-	map_script_2 VAR_PISTA_VILLAGE_STATE, 3, AgudoWoodland_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE_0
+	map_script_2 VAR_PISTA_VILLAGE_STATE, 4, AgudoWoodland_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE_0
 	.2byte 0
 
 AgudoWoodland_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE_0:
@@ -83,7 +83,7 @@ AgudoWoodland_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE_0_1:
 	setobjectxy 1, 117, 17
 	setobjectxyperm 1, 117, 17
 	setobjectmovementtype 1, MOVEMENT_TYPE_FACE_RIGHT
-	setvar VAR_PISTA_VILLAGE_STATE, 4
+	setvar VAR_PISTA_VILLAGE_STATE, 5
 	fadescreen 0
 	delay 8
 	releaseall
@@ -116,6 +116,126 @@ AgudoWoodland_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE_0_8:
 AgudoWoodland_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE_0_9:
 	applymovement OBJ_EVENT_ID_PLAYER, AgudoWoodland_Movement_PlayerMoveToMalimoX16
 	goto AgudoWoodland_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE_0_1
+
+
+AgudoWoodland_EventScript_Keila::
+	trainerbattle_single TRAINER_G2_KEILA, AgudoWoodland_EventScript_Keila_Text_0, AgudoWoodland_EventScript_Keila_Text_1
+	msgbox AgudoWoodland_EventScript_Keila_Text_2
+	release
+	end
+
+
+AgudoWoodland_EventScript_Des::
+	trainerbattle_single TRAINER_G2_DES, AgudoWoodland_EventScript_Keila_Text_0, AgudoWoodland_EventScript_Keila_Text_1
+	msgbox AgudoWoodland_EventScript_Keila_Text_2
+	release
+	end
+
+
+AgudoWoodland_EventScript_Franco::
+	trainerbattle_single TRAINER_G2_FRANCO, AgudoWoodland_EventScript_Keila_Text_0, AgudoWoodland_EventScript_Keila_Text_1
+	msgbox AgudoWoodland_EventScript_Keila_Text_2
+	release
+	end
+
+
+AgudoWoodland_EventScript_Cristian::
+	trainerbattle_single TRAINER_G2_CRISTIAN, AgudoWoodland_EventScript_Keila_Text_0, AgudoWoodland_EventScript_Keila_Text_1
+	msgbox AgudoWoodland_EventScript_Keila_Text_2
+	release
+	end
+
+
+AgudoWoodland_EventScript_Mariana::
+	trainerbattle_single TRAINER_G2_MARIANA, AgudoWoodland_EventScript_Keila_Text_0, AgudoWoodland_EventScript_Keila_Text_1
+	msgbox AgudoWoodland_EventScript_Keila_Text_2
+	release
+	end
+
+
+AgudoWoodland_EventScript_Rep::
+	trainerbattle_single TRAINER_G2_REP, AgudoWoodland_EventScript_Keila_Text_0, AgudoWoodland_EventScript_Keila_Text_1
+	msgbox AgudoWoodland_EventScript_Keila_Text_2
+	release
+	end
+
+
+AgudoWoodland_EventScript_Luca::
+	trainerbattle_single TRAINER_G2_LUCA, AgudoWoodland_EventScript_Keila_Text_0, AgudoWoodland_EventScript_Keila_Text_1
+	msgbox AgudoWoodland_EventScript_Keila_Text_2
+	release
+	end
+
+
+AgudoWoodland_EventScript_Kireiya::
+	trainerbattle_single TRAINER_G2_KIREIYA, AgudoWoodland_EventScript_Keila_Text_0, AgudoWoodland_EventScript_Keila_Text_1
+	msgbox AgudoWoodland_EventScript_Keila_Text_2
+	release
+	end
+
+
+AgudoWoodland_Trigger_EntranceMeetUp::
+	lockall
+	fadescreen 1
+	getplayerxy VAR_TEMP_1, VAR_TEMP_2
+	switch VAR_TEMP_1
+	case 117, AgudoWoodland_Trigger_EntranceMeetUp_3
+	case 118, AgudoWoodland_Trigger_EntranceMeetUp_4
+	case 119, AgudoWoodland_Trigger_EntranceMeetUp_5
+	applymovement OBJ_EVENT_ID_PLAYER, AgudoWoodland_Movement_PlayerMoveToMeetupX120
+AgudoWoodland_Trigger_EntranceMeetUp_1:
+	waitmovement 0
+	fadescreen 0
+	delay 8
+	applymovement 10, Common_Movement_WalkInPlaceUp
+	waitmovement 0
+	msgbox AgudoWoodland_Trigger_EntranceMeetUp_Text_0
+	closemessage
+	msgbox AgudoWoodland_Trigger_EntranceMeetUp_Text_1
+	closemessage
+	applymovement 1, Common_Movement_FaceDown
+	waitmovement 0
+	msgbox AgudoWoodland_Trigger_EntranceMeetUp_Text_2
+	msgbox AgudoWoodland_Trigger_EntranceMeetUp_Text_3
+	msgbox AgudoWoodland_Trigger_EntranceMeetUp_Text_4
+	closemessage
+	trainerbattle_no_intro TRAINER_G2_MALIMO, AgudoWoodland_Trigger_EntranceMeetUp_Text_5
+	msgbox AgudoWoodland_Trigger_EntranceMeetUp_Text_6
+	closemessage
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight
+	applymovement 1, Common_Movement_FaceRight
+	applymovement 10, Common_Movement_FaceRight
+	waitmovement 0
+	msgbox AgudoWoodland_Trigger_EntranceMeetUp_Text_7
+	msgbox AgudoWoodland_Trigger_EntranceMeetUp_Text_8
+	closemessage
+	applymovement OBJ_EVENT_ID_PLAYER, AgudoWoodland_Movement_PlayerMoveToBattle
+	waitmovement 0
+	trainerbattle_no_intro TRAINER_G2_RYAN, AgudoWoodland_Trigger_EntranceMeetUp_Text_9
+	fadescreen 1
+	removeobject 1
+	removeobject 10
+	removeobject 9
+	setflag FLAG_AGUDO_WOODLAND_HIDE_FERN
+	setflag FLAG_AGUDO_WOODLAND_HIDE_MALIMO
+	setflag FLAG_AGUDO_WOODLAND_HIDE_RYAN
+	setvar VAR_PISTA_VILLAGE_STATE, 6
+	fadescreen 0
+	delay 8
+	releaseall
+	end
+
+AgudoWoodland_Trigger_EntranceMeetUp_3:
+	applymovement OBJ_EVENT_ID_PLAYER, AgudoWoodland_Movement_PlayerMoveToMeetupX117
+	goto AgudoWoodland_Trigger_EntranceMeetUp_1
+
+AgudoWoodland_Trigger_EntranceMeetUp_4:
+	applymovement OBJ_EVENT_ID_PLAYER, AgudoWoodland_Movement_PlayerMoveToMeetupX118
+	goto AgudoWoodland_Trigger_EntranceMeetUp_1
+
+AgudoWoodland_Trigger_EntranceMeetUp_5:
+	applymovement OBJ_EVENT_ID_PLAYER, AgudoWoodland_Movement_PlayerMoveToMeetupX119
+	goto AgudoWoodland_Trigger_EntranceMeetUp_1
 
 
 AgudoWoodland_Movement_PlayerMoveToMalimoX10:
@@ -203,6 +323,39 @@ AgudoWoodland_Movement_PlayerMoveToMalimoX17:
 	face_right
 	step_end
 
+AgudoWoodland_Movement_PlayerMoveToMeetupX117:
+	walk_fastest_right
+	walk_fastest_up
+	walk_fastest_up
+	walk_fastest_up
+	step_end
+
+AgudoWoodland_Movement_PlayerMoveToMeetupX118:
+	walk_fastest_up
+	walk_fastest_up
+	walk_fastest_up
+	step_end
+
+AgudoWoodland_Movement_PlayerMoveToMeetupX119:
+	walk_fastest_left
+	walk_fastest_up
+	walk_fastest_up
+	walk_fastest_up
+	step_end
+
+AgudoWoodland_Movement_PlayerMoveToMeetupX120:
+	walk_fastest_left
+	walk_fastest_left
+	walk_fastest_up
+	walk_fastest_up
+	walk_fastest_up
+	step_end
+
+AgudoWoodland_Movement_PlayerMoveToBattle:
+	walk_up
+	face_right
+	step_end
+
 AgudoWoodland_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE_0_Text_0:
 	.string "{COLOR}{BLUE}…Hey, Clad.$"
 
@@ -271,3 +424,42 @@ AgudoWoodland_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE_0_Text_21:
 
 AgudoWoodland_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE_0_Text_22:
 	.string "{COLOR}{BLUE}My parents gave that HM to me\nso that I could get home at any time.\pI don't need it right now, though.\pSo if you need to go back\nsomewhere to help you prepare for\lWing Peak, go ahead.\pWith that said, I'm going to get\na move on, Clad!$"
+
+AgudoWoodland_EventScript_Keila_Text_0:
+	.string "Battle me now!$"
+
+AgudoWoodland_EventScript_Keila_Text_1:
+	.string "No, I lost!$"
+
+AgudoWoodland_EventScript_Keila_Text_2:
+	.string "You're good.$"
+
+AgudoWoodland_Trigger_EntranceMeetUp_Text_0:
+	.string "{COLOR}{RED}We're finally here…\nIt's Wing Peak!\pThe genie on the peak is waiting,\nso let's go, everyone!$"
+
+AgudoWoodland_Trigger_EntranceMeetUp_Text_1:
+	.string "{COLOR}{BLUE}Wait!\pI feel as if I need a\nlittle more training before\lI head on in.$"
+
+AgudoWoodland_Trigger_EntranceMeetUp_Text_2:
+	.string "{COLOR}{BLUE}Clad, would you have a quick\nbattle with me?$"
+
+AgudoWoodland_Trigger_EntranceMeetUp_Text_3:
+	.string "You got it, Malimo!$"
+
+AgudoWoodland_Trigger_EntranceMeetUp_Text_4:
+	.string "{COLOR}{BLUE}Then let's start!$"
+
+AgudoWoodland_Trigger_EntranceMeetUp_Text_5:
+	.string "Aw…$"
+
+AgudoWoodland_Trigger_EntranceMeetUp_Text_6:
+	.string "{COLOR}{BLUE}Man, you're too good, Clad.\pThanks, though.\nI feel a lot more ready now.$"
+
+AgudoWoodland_Trigger_EntranceMeetUp_Text_7:
+	.string "{COLOR}{GREEN}Mind having a match with me too?\pI've been battling a lot on this\ntrip of ours.\pI want you see how much stronger\nmy team has grown.$"
+
+AgudoWoodland_Trigger_EntranceMeetUp_Text_8:
+	.string "Alright!\nLet's do it.$"
+
+AgudoWoodland_Trigger_EntranceMeetUp_Text_9:
+	.string "You've grown stronger, too!$"

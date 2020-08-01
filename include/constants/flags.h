@@ -41,7 +41,7 @@
 #define FLAG_TEMP_1F     (TEMP_FLAGS_START + 0x1F)
 #define TEMP_FLAGS_END   FLAG_TEMP_1F
 
-#define FLAG_UNUSED_0x020    0x20 // Unused Flag
+#define FLAG_ITEM_LAND_BRIDGE_NORTH_EXTRA_BLUBBER    0x20 // Unused Flag
 #define FLAG_UNUSED_0x021    0x21 // Unused Flag
 #define FLAG_UNUSED_0x022    0x22 // Unused Flag
 #define FLAG_UNUSED_0x023    0x23 // Unused Flag
@@ -1251,12 +1251,12 @@
 #define FLAG_PISTA_VILLAGE_DOJO_HIDE_RYAN                                          0x4A7 // Unused Flag
 #define FLAG_RECIEVED_EXPERT_BELT                                           0x4A8 // Unused Flag
 #define FLAG_PISTA_VILLAGE_DOJO_DEFEATED_SANCHEZ                                           0x4A9 // Unused Flag
-#define FLAG_AGUDO_WOODLAND_HIDE_MALIMO                                           0x4AA // Unused Flag
-#define FLAG_UNUSED_0x4AB                                           0x4AB // Unused Flag
-#define FLAG_UNUSED_0x4AC                                           0x4AC // Unused Flag
-#define FLAG_UNUSED_0x4AD                                           0x4AD // Unused Flag
-#define FLAG_UNUSED_0x4AE                                           0x4AE // Unused Flag
-#define FLAG_UNUSED_0x4AF                                           0x4AF // Unused Flag
+#define FLAG_AGUDO_WOODLAND_HIDE_FERN                                           0x4AA // Unused Flag
+#define FLAG_AGUDO_WOODLAND_HIDE_MALIMO                                           0x4AB // Unused Flag
+#define FLAG_AGUDO_WOODLAND_HIDE_RYAN                                           0x4AC // Unused Flag
+#define FLAG_WING_PEAK_1F_HIDE_MISLE                                           0x4AD // Unused Flag
+#define FLAG_WING_PEAK_2F_HIDE_NAS                                           0x4AE // Unused Flag
+#define FLAG_WING_PEAK_TOP_HIDE_NAS                                           0x4AF // Unused Flag
 #define FLAG_UNUSED_0x4B0                                           0x4B0 // Unused Flag
 #define FLAG_UNUSED_0x4B1                                           0x4B1 // Unused Flag
 #define FLAG_UNUSED_0x4B2                                           0x4B2 // Unused Flag

@@ -10,13 +10,7 @@ PistaVillage_Dojo_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 
 PistaVillage_Dojo_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
 	goto_if_unset FLAG_PISTA_VILLAGE_DOJO_DEFEATED_SANCHEZ, PistaVillage_Dojo_MapScripts_MAP_SCRIPT_ON_TRANSITION_4
-	setobjectxy 5, 6, 21
-	setobjectxyperm 5, 6, 21
-	setobjectmovementtype 5, MOVEMENT_TYPE_FACE_UP
-	settrainerflag TRAINER_G2_MAGA
-	settrainerflag TRAINER_G2_HOLLY
-	settrainerflag TRAINER_G2_AEMILLA
-	settrainerflag TRAINER_G2_IGNACIO
+	goto_if_set FLAG_PISTA_VILLAGE_DOJO_DEFEATED_SANCHEZ, PistaVillage_Dojo_MapScripts_MAP_SCRIPT_ON_TRANSITION_5
 PistaVillage_Dojo_MapScripts_MAP_SCRIPT_ON_TRANSITION_3:
 	setobjectxy 6, 6, 3
 	setobjectxyperm 6, 6, 3
@@ -27,6 +21,16 @@ PistaVillage_Dojo_MapScripts_MAP_SCRIPT_ON_TRANSITION_4:
 	setobjectxy 5, 2, 22
 	setobjectxyperm 5, 2, 22
 	setobjectmovementtype 5, MOVEMENT_TYPE_LOOK_AROUND
+	goto PistaVillage_Dojo_MapScripts_MAP_SCRIPT_ON_TRANSITION_3
+
+PistaVillage_Dojo_MapScripts_MAP_SCRIPT_ON_TRANSITION_5:
+	setobjectxy 5, 6, 21
+	setobjectxyperm 5, 6, 21
+	setobjectmovementtype 5, MOVEMENT_TYPE_FACE_UP
+	settrainerflag TRAINER_G2_MAGA
+	settrainerflag TRAINER_G2_HOLLY
+	settrainerflag TRAINER_G2_AEMILLA
+	settrainerflag TRAINER_G2_IGNACIO
 	goto PistaVillage_Dojo_MapScripts_MAP_SCRIPT_ON_TRANSITION_3
 
 PistaVillage_Dojo_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
@@ -78,10 +82,6 @@ PistaVillage_Dojo_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE_0:
 	setobjectxy 6, 6, 3
 	setobjectxyperm 6, 6, 3
 	setobjectmovementtype 6, MOVEMENT_TYPE_FACE_DOWN
-	settrainerflag TRAINER_G2_MAGA
-	settrainerflag TRAINER_G2_HOLLY
-	settrainerflag TRAINER_G2_AEMILLA
-	settrainerflag TRAINER_G2_IGNACIO
 	fadescreen 0
 	releaseall
 	end
@@ -135,6 +135,11 @@ PistaVillage_Dojo_EventScript_Sanchez_14:
 	setobjectxy 5, 6, 21
 	setobjectxyperm 5, 6, 21
 	setobjectmovementtype 5, MOVEMENT_TYPE_FACE_UP
+	settrainerflag TRAINER_G2_MAGA
+	settrainerflag TRAINER_G2_HOLLY
+	settrainerflag TRAINER_G2_AEMILLA
+	settrainerflag TRAINER_G2_IGNACIO
+	setvar VAR_PISTA_VILLAGE_STATE, 3
 	msgbox PistaVillage_Dojo_EventScript_Sanchez_Text_9
 	goto PistaVillage_Dojo_EventScript_Sanchez_1
 
@@ -195,7 +200,7 @@ PistaVillage_Dojo_Trigger_AfterBeatenSanchez_1:
 	playse SE_TK_WARPOUT
 	waitse
 	delay 8
-	setvar VAR_PISTA_VILLAGE_STATE, 3
+	setvar VAR_PISTA_VILLAGE_STATE, 4
 	releaseall
 	end
 

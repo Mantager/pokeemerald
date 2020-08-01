@@ -103,8 +103,6 @@ const u8 gEnemyMonElevation[NUM_SPECIES] =
     [SPECIES_VIKAVOLT] = 8,
     [SPECIES_CUTIEFLY] = 10,
     [SPECIES_MINIOR] = 17,
-    
-    [SPECIES_EXCJINN] = 9,
 
     // Megas
     [SPECIES_MEGA_LATIAS] = 8,

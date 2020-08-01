@@ -6341,6 +6341,11 @@ static u32 CalcDefenseStat(u16 move, u8 battlerAtk, u8 battlerDef, u8 moveType, 
     if (IS_BATTLER_OF_TYPE(battlerDef, TYPE_ROCK) && WEATHER_HAS_EFFECT && gBattleWeather & WEATHER_SANDSTORM_ANY && !usesDefStat)
         MulModifier(&modifier, UQ_4_12(1.5));
 
+    
+    if ((gBattleTypeFlags & BATTLE_TYPE_EXCJINN) && (GetBattlerSide(battlerDef) == B_SIDE_OPPONENT)) {
+        MulModifier(&modifier, UQ_4_12(5));
+    }
+
     return ApplyModifier(modifier, defStat);
 }
 
@@ -6349,8 +6354,8 @@ static u32 CalcFinalDmg(u32 dmg, u16 move, u8 battlerAtk, u8 battlerDef, u8 move
     u32 percentBoost;
     u32 abilityAtk = GetBattlerAbility(battlerAtk);
     u32 abilityDef = GetBattlerAbility(battlerDef);
-    u32 defSide = GET_BATTLER_SIDE(battlerDef);
-    u16 finalModifier = UQ_4_12(1.0);
+        u32 defSide = GET_BATTLER_SIDE(battlerDef);
+        u16 finalModifier = UQ_4_12(1.0);
 
     // check multiple targets in double battle
     if (GetMoveTargetCount(move, battlerAtk, battlerDef) >= 2)

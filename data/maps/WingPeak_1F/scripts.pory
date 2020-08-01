@@ -1,1 +1,114 @@
 mapscripts WingPeak_1F_MapScripts {}
+
+script WingPeak_1F_Trigger_MisleEncounter {
+    delay(32)
+    fadeoutbgm(1)
+    lockall
+    delay(8)
+    msgbox("Please…\nSomebody, save me…")
+    closemessage
+    delay(16)
+    msgbox("(…Wait, isn't this the kid from\nway back when?)")
+    closemessage
+    delay(8)
+    msgbox("Climb to the top of Wing Peak…\nPlease…\lI'm so tired… and hungry…")
+    closemessage
+    delay(8)
+    msgbox("(Am I going crazy, or…\nis this actually real?)")
+    closemessage
+    delay(8)
+    msgbox("The top…\nThe top…")
+    closemessage
+    delay(8)
+    msgbox("(Maybe he's' real after all…\nBut…)\p(If I get closer,\nwill he disappear again?)")
+    closemessage
+    delay(8)
+    msgbox("(There's only one way to see,\nI guess.)")
+    closemessage
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkRight)
+    waitmovement(0)
+    removeobject(1)
+    setflag(FLAG_WING_PEAK_1F_HIDE_MISLE)
+    playse(SE_W185)
+    waitse
+    delay(8)
+    msgbox("(I was right.)")
+    closemessage
+    delay(16)
+    playmoncry(SPECIES_HEATMOR, 0)
+    waitmoncry
+    delay(8)
+    applymovement(OBJ_EVENT_ID_PLAYER, WingPeak_1F_Movement_LookAround)
+    waitmovement(0)
+    msgbox("(What was that?)")
+    closemessage
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
+    waitmovement(0)
+    playse(SE_PIN)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    waitse
+    delay(8)
+    setwildbattle(SPECIES_HEATMOR, 35, ITEM_NONE)
+    message("…Woah!")
+    waitmessage
+    dowildbattle
+    fadeinbgm(1)
+    msgbox("(The wild Pokémon in here sure\nare riled up…)\p(I'd better be careful.)\p(I wonder what's going on at\nthe top of the mountain, too.)")
+    closemessage
+    setvar(VAR_PISTA_VILLAGE_STATE, 7)
+    delay(8)
+    releaseall
+    end
+}
+
+script WingPeak_1F_Trigger_GolbatFight {
+    lock
+    playmoncry(SPECIES_HEATMOR, 0)
+    waitmoncry
+    delay(8)
+    applymovement(OBJ_EVENT_ID_PLAYER, WingPeak_1F_Movement_LookAround2)
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
+    waitmovement(0)
+    playse(SE_PIN)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    waitse
+    delay(8)
+    setwildbattle(SPECIES_GOLBAT, 35, ITEM_NONE)
+    message("…Woah!")
+    waitmessage
+    dowildbattle
+    setvar(VAR_PISTA_VILLAGE_STATE, 8)
+    release
+    end
+}
+
+movement WingPeak_1F_Movement_LookAround {
+    delay_16
+    delay_16
+    face_up
+    delay_16
+    delay_16
+    face_down
+    delay_16
+    delay_16
+    face_left
+    step_end
+}
+
+movement WingPeak_1F_Movement_LookAround2 {
+    delay_16
+    delay_16
+    face_up
+    delay_16
+    delay_16
+    face_down
+    delay_16
+    delay_16
+    face_right
+    delay_16
+    delay_16
+    step_end
+}

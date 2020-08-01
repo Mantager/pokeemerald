@@ -3395,6 +3395,7 @@ static void Cmd_jumpbasedontype(void)
 static void Cmd_getexp(void)
 {
     u16 item;
+    u8 levelDifference;
     s32 i; // also used as stringId
     u8 holdEffect;
     s32 sentIn;
@@ -3522,7 +3523,14 @@ static void Cmd_getexp(void)
                     if (gBattleTypeFlags & BATTLE_TYPE_TRAINER && B_TRAINER_EXP_MULTIPLIER <= GEN_7)
                         gBattleMoveDamage = (gBattleMoveDamage * 150) / 100;
 
-                    gBattleMoveDamage = (gBattleMoveDamage * 133) / 100;
+                    if (GetMonData(&gPlayerParty[gBattleStruct->expGetterMonId], MON_DATA_LEVEL) < gBattleMons[gBattlerFainted].level)
+                    {
+                        levelDifference = (gBattleMons[gBattlerFainted].level - GetMonData(&gPlayerParty[gBattleStruct->expGetterMonId], MON_DATA_LEVEL)) * 10;
+                        if (levelDifference > 5)
+                            gBattleMoveDamage = (gBattleMoveDamage * 200) / 100;
+                        else
+                            gBattleMoveDamage = (gBattleMoveDamage * 150) / 100;
+                    }
 
                     if (IsTradedMon(&gPlayerParty[gBattleStruct->expGetterMonId]))
                     {

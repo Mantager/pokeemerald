@@ -70,6 +70,8 @@
 #define TRAINER_G2_LUCA                       66
 #define TRAINER_G2_MALIMO                     67
 #define TRAINER_G2_RYAN                       68
+#define TRAINER_G2_KIREIYA                    69
+#define TRAINER_G2_NAS_2                      70
 #define TRAINER_SAWYER_1                      1
 #define TRAINER_GRUNT_AQUA_HIDEOUT_1          2
 #define TRAINER_GRUNT_AQUA_HIDEOUT_2          3
