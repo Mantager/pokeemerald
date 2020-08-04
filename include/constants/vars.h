@@ -105,7 +105,7 @@
 #define VAR_PISTA_VILLAGE_STATE              0x4056 // Used to track story progress in Pista Village
 #define VAR_PETALBURG_CITY_STATE             0x4057
 #define VAR_SLATEPORT_CITY_STATE             0x4058
-#define VAR_MAUVILLE_CITY_STATE              0x4059 // Unused Var
+#define VAR_MEMLINK_OPPONENT                 0x4059 // Unused Var
 #define VAR_RUSTBORO_CITY_STATE              0x405A
 #define VAR_FORTREE_CITY_STATE               0x405B // Unused Var
 #define VAR_LILYCOVE_CITY_STATE              0x405C // Unused Var

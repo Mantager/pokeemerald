@@ -1,0 +1,71 @@
+mapscripts PrimeCity_MemlinkChamber_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        if(flag(FLAG_FIRST_MEMLINK_COMPLETE) == FALSE) {
+            setvar(VAR_TEMP_3, 1)
+            setobjectxy(1, 6, 5)
+            setobjectxyperm(1, 6, 5)
+        }
+    }
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_TEMP_3, 1 {
+            lockall
+            applymovement(1, Common_Movement_WalkInPlaceDown)
+            waitmovement(0)
+            msgbox("I shall now walk you through Memlink.\pIf you talk to me, then you can set\nthe opponent that you'd like to battle.")
+            closemessage
+            applymovement(1, Common_Movement_FaceLeft)
+            waitmovement(0)
+            msgbox("Once an opponent is set, then\nstand on that green tile.\pThe battle will then begin.")
+            closemessage
+            applymovement(1, Common_Movement_FaceDown)
+            waitmovement(0)
+            msgbox("Please enjoy using Memlink!")
+            closemessage
+            applymovement(1, PrimeCity_MemlinkChamber_Movement_MoveUp)
+            waitmovement(0)
+            setvar(VAR_OBJ_GFX_ID_0, 0)
+            setflag(FLAG_FIRST_MEMLINK_COMPLETE)
+            setvar(VAR_TEMP_3, 0)
+            releaseall
+            end
+        }
+    ]
+}
+
+script PrimeCity_MemlinkChamber_EventScript_OpponentSetter {
+    lock
+    msgbox("Setting opponent to Nas.")
+    closemessage
+    setvar(VAR_MEMLINK_OPPONENT, TRAINER_G2_NAS_2)
+    setvar(VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_NAS)
+    addobject(2)
+    clearflag(FLAG_HIDE_MEMLINK_OPPONENT)
+    applymovement(2, Common_Movement_FaceLeft)
+    waitmovement(0)
+    setvar(VAR_TEMP_4, 0)
+    release
+    end
+}
+
+script PrimeCity_MemlinkChamber_Trigger_OpponentFighter {
+    if(var(VAR_MEMLINK_OPPONENT) == 0) {
+        msgbox("No opponent to fight.")
+        setvar(VAR_TEMP_4, 1)
+        release
+        end
+    } else {
+        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
+        waitmovement(0)
+        delay(4)
+        trainerbattle_no_intro(TRAINER_G2_NAS_2, "Opponent defeated!")
+        setvar(VAR_TEMP_4, 1)
+        release
+        end
+    }
+}
+
+movement PrimeCity_MemlinkChamber_Movement_MoveUp {
+    walk_up * 2
+    face_down
+    step_end
+}

@@ -2,19 +2,30 @@ PistaVillage_Mart_MapScripts::
 	.byte 0
 
 
-PistaVillage_Mart_EventScript_Employee::
+PistaVillage_Mart_EventScript_RegularEmployee::
 	lock
 	faceplayer
 	message gText_HowMayIServeYou
 	waitmessage
-	pokemart PistaVillage_Mart_Pokemart
+	pokemart PistaVillage_Mart_Pokemart_1
+	msgbox gText_PleaseComeAgain
+	release
+	end
+
+
+PistaVillage_Mart_EventScript_TMEmployee::
+	lock
+	faceplayer
+	message gText_HowMayIServeYou
+	waitmessage
+	pokemart PistaVillage_Mart_Pokemart_2, 3
 	msgbox gText_PleaseComeAgain
 	release
 	end
 
 
 	.align 2
-PistaVillage_Mart_Pokemart:
+PistaVillage_Mart_Pokemart_1:
 	.2byte ITEM_POKE_BALL
 	.2byte ITEM_GREAT_BALL
 	.2byte ITEM_ULTRA_BALL
@@ -28,6 +39,17 @@ PistaVillage_Mart_Pokemart:
 	.2byte ITEM_SUPER_REPEL
 	.2byte ITEM_MAX_REPEL
 	.2byte ITEM_FLUFFY_TAIL
+	.2byte ITEM_NONE
+	release
+	end
+
+	.align 2
+PistaVillage_Mart_Pokemart_2:
+	.2byte ITEM_TM35
+	.2byte ITEM_TM24
+	.2byte ITEM_TM13
+	.2byte ITEM_TM19
+	.2byte ITEM_TM36
 	.2byte ITEM_NONE
 	release
 	end

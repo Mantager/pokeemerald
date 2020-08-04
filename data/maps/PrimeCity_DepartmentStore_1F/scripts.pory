@@ -38,6 +38,22 @@ script PrimeCity_DepartmentStore_1F_EventScript_RightEmployee {
     end
 }
 
+script PrimeCity_DepartmentStore_1F_EventScript_AquaCosplayer {
+    lock
+    faceplayer
+    msgbox("We're going to expand the sea!\nDon't get in our way!\p…Just kidding!\pI'm acting in a movie about Team\nAqua, and I'm trying to get a\lfeel for my role.")
+    release
+    end
+}
+
+script PrimeCity_DepartmentStore_1F_EventScript_ThiefKid {
+    lock
+    faceplayer
+    msgbox("… …\n… …\pWhaddaya mean I look suspicious?\nWhy, I oughta…\lgo back to Unova!\pYou Ríotans are so suspicious!")
+    release
+    end
+}
+
 raw `
 	.align 2
 PrimeCity_DepartmentStore_1F_Pokemart1:

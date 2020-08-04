@@ -113,6 +113,8 @@
 #define TRAINER_PIC_RS_MAY                92
 #define TRAINER_PIC_FERN                  93
 #define TRAINER_PIC_NAS                   94
+#define TRAINER_PIC_MALIMO                95
+#define TRAINER_PIC_RYAN                  96
 
 #define TRAINER_BACK_PIC_BRENDAN                0
 #define TRAINER_BACK_PIC_MAY                    1

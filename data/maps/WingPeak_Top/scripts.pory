@@ -3,9 +3,55 @@ mapscripts WingPeak_Top_MapScripts {
         if (var(VAR_PISTA_VILLAGE_STATE) == 9) {
             setflag(FLAG_WING_PEAK_TOP_HIDE_NAS)
         }
+        if (var(VAR_PISTA_VILLAGE_STATE) <= 11) {
+            setflag(FLAG_WING_PEAK_TOP_HIDE_MISLE)
+        }
+        if (var(VAR_PISTA_VILLAGE_STATE) == 12) {
+            clearflag(FLAG_WING_PEAK_TOP_HIDE_MISLE)
+            addobject(5)
+            clearflag(FLAG_WING_PEAK_TOP_HIDE_NAS)
+            addobject(4)
+            setobjectxy(4, 22, 8)
+            setobjectxyperm(4, 22, 8)
+            setobjectmovementtype(4, MOVEMENT_TYPE_FACE_LEFT)
+            setobjectxy(2, 21, 8)
+            setobjectxyperm(2, 21, 8)
+            setobjectmovementtype(2, MOVEMENT_TYPE_FACE_RIGHT)
+            setobjectxy(1, 24, 10)
+            setobjectxyperm(1, 24, 10)
+            setobjectmovementtype(1, MOVEMENT_TYPE_FACE_UP)
+            setobjectxy(3, 25, 9)
+            setobjectxyperm(3, 25, 9)
+            setobjectmovementtype(3, MOVEMENT_TYPE_FACE_LEFT)
+        }
         end
     }
     MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_TEMP_3, 0 {
+            if (var(VAR_PISTA_VILLAGE_STATE) >= 11) {
+                setmetatile(20, 6, 0x079, 1)
+                setmetatile(21, 6, 0x079, 1)
+                setmetatile(24, 6, 0x079, 1)
+                setmetatile(25, 6, 0x079, 1)
+                setmetatile(20, 7, 0x001, 0)
+                setmetatile(21, 7, 0x001, 0)
+                setmetatile(22, 7, 0x001, 0)
+                setmetatile(23, 7, 0x001, 0)
+                setmetatile(24, 7, 0x001, 0)
+                setmetatile(25, 7, 0x001, 0)
+                setmetatile(22, 8, 0x001, 0)
+                setmetatile(23, 8, 0x001, 0)
+                setmetatile(25, 8, 0x001, 0)
+                setmetatile(26, 8, 0x001, 0)
+                setmetatile(25, 9, 0x001, 0)
+                setmetatile(26, 9, 0x001, 0)
+                setmetatile(23, 5, 0x09F, 0)
+                setmetatile(23, 6, 0x0A7, 0)
+                special(DrawWholeMapView)
+            }
+            setvar(VAR_TEMP_3, 1)
+            end
+        }
         VAR_PISTA_VILLAGE_STATE, 9 {
             lockall
             clearflag(FLAG_WING_PEAK_TOP_HIDE_NAS)
@@ -25,6 +71,164 @@ mapscripts WingPeak_Top_MapScripts {
             setflag(FLAG_WING_PEAK_TOP_HIDE_NAS)
             removeobject(4)
             setvar(VAR_PISTA_VILLAGE_STATE, 10)
+            releaseall
+            end
+        }
+        VAR_PISTA_VILLAGE_STATE, 12 {
+            lockall
+            playbgm(MUS_END, 0)
+            applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown)
+            waitmovement(0)
+            delay(4)
+            applymovement(1, Common_Movement_FaceUp)
+            applymovement(2, Common_Movement_FaceUp)
+            applymovement(3, Common_Movement_FaceUp)
+            applymovement(4, Common_Movement_FaceUp)
+            applymovement(5, Common_Movement_FaceUp)
+            waitmovement(0)
+            playse(SE_PIN)
+            applymovement(2, Common_Movement_ExclamationMark)
+            applymovement(4, Common_Movement_ExclamationMark)
+            delay(4)
+            playse(SE_PIN)
+            applymovement(3, Common_Movement_ExclamationMark)
+            applymovement(1, Common_Movement_ExclamationMark)
+            delay(4)
+            playse(SE_PIN)
+            applymovement(5, Common_Movement_ExclamationMark)
+            delay(4)
+            waitmovement(0)
+            msgbox("{COLOR}{BLUE}Clad!\nYou're okay!")
+            msgbox("{COLOR}{GREEN}Hey, our swim star made it!\nJust what happened in there?")
+            closemessage
+            delay(8)
+            applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceDown)
+            waitmovement(0)
+            delay(8)
+            msgbox("Well as it turns out, that\ngenie is real!\pIt granted the kid's wish to\nbe rescued, but tried to trap us\lin the cave to replace him!")
+            applymovement(2, WingPeak_Top_Movement_FernMoveToPlayer)
+            waitmovement(0)
+            applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
+            waitmovement(0)
+            msgbox("{COLOR}{RED}Whaaaaat?!\nSo that means the wish-granting genie\lwas an evil spirit the whole time?!")
+            closemessage
+            applymovement(4, Common_Movement_FaceUp)
+            waitmovement(0)
+            msgbox("It said something about one door\nopening and another one closing.")
+            closemessage
+            delay(8)
+            msgbox("{COLOR}{GREEN}Sounds like some petty tit-for-tat\nthing to me.")
+            closemessage
+            msgbox("{COLOR}{BLUE}Right?\nWhy couldn't it just let the kid out?\pPokémon sure are confusing.")
+            closemessage
+            applymovement(OBJ_EVENT_ID_PLAYER, WingPeak_Top_Movement_PlayerMoveToMisle)
+            message("Speaking of the kid…\nare you okay, man?")
+            waitmessage
+            waitmovement(0)
+            delay(4)
+            applymovement(5, Common_Movement_WalkInPlaceLeft)
+            waitmovement(0)
+            msgbox("I'm hanging on…\nyou guys are so nice.\pYou and the other guy saved my life…\pEveryone out here fed me, and\ngave me a blanket, and well…\lthank you all so much.")
+            closemessage
+            applymovement(3, Common_Movement_WalkInPlaceLeft)
+            waitmovement(0)
+            msgbox("{COLOR}{GREEN}Dude, you were barely alive when\nyou came out of there…\pThere's no need for thanks.\nWe did what we should have.")
+            closemessage
+            special(SpawnCameraObject)
+            applymovement(2, Common_Movement_FaceDown)
+            applymovement(4, Common_Movement_FaceUp)
+            applymovement(OBJ_EVENT_ID_CAMERA, WingPeak_Top_Movement_CameraMoveToFern)
+            applymovement(1, Common_Movement_WalkRight)
+            waitmovement(1)
+            applymovement(1, Common_Movement_FaceUp)
+            applymovement(3, Common_Movement_FaceDown)
+            waitmovement(0)
+            msgbox("{COLOR}{RED}By the way, Nas, I forgive you.\nI think I do, anyway.\pYou hurt me back in the day.\nBut it seems you're willing to change…\pI mean, you came up here just\nto save that guy…")
+            closemessage
+            msgbox("I realised, Fern.\pThe way I treated people just made\nthem not want anything to do\lwith me.\pI didn't have anyone… because I was\ntoo concerned with picking on others.\pI thought that if I didn't, then\nI'd become a target, too.")
+            closemessage
+            msgbox("{COLOR}{RED}The world isn't as scary as you think,\nyou know…")
+            delay(8)
+            msgbox("{COLOR}{RED}After all, I was able to meet such\namazing friends over the years.\pClad, Malimo, and Rye too…\nThey're worth so much to me.")
+            closemessage
+            msgbox("I suppose so…\nno, wait, I know so.\pEven after everything I've done, you're\ntalking to me like this…")
+            closemessage
+            msgbox("{COLOR}{RED}If you're willing to change, then I\ndon't hold a grudge.\pI think the ability to change…\nthat's one of humanity's good points.")
+            closemessage
+            msgbox("Fern…\nyou're pretty interesting.")
+            closemessage
+            msgbox("{COLOR}{RED}Haha, right?!")
+            closemessage
+            applymovement(OBJ_EVENT_ID_CAMERA, WingPeak_Top_Movement_CameraMoveToMalimo)
+            waitmovement(0)
+            msgbox("{COLOR}{BLUE}Well, looks like the genie wasn't what\nwe all thought it was gonna be…")
+            closemessage
+            msgbox("{COLOR}{GREEN}Yeah…\nIt's not a big deal, though, is it?\pI think this is one of those\ntimes where the end result doesn't\lmatter so much.\pAfter all, the trip here\nwas a lot of fun.")
+            closemessage
+            msgbox("{COLOR}{BLUE}I can get behind that.\pThis journey felt so freeing.\pBefore this trip, I was really going\ncrazy with pressure from parents.\pCram school every day, extra homework,\nand prep for entrance exams to\lthe best college in the country…\pIt really did a number on me.")
+            closemessage
+            msgbox("{COLOR}{GREEN}I get the feeling that wasn't what\nyou really wanted to be doing.\pI mean, we're fourteen years old!")
+            closemessage
+            msgbox("{COLOR}{BLUE}You're right.\nBut also, things are tough for you\ltoo, aren't they?\pWorking in the fields and having to miss\nschool some days because of it…")
+            closemessage
+            msgbox("{COLOR}{GREEN}I've got no choice in that.\nI'm from Yanuras Town.\pI haven't got the wealth of you\ncity kids.\pI have to do the jobs that\nthe more well-off don't want to\ldo…")
+            closemessage
+            msgbox("{COLOR}{BLUE}But does it really have to\nbe that way?\pY'know, I was thinking.\pI want to go and do an apprenticeship\nabroad after I'm finished with school.\pYou should come too.")
+            closemessage
+            msgbox("{COLOR}{GREEN}What kind of apprenticeship?")
+            closemessage
+            msgbox("{COLOR}{BLUE}Basicially, it's working on vehicles.\pWhen we were in Pista Village, I\nchecked out the bike shop, and\lthe owner there told me about it.")
+            closemessage
+            msgbox("{COLOR}{GREEN}I don't know…\pI mean, I can't just leave my\nfamily on their own.")
+            closemessage
+            msgbox("{COLOR}{BLUE}Well, this is for the future…\pTo build a better foundation for\nthe future.\pJust sleep on it, alright?")
+            closemessage
+            msgbox("{COLOR}{GREEN}Okay.")
+            applymovement(OBJ_EVENT_ID_CAMERA, WingPeak_Top_Movement_CameraMoveBack)
+            waitmovement(0)
+            special(RemoveCameraObject)
+            msgbox("So, your name…\nwhat is it, man?\pAnd what were you doing all\nthe way up here, anyway?")
+            closemessage
+            msgbox("My name…\nit's Misle.\pI came here climbing…\nI want to be a professional climber.\pYou're Clad, right…?\nI saw you on TV.\lYou won this year's Swim-Off…")
+            closemessage
+            playse(SE_PIN)
+            applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark)
+            waitmovement(0)
+            waitse
+            msgbox("That's me, all right.\pLook… when I trained for the\nSwim-Off, I trained super hard, too.\pBut I almost broke my leg by\ntraining too much once, and…\pAnyway, my point is that you\nshouldn't overdo it.\pIt's dangerous, here, y'know.\pOn this trip, I remembered something\nreally important.\pLife is really beautiful, so you\nshould take care of yourself.\pThat way, you can experience it all…")
+            closemessage
+            delay(8)
+            msgbox("Yeah…\nBy the way…\pI'm kind of craving a burger now…")
+            closemessage
+            delay(8)
+            msgbox("Hahaha!\nThen shall we get going?\pWe'll go and get a whole stack of\nburgers from the best burger place\lI know!")
+            closemessage
+            delay(8)
+            message("Everyone!\nLet's go home!")
+            applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
+            applymovement(4, Common_Movement_FaceRight)
+            delay(32)
+            applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
+            applymovement(1, Common_Movement_FaceLeft)
+            applymovement(3, Common_Movement_FaceLeft)
+            waitmessage
+            waitmovement(0)
+            closemessage
+            delay(8)
+            applymovement(1, Common_Movement_WalkInPlaceLeft)
+            applymovement(3, Common_Movement_WalkInPlaceLeft)
+            applymovement(5, Common_Movement_WalkInPlaceLeft)
+            applymovement(4, Common_Movement_WalkInPlaceRight)
+            applymovement(2, Common_Movement_WalkInPlaceDown)
+            msgbox("Y{COLOR}{RED}e{COLOR}{BLUE}a{COLOR}{GREEN}h!")
+            closemessage
+	        setvar(VAR_TEMP_1, 1)
+	        call(EverGrandeCity_HallOfFame_EventScript_SetGameClearFlags)
+	        setrespawn(HEAL_LOCATION_PRIME_CITY_CLAD_BUILDING_3F_CLAD_ROOM)
+	        fadescreenspeed(FADE_TO_BLACK, 24)
+            setvar(VAR_PISTA_VILLAGE_STATE, 13)
+            special(GameClear)
+            waitstate
             releaseall
             end
         }
@@ -91,7 +295,7 @@ script WingPeak_Top_Trigger_TopEvent {
     delay(16)
     applymovement(4, Common_Movement_WalkInPlaceUp)
     waitmovement(0)
-    msgbox("Wait, Fern!\nIt's true.\pI… I'm sorry, dude.\pI was wrong.\pI picked on you… not because\nI didn't understand you…\lbut because I didn't understand the world.")
+    msgbox("Wait, Fern!\nIt's true.\pI… I'm sorry, dude.\nI was wrong.\pI picked on you… not because\nI didn't understand you…\lbut because I didn't understand\lthe world.")
     closemessage
     delay(8)
     msgbox("{COLOR}{RED}… …\n… …")
@@ -139,7 +343,7 @@ script WingPeak_Top_Trigger_TopEvent {
     closemessage
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp)
     waitmovement(0)
-    msgbox("Since we left Prime City, I've\nbeen seeing things.\pThis kid… he appears and\ndisappears, and tells me to\lsave him.")
+    msgbox("Since we left Prime City, I've\nbeen seeing things.\pThis kid… he appears and disappears,\nand tells me to save him.")
     closemessage
     delay(8)
     msgbox("{COLOR}{GREEN}Woah.\nThat's some real sci-fi stuff.")
@@ -148,7 +352,7 @@ script WingPeak_Top_Trigger_TopEvent {
     delay(8)
     msgbox("He also says to come to Wing Peak.\pI've seen it as well.")
     closemessage
-    msgbox("{COLOR}{BLUE}So you were led here by the kid…\pAnd Clad, you were on the way\nto Wing Peak regardless as\nwe were travelling together.")
+    msgbox("{COLOR}{BLUE}So you were led here by the kid…\pAnd Clad, you were on the way\nto Wing Peak regardless as\lwe were travelling together.")
     applymovement(4, Common_Movement_FaceUp)
     waitmovement(0)
     delay(8)
@@ -159,12 +363,105 @@ script WingPeak_Top_Trigger_TopEvent {
     applymovement(3, Common_Movement_FaceUp)
     waitmovement(0)
     delay(8)
-    playbgm(MUS_VS_EXCJINN, 0)
     msgbox("{COLOR}{GREEN}So the kid's in there?\pBut we can't get in anyway.\nIt's closed off by rocks.\pTrust me, we were trying to clear\nthe entrance whilst we were waiting.")
     closemessage
-	setwildbattle(SPECIES_EXCJINN, 40, ITEM_NONE)
-    special(BattleSetup_StartExcjinnBattle)
+    delay(8)
+    msgbox("Haha, that's no problem for me!")
+    closemessage
+    applymovement(4, Common_Movement_WalkUp3)
+    delay(8)
+    applymovement(2, Common_Movement_WalkLeftBackwards)
+    waitmovement(4)
+    delay(8)
+    fadescreen(1)
+    playse(SE_BOWA2)
+    waitse
+    msgbox("Bouffalant, use Head Charge!")
+    closemessage
+    delay(8)
+    playmoncry(SPECIES_BOUFFALANT,0)
+    waitmoncry
+    delay(16)
+    playse(SE_OP_BASYU)
+    waitse
+    delay(8)
+    msgbox("Good job, Bouffalant.\nReturn!")
+    closemessage
+    playse(SE_BOWA2)
+    waitse
+    applymovement(1, Common_Movement_FaceUp)
+    applymovement(2, Common_Movement_FaceUp)
+    applymovement(3, Common_Movement_FaceUp)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp2)
+    waitmovement(0)
+    setmetatile(20, 6, 0x079, 1)
+    setmetatile(21, 6, 0x079, 1)
+    setmetatile(24, 6, 0x079, 1)
+    setmetatile(25, 6, 0x079, 1)
+    setmetatile(20, 7, 0x001, 0)
+    setmetatile(21, 7, 0x001, 0)
+    setmetatile(22, 7, 0x001, 0)
+    setmetatile(23, 7, 0x001, 0)
+    setmetatile(24, 7, 0x001, 0)
+    setmetatile(25, 7, 0x001, 0)
+    setmetatile(22, 8, 0x001, 0)
+    setmetatile(23, 8, 0x001, 0)
+    setmetatile(25, 8, 0x001, 0)
+    setmetatile(26, 8, 0x001, 0)
+    setmetatile(25, 9, 0x001, 0)
+    setmetatile(26, 9, 0x001, 0)
+    setmetatile(23, 5, 0x09F, 0)
+    setmetatile(23, 6, 0x0A7, 0)
+    special(DrawWholeMapView)
+    fadescreen(0)
+    msgbox("There we go!\nThe way's now clear!")
+    closemessage
+    msgbox("{COLOR}{BLUE}Bouffalant's strength is nuts…")
+    closemessage
+    msgbox("{COLOR}{GREEN}You're telling me.")
+    closemessage
+    applymovement(4, Common_Movement_FaceDown)
+    waitmovement(0)
+    msgbox("Well, Clad, let's go rescue that kid!")
+    closemessage
+    delay(8)
+    applymovement(4, Common_Movement_WalkUp2)
+    waitmovement(0)
+    removeobject(4)
+    setflag(FLAG_WING_PEAK_TOP_HIDE_NAS)
+    playse(SE_KAIDAN)
+    waitse
+    setvar(VAR_PISTA_VILLAGE_STATE, 11)
     releaseall
+    end
+}
+
+script WingPeak_Top_EventScript_Fern {
+    lock
+    faceplayer
+    msgbox("{COLOR}{RED}…")
+    closemessage
+    msgbox("You alright?")
+    closemessage
+    msgbox("{COLOR}{RED}Yeah…\nJust a bit taken aback.")
+    release
+    end
+}
+
+script WingPeak_Top_EventScript_Malimo {
+    lock
+    faceplayer
+    msgbox("{COLOR}{BLUE}I wonder how long that kid's been\ntrapped inside…\pHe must be hanging on by the\nskin of his teeth.")
+    release
+    end
+}
+
+script WingPeak_Top_EventScript_Ryan {
+    lock
+    faceplayer
+    msgbox("{COLOR}{GREEN}We'll wait here for you guys to\ncome back.\pI've got some food for the\nkid in my bag here.")
+    release
     end
 }
 
@@ -180,7 +477,50 @@ movement WingPeak_Top_Movement_NasMoveRight {
     step_end
 }
 
-script WingPeak_Top_EventScript_DebugExcjinnBattle {
-	setwildbattle(SPECIES_EXCJINN, 40, ITEM_NONE)
-    special(BattleSetup_StartExcjinnBattle)
+script WingPeak_Top_EventScript_DebugExcjinnBGM {
+    lock
+    faceplayer
+    delay(96)
+    playbgm(MUS_VS_EXCJINN, 0)
+    release
+    end
+}
+
+script WingPeak_Top_EventScript_CaveDoor {
+    lock
+    msgbox("The entrance is tight, but\nyou can make it through.\pWill you go in?", MSGBOX_YESNO)
+    closemessage
+    release
+    end
+}
+
+movement WingPeak_Top_Movement_FernMoveToPlayer {
+    walk_fast_up
+    walk_fast_right
+    step_end
+}
+
+movement WingPeak_Top_Movement_PlayerMoveToMisle {
+    walk_down * 2
+    face_right
+    step_end
+}
+
+movement WingPeak_Top_Movement_CameraMoveToFern {
+    walk_fast_up * 2
+    walk_fast_left
+    step_end
+}
+
+movement WingPeak_Top_Movement_CameraMoveToMalimo {
+    walk_fast_down * 2
+    walk_fast_right * 3
+    walk_fast_down
+    step_end
+}
+
+movement WingPeak_Top_Movement_CameraMoveBack {
+    walk_fast_up * 2
+    walk_fast_left
+    step_end
 }

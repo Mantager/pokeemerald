@@ -7,7 +7,7 @@ PrimeCity_DepartmentStore_3F_EventScript_Employee::
 	faceplayer
 	message gText_HowMayIServeYou
 	waitmessage
-	pokemart PrimeCity_DepartmentStore_3F_Pokemart1
+	pokemart PrimeCity_DepartmentStore_3F_Pokemart1, 2
 	msgbox gText_PleaseComeAgain
 	release
 	end

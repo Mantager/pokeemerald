@@ -13,6 +13,14 @@ PrimeCity_DepartmentStore_2F_EventScript_Employee::
 	end
 
 
+PrimeCity_DepartmentStore_2F_EventScript_Edgelord::
+	lock
+	faceplayer
+	msgbox PrimeCity_DepartmentStore_2F_EventScript_Edgelord_Text_0
+	release
+	end
+
+
 	.align 2
 PrimeCity_DepartmentStore_2F_Pokemart1:
 	.2byte ITEM_SILK_SCARF
@@ -22,3 +30,6 @@ PrimeCity_DepartmentStore_2F_Pokemart1:
 	.2byte ITEM_NONE
 	release
 	end
+
+PrimeCity_DepartmentStore_2F_EventScript_Edgelord_Text_0:
+	.string "Pssh…\lThey don't sell Dragon Fangs here…\nThis store doesn't deserve to stand…$"

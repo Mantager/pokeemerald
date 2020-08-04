@@ -142,7 +142,7 @@ $(MID_SUBDIR)/mus_eikou_r.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G093 -V080
 
 $(MID_SUBDIR)/mus_end.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G102 -V036
+	$(MID) $< $@ -E -R$(STD_REVERB) -G102 -V090
 
 $(MID_SUBDIR)/mus_event0.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G056 -V078
@@ -1267,7 +1267,7 @@ $(MID_SUBDIR)/seq_oro.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G103 -V100
 
 $(MID_SUBDIR)/seq_vs_nas.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V090
+	$(MID) $< $@ -E -R$(STD_REVERB) -G192 -V090
 
 $(MID_SUBDIR)/seq_vs_excjinn.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V100

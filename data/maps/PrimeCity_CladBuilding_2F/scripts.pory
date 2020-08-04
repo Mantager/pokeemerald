@@ -1,1 +1,17 @@
 mapscripts PrimeCity_CladBuilding_2F_MapScripts {}
+
+script PrimeCity_CladBuilding_2F_EventScript_CityTalker {
+    lock
+    faceplayer
+    msgbox("This city has a deep sickness…\nit's too funky, yo!")
+    release
+    end
+}
+
+script PrimeCity_CladBuilding_2F_EventScript_UrghGirl {
+    lock
+    faceplayer
+    msgbox("Urgh, the guy in the room next\nto me is always partying at 2am.\pMaybe I should call the police\non him, that'll show him not\lto try and one-up my parties.")
+    release
+    end
+}

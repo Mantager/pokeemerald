@@ -133,3 +133,9 @@ Common_Movement_WalkUp3::
 	walk_up
 	walk_up
 	step_end
+
+Common_Movement_WalkLeftBackwards:
+	lock_facing_direction
+	walk_left
+	unlock_facing_direction
+	step_end

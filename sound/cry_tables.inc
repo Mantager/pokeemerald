@@ -810,6 +810,7 @@ gCryTable:: @ 869DCF4
 	cry_not Cry_Zeraora
 	cry_not Cry_Meltan
 	cry_not Cry_Melmetal
+	cry_not Cry_Excjinn
 	@ Megas
 	cry_not Cry_Mega_Ampharos
 	cry_not Cry_Mega_Venusaur
@@ -1720,6 +1721,7 @@ gCryTable2:: @ 869EF24
 	cry2_not Cry_Zeraora
 	cry2_not Cry_Meltan
 	cry2_not Cry_Melmetal
+	cry2_not Cry_Excjinn
 	@ Megas
 	cry2_not Cry_Mega_Ampharos
 	cry2_not Cry_Mega_Venusaur

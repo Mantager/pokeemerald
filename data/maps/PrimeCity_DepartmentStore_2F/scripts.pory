@@ -11,6 +11,14 @@ script PrimeCity_DepartmentStore_2F_EventScript_Employee {
     end
 }
 
+script PrimeCity_DepartmentStore_2F_EventScript_Edgelord {
+    lock
+    faceplayer
+    msgbox("Pssh…\lThey don't sell Dragon Fangs here…\nThis store doesn't deserve to stand…")
+    release
+    end
+}
+
 raw `
 	.align 2
 PrimeCity_DepartmentStore_2F_Pokemart1:

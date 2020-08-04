@@ -10,6 +10,7 @@ PrimeCity_PokemonCenter_1F_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 
 PrimeCity_PokemonCenter_1F_EventScript_Nurse::
 	setvar VAR_0x800B, 1
+	clearflag FLAG_MEMLINK_IN_PROGRESS
 	call Common_EventScript_PkmnCenterNurse
 	waitmessage
 	waitbuttonpress

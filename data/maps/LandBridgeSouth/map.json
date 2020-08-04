@@ -2,7 +2,7 @@
   "id": "MAP_LAND_BRIDGE_SOUTH",
   "name": "LandBridgeSouth",
   "layout": "LAYOUT_LAND_BRIDGE_SOUTH",
-  "music": "MUS_AJITO",
+  "music": "MUS_DOORO_X1",
   "region_map_section": "MAPSEC_LAND_BRIDGE_SOUTH",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",

@@ -648,19 +648,22 @@
     "WingPeak_1F",
     "WingPeak_2F",
     "WingPeak_3F",
+    "WingPeak_4F",
     "WingPeak_Top",
-    "WingPeak_4F"
+    "WingPeak_ExcjinnRoom"
   ],
   "gMapGroup36": [
     "PrimeCity_PokemonCenter_1F",
     "PrimeCity_PokemonCenter_2F",
     "PrimeCity_PokemonCenter_3F",
+    "PrimeCity_MemlinkChamber",
     "PrimeCity_DepartmentStore_1F",
     "PrimeCity_DepartmentStore_2F",
     "PrimeCity_DepartmentStore_3F",
     "PrimeCity_CladBuilding_1F",
     "PrimeCity_CladBuilding_2F",
     "PrimeCity_CladBuilding_3F",
+    "PrimeCity_CladBuilding_3F_CladRoom",
     "PrimeCity_PoliceStation_1F",
     "PrimeCity_PoliceStation_2F",
     "PrimeCity_ApartmentsA_1F",
@@ -676,8 +679,7 @@
     "PrimeCity_ShadyBuilding_1F",
     "PrimeCity_ShadyBuilding_2F",
     "PrimeCity_Nursery",
-    "PrimeCity_SecretBuilding",
-    "PrimeCity_CladBuilding_3F_CladRoom"
+    "PrimeCity_SecretBuilding"
   ],
   "gMapGroup37": [
     "YanurasTown_RyanHouse",

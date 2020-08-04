@@ -14,7 +14,19 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": 0,
   "object_events": [
-
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ROOFTOP_SALE_WOMAN",
+      "x": 11,
+      "y": 3,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "PrimeCity_PokemonCenter_3F_EventScript_MemLinkWoman",
+      "flag": "FLAG_MEMLINK_IN_PROGRESS"
+    }
   ],
   "warp_events": [
     {
@@ -23,6 +35,13 @@
       "elevation": 0,
       "dest_map": "MAP_PRIME_CITY_POKEMON_CENTER_2F",
       "dest_warp_id": 1
+    },
+    {
+      "x": 11,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_PRIME_CITY_MEMLINK_CHAMBER",
+      "dest_warp_id": 0
     }
   ],
   "coord_events": [

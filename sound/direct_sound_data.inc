@@ -3631,6 +3631,10 @@ Cry_Melmetal::
 	.incbin "sound/direct_sound_samples/cry_not_melmetal.bin"
 
 	.align 2
+Cry_Excjinn::
+	.incbin "sound/direct_sound_samples/cry_not_excjinn.bin"
+
+	.align 2
 Cry_Mega_Ampharos::
 	.incbin "sound/direct_sound_samples/cry_not_mega_ampharos.bin"
 

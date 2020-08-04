@@ -1,1 +1,17 @@
 mapscripts PrimeCity_CladBuilding_1F_MapScripts {}
+
+script PrimeCity_CladBuilding_1F_EventScript_PriceLamenter {
+    lock
+    faceplayer
+    msgbox("Sure, the apartments here are pretty\nand well-maintained, but they're\lridiculously expensive!\pMaybe I should move back to Oro Town…")
+    release
+    end
+}
+
+script PrimeCity_CladBuilding_1F_EventScript_RiotaTalker {
+    lock
+    faceplayer
+    msgbox("Kids these days are luckier\nthan they think.\pRíota was a poor country when\nI was a teenager, and I mean POOR!")
+    release
+    end
+}

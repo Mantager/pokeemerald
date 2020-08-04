@@ -192,8 +192,10 @@ const struct CompressedSpriteSheet gTrainerFrontPicTable[] =
     TRAINER_SPRITE(LEAF, gTrainerFrontPic_Leaf, 0x800),
     TRAINER_SPRITE(RS_BRENDAN, gTrainerFrontPic_RubySapphireBrendan, 0x800),
     TRAINER_SPRITE(RS_MAY, gTrainerFrontPic_RubySapphireMay, 0x800),
-    TRAINER_SPRITE(FERN, gTrainerFrontPic_RubySapphireBrendan, 0x800),
-    TRAINER_SPRITE(NAS, gTrainerFrontPic_RubySapphireMay, 0x800),
+    TRAINER_SPRITE(FERN, gTrainerFrontPic_Fern, 0x800),
+    TRAINER_SPRITE(NAS, gTrainerFrontPic_Nas, 0x800),
+    TRAINER_SPRITE(MALIMO, gTrainerFrontPic_Malimo, 0x800),
+    TRAINER_SPRITE(RYAN, gTrainerFrontPic_Ryan, 0x800),
 };
 
 const struct CompressedSpritePalette gTrainerFrontPicPaletteTable[] =
@@ -291,6 +293,8 @@ const struct CompressedSpritePalette gTrainerFrontPicPaletteTable[] =
     TRAINER_PAL(LEAF, gTrainerPalette_Leaf),
     TRAINER_PAL(RS_BRENDAN, gTrainerPalette_RubySapphireBrendan),
     TRAINER_PAL(RS_MAY, gTrainerPalette_RubySapphireMay),
-    TRAINER_PAL(FERN, gTrainerPalette_RubySapphireBrendan),
-    TRAINER_PAL(NAS, gTrainerPalette_RubySapphireMay),
+    TRAINER_PAL(FERN, gTrainerPalette_Fern),
+    TRAINER_PAL(NAS, gTrainerPalette_Nas),
+    TRAINER_PAL(MALIMO, gTrainerPalette_Malimo),
+    TRAINER_PAL(RYAN, gTrainerPalette_Ryan),
 };

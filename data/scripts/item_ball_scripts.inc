@@ -661,3 +661,67 @@ MagmaHideout_3F_3R_EventScript_ItemEscapeRope:: @ 829152C
 LandBridgeNorth_EventScript_ItemExtraBlubber::
 	finditem ITEM_EXTRA_BLUBBER
 	end
+
+NewValleyWay_EventScript_ItemSuperPotion::
+	finditem ITEM_SUPER_POTION
+	end
+
+NewValleyWay_EventScript_ItemEther::
+	finditem ITEM_ETHER
+	end
+
+NewValleyWay_EventScript_ItemTM27::
+	finditem ITEM_TM27
+	end
+
+NewValleyWay_EventScript_ItemHardStone::
+	finditem ITEM_HARD_STONE
+	end
+
+NewValleyWay_EventScript_ItemRevive::
+	finditem ITEM_REVIVE
+	end
+
+NewValleyWay_EventScript_ItemQuickClaw::
+	finditem ITEM_QUICK_CLAW
+	end
+
+NewValleyWay_EventScript_ItemPoisonBarb::
+	finditem ITEM_POISON_BARB
+	end
+
+RocarohaValley_EventScript_ItemSharpBeak::
+	finditem ITEM_SHARP_BEAK
+	end
+
+RocarohaValley_EventScript_ItemBlackBelt::
+	finditem ITEM_BLACK_BELT
+	end
+
+RocarohaValley_EventScript_ItemBlackGlasses::
+	finditem ITEM_BLACK_GLASSES
+	end
+
+RocarohaValley_EventScript_ItemProtectivePads::
+	finditem ITEM_PROTECTIVE_PADS
+	end
+
+RocarohaValley_EventScript_ItemSafetyGoggles::
+	finditem ITEM_SAFETY_GOGGLES
+	end
+
+RocarohaValley_EventScript_ItemTM12::
+	finditem ITEM_TM12
+	end
+
+RocarohaValley_EventScript_ItemTM34::
+	finditem ITEM_TM34
+	end
+
+RocarohaValley_EventScript_ItemTM49::
+	finditem ITEM_TM49
+	end
+
+RocarohaValley_EventScript_ItemTM03::
+	finditem ITEM_TM03
+	end

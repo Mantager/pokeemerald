@@ -24,7 +24,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "WingPeak_Top_EventScript_Malimo",
       "flag": "0"
     },
     {
@@ -37,7 +37,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "WingPeak_Top_EventScript_Fern",
       "flag": "0"
     },
     {
@@ -50,7 +50,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "WingPeak_Top_EventScript_Ryan",
       "flag": "0"
     },
     {
@@ -65,6 +65,19 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
       "flag": "FLAG_WING_PEAK_TOP_HIDE_NAS"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MISLE",
+      "x": 24,
+      "y": 9,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_WING_PEAK_TOP_HIDE_MISLE"
     }
   ],
   "warp_events": [
@@ -74,6 +87,13 @@
       "elevation": 0,
       "dest_map": "MAP_WING_PEAK_4F",
       "dest_warp_id": 1
+    },
+    {
+      "x": 23,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_WING_PEAK_EXCJINN_ROOM",
+      "dest_warp_id": 0
     }
   ],
   "coord_events": [

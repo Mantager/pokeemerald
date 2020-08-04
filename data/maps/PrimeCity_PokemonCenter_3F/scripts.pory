@@ -1,1 +1,52 @@
-mapscripts PrimeCity_PokemonCenter_3F_MapScripts {}
+mapscripts PrimeCity_PokemonCenter_3F_MapScripts {
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_TEMP_1, 0 {
+            if(flag(FLAG_MEMLINK_IN_PROGRESS) == TRUE) {
+                lockall
+                applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown)
+                waitmovement(0)
+                setobjectxy(1, 11, 2)
+                addobject(1)
+                clearflag(FLAG_MEMLINK_IN_PROGRESS)
+                playse(SE_KAIDAN)
+                applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown)
+                applymovement(1, Common_Movement_WalkDown)
+                waitmovement(0)
+                waitse
+                delay(4)
+                applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
+                waitmovement(0)
+                msgbox("We hope to see you again!")
+                closemessage
+                releaseall
+                end
+            }
+            setvar(VAR_TEMP_1, 1)
+        }
+    ]
+}
+
+script PrimeCity_PokemonCenter_3F_EventScript_MemLinkWoman {
+    lock
+    faceplayer
+    if(flag(FLAG_SYS_GAME_CLEAR) == FALSE) {
+        msgbox("We're working on something very\ninteresting indeed, but it isn't ready yet,\lI'm afraid…\pWe hope to see you again!")
+    } elif(flag(FLAG_SYS_GAME_CLEAR) == TRUE) {
+        msgbox("Ah, welcome!\pWould you like to try Memlink?\pIt's a special device that allows\nyou to battle Trainers you've already\lbeaten!\pAll you need to do is remember\nbattling somebody, and the system will\ldo the rest of the work.\pSo, would you like to try it?", MSGBOX_YESNO)
+        if(var(VAR_RESULT) == YES) {
+            msgbox("Please follow me!")
+            closemessage
+            applymovement(1, Common_Movement_WalkUp)
+            waitmovement(0)
+            playse(SE_KAIDAN)
+            removeobject(1)
+            setflag(FLAG_MEMLINK_IN_PROGRESS)
+            applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp2)
+            waitmovement(0)
+            setflag(FLAG_HIDE_MEMLINK_OPPONENT)
+            warp(MAP_PRIME_CITY_MEMLINK_CHAMBER, 0, 0, 0)
+        }
+    }
+    release
+    end
+}

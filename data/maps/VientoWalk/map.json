@@ -2,7 +2,7 @@
   "id": "MAP_VIENTO_WALK",
   "name": "VientoWalk",
   "layout": "LAYOUT_VIENTO_WALK",
-  "music": "MUS_AJITO",
+  "music": "MUS_DOORO_X3",
   "region_map_section": "MAPSEC_VIENTO_WALK",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

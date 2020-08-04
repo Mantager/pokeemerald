@@ -2,7 +2,7 @@
   "id": "MAP_DERIVA_WALK",
   "name": "DerivaWalk",
   "layout": "LAYOUT_DERIVA_WALK",
-  "music": "MUS_AJITO",
+  "music": "MUS_DOORO_X1",
   "region_map_section": "MAPSEC_DERIVA_WALK",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",

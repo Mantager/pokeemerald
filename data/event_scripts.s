@@ -1177,3 +1177,7 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/WingPeak_Top/scripts.inc"
 
 	.include "data/maps/WingPeak_4F/scripts.inc"
+
+	.include "data/maps/WingPeak_ExcjinnRoom/scripts.inc"
+
+	.include "data/maps/PrimeCity_MemlinkChamber/scripts.inc"

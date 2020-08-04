@@ -40,6 +40,22 @@ PrimeCity_DepartmentStore_1F_EventScript_RightEmployee::
 	end
 
 
+PrimeCity_DepartmentStore_1F_EventScript_AquaCosplayer::
+	lock
+	faceplayer
+	msgbox PrimeCity_DepartmentStore_1F_EventScript_AquaCosplayer_Text_0
+	release
+	end
+
+
+PrimeCity_DepartmentStore_1F_EventScript_ThiefKid::
+	lock
+	faceplayer
+	msgbox PrimeCity_DepartmentStore_1F_EventScript_ThiefKid_Text_0
+	release
+	end
+
+
 	.align 2
 PrimeCity_DepartmentStore_1F_Pokemart1:
 	.2byte ITEM_POKE_BALL
@@ -71,3 +87,9 @@ PrimeCity_DepartmentStore_1F_EventScript_EmployeeBlockingDoor_Text_0:
 
 PrimeCity_DepartmentStore_1F_EventScript_CenterEmployee_Text_0:
 	.string "Hi.\nWelcome to the Prime Department Store.$"
+
+PrimeCity_DepartmentStore_1F_EventScript_AquaCosplayer_Text_0:
+	.string "We're going to expand the sea!\nDon't get in our way!\p…Just kidding!\pI'm acting in a movie about Team\nAqua, and I'm trying to get a\lfeel for my role.$"
+
+PrimeCity_DepartmentStore_1F_EventScript_ThiefKid_Text_0:
+	.string "… …\n… …\pWhaddaya mean I look suspicious?\nWhy, I oughta…\lgo back to Unova!\pYou Ríotans are so suspicious!$"

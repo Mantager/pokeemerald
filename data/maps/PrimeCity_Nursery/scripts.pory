@@ -1,1 +1,46 @@
 mapscripts PrimeCity_Nursery_MapScripts {}
+
+script PrimeCity_Nursery_EventScript_Employee {
+    lock
+    faceplayer
+    msgbox("Hi!\nThis is the Nursery!\pWe raise Pokémon that other Trainers\nbring in to us, like a day care!\pUnfortunately, we're all booked up\ntoday, though…")
+    release
+    end
+}
+
+script PrimeCity_Nursery_EventScript_CubchooGiver {
+    lock
+    faceplayer
+    if(flag(FLAG_CUBCHOO_RECIEVED) == FALSE) {
+        msgbox("Hello there…\pUm, sorry to spring such a strange\nrequest on you, but would you take\lthis Pokémon?\pIt was abandoned by its Trainer, and\nI found it outside.\pBut I don't have the time to give\nit the attention that it needs…\pPlease, will you take it?", MSGBOX_YESNO)
+        closemessage
+        if(var(VAR_RESULT) == YES) {
+            getpartysize
+            if(var(VAR_RESULT) == PARTY_SIZE) {
+                msgbox("Sorry, but it seems that you\ndon't have room for this Pokémon…")
+            } else {
+                msgbox("Here, please take it!")
+                closemessage
+                setflag(FLAG_CUBCHOO_RECIEVED)
+                playfanfare(MUS_FANFA4)
+                givemon(SPECIES_CUBCHOO, 12, ITEM_NONE)
+                message("{PLAYER} received Cubchoo!")
+                waitfanfare
+                waitmessage
+                msgbox("Would you like to nickname the\nCubchoo that you recieved?", MSGBOX_YESNO)
+                if(var(VAR_RESULT) == 1) { 
+	                call(Common_EventScript_GetGiftMonPartySlot)
+	                call(Common_EventScript_NameReceivedPartyMon)
+                }
+                msgbox("Please take good care of it.")
+            }
+        } elif(var(VAR_RESULT) == NO) {
+            msgbox("I suppose I shall have to find\nsomeone else to take care of it…")
+        }
+    }
+    else {
+        msgbox("I hope Cubchoo is doing well.\nPlease treat it with lots of love!")
+    }
+    release
+    end
+}
