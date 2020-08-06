@@ -318,43 +318,7 @@
 	.byte 1  @ 106
 	.byte 1  @ 107
 
-.set KeySplitTable5, . - 0
-	.byte 0  
-	.byte 0  
-	.byte 0  
-	.byte 0  
-	.byte 0  
-	.byte 0  
-	.byte 0  
-	.byte 0  
-	.byte 0  
-	.byte 0  
-	.byte 0  
-	.byte 0  
-	.byte 0  
-	.byte 0  
-	.byte 0  
-	.byte 0  
-	.byte 0  
-	.byte 0  
-	.byte 0  
-	.byte 0  
-	.byte 0  
-	.byte 0  
-	.byte 0  
-	.byte 0  
-	.byte 0  
-	.byte 0  
-	.byte 0  
-	.byte 0  
-	.byte 0  
-	.byte 0  
-	.byte 0  
-	.byte 0  
-	.byte 0  
-	.byte 0  
-	.byte 0  
-	.byte 0  
+.set KeySplitTable5, . - 36
 	.byte 0  @ 36
 	.byte 0  @ 37
 	.byte 0  @ 38
@@ -427,20 +391,3 @@
 	.byte 1  @ 105
 	.byte 1  @ 106
 	.byte 1  @ 107
-	.byte 1
-	.byte 1
-	.byte 1
-	.byte 1
-	.byte 1
-	.byte 1
-	.byte 1
-	.byte 1
-	.byte 1
-	.byte 1
-	.byte 1
-	.byte 1
-	.byte 1
-	.byte 1
-	.byte 1
-	.byte 1
-	.byte 1
