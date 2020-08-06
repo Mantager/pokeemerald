@@ -1562,6 +1562,15 @@ bool8 ScrCmd_bufferleadmonspeciesname(struct ScriptContext *ctx)
     return FALSE;
 }
 
+bool8 ScrCmd_bufferpartyindexspecies(struct ScriptContext *ctx)
+{
+    u8 partyIndex = gSpecialVar_0x800A;
+
+    u32 species = GetMonData(&gPlayerParty[partyIndex], MON_DATA_SPECIES, NULL);
+    gSpecialVar_0x8004 = species;
+    return FALSE;
+}
+
 bool8 ScrCmd_bufferpartymonnick(struct ScriptContext *ctx)
 {
     u8 stringVarIndex = ScriptReadByte(ctx);

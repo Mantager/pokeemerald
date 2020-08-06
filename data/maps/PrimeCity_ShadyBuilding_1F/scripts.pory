@@ -1,1 +1,33 @@
 mapscripts PrimeCity_ShadyBuilding_1F_MapScripts {}
+
+script PrimeCity_ShadyBuilding_1F_EventScript_MessGuy {
+    lock
+    faceplayer
+    msgbox("What?\nThe room's a mess?\pWe're students.\nWhat's your excuse, huh?\lHuh?\lHuh?\lHuh?\lThat's what I thought.")
+    release
+    end
+}
+
+script PrimeCity_ShadyBuilding_1F_EventScript_LizargunGuy {
+    lock
+    faceplayer
+    msgbox("Apparently Charmeleon has a secret\nevolution called Lizargun.\pSounds cool, right?\nI bet my Charizard could beat it though.")
+    release
+    end
+}
+
+script PrimeCity_ShadyBuilding_1F_EventScript_RoughNightGuy {
+    lock
+    faceplayer
+    msgbox("Urgh…\nDon't talk to me.\lLast night was crazy.\pI just wanna sit and eat ice cream,\nbut I've got a class later.")
+    release
+    end
+}
+
+script PrimeCity_ShadyBuilding_1F_EventScript_RiotaChampion {
+    lock
+    faceplayer
+    msgbox("Hic…\nyou know kid, I'm Ríota's Champion.\pWhaaat, you don't believe me?\nGet out of here, you loser.")
+    release
+    end
+}

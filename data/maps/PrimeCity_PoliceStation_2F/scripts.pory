@@ -1,1 +1,51 @@
 mapscripts PrimeCity_PoliceStation_2F_MapScripts {}
+
+script PrimeCity_PoliceStation_2F_EventScript_PoliceChief {
+    lock
+    faceplayer
+    msgbox("I'm the Chief of Police here.\nI'll let you in on a secret though.\pI only took the promotion so that\nI'd get a big desk all to myself.")
+    release
+    end
+}
+
+script PrimeCity_PoliceStation_2F_EventScript_RaihanTalkerWoman {
+    lock
+    faceplayer
+    msgbox("Raihan, a famous Trainer from Galar, is\ncoming for an exhibition match soon.\pHe's totally gorgeous!")
+    release
+    end
+}
+
+script PrimeCity_PoliceStation_2F_EventScript_RaihanTalkerMan {
+    lock
+    faceplayer
+    msgbox("We'll have to tighten up security\nfor the Raihan visit.\pPeople tend to get heated after\nbig Pokémon matches.")
+    release
+    end
+}
+
+script PrimeCity_PoliceStation_2F_EventScript_ThiefTalker {
+    lock
+    faceplayer
+    msgbox("We recieved reports of a thief\nstealing house plants once.\pTurns out it was just a Slakoth\nwhich climbed through the window\land ate the plants.\pI don't know how the client didn't\nnotice before, though.")
+    release
+    end
+}
+
+script PrimeCity_PoliceStation_2F_EventScript_StayPrepared {
+    lock
+    faceplayer
+    if(flag(FLAG_RECIEVED_ASSAULT_VEST) == FALSE) {
+        msgbox("In this job, you should be\nprepared for a scrap at all times.\pHere, if you get in a fight,\nthis should help a lot.")
+        giveitem(FLAG_RECIEVED_ASSAULT_VEST)
+        if(var(VAR_RESULT) == 0) { msgbox("Uh, you've got no room for this.") }
+        else {
+            setflag(FLAG_RECIEVED_ASSAULT_VEST)
+            msgbox("If a Pokémon holds that, its Sp. Def\nis boosted, but it can only attack.")
+        }
+    } else {
+        msgbox("If a Pokémon holds that Assault Vest,\nits Sp. Def is boosted,\lbut it can only attack.")
+    }
+    release
+    end
+}

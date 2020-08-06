@@ -12048,7 +12048,7 @@
           "map": "MAP_WING_PEAK_1F",
           "base_label": "gWingPeak_1F0",
           "land_mons": {
-            "encounter_rate": 0,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 32,

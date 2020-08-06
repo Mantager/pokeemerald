@@ -1,1 +1,51 @@
 mapscripts PrimeCity_HouseB_MapScripts {}
+
+script PrimeCity_HouseB_EventScript_DrinkGiver {
+    lock
+    faceplayer
+    if(flag(FLAG_PRIME_CITY_HOUSE_B_RECIEVED_ITEM) == FALSE) {
+        msgbox("Welcome.\nI don't often get guests nowadays.\pWould you like a drink?\nA glass of Lemonade, perhaps?", MSGBOX_YESNO)
+        if(var(VAR_RESULT) == TRUE) {
+            giveitem(ITEM_LEMONADE)
+            if(var(VAR_RESULT) == 0) { goto(PrimeCity_HouseB_EventScript_DrinkGiverBagFull) }
+        } else {
+            msgbox("In that case, how about a Soda Pop?", MSGBOX_YESNO)
+            if(var(VAR_RESULT) == TRUE) {
+                giveitem(ITEM_SODA_POP)
+                if(var(VAR_RESULT) == 0) { goto(PrimeCity_HouseB_EventScript_DrinkGiverBagFull) }
+            } else {
+                msgbox("Does Fresh Water take your fancy?", MSGBOX_YESNO)
+                if(var(VAR_RESULT) == TRUE) {
+                    giveitem(ITEM_FRESH_WATER)
+                    if(var(VAR_RESULT) == 0) { goto(PrimeCity_HouseB_EventScript_DrinkGiverBagFull) }
+                } else {
+                    msgbox("Could I interest you in Moomoo Milk?", MSGBOX_YESNO)
+                    if(var(VAR_RESULT) == TRUE) {
+                        giveitem(ITEM_MOOMOO_MILK)
+                        if(var(VAR_RESULT) == 0) { goto(PrimeCity_HouseB_EventScript_DrinkGiverBagFull) }
+                    } else {
+                        msgbox("How about some Berry Juice?", MSGBOX_YESNO)
+                        if(var(VAR_RESULT) == TRUE) {
+                            giveitem(ITEM_BERRY_JUICE)
+                            if(var(VAR_RESULT) == 0) { goto(PrimeCity_HouseB_EventScript_DrinkGiverBagFull) }
+                        } else {
+                            msgbox("I'm afraid I have nothing else\nfor you to drink…\pMy dearest apologies.")
+                            release
+                            end
+                        }
+                    }
+                }
+            }
+        }
+        setflag(FLAG_PRIME_CITY_HOUSE_B_RECIEVED_ITEM)
+        msgbox("Please enjoy it.")
+        release
+        end
+    }
+}
+
+script PrimeCity_HouseB_EventScript_DrinkGiverBagFull {
+	msgbox(gText_TooBadBagIsFull, MSGBOX_DEFAULT)
+	release
+	end
+}

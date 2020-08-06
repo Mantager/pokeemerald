@@ -565,3 +565,10 @@ gMetatiles_Prime::
 	.align 1
 gMetatileAttributes_Prime::
 	.incbin "data/tilesets/secondary/prime/metatile_attributes.bin"
+	.align 1
+gMetatiles_GenericBuilding2::
+	.incbin "data/tilesets/secondary/generic_building_2/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_GenericBuilding2::
+	.incbin "data/tilesets/secondary/generic_building_2/metatile_attributes.bin"

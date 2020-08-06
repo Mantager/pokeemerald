@@ -160,7 +160,7 @@ $(TILESETGFXDIR)/secondary/pokemon_school/tiles.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -num_tiles 278
 
 $(TILESETGFXDIR)/secondary/pokemon_fan_club/tiles.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -num_tiles 319
+	$(GFX) $< $@ -num_tiles 502
 
 $(TILESETGFXDIR)/secondary/unused_1/tiles.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -num_tiles 17

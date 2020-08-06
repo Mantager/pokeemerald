@@ -4724,8 +4724,8 @@
     {
       "id": "LAYOUT_PRIME_CITY_PRIME_HOTEL",
       "name": "PrimeCity_PrimeHotel_Layout",
-      "width": 20,
-      "height": 20,
+      "width": 14,
+      "height": 14,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_PokemonFanClub",
       "border_filepath": "data/layouts/PrimeCity_PrimeHotel/border.bin",
@@ -4784,8 +4784,8 @@
     {
       "id": "LAYOUT_PRIME_CITY_SHADY_BUILDING_1F",
       "name": "PrimeCity_ShadyBuilding_1F_Layout",
-      "width": 20,
-      "height": 20,
+      "width": 23,
+      "height": 9,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/PrimeCity_ShadyBuilding_1F/border.bin",
@@ -4794,8 +4794,8 @@
     {
       "id": "LAYOUT_PRIME_CITY_SHADY_BUILDING_2F",
       "name": "PrimeCity_ShadyBuilding_2F_Layout",
-      "width": 20,
-      "height": 20,
+      "width": 23,
+      "height": 9,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/PrimeCity_ShadyBuilding_2F/border.bin",
@@ -4814,10 +4814,10 @@
     {
       "id": "LAYOUT_PRIME_CITY_SECRET_BUILDING",
       "name": "PrimeCity_SecretBuilding_Layout",
-      "width": 20,
-      "height": 20,
+      "width": 10,
+      "height": 8,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_GenericBuilding",
+      "secondary_tileset": "gTileset_GenericBuilding2",
       "border_filepath": "data/layouts/PrimeCity_SecretBuilding/border.bin",
       "blockdata_filepath": "data/layouts/PrimeCity_SecretBuilding/map.bin"
     },

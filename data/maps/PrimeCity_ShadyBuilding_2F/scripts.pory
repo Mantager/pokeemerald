@@ -1,1 +1,33 @@
 mapscripts PrimeCity_ShadyBuilding_2F_MapScripts {}
+
+script PrimeCity_ShadyBuilding_2F_EventScript_Bookshelf {
+    lock
+    msgbox("(…What are these magazines?\nThey're uh… something.)")
+    release
+    end
+}
+
+script PrimeCity_ShadyBuilding_2F_EventScript_BookGuy {
+    lock
+    faceplayer
+    msgbox("Kids like you shouldn't read these\nkinds of books.\lGet out of here!")
+    release
+    end
+}
+
+script PrimeCity_ShadyBuilding_2F_EventScript_FatGuy {
+    lock
+    msgbox("Hey, hey, I can handle another…\pAnother cold wet glass with bubbles\nin it, now…\pNuh, no, you've got it all…\nZzzz…")
+    release
+    end
+}
+
+script PrimeCity_ShadyBuilding_2F_EventScript_BattleGuy {
+    lock
+    faceplayer
+    msgbox("Wanna have a Pokémon battle?", MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES) { msgbox("You'd better go find someone else,\nbecause I'm not in the mood for it.") }
+    else { msgbox("What, you think you're too good\nfor a battle with me?\pCocky punk.")}
+    release
+    end
+}

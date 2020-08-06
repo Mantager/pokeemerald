@@ -1,1 +1,42 @@
 mapscripts PrimeCity_PrimeHotel_MapScripts {}
+
+script PrimeCity_PrimeHotel_EventScript_ExpShareReceptionist {
+    lock
+    faceplayer
+    if(flag(FLAG_RECEIVED_EXP_SHARE) == FALSE) {
+        msgbox("Welcome to the Prime Hotel.\pDo you wish to book a room?\nI'm sorry, but we're full right now.\pPlease take this as consolation.")
+        giveitem(ITEM_EXP_SHARE)
+        if(var(VAR_RESULT) == 0) { msgbox("Oh!\nYou have no room for this.") } else {
+            setflag(FLAG_RECEIVED_EXP_SHARE)
+            msgbox("Give that Exp. Share to a Pokémon.\pIt will automatically receive a share\nof experience when an opponent is\lknocked out, even if it had not\lpreviously participated in the battle.")
+        }
+    } else {
+        msgbox("Again, I am so very sorry for\nbeing unable to accommodate you.\pWe hope to see you again.")
+    }
+    release
+    end
+}
+
+script PrimeCity_PrimeHotel_EventScript_FinestHotelReceptionist {
+    lock
+    faceplayer
+    msgbox("This hotel is the finest in Ríota.\pHence, our room prices are quite expensive.\nPlease understand.")
+    release
+    end
+}
+
+script PrimeCity_PrimeHotel_EventScript_PistaVillageOldMan {
+    lock
+    faceplayer
+    msgbox("I'm from Pista Village, so I don't\nvisit Prime City all that often.\pWhen I do however, I always stay\nin this hotel.\pThe quality is unmatched elsewhere.")
+    release
+    end
+}
+
+script PrimeCity_PrimeHotel_EventScript_GameboyKid {
+    lock
+    faceplayer
+    msgbox("In Ríota, Pokémon like Haunter and\nRhydon don't need to be traded\lin order to evolve.")
+    release
+    end
+}

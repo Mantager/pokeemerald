@@ -1,1 +1,25 @@
 mapscripts PrimeCity_PoliceStation_1F_MapScripts {}
+
+script PrimeCity_PoliceStation_1F_EventScript_OfficerDesk {
+    lock
+    faceplayer
+    msgbox("This is Prime City's police station.\pIf you ever do something wrong, then\nwe'll know about it!")
+    release
+    end
+}
+
+script PrimeCity_PoliceStation_1F_EventScript_OfficerIdle {
+    lock
+    faceplayer
+    msgbox("Ríota's actually very light on crime.\pYou could probably call us more 'public\nambassadors' than policemen.")
+    release
+    end
+}
+
+script PrimeCity_PoliceStation_1F_EventScript_OfficerTable {
+    lock
+    faceplayer
+    msgbox("The job pays well, but sometimes it's tiring.\pYou see, I have to wake up really early.")
+    release
+    end
+}

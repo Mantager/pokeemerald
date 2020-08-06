@@ -1724,3 +1724,8 @@
 	setfieldeffectargument 2, \priority
 	dofieldeffect FLDEFF_SPARKLE
 	.endm
+
+	@
+	.macro bufferpartyindexspecies
+	.byte 0xe3
+	.endm

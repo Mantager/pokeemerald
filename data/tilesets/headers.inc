@@ -841,3 +841,14 @@ gTileset_Prime::
 	.4byte gMetatiles_Prime
 	.4byte gMetatileAttributes_Prime
 	.4byte NULL
+
+	.align 2
+gTileset_GenericBuilding2::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_GenericBuilding2
+	.4byte gTilesetPalettes_GenericBuilding2
+	.4byte gMetatiles_GenericBuilding2
+	.4byte gMetatileAttributes_GenericBuilding2
+	.4byte NULL
