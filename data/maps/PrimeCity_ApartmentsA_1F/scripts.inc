@@ -24,7 +24,7 @@ PrimeCity_ApartmentsA_1F_EventScript_WantToSeeGolbat_5:
 	compare VAR_0x800A, 255
 	goto_if_eq PrimeCity_ApartmentsA_1F_EventScript_WantToSeeGolbat_8
 	bufferpartyindexspecies
-	compare VAR_0x800A, SPECIES_GOLBAT
+	compare VAR_0x8004, SPECIES_GOLBAT
 	goto_if_eq PrimeCity_ApartmentsA_1F_EventScript_WantToSeeGolbat_11
 	msgbox PrimeCity_ApartmentsA_1F_EventScript_WantToSeeGolbat_Text_5
 	goto PrimeCity_ApartmentsA_1F_EventScript_WantToSeeGolbat_1

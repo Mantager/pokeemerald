@@ -12,7 +12,7 @@ script PrimeCity_ApartmentsA_1F_EventScript_WantToSeeGolbat {
                 msgbox("Changed your mind?\nAw.")
                 } else {
                         bufferpartyindexspecies
-                        if(var(VAR_0x800A) == SPECIES_GOLBAT) {
+                        if(var(VAR_0x8004) == SPECIES_GOLBAT) {
                                 msgbox("That's it!\nA Golbat!\lMan, it's cool!\pOkay, take this!")
                                 closemessage
                                 giveitem(ITEM_SOOTHE_BELL)
