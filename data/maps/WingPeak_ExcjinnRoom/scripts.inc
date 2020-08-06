@@ -221,6 +221,10 @@ WingPeak_ExcjinnRoom_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE_0:
 	waitmovement 0
 	setvar VAR_PISTA_VILLAGE_STATE, 12
 	warp MAP_WING_PEAK_TOP, 1, 0, 0
+	setflag FLAG_WING_PEAK_EXCJINN_ROOM_HIDE_ROCKS
+	removeobject 3
+	removeobject 4
+	removeobject 5
 	releaseall
 	end
 

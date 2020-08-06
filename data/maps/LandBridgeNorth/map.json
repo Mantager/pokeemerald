@@ -141,6 +141,71 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "LandBridgeNorth_EventScript_ItemExtraBlubber",
       "flag": "FLAG_ITEM_LAND_BRIDGE_NORTH_EXTRA_BLUBBER"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 2,
+      "y": 49,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "LandBridgeNorth_EventScript_ItemRockyHelmet",
+      "flag": "FLAG_ITEM_LAND_BRIDGE_NORTH_ROCKY_HELMET"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 30,
+      "y": 18,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "LandBridgeNorth_EventScript_ItemChoiceScarf",
+      "flag": "FLAG_ITEM_LAND_BRIDGE_NORTH_CHOICE_SCARF"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 10,
+      "y": 25,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "LandBridgeNorth_EventScript_ItemTM21",
+      "flag": "FLAG_ITEM_LAND_BRIDGE_NORTH_TM21"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 23,
+      "y": 51,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "LandBridgeNorth_EventScript_ItemTM31",
+      "flag": "FLAG_ITEM_LAND_BRIDGE_NORTH_TM31"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 10,
+      "y": 32,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "LandBridgeNorth_EventScript_ItemSilverPowder",
+      "flag": "FLAG_ITEM_LAND_BRIDGE_NORTH_SILVER_POWDER"
     }
   ],
   "warp_events": [

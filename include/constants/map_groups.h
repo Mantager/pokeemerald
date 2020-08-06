@@ -602,13 +602,14 @@
 #define MAP_AGUDO_WOODLAND    (11 | (34 << 8))
 
 // Map Group 35
-#define MAP_ROCAROHA_VALLEY_CAVE   (0 | (35 << 8))
-#define MAP_WING_PEAK_1F           (1 | (35 << 8))
-#define MAP_WING_PEAK_2F           (2 | (35 << 8))
-#define MAP_WING_PEAK_3F           (3 | (35 << 8))
-#define MAP_WING_PEAK_4F           (4 | (35 << 8))
-#define MAP_WING_PEAK_TOP          (5 | (35 << 8))
-#define MAP_WING_PEAK_EXCJINN_ROOM (6 | (35 << 8))
+#define MAP_ROCAROHA_VALLEY_CAVE       (0 | (35 << 8))
+#define MAP_WING_PEAK_1F               (1 | (35 << 8))
+#define MAP_WING_PEAK_2F               (2 | (35 << 8))
+#define MAP_WING_PEAK_3F               (3 | (35 << 8))
+#define MAP_WING_PEAK_4F               (4 | (35 << 8))
+#define MAP_WING_PEAK_TOP              (5 | (35 << 8))
+#define MAP_WING_PEAK_EXCJINN_ROOM     (6 | (35 << 8))
+#define MAP_WING_PEAK_SECRET_BOSS_ROOM (7 | (35 << 8))
 
 // Map Group 36
 #define MAP_PRIME_CITY_POKEMON_CENTER_1F          (0 | (36 << 8))
@@ -656,6 +657,7 @@
 // Map Group 39
 #define MAP_ORO_TOWN_POKEMON_CENTER (0 | (39 << 8))
 #define MAP_ORO_TOWN_HOUSE_A        (1 | (39 << 8))
+#define MAP_ORO_TOWN_MART           (2 | (39 << 8))
 
 // Map Group 40
 #define MAP_PISTA_VILLAGE_POKEMON_CENTER (0 | (40 << 8))

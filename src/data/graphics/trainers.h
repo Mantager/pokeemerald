@@ -298,5 +298,5 @@ const u32 gTrainerPalette_Nas[] = INCBIN_U32("graphics/trainers/palettes/nas.gba
 const u32 gTrainerFrontPic_Malimo[] = INCBIN_U32("graphics/trainers/front_pics/malimo.4bpp.lz");
 const u32 gTrainerPalette_Malimo[] = INCBIN_U32("graphics/trainers/palettes/malimo.gbapal.lz");
 
-const u32 gTrainerFrontPic_Nas[] = INCBIN_U32("graphics/trainers/front_pics/ryan.4bpp.lz");
-const u32 gTrainerPalette_Nas[] = INCBIN_U32("graphics/trainers/palettes/ryan.gbapal.lz");
+const u32 gTrainerFrontPic_Ryan[] = INCBIN_U32("graphics/trainers/front_pics/ryan.4bpp.lz");
+const u32 gTrainerPalette_Ryan[] = INCBIN_U32("graphics/trainers/palettes/ryan.gbapal.lz");

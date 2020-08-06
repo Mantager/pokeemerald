@@ -1181,3 +1181,7 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/WingPeak_ExcjinnRoom/scripts.inc"
 
 	.include "data/maps/PrimeCity_MemlinkChamber/scripts.inc"
+
+	.include "data/maps/OroTown_Mart/scripts.inc"
+
+	.include "data/maps/WingPeak_SecretBossRoom/scripts.inc"

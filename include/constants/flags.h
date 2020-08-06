@@ -41,54 +41,54 @@
 #define FLAG_TEMP_1F     (TEMP_FLAGS_START + 0x1F)
 #define TEMP_FLAGS_END   FLAG_TEMP_1F
 
-#define FLAG_ITEM_LAND_BRIDGE_NORTH_EXTRA_BLUBBER    0x20 // Unused Flag
-#define FLAG_ITEM_NEW_VALLEY_WAY_SUPER_POTION    0x21 // Unused Flag
-#define FLAG_ITEM_NEW_VALLEY_WAY_ETHER    0x22 // Unused Flag
-#define FLAG_ITEM_NEW_VALLEY_WAY_TM27    0x23 // Unused Flag
-#define FLAG_ITEM_NEW_VALLEY_WAY_HARD_STONE    0x24 // Unused Flag
-#define FLAG_ITEM_NEW_VALLEY_WAY_REVIVE    0x25 // Unused Flag
-#define FLAG_ITEM_NEW_VALLEY_WAY_QUICK_CLAW    0x26 // Unused Flag
-#define FLAG_ITEM_NEW_VALLEY_WAY_POISON_BARB    0x27 // Unused Flag
-#define FLAG_ITEM_ROCAROHA_VALLEY_SHARP_BEAK    0x28 // Unused Flag
-#define FLAG_ITEM_ROCAROHA_VALLEY_BLACK_BELT    0x29 // Unused Flag
-#define FLAG_ITEM_ROCAROHA_VALLEY_BLACK_GLASSES    0x2A // Unused Flag
-#define FLAG_ITEM_ROCAROHA_VALLEY_PROTECTIVE_PADS    0x2B // Unused Flag
-#define FLAG_ITEM_ROCAROHA_VALLEY_SAFETY_GOGGLES    0x2C // Unused Flag
-#define FLAG_ITEM_ROCAROHA_VALLEY_TM12    0x2D // Unused Flag
-#define FLAG_ITEM_ROCAROHA_VALLEY_TM34    0x2E // Unused Flag
-#define FLAG_ITEM_ROCAROHA_VALLEY_TM49    0x2F // Unused Flag
-#define FLAG_ITEM_DELAGUA_TOWN_TM03    0x30 // Unused Flag
-#define FLAG_UNUSED_0x031    0x31 // Unused Flag
-#define FLAG_UNUSED_0x032    0x32 // Unused Flag
-#define FLAG_UNUSED_0x033    0x33 // Unused Flag
-#define FLAG_UNUSED_0x034    0x34 // Unused Flag
-#define FLAG_UNUSED_0x035    0x35 // Unused Flag
-#define FLAG_UNUSED_0x036    0x36 // Unused Flag
-#define FLAG_UNUSED_0x037    0x37 // Unused Flag
-#define FLAG_UNUSED_0x038    0x38 // Unused Flag
-#define FLAG_UNUSED_0x039    0x39 // Unused Flag
-#define FLAG_UNUSED_0x03A    0x3A // Unused Flag
-#define FLAG_UNUSED_0x03B    0x3B // Unused Flag
-#define FLAG_UNUSED_0x03C    0x3C // Unused Flag
-#define FLAG_UNUSED_0x03D    0x3D // Unused Flag
-#define FLAG_UNUSED_0x03E    0x3E // Unused Flag
-#define FLAG_UNUSED_0x03F    0x3F // Unused Flag
-#define FLAG_UNUSED_0x040    0x40 // Unused Flag
-#define FLAG_UNUSED_0x041    0x41 // Unused Flag
-#define FLAG_UNUSED_0x042    0x42 // Unused Flag
-#define FLAG_UNUSED_0x043    0x43 // Unused Flag
-#define FLAG_UNUSED_0x044    0x44 // Unused Flag
-#define FLAG_UNUSED_0x045    0x45 // Unused Flag
-#define FLAG_UNUSED_0x046    0x46 // Unused Flag
-#define FLAG_UNUSED_0x047    0x47 // Unused Flag
-#define FLAG_UNUSED_0x048    0x48 // Unused Flag
-#define FLAG_UNUSED_0x049    0x49 // Unused Flag
-#define FLAG_UNUSED_0x04A    0x4A // Unused Flag
-#define FLAG_UNUSED_0x04B    0x4B // Unused Flag
-#define FLAG_UNUSED_0x04C    0x4C // Unused Flag
-#define FLAG_UNUSED_0x04D    0x4D // Unused Flag
-#define FLAG_UNUSED_0x04E    0x4E // Unused Flag
-#define FLAG_UNUSED_0x04F    0x4F // Unused Flag
+#define FLAG_ITEM_LAND_BRIDGE_NORTH_EXTRA_BLUBBER    0x20 
+#define FLAG_ITEM_NEW_VALLEY_WAY_SUPER_POTION    0x21 
+#define FLAG_ITEM_NEW_VALLEY_WAY_ETHER    0x22 
+#define FLAG_ITEM_NEW_VALLEY_WAY_TM27    0x23 
+#define FLAG_ITEM_NEW_VALLEY_WAY_HARD_STONE    0x24 
+#define FLAG_ITEM_NEW_VALLEY_WAY_REVIVE    0x25 
+#define FLAG_ITEM_NEW_VALLEY_WAY_QUICK_CLAW    0x26 
+#define FLAG_ITEM_NEW_VALLEY_WAY_POISON_BARB    0x27 
+#define FLAG_ITEM_ROCAROHA_VALLEY_SHARP_BEAK    0x28 
+#define FLAG_ITEM_ROCAROHA_VALLEY_BLACK_BELT    0x29 
+#define FLAG_ITEM_ROCAROHA_VALLEY_BLACK_GLASSES    0x2A 
+#define FLAG_ITEM_ROCAROHA_VALLEY_PROTECTIVE_PADS    0x2B 
+#define FLAG_ITEM_ROCAROHA_VALLEY_SAFETY_GOGGLES    0x2C 
+#define FLAG_ITEM_ROCAROHA_VALLEY_TM12    0x2D 
+#define FLAG_ITEM_ROCAROHA_VALLEY_TM34    0x2E 
+#define FLAG_ITEM_ROCAROHA_VALLEY_TM49    0x2F 
+#define FLAG_ITEM_DELAGUA_TOWN_TM03    0x30 
+#define FLAG_ITEM_DERIVA_WALK_TM20    0x31 
+#define FLAG_ITEM_DERIVA_WALK_BIG_ROOT    0x32 
+#define FLAG_ITEM_DERIVA_WALK_HYPER_POTION    0x33 
+#define FLAG_ITEM_DERIVA_WALK_SHELL_BELL    0x34 
+#define FLAG_ITEM_DERIVA_WALK_SCOPE_LENS    0x35 
+#define FLAG_ITEM_DERIVA_WALK_WISE_GLASSES    0x36 
+#define FLAG_ITEM_DERIVA_WALK_TM39    0x37 
+#define FLAG_ITEM_LAND_BRIDGE_SOUTH_MUSCLE_BAND    0x38 
+#define FLAG_ITEM_LAND_BRIDGE_SOUTH_AIR_BALLOON    0x39 
+#define FLAG_ITEM_LAND_BRIDGE_SOUTH_GRIP_CLAW    0x3A 
+#define FLAG_ITEM_LAND_BRIDGE_SOUTH_STICKY_BARB    0x3B 
+#define FLAG_ITEM_LAND_BRIDGE_SOUTH_TM09    0x3C 
+#define FLAG_ITEM_LAND_BRIDGE_SOUTH_TM40    0x3D 
+#define FLAG_ITEM_LAND_BRIDGE_NORTH_ROCKY_HELMET    0x3E 
+#define FLAG_ITEM_LAND_BRIDGE_NORTH_CHOICE_SCARF    0x3F 
+#define FLAG_ITEM_LAND_BRIDGE_NORTH_TM21    0x40 
+#define FLAG_ITEM_LAND_BRIDGE_NORTH_TM31    0x41 
+#define FLAG_ITEM_VIENTO_WALK_SITRUS_BERRY    0x42 
+#define FLAG_ITEM_VIENTO_WALK_LUM_BERRY    0x43 
+#define FLAG_ITEM_VIENTO_WALK_SALAC_BERRY    0x44 
+#define FLAG_ITEM_VIENTO_WALK_GANLON_BERRY    0x45 
+#define FLAG_ITEM_VIENTO_WALK_PETAYA_BERRY    0x46 
+#define FLAG_ITEM_VIENTO_WALK_LIECHI_BERRY    0x47 
+#define FLAG_ITEM_VIENTO_WALK_TM16    0x48 
+#define FLAG_ITEM_VIENTO_WALK_TM33    0x49 
+#define FLAG_ITEM_AGUDO_WOODLAND_TM01    0x4A 
+#define FLAG_ITEM_AGUDO_WOODLAND_TM29    0x4B 
+#define FLAG_ITEM_AGUDO_WOODLAND_TM30    0x4C 
+#define FLAG_ITEM_AGUDO_WOODLAND_TM42    0x4D 
+#define FLAG_ITEM_AGUDO_WOODLAND_POWER_HERB    0x4E 
+#define FLAG_ITEM_AGUDO_WOODLAND_WHITE_HERB    0x4F 
 
 // Scripts
 #define FLAG_HIDE_RAYQUAZA_SKY_TOWER_SUMMIT  0x50
@@ -650,29 +650,29 @@
 #define FLAG_HIDDEN_ITEM_ROUTE_128_HEART_SCALE_2             (FLAG_HIDDEN_ITEMS_START + 0x5D)
 #define FLAG_HIDDEN_ITEM_ROUTE_128_HEART_SCALE_3             (FLAG_HIDDEN_ITEMS_START + 0x5E)
 
-#define FLAG_UNUSED_0x264  0x264 // Unused Flag
-#define FLAG_UNUSED_0x265  0x265 // Unused Flag
-#define FLAG_UNUSED_0x266  0x266 // Unused Flag
-#define FLAG_UNUSED_0x267  0x267 // Unused Flag
-#define FLAG_UNUSED_0x268  0x268 // Unused Flag
-#define FLAG_UNUSED_0x269  0x269 // Unused Flag
-#define FLAG_UNUSED_0x26A  0x26A // Unused Flag
-#define FLAG_UNUSED_0x26B  0x26B // Unused Flag
-#define FLAG_UNUSED_0x26C  0x26C // Unused Flag
-#define FLAG_UNUSED_0x26D  0x26D // Unused Flag
-#define FLAG_UNUSED_0x26E  0x26E // Unused Flag
-#define FLAG_UNUSED_0x26F  0x26F // Unused Flag
-#define FLAG_UNUSED_0x270  0x270 // Unused Flag
-#define FLAG_UNUSED_0x271  0x271 // Unused Flag
-#define FLAG_UNUSED_0x272  0x272 // Unused Flag
-#define FLAG_UNUSED_0x273  0x273 // Unused Flag
-#define FLAG_UNUSED_0x274  0x274 // Unused Flag
-#define FLAG_UNUSED_0x275  0x275 // Unused Flag
-#define FLAG_UNUSED_0x276  0x276 // Unused Flag
-#define FLAG_UNUSED_0x277  0x277 // Unused Flag
-#define FLAG_UNUSED_0x278  0x278 // Unused Flag
-#define FLAG_UNUSED_0x279  0x279 // Unused Flag
-#define FLAG_UNUSED_0x27A  0x27A // Unused Flag
+#define FLAG_ITEM_AGUDO_WOODLAND_TWISTED_SPOON  0x264 // Unused Flag
+#define FLAG_ITEM_AGUDO_WOODLAND_SPELL_TAG  0x265 // Unused Flag
+#define FLAG_ITEM_AGUDO_WOODLAND_BLACK_SLUDGE  0x266 // Unused Flag
+#define FLAG_ITEM_ROCAROHA_VALLEY_CAVE_DRAGON_FANG  0x267 // Unused Flag
+#define FLAG_ITEM_ORO_TOWN_MAGNET  0x268 // Unused Flag
+#define FLAG_ITEM_LAND_BRIDGE_NORTH_SILVER_POWDER  0x269 // Unused Flag
+#define FLAG_ITEM_WING_PEAK_1F_TM02  0x26A // Unused Flag
+#define FLAG_ITEM_WING_PEAK_1F_PROTECTOR  0x26B // Unused Flag
+#define FLAG_ITEM_WING_PEAK_1F_METAL_COAT  0x26C // Unused Flag
+#define FLAG_ITEM_WING_PEAK_1F_MAX_POTION  0x26D // Unused Flag
+#define FLAG_ITEM_WING_PEAK_2F_FOCUS_SASH  0x26E // Unused Flag
+#define FLAG_ITEM_WING_PEAK_2F_REVIVE  0x26F // Unused Flag
+#define FLAG_ITEM_WING_PEAK_2F_FULL_HEAL  0x270 // Unused Flag
+#define FLAG_ITEM_WING_PEAK_2F_ELIXIR  0x271 // Unused Flag
+#define FLAG_ITEM_WING_PEAK_3F_TM15  0x272 // Unused Flag
+#define FLAG_ITEM_WING_PEAK_3F_TM23  0x273 // Unused Flag
+#define FLAG_ITEM_WING_PEAK_3F_ESCAPE_ROPE  0x274 // Unused Flag
+#define FLAG_ITEM_WING_PEAK_3F_PP_UP  0x275 // Unused Flag
+#define FLAG_ITEM_WING_PEAK_3F_MAX_REVIVE  0x276 // Unused Flag
+#define FLAG_ITEM_WING_PEAK_3F_RARE_CANDY  0x277 // Unused Flag
+#define FLAG_ITEM_WING_PEAK_3F_FULL_RESTORE  0x278 // Unused Flag
+#define FLAG_ITEM_AGUDO_WOODLAND_SHINY_STONE  0x279 // Unused Flag
+#define FLAG_ITEM_AGUDO_WOODLAND_DUSK_STONE  0x27A // Unused Flag
 #define FLAG_UNUSED_0x27B  0x27B // Unused Flag
 #define FLAG_UNUSED_0x27C  0x27C // Unused Flag
 #define FLAG_UNUSED_0x27D  0x27D // Unused Flag

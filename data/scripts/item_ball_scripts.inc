@@ -722,6 +722,222 @@ RocarohaValley_EventScript_ItemTM49::
 	finditem ITEM_TM49
 	end
 
-RocarohaValley_EventScript_ItemTM03::
+DelaguaTown_EventScript_ItemTM03::
 	finditem ITEM_TM03
+	end
+
+DerivaWalk_EventScript_ItemTM20::
+	finditem ITEM_TM20
+	end
+
+DerivaWalk_EventScript_ItemBigRoot::
+	finditem ITEM_BIG_ROOT
+	end
+
+DerivaWalk_EventScript_ItemHyperPotion::
+	finditem ITEM_HYPER_POTION
+	end
+
+DerivaWalk_EventScript_ItemShellBell::
+	finditem ITEM_SHELL_BELL
+	end
+
+DerivaWalk_EventScript_ItemScopeLens::
+	finditem ITEM_SCOPE_LENS
+	end
+
+DerivaWalk_EventScript_ItemWiseGlasses::
+	finditem ITEM_WISE_GLASSES
+	end
+
+DerivaWalk_EventScript_ItemTM39::
+	finditem ITEM_TM39
+	end
+
+LandBridgeSouth_EventScript_ItemMuscleBand::
+	finditem ITEM_MUSCLE_BAND
+	end
+
+LandBridgeSouth_EventScript_ItemAirBalloon::
+	finditem ITEM_AIR_BALLOON
+	end
+
+LandBridgeSouth_EventScript_ItemGripClaw::
+	finditem ITEM_GRIP_CLAW
+	end
+
+LandBridgeSouth_EventScript_ItemStickyBarb::
+	finditem ITEM_STICKY_BARB
+	end
+
+LandBridgeSouth_EventScript_ItemTM09::
+	finditem ITEM_TM09
+	end
+
+LandBridgeSouth_EventScript_ItemTM40::
+	finditem ITEM_TM40
+	end
+
+LandBridgeNorth_EventScript_ItemRockyHelmet::
+	finditem ITEM_ROCKY_HELMET
+	end
+
+LandBridgeNorth_EventScript_ItemChoiceScarf::
+	finditem ITEM_CHOICE_SCARF
+	end
+
+LandBridgeNorth_EventScript_ItemTM21::
+	finditem ITEM_TM21
+	end
+
+LandBridgeNorth_EventScript_ItemTM31::
+	finditem ITEM_TM31
+	end
+
+VientoWalk_EventScript_ItemSitrusBerry::
+	finditem ITEM_SITRUS_BERRY
+	end
+
+VientoWalk_EventScript_ItemLumBerry::
+	finditem ITEM_LUM_BERRY
+	end
+
+VientoWalk_EventScript_ItemSalacBerry::
+	finditem ITEM_SALAC_BERRY
+	end
+
+VientoWalk_EventScript_ItemGanlonBerry::
+	finditem ITEM_GANLON_BERRY
+	end
+
+VientoWalk_EventScript_ItemPetayaBerry::
+	finditem ITEM_PETAYA_BERRY
+	end
+
+VientoWalk_EventScript_ItemLiechiBerry::
+	finditem ITEM_LIECHI_BERRY
+	end
+
+VientoWalk_EventScript_ItemTM16::
+	finditem ITEM_TM16
+	end
+
+VientoWalk_EventScript_ItemTM33::
+	finditem ITEM_TM33
+	end
+
+AgudoWoodland_EventScript_ItemTM01::
+	finditem ITEM_TM01
+	end
+
+AgudoWoodland_EventScript_ItemTM29::
+	finditem ITEM_TM29
+	end
+
+AgudoWoodland_EventScript_ItemTM30::
+	finditem ITEM_TM30
+	end
+
+AgudoWoodland_EventScript_ItemTM42::
+	finditem ITEM_TM42
+	end
+
+AgudoWoodland_EventScript_ItemPowerHerb::
+	finditem ITEM_POWER_HERB
+	end
+
+AgudoWoodland_EventScript_ItemWhiteHerb::
+	finditem ITEM_WHITE_HERB
+	end
+
+AgudoWoodland_EventScript_ItemTwistedSpoon::
+	finditem ITEM_TWISTED_SPOON
+	end
+
+AgudoWoodland_EventScript_ItemSpellTag::
+	finditem ITEM_SPELL_TAG
+	end
+
+AgudoWoodland_EventScript_ItemBlackSludge::
+	finditem ITEM_BLACK_SLUDGE
+	end
+
+RocarohaValley_Cave_EventScript_ItemDragonFang::
+	finditem ITEM_DRAGON_FANG
+	end
+
+OroTown_EventScript_ItemMagnet::
+	finditem ITEM_MAGNET
+	end
+
+LandBridgeNorth_EventScript_ItemSilverPowder::
+	finditem ITEM_SILVER_POWDER
+	end
+
+WingPeak_1F_EventScript_ItemTM02::
+	finditem ITEM_TM02
+	end
+
+WingPeak_1F_EventScript_ItemProtector::
+	finditem ITEM_PROTECTOR
+	end
+
+WingPeak_1F_EventScript_ItemMetalCoat::
+	finditem ITEM_METAL_COAT
+	end
+
+WingPeak_1F_EventScript_ItemMaxPotion::
+	finditem ITEM_MAX_POTION
+	end
+
+WingPeak_2F_EventScript_ItemFocusSash::
+	finditem ITEM_FOCUS_SASH
+	end
+
+WingPeak_2F_EventScript_ItemRevive::
+	finditem ITEM_REVIVE
+	end
+
+WingPeak_2F_EventScript_ItemFullHeal::
+	finditem ITEM_FULL_HEAL
+	end
+
+WingPeak_2F_EventScript_ItemElixir::
+	finditem ITEM_ELIXIR
+	end
+
+WingPeak_3F_EventScript_ItemTM15::
+	finditem ITEM_TM15
+	end
+
+WingPeak_3F_EventScript_ItemTM23::
+	finditem ITEM_TM23
+	end
+
+WingPeak_3F_EventScript_ItemEscapeRope::
+	finditem ITEM_ESCAPE_ROPE
+	end
+
+WingPeak_3F_EventScript_ItemPPUp::
+	finditem ITEM_PP_UP
+	end
+
+WingPeak_3F_EventScript_ItemMaxRevive::
+	finditem ITEM_MAX_REVIVE
+	end
+
+WingPeak_3F_EventScript_ItemRareCandy::
+	finditem ITEM_RARE_CANDY
+	end
+
+WingPeak_3F_EventScript_ItemFullRestore::
+	finditem ITEM_FULL_RESTORE
+	end
+
+AgudoWoodland_EventScript_ItemShinyStone::
+	finditem ITEM_SHINY_STONE
+	end
+
+AgudoWoodland_EventScript_ItemDuskStone::
+	finditem ITEM_DUSK_STONE
 	end

@@ -461,6 +461,7 @@ static const struct TrainerMonItemCustomMoves sParty_G2_Nas[] = {
     .iv = 120,
     .lvl = 25,
     .species = SPECIES_SANDILE,
+    .abilityNum = 0,
     .heldItem = ITEM_BLACK_GLASSES,
     .moves = {MOVE_SAND_TOMB, MOVE_CRUNCH, MOVE_AQUA_TAIL, MOVE_DOUBLE_EDGE}
     },
@@ -468,6 +469,7 @@ static const struct TrainerMonItemCustomMoves sParty_G2_Nas[] = {
     .iv = 135,
     .lvl = 25,
     .species = SPECIES_SKARMORY,
+    .abilityNum = 0,
     .heldItem = ITEM_RED_CARD,
     .moves = {MOVE_SPIKES, MOVE_WHIRLWIND, MOVE_AERIAL_ACE, MOVE_ROOST}
     },
@@ -475,6 +477,7 @@ static const struct TrainerMonItemCustomMoves sParty_G2_Nas[] = {
     .iv = 150,
     .lvl = 27,
     .species = SPECIES_BOUFFALANT,
+    .abilityNum = 0,
     .heldItem = ITEM_ASSAULT_VEST,
     .moves = {MOVE_THROAT_CHOP, MOVE_REVENGE, MOVE_RETURN, MOVE_MEGAHORN}
     }
@@ -485,6 +488,7 @@ static const struct TrainerMonItemCustomMoves sParty_G2_Rodri[] = {
     .iv = 105,
     .lvl = 26,
     .species = SPECIES_GOLBAT,
+    .abilityNum = 0,
     .heldItem = ITEM_POISON_BARB,
     .moves = {MOVE_CONFUSE_RAY, MOVE_POISON_FANG, MOVE_LEECH_LIFE, MOVE_SCREECH}
     },
@@ -492,6 +496,7 @@ static const struct TrainerMonItemCustomMoves sParty_G2_Rodri[] = {
     .iv = 105,
     .lvl = 26,
     .species = SPECIES_SKORUPI,
+    .abilityNum = 1,
     .heldItem = ITEM_EVIOLITE,
     .moves = {MOVE_HONE_CLAWS, MOVE_POISON_FANG, MOVE_NIGHT_SLASH, MOVE_BUG_BITE}
     }
@@ -771,6 +776,7 @@ static const struct TrainerMonItemCustomMoves sParty_G2_Sanchez[] = {
     .iv = 175,
     .lvl = 32,
     .heldItem = ITEM_ASSAULT_VEST,
+    .abilityNum = 1,
     .species = SPECIES_HITMONCHAN,
     .moves = {MOVE_FIRE_PUNCH, MOVE_ICE_PUNCH, MOVE_THUNDER_PUNCH, MOVE_MACH_PUNCH},
     },
@@ -778,6 +784,7 @@ static const struct TrainerMonItemCustomMoves sParty_G2_Sanchez[] = {
     .iv = 175,
     .lvl = 32,
     .heldItem = ITEM_BLACK_BELT,
+    .abilityNum = 0,
     .species = SPECIES_HITMONLEE,
     .moves = {MOVE_HI_JUMP_KICK, MOVE_MEGA_KICK, MOVE_ENDURE, MOVE_MEDITATE},
     },
@@ -785,6 +792,7 @@ static const struct TrainerMonItemCustomMoves sParty_G2_Sanchez[] = {
     .iv = 175,
     .lvl = 34,
     .heldItem = ITEM_TOXIC_ORB,
+    .abilityNum = 1,
     .species = SPECIES_BRELOOM,
     .moves = {MOVE_STUN_SPORE, MOVE_LEECH_SEED, MOVE_SEED_BOMB, MOVE_FORCE_PALM},
     },
@@ -792,6 +800,7 @@ static const struct TrainerMonItemCustomMoves sParty_G2_Sanchez[] = {
     .iv = 175,
     .lvl = 34,
     .heldItem = ITEM_EXPERT_BELT,
+    .abilityNum = 0,
     .species = SPECIES_HITMONTOP,
     .moves = {MOVE_CLOSE_COMBAT, MOVE_PURSUIT, MOVE_BULLET_PUNCH, MOVE_MACH_PUNCH},
     }
@@ -913,6 +922,7 @@ static const struct TrainerMonItemCustomMoves sParty_G2_Malimo[] = {
     .iv = 200,
     .lvl = 35,
     .heldItem = ITEM_TWISTED_SPOON,
+    .abilityNum = 1,
     .species = SPECIES_GRUMPIG,
     .moves = {MOVE_PSYSHOCK, MOVE_CALM_MIND, MOVE_CONFUSE_RAY, MOVE_POWER_GEM}
     },
@@ -920,6 +930,7 @@ static const struct TrainerMonItemCustomMoves sParty_G2_Malimo[] = {
     .iv = 200,
     .lvl = 35,
     .heldItem = ITEM_CHARCOAL,
+    .abilityNum = 1,
     .species = SPECIES_HEATMOR,
     .moves = {MOVE_FIRE_LASH, MOVE_BUG_BITE, MOVE_LICK, MOVE_SLASH}
     },
@@ -927,6 +938,7 @@ static const struct TrainerMonItemCustomMoves sParty_G2_Malimo[] = {
     .iv = 200,
     .lvl = 37,
     .heldItem = ITEM_SILK_SCARF,
+    .abilityNum = 0,
     .species = SPECIES_SLAKING,
     .moves = {MOVE_GIGA_IMPACT, MOVE_SLACK_OFF, MOVE_EARTHQUAKE, MOVE_PROTECT}
     }
@@ -937,6 +949,7 @@ static const struct TrainerMonItemCustomMoves sParty_G2_Ryan[] = {
     .iv = 200,
     .lvl = 35,
     .heldItem = ITEM_SAFETY_GOGGLES,
+    .abilityNum = 1,
     .species = SPECIES_HITMONTOP,
     .moves = {MOVE_ENDEAVOR, MOVE_DETECT, MOVE_COUNTER, MOVE_TRIPLE_KICK}
     },
@@ -944,6 +957,7 @@ static const struct TrainerMonItemCustomMoves sParty_G2_Ryan[] = {
     .iv = 200,
     .lvl = 35,
     .heldItem = ITEM_PROTECTIVE_PADS,
+    .abilityNum = 1,
     .species = SPECIES_DURANT,
     .moves = {MOVE_CRUNCH, MOVE_IRON_HEAD, MOVE_DIG, MOVE_X_SCISSOR}
     },
@@ -951,6 +965,7 @@ static const struct TrainerMonItemCustomMoves sParty_G2_Ryan[] = {
     .iv = 200,
     .lvl = 37,
     .heldItem = ITEM_ROCKY_HELMET,
+    .abilityNum = 1,
     .species = SPECIES_CRUSTLE,
     .moves = {MOVE_SHELL_SMASH, MOVE_ROCK_SLIDE, MOVE_X_SCISSOR, MOVE_SLASH}
     }
@@ -979,6 +994,7 @@ static const struct TrainerMonItemCustomMoves sParty_G2_Nas2[] = {
     .iv = 200,
     .lvl = 36,
     .heldItem = ITEM_BLACK_GLASSES,
+    .abilityNum = 0,
     .species = SPECIES_KROOKODILE,
     .moves = {MOVE_EARTHQUAKE, MOVE_CRUNCH, MOVE_AQUA_TAIL, MOVE_DOUBLE_EDGE}
     },
@@ -986,6 +1002,7 @@ static const struct TrainerMonItemCustomMoves sParty_G2_Nas2[] = {
     .iv = 200,
     .lvl = 36,
     .heldItem = ITEM_LEFTOVERS,
+    .abilityNum = 0,
     .species = SPECIES_GOGOAT,
     .moves = {MOVE_BULK_UP, MOVE_HORN_LEECH, MOVE_MILK_DRINK, MOVE_ROCK_SLIDE}
     },
@@ -993,6 +1010,7 @@ static const struct TrainerMonItemCustomMoves sParty_G2_Nas2[] = {
     .iv = 200,
     .lvl = 36,
     .heldItem = ITEM_COLBUR_BERRY,
+    .abilityNum = 1,
     .species = SPECIES_DRIFBLIM,
     .moves = {MOVE_SHADOW_BALL, MOVE_CALM_MIND, MOVE_WILL_O_WISP, MOVE_STRENGTH_SAP}
     },
@@ -1000,6 +1018,7 @@ static const struct TrainerMonItemCustomMoves sParty_G2_Nas2[] = {
     .iv = 200,
     .lvl = 36,
     .heldItem = ITEM_DRAGON_FANG,
+    .abilityNum = 1,
     .species = SPECIES_DRUDDIGON,
     .moves = {MOVE_DRAGON_RUSH, MOVE_SUCKER_PUNCH, MOVE_SUPERPOWER, MOVE_EARTHQUAKE}
     },
@@ -1007,6 +1026,7 @@ static const struct TrainerMonItemCustomMoves sParty_G2_Nas2[] = {
     .iv = 200,
     .lvl = 36,
     .heldItem = ITEM_ROCKY_HELMET,
+    .abilityNum = 0,
     .species = SPECIES_SKARMORY,
     .moves = {MOVE_SPIKES, MOVE_WHIRLWIND, MOVE_STEEL_WING, MOVE_ROOST}
     },
@@ -1014,6 +1034,7 @@ static const struct TrainerMonItemCustomMoves sParty_G2_Nas2[] = {
     .iv = 200,
     .lvl = 38,
     .heldItem = ITEM_ASSAULT_VEST,
+    .abilityNum = 0,
     .species = SPECIES_BOUFFALANT,
     .moves = {MOVE_THROAT_CHOP, MOVE_REVENGE, MOVE_HEAD_SMASH, MOVE_MEGAHORN}
     },

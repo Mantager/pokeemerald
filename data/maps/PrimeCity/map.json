@@ -2,7 +2,7 @@
   "id": "MAP_PRIME_CITY",
   "name": "PrimeCity",
   "layout": "LAYOUT_PRIME_CITY",
-  "music": "MUS_B_FRONTIER",
+  "music": "MUS_VS_EXCJINN",
   "region_map_section": "MAPSEC_PRIME_CITY",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",

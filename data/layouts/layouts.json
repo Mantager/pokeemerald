@@ -5020,6 +5020,26 @@
       "secondary_tileset": "gTileset_CableClub",
       "border_filepath": "data/layouts/PrimeCity_MemlinkChamber/border.bin",
       "blockdata_filepath": "data/layouts/PrimeCity_MemlinkChamber/map.bin"
+    },
+    {
+      "id": "LAYOUT_ORO_TOWN_MART",
+      "name": "OroTown_Mart_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/OroTown_Mart/border.bin",
+      "blockdata_filepath": "data/layouts/OroTown_Mart/map.bin"
+    },
+    {
+      "id": "LAYOUT_WING_PEAK_SECRET_BOSS_ROOM",
+      "name": "WingPeak_SecretBossRoom_Layout",
+      "width": 15,
+      "height": 32,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/WingPeak_SecretBossRoom/border.bin",
+      "blockdata_filepath": "data/layouts/WingPeak_SecretBossRoom/map.bin"
     }
   ]
 }

@@ -650,7 +650,8 @@
     "WingPeak_3F",
     "WingPeak_4F",
     "WingPeak_Top",
-    "WingPeak_ExcjinnRoom"
+    "WingPeak_ExcjinnRoom",
+    "WingPeak_SecretBossRoom"
   ],
   "gMapGroup36": [
     "PrimeCity_PokemonCenter_1F",
@@ -697,7 +698,8 @@
   ],
   "gMapGroup39": [
     "OroTown_PokemonCenter",
-    "OroTown_HouseA"
+    "OroTown_HouseA",
+    "OroTown_Mart"
   ],
   "gMapGroup40": [
     "PistaVillage_PokemonCenter",
