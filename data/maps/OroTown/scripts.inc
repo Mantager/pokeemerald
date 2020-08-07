@@ -271,6 +271,14 @@ OroTown_EventScript_AfterBattle::
 	end
 
 
+OroTown_EventScript_ConstructionWorker::
+	lock
+	faceplayer
+	msgbox OroTown_EventScript_ConstructionWorker_Text_0
+	release
+	end
+
+
 OroTown_Movement_PlayerWalkLeft2FaceRight:
 	walk_left
 	walk_left
@@ -371,6 +379,20 @@ OroTown_Movement_RyanMoveToNas:
 	walk_up
 	walk_up
 	step_end
+
+OroTown_EventScript_TownSign::
+	lock
+	msgbox OroTown_EventScript_TownSign_Text_0
+	release
+	end
+
+
+OroTown_EventScript_GoldBarSign::
+	lock
+	msgbox OroTown_EventScript_GoldBarSign_Text_0
+	release
+	end
+
 
 OroTown_EventScript_NasTrainer_Text_0:
 	.string "No good!$"
@@ -518,3 +540,12 @@ OroTown_EventScript_AfterBattle_Text_25:
 
 OroTown_EventScript_AfterBattle_Text_26:
 	.string "{COLOR}{RED}You got it, Malimo old pal!\nLet's all meet at Pista Village!$"
+
+OroTown_EventScript_ConstructionWorker_Text_0:
+	.string "I'm in charge of building new houses\nin this town.\pBefore we can start construction, we need\na good foundation for the house.\pThat's what this is here.$"
+
+OroTown_EventScript_TownSign_Text_0:
+	.string "Oro Town\nMiddle of the Road$"
+
+OroTown_EventScript_GoldBarSign_Text_0:
+	.string "Gold Bar$"

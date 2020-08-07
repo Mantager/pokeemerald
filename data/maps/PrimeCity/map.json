@@ -2,7 +2,7 @@
   "id": "MAP_PRIME_CITY",
   "name": "PrimeCity",
   "layout": "LAYOUT_PRIME_CITY",
-  "music": "MUS_VS_EXCJINN",
+  "music": "MUS_B_FRONTIER",
   "region_map_section": "MAPSEC_PRIME_CITY",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
@@ -185,9 +185,9 @@
     },
     {
       "x": 34,
-      "y": 24,
+      "y": 25,
       "elevation": 0,
-      "dest_map": "MAP_PRIME_CITY",
+      "dest_map": "MAP_PRIME_CITY_BATTLE_COMPANY_1F",
       "dest_warp_id": 0
     },
     {
@@ -307,11 +307,35 @@
   "bg_events": [
     {
       "type": "sign",
-      "x": 8,
-      "y": 25,
+      "x": 0,
+      "y": 19,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
       "script": "NULL"
+    },
+    {
+      "type": "sign",
+      "x": 45,
+      "y": 6,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "PrimeCity_EventScript_NewValleyWaySign"
+    },
+    {
+      "type": "sign",
+      "x": 32,
+      "y": 26,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "PrimeCity_EventScript_BattleCompanySign"
+    },
+    {
+      "type": "sign",
+      "x": 38,
+      "y": 34,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "PrimeCity_EventScript_CitySign"
     }
   ]
 }

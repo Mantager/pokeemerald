@@ -1,0 +1,31 @@
+mapscripts OroTown_GoldBar_MapScripts {}
+
+script OroTown_GoldBar_EventScript_Vendor {
+    lock
+    faceplayer
+    message("Welcome to my humble little bar!\nWhat can I get you?")
+    waitmessage
+    pokemart(OroTown_GoldBar_Pokemart, 4)
+    msgbox(gText_PleaseComeAgain)
+    release
+    end
+}
+
+raw `
+	.align 2
+OroTown_GoldBar_Pokemart:
+	.2byte ITEM_FRESH_WATER
+	.2byte ITEM_LEMONADE
+	.2byte ITEM_SODA_POP
+	.2byte ITEM_NONE
+	release
+	end
+`
+
+script OroTown_GoldBar_EventScript_Girl {
+    lock
+    faceplayer
+    msgbox("My daddy's been running this joint\nsince before I was born!")
+    release
+    end
+}

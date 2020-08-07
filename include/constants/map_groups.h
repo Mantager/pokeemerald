@@ -639,6 +639,7 @@
 #define MAP_PRIME_CITY_SHADY_BUILDING_2F          (24 | (36 << 8))
 #define MAP_PRIME_CITY_NURSERY                    (25 | (36 << 8))
 #define MAP_PRIME_CITY_SECRET_BUILDING            (26 | (36 << 8))
+#define MAP_PRIME_CITY_BATTLE_COMPANY_1F          (27 | (36 << 8))
 
 // Map Group 37
 #define MAP_YANURAS_TOWN_RYAN_HOUSE    (0 | (37 << 8))
@@ -653,16 +654,21 @@
 #define MAP_DELAGUA_TOWN_HOUSE_B             (3 | (38 << 8))
 #define MAP_DELAGUA_TOWN_HOUSE_C             (4 | (38 << 8))
 #define MAP_DERIVA_WALK_HUT                  (5 | (38 << 8))
+#define MAP_DELAGUA_TOWN_MART                (6 | (38 << 8))
 
 // Map Group 39
 #define MAP_ORO_TOWN_POKEMON_CENTER (0 | (39 << 8))
 #define MAP_ORO_TOWN_HOUSE_A        (1 | (39 << 8))
 #define MAP_ORO_TOWN_MART           (2 | (39 << 8))
+#define MAP_ORO_TOWN_HOUSE_B        (3 | (39 << 8))
+#define MAP_ORO_TOWN_HOUSE_C        (4 | (39 << 8))
+#define MAP_ORO_TOWN_GOLD_BAR       (5 | (39 << 8))
 
 // Map Group 40
 #define MAP_PISTA_VILLAGE_POKEMON_CENTER (0 | (40 << 8))
 #define MAP_PISTA_VILLAGE_DOJO           (1 | (40 << 8))
 #define MAP_PISTA_VILLAGE_MART           (2 | (40 << 8))
+#define MAP_PISTA_VILLAGE_BIKE_SHOP      (3 | (40 << 8))
 
 #define MAP_GROUPS_COUNT 41
 

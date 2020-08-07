@@ -132,6 +132,12 @@ BattleScript_TrainerBallBlock::
 	waitmessage 0x40
 	finishaction
 
+BattleScript_ExcjinnBallDodge::
+	waitmessage 64
+	printstring STRINGID_ITDODGEDBALL
+	waitmessage 64
+	finishaction
+
 BattleScript_PlayerUsesItem::
 	setbyte sMOVEEND_STATE, 0xF
 	moveend 0x1, 0x0

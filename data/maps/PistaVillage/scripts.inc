@@ -70,6 +70,35 @@ PistaVillage_Movement_WalkLeft7:
 	walk_left
 	step_end
 
+PistaVillage_EventScript_ManFrontOfDojo::
+	lock
+	faceplayer
+	msgbox PistaVillage_EventScript_ManFrontOfDojo_Text_0
+	release
+	end
+
+
+PistaVillage_EventScript_VillageSign::
+	lock
+	msgbox PistaVillage_EventScript_VillageSign_Text_0
+	release
+	end
+
+
+PistaVillage_EventScript_DojoSign::
+	lock
+	msgbox PistaVillage_EventScript_DojoSign_Text_0
+	release
+	end
+
+
+PistaVillage_EventScript_BikeShopSign::
+	lock
+	msgbox PistaVillage_EventScript_BikeShopSign_Text_0
+	release
+	end
+
+
 PistaVillage_Trigger_PlayerMeetFern_Text_0:
 	.string "{COLOR}{RED}Clad!$"
 
@@ -105,3 +134,15 @@ PistaVillage_Trigger_NeedToVisitDojo_Text_0:
 
 PistaVillage_Trigger_NeedToVisitDojo_Text_1:
 	.string "(I shouldn't just ditch Sanchez\nlike that.)$"
+
+PistaVillage_EventScript_ManFrontOfDojo_Text_0:
+	.string "Sanchez recently finished converting this\nhouse into a dojo.\pI want to train here too, but\nI'm too shy to ask…$"
+
+PistaVillage_EventScript_VillageSign_Text_0:
+	.string "Pista Village\nBreath of Fresh Air$"
+
+PistaVillage_EventScript_DojoSign_Text_0:
+	.string "Pista Dojo\nOpen now!$"
+
+PistaVillage_EventScript_BikeShopSign_Text_0:
+	.string "Rioter Cycles$"

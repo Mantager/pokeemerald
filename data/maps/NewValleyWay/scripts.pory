@@ -1,57 +1,57 @@
 mapscripts NewValleyWay_MapScripts { }
 
 script NewValleyWay_EventScript_Terence {
-    trainerbattle_single(TRAINER_G2_TERENCE, "Battle me now!", "No, I lost!")
-    msgbox("You're good.")
+    trainerbattle_single(TRAINER_G2_TERENCE, "I saw you leave Prime City!\nLet's have a battle!", "No, I lost!")
+    msgbox("Ríota's full of tough Trainers.\nYou should watch out!")
     release
     end
 }
 
 script NewValleyWay_EventScript_Mimi {
-    trainerbattle_single(TRAINER_G2_MIMI, "Battle me now!", "No, I lost!")
-    msgbox("You're good.")
+    trainerbattle_single(TRAINER_G2_MIMI, "Your forecast?\pCloudy with a high chance of\nwhite out!", "I'm the one who whited out…")
+    msgbox("Today's sun is swelteringly hot.\nI'd better wear sun cream.")
     release
     end
 }
 
 script NewValleyWay_EventScript_Katalan {
-    trainerbattle_single(TRAINER_G2_KATALAN, "Battle me now!", "No, I lost!")
-    msgbox("You're good.")
+    trainerbattle_single(TRAINER_G2_KATALAN, "I just finished cooking lunch.\nWant some?", "Oh, you're not a fan of barbecue?")
+    msgbox("Never battle on an empty stomach!")
     release
     end
 }
 
 script NewValleyWay_EventScript_Sergei {
-    trainerbattle_single(TRAINER_G2_SERGEI, "Battle me now!", "No, I lost!")
-    msgbox("You're good.")
+    trainerbattle_single(TRAINER_G2_SERGEI, "Pokémon Rangers rescue those in trouble.\nBut we're also strong Trainers!", "Not strong enough, it seems!")
+    msgbox("If you wanted to, I think you\ncould become a good Ranger.")
     release
     end
 }
 
 script NewValleyWay_EventScript_Camila {
-    trainerbattle_single(TRAINER_G2_CAMILA, "Battle me now!", "No, I lost!")
-    msgbox("You're good.")
+    trainerbattle_single(TRAINER_G2_CAMILA, "Hiyah!\nI'll take on any opponent!", "I'm ashamed to lose…")
+    msgbox("I train here every day.\nIt's my favourite spot!")
     release
     end
 }
 
 script NewValleyWay_EventScript_Mateo {
-    trainerbattle_single(TRAINER_G2_MATEO, "Battle me now!", "No, I lost!")
-    msgbox("You're good.")
+    trainerbattle_single(TRAINER_G2_MATEO, "Want me to play you a riff?", "Your moves have a nice beat.")
+    msgbox("As long as I have my guitar with\nme, I'll go anywhere.")
     release
     end
 }
 
 script NewValleyWay_EventScript_Thiago {
-    trainerbattle_single(TRAINER_G2_THIAGO, "Battle me now!", "No, I lost!")
-    msgbox("You're good.")
+    trainerbattle_single(TRAINER_G2_THIAGO, "Yahoooo!\nIt's a Trainer-lihooo!", "Oh-nooooo!")
+    msgbox("C'mon, yodel with me!\nWa-lihooooo!")
     release
     end
 }
 
 script NewValleyWay_EventScript_Daniel {
-    trainerbattle_single(TRAINER_G2_DANIEL, "Battle me now!", "No, I lost!")
-    msgbox("You're good.")
+    trainerbattle_single(TRAINER_G2_DANIEL, "Aha!\nI caught you!", "It can't be!")
+    msgbox("The valley is like a second home\nto me.")
     release
     end
 }

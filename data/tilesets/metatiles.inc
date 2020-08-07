@@ -572,3 +572,10 @@ gMetatiles_GenericBuilding2::
 	.align 1
 gMetatileAttributes_GenericBuilding2::
 	.incbin "data/tilesets/secondary/generic_building_2/metatile_attributes.bin"
+	.align 1
+gMetatiles_BattleCompany::
+	.incbin "data/tilesets/secondary/battle_company/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_BattleCompany::
+	.incbin "data/tilesets/secondary/battle_company/metatile_attributes.bin"

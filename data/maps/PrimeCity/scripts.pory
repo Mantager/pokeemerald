@@ -268,3 +268,24 @@ movement PrimeCity_Movement_PlayerToMaliFernFarRight {
        walk_fastest_up
        step_end
 }
+
+script PrimeCity_EventScript_CitySign {
+    lock
+    msgbox("Prime City\nHeart of Ríota")
+    release
+    end
+}
+
+script PrimeCity_EventScript_NewValleyWaySign {
+    lock
+    msgbox("To New Valley Way")
+    release
+    end
+}
+
+script PrimeCity_EventScript_BattleCompanySign {
+    lock
+    msgbox("Battle Company")
+    release
+    end
+}

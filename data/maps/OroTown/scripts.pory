@@ -236,6 +236,14 @@ script OroTown_EventScript_AfterBattle {
 	end
 }
 
+script OroTown_EventScript_ConstructionWorker {
+	lock
+	faceplayer
+	msgbox("I'm in charge of building new houses\nin this town.\pBefore we can start construction, we need\na good foundation for the house.\pThat's what this is here.")
+	release
+	end
+}
+
 movement OroTown_Movement_PlayerWalkLeft2FaceRight {
 	walk_left * 2
 	face_right
@@ -274,4 +282,18 @@ movement OroTown_Movement_MalimoMoveToNas {
 movement OroTown_Movement_RyanMoveToNas {
 	walk_right
 	walk_up * 12
+}
+
+script OroTown_EventScript_TownSign {
+	lock
+	msgbox("Oro Town\nMiddle of the Road")
+	release
+	end
+}
+
+script OroTown_EventScript_GoldBarSign {
+	lock
+	msgbox("Gold Bar")
+	release
+	end
 }

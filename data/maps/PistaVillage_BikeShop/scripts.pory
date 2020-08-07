@@ -1,0 +1,17 @@
+mapscripts PistaVillage_BikeShop_MapScripts {}
+
+script PistaVillage_BikeShop_EventScript_ShopOwner {
+    lock
+    faceplayer
+    msgbox("'Ello, sonny!\nYou like bikes, yes?\lFeel free to have a look around.")
+    release
+    end
+}
+
+script PistaVillage_BikeShop_EventScript_Designer {
+    lock
+    faceplayer
+    msgbox("This is the workshop, where we\nfix bikes as well as design\lour own.\pActually, designing bikes is harder than\nyou might think.\pEspecially when it has to match up\nto professional brands!")
+    release
+    end
+}

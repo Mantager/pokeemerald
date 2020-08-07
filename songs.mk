@@ -1264,7 +1264,7 @@ $(MID_SUBDIR)/se_z_search.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G127 -v100 -P5
 
 $(MID_SUBDIR)/seq_oro.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G103 -V100
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V100
 
 $(MID_SUBDIR)/seq_vs_nas.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G192 -V090

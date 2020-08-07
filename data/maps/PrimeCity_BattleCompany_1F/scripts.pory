@@ -1,0 +1,10 @@
+mapscripts PrimeCity_BattleCompany_1F_MapScripts {}
+
+script PrimeCity_BattleCompany_1F_EventScript_Elevator {
+    lock
+    message("Which floor will you visit?")
+    waitmessage
+    multichoicedefault(0, 0, MULTI_BATTLE_COMPANY, 0, 0)
+    release
+    end
+}

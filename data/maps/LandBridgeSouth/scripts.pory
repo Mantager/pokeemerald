@@ -1,28 +1,28 @@
 mapscripts LandBridgeSouth_MapScripts {}
 
 script LandBridgeSouth_EventScript_Sigal {
-    trainerbattle_single(TRAINER_G2_SIGAL, "Battle me now!", "No, I lost!")
-    msgbox("You're good.")
+    trainerbattle_single(TRAINER_G2_SIGAL, "Ring ring! Ring ring!\nOutta the way!", "Well that was a crash.")
+    msgbox("Big wheels keep on turning.")
     release
     end
 }
 
 script LandBridgeSouth_EventScript_Zane {
-    trainerbattle_single(TRAINER_G2_ZANE, "Battle me now!", "No, I lost!")
-    msgbox("You're good.")
+    trainerbattle_single(TRAINER_G2_ZANE, "Now you're a cute little Trainer!\nAren't you?\lAwwww!\lLet's have a fight, shall we?", "Huh?!\nWhat was that?")
+    msgbox("Oh well, I suppose I can let you\noff the hook for beating me.\lTee hee!")
     release
     end
 }
 
 script LandBridgeSouth_EventScript_Ei {
-    trainerbattle_double(TRAINER_G2_EI_AND_AI, "Battle me now!", "No, I lost!", "Need two!")
+    trainerbattle_double(TRAINER_G2_EI_AND_AI, "One plus one is four?\nWhatever, let's battle!", "Ei: Noooo!\nAi:Waaaah!", "We won't battle just one Pokémon!\nThat's mean!")
     msgbox("You're good.")
     release
     end
 }
 
 script LandBridgeSouth_EventScript_Ai {
-    trainerbattle_double(TRAINER_G2_EI_AND_AI, "Battle me now!", "No, I lost!", "Need two!")
+    trainerbattle_double(TRAINER_G2_EI_AND_AI, "I don't really get maths", "Ei: Noooo!\nAi:Waaaah!", "We won't battle just one Pokémon!\nThat's mean!")
     msgbox("You're good.")
     release
     end

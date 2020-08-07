@@ -1,0 +1,9 @@
+mapscripts OroTown_HouseB_MapScripts {}
+
+script OroTown_HouseB_EventScript_Cook {
+    lock
+    faceplayer
+    msgbox("After working in Lumiose City for many\nyears, I decided to move to Ríota.\pThe food here is completely different,\nwhich is a nice challenge for me.")
+    release
+    end
+}

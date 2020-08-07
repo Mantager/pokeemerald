@@ -4455,7 +4455,7 @@
       "id": "LAYOUT_DELAGUA_TOWN",
       "name": "DelaguaTown_Layout",
       "width": 38,
-      "height": 34,
+      "height": 35,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Dewford",
       "border_filepath": "data/layouts/DelaguaTown/border.bin",
@@ -5040,6 +5040,66 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/WingPeak_SecretBossRoom/border.bin",
       "blockdata_filepath": "data/layouts/WingPeak_SecretBossRoom/map.bin"
+    },
+    {
+      "id": "LAYOUT_PRIME_CITY_BATTLE_COMPANY_1F",
+      "name": "PrimeCity_BattleCompany_1F_Layout",
+      "width": 14,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BattleFrontier",
+      "border_filepath": "data/layouts/PrimeCity_BattleCompany_1F/border.bin",
+      "blockdata_filepath": "data/layouts/PrimeCity_BattleCompany_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_ORO_TOWN_HOUSE_B",
+      "name": "OroTown_HouseB_Layout",
+      "width": 12,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/OroTown_HouseB/border.bin",
+      "blockdata_filepath": "data/layouts/OroTown_HouseB/map.bin"
+    },
+    {
+      "id": "LAYOUT_ORO_TOWN_HOUSE_C",
+      "name": "OroTown_HouseC_Layout",
+      "width": 12,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/OroTown_HouseC/border.bin",
+      "blockdata_filepath": "data/layouts/OroTown_HouseC/map.bin"
+    },
+    {
+      "id": "LAYOUT_ORO_TOWN_GOLD_BAR",
+      "name": "OroTown_GoldBar_Layout",
+      "width": 12,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_SeashoreHouse",
+      "border_filepath": "data/layouts/OroTown_GoldBar/border.bin",
+      "blockdata_filepath": "data/layouts/OroTown_GoldBar/map.bin"
+    },
+    {
+      "id": "LAYOUT_DELAGUA_TOWN_MART",
+      "name": "DelaguaTown_Mart_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/DelaguaTown_Mart/border.bin",
+      "blockdata_filepath": "data/layouts/DelaguaTown_Mart/map.bin"
+    },
+    {
+      "id": "LAYOUT_PISTA_VILLAGE_BIKE_SHOP",
+      "name": "PistaVillage_BikeShop_Layout",
+      "width": 12,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BikeShop",
+      "border_filepath": "data/layouts/PistaVillage_BikeShop/border.bin",
+      "blockdata_filepath": "data/layouts/PistaVillage_BikeShop/map.bin"
     }
   ]
 }

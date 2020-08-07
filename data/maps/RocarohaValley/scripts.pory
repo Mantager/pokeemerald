@@ -8,85 +8,85 @@ script RocarohaValley_EventScript_Santi {
 }
 
 script RocarohaValley_EventScript_Lucia {
-    trainerbattle_single(TRAINER_G2_LUCIA, "Battle me now!", "No, I lost!")
-    msgbox("You're good.")
+    trainerbattle_single(TRAINER_G2_LUCIA, "Your aura…\nit is one of darkness…", "Curses!")
+    msgbox("Maybe it was my aura that was\nfull of darkness…\lI'm not quite sure.")
     release
     end
 }
 
 script RocarohaValley_EventScript_Vicky {
-    trainerbattle_single(TRAINER_G2_VICKY, "Battle me now!", "No, I lost!")
-    msgbox("You're good.")
+    trainerbattle_single(TRAINER_G2_VICKY, "Hey, a Trainer!\nGimme a battle, will ya?", "Hey, thanks!")
+    msgbox("If I had a phone, I'd ask for\nyour number.")
     release
     end
 }
 
 script RocarohaValley_EventScript_Rafael {
-    trainerbattle_single(TRAINER_G2_RAFAEL, "Battle me now!", "No, I lost!")
-    msgbox("You're good.")
+    trainerbattle_single(TRAINER_G2_RAFAEL, "Rumbling around in Rocaroha Valley!", "Rumbling with reckoning…")
+    msgbox("Rumble rumble rumble!")
     release
     end
 }
 
 script RocarohaValley_EventScript_Paolo {
-    trainerbattle_single(TRAINER_G2_PAOLO, "Battle me now!", "No, I lost!")
-    msgbox("You're good.")
+    trainerbattle_single(TRAINER_G2_PAOLO, "…Snork!\pI just loooove rare Pokémon.\nShow me yours?", "Wow!\nThey're strong!")
+    msgbox("…Snigger!\nMy next target is Druddigon!")
     release
     end
 }
 
 script RocarohaValley_EventScript_Martin {
-    trainerbattle_single(TRAINER_G2_MARTIN, "Battle me now!", "No, I lost!")
-    msgbox("You're good.")
+    trainerbattle_single(TRAINER_G2_MARTIN, "Whew…\nI'm melting over here…\pPlease battle me so that I can\nforget about this heat!", "Now I just feel even hotter!")
+    msgbox("I need to get out of here\nbefore I become one with the ground…")
     release
     end
 }
 
 script RocarohaValley_EventScript_Luisa {
-    trainerbattle_single(TRAINER_G2_LUISA, "Battle me now!", "No, I lost!")
-    msgbox("You're good.")
+    trainerbattle_single(TRAINER_G2_LUISA, "My partner Pokémon need some training!\nWill you oblige?", "Ha ha ha!\nThanks a lot!")
+    msgbox("All Pokémon Rangers in Ríota carry Pokémon.\pIt's to help us tackle tasks that\nwould be difficult on our own.")
     release
     end
 }
 
 script RocarohaValley_EventScript_Alvaro {
-    trainerbattle_single(TRAINER_G2_ALVARO, "Battle me now!", "No, I lost!")
-    msgbox("You're good.")
+    trainerbattle_single(TRAINER_G2_ALVARO, "Our eyes met, so it's time for\na battle!", "I wish our eyes hadn't met…")
+    msgbox("Good thing I have Revives, or\nelse I'd have to walk all\lthe way to Delagua Town!")
     release
     end
 }
 
 script RocarohaValley_EventScript_Belen {
-    trainerbattle_single(TRAINER_G2_BELEN, "Battle me now!", "No, I lost!")
-    msgbox("You're good.")
+    trainerbattle_single(TRAINER_G2_BELEN, "I battle whilst running!\nCan you catch up?", "I was surpassed!")
+    msgbox("I'm still better when it comes\nto running.")
     release
     end
 }
 
 script RocarohaValley_EventScript_Mari {
-    trainerbattle_double(TRAINER_G2_MARI_AND_NOEL, "Battle me now!", "No, I lost!", "We only battle folks with\ntwo Pokémon!")
-    msgbox("You're good.")
+    trainerbattle_double(TRAINER_G2_MARI_AND_NOEL, "Oh! A Trainer!\nHere we go, Noel!", "Mari: Noel! We lost!\pNoel: Mari, you idiot!", "We only battle folks with\ntwo Pokémon!")
+    msgbox("I always battle with Noel.\nTwo is better than one!")
     release
     end
 }
 
 script RocarohaValley_EventScript_Noel {
-    trainerbattle_double(TRAINER_G2_MARI_AND_NOEL, "Battle me now!", "No, I lost!", "We only battle folks with\ntwo Pokémon!")
-    msgbox("You're good.")
+    trainerbattle_double(TRAINER_G2_MARI_AND_NOEL, "Mari, over here!\nIt's a Trainer!", "Mari: Noel! We lost!\pNoel: Mari, you idiot!", "If you've only got one Pokémon,\nwe can't fight!")
+    msgbox("Double Battles are interesting, aren't they?")
     release
     end
 }
 
 script RocarohaValley_EventScript_Milton {
-    trainerbattle_single(TRAINER_G2_MILTON, "Battle me now!", "No, I lost!")
-    msgbox("You're good.")
+    trainerbattle_single(TRAINER_G2_MILTON, "Hear my call!\nA call of love!", "Love was no match for you!")
+    msgbox("I caught my Pokémon as a Tyrogue\nfrom a cave nearby.")
     release
     end
 }
 
 script RocarohaValley_EventScript_Lionel {
-    trainerbattle_single(TRAINER_G2_LIONEL, "Battle me now!", "No, I lost!")
-    msgbox("You're good.")
+    trainerbattle_single(TRAINER_G2_LIONEL, "Hear my call!\nA call of pain!", "Pain was no match for you!")
+    msgbox("Did you know?\nTyrogue has three evolutions.\lEach has its own niche.")
     release
     end
 }

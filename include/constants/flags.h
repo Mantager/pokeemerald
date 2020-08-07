@@ -675,7 +675,7 @@
 #define FLAG_ITEM_AGUDO_WOODLAND_DUSK_STONE  0x27A 
 #define FLAG_PRIME_CITY_HOUSE_B_RECIEVED_ITEM  0x27B // Unused Flag
 #define FLAG_RECIEVED_ASSAULT_VEST  0x27C // Unused Flag
-#define FLAG_UNUSED_0x27D  0x27D // Unused Flag
+#define FLAG_ORO_TRADE_COMPLETED  0x27D // Unused Flag
 #define FLAG_UNUSED_0x27E  0x27E // Unused Flag
 #define FLAG_UNUSED_0x27F  0x27F // Unused Flag
 #define FLAG_UNUSED_0x280  0x280 // Unused Flag

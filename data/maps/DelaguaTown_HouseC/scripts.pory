@@ -1,1 +1,17 @@
 mapscripts DelaguaTown_HouseC_MapScripts {}
+
+script DelaguaTown_HouseC_EventScript_Woman {
+    lock
+    faceplayer
+    msgbox("We just moved in, so the house is a mess.\pI'm huge on botany, though I'm sure\nyou figured that out when you\lstepped in here.")
+    release
+    end
+}
+
+script DelaguaTown_HouseC_EventScript_Girl {
+    lock
+    faceplayer
+    msgbox("My mum moved here to study\nsome flowers.\pMy favourite flower is the Amaryllis.")
+    release
+    end
+}

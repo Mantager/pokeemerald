@@ -24418,11 +24418,13 @@ Special_BallThrow:
 	playsewithpan SE_NAGERU, 0
 	createvisualtask AnimTask_ThrowBall, 2
 	createvisualtask AnimTask_IsBallBlockedByTrainer, 2
-	jumpreteq -1, BallThrowTrainerBlock
+	jumpargeq 7, -1, BallThrowTrainerBlock       
+	jumpargeq 7, -2, BallThrowExcjinnDodged
 BallThrowEnd:
 	waitforvisualfinish
 	createvisualtask AnimTask_FreeBallGfx, 2
 	end
+
 BallThrowTrainerBlock:
 	loadspritegfx ANIM_TAG_IMPACT
 	delay 25
@@ -24434,6 +24436,14 @@ BallThrowTrainerBlock:
 	waitforvisualfinish
 	clearmonbg ANIM_DEF_PARTNER
 	blendoff
+	goto BallThrowEnd
+
+BallThrowExcjinnDodged::
+	delay 16
+	createvisualtask AnimTask_WindUpLunge, 2, 1, 48, 6, 16, 48, -48, 16
+	playsewithpan SE_W036, 63
+	waitplaysewithpan SE_W036, 63, 48
+	waitforvisualfinish
 	goto BallThrowEnd
 
 Special_SafariBallThrow:

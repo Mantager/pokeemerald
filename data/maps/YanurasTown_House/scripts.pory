@@ -1,1 +1,9 @@
 mapscripts YanurasTown_House_MapScripts {}
+
+script YanurasTown_House_EventScript_OldWoman {
+    lock
+    faceplayer
+    msgbox("Be grateful for what you have.\nThat is the philosophy I live by.")
+    release
+    end
+}

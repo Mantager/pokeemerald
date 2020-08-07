@@ -11579,6 +11579,12 @@ static void Cmd_handleballthrow(void)
         MarkBattlerForControllerExec(gActiveBattler);
         gBattlescriptCurrInstr = BattleScript_TrainerBallBlock;
     }
+    else if (gBattleTypeFlags & BATTLE_TYPE_EXCJINN)
+    {
+        BtlController_EmitBallThrowAnim(0, BALL_EXCJINN_DODGE);
+        MarkBattlerForControllerExec(gActiveBattler);
+        gBattlescriptCurrInstr = BattleScript_ExcjinnBallDodge;
+    }
     else if (gBattleTypeFlags & BATTLE_TYPE_WALLY_TUTORIAL)
     {
         BtlController_EmitBallThrowAnim(0, BALL_3_SHAKES_SUCCESS);

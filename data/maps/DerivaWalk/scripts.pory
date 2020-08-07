@@ -1,64 +1,64 @@
 mapscripts DerivaWalk_MapScripts {}
 
 script DerivaWalk_EventScript_Josefina {
-    trainerbattle_single(TRAINER_G2_JOSEFINA, "I'm a fish out of water!", "All I could do was flop!")
-    msgbox("Y'know, lately I've been leaping\noff the cliffs at the Land Bridge.\pIt's great fun, I tell you!")
+    trainerbattle_single(TRAINER_G2_JOSEFINA, "If I win, I'll push you in the river!", "Aw, I lost.")
+    msgbox("Some people like to swim on\nthe back of a Pokémon, but in my\lopinion it's better by yourself.")
     release
     end
 }
 
 script DerivaWalk_EventScript_Emilio {
-    trainerbattle_single(TRAINER_G2_EMILIO, "Battle me now!", "No, I lost!")
-    msgbox("You're good.")
+    trainerbattle_single(TRAINER_G2_EMILIO, "A battle, huh?\pI was just about to take a swim,\nbut I guess I can have a quick match.", "You just got lucky.")
+    msgbox("Swimming is great exercise.\pBut as a triathlete, I participate\nin lots of sports.")
     release
     end
 }
 
 script DerivaWalk_EventScript_Megan {
-    trainerbattle_single(TRAINER_G2_MEGAN, "Battle me now!", "No, I lost!")
-    msgbox("You're good.")
+    trainerbattle_single(TRAINER_G2_MEGAN, "Ah, you wish to battle?\nVery well, if we must.", "Petilil, Lilligant…\nYou did well.")
+    msgbox("One day, a Pokémon League will open\nin Ríota.\pI'd like to become a Grass-type\nGym Leader.")
     release
     end
 }
 
 script DerivaWalk_EventScript_Federico {
-    trainerbattle_single(TRAINER_G2_FEDERICO, "Battle me now!", "No, I lost!")
-    msgbox("You're good.")
+    trainerbattle_single(TRAINER_G2_FEDERICO, "Singing by the river,\nrocking by the water!", "I'm not singing now, that's for sure.")
+    msgbox("How am I meant to perform now\nyou've knocked out my bandmates?")
     release
     end
 }
 
 script DerivaWalk_EventScript_Vincent {
-    trainerbattle_single(TRAINER_G2_VINCENT, "Battle me now!", "No, I lost!")
-    msgbox("You're good.")
+    trainerbattle_single(TRAINER_G2_VINCENT, "I came from Oro Town to catch\nsome rare Pokémon!\pBut now, I want to fight you!", "No way!\nYou cheated!")
+    msgbox("Now I've gotta go back to\nOro Town to restore my Pokémon's HP…")
     release
     end
 }
 
 script DerivaWalk_EventScript_Nakia {
-    trainerbattle_single(TRAINER_G2_NAKIA, "Battle me now!", "No, I lost!")
-    msgbox("You're good.")
+    trainerbattle_single(TRAINER_G2_NAKIA, "My, a Trainer has approached me.\nIs this 'fate'?", "Is this too 'fate'?")
+    msgbox("It is my solemn belief that all\nbeings are guided by fate.\pEverything happens for a reason.")
     release
     end
 }
 
 script DerivaWalk_EventScript_Yan {
-    trainerbattle_double(TRAINER_G2_YAN_AND_IVO, "Battle me now!", "No, I lost!", "Need two!")
-    msgbox("You're good.")
+    trainerbattle_double(TRAINER_G2_YAN_AND_IVO, "Ivo, let's wash this Trainer\naway!", "Yan: I'm awash with embarassment!\nIvo: Sis, it's not that bad.", "We can't battle unless you've\ngot two Pokémon with you.")
+    msgbox("I want to get stronger, but\nI feel like my brother plays\laround in battle too much.")
     release
     end
 }
 
 script DerivaWalk_EventScript_Ivo {
-    trainerbattle_double(TRAINER_G2_YAN_AND_IVO, "Battle me now!", "No, I lost!", "Need two!")
-    msgbox("You're good.")
+    trainerbattle_double(TRAINER_G2_YAN_AND_IVO, "Ivo: Oh, Yan, here comes a\nTrainer.", "Yan: I'm awash with embarassment!\nIvo: Sis, it's not that bad.", "We're partners, so if you want\nto battle, you'll need two Pokémon.")
+    msgbox("Hopefully I can be as good as you\none day.")
     release
     end
 }
 
 script DerivaWalk_EventScript_Maikel {
-    trainerbattle_single(TRAINER_G2_MAIKEL, "Battle me now!", "No, I lost!")
-    msgbox("You're good.")
+    trainerbattle_single(TRAINER_G2_MAIKEL, "Blub blub blub…\nI'm pretending to be a fish Pokémon.", "Glubber… glubber…")
+    msgbox("You're strong enough to drown even\na sprightly fish like me…")
     release
     end
 }

@@ -1769,3 +1769,23 @@ gTilesetPalettes_GenericBuilding2::
 	.align 2
 gTilesetTiles_GenericBuilding2::
 	.incbin "data/tilesets/secondary/generic_building_2/tiles.4bpp.lz"
+
+	.align 2
+gTilesetPalettes_BattleCompany::
+	.incbin "data/tilesets/secondary/battle_company/palettes/00.gbapal"
+	.incbin "data/tilesets/secondary/battle_company/palettes/01.gbapal"
+	.incbin "data/tilesets/secondary/battle_company/palettes/02.gbapal"
+	.incbin "data/tilesets/secondary/battle_company/palettes/03.gbapal"
+	.incbin "data/tilesets/secondary/battle_company/palettes/04.gbapal"
+	.incbin "data/tilesets/secondary/battle_company/palettes/05.gbapal"
+	.incbin "data/tilesets/secondary/battle_company/palettes/06.gbapal"
+	.incbin "data/tilesets/secondary/battle_company/palettes/07.gbapal"
+	.incbin "data/tilesets/secondary/battle_company/palettes/08.gbapal"
+	.incbin "data/tilesets/secondary/battle_company/palettes/09.gbapal"
+	.incbin "data/tilesets/secondary/battle_company/palettes/10.gbapal"
+	.incbin "data/tilesets/secondary/battle_company/palettes/11.gbapal"
+	.incbin "data/tilesets/secondary/battle_company/palettes/12.gbapal"
+
+	.align 2
+gTilesetTiles_BattleCompany::
+	.incbin "data/tilesets/secondary/battle_company/tiles.4bpp.lz"

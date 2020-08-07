@@ -852,3 +852,14 @@ gTileset_GenericBuilding2::
 	.4byte gMetatiles_GenericBuilding2
 	.4byte gMetatileAttributes_GenericBuilding2
 	.4byte NULL
+
+	.align 2
+gTileset_BattleCompany::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_BattleCompany
+	.4byte gTilesetPalettes_BattleCompany
+	.4byte gMetatiles_BattleCompany
+	.4byte gMetatileAttributes_BattleCompany
+	.4byte NULL

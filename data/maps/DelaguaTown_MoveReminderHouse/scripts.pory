@@ -1,1 +1,48 @@
 mapscripts DelaguaTown_MoveReminderHouse_MapScripts {}
+
+script DelaguaTown_MoveReminderHouse_EventScript_MoveReminder {
+    lockall
+    faceplayer
+    if(flag(FLAG_TEMP_1) == FALSE) {
+        msgbox("Welcome.\nThey call me the Move Reminder.\pI can make your Pokémon remember a\nmove it'd forgotten in the past.\lAll for free, of course.")
+        closemessage
+        setflag(FLAG_TEMP_1)
+    }
+    msgbox("So, would you like one of your\nPokémon to remember a move?", MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES) {
+        msgbox("Which Pokémon wants to remember a move?")
+        special(ChooseMonForMoveRelearner)
+        waitstate
+        if(var(VAR_0x8004) == 255) {
+            msgbox("Oh, changed your mind?\pSuit yourself, then.")
+            release
+            end
+        }
+        special(IsSelectedMonEgg)
+        if(var(VAR_RESULT) == TRUE) {
+            msgbox("Eggs can't remember any moves!")
+            release
+            end
+        }
+        if(var(VAR_0x8005) == 0) {
+            msgbox("There's no moves that I can make\nthis Pokémon remember.")
+            release
+            end
+        }
+	    msgbox("Which move should be remembered?")
+	    special(TeachMoveRelearnerMove)
+	    waitstate
+        if(var(VAR_0x8004) == 0) {
+            msgbox("Oh, changed your mind?\pSuit yourself, then.")
+            release
+            end
+        }
+        msgbox("Come back any time!")
+        release
+        end
+    } else {
+        msgbox("Suit yourself.")
+        release
+        end
+    }
+}

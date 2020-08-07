@@ -22,6 +22,14 @@ script OroTown_Mart_EventScript_TMEmployee {
     end
 }
 
+script OroTown_Mart_EventScript_Hiker {
+    lock
+    faceplayer
+    msgbox("When preparing for an expedition,\nyou've gotta think of everything!\pOr else you could end up in\na dangerous situation!")
+    release
+    end
+}
+
 raw `
 	.align 2
 OroTown_Mart_Pokemart_1:

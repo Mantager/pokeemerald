@@ -15,3 +15,11 @@ script PrimeCity_PokemonCenter_1F_EventScript_Nurse {
     release
     end
 }
+
+script PrimeCity_PokemonCenter_1F_EventScript_Lass {
+    lock
+    faceplayer
+    msgbox("Ah, Pokémon Centers are the best\nplace to rest and recover after a\ltough Pokémon battle.")
+    release
+    end
+}

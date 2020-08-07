@@ -1,1 +1,28 @@
 mapscripts OroTown_HouseA_MapScripts {}
+
+script OroTown_HouseA_EventScript_TormentGiver {
+    lock
+    faceplayer
+    if(flag(FLAG_RECEIVED_TM41) == FALSE) {
+        msgbox("Your eyelashes are huge!\nYou have weird hands!\lAnd your hair smells like sand!\pSorry, I didn't mean that.\pI just wanted to show you what using\nthe move Torment is like.\pHere, try it out for yourself!")
+        giveitem(ITEM_TM41)
+        if(var(VAR_RESULT) == TRUE) {
+            msgbox("You don't have room for this.")
+        } else {
+            setflag(FLAG_RECEIVED_TM41)
+            msgbox("When affected by Torment, a Pokémon\ncan't use moves consecutively.")
+        }
+    } else {
+        msgbox("When affected by Torment, a Pokémon\ncan't use moves consecutively.")
+    }
+    release
+    end
+}
+
+script OroTown_HouseA_EventScript_RangerTalker {
+    lock
+    faceplayer
+    msgbox("I want to become a Pokémon Ranger.\pCapture on!\nMission start!\pAh, the day I'll get to say those\nwords for real will be the greatest\lday in my life!")
+    release
+    end
+}

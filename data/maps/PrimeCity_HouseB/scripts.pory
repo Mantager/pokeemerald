@@ -42,6 +42,9 @@ script PrimeCity_HouseB_EventScript_DrinkGiver {
         release
         end
     }
+    msgbox("Please enjoy it.")
+    release
+    end
 }
 
 script PrimeCity_HouseB_EventScript_DrinkGiverBagFull {

@@ -1185,3 +1185,15 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/OroTown_Mart/scripts.inc"
 
 	.include "data/maps/WingPeak_SecretBossRoom/scripts.inc"
+
+	.include "data/maps/PrimeCity_BattleCompany_1F/scripts.inc"
+
+	.include "data/maps/OroTown_HouseB/scripts.inc"
+
+	.include "data/maps/OroTown_HouseC/scripts.inc"
+
+	.include "data/maps/OroTown_GoldBar/scripts.inc"
+
+	.include "data/maps/DelaguaTown_Mart/scripts.inc"
+
+	.include "data/maps/PistaVillage_BikeShop/scripts.inc"

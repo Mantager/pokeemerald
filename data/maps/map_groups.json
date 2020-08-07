@@ -680,7 +680,8 @@
     "PrimeCity_ShadyBuilding_1F",
     "PrimeCity_ShadyBuilding_2F",
     "PrimeCity_Nursery",
-    "PrimeCity_SecretBuilding"
+    "PrimeCity_SecretBuilding",
+    "PrimeCity_BattleCompany_1F"
   ],
   "gMapGroup37": [
     "YanurasTown_RyanHouse",
@@ -694,16 +695,21 @@
     "DelaguaTown_HouseA",
     "DelaguaTown_HouseB",
     "DelaguaTown_HouseC",
-    "DerivaWalk_Hut"
+    "DerivaWalk_Hut",
+    "DelaguaTown_Mart"
   ],
   "gMapGroup39": [
     "OroTown_PokemonCenter",
     "OroTown_HouseA",
-    "OroTown_Mart"
+    "OroTown_Mart",
+    "OroTown_HouseB",
+    "OroTown_HouseC",
+    "OroTown_GoldBar"
   ],
   "gMapGroup40": [
     "PistaVillage_PokemonCenter",
     "PistaVillage_Dojo",
-    "PistaVillage_Mart"
+    "PistaVillage_Mart",
+    "PistaVillage_BikeShop"
   ]
 }

@@ -17,3 +17,14 @@ PrimeCity_PokemonCenter_1F_EventScript_Nurse::
 	release
 	end
 
+
+PrimeCity_PokemonCenter_1F_EventScript_Lass::
+	lock
+	faceplayer
+	msgbox PrimeCity_PokemonCenter_1F_EventScript_Lass_Text_0
+	release
+	end
+
+
+PrimeCity_PokemonCenter_1F_EventScript_Lass_Text_0:
+	.string "Ah, Pokémon Centers are the best\nplace to rest and recover after a\ltough Pokémon battle.$"

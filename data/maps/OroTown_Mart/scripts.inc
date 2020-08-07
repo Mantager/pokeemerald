@@ -24,6 +24,14 @@ OroTown_Mart_EventScript_TMEmployee::
 	end
 
 
+OroTown_Mart_EventScript_Hiker::
+	lock
+	faceplayer
+	msgbox OroTown_Mart_EventScript_Hiker_Text_0
+	release
+	end
+
+
 	.align 2
 OroTown_Mart_Pokemart_1:
 	.2byte ITEM_POKE_BALL
@@ -54,3 +62,6 @@ OroTown_Mart_Pokemart_2:
 	.2byte ITEM_NONE
 	release
 	end
+
+OroTown_Mart_EventScript_Hiker_Text_0:
+	.string "When preparing for an expedition,\nyou've gotta think of everything!\pOr else you could end up in\na dangerous situation!$"

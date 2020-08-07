@@ -51,3 +51,32 @@ movement PistaVillage_Movement_WalkLeft7 {
     walk_left * 7
     step_end
 }
+
+script PistaVillage_EventScript_ManFrontOfDojo {
+    lock
+    faceplayer
+    msgbox("Sanchez recently finished converting this\nhouse into a dojo.\pI want to train here too, but\nI'm too shy to ask…")
+    release
+    end
+}
+
+script PistaVillage_EventScript_VillageSign {
+    lock
+    msgbox("Pista Village\nBreath of Fresh Air")
+    release
+    end
+}
+
+script PistaVillage_EventScript_DojoSign {
+    lock
+    msgbox("Pista Dojo\nOpen now!")
+    release
+    end
+}
+
+script PistaVillage_EventScript_BikeShopSign {
+    lock
+    msgbox("Rioter Cycles")
+    release
+    end
+}

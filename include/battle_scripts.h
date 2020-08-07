@@ -343,5 +343,6 @@ extern const u8 BattleScript_FriskActivates[];
 extern const u8 BattleScript_FriskMsg[];
 extern const u8 BattleScript_FriskMsgWithPopup[];
 extern const u8 BattleScript_MoodyActivates[];
+extern const u8 BattleScript_ExcjinnBallDodge[];
 
 #endif // GUARD_BATTLE_SCRIPTS_H

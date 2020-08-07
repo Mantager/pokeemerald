@@ -98,6 +98,14 @@ YanurasTown_EventScript_StoreSign::
 	end
 
 
+YanurasTown_EventScript_RestTalker::
+	lock
+	faceplayer
+	msgbox YanurasTown_EventScript_RestTalker_Text_0
+	release
+	end
+
+
 YanurasTown_Movement_LeftPlayerMoveToSide:
 	walk_down
 	walk_right
@@ -124,6 +132,13 @@ YanurasTown_Movement_MalimoMoveToPlayer:
 	walk_left
 	walk_up
 	step_end
+
+YanurasTown_EventScript_TownSign::
+	lock
+	msgbox YanurasTown_EventScript_TownSign_Text_0
+	release
+	end
+
 
 YanurasTown_Trigger_AfterMeetingRyan_Text_0:
 	.string "{COLOR}{GREEN}Howzit, guys.$"
@@ -172,3 +187,9 @@ YanurasTown_Trigger_AfterMeetingRyan_Text_14:
 
 YanurasTown_EventScript_StoreSign_Text_0:
 	.string "Yanuras Town General Store$"
+
+YanurasTown_EventScript_RestTalker_Text_0:
+	.string "Whew…\pI'm taking a rest before I get\nback to work in the fields.$"
+
+YanurasTown_EventScript_TownSign_Text_0:
+	.string "Yanuras Town\nAsh Boot Town!$"

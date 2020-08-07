@@ -16,3 +16,25 @@ OroTown_PokemonCenter_EventScript_Nurse::
 	release
 	end
 
+
+OroTown_PokemonCenter_EventScript_Beauty::
+	lock
+	faceplayer
+	msgbox OroTown_PokemonCenter_EventScript_Beauty_Text_0
+	release
+	end
+
+
+OroTown_PokemonCenter_EventScript_Swimmer::
+	lock
+	faceplayer
+	msgbox OroTown_PokemonCenter_EventScript_Swimmer_Text_0
+	release
+	end
+
+
+OroTown_PokemonCenter_EventScript_Beauty_Text_0:
+	.string "My Pokémon was injured in a battle.\pI'm waiting for it to recover before\nwe head down to the beach and do a\lspot of sunbathing!$"
+
+OroTown_PokemonCenter_EventScript_Swimmer_Text_0:
+	.string "The beaches in Ríota are great,\nbut they're nothing compared to\lback home in Alola.$"

@@ -14,3 +14,19 @@ script OroTown_PokemonCenter_EventScript_Nurse {
     release
     end
 }
+
+script OroTown_PokemonCenter_EventScript_Beauty {
+    lock
+    faceplayer
+    msgbox("My Pokémon was injured in a battle.\pI'm waiting for it to recover before\nwe head down to the beach and do a\lspot of sunbathing!")
+    release
+    end
+}
+
+script OroTown_PokemonCenter_EventScript_Swimmer {
+    lock
+    faceplayer
+    msgbox("The beaches in Ríota are great,\nbut they're nothing compared to\lback home in Alola.")
+    release
+    end
+}

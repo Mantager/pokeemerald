@@ -77,6 +77,7 @@ enum
 #define BALL_3_SHAKES_FAIL      3
 #define BALL_3_SHAKES_SUCCESS   4
 #define BALL_TRAINER_BLOCK      5
+#define BALL_EXCJINN_DODGE      6
 
 #define INSTANT_HP_BAR_DROP     32767
 

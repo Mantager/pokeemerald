@@ -284,6 +284,27 @@ PrimeCity_Movement_PlayerToMaliFernFarRight:
 	walk_fastest_up
 	step_end
 
+PrimeCity_EventScript_CitySign::
+	lock
+	msgbox PrimeCity_EventScript_CitySign_Text_0
+	release
+	end
+
+
+PrimeCity_EventScript_NewValleyWaySign::
+	lock
+	msgbox PrimeCity_EventScript_NewValleyWaySign_Text_0
+	release
+	end
+
+
+PrimeCity_EventScript_BattleCompanySign::
+	lock
+	msgbox PrimeCity_EventScript_BattleCompanySign_Text_0
+	release
+	end
+
+
 PrimeCity_EventScript_PrimeWherePartyAt_Text_0:
 	.string "Prime City is the biggest city in Ríota!\nThis is where the party's at, baby!$"
 
@@ -464,3 +485,12 @@ PrimeCity_Trigger_LeavingEvent_Text_14:
 
 PrimeCity_Trigger_LeavingEvent_Text_15:
 	.string "{COLOR}{BLUE}Okay!\pLet's meet at the entrance to\nthe Valley.$"
+
+PrimeCity_EventScript_CitySign_Text_0:
+	.string "Prime City\nHeart of Ríota$"
+
+PrimeCity_EventScript_NewValleyWaySign_Text_0:
+	.string "To New Valley Way$"
+
+PrimeCity_EventScript_BattleCompanySign_Text_0:
+	.string "Battle Company$"

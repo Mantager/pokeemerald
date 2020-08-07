@@ -14,3 +14,11 @@ script DelaguaTown_PokemonCenter_EventScript_Nurse {
     release
     end
 }
+
+script DelaguaTown_PokemonCenter_EventScript_SoManyMons {
+    lock
+    faceplayer
+    msgbox("So many Pokémon can be found in\nthis world of ours.\pI wonder if anyone will ever catch\nthem all?")
+    release
+    end
+}
