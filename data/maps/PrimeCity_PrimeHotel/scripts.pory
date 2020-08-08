@@ -20,7 +20,7 @@ script PrimeCity_PrimeHotel_EventScript_ExpShareReceptionist {
 script PrimeCity_PrimeHotel_EventScript_FinestHotelReceptionist {
     lock
     faceplayer
-    msgbox("This hotel is the finest in Ríota.\pHence, our room prices are quite expensive.\nPlease understand.")
+    msgbox("This hotel is the finest in Ríota.\pHence, our room prices are expensive.\nPlease understand.")
     release
     end
 }

@@ -37,7 +37,7 @@ script PrimeCity_PoliceStation_2F_EventScript_StayPrepared {
     faceplayer
     if(flag(FLAG_RECIEVED_ASSAULT_VEST) == FALSE) {
         msgbox("In this job, you should be\nprepared for a scrap at all times.\pHere, if you get in a fight,\nthis should help a lot.")
-        giveitem(FLAG_RECIEVED_ASSAULT_VEST)
+        giveitem(ITEM_ASSAULT_VEST)
         if(var(VAR_RESULT) == 0) { msgbox("Uh, you've got no room for this.") }
         else {
             setflag(FLAG_RECIEVED_ASSAULT_VEST)

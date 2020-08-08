@@ -1,57 +1,57 @@
 mapscripts LandBridgeNorth_MapScripts {}
 
 script LandBridgeNorth_EventScript_Ala {
-    trainerbattle_single(TRAINER_G2_ALA, "Battle me now!", "No, I lost!")
-    msgbox("You're good.")
+    trainerbattle_single(TRAINER_G2_ALA, "This is a warm-up for when I\nclimb Wing Peak!", "I'm all sweaty now…")
+    msgbox("I think I should train a\nlittle more before I climb\lWing Peak.")
     release
     end
 }
 
 script LandBridgeNorth_EventScript_Shanti {
-    trainerbattle_single(TRAINER_G2_SHANTI, "Battle me now!", "No, I lost!")
-    msgbox("You're good.")
+    trainerbattle_single(TRAINER_G2_SHANTI, "My Pokémon has fists of iron!\nI won't lose!", "My Pokémon has fists of iron, but\nyours has fists of steel!")
+    msgbox("I guess fist strength doesn't make a\ndifference if you skip leg day…")
     release
     end
 }
 
 script LandBridgeNorth_EventScript_Cesar {
-    trainerbattle_single(TRAINER_G2_CESAR, "Battle me now!", "No, I lost!")
-    msgbox("You're good.")
+    trainerbattle_single(TRAINER_G2_CESAR, "Together with my Pokémon, a beautiful\norchestra is created!", "The choir softly weeps…")
+    msgbox("My dream is to compose a soundtrack\nfor the Pokémon Musical in Unova.")
     release
     end
 }
 
 script LandBridgeNorth_EventScript_Guillermo {
-    trainerbattle_single(TRAINER_G2_GUILLERMO, "Battle me now!", "No, I lost!")
-    msgbox("You're good.")
+    trainerbattle_single(TRAINER_G2_GUILLERMO, "Instead of a Pokémon, I've reeled\nin a Trainer!\pThis is a massive catch!", "Sunk the line!")
+    msgbox("Fishing requires patience, just like\nraising Pokémon.\pIn that regard, fishing and battling\nare quite similar.")
     release
     end
 }
 
 script LandBridgeNorth_EventScript_Valentin {
-    trainerbattle_single(TRAINER_G2_VALENTIN, "Battle me now!", "No, I lost!")
-    msgbox("You're good.")
+    trainerbattle_single(TRAINER_G2_VALENTIN, "…Flippin' fish sticks!\nYou made me lose my catch!", "And you defeated my precious\nPokémon too?\lJust go!")
+    msgbox("I should've known better than to\nfish in a spot like this…\pTrainers keep challenging me left and\nright!")
     release
     end
 }
 
 script LandBridgeNorth_EventScript_Torie {
-    trainerbattle_single(TRAINER_G2_TORIE, "Battle me now!", "No, I lost!")
-    msgbox("You're good.")
+    trainerbattle_single(TRAINER_G2_TORIE, "My Floatzel's water sac is just\nlike my inflatable tube!", "Floatzel!\nNo!")
+    msgbox("Since my Floatzel evolved from a\nBuizel, I always lose in a swimming\nrace.")
     release
     end
 }
 
 script LandBridgeNorth_EventScript_Jorge {
-    trainerbattle_single(TRAINER_G2_JORGE, "Battle me now!", "No, I lost!")
-    msgbox("You're good.")
+    trainerbattle_single(TRAINER_G2_JORGE, "My Pokémon are rare and refined.\nThey won't lose to a commoner like you.", "Ugh…\nSo unruly…")
+    msgbox("You ought to learn some manners.")
     release
     end
 }
 
 script LandBridgeNorth_EventScript_Agustin {
-    trainerbattle_single(TRAINER_G2_AGUSTIN, "Battle me now!", "No, I lost!")
-    msgbox("You're good.")
+    trainerbattle_single(TRAINER_G2_AGUSTIN, "Oh, a Trainer!\nWhaddaya say we have a scrap?", "Me and my big mouth…")
+    msgbox("Sometimes it's not a good idea to\nbattle every Trainer you see…")
     release
     end
 }

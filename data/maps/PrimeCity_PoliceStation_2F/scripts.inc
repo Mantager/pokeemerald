@@ -45,7 +45,7 @@ PrimeCity_PoliceStation_2F_EventScript_StayPrepared_1:
 
 PrimeCity_PoliceStation_2F_EventScript_StayPrepared_2:
 	msgbox PrimeCity_PoliceStation_2F_EventScript_StayPrepared_Text_0
-	giveitem FLAG_RECIEVED_ASSAULT_VEST
+	giveitem ITEM_ASSAULT_VEST
 	compare VAR_RESULT, 0
 	goto_if_eq PrimeCity_PoliceStation_2F_EventScript_StayPrepared_5
 	setflag FLAG_RECIEVED_ASSAULT_VEST

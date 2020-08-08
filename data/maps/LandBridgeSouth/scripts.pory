@@ -22,36 +22,36 @@ script LandBridgeSouth_EventScript_Ei {
 }
 
 script LandBridgeSouth_EventScript_Ai {
-    trainerbattle_double(TRAINER_G2_EI_AND_AI, "I don't really get maths", "Ei: Noooo!\nAi:Waaaah!", "We won't battle just one Pokémon!\nThat's mean!")
+    trainerbattle_double(TRAINER_G2_EI_AND_AI, "I don't really get maths.\nBut I get battling!", "Ei: Noooo!\nAi:Waaaah!", "We won't battle just one Pokémon!\nThat's mean!")
     msgbox("You're good.")
     release
     end
 }
 
 script LandBridgeSouth_EventScript_Felipe {
-    trainerbattle_single(TRAINER_G2_FELIPE, "Battle me now!", "No, I lost!")
-    msgbox("You're good.")
+    trainerbattle_single(TRAINER_G2_FELIPE, "What's this now?\nYou think you can beat me?", "You've got good intuition!")
+    msgbox("It's important to be confident in whatever\nyou do.\pOtherwise, you'll make lots of\nmistakes.")
     release
     end
 }
 
 script LandBridgeSouth_EventScript_Julieta {
-    trainerbattle_single(TRAINER_G2_JULIETA, "Battle me now!", "No, I lost!")
-    msgbox("You're good.")
+    trainerbattle_single(TRAINER_G2_JULIETA, "My rubber ring is like a big\ndoughnut!", "Now I'm hungry for doughnuts!")
+    msgbox("Ríota's cuisine is just soooo good!\nA chef called Siebold even came\nto learn some of our recipes!")
     release
     end
 }
 
 script LandBridgeSouth_EventScript_Oru {
-    trainerbattle_single(TRAINER_G2_ORU, "Battle me now!", "No, I lost!")
-    msgbox("You're good.")
+    trainerbattle_single(TRAINER_G2_ORU, "If you could see the future,\nhow far would you look?", "Did you forsee this?")
+    msgbox("Some humans can see the future.\nUnfortunately, I'm not one of them.")
     release
     end
 }
 
 script LandBridgeSouth_EventScript_Nan {
-    trainerbattle_single(TRAINER_G2_NAN, "Battle me now!", "No, I lost!")
-    msgbox("You're good.")
+    trainerbattle_single(TRAINER_G2_NAN, "I'm a fledgling Psychic.\pI can only use telekinesis, but\nI'll do my best!", "No good…")
+    msgbox("I became a Psychic after I met\nSabrina, a famous Psychic.")
     release
     end
 }

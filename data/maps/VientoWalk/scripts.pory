@@ -1,57 +1,57 @@
 mapscripts VientoWalk_MapScripts {}
 
 script VientoWalk_EventScript_Sofia {
-    trainerbattle_single(TRAINER_G2_SOFIA, "Battle me now!", "No, I lost!")
-    msgbox("You're good.")
+    trainerbattle_single(TRAINER_G2_SOFIA, "The smell of flowers in the air…\nIsn't it soothing?", "…How cruel…")
+    msgbox("It seems like you can only\nfind Flabébé riding red flowers\laround here.")
     release
     end
 }
 
 script VientoWalk_EventScript_Paula {
-    trainerbattle_single(TRAINER_G2_PAULA, "Battle me now!", "No, I lost!")
-    msgbox("You're good.")
+    trainerbattle_single(TRAINER_G2_PAULA, "The wind calls to me!\nIt says to battle you!", "Was the wind guiding me towards defeat?!")
+    msgbox("Maybe I should make my own decisions\ninstead of trusting the wind.")
     release
     end
 }
 
 script VientoWalk_EventScript_Carlos {
-    trainerbattle_single(TRAINER_G2_CARLOS, "Battle me now!", "No, I lost!")
-    msgbox("You're good.")
+    trainerbattle_single(TRAINER_G2_CARLOS, "Flowers bloom here all year round.\nI battle all year round, too!", "I also lose all year round…")
+    msgbox("I need to head back to a\nPokémon Center!")
     release
     end
 }
 
 script VientoWalk_EventScript_Estefani {
-    trainerbattle_single(TRAINER_G2_ESTEFANI, "Battle me now!", "No, I lost!")
-    msgbox("You're good.")
+    trainerbattle_single(TRAINER_G2_ESTEFANI, "Are you ready to fight?\nNo?\lWell, I don't care.", "…Why?")
+    msgbox("I'm a Picnicker, but I don't eat\nsandwiches and salads on my\lpicnics.\pI drink the tears of my opponents!")
     release
     end
 }
 
 script VientoWalk_EventScript_Amanda {
-    trainerbattle_single(TRAINER_G2_AMANDA, "Battle me now!", "No, I lost!")
-    msgbox("You're good.")
+    trainerbattle_single(TRAINER_G2_AMANDA, "Do you love your Pokémon?\nMe too!", "My love wasn't enough!")
+    msgbox("Some Pokémon evolve when they feel\nclose enough to their Trainer.")
     release
     end
 }
 
 script VientoWalk_EventScript_Nicolas {
-    trainerbattle_single(TRAINER_G2_NICOLAS, "Battle me now!", "No, I lost!")
-    msgbox("You're good.")
+    trainerbattle_single(TRAINER_G2_NICOLAS, "Roam free, my avian comrades!", "Beaten by a land-dweller?\nWhat is this?!")
+    msgbox("Flying above the clouds, on\nthe back of a bird Pokémon…\pIt's an indescribable feeling.")
     release
     end
 }
 
 script VientoWalk_EventScript_Merry {
-    trainerbattle_single(TRAINER_G2_MERRY, "Battle me now!", "No, I lost!")
-    msgbox("You're good.")
+    trainerbattle_single(TRAINER_G2_MERRY, "If you're a tuft of grass, then\nI'm the mower coming to cut\nyou down to size!", "Aw, man!")
+    msgbox("If you use a Sun Stone, then\nCottonee will evolve into Whimsicott.")
     release
     end
 }
 
 script VientoWalk_EventScript_Anahi {
-    trainerbattle_single(TRAINER_G2_ANAHI, "Battle me now!", "No, I lost!")
-    msgbox("You're good.")
+    trainerbattle_single(TRAINER_G2_ANAHI, "You're cursed!\nI'm going to seal you away!", "Help!\nIt's breaking loose!")
+    msgbox("I suppose I'll have to call\nin my Hex Maniac friends to\lpurify you!")
     release
     end
 }

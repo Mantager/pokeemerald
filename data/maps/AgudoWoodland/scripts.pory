@@ -82,57 +82,57 @@ mapscripts AgudoWoodland_MapScripts {
 }
 
 script AgudoWoodland_EventScript_Keila {
-    trainerbattle_single(TRAINER_G2_KEILA, "Battle me now!", "No, I lost!")
-    msgbox("You're good.")
+    trainerbattle_single(TRAINER_G2_KEILA, "The stars have aligned!\nYou will lose to me!", "This is… 'fate'.")
+    msgbox("Stargazing fills me with a\nsense of inner peace.")
     release
     end
 }
 
 script AgudoWoodland_EventScript_Des {
-    trainerbattle_single(TRAINER_G2_DES, "Battle me now!", "No, I lost!")
-    msgbox("You're good.")
+    trainerbattle_single(TRAINER_G2_DES, "Where are you going?\nWhat's the rush?", "Take it easy!")
+    msgbox("So you're going to Wing Peak?\nYou'd better be prepared!")
     release
     end
 }
 
 script AgudoWoodland_EventScript_Franco {
-    trainerbattle_single(TRAINER_G2_FRANCO, "Battle me now!", "No, I lost!")
-    msgbox("You're good.")
+    trainerbattle_single(TRAINER_G2_FRANCO, "The 'future' and the 'past'…\nWhich is more important?", "Oh no!")
+    msgbox("Perhaps the 'present' is more\nimportant than both the 'future'\land the 'past'…")
     release
     end
 }
 
 script AgudoWoodland_EventScript_Cristian {
-    trainerbattle_single(TRAINER_G2_CRISTIAN, "Battle me now!", "No, I lost!")
-    msgbox("You're good.")
+    trainerbattle_single(TRAINER_G2_CRISTIAN, "Are you in trouble?\pI'll help you out…\nwith a battle!", "Now I'm in trouble!")
+    msgbox("I knew you were fine.\pI just didn't know how to ask\nfor a battle!")
     release
     end
 }
 
 script AgudoWoodland_EventScript_Mariana {
-    trainerbattle_single(TRAINER_G2_MARIANA, "Battle me now!", "No, I lost!")
-    msgbox("You're good.")
+    trainerbattle_single(TRAINER_G2_MARIANA, "Hello, there.\nWhy don't we battle?", "Oh, fiddlesticks!")
+    msgbox("Do you ever wonder if plants\nare actually a special type\lof Pokémon?\pNo?\nJust me?\lOkay then.")
     release
     end
 }
 
 script AgudoWoodland_EventScript_Rep {
-    trainerbattle_single(TRAINER_G2_REP, "Battle me now!", "No, I lost!")
-    msgbox("You're good.")
+    trainerbattle_single(TRAINER_G2_REP, "Dragon-type Pokémon are the strongest!\pThey'll beat any non-dragon easily!", "My precious Druddigon!")
+    msgbox("Are you secretly a dragon?\pAfter all, only dragons can beat\ndragons.\pWhat? Fairy-type?\nWhat's that?")
     release
     end
 }
 
 script AgudoWoodland_EventScript_Luca {
-    trainerbattle_single(TRAINER_G2_LUCA, "Battle me now!", "No, I lost!")
-    msgbox("You're good.")
+    trainerbattle_single(TRAINER_G2_LUCA, "You're my hundredth opponent today!\pUnbeaten streak of one hundred,\nhere I come!", "You're kidding, right?")
+    msgbox("Looks like I have to start my\nstreak all over again.")
     release
     end
 }
 
 script AgudoWoodland_EventScript_Kireiya {
-    trainerbattle_single(TRAINER_G2_KIREIYA, "Battle me now!", "No, I lost!")
-    msgbox("You're good.")
+    trainerbattle_single(TRAINER_G2_KIREIYA, "I'm your opponent!\nDon't try and get away!", "I haven't lost like this\nsince the Kalos League…")
+    msgbox("I've challenged quite a few Pokémon\nLeagues in my time.")
     release
     end
 }

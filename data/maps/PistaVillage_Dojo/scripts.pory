@@ -124,29 +124,29 @@ script PistaVillage_Dojo_EventScript_Sanchez {
 }
 
 script PistaVillage_Dojo_EventScript_Maga {
-    trainerbattle_single(TRAINER_G2_MAGA, "Battle me now!", "No, I lost!")
-    msgbox("You're good.")
+    trainerbattle_single(TRAINER_G2_MAGA, "I strike thee!", "I bow out peacefully.\nI have no regrets.")
+    msgbox("I wonder if you can beat\nSanchez?")
     release
     end
 }
 
 script PistaVillage_Dojo_EventScript_Holly {
-    trainerbattle_single(TRAINER_G2_HOLLY, "Battle me now!", "No, I lost!")
-    msgbox("You're good.")
+    trainerbattle_single(TRAINER_G2_HOLLY, "Doryaa!\nThere's no escape!", "I must train more!")
+    msgbox("My goal is becoming the ultimate\nFighting-type Trainer.")
     release
     end
 }
 
 script PistaVillage_Dojo_EventScript_Aemilla {
-    trainerbattle_single(TRAINER_G2_AEMILLA, "Battle me now!", "No, I lost!")
-    msgbox("You're good.")
+    trainerbattle_single(TRAINER_G2_AEMILLA, "Don't take a step further!\nI'll defeat you now!", "This is too bad!")
+    msgbox("Everyone in this dojo takes\nbattling super seriously.")
     release
     end
 }
 
 script PistaVillage_Dojo_EventScript_Ignacio {
-    trainerbattle_single(TRAINER_G2_IGNACIO, "Battle me now!", "No, I lost!")
-    msgbox("You're good.")
+    trainerbattle_single(TRAINER_G2_IGNACIO, "I came from Kanto!\nI'll show you how we do\nthings in Saffron City!", "So this is how you do\nthings in Ríota, huh?")
+    msgbox("In Saffron City, there's a place\ncalled the Fighting Dojo.\pI trained there as a kid.")
     release
     end
 }

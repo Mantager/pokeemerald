@@ -17,50 +17,50 @@ DerivaWalk_EventScript_Emilio::
 
 
 DerivaWalk_EventScript_Megan::
-	trainerbattle_single TRAINER_G2_MEGAN, DerivaWalk_EventScript_Emilio_Text_0, DerivaWalk_EventScript_Emilio_Text_1
-	msgbox DerivaWalk_EventScript_Emilio_Text_2
+	trainerbattle_single TRAINER_G2_MEGAN, DerivaWalk_EventScript_Megan_Text_0, DerivaWalk_EventScript_Megan_Text_1
+	msgbox DerivaWalk_EventScript_Megan_Text_2
 	release
 	end
 
 
 DerivaWalk_EventScript_Federico::
-	trainerbattle_single TRAINER_G2_FEDERICO, DerivaWalk_EventScript_Emilio_Text_0, DerivaWalk_EventScript_Emilio_Text_1
-	msgbox DerivaWalk_EventScript_Emilio_Text_2
+	trainerbattle_single TRAINER_G2_FEDERICO, DerivaWalk_EventScript_Federico_Text_0, DerivaWalk_EventScript_Federico_Text_1
+	msgbox DerivaWalk_EventScript_Federico_Text_2
 	release
 	end
 
 
 DerivaWalk_EventScript_Vincent::
-	trainerbattle_single TRAINER_G2_VINCENT, DerivaWalk_EventScript_Emilio_Text_0, DerivaWalk_EventScript_Emilio_Text_1
-	msgbox DerivaWalk_EventScript_Emilio_Text_2
+	trainerbattle_single TRAINER_G2_VINCENT, DerivaWalk_EventScript_Vincent_Text_0, DerivaWalk_EventScript_Vincent_Text_1
+	msgbox DerivaWalk_EventScript_Vincent_Text_2
 	release
 	end
 
 
 DerivaWalk_EventScript_Nakia::
-	trainerbattle_single TRAINER_G2_NAKIA, DerivaWalk_EventScript_Emilio_Text_0, DerivaWalk_EventScript_Emilio_Text_1
-	msgbox DerivaWalk_EventScript_Emilio_Text_2
+	trainerbattle_single TRAINER_G2_NAKIA, DerivaWalk_EventScript_Nakia_Text_0, DerivaWalk_EventScript_Nakia_Text_1
+	msgbox DerivaWalk_EventScript_Nakia_Text_2
 	release
 	end
 
 
 DerivaWalk_EventScript_Yan::
-	trainerbattle_double TRAINER_G2_YAN_AND_IVO, DerivaWalk_EventScript_Emilio_Text_0, DerivaWalk_EventScript_Emilio_Text_1, DerivaWalk_EventScript_Yan_Text_0
-	msgbox DerivaWalk_EventScript_Emilio_Text_2
+	trainerbattle_double TRAINER_G2_YAN_AND_IVO, DerivaWalk_EventScript_Yan_Text_0, DerivaWalk_EventScript_Yan_Text_1, DerivaWalk_EventScript_Yan_Text_2
+	msgbox DerivaWalk_EventScript_Yan_Text_3
 	release
 	end
 
 
 DerivaWalk_EventScript_Ivo::
-	trainerbattle_double TRAINER_G2_YAN_AND_IVO, DerivaWalk_EventScript_Emilio_Text_0, DerivaWalk_EventScript_Emilio_Text_1, DerivaWalk_EventScript_Yan_Text_0
-	msgbox DerivaWalk_EventScript_Emilio_Text_2
+	trainerbattle_double TRAINER_G2_YAN_AND_IVO, DerivaWalk_EventScript_Ivo_Text_0, DerivaWalk_EventScript_Yan_Text_1, DerivaWalk_EventScript_Ivo_Text_1
+	msgbox DerivaWalk_EventScript_Ivo_Text_2
 	release
 	end
 
 
 DerivaWalk_EventScript_Maikel::
-	trainerbattle_single TRAINER_G2_MAIKEL, DerivaWalk_EventScript_Emilio_Text_0, DerivaWalk_EventScript_Emilio_Text_1
-	msgbox DerivaWalk_EventScript_Emilio_Text_2
+	trainerbattle_single TRAINER_G2_MAIKEL, DerivaWalk_EventScript_Maikel_Text_0, DerivaWalk_EventScript_Maikel_Text_1
+	msgbox DerivaWalk_EventScript_Maikel_Text_2
 	release
 	end
 
@@ -117,25 +117,88 @@ DerivaWalk_Trigger_FernEvent::
 
 
 DerivaWalk_EventScript_Josefina_Text_0:
-	.string "I'm a fish out of water!$"
+	.string "If I win, I'll push you in the river!$"
 
 DerivaWalk_EventScript_Josefina_Text_1:
-	.string "All I could do was flop!$"
+	.string "Aw, I lost.$"
 
 DerivaWalk_EventScript_Josefina_Text_2:
-	.string "Y'know, lately I've been leaping\noff the cliffs at the Land Bridge.\pIt's great fun, I tell you!$"
+	.string "Some people like to swim on\nthe back of a Pokémon, but in my\lopinion it's better by yourself.$"
 
 DerivaWalk_EventScript_Emilio_Text_0:
-	.string "Battle me now!$"
+	.string "A battle, huh?\pI was just about to take a swim,\nbut I guess I can have a quick match.$"
 
 DerivaWalk_EventScript_Emilio_Text_1:
-	.string "No, I lost!$"
+	.string "You just got lucky.$"
 
 DerivaWalk_EventScript_Emilio_Text_2:
-	.string "You're good.$"
+	.string "Swimming is great exercise.\pBut as a triathlete, I participate\nin lots of sports.$"
+
+DerivaWalk_EventScript_Megan_Text_0:
+	.string "Ah, you wish to battle?\nVery well, if we must.$"
+
+DerivaWalk_EventScript_Megan_Text_1:
+	.string "Petilil, Lilligant…\nYou did well.$"
+
+DerivaWalk_EventScript_Megan_Text_2:
+	.string "One day, a Pokémon League will open\nin Ríota.\pI'd like to become a Grass-type\nGym Leader.$"
+
+DerivaWalk_EventScript_Federico_Text_0:
+	.string "Singing by the river,\nrocking by the water!$"
+
+DerivaWalk_EventScript_Federico_Text_1:
+	.string "I'm not singing now, that's for sure.$"
+
+DerivaWalk_EventScript_Federico_Text_2:
+	.string "How am I meant to perform now\nyou've knocked out my bandmates?$"
+
+DerivaWalk_EventScript_Vincent_Text_0:
+	.string "I came from Oro Town to catch\nsome rare Pokémon!\pBut now, I want to fight you!$"
+
+DerivaWalk_EventScript_Vincent_Text_1:
+	.string "No way!\nYou cheated!$"
+
+DerivaWalk_EventScript_Vincent_Text_2:
+	.string "Now I've gotta go back to\nOro Town to restore my Pokémon's HP…$"
+
+DerivaWalk_EventScript_Nakia_Text_0:
+	.string "My, a Trainer has approached me.\nIs this 'fate'?$"
+
+DerivaWalk_EventScript_Nakia_Text_1:
+	.string "Is this too 'fate'?$"
+
+DerivaWalk_EventScript_Nakia_Text_2:
+	.string "It is my solemn belief that all\nbeings are guided by fate.\pEverything happens for a reason.$"
 
 DerivaWalk_EventScript_Yan_Text_0:
-	.string "Need two!$"
+	.string "Ivo, let's wash this Trainer\naway!$"
+
+DerivaWalk_EventScript_Yan_Text_1:
+	.string "Yan: I'm awash with embarassment!\nIvo: Sis, it's not that bad.$"
+
+DerivaWalk_EventScript_Yan_Text_2:
+	.string "We can't battle unless you've\ngot two Pokémon with you.$"
+
+DerivaWalk_EventScript_Yan_Text_3:
+	.string "I want to get stronger, but\nI feel like my brother plays\laround in battle too much.$"
+
+DerivaWalk_EventScript_Ivo_Text_0:
+	.string "Ivo: Oh, Yan, here comes a\nTrainer.$"
+
+DerivaWalk_EventScript_Ivo_Text_1:
+	.string "We're partners, so if you want\nto battle, you'll need two Pokémon.$"
+
+DerivaWalk_EventScript_Ivo_Text_2:
+	.string "Hopefully I can be as good as you\none day.$"
+
+DerivaWalk_EventScript_Maikel_Text_0:
+	.string "Blub blub blub…\nI'm pretending to be a fish Pokémon.$"
+
+DerivaWalk_EventScript_Maikel_Text_1:
+	.string "Glubber… glubber…$"
+
+DerivaWalk_EventScript_Maikel_Text_2:
+	.string "You're strong enough to drown even\na sprightly fish like me…$"
 
 DerivaWalk_Trigger_FernEvent_Text_0:
 	.string "Fern!$"
