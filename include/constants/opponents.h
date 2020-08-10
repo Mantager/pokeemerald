@@ -73,6 +73,10 @@
 #define TRAINER_G2_KIREIYA                    69
 #define TRAINER_G2_NAS_2                      70
 #define TRAINER_G2_HIGHCROFT                  71
+#define TRAINER_G2_ENZO                       72
+#define TRAINER_G2_ABRIL                      73
+#define TRAINER_G2_DIEGO                      74
+#define TRAINER_G2_MICAELA                    75
 #define TRAINER_SAWYER_1                      1
 #define TRAINER_GRUNT_AQUA_HIDEOUT_1          2
 #define TRAINER_GRUNT_AQUA_HIDEOUT_2          3

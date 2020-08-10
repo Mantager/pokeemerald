@@ -32,28 +32,28 @@ LandBridgeSouth_EventScript_Ai::
 
 LandBridgeSouth_EventScript_Felipe::
 	trainerbattle_single TRAINER_G2_FELIPE, LandBridgeSouth_EventScript_Felipe_Text_0, LandBridgeSouth_EventScript_Felipe_Text_1
-	msgbox LandBridgeSouth_EventScript_Ei_Text_3
+	msgbox LandBridgeSouth_EventScript_Felipe_Text_2
 	release
 	end
 
 
 LandBridgeSouth_EventScript_Julieta::
-	trainerbattle_single TRAINER_G2_JULIETA, LandBridgeSouth_EventScript_Felipe_Text_0, LandBridgeSouth_EventScript_Felipe_Text_1
-	msgbox LandBridgeSouth_EventScript_Ei_Text_3
+	trainerbattle_single TRAINER_G2_JULIETA, LandBridgeSouth_EventScript_Julieta_Text_0, LandBridgeSouth_EventScript_Julieta_Text_1
+	msgbox LandBridgeSouth_EventScript_Julieta_Text_2
 	release
 	end
 
 
 LandBridgeSouth_EventScript_Oru::
-	trainerbattle_single TRAINER_G2_ORU, LandBridgeSouth_EventScript_Felipe_Text_0, LandBridgeSouth_EventScript_Felipe_Text_1
-	msgbox LandBridgeSouth_EventScript_Ei_Text_3
+	trainerbattle_single TRAINER_G2_ORU, LandBridgeSouth_EventScript_Oru_Text_0, LandBridgeSouth_EventScript_Oru_Text_1
+	msgbox LandBridgeSouth_EventScript_Oru_Text_2
 	release
 	end
 
 
 LandBridgeSouth_EventScript_Nan::
-	trainerbattle_single TRAINER_G2_NAN, LandBridgeSouth_EventScript_Felipe_Text_0, LandBridgeSouth_EventScript_Felipe_Text_1
-	msgbox LandBridgeSouth_EventScript_Ei_Text_3
+	trainerbattle_single TRAINER_G2_NAN, LandBridgeSouth_EventScript_Nan_Text_0, LandBridgeSouth_EventScript_Nan_Text_1
+	msgbox LandBridgeSouth_EventScript_Nan_Text_2
 	release
 	end
 
@@ -89,10 +89,40 @@ LandBridgeSouth_EventScript_Ei_Text_3:
 	.string "You're good.$"
 
 LandBridgeSouth_EventScript_Ai_Text_0:
-	.string "I don't really get maths$"
+	.string "I don't really get maths.\nBut I get battling!$"
 
 LandBridgeSouth_EventScript_Felipe_Text_0:
-	.string "Battle me now!$"
+	.string "What's this now?\nYou think you can beat me?$"
 
 LandBridgeSouth_EventScript_Felipe_Text_1:
-	.string "No, I lost!$"
+	.string "You've got good intuition!$"
+
+LandBridgeSouth_EventScript_Felipe_Text_2:
+	.string "It's important to be confident in whatever\nyou do.\pOtherwise, you'll make lots of\nmistakes.$"
+
+LandBridgeSouth_EventScript_Julieta_Text_0:
+	.string "My rubber ring is like a big\ndoughnut!$"
+
+LandBridgeSouth_EventScript_Julieta_Text_1:
+	.string "Now I'm hungry for doughnuts!$"
+
+LandBridgeSouth_EventScript_Julieta_Text_2:
+	.string "Ríota's cuisine is just soooo good!\nA chef called Siebold even came\nto learn some of our recipes!$"
+
+LandBridgeSouth_EventScript_Oru_Text_0:
+	.string "If you could see the future,\nhow far would you look?$"
+
+LandBridgeSouth_EventScript_Oru_Text_1:
+	.string "Did you forsee this?$"
+
+LandBridgeSouth_EventScript_Oru_Text_2:
+	.string "Some humans can see the future.\nUnfortunately, I'm not one of them.$"
+
+LandBridgeSouth_EventScript_Nan_Text_0:
+	.string "I'm a fledgling Psychic.\pI can only use telekinesis, but\nI'll do my best!$"
+
+LandBridgeSouth_EventScript_Nan_Text_1:
+	.string "No good…$"
+
+LandBridgeSouth_EventScript_Nan_Text_2:
+	.string "I became a Psychic after I met\nSabrina, a famous Psychic.$"

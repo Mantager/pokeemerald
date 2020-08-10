@@ -8120,4 +8120,20 @@ extern const u32 gMonStillFrontPic_Excjinn[];
 extern const u8 gMonIcon_Excjinn[];
 extern const u8 gMonFootprint_Excjinn[];
 
+extern const u32 gMonFrontPic_Rookidee[];
+extern const u32 gMonPalette_Rookidee[];
+extern const u32 gMonBackPic_Rookidee[];
+extern const u32 gMonShinyPalette_Rookidee[];
+extern const u8 gMonIcon_Rookidee[];
+extern const u32 gMonFrontPic_Corvisquire[];
+extern const u32 gMonPalette_Corvisquire[];
+extern const u32 gMonBackPic_Corvisquire[];
+extern const u32 gMonShinyPalette_Corvisquire[];
+extern const u8 gMonIcon_Corvisquire[];
+extern const u32 gMonFrontPic_Corviknight[];
+extern const u32 gMonPalette_Corviknight[];
+extern const u32 gMonBackPic_Corviknight[];
+extern const u32 gMonShinyPalette_Corviknight[];
+extern const u8 gMonIcon_Corviknight[];
+
 #endif //GUARD_GRAPHICS_H

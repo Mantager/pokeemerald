@@ -1197,3 +1197,11 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/DelaguaTown_Mart/scripts.inc"
 
 	.include "data/maps/PistaVillage_BikeShop/scripts.inc"
+
+	.include "data/maps/PrimeCity_BattleCompany_2F/scripts.inc"
+
+	.include "data/maps/PrimeCity_BattleCompany_3F/scripts.inc"
+
+	.include "data/maps/PrimeCity_SpecialBuilding/scripts.inc"
+
+	.include "data/maps/PistaVillage_HouseA/scripts.inc"

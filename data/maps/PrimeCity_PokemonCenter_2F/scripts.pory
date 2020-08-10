@@ -1,1 +1,95 @@
 mapscripts PrimeCity_PokemonCenter_2F_MapScripts {}
+
+script PrimeCity_PokemonCenter_2F_EventScript_TraderGastly {
+    lock
+    faceplayer
+    if(flag(FLAG_PRIME_1_TRADE_COMPLETED) == TRUE) {
+        msgbox("How's my old Gastly doing?")
+        release
+        end
+    } else {
+        setvar(VAR_0x8008, INGAME_TRADE_GASTLY)
+        copyvar(VAR_0x8004, VAR_0x8008)
+        specialvar(VAR_RESULT, GetInGameTradeSpeciesInfo)
+        copyvar(VAR_0x8009, VAR_RESULT)
+        msgbox("I'm looking for a Shinx!\pWant to trade for my Gastly?", MSGBOX_YESNO)
+        if(var(VAR_RESULT) == NO) { goto(PrimeCity_PokemonCenter_2F_EventScript_TraderGastlyDeclined) }
+        special(ChoosePartyMon)
+        waitstate
+        copyvar(VAR_0x800A, VAR_0x8004)
+        if(var(VAR_0x8004) == 255) { goto(PrimeCity_PokemonCenter_2F_EventScript_TraderGastlyDeclined) }
+        copyvar(VAR_0x8005, VAR_0x800A)
+        specialvar(VAR_RESULT, GetTradeSpecies)
+        copyvar(VAR_0x800B, VAR_RESULT)
+        if(var(VAR_RESULT) == VAR_0x8009) {
+            copyvar(VAR_0x8004, VAR_0x8008)
+            copyvar(VAR_0x8005, VAR_0x800A)
+            special(CreateInGameTradePokemon)
+            special(DoInGameTradeScene)
+            waitstate
+            setflag(FLAG_PRIME_1_TRADE_COMPLETED)
+            msgbox("Cheers, friendo!")
+        } else {
+            msgbox("That Pokémon isn't a Shinx!")
+        }
+        release
+        end
+    }
+}
+
+script PrimeCity_PokemonCenter_2F_EventScript_TraderGastlyDeclined {
+    msgbox("Huh?\nYou don't want to trade?\pThat's too bad.")
+    release
+    end
+}
+
+script PrimeCity_PokemonCenter_2F_EventScript_TraderCottonee {
+    lock
+    faceplayer
+    if(flag(FLAG_PRIME_2_TRADE_COMPLETED) == TRUE) {
+        msgbox("I hope Cottonee is well.")
+        release
+        end
+    } else {
+        setvar(VAR_0x8008, INGAME_TRADE_COTTONEE)
+        copyvar(VAR_0x8004, VAR_0x8008)
+        specialvar(VAR_RESULT, GetInGameTradeSpeciesInfo)
+        copyvar(VAR_0x8009, VAR_RESULT)
+        msgbox("Would you perchance have a Zubat?\pIf you do, would you like\nto trade for my Cottonee?", MSGBOX_YESNO)
+        if(var(VAR_RESULT) == NO) { goto(PrimeCity_PokemonCenter_2F_EventScript_TraderCottoneeDeclined) }
+        special(ChoosePartyMon)
+        waitstate
+        copyvar(VAR_0x800A, VAR_0x8004)
+        if(var(VAR_0x8004) == 255) { goto(PrimeCity_PokemonCenter_2F_EventScript_TraderCottoneeDeclined) }
+        copyvar(VAR_0x8005, VAR_0x800A)
+        specialvar(VAR_RESULT, GetTradeSpecies)
+        copyvar(VAR_0x800B, VAR_RESULT)
+        if(var(VAR_RESULT) == VAR_0x8009) {
+            copyvar(VAR_0x8004, VAR_0x8008)
+            copyvar(VAR_0x8005, VAR_0x800A)
+            special(CreateInGameTradePokemon)
+            special(DoInGameTradeScene)
+            waitstate
+            setflag(FLAG_PRIME_2_TRADE_COMPLETED)
+            msgbox("Thank you for the trade!\nI really do appreciate it!")
+        } else {
+            msgbox("Excuse me, but this isn't a Zubat.")
+        }
+        release
+        end
+    }
+}
+
+script PrimeCity_PokemonCenter_2F_EventScript_TraderCottoneeDeclined {
+    msgbox("Oh, you wouldn't like to?\nI see…")
+    release
+    end
+}
+
+script PrimeCity_PokemonCenter_2F_EventScript_TradeCornerTalker {
+    lock
+    faceplayer
+    msgbox("This is the Trade Corner.\pI'm sure you can guess what\npeople come here for.")
+    release
+    end
+}

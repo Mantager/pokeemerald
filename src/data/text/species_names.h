@@ -822,6 +822,9 @@ const u8 gSpeciesNames[][POKEMON_NAME_LENGTH + 1] = {
     [SPECIES_MELTAN] = _("Meltan"),
     [SPECIES_MELMETAL] = _("Melmetal"),
     [SPECIES_EXCJINN] = _("Excjinn"),
+    [SPECIES_ROOKIDEE] = _("Rookidee"),
+    [SPECIES_CORVISQUIRE] = _("Corvisqure"),
+    [SPECIES_CORVIKNIGHT] = _("Corviknght"),
 
     [SPECIES_MEGA_VENUSAUR] = _("Venusaur"),
     [SPECIES_MEGA_CHARIZARD_X] = _("Charizard"),

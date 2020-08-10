@@ -1574,6 +1574,7 @@ void CB2_WhiteOut(void)
 
     if (++gMain.state >= 120)
     {
+        FlagClear(FLAG_DISABLE_CATCHING);
         FieldClearVBlankHBlankCallbacks();
         StopMapMusic();
         ResetSafariZoneFlag_();

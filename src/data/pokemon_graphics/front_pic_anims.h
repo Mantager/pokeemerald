@@ -13117,6 +13117,42 @@ static const union AnimCmd *const sAnims_EXCJINN[] ={
     sAnim_EXCJINN_1,
 };
 
+static const union AnimCmd sAnim_ROOKIDEE_1[] =
+{
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
+
+
+static const union AnimCmd *const sAnims_ROOKIDEE[] ={
+    sAnim_GeneralFrame0,
+    sAnim_ROOKIDEE_1,
+};
+
+static const union AnimCmd sAnim_CORVISQUIRE_1[] =
+{
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
+
+
+static const union AnimCmd *const sAnims_CORVISQUIRE[] ={
+    sAnim_GeneralFrame0,
+    sAnim_CORVISQUIRE_1,
+};
+
+static const union AnimCmd sAnim_CORVIKNIGHT_1[] =
+{
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
+
+
+static const union AnimCmd *const sAnims_CORVIKNIGHT[] ={
+    sAnim_GeneralFrame0,
+    sAnim_CORVIKNIGHT_1,
+};
+
 #define ANIM_CMD(name)             [SPECIES_##name] = sAnims_##name
 #define ANIM_CMD_FULL(name, anims) [SPECIES_##name] = anims
 
@@ -13943,6 +13979,9 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     ANIM_CMD(MELTAN),
     ANIM_CMD(MELMETAL),
     ANIM_CMD(EXCJINN),
+    ANIM_CMD(ROOKIDEE),
+    ANIM_CMD(CORVISQUIRE),
+    ANIM_CMD(CORVIKNIGHT),
     ANIM_CMD(EGG),
     ANIM_CMD(MEGA_VENUSAUR),
     ANIM_CMD(MEGA_CHARIZARD_X),

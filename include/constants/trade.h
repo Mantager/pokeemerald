@@ -12,6 +12,8 @@
 #define INGAME_TRADE_HORSEA 2
 #define INGAME_TRADE_MEOWTH 3
 #define INGAME_TRADE_FINNEON 4
+#define INGAME_TRADE_GASTLY 5
+#define INGAME_TRADE_COTTONEE 6
 
 // Flag IDs for sending link data
 #define INITIATE_TRADE  1

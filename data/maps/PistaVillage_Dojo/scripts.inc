@@ -160,22 +160,22 @@ PistaVillage_Dojo_EventScript_Maga::
 
 
 PistaVillage_Dojo_EventScript_Holly::
-	trainerbattle_single TRAINER_G2_HOLLY, PistaVillage_Dojo_EventScript_Maga_Text_0, PistaVillage_Dojo_EventScript_Maga_Text_1
-	msgbox PistaVillage_Dojo_EventScript_Maga_Text_2
+	trainerbattle_single TRAINER_G2_HOLLY, PistaVillage_Dojo_EventScript_Holly_Text_0, PistaVillage_Dojo_EventScript_Holly_Text_1
+	msgbox PistaVillage_Dojo_EventScript_Holly_Text_2
 	release
 	end
 
 
 PistaVillage_Dojo_EventScript_Aemilla::
-	trainerbattle_single TRAINER_G2_AEMILLA, PistaVillage_Dojo_EventScript_Maga_Text_0, PistaVillage_Dojo_EventScript_Maga_Text_1
-	msgbox PistaVillage_Dojo_EventScript_Maga_Text_2
+	trainerbattle_single TRAINER_G2_AEMILLA, PistaVillage_Dojo_EventScript_Aemilla_Text_0, PistaVillage_Dojo_EventScript_Aemilla_Text_1
+	msgbox PistaVillage_Dojo_EventScript_Aemilla_Text_2
 	release
 	end
 
 
 PistaVillage_Dojo_EventScript_Ignacio::
-	trainerbattle_single TRAINER_G2_IGNACIO, PistaVillage_Dojo_EventScript_Maga_Text_0, PistaVillage_Dojo_EventScript_Maga_Text_1
-	msgbox PistaVillage_Dojo_EventScript_Maga_Text_2
+	trainerbattle_single TRAINER_G2_IGNACIO, PistaVillage_Dojo_EventScript_Ignacio_Text_0, PistaVillage_Dojo_EventScript_Ignacio_Text_1
+	msgbox PistaVillage_Dojo_EventScript_Ignacio_Text_2
 	release
 	end
 
@@ -292,13 +292,40 @@ PistaVillage_Dojo_EventScript_Sanchez_Text_10:
 	.string "Ah, you need to prepare first?\nVery well.\lTalk to me when you're ready.$"
 
 PistaVillage_Dojo_EventScript_Maga_Text_0:
-	.string "Battle me now!$"
+	.string "I strike thee!$"
 
 PistaVillage_Dojo_EventScript_Maga_Text_1:
-	.string "No, I lost!$"
+	.string "I bow out peacefully.\nI have no regrets.$"
 
 PistaVillage_Dojo_EventScript_Maga_Text_2:
-	.string "You're good.$"
+	.string "I wonder if you can beat\nSanchez?$"
+
+PistaVillage_Dojo_EventScript_Holly_Text_0:
+	.string "Doryaa!\nThere's no escape!$"
+
+PistaVillage_Dojo_EventScript_Holly_Text_1:
+	.string "I must train more!$"
+
+PistaVillage_Dojo_EventScript_Holly_Text_2:
+	.string "My goal is becoming the ultimate\nFighting-type Trainer.$"
+
+PistaVillage_Dojo_EventScript_Aemilla_Text_0:
+	.string "Don't take a step further!\nI'll defeat you now!$"
+
+PistaVillage_Dojo_EventScript_Aemilla_Text_1:
+	.string "This is too bad!$"
+
+PistaVillage_Dojo_EventScript_Aemilla_Text_2:
+	.string "Everyone in this dojo takes\nbattling super seriously.$"
+
+PistaVillage_Dojo_EventScript_Ignacio_Text_0:
+	.string "I came from Kanto!\nI'll show you how we do\nthings in Saffron City!$"
+
+PistaVillage_Dojo_EventScript_Ignacio_Text_1:
+	.string "So this is how you do\nthings in Ríota, huh?$"
+
+PistaVillage_Dojo_EventScript_Ignacio_Text_2:
+	.string "In Saffron City, there's a place\ncalled the Fighting Dojo.\pI trained there as a kid.$"
 
 PistaVillage_Dojo_Trigger_AfterBeatenSanchez_Text_0:
 	.string "{COLOR}{GREEN}So you beat Sanchez too, huh?$"

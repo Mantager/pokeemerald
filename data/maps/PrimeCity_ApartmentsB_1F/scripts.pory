@@ -1,1 +1,9 @@
 mapscripts PrimeCity_ApartmentsB_1F_MapScripts {}
+
+script PrimeCity_ApartmentsB_1F_EventScript_Woman {
+    lock
+    faceplayer
+    msgbox("Huff, puff…\pI just ran from Yanuras Town all\nthe way back here.\pI'm exhausted…")
+    release
+    end
+}

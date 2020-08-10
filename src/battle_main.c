@@ -344,6 +344,8 @@ const u8 gTypeNames[NUMBER_OF_MON_TYPES][TYPE_NAME_LENGTH + 1] =
 // This is a factor in how much money you get for beating a trainer.
 const struct TrainerMoney gTrainerMoneyTable[] =
 {
+    {TRAINER_CLASS_PKMN_TRAINER_1, 7},
+    {TRAINER_CLASS_PKMN_TRAINER_2, 7},
     {TRAINER_CLASS_TEAM_AQUA, 5},
     {TRAINER_CLASS_AQUA_ADMIN, 10},
     {TRAINER_CLASS_AQUA_LEADER, 20},
@@ -399,6 +401,9 @@ const struct TrainerMoney gTrainerMoneyTable[] =
     {TRAINER_CLASS_HIKER, 10},
     {TRAINER_CLASS_YOUNG_COUPLE, 8},
     {TRAINER_CLASS_WINSTRATE, 10},
+    {TRAINER_CLASS_THUG, 5},
+    {TRAINER_CLASS_CLERK, 8},
+    {TRAINER_CLASS_OFFICE_LADY, 8},
     {0xFF, 5},
 };
 
@@ -3667,7 +3672,7 @@ u8 IsRunningFromBattleImpossible(void)
     }
     if (gBattleTypeFlags & BATTLE_TYPE_EXCJINN) // Cannot ever run from Excjinn
     {
-        gBattleCommunication[MULTISTRING_CHOOSER] = 1;
+        gBattleCommunication[MULTISTRING_CHOOSER] = 0;
         return 1;
     }
     if (GetBattlerPosition(gActiveBattler) == B_POSITION_PLAYER_RIGHT && WILD_DOUBLE_BATTLE

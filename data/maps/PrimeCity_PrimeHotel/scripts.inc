@@ -62,7 +62,7 @@ PrimeCity_PrimeHotel_EventScript_ExpShareReceptionist_Text_3:
 	.string "Again, I am so very sorry for\nbeing unable to accommodate you.\pWe hope to see you again.$"
 
 PrimeCity_PrimeHotel_EventScript_FinestHotelReceptionist_Text_0:
-	.string "This hotel is the finest in Ríota.\pHence, our room prices are quite expensive.\nPlease understand.$"
+	.string "This hotel is the finest in Ríota.\pHence, our room prices are expensive.\nPlease understand.$"
 
 PrimeCity_PrimeHotel_EventScript_PistaVillageOldMan_Text_0:
 	.string "I'm from Pista Village, so I don't\nvisit Prime City all that often.\pWhen I do however, I always stay\nin this hotel.\pThe quality is unmatched elsewhere.$"

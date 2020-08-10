@@ -126,50 +126,50 @@ AgudoWoodland_EventScript_Keila::
 
 
 AgudoWoodland_EventScript_Des::
-	trainerbattle_single TRAINER_G2_DES, AgudoWoodland_EventScript_Keila_Text_0, AgudoWoodland_EventScript_Keila_Text_1
-	msgbox AgudoWoodland_EventScript_Keila_Text_2
+	trainerbattle_single TRAINER_G2_DES, AgudoWoodland_EventScript_Des_Text_0, AgudoWoodland_EventScript_Des_Text_1
+	msgbox AgudoWoodland_EventScript_Des_Text_2
 	release
 	end
 
 
 AgudoWoodland_EventScript_Franco::
-	trainerbattle_single TRAINER_G2_FRANCO, AgudoWoodland_EventScript_Keila_Text_0, AgudoWoodland_EventScript_Keila_Text_1
-	msgbox AgudoWoodland_EventScript_Keila_Text_2
+	trainerbattle_single TRAINER_G2_FRANCO, AgudoWoodland_EventScript_Franco_Text_0, AgudoWoodland_EventScript_Franco_Text_1
+	msgbox AgudoWoodland_EventScript_Franco_Text_2
 	release
 	end
 
 
 AgudoWoodland_EventScript_Cristian::
-	trainerbattle_single TRAINER_G2_CRISTIAN, AgudoWoodland_EventScript_Keila_Text_0, AgudoWoodland_EventScript_Keila_Text_1
-	msgbox AgudoWoodland_EventScript_Keila_Text_2
+	trainerbattle_single TRAINER_G2_CRISTIAN, AgudoWoodland_EventScript_Cristian_Text_0, AgudoWoodland_EventScript_Cristian_Text_1
+	msgbox AgudoWoodland_EventScript_Cristian_Text_2
 	release
 	end
 
 
 AgudoWoodland_EventScript_Mariana::
-	trainerbattle_single TRAINER_G2_MARIANA, AgudoWoodland_EventScript_Keila_Text_0, AgudoWoodland_EventScript_Keila_Text_1
-	msgbox AgudoWoodland_EventScript_Keila_Text_2
+	trainerbattle_single TRAINER_G2_MARIANA, AgudoWoodland_EventScript_Mariana_Text_0, AgudoWoodland_EventScript_Mariana_Text_1
+	msgbox AgudoWoodland_EventScript_Mariana_Text_2
 	release
 	end
 
 
 AgudoWoodland_EventScript_Rep::
-	trainerbattle_single TRAINER_G2_REP, AgudoWoodland_EventScript_Keila_Text_0, AgudoWoodland_EventScript_Keila_Text_1
-	msgbox AgudoWoodland_EventScript_Keila_Text_2
+	trainerbattle_single TRAINER_G2_REP, AgudoWoodland_EventScript_Rep_Text_0, AgudoWoodland_EventScript_Rep_Text_1
+	msgbox AgudoWoodland_EventScript_Rep_Text_2
 	release
 	end
 
 
 AgudoWoodland_EventScript_Luca::
-	trainerbattle_single TRAINER_G2_LUCA, AgudoWoodland_EventScript_Keila_Text_0, AgudoWoodland_EventScript_Keila_Text_1
-	msgbox AgudoWoodland_EventScript_Keila_Text_2
+	trainerbattle_single TRAINER_G2_LUCA, AgudoWoodland_EventScript_Luca_Text_0, AgudoWoodland_EventScript_Luca_Text_1
+	msgbox AgudoWoodland_EventScript_Luca_Text_2
 	release
 	end
 
 
 AgudoWoodland_EventScript_Kireiya::
-	trainerbattle_single TRAINER_G2_KIREIYA, AgudoWoodland_EventScript_Keila_Text_0, AgudoWoodland_EventScript_Keila_Text_1
-	msgbox AgudoWoodland_EventScript_Keila_Text_2
+	trainerbattle_single TRAINER_G2_KIREIYA, AgudoWoodland_EventScript_Kireiya_Text_0, AgudoWoodland_EventScript_Kireiya_Text_1
+	msgbox AgudoWoodland_EventScript_Kireiya_Text_2
 	release
 	end
 
@@ -426,13 +426,76 @@ AgudoWoodland_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE_0_Text_22:
 	.string "{COLOR}{BLUE}My parents gave that HM to me\nso that I could get home at any time.\pI don't need it right now, though.\pSo if you need to go back\nsomewhere to help you prepare for\lWing Peak, go ahead.\pWith that said, I'm going to get\na move on, Clad!$"
 
 AgudoWoodland_EventScript_Keila_Text_0:
-	.string "Battle me now!$"
+	.string "The stars have aligned!\nYou will lose to me!$"
 
 AgudoWoodland_EventScript_Keila_Text_1:
-	.string "No, I lost!$"
+	.string "This is… 'fate'.$"
 
 AgudoWoodland_EventScript_Keila_Text_2:
-	.string "You're good.$"
+	.string "Stargazing fills me with a\nsense of inner peace.$"
+
+AgudoWoodland_EventScript_Des_Text_0:
+	.string "Where are you going?\nWhat's the rush?$"
+
+AgudoWoodland_EventScript_Des_Text_1:
+	.string "Take it easy!$"
+
+AgudoWoodland_EventScript_Des_Text_2:
+	.string "So you're going to Wing Peak?\nYou'd better be prepared!$"
+
+AgudoWoodland_EventScript_Franco_Text_0:
+	.string "The 'future' and the 'past'…\nWhich is more important?$"
+
+AgudoWoodland_EventScript_Franco_Text_1:
+	.string "Oh no!$"
+
+AgudoWoodland_EventScript_Franco_Text_2:
+	.string "Perhaps the 'present' is more\nimportant than both the 'future'\land the 'past'…$"
+
+AgudoWoodland_EventScript_Cristian_Text_0:
+	.string "Are you in trouble?\pI'll help you out…\nwith a battle!$"
+
+AgudoWoodland_EventScript_Cristian_Text_1:
+	.string "Now I'm in trouble!$"
+
+AgudoWoodland_EventScript_Cristian_Text_2:
+	.string "I knew you were fine.\pI just didn't know how to ask\nfor a battle!$"
+
+AgudoWoodland_EventScript_Mariana_Text_0:
+	.string "Hello, there.\nWhy don't we battle?$"
+
+AgudoWoodland_EventScript_Mariana_Text_1:
+	.string "Oh, fiddlesticks!$"
+
+AgudoWoodland_EventScript_Mariana_Text_2:
+	.string "Do you ever wonder if plants\nare actually a special type\lof Pokémon?\pNo?\nJust me?\lOkay then.$"
+
+AgudoWoodland_EventScript_Rep_Text_0:
+	.string "Dragon-type Pokémon are the strongest!\pThey'll beat any non-dragon easily!$"
+
+AgudoWoodland_EventScript_Rep_Text_1:
+	.string "My precious Druddigon!$"
+
+AgudoWoodland_EventScript_Rep_Text_2:
+	.string "Are you secretly a dragon?\pAfter all, only dragons can beat\ndragons.\pWhat? Fairy-type?\nWhat's that?$"
+
+AgudoWoodland_EventScript_Luca_Text_0:
+	.string "You're my hundredth opponent today!\pUnbeaten streak of one hundred,\nhere I come!$"
+
+AgudoWoodland_EventScript_Luca_Text_1:
+	.string "You're kidding, right?$"
+
+AgudoWoodland_EventScript_Luca_Text_2:
+	.string "Looks like I have to start my\nstreak all over again.$"
+
+AgudoWoodland_EventScript_Kireiya_Text_0:
+	.string "I'm your opponent!\nDon't try and get away!$"
+
+AgudoWoodland_EventScript_Kireiya_Text_1:
+	.string "I haven't lost like this\nsince the Kalos League…$"
+
+AgudoWoodland_EventScript_Kireiya_Text_2:
+	.string "I've challenged quite a few Pokémon\nLeagues in my time.$"
 
 AgudoWoodland_Trigger_EntranceMeetUp_Text_0:
 	.string "{COLOR}{RED}We're finally here…\nIt's Wing Peak!\pThe genie on the peak is waiting,\nso let's go, everyone!$"

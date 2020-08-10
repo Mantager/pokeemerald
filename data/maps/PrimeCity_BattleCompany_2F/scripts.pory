@@ -1,0 +1,36 @@
+mapscripts PrimeCity_BattleCompany_2F_MapScripts {}
+
+script PrimeCity_BattleCompany_2F_EventScript_Enzo {
+    trainerbattle_single(TRAINER_G2_ENZO, "Welcome to our company!\nShall we battle?", "My pay's gonna get docked for this…")
+    msgbox("Our company's primary export?\nPokémon battles, of course!")
+    release
+    end
+}
+
+script PrimeCity_BattleCompany_2F_EventScript_Abril {
+    trainerbattle_single(TRAINER_G2_ABRIL, "We're still getting our offices\nset up, so please forgive the mess!", "Not shabby!")
+    msgbox("If we lose too much, our\nshareholders won't be happy.")
+    release
+    end
+}
+
+script PrimeCity_BattleCompany_2F_EventScript_Elevator {
+    lock
+    message("Which floor will you visit?")
+    waitmessage
+    multichoicedefault(0, 0, MULTI_BATTLE_COMPANY, 0, 0)
+    switch(var(VAR_RESULT)) {
+        case 0:
+            msgbox("Going to 1F.")
+            closemessage
+            warpdoor(MAP_PRIME_CITY_BATTLE_COMPANY_1F, 0xFF, 7, 2)
+        case 1:
+            msgbox("Decided to stay on 2F.")
+        case 2:
+            msgbox("Going to 3F.")
+            closemessage
+            warpdoor(MAP_PRIME_CITY_BATTLE_COMPANY_3F, 0xFF, 7, 2)
+    }
+    release
+    end
+}

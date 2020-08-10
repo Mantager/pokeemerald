@@ -673,13 +673,13 @@
 #define FLAG_ITEM_WING_PEAK_3F_FULL_RESTORE  0x278 
 #define FLAG_ITEM_AGUDO_WOODLAND_SHINY_STONE  0x279 
 #define FLAG_ITEM_AGUDO_WOODLAND_DUSK_STONE  0x27A 
-#define FLAG_PRIME_CITY_HOUSE_B_RECIEVED_ITEM  0x27B // Unused Flag
-#define FLAG_RECIEVED_ASSAULT_VEST  0x27C // Unused Flag
-#define FLAG_ORO_TRADE_COMPLETED  0x27D // Unused Flag
-#define FLAG_UNUSED_0x27E  0x27E // Unused Flag
-#define FLAG_UNUSED_0x27F  0x27F // Unused Flag
-#define FLAG_UNUSED_0x280  0x280 // Unused Flag
-#define FLAG_UNUSED_0x281  0x281 // Unused Flag
+#define FLAG_PRIME_CITY_HOUSE_B_RECIEVED_ITEM  0x27B
+#define FLAG_RECIEVED_ASSAULT_VEST  0x27C
+#define FLAG_ORO_TRADE_COMPLETED  0x27D
+#define FLAG_RECEIVED_TM48  0x27E
+#define FLAG_RECEIVED_TM47  0x27F
+#define FLAG_PRIME_1_TRADE_COMPLETED  0x280
+#define FLAG_PRIME_2_TRADE_COMPLETED  0x281
 #define FLAG_UNUSED_0x282  0x282 // Unused Flag
 #define FLAG_UNUSED_0x283  0x283 // Unused Flag
 #define FLAG_UNUSED_0x284  0x284 // Unused Flag
@@ -1332,7 +1332,7 @@
 #define FLAG_DEFEATED_SOOTOPOLIS_GYM                                0x4F7
 #define FLAG_DEFEATED_METEOR_FALLS_STEVEN                           0x4F8
 
-#define FLAG_UNUSED_0x4F9                                           0x4F9 // Unused Flag
+#define FLAG_DISABLE_CATCHING                                       0x4F9
 #define FLAG_UNUSED_0x4FA                                           0x4FA // Unused Flag
 
 #define FLAG_DEFEATED_ELITE_4_SIDNEY                                0x4FB

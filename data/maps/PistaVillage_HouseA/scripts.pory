@@ -1,0 +1,28 @@
+mapscripts PistaVillage_HouseA_MapScripts {}
+
+script PistaVillage_HouseA_EventScript_Boy {
+    lock
+    faceplayer
+    msgbox("People pass through Pista Village\nall the time.\pThat's because Agudo Woodland\nis full of strong Pokémon\lto train against.")
+    release
+    end
+}
+
+script PistaVillage_HouseA_EventScript_Gentleman {
+    lock
+    faceplayer
+    if(flag(FLAG_RECEIVED_TM47) == FALSE) {
+        msgbox("Good day, sonny.\pSince you came to visit us,\nI'd like you to have this.")
+        giveitem(ITEM_TM47)
+        if(var(VAR_RESULT) == 0) {
+            msgbox("Cripes!\nYou don't have room for this.")
+        } else {
+            setflag(FLAG_RECEIVED_TM47)
+            msgbox("Steel Wing is a highly\ncultured move.\pI taught it to my Corviknight.")
+        }
+    } else {
+        msgbox("You have a good day now.\pMake sure to use that TM47\nthat I gave you!")
+    }
+    release
+    end
+}

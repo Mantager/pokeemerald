@@ -53,7 +53,7 @@ void CreateDecorationShop2Menu(const u16 *);
 void CB2_ExitSellMenu(void);
 
 #define TMSHOP_COUNT 4
-#define TMSHOP_ITEMS_COUNT 16   // If changed to be more than 16, you'll need to change the data type in tmShopFlags from u16 to u32 or u64.
+#define TMSHOP_ITEMS_COUNT 32   // If changed to be more than 16, you'll need to change the data type in tmShopFlags from u16 to u32 or u64.
 
 enum ItemBoughtFlags
 {

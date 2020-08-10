@@ -1057,6 +1057,38 @@ static const struct InGameTrade sIngameTrades[] =
         .otGender = MALE, 
         .sheen = 0,
         .requestedSpecies = SPECIES_BUIZEL
+    },
+    [INGAME_TRADE_GASTLY] = 
+    {
+        .nickname = _("Laru"),
+        .species = SPECIES_GASTLY,
+        .ivs = {4, 5, 4, 4, 5, 5},
+        .abilityNum = 0, 
+        .otId = 12020,
+        .conditions = {0, 0, 0, 0, 0},
+        .personality = 0x200810,
+        .heldItem = ITEM_CHERI_BERRY, 
+        .mailNum = 0,
+        .otName = _("Melvin"), 
+        .otGender = MALE, 
+        .sheen = 0,
+        .requestedSpecies = SPECIES_SHINX
+    },
+    [INGAME_TRADE_COTTONEE] = 
+    {
+        .nickname = _("Bomba"),
+        .species = SPECIES_COTTONEE,
+        .ivs = {5, 4, 5, 4, 4, 5},
+        .abilityNum = 0, 
+        .otId = 22020,
+        .conditions = {0, 0, 0, 0, 0},
+        .personality = 0x200811,
+        .heldItem = ITEM_PECHA_BERRY, 
+        .mailNum = 0,
+        .otName = _("Sienna"), 
+        .otGender = FEMALE, 
+        .sheen = 0,
+        .requestedSpecies = SPECIES_ZUBAT
     }
 };
 

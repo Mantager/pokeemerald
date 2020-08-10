@@ -171,7 +171,7 @@
     },
     {
       "x": 11,
-      "y": 53,
+      "y": 52,
       "elevation": 0,
       "dest_map": "MAP_PRIME_CITY_RESTAURANT_1F",
       "dest_warp_id": 0
@@ -209,6 +209,20 @@
       "y": 35,
       "elevation": 0,
       "dest_map": "MAP_PRIME_CITY_PRIME_HOTEL",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 23,
+      "y": 54,
+      "elevation": 0,
+      "dest_map": "MAP_PRIME_CITY",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 33,
+      "y": 57,
+      "elevation": 0,
+      "dest_map": "MAP_PRIME_CITY_SPECIAL_BUILDING",
       "dest_warp_id": 0
     }
   ],

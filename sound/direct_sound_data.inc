@@ -3635,6 +3635,18 @@ Cry_Excjinn::
 	.incbin "sound/direct_sound_samples/cry_not_excjinn.bin"
 
 	.align 2
+Cry_Rookidee::
+	.incbin "sound/direct_sound_samples/cry_not_rookidee.bin"
+
+	.align 2
+Cry_Corvisquire::
+	.incbin "sound/direct_sound_samples/cry_not_corvisquire.bin"
+
+	.align 2
+Cry_Corviknight::
+	.incbin "sound/direct_sound_samples/cry_not_corviknight.bin"
+
+	.align 2
 Cry_Mega_Ampharos::
 	.incbin "sound/direct_sound_samples/cry_not_mega_ampharos.bin"
 

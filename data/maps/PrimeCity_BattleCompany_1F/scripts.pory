@@ -5,6 +5,33 @@ script PrimeCity_BattleCompany_1F_EventScript_Elevator {
     message("Which floor will you visit?")
     waitmessage
     multichoicedefault(0, 0, MULTI_BATTLE_COMPANY, 0, 0)
+    switch(var(VAR_RESULT)) {
+        case 0:
+            msgbox("Decided to stay on 1F.")
+        case 1:
+            msgbox("Going to 2F.")
+            closemessage
+            warpdoor(MAP_PRIME_CITY_BATTLE_COMPANY_2F, 0xFF, 7, 2)
+        case 2:
+            msgbox("Going to 3F.")
+            closemessage
+            warpdoor(MAP_PRIME_CITY_BATTLE_COMPANY_3F, 0xFF, 7, 2)
+    }
+    release
+    end
+}
+
+script PrimeCity_BattleCompany_1F_EventScript_Receptionist {
+    lock
+    msgbox("Welcome to the Battle Company!")
+    release
+    end
+}
+
+script PrimeCity_BattleCompany_1F_EventScript_Man {
+    lock
+    faceplayer
+    msgbox("This is the Battle Company.\pAccording to their mission statement,\ntheir goal is to 'enrich the world'\nwith 'wonderful battles'.\pI don't really understand it.")
     release
     end
 }

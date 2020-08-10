@@ -681,7 +681,10 @@
     "PrimeCity_ShadyBuilding_2F",
     "PrimeCity_Nursery",
     "PrimeCity_SecretBuilding",
-    "PrimeCity_BattleCompany_1F"
+    "PrimeCity_BattleCompany_1F",
+    "PrimeCity_BattleCompany_2F",
+    "PrimeCity_BattleCompany_3F",
+    "PrimeCity_SpecialBuilding"
   ],
   "gMapGroup37": [
     "YanurasTown_RyanHouse",
@@ -710,6 +713,7 @@
     "PistaVillage_PokemonCenter",
     "PistaVillage_Dojo",
     "PistaVillage_Mart",
-    "PistaVillage_BikeShop"
+    "PistaVillage_BikeShop",
+    "PistaVillage_HouseA"
   ]
 }

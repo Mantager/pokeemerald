@@ -254,6 +254,16 @@ WingPeak_Top_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE_2:
 	setvar VAR_PISTA_VILLAGE_STATE, 13
 	special GameClear
 	waitstate
+	removeobject 1
+	removeobject 2
+	removeobject 3
+	removeobject 4
+	removeobject 5
+	setflag FLAG_WING_PEAK_TOP_HIDE_FERN
+	setflag FLAG_WING_PEAK_TOP_HIDE_MALIMO
+	setflag FLAG_WING_PEAK_TOP_HIDE_RYAN
+	setflag FLAG_WING_PEAK_TOP_HIDE_NAS
+	setflag FLAG_WING_PEAK_TOP_HIDE_MISLE
 	releaseall
 	end
 

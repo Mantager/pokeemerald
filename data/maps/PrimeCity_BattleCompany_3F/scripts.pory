@@ -1,0 +1,36 @@
+mapscripts PrimeCity_BattleCompany_3F_MapScripts {}
+
+script PrimeCity_BattleCompany_3F_EventScript_Diego {
+    trainerbattle_single(TRAINER_G2_DIEGO, "I can't wait to get off work!\nI'm gonna go bowling!", "At this rate, I'll be working\novertime…")
+    msgbox("The best battlers in the company\nget higher positions.")
+    release
+    end
+}
+
+script PrimeCity_BattleCompany_3F_EventScript_Micaela {
+    trainerbattle_single(TRAINER_G2_MICAELA, "Here comes my big break!", "Out of my reach!")
+    msgbox("I'm trying to make it big in\nthis company, but I keep losing.")
+    release
+    end
+}
+
+script PrimeCity_BattleCompany_3F_EventScript_Elevator {
+    lock
+    message("Which floor will you visit?")
+    waitmessage
+    multichoicedefault(0, 0, MULTI_BATTLE_COMPANY, 0, 0)
+    switch(var(VAR_RESULT)) {
+        case 0:
+            msgbox("Going to 1F.")
+            closemessage
+            warpdoor(MAP_PRIME_CITY_BATTLE_COMPANY_1F, 0xFF, 7, 2)
+        case 1:
+            msgbox("Going to 2F.")
+            closemessage
+            warpdoor(MAP_PRIME_CITY_BATTLE_COMPANY_2F, 0xFF, 7, 2)
+        case 2:
+            msgbox("Decided to stay on 3F.")
+    }
+    release
+    end
+}

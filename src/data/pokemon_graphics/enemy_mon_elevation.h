@@ -104,6 +104,8 @@ const u8 gEnemyMonElevation[NUM_SPECIES] =
     [SPECIES_CUTIEFLY] = 10,
     [SPECIES_MINIOR] = 17,
 
+    [SPECIES_CORVISQUIRE] = 4,
+
     // Megas
     [SPECIES_MEGA_LATIAS] = 8,
     [SPECIES_MEGA_LATIOS] = 8,

@@ -374,3 +374,9 @@ const u16 gObjectEventPalette31[] = INCBIN_U16("graphics/object_events/palettes/
 const u16 gObjectEventPalette35[] = INCBIN_U16("graphics/object_events/palettes/35.gbapal");
 
 const u32 gObjectEventPic_Wailmer[] = INCBIN_U32("graphics/object_events/pics/pokemon/wailmer.4bpp");
+
+const u32 gObjectEventPic_Malimo[] = INCBIN_U32("graphics/object_events/pics/people/malimo.4bpp");
+const u32 gObjectEventPic_Fern[] = INCBIN_U32("graphics/object_events/pics/people/fern.4bpp");
+const u32 gObjectEventPic_Ryan[] = INCBIN_U32("graphics/object_events/pics/people/ryan.4bpp");
+const u32 gObjectEventPic_Nas[] = INCBIN_U32("graphics/object_events/pics/people/nas.4bpp");
+const u32 gObjectEventPic_Misle[] = INCBIN_U32("graphics/object_events/pics/people/misle.4bpp");

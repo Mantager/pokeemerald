@@ -640,6 +640,9 @@
 #define MAP_PRIME_CITY_NURSERY                    (25 | (36 << 8))
 #define MAP_PRIME_CITY_SECRET_BUILDING            (26 | (36 << 8))
 #define MAP_PRIME_CITY_BATTLE_COMPANY_1F          (27 | (36 << 8))
+#define MAP_PRIME_CITY_BATTLE_COMPANY_2F          (28 | (36 << 8))
+#define MAP_PRIME_CITY_BATTLE_COMPANY_3F          (29 | (36 << 8))
+#define MAP_PRIME_CITY_SPECIAL_BUILDING           (30 | (36 << 8))
 
 // Map Group 37
 #define MAP_YANURAS_TOWN_RYAN_HOUSE    (0 | (37 << 8))
@@ -669,6 +672,7 @@
 #define MAP_PISTA_VILLAGE_DOJO           (1 | (40 << 8))
 #define MAP_PISTA_VILLAGE_MART           (2 | (40 << 8))
 #define MAP_PISTA_VILLAGE_BIKE_SHOP      (3 | (40 << 8))
+#define MAP_PISTA_VILLAGE_HOUSE_A        (4 | (40 << 8))
 
 #define MAP_GROUPS_COUNT 41
 

@@ -1,0 +1,9 @@
+mapscripts PrimeCity_SpecialBuilding_MapScripts {}
+
+script PrimeCity_SpecialBuilding_EventScript_Woman {
+    lock
+    faceplayer
+    msgbox("This is the City Hall.\pMembers of the city committee meet\nhere to debate issues affecting\lthe community of Prime City.")
+    release
+    end
+}

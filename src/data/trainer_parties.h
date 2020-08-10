@@ -1050,66 +1050,35 @@ static const struct TrainerMonItemCustomMoves sParty_Randall[] = {
     }
 };
 
-static const struct TrainerMonItemCustomMoves sParty_Parker[] = {
+static const struct TrainerMonNoItemDefaultMoves sParty_G2_Enzo[] = {
     {
-    .iv = 255,
-    .lvl = 26,
-    .species = SPECIES_SPINDA,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_TEETER_DANCE, MOVE_DIZZY_PUNCH, MOVE_FOCUS_PUNCH, MOVE_NONE}
+    .iv = 0,
+    .lvl = 13,
+    .species = SPECIES_ROOKIDEE,
     }
 };
 
-static const struct TrainerMonItemCustomMoves sParty_George[] = {
+static const struct TrainerMonNoItemDefaultMoves sParty_G2_Abril[] = {
     {
-    .iv = 255,
-    .lvl = 26,
-    .species = SPECIES_SLAKOTH,
-    .heldItem = ITEM_SITRUS_BERRY,
-    .moves = {MOVE_SLACK_OFF, MOVE_COUNTER, MOVE_SHADOW_BALL, MOVE_NONE}
+    .iv = 0,
+    .lvl = 13,
+    .species = SPECIES_COTTONEE,
     }
 };
 
-static const struct TrainerMonItemCustomMoves sParty_Berke[] = {
+static const struct TrainerMonNoItemDefaultMoves sParty_G2_Diego[] = {
     {
-    .iv = 255,
-    .lvl = 26,
-    .species = SPECIES_VIGOROTH,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_FOCUS_ENERGY, MOVE_SLASH, MOVE_NONE, MOVE_NONE}
+    .iv = 0,
+    .lvl = 13,
+    .species = SPECIES_BLITZLE,
     }
 };
 
-static const struct TrainerMonNoItemCustomMoves sParty_Braxton[] = {
+static const struct TrainerMonNoItemDefaultMoves sParty_G2_Micaela[] = {
     {
-    .iv = 100,
-    .lvl = 28,
-    .species = SPECIES_SWELLOW,
-    .moves = {MOVE_FOCUS_ENERGY, MOVE_QUICK_ATTACK, MOVE_WING_ATTACK, MOVE_ENDEAVOR}
-    },
-    {
-    .iv = 100,
-    .lvl = 28,
-    .species = SPECIES_TRAPINCH,
-    .moves = {MOVE_BITE, MOVE_DIG, MOVE_FAINT_ATTACK, MOVE_SAND_TOMB}
-    },
-    {
-    .iv = 100,
-    .lvl = 28,
-    .species = SPECIES_WAILMER,
-    .moves = {MOVE_ROLLOUT, MOVE_WHIRLPOOL, MOVE_ASTONISH, MOVE_WATER_PULSE}
-    },
-    {
-    .iv = 100,
-    .lvl = 28,
-    .species = SPECIES_MAGNETON,
-    .moves = {MOVE_THUNDERBOLT, MOVE_SUPERSONIC, MOVE_THUNDER_WAVE, MOVE_SONIC_BOOM}
-    },
-    {
-    .iv = 100,
-    .lvl = 28,
-    .species = SPECIES_SHIFTRY,
-    .moves = {MOVE_GIGA_DRAIN, MOVE_FAINT_ATTACK, MOVE_DOUBLE_TEAM, MOVE_SWAGGER}
+    .iv = 0,
+    .lvl = 13,
+    .species = SPECIES_FINNEON,
     }
 };
 

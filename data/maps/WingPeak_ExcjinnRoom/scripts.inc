@@ -175,9 +175,11 @@ WingPeak_ExcjinnRoom_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE_0:
 	msgbox WingPeak_ExcjinnRoom_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE_0_Text_26
 	closemessage
 	delay 8
+	setflag FLAG_DISABLE_CATCHING
 	setwildbattle SPECIES_EXCJINN, 40, ITEM_NONE
 	special BattleSetup_StartExcjinnBattle
 	waitstate
+	clearflag FLAG_DISABLE_CATCHING
 	resetweather
 	delay 8
 	applymovement 2, Common_Movement_WalkDown
@@ -208,6 +210,10 @@ WingPeak_ExcjinnRoom_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE_0:
 	delay 8
 	msgbox WingPeak_ExcjinnRoom_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE_0_Text_31
 	closemessage
+	setflag FLAG_WING_PEAK_EXCJINN_ROOM_HIDE_ROCKS
+	removeobject 3
+	removeobject 4
+	removeobject 5
 	playse SE_BOWA2
 	waitse
 	fadescreen 0
@@ -221,10 +227,6 @@ WingPeak_ExcjinnRoom_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE_0:
 	waitmovement 0
 	setvar VAR_PISTA_VILLAGE_STATE, 12
 	warp MAP_WING_PEAK_TOP, 1, 0, 0
-	setflag FLAG_WING_PEAK_EXCJINN_ROOM_HIDE_ROCKS
-	removeobject 3
-	removeobject 4
-	removeobject 5
 	releaseall
 	end
 

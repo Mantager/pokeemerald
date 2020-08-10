@@ -1,1 +1,20 @@
 mapscripts PrimeCity_ApartmentsA_2F_MapScripts {}
+
+script PrimeCity_ApartmentsA_2F_EventScript_Psychic {
+    lock
+    faceplayer
+    if(flag(FLAG_RECEIVED_TM48) == FALSE) {
+        msgbox("Have you ever battled a\nPokémon with a great ability?\pDid you think 'I want to\ntry that for myself?'\pYou're in luck!\nHere, take this!")
+        giveitem(ITEM_TM48)
+        if(var(VAR_RESULT) == 0) {
+            msgbox("Hm?\pYou don't have room for this?")
+        } else {
+            setflag(FLAG_RECEIVED_TM48)
+            msgbox("TM48, Skill Swap.\pIf you use it, then your Pokémon\nwill swap abilities with its foe!")
+        } 
+    } else {
+        msgbox("Skill Swap is a truly frightening\nmove, but you need some brains\lin order to use it well.")
+    }
+    release
+    end
+}

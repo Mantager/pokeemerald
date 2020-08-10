@@ -47,6 +47,7 @@
 #include "constants/species.h"
 #include "constants/trainers.h"
 #include "constants/trainer_hill.h"
+#include "title_screen.h"
 
 enum
 {
@@ -605,9 +606,13 @@ static void CB2_EndWildBattle(void)
     CpuFill16(0, (void*)(BG_PLTT), BG_PLTT_SIZE);
     ResetOamRange(0, 128);
 
-    if (IsPlayerDefeated(gBattleOutcome) == TRUE && !InBattlePyramid() && !InBattlePike())
+    if (IsPlayerDefeated(gBattleOutcome) == TRUE && !InBattlePyramid() && !InBattlePike() && !(gBattleTypeFlags & BATTLE_TYPE_EXCJINN))
     {
         SetMainCallback2(CB2_WhiteOut);
+    }
+    else if (IsPlayerDefeated(gBattleOutcome) == TRUE && !InBattlePyramid() && !InBattlePike() && (gBattleTypeFlags & BATTLE_TYPE_EXCJINN))
+    {
+        SetMainCallback2(CB2_InitTitleScreen);
     }
     else
     {

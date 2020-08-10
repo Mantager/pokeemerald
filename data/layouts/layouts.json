@@ -5100,6 +5100,46 @@
       "secondary_tileset": "gTileset_BikeShop",
       "border_filepath": "data/layouts/PistaVillage_BikeShop/border.bin",
       "blockdata_filepath": "data/layouts/PistaVillage_BikeShop/map.bin"
+    },
+    {
+      "id": "LAYOUT_PRIME_CITY_BATTLE_COMPANY_2F",
+      "name": "PrimeCity_BattleCompany_2F_Layout",
+      "width": 14,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BattleFrontier",
+      "border_filepath": "data/layouts/PrimeCity_BattleCompany_2F/border.bin",
+      "blockdata_filepath": "data/layouts/PrimeCity_BattleCompany_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_PRIME_CITY_BATTLE_COMPANY_3F",
+      "name": "PrimeCity_BattleCompany_3F_Layout",
+      "width": 14,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BattleFrontier",
+      "border_filepath": "data/layouts/PrimeCity_BattleCompany_3F/border.bin",
+      "blockdata_filepath": "data/layouts/PrimeCity_BattleCompany_3F/map.bin"
+    },
+    {
+      "id": "LAYOUT_PRIME_CITY_SPECIAL_BUILDING",
+      "name": "PrimeCity_SpecialBuilding_Layout",
+      "width": 19,
+      "height": 15,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BattleFrontierRankingHall",
+      "border_filepath": "data/layouts/PrimeCity_SpecialBuilding/border.bin",
+      "blockdata_filepath": "data/layouts/PrimeCity_SpecialBuilding/map.bin"
+    },
+    {
+      "id": "LAYOUT_PISTA_VILLAGE_HOUSE_A",
+      "name": "PistaVillage_HouseA_Layout",
+      "width": 12,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/PistaVillage_HouseA/border.bin",
+      "blockdata_filepath": "data/layouts/PistaVillage_HouseA/map.bin"
     }
   ]
 }

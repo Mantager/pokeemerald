@@ -811,6 +811,9 @@ gCryTable:: @ 869DCF4
 	cry_not Cry_Meltan
 	cry_not Cry_Melmetal
 	cry_not Cry_Excjinn
+	cry_not Cry_Rookidee
+	cry_not Cry_Corvisquire
+	cry_not Cry_Corviknight
 	@ Megas
 	cry_not Cry_Mega_Ampharos
 	cry_not Cry_Mega_Venusaur
