@@ -18,7 +18,7 @@ OroTown_Mart_EventScript_TMEmployee::
 	faceplayer
 	message gText_HowMayIServeYou
 	waitmessage
-	pokemart OroTown_Mart_Pokemart_2, 4
+	pokemart OroTown_Mart_Pokemart_2
 	msgbox gText_PleaseComeAgain
 	release
 	end

@@ -3,7 +3,7 @@ mapscripts DelaguaTown_HouseA_MapScripts {}
 script DelaguaTown_HouseA_EventScript_Woman {
     lock
     faceplayer
-    msgbox("This little town is perfect for me!\nIt's nicely secluded from the rest of Ríota.")
+    msgbox("This little town is perfect for me!\nIt's secluded from the rest of Ríota.")
     release
     end
 }

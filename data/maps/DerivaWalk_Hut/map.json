@@ -2,7 +2,7 @@
   "id": "MAP_DERIVA_WALK_HUT",
   "name": "DerivaWalk_Hut",
   "layout": "LAYOUT_DERIVA_WALK_HUT",
-  "music": "MUS_AJITO",
+  "music": "MUS_DOORO_X1",
   "region_map_section": "MAPSEC_DERIVA_WALK",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -10,7 +10,7 @@
   "allow_cycling": false,
   "allow_escaping": false,
   "allow_running": false,
-  "show_map_name": true,
+  "show_map_name": false,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": 0,
   "object_events": [

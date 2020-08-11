@@ -1102,29 +1102,29 @@ static void HallOfFame_PrintMonInfo(struct HallofFameMon* currMon, u8 unused1, u
     PutWindowTilemap(0);
 
     // dex number
-    if (currMon->species != SPECIES_EGG)
-    {
-        stringPtr = StringCopy(text, gText_Number);
-        dexNumber = SpeciesToPokedexNum(currMon->species);
-        if (dexNumber != 0xFFFF)
-        {
-            stringPtr[0] = (dexNumber / 100) + CHAR_0;
-            stringPtr++;
-            dexNumber %= 100;
-            stringPtr[0] = (dexNumber / 10) + CHAR_0;
-            stringPtr++;
-            stringPtr[0] = (dexNumber % 10) + CHAR_0;
-            stringPtr++;
-        }
-        else
-        {
-            *(stringPtr)++ = CHAR_QUESTION_MARK;
-            *(stringPtr)++ = CHAR_QUESTION_MARK;
-            *(stringPtr)++ = CHAR_QUESTION_MARK;
-        }
-        stringPtr[0] = EOS;
-        AddTextPrinterParameterized3(0, 1, 0x10, 1, sMonInfoTextColors, -1, text);
-    }
+    // if (currMon->species != SPECIES_EGG)
+    // {
+    //     stringPtr = StringCopy(text, gText_Number);
+    //     dexNumber = SpeciesToPokedexNum(currMon->species);
+    //     if (dexNumber != 0xFFFF)
+    //     {
+    //         stringPtr[0] = (dexNumber / 100) + CHAR_0;
+    //         stringPtr++;
+    //         dexNumber %= 100;
+    //         stringPtr[0] = (dexNumber / 10) + CHAR_0;
+    //         stringPtr++;
+    //         stringPtr[0] = (dexNumber % 10) + CHAR_0;
+    //         stringPtr++;
+    //     }
+    //     else
+    //     {
+    //         *(stringPtr)++ = CHAR_QUESTION_MARK;
+    //         *(stringPtr)++ = CHAR_QUESTION_MARK;
+    //         *(stringPtr)++ = CHAR_QUESTION_MARK;
+    //     }
+    //     stringPtr[0] = EOS;
+    //     AddTextPrinterParameterized3(0, 1, 0x10, 1, sMonInfoTextColors, -1, text);
+    // }
 
     // nick, species names, gender and level
     memcpy(text, currMon->nick, POKEMON_NAME_LENGTH);
@@ -1132,13 +1132,13 @@ static void HallOfFame_PrintMonInfo(struct HallofFameMon* currMon, u8 unused1, u
     if (currMon->species == SPECIES_EGG)
     {
         width = GetStringCenterAlignXOffset(1, text, 0xD0);
-        AddTextPrinterParameterized3(0, 1, width, 1, sMonInfoTextColors, -1, text);
+        AddTextPrinterParameterized3(0, 1, 0x10, 1, sMonInfoTextColors, -1, text);
         CopyWindowToVram(0, 3);
     }
     else
     {
         width = GetStringRightAlignXOffset(1, text, 0x80);
-        AddTextPrinterParameterized3(0, 1, width, 1, sMonInfoTextColors, -1, text);
+        AddTextPrinterParameterized3(0, 1, 0x10, 1, sMonInfoTextColors, -1, text);
 
         text[0] = CHAR_SLASH;
         stringPtr = StringCopy(text + 1, gSpeciesNames[currMon->species]);
@@ -1159,15 +1159,16 @@ static void HallOfFame_PrintMonInfo(struct HallofFameMon* currMon, u8 unused1, u
         }
 
         stringPtr[0] = EOS;
-        AddTextPrinterParameterized3(0, 1, 0x80, 1, sMonInfoTextColors, -1, text);
+        width = GetStringRightAlignXOffset(1, text, 0x70);
+        AddTextPrinterParameterized3(0, 1, width, 17, sMonInfoTextColors, -1, text);
 
         stringPtr = StringCopy(text, gText_Level);
         ConvertIntToDecimalStringN(stringPtr, currMon->lvl, STR_CONV_MODE_LEFT_ALIGN, 3);
-        AddTextPrinterParameterized3(0, 1, 0x24, 0x11, sMonInfoTextColors, -1, text);
+        AddTextPrinterParameterized3(0, 1, 0xA0, 1, sMonInfoTextColors, -1, text);
 
-        stringPtr = StringCopy(text, gText_IDNumber);
-        ConvertIntToDecimalStringN(stringPtr, (u16)(currMon->tid), STR_CONV_MODE_LEADING_ZEROS, 5);
-        AddTextPrinterParameterized3(0, 1, 0x68, 0x11, sMonInfoTextColors, -1, text);
+        //stringPtr = StringCopy(text, gText_IDNumber);
+        //ConvertIntToDecimalStringN(stringPtr, (u16)(currMon->tid), STR_CONV_MODE_LEADING_ZEROS, 5);
+        //AddTextPrinterParameterized3(0, 1, 0x68, 0x11, sMonInfoTextColors, -1, text);
 
         CopyWindowToVram(0, 3);
     }
@@ -1178,6 +1179,7 @@ static void HallOfFame_PrintPlayerInfo(u8 unused1, u8 unused2)
     u8 text[20];
     u32 width;
     u16 trainerId;
+    u8 whiteouts;
 
     FillWindowPixelBuffer(1, PIXEL_FILL(1));
     PutWindowTilemap(1);
@@ -1187,18 +1189,18 @@ static void HallOfFame_PrintPlayerInfo(u8 unused1, u8 unused2)
     width = GetStringRightAlignXOffset(1, gSaveBlock2Ptr->playerName, 0x70);
     AddTextPrinterParameterized3(1, 1, width, 1, sPlayerInfoTextColors, -1, gSaveBlock2Ptr->playerName);
 
-    trainerId = (gSaveBlock2Ptr->playerTrainerId[0]) | (gSaveBlock2Ptr->playerTrainerId[1] << 8);
-    AddTextPrinterParameterized3(1, 1, 0, 0x11, sPlayerInfoTextColors, 0, gText_IDNumber);
-    text[0] = (trainerId % 100000) / 10000 + CHAR_0;
-    text[1] = (trainerId % 10000) / 1000 + CHAR_0;
-    text[2] = (trainerId % 1000) / 100 + CHAR_0;
-    text[3] = (trainerId % 100) / 10 + CHAR_0;
-    text[4] = (trainerId % 10) / 1 + CHAR_0;
-    text[5] = EOS;
-    width = GetStringRightAlignXOffset(1, text, 0x70);
-    AddTextPrinterParameterized3(1, 1, width, 0x11, sPlayerInfoTextColors, -1, text);
+    // trainerId = (gSaveBlock2Ptr->playerTrainerId[0]) | (gSaveBlock2Ptr->playerTrainerId[1] << 8);
+    // AddTextPrinterParameterized3(1, 1, 0, 0x11, sPlayerInfoTextColors, 0, gText_IDNumber);
+    // text[0] = (trainerId % 100000) / 10000 + CHAR_0;
+    // text[1] = (trainerId % 10000) / 1000 + CHAR_0;
+    // text[2] = (trainerId % 1000) / 100 + CHAR_0;
+    // text[3] = (trainerId % 100) / 10 + CHAR_0;
+    // text[4] = (trainerId % 10) / 1 + CHAR_0;
+    // text[5] = EOS;
+    //width = GetStringRightAlignXOffset(1, text, 0x70);
+    //AddTextPrinterParameterized3(1, 1, width, 0x11, sPlayerInfoTextColors, -1, text);
 
-    AddTextPrinterParameterized3(1, 1, 0, 0x21, sPlayerInfoTextColors, -1, gText_Time);
+    AddTextPrinterParameterized3(1, 1, 0, 0x11, sPlayerInfoTextColors, -1, gText_Time);
     text[0] = (gSaveBlock2Ptr->playTimeHours / 100) + CHAR_0;
     text[1] = (gSaveBlock2Ptr->playTimeHours % 100) / 10 + CHAR_0;
     text[2] = (gSaveBlock2Ptr->playTimeHours % 10) + CHAR_0;
@@ -1214,7 +1216,23 @@ static void HallOfFame_PrintPlayerInfo(u8 unused1, u8 unused2)
     text[6] = EOS;
 
     width = GetStringRightAlignXOffset(1, text, 0x70);
-    AddTextPrinterParameterized3(1, 1, width, 0x21, sPlayerInfoTextColors, -1, text);
+    AddTextPrinterParameterized3(1, 1, width, 0x11, sPlayerInfoTextColors, -1, text);
+
+    AddTextPrinterParameterized3(1, 1, 0, 0x21, sPlayerInfoTextColors, -1, gText_Whiteouts);
+
+    whiteouts = VarGet(VAR_NUMBER_OF_WHITEOUTS);
+    if (whiteouts < 10)
+    {
+        text[1] = (whiteouts % 10) + CHAR_0;
+        text[2] = EOS;
+        width = GetStringRightAlignXOffset(1, text, 0x70);
+        AddTextPrinterParameterized3(1, 1, width, 0x21, sPlayerInfoTextColors, -1, text);
+    }
+    else
+    {
+        width = GetStringRightAlignXOffset(1, gText_Over10, 0x70);
+        AddTextPrinterParameterized3(1, 1, width, 0x21, sPlayerInfoTextColors, -1, gText_Over10);
+    }
 
     CopyWindowToVram(1, 3);
 }

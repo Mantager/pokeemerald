@@ -6,7 +6,7 @@ script OroTown_HouseA_EventScript_TormentGiver {
     if(flag(FLAG_RECEIVED_TM41) == FALSE) {
         msgbox("Your eyelashes are huge!\nYou have weird hands!\lAnd your hair smells like sand!\pSorry, I didn't mean that.\pI just wanted to show you what using\nthe move Torment is like.\pHere, try it out for yourself!")
         giveitem(ITEM_TM41)
-        if(var(VAR_RESULT) == TRUE) {
+        if(var(VAR_RESULT) == 0) {
             msgbox("You don't have room for this.")
         } else {
             setflag(FLAG_RECEIVED_TM41)

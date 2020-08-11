@@ -212,6 +212,12 @@ AgudoWoodland_Trigger_EntranceMeetUp_1:
 	applymovement OBJ_EVENT_ID_PLAYER, AgudoWoodland_Movement_PlayerMoveToBattle
 	waitmovement 0
 	trainerbattle_no_intro TRAINER_G2_RYAN, AgudoWoodland_Trigger_EntranceMeetUp_Text_9
+	msgbox AgudoWoodland_Trigger_EntranceMeetUp_Text_10
+	closemessage
+	msgbox AgudoWoodland_Trigger_EntranceMeetUp_Text_11
+	closemessage
+	msgbox AgudoWoodland_Trigger_EntranceMeetUp_Text_12
+	closemessage
 	fadescreen 1
 	removeobject 1
 	removeobject 10
@@ -526,3 +532,12 @@ AgudoWoodland_Trigger_EntranceMeetUp_Text_8:
 
 AgudoWoodland_Trigger_EntranceMeetUp_Text_9:
 	.string "You've grown stronger, too!$"
+
+AgudoWoodland_Trigger_EntranceMeetUp_Text_10:
+	.string "{COLOR}{GREEN}Whew, thanks for the battle!$"
+
+AgudoWoodland_Trigger_EntranceMeetUp_Text_11:
+	.string "No problem!$"
+
+AgudoWoodland_Trigger_EntranceMeetUp_Text_12:
+	.string "{COLOR}{RED}Alright, if everyone's ready,\nlet's start the climb!$"

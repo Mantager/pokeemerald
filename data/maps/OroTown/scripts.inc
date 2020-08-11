@@ -542,7 +542,7 @@ OroTown_EventScript_AfterBattle_Text_26:
 	.string "{COLOR}{RED}You got it, Malimo old pal!\nLet's all meet at Pista Village!$"
 
 OroTown_EventScript_ConstructionWorker_Text_0:
-	.string "I'm in charge of building new houses\nin this town.\pBefore we can start construction, we need\na good foundation for the house.\pThat's what this is here.$"
+	.string "I'm in charge of building new houses\nin this town.\pBefore we can start construction,\na good foundation is needed.\pThat's what this is here.$"
 
 OroTown_EventScript_TownSign_Text_0:
 	.string "Oro Town\nMiddle of the Road$"

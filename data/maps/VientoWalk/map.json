@@ -241,6 +241,29 @@
 
   ],
   "bg_events": [
-
+    {
+      "type": "hidden_item",
+      "x": 33,
+      "y": 11,
+      "elevation": 3,
+      "item": "ITEM_SUN_STONE",
+      "flag": "FLAG_HIDDEN_ITEM_VIENTO_WALK_SUN_STONE"
+    },
+    {
+      "type": "hidden_item",
+      "x": 87,
+      "y": 21,
+      "elevation": 3,
+      "item": "ITEM_FIGHTING_GEM",
+      "flag": "FLAG_HIDDEN_ITEM_VIENTO_WALK_FIGHTING_GEM"
+    },
+    {
+      "type": "hidden_item",
+      "x": 87,
+      "y": 4,
+      "elevation": 3,
+      "item": "ITEM_GHOST_GEM",
+      "flag": "FLAG_HIDDEN_ITEM_VIENTO_WALK_GHOST_GEM"
+    }
   ]
 }

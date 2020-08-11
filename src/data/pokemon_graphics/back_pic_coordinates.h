@@ -4053,17 +4053,17 @@ const struct MonCoords gMonBackPicCoords[] =
     [SPECIES_ROOKIDEE] =
     {
         .size = 0x88,
-        .y_offset = 0x0,
+        .y_offset = 0x11,
     },
     [SPECIES_CORVISQUIRE] =
     {
         .size = 0x88,
-        .y_offset = 0x0,
+        .y_offset = 0xa,
     },
     [SPECIES_CORVIKNIGHT] =
     {
         .size = 0x88,
-        .y_offset = 0x0,
+        .y_offset = 0xa,
     },
     // Eggs + Unown
     [SPECIES_EGG] =

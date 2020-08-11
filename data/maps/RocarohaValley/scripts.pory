@@ -93,6 +93,7 @@ script RocarohaValley_EventScript_Lionel {
 
 script RocarohaValley_Trigger_MeetNas {
     lockall
+    fadeoutbgm(1)
     applymovement(14, Common_Movement_FaceDown)
     waitmovement(0)
     playse(SE_PIN)
@@ -144,6 +145,7 @@ script RocarohaValley_Trigger_MeetNas {
     msgbox("(… …\n… …)\p(I ought to wait for the others, but…\nI need to find Fern.)\p(I'll send a text to Malimo quick.)\p… …\n… …\pThere we go.")
     releaseall
     setvar(VAR_YANURAS_TOWN_STATE, 3)
+    fadeinbgm(1)
     end
 }
 

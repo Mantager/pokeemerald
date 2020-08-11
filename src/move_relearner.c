@@ -776,28 +776,28 @@ static void HandleInput(bool8 showContest)
     switch (itemId)
     {
     case LIST_NOTHING_CHOSEN:
-        if (!(gMain.newKeys & (DPAD_LEFT | DPAD_RIGHT)) && !GetLRKeysPressed())
-        {
-            break;
-        }
+        // if (!(gMain.newKeys & (DPAD_LEFT | DPAD_RIGHT)) && !GetLRKeysPressed())
+        // {
+        //     break;
+        // }
 
-        PlaySE(SE_SELECT);
+        // PlaySE(SE_SELECT);
 
-        if (showContest == FALSE)
-        {
-            PutWindowTilemap(1);
-            sMoveRelearnerStruct->state = MENU_STATE_SETUP_CONTEST_MODE;
-            sMoveRelearnerMenuSate.showContestInfo = TRUE;
-        }
-        else
-        {
-            PutWindowTilemap(0);
-            sMoveRelearnerStruct->state = MENU_STATE_SETUP_BATTLE_MODE;
-            sMoveRelearnerMenuSate.showContestInfo = FALSE;
-        }
+        // if (showContest == FALSE)
+        // {
+        //     PutWindowTilemap(1);
+        //     sMoveRelearnerStruct->state = MENU_STATE_SETUP_CONTEST_MODE;
+        //     sMoveRelearnerMenuSate.showContestInfo = TRUE;
+        // }
+        // else
+        // {
+        //     PutWindowTilemap(0);
+        //     sMoveRelearnerStruct->state = MENU_STATE_SETUP_BATTLE_MODE;
+        //     sMoveRelearnerMenuSate.showContestInfo = FALSE;
+        // }
 
-        ScheduleBgCopyTilemapToVram(1);
-        MoveRelearnerShowHideHearts(GetCurrentSelectedMove());
+        // ScheduleBgCopyTilemapToVram(1);
+        // MoveRelearnerShowHideHearts(GetCurrentSelectedMove());
         break;
     case LIST_CANCEL:
         PlaySE(SE_SELECT);
@@ -844,7 +844,7 @@ static void CreateUISprites(void)
 
     sMoveRelearnerStruct->moveDisplayArrowTask = 0xFF;
     sMoveRelearnerStruct->moveListScrollArrowTask = 0xFF;
-    AddScrollArrows();
+    //AddScrollArrows();
 
     // These are the appeal hearts.
     for (i = 0; i < 8; i++)

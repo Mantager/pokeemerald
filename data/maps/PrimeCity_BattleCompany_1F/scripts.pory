@@ -31,7 +31,7 @@ script PrimeCity_BattleCompany_1F_EventScript_Receptionist {
 script PrimeCity_BattleCompany_1F_EventScript_Man {
     lock
     faceplayer
-    msgbox("This is the Battle Company.\pAccording to their mission statement,\ntheir goal is to 'enrich the world'\nwith 'wonderful battles'.\pI don't really understand it.")
+    msgbox("This is the Battle Company.\pAccording to their mission statement,\ntheir goal is to 'enrich the world\lwith wonderful battles'.\pI don't really understand it.")
     release
     end
 }

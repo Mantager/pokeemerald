@@ -239,7 +239,7 @@ script OroTown_EventScript_AfterBattle {
 script OroTown_EventScript_ConstructionWorker {
 	lock
 	faceplayer
-	msgbox("I'm in charge of building new houses\nin this town.\pBefore we can start construction, we need\na good foundation for the house.\pThat's what this is here.")
+	msgbox("I'm in charge of building new houses\nin this town.\pBefore we can start construction,\na good foundation is needed.\pThat's what this is here.")
 	release
 	end
 }

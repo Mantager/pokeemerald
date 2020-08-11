@@ -50,17 +50,17 @@ PrimeCity_PokemonCenter_3F_EventScript_MemLinkWoman_1:
 	end
 
 PrimeCity_PokemonCenter_3F_EventScript_MemLinkWoman_2:
-	msgbox PrimeCity_PokemonCenter_3F_EventScript_MemLinkWomanVer1p0_Text_0
+	msgbox PrimeCity_PokemonCenter_3F_EventScript_MemLinkWoman_Text_0
 	goto PrimeCity_PokemonCenter_3F_EventScript_MemLinkWoman_1
 
 PrimeCity_PokemonCenter_3F_EventScript_MemLinkWoman_3:
-	msgbox PrimeCity_PokemonCenter_3F_EventScript_MemLinkWoman_Text_0, MSGBOX_YESNO
+	msgbox PrimeCity_PokemonCenter_3F_EventScript_MemLinkWoman_Text_1, MSGBOX_YESNO
 	compare VAR_RESULT, YES
 	goto_if_eq PrimeCity_PokemonCenter_3F_EventScript_MemLinkWoman_6
 	goto PrimeCity_PokemonCenter_3F_EventScript_MemLinkWoman_1
 
 PrimeCity_PokemonCenter_3F_EventScript_MemLinkWoman_6:
-	msgbox PrimeCity_PokemonCenter_3F_EventScript_MemLinkWoman_Text_1
+	msgbox PrimeCity_PokemonCenter_3F_EventScript_MemLinkWoman_Text_2
 	closemessage
 	applymovement 1, Common_Movement_WalkUp
 	waitmovement 0
@@ -78,10 +78,13 @@ PrimeCity_PokemonCenter_3F_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE_0_Text_0:
 	.string "We hope to see you again!$"
 
 PrimeCity_PokemonCenter_3F_EventScript_MemLinkWomanVer1p0_Text_0:
-	.string "We're working on something very\ninteresting indeed, but it isn't ready yet,\lI'm afraid…\pWe hope to see you again!$"
+	.string "We're working on something very\ninteresting, but it isn't ready yet,\lI'm afraid…\pWe hope to see you again!$"
 
 PrimeCity_PokemonCenter_3F_EventScript_MemLinkWoman_Text_0:
-	.string "Ah, welcome!\pWould you like to try Memlink?\pIt's a special device that allows\nyou to battle Trainers you've already\lbeaten!\pAll you need to do is remember\nbattling somebody, and the system will\ldo the rest of the work.\pSo, would you like to try it?$"
+	.string "We're working on something very\ninteresting indeed, but it isn't ready yet,\lI'm afraid…\pWe hope to see you again!$"
 
 PrimeCity_PokemonCenter_3F_EventScript_MemLinkWoman_Text_1:
+	.string "Ah, welcome!\pWould you like to try Memlink?\pIt's a special device that allows\nyou to battle Trainers you've already\lbeaten!\pAll you need to do is remember\nbattling somebody, and the system will\ldo the rest of the work.\pSo, would you like to try it?$"
+
+PrimeCity_PokemonCenter_3F_EventScript_MemLinkWoman_Text_2:
 	.string "Please follow me!$"

@@ -29,7 +29,7 @@ mapscripts PrimeCity_PokemonCenter_3F_MapScripts {
 script PrimeCity_PokemonCenter_3F_EventScript_MemLinkWomanVer1p0 {
     lock
     faceplayer
-    msgbox("We're working on something very\ninteresting indeed, but it isn't ready yet,\lI'm afraid…\pWe hope to see you again!")
+    msgbox("We're working on something very\ninteresting, but it isn't ready yet,\lI'm afraid…\pWe hope to see you again!")
     release
     end
 }

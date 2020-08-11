@@ -268,6 +268,29 @@
     }
   ],
   "bg_events": [
-
+    {
+      "type": "hidden_item",
+      "x": 61,
+      "y": 21,
+      "elevation": 3,
+      "item": "ITEM_GRASS_GEM",
+      "flag": "FLAG_HIDDEN_ITEM_DERIVA_WALK_GRASS_GEM"
+    },
+    {
+      "type": "hidden_item",
+      "x": 28,
+      "y": 13,
+      "elevation": 3,
+      "item": "ITEM_PSYCHIC_GEM",
+      "flag": "FLAG_HIDDEN_ITEM_DERIVA_WALK_PSYCHIC_GEM"
+    },
+    {
+      "type": "hidden_item",
+      "x": 38,
+      "y": 9,
+      "elevation": 3,
+      "item": "ITEM_BUG_GEM",
+      "flag": "FLAG_HIDDEN_ITEM_DERIVA_WALK_BUG_GEM"
+    }
   ]
 }

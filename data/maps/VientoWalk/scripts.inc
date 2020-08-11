@@ -113,7 +113,7 @@ VientoWalk_EventScript_Nicolas_Text_2:
 	.string "Flying above the clouds, on\nthe back of a bird Pokémon…\pIt's an indescribable feeling.$"
 
 VientoWalk_EventScript_Merry_Text_0:
-	.string "If you're a tuft of grass, then\nI'm the mower coming to cut\nyou down to size!$"
+	.string "If you're a tuft of grass, then\nI'm the mower coming to cut\lyou down to size!$"
 
 VientoWalk_EventScript_Merry_Text_1:
 	.string "Aw, man!$"

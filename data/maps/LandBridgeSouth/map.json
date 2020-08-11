@@ -215,6 +215,13 @@
 
   ],
   "bg_events": [
-
+    {
+      "type": "hidden_item",
+      "x": 28,
+      "y": 36,
+      "elevation": 3,
+      "item": "ITEM_STAR_PIECE",
+      "flag": "FLAG_HIDDEN_ITEM_LAND_BRIDGE_SOUTH_STAR_PIECE"
+    }
   ]
 }

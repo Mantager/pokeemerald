@@ -319,7 +319,7 @@ PistaVillage_Dojo_EventScript_Aemilla_Text_2:
 	.string "Everyone in this dojo takes\nbattling super seriously.$"
 
 PistaVillage_Dojo_EventScript_Ignacio_Text_0:
-	.string "I came from Kanto!\nI'll show you how we do\nthings in Saffron City!$"
+	.string "I came from Kanto!\nI'll show you how we do\lthings in Saffron City!$"
 
 PistaVillage_Dojo_EventScript_Ignacio_Text_1:
 	.string "So this is how you do\nthings in Ríota, huh?$"

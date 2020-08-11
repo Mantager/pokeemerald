@@ -43,7 +43,7 @@ script VientoWalk_EventScript_Nicolas {
 }
 
 script VientoWalk_EventScript_Merry {
-    trainerbattle_single(TRAINER_G2_MERRY, "If you're a tuft of grass, then\nI'm the mower coming to cut\nyou down to size!", "Aw, man!")
+    trainerbattle_single(TRAINER_G2_MERRY, "If you're a tuft of grass, then\nI'm the mower coming to cut\lyou down to size!", "Aw, man!")
     msgbox("If you use a Sun Stone, then\nCottonee will evolve into Whimsicott.")
     release
     end

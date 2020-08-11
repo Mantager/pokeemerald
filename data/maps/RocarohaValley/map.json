@@ -261,7 +261,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "RocarohaValley_EventScript_ItemTM12",
       "flag": "FLAG_ITEM_ROCAROHA_VALLEY_TM12"
     },
     {
@@ -347,6 +347,45 @@
     }
   ],
   "bg_events": [
-
+    {
+      "type": "hidden_item",
+      "x": 18,
+      "y": 91,
+      "elevation": 3,
+      "item": "ITEM_FIRE_GEM",
+      "flag": "FLAG_HIDDEN_ITEM_ROCAROHA_VALLEY_FIRE_GEM"
+    },
+    {
+      "type": "hidden_item",
+      "x": 47,
+      "y": 78,
+      "elevation": 3,
+      "item": "ITEM_STAR_PIECE",
+      "flag": "FLAG_HIDDEN_ITEM_ROCAROHA_VALLEY_STAR_PIECE"
+    },
+    {
+      "type": "hidden_item",
+      "x": 50,
+      "y": 64,
+      "elevation": 3,
+      "item": "ITEM_ROCK_GEM",
+      "flag": "FLAG_HIDDEN_ITEM_ROCAROHA_VALLEY_ROCK_GEM"
+    },
+    {
+      "type": "hidden_item",
+      "x": 10,
+      "y": 27,
+      "elevation": 3,
+      "item": "ITEM_STARDUST",
+      "flag": "FLAG_HIDDEN_ITEM_ROCAROHA_VALLEY_STARDUST"
+    },
+    {
+      "type": "hidden_item",
+      "x": 54,
+      "y": 19,
+      "elevation": 3,
+      "item": "ITEM_DARK_GEM",
+      "flag": "FLAG_HIDDEN_ITEM_ROCAROHA_VALLEY_DARK_GEM"
+    }
   ]
 }

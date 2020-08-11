@@ -145,7 +145,7 @@ script PistaVillage_Dojo_EventScript_Aemilla {
 }
 
 script PistaVillage_Dojo_EventScript_Ignacio {
-    trainerbattle_single(TRAINER_G2_IGNACIO, "I came from Kanto!\nI'll show you how we do\nthings in Saffron City!", "So this is how you do\nthings in Ríota, huh?")
+    trainerbattle_single(TRAINER_G2_IGNACIO, "I came from Kanto!\nI'll show you how we do\lthings in Saffron City!", "So this is how you do\nthings in Ríota, huh?")
     msgbox("In Saffron City, there's a place\ncalled the Fighting Dojo.\pI trained there as a kid.")
     release
     end

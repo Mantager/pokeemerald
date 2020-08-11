@@ -18,7 +18,7 @@ PistaVillage_Mart_EventScript_TMEmployee::
 	faceplayer
 	message gText_HowMayIServeYou
 	waitmessage
-	pokemart PistaVillage_Mart_Pokemart_2, 3
+	pokemart PistaVillage_Mart_Pokemart_2
 	msgbox gText_PleaseComeAgain
 	release
 	end

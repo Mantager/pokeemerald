@@ -11,4 +11,4 @@ PrimeCity_HouseA_2F_EventScript_SellerBrother::
 
 
 PrimeCity_HouseA_2F_EventScript_SellerBrother_Text_0:
-	.string "My brother's trying to make it as a\nlandlord after his banking career ended\lpretty badly.\pI don't think he has a future.$"
+	.string "My brother's trying to make it as a\nlandlord after his banking career\lended pretty badly.\pI don't think he has a future.$"

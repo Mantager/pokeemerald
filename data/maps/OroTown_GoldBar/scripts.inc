@@ -7,7 +7,7 @@ OroTown_GoldBar_EventScript_Vendor::
 	faceplayer
 	message OroTown_GoldBar_EventScript_Vendor_Text_0
 	waitmessage
-	pokemart OroTown_GoldBar_Pokemart, 4
+	pokemart OroTown_GoldBar_Pokemart
 	msgbox gText_PleaseComeAgain
 	release
 	end

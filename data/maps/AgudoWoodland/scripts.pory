@@ -175,6 +175,12 @@ script AgudoWoodland_Trigger_EntranceMeetUp {
     applymovement(OBJ_EVENT_ID_PLAYER, AgudoWoodland_Movement_PlayerMoveToBattle)
     waitmovement(0)
     trainerbattle_no_intro(TRAINER_G2_RYAN, "You've grown stronger, too!")
+    msgbox("{COLOR}{GREEN}Whew, thanks for the battle!")
+    closemessage
+    msgbox("No problem!")
+    closemessage
+    msgbox("{COLOR}{RED}Alright, if everyone's ready,\nlet's start the climb!")
+    closemessage
     fadescreen(1)
     removeobject(1)
     removeobject(10)

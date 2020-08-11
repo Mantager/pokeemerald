@@ -63,4 +63,4 @@ PrimeCity_BattleCompany_1F_EventScript_Receptionist_Text_0:
 	.string "Welcome to the Battle Company!$"
 
 PrimeCity_BattleCompany_1F_EventScript_Man_Text_0:
-	.string "This is the Battle Company.\pAccording to their mission statement,\ntheir goal is to 'enrich the world'\nwith 'wonderful battles'.\pI don't really understand it.$"
+	.string "This is the Battle Company.\pAccording to their mission statement,\ntheir goal is to 'enrich the world\lwith wonderful battles'.\pI don't really understand it.$"

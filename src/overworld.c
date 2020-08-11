@@ -1571,9 +1571,13 @@ void CB2_NewGame(void)
 void CB2_WhiteOut(void)
 {
     u8 val;
+    u8 whiteouts;
 
     if (++gMain.state >= 120)
     {
+        whiteouts = VarGet(VAR_NUMBER_OF_WHITEOUTS);
+        if (whiteouts < 100)
+            VarSet(VAR_NUMBER_OF_WHITEOUTS, whiteouts + 1);
         FlagClear(FLAG_DISABLE_CATCHING);
         FieldClearVBlankHBlankCallbacks();
         StopMapMusic();

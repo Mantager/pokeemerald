@@ -95,6 +95,7 @@ RocarohaValley_EventScript_Lionel::
 
 RocarohaValley_Trigger_MeetNas::
 	lockall
+	fadeoutbgm 1
 	applymovement 14, Common_Movement_FaceDown
 	waitmovement 0
 	playse SE_PIN
@@ -150,6 +151,7 @@ RocarohaValley_Trigger_MeetNas_4:
 	msgbox RocarohaValley_Trigger_MeetNas_Text_14
 	releaseall
 	setvar VAR_YANURAS_TOWN_STATE, 3
+	fadeinbgm 1
 	end
 
 RocarohaValley_Trigger_MeetNas_2:

@@ -153,6 +153,13 @@
     }
   ],
   "bg_events": [
-
+    {
+      "type": "hidden_item",
+      "x": 34,
+      "y": 23,
+      "elevation": 3,
+      "item": "ITEM_DRAGON_GEM",
+      "flag": "FLAG_HIDDEN_ITEM_WING_PEAK_DRAGON_GEM"
+    }
   ]
 }

@@ -171,7 +171,7 @@ YanurasTown_Trigger_AfterMeetingRyan_Text_9:
 	.string "{COLOR}{BLUE}…Sorry, Fern.\nI shouldn't have asked…$"
 
 YanurasTown_Trigger_AfterMeetingRyan_Text_10:
-	.string "{COLOR}{RED}Let's just get going, shall we?\nWe've gotta head through the Valley,\nso make sure your Pokémon are in top shape.$"
+	.string "{COLOR}{RED}Let's just get going, shall we?\pWe've gotta head through the Valley,\nso make sure you're in top shape.$"
 
 YanurasTown_Trigger_AfterMeetingRyan_Text_11:
 	.string "{COLOR}{GREEN}Got it.$"

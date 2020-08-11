@@ -43,7 +43,7 @@ script YanurasTown_Trigger_AfterMeetingRyan {
     msgbox("{COLOR}{BLUE}…Sorry, Fern.\nI shouldn't have asked…")
     applymovement(1, Common_Movement_FaceUp)
     waitmovement(0)
-    msgbox("{COLOR}{RED}Let's just get going, shall we?\nWe've gotta head through the Valley,\nso make sure your Pokémon are in top shape.")
+    msgbox("{COLOR}{RED}Let's just get going, shall we?\pWe've gotta head through the Valley,\nso make sure you're in top shape.")
     msgbox("{COLOR}{GREEN}Got it.")
     applymovement(2, Common_Movement_WalkInPlaceFastestLeft)
     waitmovement(0)

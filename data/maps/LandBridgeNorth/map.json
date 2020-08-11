@@ -215,6 +215,21 @@
 
   ],
   "bg_events": [
-
+    {
+      "type": "hidden_item",
+      "x": 11,
+      "y": 40,
+      "elevation": 3,
+      "item": "ITEM_WATER_GEM",
+      "flag": "FLAG_HIDDEN_ITEM_LAND_BRIDGE_NORTH_WATER_GEM"
+    },
+    {
+      "type": "hidden_item",
+      "x": 22,
+      "y": 15,
+      "elevation": 3,
+      "item": "ITEM_GROUND_GEM",
+      "flag": "FLAG_HIDDEN_ITEM_LAND_BRIDGE_NORTH_GROUND_GEM"
+    }
   ]
 }

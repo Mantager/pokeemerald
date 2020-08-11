@@ -1825,3 +1825,6 @@ const u8 gText_Berries[] = _("Berries");
 const u8 gText_Clad[] = _("Clad");
 
 const u8 gText_FourItemsAlreadyUsed[] = _("Four items have already been used\nin this Trainer battle!{PAUSE_UNTIL_PRESS}");
+
+const u8 gText_Whiteouts[] = _("Whiteouts");
+const u8 gText_Over10[] = _("10+");

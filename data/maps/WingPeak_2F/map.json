@@ -135,6 +135,13 @@
     }
   ],
   "bg_events": [
-
+    {
+      "type": "hidden_item",
+      "x": 11,
+      "y": 20,
+      "elevation": 3,
+      "item": "ITEM_STAR_PIECE",
+      "flag": "FLAG_HIDDEN_ITEM_WING_PEAK_STAR_PIECE"
+    }
   ]
 }

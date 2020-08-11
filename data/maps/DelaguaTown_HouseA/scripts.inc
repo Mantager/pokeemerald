@@ -11,4 +11,4 @@ DelaguaTown_HouseA_EventScript_Woman::
 
 
 DelaguaTown_HouseA_EventScript_Woman_Text_0:
-	.string "This little town is perfect for me!\nIt's nicely secluded from the rest of Ríota.$"
+	.string "This little town is perfect for me!\nIt's secluded from the rest of Ríota.$"

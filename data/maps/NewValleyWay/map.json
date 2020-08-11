@@ -267,6 +267,21 @@
     }
   ],
   "bg_events": [
-
+    {
+      "type": "hidden_item",
+      "x": 32,
+      "y": 45,
+      "elevation": 3,
+      "item": "ITEM_NORMAL_GEM",
+      "flag": "FLAG_HIDDEN_ITEM_NEW_VALLEY_WAY_NORMAL_GEM"
+    },
+    {
+      "type": "hidden_item",
+      "x": 16,
+      "y": 29,
+      "elevation": 3,
+      "item": "ITEM_STARDUST",
+      "flag": "FLAG_HIDDEN_ITEM_NEW_VALLEY_WAY_STARDUST"
+    }
   ]
 }

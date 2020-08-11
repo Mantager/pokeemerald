@@ -2,7 +2,7 @@
   "id": "MAP_PISTA_VILLAGE_BIKE_SHOP",
   "name": "PistaVillage_BikeShop",
   "layout": "LAYOUT_PISTA_VILLAGE_BIKE_SHOP",
-  "music": "MUS_AJITO",
+  "music": "MUS_MINAMO",
   "region_map_section": "MAPSEC_PISTA_VILLAGE",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -10,7 +10,7 @@
   "allow_cycling": false,
   "allow_escaping": false,
   "allow_running": false,
-  "show_map_name": true,
+  "show_map_name": false,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": 0,
   "object_events": [

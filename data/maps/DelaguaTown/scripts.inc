@@ -67,7 +67,7 @@ DelaguaTown_EventScript_TuberF_Text_0:
 	.string "Delagua Town used to be occupied\nby pirates hundreds of years ago.\lI want to meet one.$"
 
 DelaguaTown_EventScript_LeagueTalker_Text_0:
-	.string "Pokémon League…\pRíota doesn't have one, but there's plans\lto construct one in the future.\pI wonder what kind of Trainers would compete?$"
+	.string "Pokémon League…\pRíota doesn't have one, but there's\lplans to build one in the future.\pI wonder what kind of Trainers\nwould compete?$"
 
 DelaguaTown_EventScript_SwimOffTalker_Text_0:
 	.string "I saw you in the Swim-Off!\nTo think that you beat Marlon…\lIt's incredible!$"

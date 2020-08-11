@@ -14,7 +14,7 @@ OroTown_HouseA_EventScript_TormentGiver_1:
 OroTown_HouseA_EventScript_TormentGiver_2:
 	msgbox OroTown_HouseA_EventScript_TormentGiver_Text_0
 	giveitem ITEM_TM41
-	compare VAR_RESULT, TRUE
+	compare VAR_RESULT, 0
 	goto_if_eq OroTown_HouseA_EventScript_TormentGiver_5
 	setflag FLAG_RECEIVED_TM41
 	msgbox OroTown_HouseA_EventScript_TormentGiver_Text_2
