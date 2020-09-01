@@ -54,3 +54,18 @@ script DelaguaTown_EventScript_Sign {
     release
     end
 }
+
+script DelaguaTown_EventScript_Beauty {
+    lock
+    faceplayer
+    if(flag(FLAG_RECEIVED_ITEMFINDER) == FALSE) {
+        msgbox("I've got something for you!\nIt's an Itemfinder!")
+        giveitem(ITEM_ITEMFINDER)
+        setflag(FLAG_RECEIVED_ITEMFINDER)
+        msgbox("With an Itemfinder, you can find\nhidden items in the field!")
+    } else {
+        msgbox("You should try out the Itemfinder\neverywhere you go!\pYou'll be surprised at what you\ncan find.")
+    }
+    release
+    end
+}

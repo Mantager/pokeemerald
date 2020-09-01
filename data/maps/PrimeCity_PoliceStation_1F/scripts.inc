@@ -33,4 +33,4 @@ PrimeCity_PoliceStation_1F_EventScript_OfficerIdle_Text_0:
 	.string "Ríota's actually very light on crime.\pYou could probably call us more 'public\nambassadors' than policemen.$"
 
 PrimeCity_PoliceStation_1F_EventScript_OfficerTable_Text_0:
-	.string "The job pays well, but sometimes it's tiring.\pYou see, I have to wake up really early.$"
+	.string "The job pays well, but sometimes\nit's tiring.\pYou see, I have to wake up really early.$"

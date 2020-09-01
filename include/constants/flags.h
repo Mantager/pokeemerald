@@ -1268,7 +1268,7 @@
 #define FLAG_MEMLINK_IN_PROGRESS                                           0x4B8 // Unused Flag
 #define FLAG_FIRST_MEMLINK_COMPLETE                                           0x4B9 // Unused Flag
 #define FLAG_HIDE_MEMLINK_OPPONENT                                           0x4BA // Unused Flag
-#define FLAG_UNUSED_0x4BB                                           0x4BB // Unused Flag
+#define FLAG_RECEIVED_ITEMFINDER                                           0x4BB // Unused Flag
 #define FLAG_UNUSED_0x4BC                                           0x4BC // Unused Flag
 #define FLAG_UNUSED_0x4BD                                           0x4BD // Unused Flag
 #define FLAG_UNUSED_0x4BE                                           0x4BE // Unused Flag

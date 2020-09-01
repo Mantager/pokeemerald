@@ -1089,7 +1089,7 @@ void ItemUseInBattle_PPRecovery(u8 taskId)
 void ItemUseInBattle_Escape(u8 taskId)
 {
 
-    if((gBattleTypeFlags & BATTLE_TYPE_TRAINER) == FALSE)
+    if(((gBattleTypeFlags & BATTLE_TYPE_TRAINER) == FALSE) && ((gBattleTypeFlags & BATTLE_TYPE_EXCJINN) == FALSE))
     {
         RemoveUsedItem();
         if (!InBattlePyramid())

@@ -19,7 +19,7 @@ script PrimeCity_PoliceStation_1F_EventScript_OfficerIdle {
 script PrimeCity_PoliceStation_1F_EventScript_OfficerTable {
     lock
     faceplayer
-    msgbox("The job pays well, but sometimes it's tiring.\pYou see, I have to wake up really early.")
+    msgbox("The job pays well, but sometimes\nit's tiring.\pYou see, I have to wake up really early.")
     release
     end
 }
