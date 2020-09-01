@@ -436,7 +436,7 @@ static void CB2_BuyMenu(void)
     RunTasks();
     AnimateSprites();
     BuildOamBuffer();
-    do_scheduled_bg_tilemap_copies_to_vram();
+    DoScheduledBgTilemapCopiesToVram();
     UpdatePaletteFade();
 }
 
@@ -466,7 +466,7 @@ static void CB2_InitBuyMenu(void)
         ResetPaletteFade();
         ResetSpriteData();
         ResetTasks();
-        clear_scheduled_bg_copies_to_vram();
+        ClearScheduledBgCopiesToVram();
         gShopDataPtr = AllocZeroed(sizeof(struct ShopData));
         gShopDataPtr->scrollIndicatorsTaskId = 0xFF;
         gShopDataPtr->itemSpriteIds[0] = 0xFF;

@@ -57,6 +57,23 @@ DelaguaTown_EventScript_Sign::
 	end
 
 
+DelaguaTown_EventScript_Beauty::
+	lock
+	faceplayer
+	goto_if_unset FLAG_RECEIVED_ITEMFINDER, DelaguaTown_EventScript_Beauty_2
+	msgbox DelaguaTown_EventScript_Beauty_Text_2
+DelaguaTown_EventScript_Beauty_1:
+	release
+	end
+
+DelaguaTown_EventScript_Beauty_2:
+	msgbox DelaguaTown_EventScript_Beauty_Text_0
+	giveitem ITEM_ITEMFINDER
+	setflag FLAG_RECEIVED_ITEMFINDER
+	msgbox DelaguaTown_EventScript_Beauty_Text_1
+	goto DelaguaTown_EventScript_Beauty_1
+
+
 DelaguaTown_EventScript_Fisherman_Text_0:
 	.string "Whaddaya think about the sea, huh?\nI wonder just how many Pokémon\llive down there.$"
 
@@ -77,3 +94,12 @@ DelaguaTown_EventScript_BattleTalker_Text_0:
 
 DelaguaTown_EventScript_Sign_Text_0:
 	.string "Delagua Town\nShining Cove of Sand$"
+
+DelaguaTown_EventScript_Beauty_Text_0:
+	.string "I've got something for you!\nIt's an Itemfinder!$"
+
+DelaguaTown_EventScript_Beauty_Text_1:
+	.string "With an Itemfinder, you can find\nhidden items in the field!$"
+
+DelaguaTown_EventScript_Beauty_Text_2:
+	.string "You should try out the Itemfinder\neverywhere you go!\pYou'll be surprised at what you\ncan find.$"
