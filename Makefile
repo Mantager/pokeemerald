@@ -219,8 +219,10 @@ include songs.mk
 %.lz: % ; $(GFX) $< $@
 %.rl: % ; $(GFX) $< $@
 
-sound/%.bin: sound/%.aif ; $(AIF) $< $@ --compress
-sound/%.bin: sound/%.aiff ; $(AIF) $< $@ --compress
+sound/direct_sound_samples/cries/cry_not_%.bin: sound/direct_sound_samples/cries/cry_not_%.aif ; $(AIF) $< $@
+sound/direct_sound_samples/cries/cry_%.bin: sound/direct_sound_samples/cries/cry_%.aif ; $(AIF) $< $@ --compress
+sound/%.bin: sound/%.aif ; $(AIF) $< $@
+sound/%.bin: sound/%.aiff ; $(AIF) $< $@
 data/%.inc: data/%.pory; $(SCRIPT) -i $< -o $@ -fw tools/poryscript/font_widths.json
 
 ifeq ($(MODERN),0)
