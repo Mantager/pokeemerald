@@ -98,6 +98,14 @@ MantaZone_House1_EventScript_EggWoman_7:
 	end
 
 
+MantaZone_House1_EventScript_Azurill::
+	lock
+	faceplayer
+	giveitem ITEM_MANTA_CHARM, 1
+	release
+	end
+
+
 MantaZone_House1_Text_LeftTheBall::
 	.string "Decided to leave the Poké Ball.$"
 

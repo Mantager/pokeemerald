@@ -36,6 +36,14 @@
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
       "script": "MantaZone_Sign"
+    },
+    {
+      "type": "hidden_item",
+      "x": 1,
+      "y": 7,
+      "elevation": 3,
+      "item": "ITEM_MANTA_CHARM",
+      "flag": "FLAG_UNUSED_0x1DE"
     }
   ]
 }

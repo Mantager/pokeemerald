@@ -122,3 +122,11 @@ text MantaZone_House1_Text_WantThisEgg {
     "I'm not sure what's inside of it,\n"
     "but will you take it for me?"
 }
+
+script MantaZone_House1_EventScript_Azurill {
+    lock
+    faceplayer
+    giveitem(ITEM_MANTA_CHARM, 1)
+    release
+    end
+}

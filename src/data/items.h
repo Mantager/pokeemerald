@@ -4884,4 +4884,17 @@ const struct Item gItems[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = 0,
     },
+
+    [ITEM_MANTA_CHARM] =
+    {
+        .name = _("MANTA CHARM"),
+        .itemId = ITEM_MANTA_CHARM,
+        .price = 500,
+        .description = sMantaCharmDesc,
+        .importance = 0,
+        .pocket = POCKET_ITEMS,
+        .type = 4,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = 0,
+    }
 };

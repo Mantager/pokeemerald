@@ -1549,3 +1549,8 @@ static const u8 sOldSeaMapDesc[] = _(
     "A faded sea chart\n"
     "that shows the way\n"
     "to a certain island.");
+
+static const u8 sMantaCharmDesc[] = _(
+    "A special charm found\n"
+    "across beaches.\n"
+    "Glimmers softly.");
