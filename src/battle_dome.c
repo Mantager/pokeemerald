@@ -29,7 +29,7 @@
 #include "international_string_util.h"
 #include "trainer_pokemon_sprites.h"
 #include "scanline_effect.h"
-#include "script_pokemon_util_80F87D8.h"
+#include "script_pokemon_util.h"
 #include "graphics.h"
 #include "constants/battle_dome.h"
 #include "constants/frontier_util.h"
@@ -4547,7 +4547,7 @@ static void DisplayTrainerInfoOnCard(u8 flags, u8 trainerTourneyId)
     textPrinter.currentY = textPrinter.y;
     textPrinter.letterSpacing = 2;
     textPrinter.lineSpacing = 0;
-    textPrinter.unk = 0;
+    textPrinter.style = 0;
     textPrinter.fgColor = TEXT_DYNAMIC_COLOR_5;
     textPrinter.bgColor = TEXT_COLOR_TRANSPARENT;
     textPrinter.shadowColor = TEXT_DYNAMIC_COLOR_4;
@@ -4692,7 +4692,7 @@ static void DisplayTrainerInfoOnCard(u8 flags, u8 trainerTourneyId)
             allocatedArray[NUM_STATS] += allocatedArray[STAT_HP];
 
             // Add the EVs with the nature modifier for this mon and and track number of negative natures
-            for (j = 0; j < NUM_EV_STATS; j++)
+            for (j = 0; j < NUM_NATURE_STATS; j++)
             {
                 if (trainerId == TRAINER_FRONTIER_BRAIN)
                     nature = GetFrontierBrainMonNature(i);
@@ -4706,7 +4706,7 @@ static void DisplayTrainerInfoOnCard(u8 flags, u8 trainerTourneyId)
                 else if (gNatureStatTable[nature][j] < 0)
                 {
                     allocatedArray[j + NUM_STATS + 1] += (allocatedArray[j + 1] * 90) / 100;
-                    allocatedArray[j + NUM_STATS + NUM_EV_STATS + 2]++;
+                    allocatedArray[j + NUM_STATS + NUM_NATURE_STATS + 2]++;
                 }
                 else
                 {
@@ -4742,7 +4742,7 @@ static void DisplayTrainerInfoOnCard(u8 flags, u8 trainerTourneyId)
             }
 
             allocatedArray[NUM_STATS] += allocatedArray[STAT_HP];
-            for (j = 0; j < NUM_EV_STATS; j++)
+            for (j = 0; j < NUM_NATURE_STATS; j++)
             {
                 nature = gFacilityTrainerMons[DOME_MONS[trainerTourneyId][i]].nature;
                 if (gNatureStatTable[nature][j] > 0)
@@ -4752,7 +4752,7 @@ static void DisplayTrainerInfoOnCard(u8 flags, u8 trainerTourneyId)
                 else if (gNatureStatTable[nature][j] < 0)
                 {
                     allocatedArray[j + NUM_STATS + 1] += (allocatedArray[j + 1] * 90) / 100;
-                    allocatedArray[j + NUM_STATS + NUM_EV_STATS + 2]++;
+                    allocatedArray[j + NUM_STATS + NUM_NATURE_STATS + 2]++;
                 }
                 else
                 {
@@ -5080,7 +5080,7 @@ static void DisplayMatchInfoOnCard(u8 flags, u8 matchNo)
     textPrinter.currentY = textPrinter.y;
     textPrinter.letterSpacing = 0;
     textPrinter.lineSpacing = 0;
-    textPrinter.unk = 0;
+    textPrinter.style = 0;
     textPrinter.fgColor = TEXT_DYNAMIC_COLOR_5;
     textPrinter.bgColor = TEXT_COLOR_TRANSPARENT;
     textPrinter.shadowColor = TEXT_DYNAMIC_COLOR_4;
@@ -5534,7 +5534,7 @@ static void Task_ShowTourneyTree(u8 taskId)
         gTasks[taskId].tState++;
         break;
     case 2:
-        sTilemapBuffer = AllocZeroed(0x800);
+        sTilemapBuffer = AllocZeroed(BG_SCREEN_SIZE);
         LZDecompressWram(gDomeTourneyLineMask_Tilemap, sTilemapBuffer);
         SetBgTilemapBuffer(1, sTilemapBuffer);
         CopyBgTilemapBufferToVram(1);
@@ -5578,7 +5578,7 @@ static void Task_ShowTourneyTree(u8 taskId)
         textPrinter.lineSpacing = 0;
         textPrinter.currentX = GetStringCenterAlignXOffsetWithLetterSpacing(textPrinter.fontId, textPrinter.currentChar, 0x70, textPrinter.letterSpacing);
         textPrinter.currentY = 1;
-        textPrinter.unk = 0;
+        textPrinter.style = 0;
         textPrinter.fgColor = TEXT_DYNAMIC_COLOR_5;
         textPrinter.bgColor = TEXT_COLOR_TRANSPARENT;
         textPrinter.shadowColor = TEXT_DYNAMIC_COLOR_4;
@@ -5759,7 +5759,7 @@ static void Task_HandleStaticTourneyTreeInput(u8 taskId)
             textPrinter.y = 0;
             textPrinter.letterSpacing = 2;
             textPrinter.lineSpacing = 0;
-            textPrinter.unk = 0;
+            textPrinter.style = 0;
             textPrinter.fgColor = TEXT_DYNAMIC_COLOR_2;
             textPrinter.bgColor = TEXT_COLOR_TRANSPARENT;
             textPrinter.shadowColor = TEXT_DYNAMIC_COLOR_4;

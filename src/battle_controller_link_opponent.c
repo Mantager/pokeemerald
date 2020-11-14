@@ -281,14 +281,14 @@ static void sub_8064734(void)
         && !gBattleSpritesDataPtr->healthBoxesData[gActiveBattler].flag_x80
         && !gBattleSpritesDataPtr->healthBoxesData[gActiveBattler].field_1_x1)
     {
-        sub_8172EF0(gActiveBattler, &gEnemyParty[gBattlerPartyIndexes[gActiveBattler]]);
+        TryShinyAnimation(gActiveBattler, &gEnemyParty[gBattlerPartyIndexes[gActiveBattler]]);
     }
     if (!(gBattleTypeFlags & BATTLE_TYPE_MULTI)
         && !gBattleSpritesDataPtr->healthBoxesData[BATTLE_PARTNER(gActiveBattler)].ballAnimActive
         && !gBattleSpritesDataPtr->healthBoxesData[BATTLE_PARTNER(gActiveBattler)].flag_x80
         && !gBattleSpritesDataPtr->healthBoxesData[BATTLE_PARTNER(gActiveBattler)].field_1_x1)
     {
-        sub_8172EF0(BATTLE_PARTNER(gActiveBattler), &gEnemyParty[gBattlerPartyIndexes[BATTLE_PARTNER(gActiveBattler)]]);
+        TryShinyAnimation(BATTLE_PARTNER(gActiveBattler), &gEnemyParty[gBattlerPartyIndexes[BATTLE_PARTNER(gActiveBattler)]]);
     }
 
 
@@ -369,7 +369,7 @@ static void sub_8064B04(void)
     {
         if (!gBattleSpritesDataPtr->healthBoxesData[gActiveBattler].flag_x80)
         {
-            sub_8172EF0(gActiveBattler, &gEnemyParty[gBattlerPartyIndexes[gActiveBattler]]);
+            TryShinyAnimation(gActiveBattler, &gEnemyParty[gBattlerPartyIndexes[gActiveBattler]]);
         }
         else
         {
@@ -497,7 +497,7 @@ static void sub_8064F40(void)
     if (!gBattleSpritesDataPtr->healthBoxesData[gActiveBattler].ballAnimActive
         && !gBattleSpritesDataPtr->healthBoxesData[gActiveBattler].flag_x80)
     {
-        sub_8172EF0(gActiveBattler, &gEnemyParty[gBattlerPartyIndexes[gActiveBattler]]);
+        TryShinyAnimation(gActiveBattler, &gEnemyParty[gBattlerPartyIndexes[gActiveBattler]]);
     }
 
     if (gSprites[gUnknown_03005D7C[gActiveBattler]].callback == SpriteCallbackDummy
@@ -1267,9 +1267,9 @@ static void LinkOpponentHandleDrawTrainerPic(void)
     else
     {
         xPos = 176;
-        if (gTrainerBattleOpponent_A == TRAINER_OPPONENT_C00)
+        if (gTrainerBattleOpponent_A == TRAINER_UNION_ROOM)
         {
-            trainerPicId = sub_8068B48();
+            trainerPicId = GetUnionRoomTrainerPic();
         }
         else if ((gLinkPlayers[GetMultiplayerId() ^ BIT_SIDE].version & 0xFF) == VERSION_FIRE_RED
                  || (gLinkPlayers[GetMultiplayerId() ^ BIT_SIDE].version & 0xFF) == VERSION_LEAF_GREEN)
@@ -1357,7 +1357,7 @@ static void LinkOpponentHandleFaintAnimation(void)
         if (!gBattleSpritesDataPtr->healthBoxesData[gActiveBattler].specialAnimActive)
         {
             gBattleSpritesDataPtr->healthBoxesData[gActiveBattler].animationState = 0;
-            PlaySE12WithPanning(SE_POKE_DEAD, SOUND_PAN_TARGET);
+            PlaySE12WithPanning(SE_FAINT, SOUND_PAN_TARGET);
             gSprites[gBattlerSpriteIds[gActiveBattler]].callback = SpriteCB_FaintOpponentMon;
             gBattlerControllerFuncs[gActiveBattler] = sub_8064C14;
         }

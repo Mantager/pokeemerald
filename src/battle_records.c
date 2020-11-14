@@ -485,7 +485,7 @@ static void CB2_ShowTrainerHillRecords(void)
         gMain.state++;
         break;
     case 2:
-        sTilemapBuffer = AllocZeroed(0x800);
+        sTilemapBuffer = AllocZeroed(BG_SCREEN_SIZE);
         ResetBgsAndClearDma3BusyFlags(0);
         InitBgsFromTemplates(0, sTrainerHillRecordsBgTemplates, ARRAY_COUNT(sTrainerHillRecordsBgTemplates));
         SetBgTilemapBuffer(3, sTilemapBuffer);
@@ -494,7 +494,7 @@ static void CB2_ShowTrainerHillRecords(void)
         break;
     case 3:
         LoadTrainerHillRecordsWindowGfx(3);
-        LoadPalette(stdpal_get(0), 0xF0, 0x20);
+        LoadPalette(GetTextWindowPalette(0), 0xF0, 0x20);
         gMain.state++;
         break;
     case 4:

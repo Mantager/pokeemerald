@@ -263,9 +263,9 @@ static void sub_818686C(void)
     bool32 r8 = FALSE;
 
     if (!gBattleSpritesDataPtr->healthBoxesData[gActiveBattler].flag_x80 && !gBattleSpritesDataPtr->healthBoxesData[gActiveBattler].ballAnimActive)
-        sub_8172EF0(gActiveBattler, &gEnemyParty[gBattlerPartyIndexes[gActiveBattler]]);
+        TryShinyAnimation(gActiveBattler, &gEnemyParty[gBattlerPartyIndexes[gActiveBattler]]);
     if (!gBattleSpritesDataPtr->healthBoxesData[gActiveBattler ^ BIT_FLANK].flag_x80 && !gBattleSpritesDataPtr->healthBoxesData[gActiveBattler ^ BIT_FLANK].ballAnimActive)
-        sub_8172EF0(gActiveBattler ^ BIT_FLANK, &gEnemyParty[gBattlerPartyIndexes[gActiveBattler ^ BIT_FLANK]]);
+        TryShinyAnimation(gActiveBattler ^ BIT_FLANK, &gEnemyParty[gBattlerPartyIndexes[gActiveBattler ^ BIT_FLANK]]);
 
     if (!gBattleSpritesDataPtr->healthBoxesData[gActiveBattler].ballAnimActive && !gBattleSpritesDataPtr->healthBoxesData[gActiveBattler ^ BIT_FLANK].ballAnimActive)
     {
@@ -350,7 +350,7 @@ static void sub_8186C48(void)
     {
         if (!gBattleSpritesDataPtr->healthBoxesData[gActiveBattler].flag_x80)
         {
-            sub_8172EF0(gActiveBattler, &gEnemyParty[gBattlerPartyIndexes[gActiveBattler]]);
+            TryShinyAnimation(gActiveBattler, &gEnemyParty[gBattlerPartyIndexes[gActiveBattler]]);
         }
         else
         {
@@ -479,7 +479,7 @@ static void sub_8187084(void)
     if (!gBattleSpritesDataPtr->healthBoxesData[gActiveBattler].ballAnimActive
         && !gBattleSpritesDataPtr->healthBoxesData[gActiveBattler].flag_x80)
     {
-        sub_8172EF0(gActiveBattler, &gEnemyParty[gBattlerPartyIndexes[gActiveBattler]]);
+        TryShinyAnimation(gActiveBattler, &gEnemyParty[gBattlerPartyIndexes[gActiveBattler]]);
     }
 
     if (gSprites[gUnknown_03005D7C[gActiveBattler]].callback == SpriteCallbackDummy
@@ -1229,9 +1229,9 @@ static void RecordedOpponentHandleDrawTrainerPic(void)
     else
     {
         xPos = 176;
-        if (gTrainerBattleOpponent_A == TRAINER_OPPONENT_C00)
+        if (gTrainerBattleOpponent_A == TRAINER_UNION_ROOM)
         {
-            trainerPicId = sub_8068B48();
+            trainerPicId = GetUnionRoomTrainerPic();
         }
         else
         {
@@ -1284,7 +1284,7 @@ static void RecordedOpponentHandleFaintAnimation(void)
         if (!gBattleSpritesDataPtr->healthBoxesData[gActiveBattler].specialAnimActive)
         {
             gBattleSpritesDataPtr->healthBoxesData[gActiveBattler].animationState = 0;
-            PlaySE12WithPanning(SE_POKE_DEAD, SOUND_PAN_TARGET);
+            PlaySE12WithPanning(SE_FAINT, SOUND_PAN_TARGET);
             gSprites[gBattlerSpriteIds[gActiveBattler]].callback = SpriteCB_FaintOpponentMon;
             gBattlerControllerFuncs[gActiveBattler] = sub_8186D58;
         }

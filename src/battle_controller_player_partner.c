@@ -568,7 +568,7 @@ static void sub_81BBAE8(void)
     if (!gBattleSpritesDataPtr->healthBoxesData[gActiveBattler].flag_x80
         && !gBattleSpritesDataPtr->healthBoxesData[gActiveBattler].ballAnimActive)
     {
-        sub_8172EF0(gActiveBattler, &gPlayerParty[gBattlerPartyIndexes[gActiveBattler]]);
+        TryShinyAnimation(gActiveBattler, &gPlayerParty[gBattlerPartyIndexes[gActiveBattler]]);
     }
 
     if (gSprites[gUnknown_03005D7C[gActiveBattler]].callback == SpriteCallbackDummy
@@ -1371,7 +1371,7 @@ static void PlayerPartnerHandleFaintAnimation(void)
         {
             gBattleSpritesDataPtr->healthBoxesData[gActiveBattler].animationState = 0;
             HandleLowHpMusicChange(&gPlayerParty[gBattlerPartyIndexes[gActiveBattler]], gActiveBattler);
-            PlaySE12WithPanning(SE_POKE_DEAD, SOUND_PAN_ATTACKER);
+            PlaySE12WithPanning(SE_FAINT, SOUND_PAN_ATTACKER);
             gSprites[gBattlerSpriteIds[gActiveBattler]].data[1] = 0;
             gSprites[gBattlerSpriteIds[gActiveBattler]].data[2] = 5;
             gSprites[gBattlerSpriteIds[gActiveBattler]].callback = sub_8039C00;

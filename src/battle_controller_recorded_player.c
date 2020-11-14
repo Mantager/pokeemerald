@@ -280,12 +280,12 @@ static void sub_8189D40(void)
         if (!gBattleSpritesDataPtr->healthBoxesData[gActiveBattler].flag_x80
         && !gBattleSpritesDataPtr->healthBoxesData[gActiveBattler].ballAnimActive)
         {
-            sub_8172EF0(gActiveBattler, &gPlayerParty[gBattlerPartyIndexes[gActiveBattler]]);
+            TryShinyAnimation(gActiveBattler, &gPlayerParty[gBattlerPartyIndexes[gActiveBattler]]);
         }
         if (!gBattleSpritesDataPtr->healthBoxesData[gActiveBattler ^ BIT_FLANK].flag_x80
         && !gBattleSpritesDataPtr->healthBoxesData[gActiveBattler ^ BIT_FLANK].ballAnimActive)
         {
-            sub_8172EF0(gActiveBattler ^ BIT_FLANK, &gPlayerParty[gBattlerPartyIndexes[gActiveBattler ^ BIT_FLANK]]);
+            TryShinyAnimation(gActiveBattler ^ BIT_FLANK, &gPlayerParty[gBattlerPartyIndexes[gActiveBattler ^ BIT_FLANK]]);
         }
     }
 
@@ -463,7 +463,7 @@ static void sub_818A470(void)
     if (!gBattleSpritesDataPtr->healthBoxesData[gActiveBattler].flag_x80
         && !gBattleSpritesDataPtr->healthBoxesData[gActiveBattler].ballAnimActive)
     {
-        sub_8172EF0(gActiveBattler, &gPlayerParty[gBattlerPartyIndexes[gActiveBattler]]);
+        TryShinyAnimation(gActiveBattler, &gPlayerParty[gBattlerPartyIndexes[gActiveBattler]]);
     }
 
     if (gSprites[gUnknown_03005D7C[gActiveBattler]].callback == SpriteCallbackDummy
@@ -1286,7 +1286,7 @@ static void RecordedPlayerHandleFaintAnimation(void)
         {
             gBattleSpritesDataPtr->healthBoxesData[gActiveBattler].animationState = 0;
             HandleLowHpMusicChange(&gPlayerParty[gBattlerPartyIndexes[gActiveBattler]], gActiveBattler);
-            PlaySE12WithPanning(SE_POKE_DEAD, -64);
+            PlaySE12WithPanning(SE_FAINT, -64);
             gSprites[gBattlerSpriteIds[gActiveBattler]].data[1] = 0;
             gSprites[gBattlerSpriteIds[gActiveBattler]].data[2] = 5;
             gSprites[gBattlerSpriteIds[gActiveBattler]].callback = sub_8039C00;

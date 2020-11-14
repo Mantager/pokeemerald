@@ -825,14 +825,14 @@ u32 sub_8020C0C(MainCallback callback)
     if (callback == CB2_ReturnToField)
     {
         gTextFlags.autoScroll = TRUE;
-        PlayNewMapMusic(MUS_POKECEN);
+        PlayNewMapMusic(MUS_POKE_CENTER);
         SetMainCallback1(CB1_Overworld);
     }
 
     return 0;
 }
 
-void sub_8020C70(MainCallback callback)
+void StartBerryCrush(MainCallback callback)
 {
     u8 playerCount = 0;
     u8 multiplayerId;
@@ -842,7 +842,7 @@ void sub_8020C70(MainCallback callback)
         SetMainCallback2(callback);
         Rfu.unk_10 = 0;
         Rfu.unk_12 = 0;
-        Rfu.unk_ee = 1;
+        Rfu.errorState = 1;
         return;
     }
 
@@ -853,7 +853,7 @@ void sub_8020C70(MainCallback callback)
         SetMainCallback2(callback);
         Rfu.unk_10 = 0;
         Rfu.unk_12 = 0;
-        Rfu.unk_ee = 1;
+        Rfu.errorState = 1;
         return;
     }
 
@@ -863,7 +863,7 @@ void sub_8020C70(MainCallback callback)
         SetMainCallback2(callback);
         Rfu.unk_10 = 0;
         Rfu.unk_12 = 0;
-        Rfu.unk_ee = 1;
+        Rfu.errorState = 1;
         return;
     }
 
@@ -900,7 +900,7 @@ static void sub_8020D8C(void)
 void sub_8020E1C(void)
 {
     DestroyTask(gUnknown_02022C90->unkA);
-    ChooseBerrySetCallback(sub_8020D8C);
+    ChooseBerryForMachine(sub_8020D8C);
 }
 
 static void sub_8020E3C(void)
@@ -1076,7 +1076,7 @@ int sub_802104C(void)
             return 0;
 
         InitStandardTextBoxWindows();
-        sub_8197200();
+        InitTextBoxGfxAndPrinters();
         sub_8022588(var0);
         sub_8022600(var0);
         gPaletteFade.bufferTransferDisabled = TRUE;
@@ -1125,7 +1125,7 @@ int sub_802130C(void)
     switch (var0->unkC)
     {
     case 0:
-        sub_8010434();
+        Rfu_SetLinkStandbyCallback();
         break;
     case 1:
         if (!IsLinkTaskFinished())
@@ -1344,9 +1344,9 @@ void sub_80216E0(struct BerryCrushGame *arg0, struct BerryCrushGame_138 *arg1)
         else
         {
             if (sp4 == 1)
-                PlaySE(SE_TOY_DANGO);
+                PlaySE(SE_MUD_BALL);
             else
-                PlaySE(SE_TOY_KABE);
+                PlaySE(SE_BREAKABLE_DOOR);
 
             arg0->unk25_2 = 1;
         }
@@ -2027,7 +2027,7 @@ static u32 sub_8022CB0(struct BerryCrushGame *r4, u8 *r5)
             r4->unkC = 3;
         return 0;
     case 1:
-        sub_8010434();
+        Rfu_SetLinkStandbyCallback();
         ++r4->unkC;
         return 0;
     case 2:
@@ -2110,12 +2110,12 @@ static u32 sub_8022E5C(struct BerryCrushGame *r4, __attribute__((unused)) u8 *r1
     switch (r4->unkC)
     {
     case 0:
-        sub_8010434();
+        Rfu_SetLinkStandbyCallback();
         break;
     case 1:
         if (IsLinkTaskFinished())
         {
-            PlayNewMapMusic(MUS_RG_SLOT);
+            PlayNewMapMusic(MUS_RG_GAME_CORNER);
             sub_8022BEC(7, 1, NULL);
             r4->unk12 = 3;
             r4->unkC = 0;
@@ -2167,7 +2167,7 @@ static u32 sub_8022F1C(struct BerryCrushGame *r5, u8 *r2)
         sub_8022BEC(3, 1, NULL);
         return 0;
     case 1:
-        sub_8010434();
+        Rfu_SetLinkStandbyCallback();
         break;
     case 2:
         if (!IsLinkTaskFinished())
@@ -2213,7 +2213,7 @@ static u32 sub_8023070(struct BerryCrushGame *r4,  __attribute__((unused)) u8 *r
     {
     case 0:
         sub_80214A8(r4, &r4->unk138);
-        sub_8010434();
+        Rfu_SetLinkStandbyCallback();
         break;
     case 1:
         if (!IsLinkTaskFinished())
@@ -2226,14 +2226,14 @@ static u32 sub_8023070(struct BerryCrushGame *r4,  __attribute__((unused)) u8 *r
     case 2:
         r4->unk138.unk38[r4->unk138.unk0]->callback = sub_8021608;
         r4->unk138.unk38[r4->unk138.unk0]->affineAnimPaused = FALSE;
-        PlaySE(SE_NAGERU);
+        PlaySE(SE_BALL_THROW);
         break;
     case 3:
         if (r4->unk138.unk38[r4->unk138.unk0]->callback == sub_8021608)
             return 0;
         r4->unk138.unk38[r4->unk138.unk0] = NULL;
         ++r4->unk138.unk0;
-        sub_8010434();
+        Rfu_SetLinkStandbyCallback();
         break;
     case 4:
         if (!IsLinkTaskFinished())
@@ -2247,12 +2247,12 @@ static u32 sub_8023070(struct BerryCrushGame *r4,  __attribute__((unused)) u8 *r
         break;
     case 5:
         sub_80216A8(r4, &r4->unk138);
-        sub_8010434();
+        Rfu_SetLinkStandbyCallback();
         break;
     case 6:
         if (!IsLinkTaskFinished())
             return 0;
-        PlaySE(SE_RU_HYUU);
+        PlaySE(SE_FALL);
         sub_8022BEC(11, 1, NULL);
         r4->unk12 = 5;
         r4->unkC = 0;
@@ -2274,7 +2274,7 @@ static u32 sub_80231B8(struct BerryCrushGame *r4,  __attribute__((unused)) u8 *r
         r4->unk138.unk1 = 4;
         r4->unk138.unk0 = 0;
         r4->unk138.unk2 = gUnknown_082F326C[r4->unk138.unk1][0];
-        PlaySE(SE_W070);
+        PlaySE(SE_M_STRENGTH);
         break;
     case 1:
         r4->unk2C = gUnknown_082F326C[r4->unk138.unk1][r4->unk138.unk0];
@@ -2295,7 +2295,7 @@ static u32 sub_80231B8(struct BerryCrushGame *r4,  __attribute__((unused)) u8 *r
         SetGpuReg(REG_OFFSET_BG0VOFS, 0);
         SetGpuReg(REG_OFFSET_BG2VOFS, 0);
         SetGpuReg(REG_OFFSET_BG3VOFS, 0);
-        sub_8010434();
+        Rfu_SetLinkStandbyCallback();
         break;
     case 3:
         if (!IsLinkTaskFinished())
@@ -2323,7 +2323,7 @@ static u32 sub_80232EC(struct BerryCrushGame *r4,  __attribute__((unused)) u8 *r
             return 0;
         // fallthrough
     case 0:
-        sub_8010434();
+        Rfu_SetLinkStandbyCallback();
         break;
     case 3:
         if (!IsLinkTaskFinished())
@@ -2357,7 +2357,7 @@ void sub_802339C(struct BerryCrushGame *r4)
     for (r7 = 0; r7 < r4->unk9; ++r7)
     {
         r2 = gRecvCmds[r7];
-        if ((r2[0] & 0xFF00) == 0x2F00
+        if ((r2[0] & 0xFF00) == RFUCMD_SEND_PACKET
          && r2[1] == 2)
         {
             if ((u8)r2[2] & 4)
@@ -2559,7 +2559,7 @@ void sub_80236B8(struct BerryCrushGame *r5)
     r5->unk5C.unk02_1 = r5->unk25_4;
     r5->unk5C.unk0A = r5->unk25_5;
     memcpy(r5->unk40.unk2, &r5->unk5C, sizeof(r5->unk40.unk2));
-    sub_800FE50(r5->unk40.unk2);
+    Rfu_SendPacket(r5->unk40.unk2);
 }
 
 void sub_802385C(struct BerryCrushGame *r5)
@@ -2580,7 +2580,7 @@ void sub_802385C(struct BerryCrushGame *r5)
     for (r4 = 0; r4 < r5->unk9; ++r4)
         r5->unk68.as_four_players.others[r4].unk4.as_2d_bytes[1][5] = 0;
 #endif
-    if ((gRecvCmds[0][0] & 0xFF00) != 0x2F00
+    if ((gRecvCmds[0][0] & 0xFF00) != RFUCMD_SEND_PACKET
      || gRecvCmds[0][1] != 2)
     {
         r5->unk25_2 = 0;
@@ -2667,7 +2667,7 @@ static u32 sub_8023A30(struct BerryCrushGame *r4, __attribute__((unused)) u8 *r1
     {
     case 0:
         r4->unk12 = 8;
-        PlaySE(SE_W070);
+        PlaySE(SE_M_STRENGTH);
         BlendPalettes(0xFFFFFFFF, 8, RGB(31, 31, 0));
         r4->unk138.unk0 = 2;
         break;
@@ -2703,7 +2703,7 @@ static u32 sub_8023A30(struct BerryCrushGame *r4, __attribute__((unused)) u8 *r1
     case 4:
         if (!sub_80218D4(r4, &r4->unk138))
             return 0;
-        sub_8010434();
+        Rfu_SetLinkStandbyCallback();
         r4->unk10 = 0;
         break;
     case 5:
@@ -2724,7 +2724,7 @@ static u32 sub_8023BC0(struct BerryCrushGame *r5, u8 *r6)
     {
     case 0:
         r5->unk12 = 9;
-        PlaySE(SE_HAZURE);
+        PlaySE(SE_FAILURE);
         BlendPalettes(0xFFFFFFFF, 8, RGB(31, 0, 0));
         r5->unk138.unk0 = 4;
         break;
@@ -2737,7 +2737,7 @@ static u32 sub_8023BC0(struct BerryCrushGame *r5, u8 *r6)
     case 2:
         if (!sub_80218D4(r5, &r5->unk138))
             return 0;
-        sub_8010434();
+        Rfu_SetLinkStandbyCallback();
         r5->unk10 = 0;
         SetGpuReg(REG_OFFSET_BG0VOFS, 0);
         SetGpuReg(REG_OFFSET_BG2VOFS, 0);
@@ -3005,7 +3005,7 @@ static u32 sub_8024134(struct BerryCrushGame *r5, u8 *r4)
         r5->unkC = 0;
         return 0;
     case 1:
-        sub_8010434();
+        Rfu_SetLinkStandbyCallback();
         break;
     case 2:
         if (!IsLinkTaskFinished())
@@ -3013,10 +3013,10 @@ static u32 sub_8024134(struct BerryCrushGame *r5, u8 *r4)
         DrawDialogueFrame(0, 0);
         AddTextPrinterParameterized2(0, 1, gText_SavingDontTurnOffPower, 0, 0, 2, 1, 3);
         CopyWindowToVram(0, 3);
-        CreateTask(sub_8153688, 0);
+        CreateTask(Task_LinkSave, 0);
         break;
     case 3:
-        if (FuncIsActiveTask(sub_8153688))
+        if (FuncIsActiveTask(Task_LinkSave))
             return 0;
         break;
     case 4:
@@ -3084,7 +3084,7 @@ static u32 sub_80242E0(struct BerryCrushGame *r4, __attribute__((unused)) u8 *r1
     switch (r4->unkC)
     {
     case 0:
-        sub_8010434();
+        Rfu_SetLinkStandbyCallback();
         break;
     case 1:
         if (!IsLinkTaskFinished())
@@ -3184,12 +3184,12 @@ static u32 sub_8024508(struct BerryCrushGame *r5, __attribute__((unused)) u8 *r1
     switch (r5->unkC)
     {
     case 0:
-        sub_8010434();
+        Rfu_SetLinkStandbyCallback();
         break;
     case 1:
         if (!IsLinkTaskFinished())
             return 0;
-        sub_800AC34();
+        SetCloseLinkCallback();
         break;
     case 2:
         if (gReceivedRemoteLinkPlayers != 0)
@@ -3209,6 +3209,11 @@ static u32 sub_8024568(__attribute__((unused)) struct BerryCrushGame *r0, __attr
     return 0;
 }
 
+#if MODERN
+// TODO remove this as soon as the code below is understood
+// add a UBFIX if required (code buggy?)
+__attribute__((optimize("no-aggressive-loop-optimizations")))
+#endif
 void sub_8024578(struct BerryCrushGame *r4)
 {
     u8 r5 = 0;
@@ -3266,7 +3271,7 @@ static void BerryCrush_SetPaletteFadeParams(u8 *params, bool8 communicateAfter, 
 
 void sub_8024644(u8 *r0, u32 r1, u32 r2, u32 r3, u32 r5)
 {
-    u8 sp[4];
+    u8 sp[2];
 
     0[(u16 *)sp] = r3;
     r0[0] = r1;
