@@ -2,7 +2,7 @@
   "id": "MAP_MANTA_ZONE",
   "name": "MantaZone",
   "layout": "LAYOUT_MANTA_ZONE",
-  "music": "MUS_PCC",
+  "music": "MUS_DEWFORD",
   "region_map_section": "MAPSEC_DEWFORD_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
@@ -14,7 +14,19 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": 0,
   "object_events": [
-
+    {
+      "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER",
+      "x": 6,
+      "y": 6,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "MantaZone_EventScript_Baro",
+      "flag": "0"
+    }
   ],
   "warp_events": [
     {

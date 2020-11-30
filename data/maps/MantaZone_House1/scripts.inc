@@ -54,7 +54,7 @@ MantaZone_House1_EventScript_PsyduckPokeBall_14:
 MantaZone_House1_EventScript_PsyduckFanfare::
 	bufferspeciesname 1, SPECIES_PSYDUCK
 	removeobject 1
-	playfanfare MUS_FANFA4
+	playfanfare MUS_OBTAIN_ITEM
 	setflag FLAG_SYS_POKEMON_GET
 	message MantaZone_House1_Text_ObtainedPsyduck
 	waitmessage
@@ -75,7 +75,7 @@ MantaZone_House1_EventScript_EggWoman::
 	goto_if_eq MantaZone_House1_EventScript_EggWoman_7
 	setflag FLAG_UNUSED_0x021
 	msgbox MantaZone_House1_Text_TakeCareOfIt
-	playfanfare MUS_FANFA4
+	playfanfare MUS_OBTAIN_ITEM
 	message MantaZone_House1_Text_ReceivedTheEgg
 	waitfanfare
 	giveegg SPECIES_PICHU

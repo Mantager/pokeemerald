@@ -7,3 +7,9 @@ script MantaZone_Sign {
     release
     end
 }
+
+script MantaZone_EventScript_Baro {
+    trainerbattle_single(TRAINER_BARO, "Battle me now, loser!", "No way!")
+    msgbox("I'll beat you next time.", MSGBOX_AUTOCLOSE)
+    end
+}

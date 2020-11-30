@@ -2,7 +2,7 @@
   "id": "MAP_MANTA_ZONE_HOUSE1",
   "name": "MantaZone_House1",
   "layout": "LAYOUT_MANTA_ZONE_HOUSE1",
-  "music": "MUS_AJITO",
+  "music": "MUS_DEWFORD",
   "region_map_section": "MAPSEC_DEWFORD_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

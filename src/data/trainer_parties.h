@@ -1,8 +1,13 @@
-static const struct TrainerMonNoItemDefaultMoves sParty_Sawyer1[] = {
+static const struct TrainerMonNoItemDefaultMoves sParty_Baro[] = {
     {
     .iv = 0,
-    .lvl = 21,
-    .species = SPECIES_GEODUDE,
+    .lvl = 3,
+    .species = SPECIES_SMOOCHUM,
+    },
+    {
+    .iv = 0,
+    .lvl = 3,
+    .species = SPECIES_DIGLETT,
     }
 };
 
@@ -11597,7 +11602,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Darius[] = {
 
 static const struct TrainerMonItemCustomMoves sParty_Steven[] = {
     {
-    .iv = 255,
+    .iv = 255, // (iv * 31) / 255
     .lvl = 77,
     .species = SPECIES_SKARMORY,
     .heldItem = ITEM_NONE,
